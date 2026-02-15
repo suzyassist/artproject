@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neoclassicisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #f5f5dc 0%, #e8e8d0 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;border: 2px solid #8B7355;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #696969;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #696969;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5f5dc;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#2c2c2c 0%,#1a1a1a 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>🏛️ Neoclassicisme</h1><p class="subtitle">1750-1850 · Terug naar de Oudheid</p></header>
+    <nav class="top-nav">
+        <a href="barok.html" class="nav-prev">← 🎪 Barok</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="romanticisme.html" class="nav-next">Romantiek 🌊 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-link active">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: De Eed van de Horatii</h2>
+                <p class="featured-artist">Jacques-Louis David, 1784</p>
+                <img src="images/neoclassicisme/01_david_horatii.jpg" alt="David - Oath of the Horatii">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🏛️ KLASSIEKE IDEALEN</h4>
+                    <p><strong>Griekse en Romeinse voorbeelden:</strong> De kunst van de oudheid wordt als perfect beschouwd. Beeldhouwwerk is belangrijker dan schilderkunst.</p>
+                    <p><strong>Heroïsche naakten:</strong> Het menselijk lichaam geïdealiseerd zoals bij de Grieken. Gladde huid, gespierde torso's.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>📐 HELDERE LIJNEN & VORMEN</h4>
+                    <p><strong>Contour boven kleur:</strong> Scherpe, duidelijke omtreklijnen. Geen sfumato maar precisie.</p>
+                    <p><strong>Flakke ruimte:</strong> Geen diepe Barokke ruimte maar een meer vlakke, decoratieve compositie.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🎨 BEZADIGD KLEURENPALET</h4>
+                    <p><strong>Aardse tonen:</strong> Bruin, oker, grijs, wit. Geen felle Barokke kleuren. De soberheid is moreel.</p>
+                    <p><strong>Lokaal kleur:</strong> Objecten hebben hun "eigen" kleur, niet beïnvloed door licht.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>📜 MORELE LESSEN</h4>
+                    <p><strong>Didactisch:</strong> Kunst moet deugd onderwijzen. Voorbeelden van zelfopoffering, patriottisme.</p>
+                    <p><strong>Historische accuratesse:</strong> De kleding, architectuur, wapens worden nauwkeurig onderzocht.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1750-1850)</h4>
+
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De Verlichtingsdespoten (Frederik de Grote, Catharina de Grote, Jozef II) hervormen van bovenaf. De Amerikaanse Revolutie (1776) en Franse Revolutie (1789) breken met het ancien régime. De Terreur (1793-1794) toont de schaduwzijde van de rede. Napoleon (1799-1815) creëert een nieuw keizerrijk met Romeinse symboliek. Het Congres van Wenen (1815) herstelt de oude orde.</p>
+
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> De klassieke tragedie wordt herleefd (Corneille, Racine). Voltaire's historische werken en de Encyclopédie (1751-1772) verspreiden kennis. Goethe's "Iphigenie" (1787) is model-neoclassicisme. Schiller's "Die Räuber" (1781) en "Wilhelm Tell" (1804) verbinden klassieke vorm met revolutionaire inhoud. De ode wordt de hoogste poëtische vorm.</p>
+
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> De mens als rationeel wezen. Emoties moeten worden beheerst, niet uitgeleefd. Stoïcisme wordt herontdekt (Seneca, Marcus Aurelius). De wil is vrij, de mens kan zijn karakter vormen. De "great man" theorie: individuen veranderen de geschiedenis. Psychologie is nog geen wetenschap maar moraliteit.</p>
+
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> De opgravingen van Pompeï en Herculaneum (vanaf 1738) tonen de oudheid als tastbaar. Winckelmann's "Geschichte der Kunst des Altertums" (1764) schept de kunstgeschiedenis als discipline. De industriële revolutie begint (stoommachine, spinmachine). De bevolking groeit explosief. Parijs wordt herschikt (brede boulevards, openbare werken).</p>
+
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Kant's kritische filosofie: wat kunnen we weten? ("Kritik der reinen Vernunft", 1781). De Verlichting gelooft in vooruitgang door rede. Rousseau's "Contrat social" (1762) legitimeert volkssoevereiniteit. Neoplatonisme en de idee van het "schone" als objectief. De esthetica wordt een filosofische discipline (Baumgarten, Kant).</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 TIEN MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Works 1-4: Existing -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "De Eed van de Horatii" (1784) — Jacques-Louis David</h3>
+                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 330 × 425 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/01_david_horatii.jpg" loading="lazy" alt="Oath of the Horatii">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd voor koning Lodewijk XVI, maar wordt het symbool van de Franse Revolutie. Drie broers zweren voor Rome te vechten.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Drie bogen scheiden de ruimte. Links de vader, midden de broers, rechts de vrouwen. Man = actie, vrouw = emotie.</p>
+                        <p><strong>Lichaamstaal:</strong> Gestileerde, choreografische eed. Gespierde, heldhaftige lichamen in klassieke poses.</p>
+                        <p><strong>Kleur:</strong> Rode mantels (Rome, bloed), witte toga's (deugd), grijze achtergrond (strengheid).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "De Dood van Marat" (1793) — Jacques-Louis David</h3>
+                    <p style="color:#666;font-style:italic;">Koninklijke Musea, Brussel · 165 × 128 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/02_david_marat.jpg" loading="lazy" alt="Death of Marat">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Jean-Paul Marat, revolutionair journalist, werd vermoord in zijn bad. Politieke propaganda als heiligenbeeld.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Christelijke iconografie:</strong> Marat lijkt op Christus in de pieta. Het doosje naast het bad heeft een kruisvorm.</p>
+                        <p><strong>Simplificatie:</strong> Geen achtergrond, geen details. Alleen Marat, het bad, het mes, de brief.</p>
+                        <p><strong>Licht:</strong> Zacht, diffuus licht op Marat's gezicht. Bijna goddelijke verhevenheid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "De Kroning van Napoleon" (1805-1807) — Jacques-Louis David</h3>
+                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 629 × 979 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/03_david_coronation.jpg" loading="lazy" alt="Coronation of Napoleon">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Napoleon kroont zichzelf tot keizer. De grootste propaganda-schildering van het keizerrijk.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Het moment:</strong> Napoleon kroont zichzelf - niet de paus, niet God. Revolutionair en reactionair tegelijk.</p>
+                        <p><strong>Compositie:</strong> Napoleon centraal, verheven op een podium. De lijnen convergeren naar hem.</p>
+                        <p><strong>Kleur en pracht:</strong> Robijnrood, goud, purper - weelde van het keizerlijke hof.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Psyche Herleefd door de Kus van Cupido" (1787-1793) — Antonio Canova</h3>
+                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 155 × 168 cm · Marmer</p>
+                </div>
+                <img src="images/neoclassicisme/04_canova_psyche.jpg" loading="lazy" alt="Psyche Revived">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Canova's meest bekende werk - marmer wordt zacht en levend gemaakt.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Zacht marmer:</strong> De huid lijkt zacht, de lippen zijn vol. Marmer wordt vlees - technisch meesterschap.</p>
+                        <p><strong>Compositie:</strong> De twee figuren vormen een X. Een dans van liefde en dood.</p>
+                        <p><strong>Idealisatie:</strong> Perfecte lichamen volgens klassieke maatstaven. Geen imperfecties.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Works 5-10: NEW -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "De Sabijnse Maagden" (1799) — Jacques-Louis David</h3>
+                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 385 × 522 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/05_david_sabine.jpg" loading="lazy" alt="Sabine Women">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het verhaal van de Sabijnse vrouwen die tussen hun Romeinse echtgenoten en Sabijnse families komen te staan. Een oproep tot verzoening na de Revolutie.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Centrale figuur:</strong> Een vrouw scheidt de strijdende mannen. Zij is de held - niet de krijgers. Dit is nieuw: vrouwelijke heldhaftigheid.</p>
+                        <p><strong>Compositie:</strong> De figuren vormen een halve cirkel. Het is bijna een frieze - plat, decoratief, als een Grieks reliëf.</p>
+                        <p><strong>Kleur:</strong> Warmere tonen dan David's eerdere werken. De Revolutie is voorbij, er mag weer wat menselijkheid in.</p>
+                        <p><strong>Boodschap:</strong> "Vergiffenis is beter dan wraak." David probeert Frankrijk te helen na de Terreur.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Napoleon bij de Grote St. Bernardpas" (1801) — Jacques-Louis David</h3>
+                    <p style="color:#666;font-style:italic;">Verschillende versies · 259 × 221 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/06_david_napoleoncrossing.jpg" loading="lazy" alt="Napoleon Crossing the Alps">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Napoleon steekt de Alpen over naar Italië. David maakte vijf versies voor verschillende paleizen. Het is pure propaganda - Napoleon werd eigenlijk door een ezel gedragen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Heroïsch:</strong> Napoleon te paard, de manen wapperen, de mantel golft. Dit is geen militaire tekening maar een mythe.</p>
+                        <p><strong>De namen:</strong> In de rotsen zijn Hannibal, Karel de Grote en Napoleon gekerfd - de grote veldheren der geschiedenis.</p>
+                        <p><strong>Kleur:</strong> Intense rode mantel, gouden details, dramatische lucht. Dit is theater, geen documentaire.</p>
+                        <p><strong>Politiek:</strong> Napoleon als nieuwe Alexander, nieuwe Caesar. De kunst maakt de man groter dan hij is.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "Grande Odalisque" (1814) — Jean-Auguste-Dominique Ingres</h3>
+                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 91 × 162 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/07_ingres_odalisque.jpg" loading="lazy" alt="Grande Odalisque">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een odalisque (haremdame) met een onnatuurlijk lange rug. Ingres was een leerling van David maar ging zijn eigen weg. Dit werk veroorzaakte schandalen om zijn "perversiteit".</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Verlengde rug:</strong> De rug heeft drie extra wervels. Ingres verkozen lijn boven anatomie. Schoonheid gaat boven correctheid.</p>
+                        <p><strong>Contour:</strong> Scherpe, gladde lijnen om het lichaam. Geen modelering, geen schaduw. Het lijkt op een tekening met kleur.</p>
+                        <p><strong>Oosterse setting:</strong> De pauwenveren, de tulband, de spiegel - exotisme was mode. Maar het is een verbeelde Orient, niet echt.</p>
+                        <p><strong>Blik:</strong> Ze kijkt over haar schouder, direct, zonder schaamte. Dit is geen slachtoffer maar iemand die haar eigen seksualiteit bezit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "Paolina Borghese als Venus Victrix" (1805-1808) — Antonio Canova</h3>
+                    <p style="color:#666;font-style:italic;">Galleria Borghese, Rome · Lengte 160 cm · Marmer</p>
+                </div>
+                <img src="images/neoclassicisme/08_canova_paolina.jpg" loading="lazy" alt="Paolina Borghese">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Paolina Borghese, zus van Napoleon, als de godin Venus. Ze ligt op een daybed, half naakt, met een appel in haar hand (de prijs van de schoonheidswedstrijd).</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Portret als godin:</strong> Dit is een portret én een mythologisch beeld. Paolina is herkenbaar, maar verheven tot goddelijke status.</p>
+                        <p><strong>Marmer als vlees:</strong> Canova's handwerk is ongelooflijk. Het kussen lijkt echt zacht, de huid lijkt warm. Marmer wordt leven.</p>
+                        <p><strong>Stijl:</strong> Glad, gepolijst, geen ruwheid. Dit is de ideale schoonheid - geen poriën, geen imperfecties, alleen perfectie.</p>
+                        <p><strong>Controversie:</strong> Een half-naakte aristocrate als Venus was gewaagd. De Borghese-familie liet het beeld zelfs jarenlang niet zien aan het publiek.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "De Lictoren brengen Brutus de Lijken van zijn Zonen" (1789) — Jacques-Louis David</h3>
+                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 323 × 422 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/09_david_brutus.jpg" loading="lazy" alt="Brutus">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Lucius Junius Brutus, stichter van de Romeinse Republiek, liet zijn zonen executeren omdat ze een samenzwering tegen de republiek hadden gepleegd. Vaderland boven familie.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Twee scènes:</strong> Links Brutus in de schaduw, starrend in het niets, terwijl zijn zonen worden binnengedragen. Rechts de vrouwen die rouwen. Man = plicht, vrouw = emotie.</p>
+                        <p><strong>Stoïcisme:</strong> Brutus' gezicht toont geen emotie. Hij heeft het juiste gedaan, hoe pijnlijk ook. Dit is deugd in actie.</p>
+                        <p><strong>Compositie:</strong> De architraaf bovenaan scheidt de twee werelden. Onder: drama. Boven: het standbeeld van de godin Rome - de eeuwige republiek.</p>
+                        <p><strong>Timing:</strong> Geschilderd in 1789, het jaar van de Franse Revolutie. De boodschap: republikeinen moeten bereid zijn alles op te offeren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Napoleon I op zijn Keizerlijke Troon" (1806) — Jean-Auguste-Dominique Ingres</h3>
+                    <p style="color:#666;font-style:italic;">Musée de l'Armée, Parijs · 259 × 162 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/neoclassicisme/10_ingres_napoleon.jpg" loading="lazy" alt="Napoleon on Throne">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Napoleon als keizer, gekleed in kroningsgewaden, met alle symbolen van macht. Het is geen portret maar een icon - Napoleon als goddelijk heerser.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Byzantijnse stijl:</strong> Napoleon lijkt op een icon, een heilige, een god. De starre houding, de hand op de knuppel, de lauwerkrans - alles spreekt absolute macht uit.</p>
+                        <p><strong>Details:</strong> De adelaar van Charlemagne, de bijen van de Bourbons (die Napoleon adopteerde), het zwaard van de kroning. Elk symbool is zorgvuldig gekozen.</p>
+                        <p><strong>Blik:</strong> Napoleon kijkt neer op de kijker, maar ook door de kijker heen. Hij kijkt naar de eeuwigheid. Dit is geen mens maar een monument.</p>
+                        <p><strong>Stijl:</strong> Ingres' gladde, lineaire stijl is perfect voor dit soort iconografie. Geen menselijke imperfectie, alleen majesteit.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DEUGD IN STEEN EN VERF</h2>
+            
+            <div class="timeline-box">
+                <p>Het Neoclassicisme leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat kunst politiek is:</strong> David's schilderijen zijn propaganda</li>
+                    <li><strong>Dat de oudheid ideaal is:</strong> Grieken en Romeinen als perfect</li>
+                    <li><strong>Dat soberheid deugd is:</strong> Geen Barokke pracht maar klassieke beheersing</li>
+                    <li><strong>Dat het lichaam heroïsch is:</strong> Naakte vorm als ideaal</li>
+                    <li><strong>Dat kunst onderwijst:</strong> Morele lessen in beeld</li>
+                </ul>
+                <p>Het Neoclassicisme is de esthetiek van de rede.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="barok.html" class="nav-prev">← 🎪 Barok</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="romanticisme.html" class="nav-next">Romantiek 🌊 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

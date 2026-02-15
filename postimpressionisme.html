@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Impressionisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);color:white;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #FF8C00;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #FF8C00;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#fff8dc;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#8B4513 0%,#654321 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>🌻 Post-Impressionisme</h1><p class="subtitle">1880-1900 · Van Indruk naar Structuur</p></header>
+    <nav class="top-nav">
+        <a href="impressionisme.html" class="nav-prev">← ☀️ Impressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="artnouveau.html" class="nav-next">Art Nouveau 🌿 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-link active">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: De Sterrennacht</h2>
+                <p class="featured-artist">Vincent van Gogh, 1889</p>
+                <img src="images/postimpressionisme/01_vangogh_starrynight.jpg" alt="Van Gogh - The Starry Night">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🎨 STRUCTUUR BOVEN IMPRESSIE</h4>
+                    <p><strong>Van vluchtig naar vast:</strong> Waar Impressionisten het moment vingen, zoeken Post-Impressionisten structuur, vorm, orde.</p>
+                    <p><strong>Onderliggende geometrie:</strong> Cézanne zag natuur als kegels, bollen, cilinders. De wereld heeft een wiskundige basis.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🌈 SYMBOLISCHE KLEUR</h4>
+                    <p><strong>Kleur als emotie:</strong> Van Gogh's gele sterren zijn geen natuurlijke kleur maar gevoel. Gauguin's rode grond is innerlijk vuur.</p>
+                    <p><strong>Onnatuurlijk maar waar:</strong> De kleur hoeft niet "echt" te zijn, maar moet "waarachtig" zijn.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>✍️ EXPRESSIEVE PENSEELSTREKEN</h4>
+                    <p><strong>Zichtbaar handwerk:</strong> Dikke verf, krachtige streken, impasto. De hand van de kunstenaar is overal zichtbaar.</p>
+                    <p><strong>Ritme en patroon:</strong> Van Gogh's golven, Seurat's stipjes. De penseelstreek wordt decoratief.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🧠 INNERLIJK VISIONAIR</h4>
+                    <p><strong>Het subjectieve oog:</strong> Niet schilderen wat je ziet, maar wat je voelt. De kunstenaar interpreteert de wereld.</p>
+                    <p><strong>Primitivisme:</strong> Gauguin naar Tahiti, Van Gogh naar Arles. De kunstenaar zoekt het "authentieke".</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1880-1900)</h4>
+
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De Derde Republiek in Frankrijk consolideert. De Dreyfus-affaire (1894) verdeelt de samenleving. Kolonialisme bloeit - Tahiti, Afrika, Indochina. De arbeidersbeweging groeit (syndicalisme). Anarchisme en socialisme debatteren over de toekomst.</p>
+
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> Symbolisme (Mallarmé, Verlaine, Rimbaud) zoekt de suggestie boven de directe betekenis. Zola's naturalisme documenteert de maatschappij. Ibsen en Strindberg tonen psychologisch realisme. De fin de siècle stemming - verfijning, decadentie, mystiek.</p>
+
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> De mens als mysterie. Innerlijke waarneming primeert op uiterlijke. Symboliek en dromen worden serieus genomen. Het "andere" (primitief, kind, gek) wordt romantisch beschouwd. De scheiding tussen gezond en ziek vervaagt.</p>
+
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> De Tweede Industriële Revolutie: elektriciteit, telefoon, auto, film (1895). De Eiffeltoren (1889) symboliseert het moderne. Psychiatrie ontwikkelt zich (Freud begint te werken). Japanisme bereikt hoogtepunt. Fotografie maakt schilderkunst "vrij".</p>
+
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Nietzsche's "Also sprach Zarathustra" (1883-1891) verkondigt de dood van God en de Übermensch. Schopenhauer's wil als ding an sich. Bergson's intuitie versus intellect. Het sublieme maakt plaats voor het interessante. Kunst wordt autonoom - niet meer dienstbaar aan religie of staat.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Work 1: The Starry Night -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "De Sterrennacht" (1889) — Vincent van Gogh</h3>
+                    <p style="color:#666;font-style:italic;">MoMA, New York · 74 × 92 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/01_vangogh_starrynight.jpg" loading="lazy" alt="The Starry Night">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd vanuit Van Gogh's kamer in het Saint-Paul-de-Mausole asiel in Saint-Rémy-de-Provence. Het uitzicht was overdag, maar hij schilderde het 's nachts uit herinnering. Een van de meest herkenbare schilderijen ter wereld.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Beweging:</strong> Alles beweegt - de sterren zijn spiralen, de maan is een cirkel, de lucht golft. Van Gogh schildert niet de sterren zoals ze zijn, maar zoals ze voelen: levend, dansend, bijna angstaanjagend.</p>
+                        <p><strong>Kleur:</strong> Koningsblauw, kobalt, turquoise. De sterren zijn geel-oranje, de maan is geel. Het dorp is blauw-paars. Geen groen, geen bruin - dit is een nacht die gloeit.</p>
+                        <p><strong>Impasto:</strong> Dikke, zware lagen verf. Je zou de schilderij kunnen voelen. De penseelstreken volgen de beweging - horizontaal in het dorp, draaiend in de lucht.</p>
+                        <p><strong>De cipres:</strong> De zwarte vlam rechts - een brug tussen aarde en hemel. Van Gogh schilderde cipressen vaak als symbolen van de dood die het leven omarmt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: Mont Sainte-Victoire -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "Mont Sainte-Victoire" (1902-1904) — Paul Cézanne</h3>
+                    <p style="color:#666;font-style:italic;">Philadelphia Museum of Art · 70 × 92 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/02_cezanne_mont.jpg" loading="lazy" alt="Mont Sainte-Victoire">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Cézanne schilderde de Mont Sainte-Victoire meer dan 80 keer. De berg domineert het landschap rond Aix-en-Provence. Dit is laat-Cézanne, geschilderd kort voor zijn dood - de stijl is vrij, bijna abstract.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Structuur:</strong> Cézanne bouwt de berg op uit kleurvlakken. Geen lijnen, geen contouren - alleen vlakken die samen een vorm suggereren. Het is geometrie in verf.</p>
+                        <p><strong>Kleur:</strong> Blauw voor afstand, groen voor midden, warm (oranje, geel) voor voorgrond. Cézanne's wetenschap van de kleurdiepte - warm komt naar voren, koud gaat naar achteren.</p>
+                        <p><strong>Penseelwerk:</strong> Kleine, parallelle streken ("constructieve penseelstreken"). Het doek is een mozaïek van kleur. Van dichtbij is het abstract, van veraf is het een berg.</p>
+                        <p><strong>Influencer:</strong> Picasso noemde Cézanne "de vader van ons allen". Dit werk toont waarom - het wijst rechtstreeks naar het Kubisme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Where Do We Come From -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "Waar komen wij vandaan? Wat zijn wij? Waar gaan wij heen?" (1897-1898) — Paul Gauguin</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Fine Arts, Boston · 139 × 375 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/03_gauguin_tahiti.jpg" loading="lazy" alt="Where Do We Come From">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd in Tahiti, waar Gauguin zijn "primitieve" paradijs zocht. De titel zijn de drie filosofische vragen. Van rechts naar links: geboorte, leven, dood. Gauguin's testament - hij probeerde zichzelf van de hand te doen na voltooiing.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kleur:</strong> Geen natuurlijke kleuren - blauw gras, paarse aarde, rode lucht. Gauguin gebruikt kleur symbolisch, niet descriptief. Het is een droom van Tahiti, niet de werkelijkheid.</p>
+                        <p><strong>Compositie:</strong> Een fries - plat, decoratief, als Egyptisch reliëf. Geen perspectief, geen diepte. De figuren zijn opgesteld als in een processie.</p>
+                        <p><strong>Symbolen:</strong> Het kind (geboorte), de man die fruit pakt (zonde?), de oude vrouw (dood), het idool (god). De drie vrouwen rechts zijn de drie leeftijden. Het is een universel levensverhaal.</p>
+                        <p><strong>Primitivisme:</strong> Gauguin verliet Europa voor het "echte" leven in Tahiti. Maar dit is een gefantaseerd Tahiti - de kunstenaar als exotische vluchteling.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: A Sunday Afternoon -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Een Zondagmiddag op het Eiland La Grande Jatte" (1884-1886) — Georges Seurat</h3>
+                    <p style="color:#666;font-style:italic;">Art Institute of Chicago · 208 × 308 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/04_seurat_sunday.jpg" loading="lazy" alt="A Sunday Afternoon">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd in twee jaar, met duizenden kleine stippen (pointillisme). Een zondagmiddag in een Parijse voorstad. Seurat's meesterwerk en het symbool van het Pointillisme/Neo-Impressionisme.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Pointillisme:</strong> Kleine, pure kleurpunten die in het oog van de kijker mengen. Wetenschappelijk gebaseerd op kleurtheorie (Chevreul, Rood). Van dichtbij: abstracte stippen. Van veraf: levendige kleuren.</p>
+                        <p><strong>Compositie:</strong> Stijf, statisch, bijna geometrisch. De figuren lijken bevroren. Het is geen spontane scène maar een geconstrueerd tableau. Seurat's klassieke opleiding (Ingres) is zichtbaar.</p>
+                        <p><strong>Sociaal:</strong> Verschillende klassen in één park: de hoge burgerij (voorgrond), de bohemiens, de dienstmeisjes. Maar iedereen is gelijk in de stippen - de democratie van de verftechniek.</p>
+                        <p><strong>Stijfheid:</strong> De figuren hebben geen emotie. Het is bijna surrealistisch - mensen als marionetten. Seurat creëert een wereld van orde en stilte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Sunflowers -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "Zonnebloemen" (1888) — Vincent van Gogh</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 92 × 73 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/05_vangogh_sunflowers.jpg" loading="lazy" alt="Sunflowers">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd in Arles, waar Van Gogh wachtte op Gauguin. De zonnebloemen waren bedoeld om hun gedeelde atelier te versieren. Van Gogh schilderde verschillende versies - dit is de meest bekende.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Geel:</strong> Verschillende tinten geel - van oker tot cadmium. Het is geen beschrijving maar emotie. Geel als vreugde, als warmte, als vriendschap. Van Gogh noemde geel zijn favoriete kleur.</p>
+                        <p><strong>Impasto:</strong> Dikke lagen verf, soms rechtstreeks uit de tube. De bloemen zijn reliëf - je zou ze kunnen voelen. De zaden zijn dikke klodders bruin en zwart.</p>
+                        <p><strong>Compositie:</strong> De bloemen vullen het hele doek. Geen achtergrond, geen diepte - alleen bloemen. Het is een portret van bloemen, alsof ze personen zijn.</p>
+                        <p><strong>Vriendschap:</strong> Deze schilderijen waren bedoeld als welkom voor Gauguin. Maar de samenwerking zou eindigen in drama (het afsnijden van Van Gogh's oor). De zonnebloemen zijn nu symbolen van een verbroken vriendschap.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Bedroom in Arles -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Slaapkamer in Arles" (1888) — Vincent van Gogh</h3>
+                    <p style="color:#666;font-style:italic;">Van Gogh Museum, Amsterdam · 72 × 90 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/06_vangogh_bedroom.jpg" loading="lazy" alt="Bedroom in Arles">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Van Gogh's slaapkamer in het "Gele Huis" in Arles. Hij schilderde het als een rustoord, een plek van vrede. Maar de werkelijkheid was chaotischer - dit is een ideaalbeeld.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kleur:</strong> Paars-blauwe muren, gele deken, rode tegels. De kleuren zijn expressief, niet realistisch. Van Gogh schrijft aan zijn broer Theo dat hij de kleuren wilde laten "zingen".</p>
+                        <p><strong>Perspectief:</strong> Het perspectief is scheef - de muren staan niet rechtop. Dit is geen fout maar expressie. De kamer is een innerlijke ruimte, geen fysieke.</p>
+                        <p><strong>Eenvoud:</strong> Geen luxe, geen opsmuk. Een eenvoudig bed, een stoel, een tafel. Van Gogh's armoede wordt tot deugd - het is de "echte" levensstijl.</p>
+                        <p><strong>Rust:</strong> De compositie is symmetrisch, de kleuren zijn harmonieus. Dit is hoe Van Gogh zich wilde voelen - rustig, tevreden, thuis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: The Large Bathers -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "De Grote Badenden" (1898-1905) — Paul Cézanne</h3>
+                    <p style="color:#666;font-style:italic;">Philadelphia Museum of Art · 211 × 251 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/07_cezanne_bathers.jpg" loading="lazy" alt="The Large Bathers">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Cézanne werkte er jaren aan, het grootste schilderij dat hij ooit maakte. Naakte vrouwen in een landschap - een klassiek thema, maar radicaal anders uitgevoerd.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Geometrie:</strong> De lichamen zijn opgebouwd uit cilinders en bollen. Geen zachte rondingen maar hoekige vlakken. Cézanne reduceert het lichaam tot zijn basisvormen.</p>
+                        <p><strong>Ruimte:</strong> De figuren lijken op te drijven, niet stevig in het landschap. Er is geen duidelijk voor- en achtergrond. De ruimte is geflatteerd, bijna tweedimensionaal.</p>
+                        <p><strong>Kleur:</strong> Oker, groen, blauw - aardse tonen. Geen roze huid, geen blauwe hemel. De kleur dient de structuur, niet het realisme.</p>
+                        <p><strong>Invloed:</strong> Picasso en Matisse bewonderden dit werk. Het toont de weg naar het modernisme - de mens als geometrisch object, niet als individu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: The Yellow Christ -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "De Gele Christus" (1889) — Paul Gauguin</h3>
+                    <p style="color:#666;font-style:italic;">Musée d'Orsay, Parijs · 92 × 73 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/08_gauguin_yellow.jpg" loading="lazy" alt="The Yellow Christ">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd in Pont-Aven, Bretagne. De kruisiging wordt geplaatst in een Bretons landschap, met Bretonse vrouwen die bidden. Christus is fel geel - bijna een abstractie.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kleur:</strong> De gele Christus, het rode kruis, het groene landschap. Geen natuurlijke kleuren - dit is symbolisme. Geel als lijden, als heiligheid, als zon.</p>
+                        <p><strong>Synthetisme:</strong> Gauguin's stijl - platte vlakken, zwarte omtreklijnen, geen modellering. Het lijkt op een houtsnede of een glas-in-loodraam. Kunst als decoratie.</p>
+                        <p><strong>Cultuurkritiek:</strong> De Bretonse vrouwen dragen traditionele kleding. Gauguin ziet hen als "puur" tegenover de corrupte moderne wereld. Het primitivisme is al aanwezig.</p>
+                        <p><strong>Religie:</strong> Het is een kruisiging, maar geen traditionele. Christus is een symbool van offer en verlossing, niet een historische figuur. Gauguin creëert zijn eigen iconografie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: At the Moulin Rouge -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "In het Moulin Rouge" (1892-1895) — Henri de Toulouse-Lautrec</h3>
+                    <p style="color:#666;font-style:italic;">Art Institute of Chicago · 123 × 141 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/09_toulouse_lautrec_moulin.jpg" loading="lazy" alt="At the Moulin Rouge">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het Moulin Rouge in Montmartre, de beroemde cabaret. Toulouse-Lautrec was een vaste klant en schilderde de artiesten en klanten. Het toont het nachtleven van Parijs.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> De figuur rechtsonder (met de groene hoed) is gesneden - innovatief. De spiegel toont een andere hoek. Het is een snapshot, een moment uit het echte leven.</p>
+                        <p><strong>Kleur:</strong> Oker, groen, rood - de kleuren van gaslicht en schaduw. De huid is vaak groenachtig - nachtelijke vermoeidheid. Het is sfeervol, bijna claustrofobisch.</p>
+                        <p><strong>Figuren:</strong> La Goulue (de beroemde danseres), Jane Avril, de kunstenaar zelf (links). Toulouse-Lautrec portretteert zijn vrienden en helden zonder verfraaiing.</p>
+                        <p><strong>Invloed:</strong> De Japanse prent (ukiyo-e) is zichtbaar in de platheid, de cropping, de onnatuurlijke kleuren. Toulouse-Lautrec was een verzamelaar van Japanse kunst.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Cafe Terrace at Night -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Terras van een Café bij Nacht" (1888) — Vincent van Gogh</h3>
+                    <p style="color:#666;font-style:italic;">Kröller-Müller Museum, Otterlo · 81 × 66 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/postimpressionisme/10_vangogh_cafe.jpg" loading="lazy" alt="Cafe Terrace at Night">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een café in Arles, bij nacht. Van Gogh schilderde dit zonder zwart - alleen kleur. Een brief aan zijn zus Willemien beschrijft het als "een nacht zonder zwart".</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kleur:</strong> Geen zwart in de nacht - alleen blauw, violet, groen. De sterren zijn stralen van wit en geel. Het terras gloeit oranje. Het is een nacht die straalt.</p>
+                        <p><strong>Perspectief:</strong> De straat loopt naar de achtergrond, naar een verlichte kerk. Het is een uitnodiging om te wandelen. De sterren zijn spiralen - Van Gogh's handelsmerk.</p>
+                        <p><strong>Sfeer:</strong> Gezelligheid, warmte, menselijkheid. De lege stoelen nodigen uit. Het is een oase van licht in de donkere nacht. Van Gogh's liefde voor het zuiden straalt eruit.</p>
+                        <p><strong>Techniek:</strong> Dunne verflagen, maar expressief. De sterren zijn dikker. Van Gogh experimenteert met verschillende technieken in zijn Arles-periode.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: VAN NATUUR NAAR NATUUR</h2>
+            
+            <div class="timeline-box">
+                <p>Het Post-Impressionisme leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat structuur belangrijker is dan impressie:</strong> Cézanne's geometrie achter de natuur</li>
+                    <li><strong>Dat kleur emotie is:</strong> Van Gogh's gele sterren zijn gevoel, niet astronomie</li>
+                    <li><strong>Dat het primitieve authentiek is:</strong> Gauguin's vlucht naar Tahiti</li>
+                    <li><strong>Dat wetenschap kunst kan zijn:</strong> Seurat's pointillisme als optische wetenschap</li>
+                    <li><strong>Dat het subject telt:</strong> Niet de wereld zoals ze is, maar zoals wij haar ervaren</li>
+                </ul>
+                <p>Het Post-Impressionisme sluit de deur van de 19e eeuw en opent die van de 20e.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="impressionisme.html" class="nav-prev">← ☀️ Impressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="artnouveau.html" class="nav-next">Art Nouveau 🌿 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

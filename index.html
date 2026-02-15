@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunstgeschiedenis - Van Renaissance tot Digitale Kunst</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .timeline-section { margin: 3rem 0; }
+        .timeline-scroll { overflow-x: auto; overflow-y: hidden; padding: 2rem 0; position: relative; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 12px; box-shadow: inset 0 2px 10px rgba(0,0,0,0.05); }
+        .timeline-container { position: relative; min-width: 9000px; padding: 80px 40px 30px 5500px; }
+        .timeline-axis { position: absolute; top: 50px; left: 100px; right: 40px; height: 4px; background: linear-gradient(to right, #c9a227 0%, #d4a574 25%, #c9a227 50%, #d4a574 75%, #c9a227 100%); box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        
+        .timeline-year {
+            position: absolute;
+            top: 15px;
+            font-size: 0.9rem;
+            color: #333;
+            font-weight: bold;
+            transform: translateX(-50%);
+            background: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .timeline-year::after {
+            content: '';
+            position: absolute;
+            top: 28px;
+            left: 50%;
+            width: 2px;
+            height: 25px;
+            background: #c9a227;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-rows { position: relative; }
+        .timeline-row { position: relative; height: 75px; margin-bottom: 5px; }
+        
+        .timeline-bar {
+            position: absolute;
+            height: 65px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 2px solid rgba(255,255,255,0.4);
+            min-width: 500px;
+        }
+        .timeline-bar:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            z-index: 1000;
+            border-color: #fff;
+        }
+        .timeline-bar .icon {
+            font-size: 2rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .timeline-bar .info {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.3;
+        }
+        .timeline-bar .name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            white-space: nowrap;
+        }
+        .timeline-bar .years {
+            font-size: 0.8rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .era-byzantine { background: linear-gradient(135deg, #4B0082 0%, #8B4513 100%); color: white; }
+        .era-romanesque { background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%); color: white; }
+        .era-gothic { background: linear-gradient(135deg, #2F4F4F 0%, #483D8B 100%); color: white; }
+        .era-renaissance { background: linear-gradient(135deg, #d4a574 0%, #c9a227 100%); color: #2c1810; }
+        .era-mannerism { background: linear-gradient(135deg, #4a1c4a 0%, #6b2d6b 100%); color: white; }
+        .era-baroque { background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%); color: white; }
+        .era-neoclassic { background: linear-gradient(135deg, #708090 0%, #B8860B 100%); color: white; }
+        .era-romantic { background: linear-gradient(135deg, #4682B4 0%, #87CEEB 100%); color: white; }
+        .era-realism { background: linear-gradient(135deg, #8B7355 0%, #D2B48C 100%); color: #2c1810; }
+        .era-impressionism { background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); color: #4a3c00; }
+        .era-postimpressionism { background: linear-gradient(135deg, #FF6347 0%, #FF8C00 100%); color: white; }
+        .era-artnouveau { background: linear-gradient(135deg, #90EE90 0%, #3CB371 100%); color: #0a3d1a; }
+        .era-expressionism { background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); color: white; }
+        .era-cubism { background: linear-gradient(135deg, #696969 0%, #A9A9A9 100%); color: white; }
+        .era-dada { background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%); color: white; }
+        .era-destijl { background: linear-gradient(135deg, #FF0000 0%, #0000FF 100%); color: white; }
+        .era-surrealism { background: linear-gradient(135deg, #9932CC 0%, #4169E1 100%); color: white; }
+        .era-abstract { background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%); color: white; }
+        .era-popart { background: linear-gradient(135deg, #FF1493 0%, #FFD700 100%); color: #4a0e2e; }
+        .era-minimalism { background: linear-gradient(135deg, #F5F5F5 0%, #C0C0C0 100%); color: #333; }
+        .era-conceptual { background: linear-gradient(135deg, #333 0%, #666 100%); color: white; }
+        .era-postmodern { background: linear-gradient(135deg, #2F4F4F 0%, #8B008B 100%); color: white; }
+        .era-contemporary { background: linear-gradient(135deg, #00FA9A 0%, #20B2AA 100%); color: #0a3d3d; }
+        .era-digital { background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%); color: white; }
+        
+        .legend { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
+        .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
+        .legend-color { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); }
+        
+        .movement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .movement-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #c9a227; text-align: center; text-decoration: none; color: inherit; }
+        .movement-card:hover { transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .movement-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .period { font-size: 0.85rem; color: #666; font-weight: bold; margin-bottom: 0.5rem; }
+        .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .badge.complete { background: #d4edda; color: #155724; }
+        .badge.progress { background: #cce5ff; color: #004085; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎨 Kunstgeschiedenis</h1>
+        <p class="subtitle">25 Kunststromingen van Renaissance tot Digitale Kunst</p>
+    </header>
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link active">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-link">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-link">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-link">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-link">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-link">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-link">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-link">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-link">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-link">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-link">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-link">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-link">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-link">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-link">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-link">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-link">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-link">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-link">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-link">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-link">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <main>
+        <section class="intro">
+            <h2>Welkom</h2>
+            <p>Deze website biedt een uitgebreide verkenning van <strong>25 belangrijke kunststromingen</strong> uit de geschiedenis. Van de Renaissance tot de Digitale Kunst van vandaag - elke stroming wordt belicht met 10 meesterwerken, contextuele analyses en gedetailleerde stijlbeschrijvingen.</p>
+        </section>
+
+        <section class="timeline-section">
+            <h2>📅 Chronologische Tijdlijn</h2>
+            <p style="text-align:center;color:#666;margin-bottom:1rem;"><strong>Scroll horizontaal</strong> om alle stromingen te zien. Elke stroming heeft zijn eigen tijdslijn zonder overlapping.</p>
+            <div class="timeline-scroll">
+                <div class="timeline-container">
+                    <div class="timeline-axis"></div>
+                    <div class="timeline-year" style="left:-2000px">1000</div>
+                    <div class="timeline-year" style="left:-1000px">1200</div>
+                    <div class="timeline-year" style="left:-500px">1300</div>
+                    <div class="timeline-year" style="left:0px">1400</div>
+                    <div class="timeline-year" style="left:500px">1500</div>
+                    <div class="timeline-year" style="left:1000px">1600</div>
+                    <div class="timeline-year" style="left:1500px">1700</div>
+                    <div class="timeline-year" style="left:2000px">1800</div>
+                    <div class="timeline-year" style="left:2500px">1900</div>
+                    <div class="timeline-year" style="left:3000px">2000</div>
+                    
+                    <div class="timeline-rows">
+                        <div class="timeline-row">
+                            <a href="byzantijns.html" class="timeline-bar era-byzantine" style="left:-5350px;width:5615px;">
+                                <span class="icon">☦️</span>
+                                <div class="info"><span class="name">Byzantijnse Kunst</span><span class="years">330 - 1453</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="romaans.html" class="timeline-bar era-romanesque" style="left:-3000px;width:2000px;">
+                                <span class="icon">🏰</span>
+                                <div class="info"><span class="name">Romaanse Kunst</span><span class="years">800 - 1200</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="gotisch.html" class="timeline-bar era-gothic" style="left:-1300px;width:1800px;">
+                                <span class="icon">⛪</span>
+                                <div class="info"><span class="name">Gotische Kunst</span><span class="years">1140 - 1500</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="renaissance.html" class="timeline-bar era-renaissance" style="left:0px;width:1000px;">
+                                <span class="icon">🏛️</span>
+                                <div class="info"><span class="name">Renaissance</span><span class="years">1400 - 1600</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="manierisme.html" class="timeline-bar era-mannerism" style="left:600px;width:500px;">
+                                <span class="icon">🎭</span>
+                                <div class="info"><span class="name">Maniërisme</span><span class="years">1520 - 1620</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="barok.html" class="timeline-bar era-baroque" style="left:1000px;width:750px;">
+                                <span class="icon">🎪</span>
+                                <div class="info"><span class="name">Barok</span><span class="years">1600 - 1750</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="neoclassicisme.html" class="timeline-bar era-neoclassic" style="left:1750px;width:500px;">
+                                <span class="icon">⚱️</span>
+                                <div class="info"><span class="name">Neoclassicisme</span><span class="years">1750 - 1850</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="romanticisme.html" class="timeline-bar era-romantic" style="left:1900px;width:350px;">
+                                <span class="icon">🌊</span>
+                                <div class="info"><span class="name">Romantiek</span><span class="years">1780 - 1850</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="realisme.html" class="timeline-bar era-realism" style="left:2200px;width:200px;">
+                                <span class="icon">🌾</span>
+                                <div class="info"><span class="name">Realisme</span><span class="years">1840 - 1880</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="impressionisme.html" class="timeline-bar era-impressionism" style="left:2300px;width:150px;">
+                                <span class="icon">☀️</span>
+                                <div class="info"><span class="name">Impressionisme</span><span class="years">1860 - 1890</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="postimpressionisme.html" class="timeline-bar era-postimpressionism" style="left:2400px;width:100px;">
+                                <span class="icon">🌻</span>
+                                <div class="info"><span class="name">Post-Impressionisme</span><span class="years">1880 - 1900</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="artnouveau.html" class="timeline-bar era-artnouveau" style="left:2450px;width:100px;">
+                                <span class="icon">🌿</span>
+                                <div class="info"><span class="name">Art Nouveau</span><span class="years">1890 - 1910</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="expressionisme.html" class="timeline-bar era-expressionism" style="left:2525px;width:125px;">
+                                <span class="icon">😱</span>
+                                <div class="info"><span class="name">Expressionisme</span><span class="years">1905 - 1930</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="kubisme.html" class="timeline-bar era-cubism" style="left:2535px;width:50px;">
+                                <span class="icon">🔲</span>
+                                <div class="info"><span class="name">Kubisme</span><span class="years">1907 - 1914</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="dadaisme.html" class="timeline-bar era-dada" style="left:2580px;width:50px;">
+                                <span class="icon">🎲</span>
+                                <div class="info"><span class="name">Dadaïsme</span><span class="years">1916 - 1924</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="destijl.html" class="timeline-bar era-destijl" style="left:2585px;width:70px;">
+                                <span class="icon">⬜</span>
+                                <div class="info"><span class="name">De Stijl</span><span class="years">1917 - 1931</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="surrealisme.html" class="timeline-bar era-surrealism" style="left:2620px;width:210px;">
+                                <span class="icon">🦋</span>
+                                <div class="info"><span class="name">Surrealisme</span><span class="years">1924 - 1966</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="abstract.html" class="timeline-bar era-abstract" style="left:2700px;width:100px;">
+                                <span class="icon">🔥</span>
+                                <div class="info"><span class="name">Abstract Expressionisme</span><span class="years">1940 - 1960</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="popart.html" class="timeline-bar era-popart" style="left:2775px;width:75px;">
+                                <span class="icon">🍿</span>
+                                <div class="info"><span class="name">Pop Art</span><span class="years">1955 - 1970</span></div>
+                            </a>
+                        </div>
+                        <div class="timeline-row">
+                            <a href="postmodernisme.html" class="timeline-bar era-postmodern" style="left:2850px;width:150px;">
+                                <span class="icon">🌀</span>
+                                <div class="info"><span class="name">Postmodernisme</span><span class="years">1970 - 2000</span></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item"><div class="legend-color era-byzantine"></div> Byzantijnse Kunst</div>
+                <div class="legend-item"><div class="legend-color era-romanesque"></div> Romaanse Kunst</div>
+                <div class="legend-item"><div class="legend-color era-gothic"></div> Gotische Kunst</div>
+                <div class="legend-item"><div class="legend-color era-renaissance"></div> Renaissance</div>
+                <div class="legend-item"><div class="legend-color era-mannerism"></div> Maniërisme</div>
+                <div class="legend-item"><div class="legend-color era-baroque"></div> Barok</div>
+                <div class="legend-item"><div class="legend-color era-neoclassic"></div> Neoclassicisme</div>
+                <div class="legend-item"><div class="legend-color era-romantic"></div> Romantiek</div>
+                <div class="legend-item"><div class="legend-color era-realism"></div> Realisme</div>
+                <div class="legend-item"><div class="legend-color era-impressionism"></div> Impressionisme</div>
+                <div class="legend-item"><div class="legend-color era-postimpressionism"></div> Post-Impressionisme</div>
+                <div class="legend-item"><div class="legend-color era-artnouveau"></div> Art Nouveau</div>
+                <div class="legend-item"><div class="legend-color era-expressionism"></div> Expressionisme</div>
+                <div class="legend-item"><div class="legend-color era-cubism"></div> Kubisme</div>
+                <div class="legend-item"><div class="legend-color era-dada"></div> Dadaïsme</div>
+                <div class="legend-item"><div class="legend-color era-destijl"></div> De Stijl</div>
+                <div class="legend-item"><div class="legend-color era-surrealism"></div> Surrealisme</div>
+                <div class="legend-item"><div class="legend-color era-abstract"></div> Abstract Expr.</div>
+                <div class="legend-item"><div class="legend-color era-popart"></div> Pop Art</div>
+                <div class="legend-item"><div class="legend-color era-postmodern"></div> Postmodernisme</div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 Ontdek de Stromingen</h2>
+            <div class="movement-grid">
+                <a href="byzantijns.html" class="movement-card">
+                    <div class="movement-icon">☦️</div>
+                    <div class="period">330 - 1453</div>
+                    <h3>Byzantijnse Kunst</h3>
+                    <p>Heilige iconen, mozaïeken, goddelijke glorie</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="romaans.html" class="movement-card">
+                    <div class="movement-icon">🏰</div>
+                    <div class="period">800 - 1200</div>
+                    <h3>Romaanse Kunst</h3>
+                    <p>Massieve kerken, krachtige beelden, religieus</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="gotisch.html" class="movement-card">
+                    <div class="movement-icon">⛪</div>
+                    <div class="period">1140 - 1500</div>
+                    <h3>Gotische Kunst</h3>
+                    <p>Spitsbogen, licht, verticale aspiratie</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="renaissance.html" class="movement-card">
+                    <div class="movement-icon">🏛️</div>
+                    <div class="period">1400 - 1600</div>
+                    <h3>Renaissance</h3>
+                    <p>Humanisme, perspectief, klassieke idealen</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="manierisme.html" class="movement-card">
+                    <div class="movement-icon">🎭</div>
+                    <div class="period">1520 - 1620</div>
+                    <h3>Maniërisme</h3>
+                    <p>Gedistendeerde vormen, elegantie, complexiteit</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="barok.html" class="movement-card">
+                    <div class="movement-icon">🎪</div>
+                    <div class="period">1600 - 1750</div>
+                    <h3>Barok</h3>
+                    <p>Drama, beweging, emotionele intensiteit</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="neoclassicisme.html" class="movement-card">
+                    <div class="movement-icon">⚱️</div>
+                    <div class="period">1750 - 1850</div>
+                    <h3>Neoclassicisme</h3>
+                    <p>Orde, rationaliteit, klassieke vormen</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="romanticisme.html" class="movement-card">
+                    <div class="movement-icon">🌊</div>
+                    <div class="period">1780 - 1850</div>
+                    <h3>Romantiek</h3>
+                    <p>Emotie, natuur, individualisme</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="realisme.html" class="movement-card">
+                    <div class="movement-icon">🌾</div>
+                    <div class="period">1840 - 1880</div>
+                    <h3>Realisme</h3>
+                    <p>Dagelijkse werkelijkheid, sociale kritiek</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="impressionisme.html" class="movement-card">
+                    <div class="movement-icon">☀️</div>
+                    <div class="period">1860 - 1890</div>
+                    <h3>Impressionisme</h3>
+                    <p>Licht, kleur, momentopnames</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="postimpressionisme.html" class="movement-card">
+                    <div class="movement-icon">🌻</div>
+                    <div class="period">1880 - 1900</div>
+                    <h3>Post-Impressionisme</h3>
+                    <p>Structuur, symboliek, persoonlijke expressie</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="artnouveau.html" class="movement-card">
+                    <div class="movement-icon">🌿</div>
+                    <div class="period">1890 - 1910</div>
+                    <h3>Art Nouveau</h3>
+                    <p>Organische vormen, decoratieve kunst</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="expressionisme.html" class="movement-card">
+                    <div class="movement-icon">😱</div>
+                    <div class="period">1905 - 1930</div>
+                    <h3>Expressionisme</h3>
+                    <p>Emotionele intensiteit, vervorming</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="kubisme.html" class="movement-card">
+                    <div class="movement-icon">🔲</div>
+                    <div class="period">1907 - 1914</div>
+                    <h3>Kubisme</h3>
+                    <p>Fragmentatie, meerdere perspectieven</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="dadaisme.html" class="movement-card">
+                    <div class="movement-icon">🎲</div>
+                    <div class="period">1916 - 1924</div>
+                    <h3>Dadaïsme</h3>
+                    <p>Anti-kunst, absurditeit, toeval</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="destijl.html" class="movement-card">
+                    <div class="movement-icon">⬜</div>
+                    <div class="period">1917 - 1931</div>
+                    <h3>De Stijl</h3>
+                    <p>Pure abstractie, primaire kleuren</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="surrealisme.html" class="movement-card">
+                    <div class="movement-icon">🦋</div>
+                    <div class="period">1924 - 1966</div>
+                    <h3>Surrealisme</h3>
+                    <p>Droomwereld, onderbewuste, automatisch schrijven</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="abstract.html" class="movement-card">
+                    <div class="movement-icon">🔥</div>
+                    <div class="period">1940 - 1960</div>
+                    <h3>Abstract Expressionisme</h3>
+                    <p>Actie schilderen, Color Field, automatism</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="popart.html" class="movement-card">
+                    <div class="movement-icon">🍿</div>
+                    <div class="period">1955 - 1970</div>
+                    <h3>Pop Art</h3>
+                    <p>Massacultuur, reclame, ironie</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="postmodernisme.html" class="movement-card">
+                    <div class="movement-icon">🌀</div>
+                    <div class="period">1970 - 2000</div>
+                    <h3>Postmodernisme</h3>
+                    <p>Pastiche, simulacrum, pluralisme</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 17 Stromingen Compleet | 170+ Kunstwerken</p>
+    </footer>
+
+    <script>
+        // Simple menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>

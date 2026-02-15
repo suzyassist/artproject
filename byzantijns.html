@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byzantijnse Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #f8f4e8 0%, #fff9e6 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #4B0082;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #4B0082;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f0e6fa;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+    </style>
+</head>
+<body>
+    <header><h1>☦️ Byzantijnse Kunst</h1><p class="subtitle">330-1453 · Heilige Schoonheid en Hemelse Glorie</p></header>
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header"><h3>🎨 Kunststromingen</h3><button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button></div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-link active">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+    <div id="overlay" class="nav-overlay"></div>
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <nav class="top-nav">
+        <a href="index.html" class="nav-prev">← 🏠 Home</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="romaans.html" class="nav-next">Romaanse Kunst 🏰 →</a>
+    </nav>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Hagia Sophia</h2>
+                <p>De ultieme expressie van Byzantijnse architectuur en spiritualiteit</p>
+                <img src="images/byzantijns/01_hagiasophia.jpg" alt="Hagia Sophia">
+                <p><em>Constantinopel (Istanbul), 537 · Architecten: Anthemius van Tralles en Isidorus van Milete</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT (330-1453)</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Constantinopel als nieuw Rome:</strong> Keizer Constantijn verplaatst de hoofdstad naar het oosten (330)</li>
+                    <li><strong>Oost-Romeinse Rijk:</strong> Overleeft de val van Rome (476), beschermt de klassieke erfenis</li>
+                    <li><strong>Keizerlijke absolutisme:</strong> De keizer is Gods vertegenwoordiger op aarde</li>
+                    <li><strong>Iconoclasme (726-843):</strong> Religieuze oorlogen over beelden - voorstellingen van Christus worden verboden</li>
+                    <li><strong>Val van Constantinopel (1453):</strong> Ottomanen veroveren de stad, einde van het rijk</li>
+                </ul>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Liturgische poëzie:</strong> Hymnen van Romanos de Melode - religieuze verzen voor de liturgie</li>
+                    <li><strong>Historiografie:</strong> Procopius' "Geheime Geschiedenis" - kritisch verslag van Justinianus' hof</li>
+                    <li><strong>Mystieke theologie:</strong> Pseudo-Dionysius - het goddelijke is onkenbaar en onuitspreekbaar</li>
+                    <li><strong>Epische poëzie:</strong> Digenis Akritas - de grensbewaker tussen Byzantijnse en Arabische werelden</li>
+                </ul>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Mystieke ervaring:</strong> Kunst als venster naar het goddelijke - mozaïeken creëren transcendentie</li>
+                    <li><strong>Angst en troost:</strong> Het Oosterse christendom biedt zekerheid in onzekere tijden</li>
+                    <li><strong>Collectieve identiteit:</strong> Byzantijnen zien zichzelf als de enige ware Romeinen</li>
+                    <li><strong>Asceticisme:</strong> Het lichaam is minderwaardig aan de ziel - kunst verheerlijkt het spirituele</li>
+                </ul>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Overname van Rome:</strong> Behoud van Romeinse technologie en wetenschap</li>
+                    <li><strong>Pest van Justinianus (541-549):</strong> Doodt 25-50% van de bevolking, verzwakt het rijk</li>
+                    <li><strong>Islamitische veroveringen (7e eeuw):</strong> Verlies van Syrië, Egypte, Noord-Afrika</li>
+                    <li><strong>Macedonische Renaissance (9e-11e eeuw):</strong> Herleving na de iconoclastische crisis</li>
+                    <li><strong>Kruistochten:</strong> Latijnse kruisvaarders plunderen Constantinopel (1204)</li>
+                </ul>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Neoplatonisme:</strong> Alles stroomt uit het Ene - kunst weerspiegelt hogere werkelijkheden</li>
+                    <li><strong>Christelijke theologie:</strong> Debatten over de natuur van Christus bepalen religieuze kunst</li>
+                    <li><strong>Negatieve theologie:</strong> God kan niet worden beschreven, alleen worden ervaren</li>
+                    <li><strong>Hesychasme:</strong> Stil gebed en contemplatie als weg naar vereniging met God</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🖼️ Voorstelling</h4>
+                    <p><strong>Frontaliteit:</strong> Figuren staan recht naar de kijker, ogen groot en starend. Symbolische presentatie.</p>
+                </div>
+                <div class="style-item">
+                    <h4>✨ Materiaal</h4>
+                    <p><strong>Mozaïeken:</strong> Gouden tesserae creëren schitterend licht. Goud = goddelijk licht.</p>
+                </div>
+                <div class="style-item">
+                    <h4>👁️ Ogen</h4>
+                    <p><strong>Grote ogen:</strong> Oversized, expressieve ogen die de kijker aankijken. De ziel spreekt.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🏛️ Architectuur</h4>
+                    <p><strong>Koepels op pendentieven:</strong> Centrale kerken met zwevende koepels. Licht valt van boven.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🎨 Kleur</h4>
+                    <p><strong>Blauw en goud:</strong> Diep blauw voor de hemel, goud voor het goddelijke. Symbolisch, niet natuurgetrouw.</p>
+                </div>
+                <div class="style-item">
+                    <h4>📐 Compositie</h4>
+                    <p><strong>Hierarchische schaal:</strong> Belangrijkste figuren zijn groter. Christus > Maria > heiligen.</p>
+                </div>
+            </div>
+
+            <h3>🎯 Centrale Thema's</h3>
+            <ul style="margin:1rem 0;padding-left:1.5rem">
+                <li><strong>Deïesis (Voorbede):</strong> Christus tronend, Maria en Johannes pleiten voor de mensheid</li>
+                <li><strong>Pantocrator (Almachtige):</strong> Christus als rechter van het universum</li>
+                <li><strong>Theotokos (Moeder Gods):</strong> Maria met kind - de verbinding tussen mens en goddelijk</li>
+                <li><strong>Heiligenportretten:</strong> Starende figuren met halos en martelaarsattributen</li>
+                <li><strong>Liturgische scènes:</strong> Communie, processies, keizers die offeren</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEEST INVLOEDRIJKE WERKEN</h2>
+
+            <!-- Work 1: Hagia Sophia -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Hagia Sophia (Heilige Wijsheid) (537)</h3>
+                    <p style="color:#666;font-style:italic">Constantinopel (Istanbul), Turkije · Architecten: Anthemius van Tralles en Isidorus van Milete</p>
+                </div>
+                <img src="images/byzantijns/01_hagiasophia.jpg" loading="lazy" alt="Hagia Sophia">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebouwd door keizer Justinianus na de Nika-oproer. Voor bijna 1000 jaar de grootste kathedraal ter wereld. De koepel was een technisch wonder - 31 meter diameter.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Pendentief-constructie:</strong> Overgang van vierkante basis naar ronde koepel via driehoekige segmenten. Revolutionair en beïnvloedde alle latere moskeeën.</p>
+                        <p><strong>Licht:</strong> 40 ramen creëren een "lichtkrans". De koepel lijkt te zweven op licht - goddelijke ondersteuning.</p>
+                        <p><strong>Mozaïeken:</strong> Gouden tesserae die flikkeren in het kaarslicht. De kijker wordt omringd door het goddelijke.</p>
+                        <p><strong>Monumentaliteit:</strong> 70x75 meter, 55 meter hoog. Justinianus: "Salomon, ik heb je overtroffen."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: San Vitale -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. San Vitale Basiliek (547)</h3>
+                    <p style="color:#666;font-style:italic">Ravenna, Italië · Byzantijns exarchaat</p>
+                </div>
+                <img src="images/byzantijns/02_sanvitale.jpg" loading="lazy" alt="San Vitale">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebouwd tijdens de Gotische Oorlogen. De mozaïeken tonen Justinianus en Theodora als Gods plaatsvervangers op aarde.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Justinianus-paneel:</strong> De keizer staat centraal met soldaten en priesters. Hij houdt het brood van de eucharistie - keizerlijke en religieuze macht verenigd.</p>
+                        <p><strong>Theodora-paneel:</strong> De keizerin staat spiegelbeeldig tegenover haar man, even groot en majestueus. Vrouwelijke macht in een mannelijke wereld.</p>
+                        <p><strong>Goud en purper:</strong> Gouden achtergronden, diep paarse kleding. Kleuren zijn politiek en religieus.</p>
+                        <p><strong>Oriëntaalse luxe:</strong> Hangende sluiers, zware parels, koopmanszijde - luxe uit Constantinopel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Christus Pantocrator -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Christus Pantocrator (6e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Klooster van St. Catharina, Sinai, Egypte · Encaustiek op hout · 84 x 45,5 cm</p>
+                </div>
+                <img src="images/byzantijns/03_pantocrator.jpg" loading="lazy" alt="Christus Pantocrator">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de weinige overgebleven iconen uit de vroege Byzantijnse periode, bewaard in het geïsoleerde klooster op de berg Sinai.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Twee gezichten:</strong> Asymmetrisch - één kant streng en rechtvaardig, andere medelevend en menselijk. De dubbele natuur van Christus.</p>
+                        <p><strong>Encaustiek:</strong> Pigment met hete was, glanzend en levensecht. Duur en moeilijk, alleen voor belangrijkste werken.</p>
+                        <p><strong>De blik:</strong> De ogen volgen de kijker - een levende aanwezigheid. Christus kijkt in je ziel.</p>
+                        <p><strong>De zegen:</strong> Rechterhand in zegeningshouding - Christus als priester en koning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Vladimirskaja -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Onze-Lieve-Vrouw van Vladimir (12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Tretyakov Galerie, Moskou · Icoon op hout · 104 x 69 cm</p>
+                </div>
+                <img src="images/byzantijns/04_vladimir.jpg" loading="lazy" alt="Vladimir Icon">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de meest vereerde iconen in de Russisch-orthodoxe kerk. 800 jaar beschermd tegen plunderaars en branden.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Hodegetria:</strong> Maria wijst naar het kind - zij toont de weg naar Christus. Het meest voorkomende icoon-type.</p>
+                        <p><strong>Tederheid:</strong> Maria toont menselijke tederheid. Haar wang raakt het kind, haar blik is zacht. De menselijke kant van het goddelijke.</p>
+                        <p><strong>Patinas:</strong> Door eeuwen van aanbidding een diepe, warme gloed. De "patinas" van devotie.</p>
+                        <p><strong>Byzantijns erfgoed:</strong> Gouden achtergrond, hiërarchische schaal, grote ogen - een venster naar Constantinopel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Daphni Pantocrator -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Christus Pantocrator (11e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Klooster van Daphni, Griekenland · Mozaïek · Koepel</p>
+                </div>
+                <img src="images/byzantijns/05_daphni.jpg" loading="lazy" alt="Daphni Pantocrator">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De kerk van Daphni is een meesterwerk van de Macedonische Renaissance - de heropleving na het iconoclasme.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Koepelcompositie:</strong> Christus in de koepel, omringd door engelen. De kijker kijkt omhoog - de hemel opent zich.</p>
+                        <p><strong>Gouden achtergrond:</strong> Geen lucht, geen landschap - alleen goud. Het koninkrijk der hemelen.</p>
+                        <p><strong>Sereniteit:</strong> Kalm en streng tegelijk. Goddelijke majesteit - de "Byzantijnse blik" staring into eternity.</p>
+                        <p><strong>Technische perfectie:</strong> Kleine, fijne tesserae, subtiele overgangen. Werk van meesters.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Rossano Gospels -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Rossano Evangeliarium (6e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Kathedraal van Rossano, Italië · Purper perkament met zilver en goud · 300 pagina's</p>
+                </div>
+                <img src="images/byzantijns/06_rossano.jpg" loading="lazy" alt="Rossano Gospels">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het oudste evangeliarium met miniaturen, gemaakt voor een Byzantijns exarch in Italië. Purper (duurder dan goud) en gouden letters.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Purper en goud:</strong> Alleen de keizer mocht purper dragen. Deze bijbel is een staatsieportret van het Woord.</p>
+                        <p><strong>Illustraties:</strong> Geboorte van Christus, wonderen, passie. Figuren klassiek maar met Byzantijnse ogen.</p>
+                        <p><strong>Architectonische frames:</strong> Zuilen, frontons - Byzantium als erfgenaam van Rome.</p>
+                        <p><strong>Zilveren schrift:</strong> Zilver op purper - alleen de rijkste manuscripten. Adembenemend mooi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: David Plates -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. David Schalen (7e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Metropolitan Museum of Art, New York · Zilver met verguldsel</p>
+                </div>
+                <img src="images/byzantijns/07_davidplates.jpg" loading="lazy" alt="David Plates">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Negen zilveren schalen met scènes uit het leven van David, gemaakt voor een Byzantijns patriciër.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Narratieve cyclus:</strong> David en Goliath, David en Saul, David als koning. Byzantijnse "stripverhalen" op zilver.</p>
+                        <p><strong>Reliëftechniek:</strong> Figuren staan uit het zilver op, gedeeltelijk verguld. Diepte en beweging in een plat medium.</p>
+                        <p><strong>Oud-Testamentisch:</strong> David als voorafschaduwing van Christus - goede herder, koning, psalmist.</p>
+                        <p><strong>Classicisme:</strong> Gespierd, beweeglijk, natuurlijk. Vroege Byzantijnse kunst dicht bij Rome.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Chludov Psalter -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Chludov Psalter (9e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Historisch Museum, Moskou · Perkament · 169 bladzijden</p>
+                </div>
+                <img src="images/byzantijns/08_chludov.jpg" loading="lazy" alt="Chludov Psalter">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gemaakt na het iconoclasme, waarschijnlijk in het klooster van St. Theodosia in Constantinopel. Uniek vanwege de vele miniaturen die de psalmen illustreren.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Anti-iconoclastisch:</strong> Sommige miniaturen tonen de overwinning van de iconodulen (voorstanders van beelden) over de iconoclasten.</p>
+                        <p><strong>Illustratiestijl:</strong> Snelle, expressieve tekeningen - niet zo gepolijst als andere Byzantijnse kunst. Persoonlijker en levendiger.</p>
+                        <p><strong>Christologische interpretatie:</strong> Oude-Testamentische scènes worden als profetieën van Christus geïllustreerd.</p>
+                        <p><strong>Schitterende kleuren:</strong> Diep blauw, goud, cinnaberrood - de rijkdom van het Byzantijnse hof.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Harbaville Triptych -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Harbaville Triptych (10e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Louvre, Parijs · Ivoor · 28 x 24,2 cm (gesloten)</p>
+                </div>
+                <img src="images/byzantijns/09_harbaville.jpg" loading="lazy" alt="Harbaville Triptych">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een draagbaar privé-altaar, waarschijnlijk gemaakt voor een welgestelde patriciër. Het toont de Deësis (voorbede) en heiligen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Triptych-vorm:</strong> Twee vleugels die openen om een centrale scène te onthullen. Privé-devotie voor thuis of op reis.</p>
+                        <p><strong>Deësis:</strong> Centraal Christus, links Maria, rechts Johannes de Doper. Zij pleiten voor de mensheid bij de rechter.</p>
+                        <p><strong>Ivoor snijwerk:</strong> Extreem fijne details in ivoor - de krullen van het haar, de plooien van de kleding. Meesterlijk vakmanschap.</p>
+                        <p><strong>Intimiteit:</strong> Kleine schaal voor persoonlijk gebed. De heiligen zijn dichtbij, toegankelijk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Paris Psalter -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Parijse Psalter (10e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Bibliothèque Nationale, Parijs · Perkament · 449 pagina's</p>
+                </div>
+                <img src="images/byzantijns/10_parispsalter.jpg" loading="lazy" alt="Paris Psalter">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Waarschijnlijk gemaakt voor keizer Basiliscus II. Een van de mooiste Byzantijnse manuscripten, met 14 grote miniaturen die de psalmen illustreren.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Koning David:</strong> De psalmen worden geïllustreerd met scènes uit Davids leven, maar David is een Byzantijnse keizer - gouden kroon, purpere mantel.</p>
+                        <p><strong>Klassieke invloed:</strong> De miniaturen tonen meer naturalisme dan andere Byzantijnse kunst - dit is de "Macedonische Renaissance" die terugkeert naar klassieke idealen.</p>
+                        <p><strong>Landschappen:</strong> Zachte heuvels, architectuur, bomen - een verfijnde wereld die de psalmen omgeeft.</p>
+                        <p><strong>Keizerlijke luxe:</strong> Goud, purper, ultramarijn blauw - dit manuscript kostte meer dan een paleis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: HEMEL OP AARDE</h2>
+            <div class="timeline-box">
+                <p>De Byzantijnse kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat kunst devotional is:</strong> Geen kunst om naar te kijken, maar om doorheen te kijken - naar het goddelijke</li>
+                    <li><strong>Dat licht belangrijker is dan vorm:</strong> Gouden achtergronden, gloeiende mozaïeken - het goddelijke is licht</li>
+                    <li><strong>Dat de keizer heilig is:</strong> Staat en kerk zijn één, de keizer is Gods plaatsvervanger</li>
+                    <li><strong>Dat traditie heiliger is dan vernieuwing:</strong> 1000 jaar dezelfde stijl - continuïteit als waarde</li>
+                    <li><strong>Dat de ogen de ziel zijn:</strong> De starende blik die de kijker doorboort</li>
+                </ul>
+                <p>Byzantium was het oosten dat Rome overleefde, en zijn kunst bewaarde de klassieke erfenis voor de wereld.</p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-prev">← 🏠 Home</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="romaans.html" class="nav-next">Romaanse Kunst 🏰 →</a>
+    </nav>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 20 Kunststromingen</p>
+    </footer>
+</body>
+</html>

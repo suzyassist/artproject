@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="Page Not Found Visit ago.ca" />
+<meta name="abstract" content="With a collection of more than 90,000 works of art, the Art Gallery of Ontario is among the most distinguished art museums in North America." />
+<meta name="keywords" content="art gallery, museum, toronto, ontario" />
+<link rel="canonical" href="https://ago.ca/sites/default/files/styles/collection_highlight/public/2020-11/Floor-Burger.jpg" />
+<meta property="og:site_name" content="Art Gallery of Ontario" />
+<meta property="og:street_address" content="317 Dundas Street West" />
+<meta property="og:locality" content="Toronto" />
+<meta property="og:region" content="Ontario" />
+<meta property="og:postal_code" content="M5T 1G4" />
+<meta property="og:country_name" content="Canada" />
+<meta property="og:phone_number" content="4169796648" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/de_theme/img/favicons/favicon.ico" type="image/vnd.microsoft.icon" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};a2a_config.icon_color = "transparent";</script>
+
+    <title>404 Page | Art Gallery of Ontario</title>
+   <!-- knockout via hoefler -->
+    <!--<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7033872/6247772/css/fonts.css" /> -->
+   <!-- material icons via google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- icons via fontawesome - new kit -->
+    <script src="https://kit.fontawesome.com/6897677eb2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" media="all" href="/libraries/animateCSS/animate.css-master/animate.min.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/libraries/slick-carousel/slick/slick.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/slick/css/layout/slick.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/core/components/progress.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/core/components/ajax-progress.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/align.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/container-inline.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/clearfix.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/hidden.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/system/components/js.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/blazy/css/blazy.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/blazy/css/components/blazy.loading.css?tahm4n" />
+<link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css" />
+<link rel="stylesheet" media="all" href="//unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/views/views.module.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/addtoany/css/addtoany.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/custom/animations/css/theme/style.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/libraries/colorbox/colorbox.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/responsive_menu_breakpoint.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/libraries/mmenu/dist/mmenu.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/responsive_menu/css/responsive_menu.css?tahm4n" />
+<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="/modules/contrib/tb_megamenu/css/tb_megamenu.bootstrap.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/tb_megamenu/css/tb_megamenu.base.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/tb_megamenu/css/tb_megamenu.default.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/tb_megamenu/css/tb_megamenu.compatibility.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/modules/contrib/tb_megamenu/css/styles/black.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/core/assets/vendor/normalize-css/normalize.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/stable/css/core/normalize-fixes.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/action-links.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/breadcrumb.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/button.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/collapse-processed.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/container-inline.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/details.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/exposed-filters.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/field.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/form.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/icons.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/inline-form.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/item-list.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/link.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/links.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/more-link.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/pager.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/tabledrag.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/tableselect.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/tablesort.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/textarea.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/ui-dialog.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/messages.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/node.css?tahm4n" />
+<link rel="stylesheet" media="all" href="/themes/contrib/classy/css/components/progress.css?tahm4n" />
+<link rel="stylesheet" media="all" href="https://unpkg.com/swiper@11.0.6/swiper-bundle.min.css" />
+<link rel="stylesheet" media="all" href="/themes/custom/de_theme/dist/css/de_theme.css?tahm4n" />
+
+   <!-- <script src="https://s7.addthis.com/js/300/addthis_widget.js" type="text/javascript" async="async"></script> -->
+    <!-- nimbus via typekit -->
+    <script>
+    (function(d) {
+    var config = {
+      kitId: 'eux8ngg',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+    </script>
+<!--
+    <script src="https://use.typekit.net/eux8ngg.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+
+    <!-- Simple State Manager 3.x polyfills -->
+    <!--[if IE 8]>
+      <script src="/themes/de_theme/dist/js/vendor/addEventListener.polyfill.min.js"></script>
+      <script src="/themes/de_theme/dist/js/vendor/bind.polyfill.min.js"></script>
+      <script src="/themes/de_theme/dist/js/vendor/media.match.min.js"></script>
+    <![endif]-->
+
+
+    
+    <!--[if IE 9]>
+      <script src="/themes/de_theme/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+     <style>
+       .wow{
+         visibility: visible !important;
+                 }
+     </style>
+   <![endif]-->
+   <!--[if IE 9]>
+     <style>
+       .wow{
+         visibility: visible !important;
+                 }
+     </style>
+   <![endif]-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/themes/custom/de_theme/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/themes/custom/de_theme/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/themes/custom/de_theme/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/themes/custom/de_theme/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/themes/custom/de_theme/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/themes/custom/de_theme/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/themes/custom/de_theme/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/themes/custom/de_theme/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/de_theme/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/themes/custom/de_theme/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/de_theme/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/themes/custom/de_theme/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/de_theme/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" href="/themes/custom/de_theme/img/favicons/favicon.ico" />
+    <link rel="manifest" href="/themes/custom/de_theme/img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/themes/custom/de_theme/img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N9KPWL3');</script>
+    <!-- End Google Tag Manager -->
+
+
+  </head>
+  <body class="page-nid-26591 layout-no-sidebars-display anonymous path-sites node--type-page body-loading">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9KPWL3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div  class="layout-wrapper">
+  <header id="header" class="header">
+    <div class="layout-header">
+      <div class="header__wrapper">
+        <div class="layout-container">
+          <div class="header__inner-wrapper">
+            <div class="header__branding">
+                <div class="region region--branding" id="branding">
+    <div class="region-inner">
+      <div class="layout-container">
+        <div id="block-sitebranding" class="block block-system block-system-branding-block">
+  
+    
+        <a href="/" rel="home" class="site-logo">
+      <img src="/themes/custom/de_theme/logo.svg" alt="Home" />
+    </a>
+        <div class="site-name">
+      <a href="/" rel="home">Art Gallery of Ontario</a>
+    </div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+            </div>
+            <div class="header__navigations">
+                  <div class="region region--masthead-secondary clearfix" id="masthead-secondary">
+    <div class="region-inner clearfix">
+      <nav role="navigation" aria-labelledby="block-toprightheadermenu-menu" id="block-toprightheadermenu" class="block block-menu navigation menu--top-right-header-menu">
+            
+  <h2 class="visually-hidden" id="block-toprightheadermenu-menu">Top Right Header Menu</h2>
+  
+
+        
+              <ul block="block-toprightheadermenu" class="menu">
+                                   <li>
+        <a href="https://visit.ago.ca" class="ago-btn ago-btn--notepaper">Tickets</a>
+              </li>
+                            <li class="menu-item">
+        <a href="/events/browse" data-drupal-link-system-path="events/browse">Events Calendar</a>
+              </li>
+                            <li class="menu-item">
+        <a href="https://visit.ago.ca/account/login">Sign in</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+                  <div class="region region--navigation-primary clearfix" id="navigation-primary">
+    <div class="navigation-primary__wrapper">
+      <div id="block-agomobilemenutoggle" class="block block-ago-menu block-ago-mobile-menu-toggle">
+  
+    
+      <div class="ago-mobile-right-block flex items-center gap-6">
+  <a class="ago-btn ago-btn--notepaper mobile-menu-tickets"
+     href="https://visit.ago.ca">
+    Tickets
+  </a>
+  <div class="ago-search-block-form block block-ago-search ago-mobile-right-block" data-drupal-selector="ago-search-block-form">
+  
+    
+      <form action="/sites/default/files/styles/collection_highlight/public/2020-11/Floor-Burger.jpg" method="post" id="ago-search-block-form" accept-charset="UTF-8">
+  <div id="edit-expand-search" class="js-form-item form-item js-form-type-item form-type-item js-form-item-expand-search form-item-expand-search form-no-label">
+        <a href="/"><span class="search-btn" aria-hidden="true"></span></a>
+        </div>
+<div class="search-wrapper"><div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">Search</label>
+        <input class=" ago-search-keys form-search" data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="60" maxlength="128" placeholder="Search" />
+
+        </div>
+<a href="/" class="search-collapse"><span class="close-search-btn" aria-hidden="true"></span></a></div><input autocomplete="off" data-drupal-selector="form-glvbhhv4i2aaqlg1ktp04ijxdet1yrn3e2e94z3okc4" type="hidden" name="form_build_id" value="form-glVBHHv4i2aAqLG1kTp04ijXdeT1Yrn3E2E94z3OKc4" />
+<input data-drupal-selector="edit-ago-search-block-form" type="hidden" name="form_id" value="ago_search_block_form" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input class="element-invisible button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit" value="Search" />
+</div>
+
+</form>
+
+    <div class="ago-close-search-btn"></div>
+  </div>
+
+  <!-- <div class="mobile-menu-toggle">
+    <a href="#mobile-off-canvas">
+      <span class="icon"></span>
+      <span class="label hidden">Menu</span>
+    </a>
+  </div> -->
+</div>
+
+  </div>
+<div id="block-mainnavigation-3" class="block block-tb-megamenu block-tb-megamenu-menu-blockmain">
+  
+    
+      <div  class="tb-megamenu tb-megamenu-main style-black" role="navigation" aria-label="Main navigation">
+      <button aria-label="Open main menu" data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar tb-megamenu-button" type="button">
+      <i class="fa fa-reorder"></i>
+    </button>
+    <div class="nav-collapse ">
+    <ul  class="tb-megamenu-nav nav level-0 items-5" role="list" >
+            <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:6a2e3904-13ec-422f-8588-477e50bd1c8f" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="1" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-label="Open main submenu" aria-expanded="false" tabindex="0">
+          Visit
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-1 items-6" role="list">
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:60185681-1312-4e2f-aaab-bd6dec86ac17" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="https://visit.ago.ca" >
+          Tickets
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:0bf316d4-a488-4cca-a8f8-144daa58f448" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/visit/location-hours-admission" >
+          Location, Hours and Admission
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:b70883ca-f38c-43c7-804c-d06b2137f3a4" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/visit/plan-ahead" >
+          Plan Ahead
+          </a>
+  
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:0f80899a-c488-4180-a248-6854c0f20642" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Groups
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-3" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:34e47734-b8e1-476f-9408-8f52656eedee" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/visit/group-visits" >
+          Group Visits
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:afba2790-c5fa-4622-a963-85a0ebf6f317" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/visit/school-visits" >
+          School Visits
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:36e4f80a-7345-42c9-98b4-90177f921572" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/visit/host-your-event" >
+          Host Your Event
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:d1be0b44-64bd-4e55-a668-5447ce1b2e26" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Dine
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-3" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:3434d4f7-2795-45e5-869c-73c644cdf381" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/visit/dine/bistro" >
+          Bistro
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:1f6929b2-2959-4c75-8ee9-7e9bc9192c33" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/visit/dine/espresso-bar" >
+          Espresso Bar
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:21ebcf5b-4a66-413e-a7e4-13ca9100b77f" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/visit/dine/norma-ridley-members-lounge" >
+          Norma Ridley Members’ Lounge
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:d23c4ee2-2b33-4b0a-8443-c4db39dda057" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Shopping
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-4">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-2" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:dc02c72b-4fde-4cbb-9a75-e7b10ea7e814" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="https://shop.ago.ca" >
+          Shop
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:d960f6c8-8b9b-4904-9886-b4637502447c" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="https://rental.ago.ca" >
+          Art Rental &amp; Sales
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:1eddfa78-2bfd-444f-8342-648407cf2746" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="1" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-label="Open main submenu" aria-expanded="false" tabindex="0">
+          Art &amp; Artists
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-1 items-5" role="list">
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:fb9b0f44-ff26-4511-bb40-c7882cce3988" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/exhibitions" >
+          What&#039;s On
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:c91f8b21-e564-45bd-a416-a8279bed998e" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/exhibitions#whats-next" >
+          What&#039;s Next
+          </a>
+  
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:f326746c-212e-4fd5-a74d-0f648b605808" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Collections
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-6">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-4" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:0a266a1d-03ed-4128-979e-50dd82359d30" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/collection" >
+          Collections
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:348eb92e-6201-4db7-afc7-edfca2f8cfe0" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/art-and-artists/thomson-collection" >
+          The Thomson Collection
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:4c2a5ad6-1641-41a7-b3ea-692fbeb81b05" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/art-and-artists/collections#collections-in-focus" >
+          Collections in Focus
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:9b99bc5f-a1ab-429c-b4b6-ff365c89712e" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/research/conservation" >
+          Conservation
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:a0117f77-98fa-4307-8852-f786d303e4dc" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/events-and-learning/emerging-artists-program" >
+          AGO X RBC Emerging Artists Program
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:267f7705-e71f-4e8c-83f4-0f4824ee707e" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/exhibitions/archive?Year=All" >
+          Past Exhibitions
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:6729001a-fa3e-4db7-a1d5-6c4fa5bca61f" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="1" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-label="Open main submenu" aria-expanded="false" tabindex="0">
+          Events &amp; Learning
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-1 items-7" role="list">
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:ed7ed2a5-382e-4435-ad56-7bdb49a0804e" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/events/browse" >
+          Events Calendar
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:d5a0e77e-cbca-4c69-b745-e161dd25cf7b" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/membership/member-events" >
+          Member Events
+          </a>
+  
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:4273d50a-855d-48f1-9a15-d4a0e47a060f" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Learn
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-8">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-2" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:b99f4c25-beb0-4bd9-8c26-90eae1f80fea" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/events-and-learning/learn/virtual-school-program" >
+          Virtual School Programs
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:c2834029-de70-494e-9081-803e36ed1ff3" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/events-and-learning/learn/learn-and-make" >
+          Learn &amp; Make
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:5e3fdd61-f804-44da-b313-c841a1c8f8dd" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Programs
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-3" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:def74da0-ffba-491a-ab39-56714e149a29" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/events-and-learning/programs/youth" >
+          Youth
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:01558290-87a4-4cd9-b7e6-160174b6f8ee" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/events-and-learning/programs/family" >
+          Family
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:874196a6-519a-47a6-9dde-b43c088d837c" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/events-and-learning/programs/schools" >
+          Schools
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="views_view:views.agoc_courses_view.courses_grid" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/learn/courses" >
+          Adult Courses
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="views_view:views.agoc_courses_view.courses_grid_children" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/learn/courses/children-youth" >
+          Children &amp; Youth Courses
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:3fd46691-0c47-4c56-8dbb-af81b306566a" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/events-and-learning/learn/summer-art-camp" >
+          Summer Art Camp
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:b4b4b08f-51e0-4424-89a5-4e6d0945172a" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="1" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-label="Open main submenu" aria-expanded="false" tabindex="0">
+          Membership
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-1 items-5" role="list">
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:c8ef3f8e-7295-435d-bc22-55937128c6f1" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/membership/become-a-member" >
+          Become a Member
+          </a>
+  
+</li>
+
+            <li  class="tb-megamenu-item level-2 mega dropdown-submenu" data-id="menu_link_content:128a37ca-1f78-4928-aa77-7816f0ff4a23" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-expanded="false" tabindex="0">
+          Patron Programs
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-2 items-2" role="list">
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:82172f20-799a-4cdf-a508-ba7dd5176154" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/membership/curators-circle" >
+          Curators’ Circle
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-3 mega" data-id="menu_link_content:aef0d364-fe80-49cd-bf5a-b4ad18f020f1" data-level="3" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="3" >
+      <a href="/support/womens-art-initiative" >
+          Women’s Art Initiative
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:991d148c-42f9-41b9-99ef-cb51279a2701" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/membership/annual-pass" >
+          Annual Pass
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:ea35488a-4a25-4dc3-9662-d9c62dcb09c0" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/membership/corporate-membership" >
+          Corporate Membership
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:c2f5ceaf-2e27-40cf-888b-d778e62c0b9d" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="https://visit.ago.ca/account/login" >
+          Sign In
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+            <li  class="tb-megamenu-item level-1 mega dropdown" data-id="menu_link_content:f0e55795-84ad-458a-b902-f361a89753c3" data-level="1" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="1" >
+      <span class="dropdown-toggle tb-megamenu-no-link" aria-label="Open main submenu" aria-expanded="false" tabindex="0">
+          Donate
+          <span class="caret"></span>
+          </span>
+  <div  class="tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child" data-class="" data-width="" role="list">
+  <div class="mega-dropdown-inner">
+          <div  class="tb-megamenu-row row-fluid">
+      <div  class="tb-megamenu-column span12 mega-col-nav" data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10">
+  <div class="tb-megamenu-column-inner mega-inner clearfix">
+               <ul  class="tb-megamenu-subnav mega-nav level-1 items-5" role="list">
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:7d3dddc1-8722-4696-b9ff-32aa48f4b80e" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/donate/give" >
+          Donate
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:dd0324be-510a-46c7-a924-0d587967f2d2" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/donate/legacy-giving" >
+          Legacy Giving
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:bf1040eb-9cf3-4ca1-b6ce-ae52f30725b3" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/support/corporate-partnerships" >
+          Corporate Partnerships
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:eb8e1f97-566b-4b41-9674-2806e9439b2f" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/donate/volunteering" >
+          Volunteering
+          </a>
+  
+</li>
+
+        <li  class="tb-megamenu-item level-2 mega" data-id="menu_link_content:83c3fcaf-8794-4acd-988f-0f657e0c12d9" data-level="2" data-type="menu_item" data-class="" data-xicon="" data-caption="" data-alignsub="" data-group="0" data-hidewcol="0" data-hidesub="0" data-label="" aria-level="2" >
+      <a href="/art-bash" >
+          Art Bash
+          </a>
+  
+</li>
+
+  </ul>
+
+      </div>
+</div>
+
+  </div>
+
+      </div>
+</div>
+
+</li>
+
+  </ul>
+
+      </div>
+  </div>
+
+  </div>
+<div class="ago-search-block-form block block-ago-search ago-mobile-right-block" data-drupal-selector="ago-search-block-form-2" id="block-agosearchform">
+  
+    
+      <form block="block-agosearchform" action="/sites/default/files/styles/collection_highlight/public/2020-11/Floor-Burger.jpg" method="post" id="ago-search-block-form--2" accept-charset="UTF-8">
+  <div id="edit-expand-search--2" class="js-form-item form-item js-form-type-item form-type-item js-form-item-expand-search form-item-expand-search form-no-label">
+        <a href="/"><span class="search-btn" aria-hidden="true"></span></a>
+        </div>
+<div class="search-wrapper"><div class="js-form-item form-item js-form-type-search form-type-search js-form-item-keys form-item-keys form-no-label">
+      <label for="edit-keys--2" class="visually-hidden">Search</label>
+        <input class=" ago-search-keys form-search" data-drupal-selector="edit-keys" type="search" id="edit-keys--2" name="keys" value="" size="60" maxlength="128" placeholder="Search" />
+
+        </div>
+<a href="/" class="search-collapse"><span class="close-search-btn" aria-hidden="true"></span></a></div><input autocomplete="off" data-drupal-selector="form-wijh83pgfmrf-iarwxi9ygxdhs5hpbs7kgijs1ynugy" type="hidden" name="form_build_id" value="form-WiJH83pgFmRF_IaRwXI9YGXDhS5hPbS7kgIJs1ynugY" />
+<input data-drupal-selector="edit-ago-search-block-form-2" type="hidden" name="form_id" value="ago_search_block_form" />
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2"><input class="element-invisible button js-form-submit form-submit" data-drupal-selector="edit-submit" type="submit" id="edit-submit--2" value="Search" />
+</div>
+
+</form>
+
+    <div class="ago-close-search-btn"></div>
+  </div>
+
+    </div>
+  </div>
+
+            </div>
+          </div>
+          <div class="separator-line flex items-center">
+  <svg width="520" height="14" viewBox="0 0 520 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.5 6.81152V1.31152H519.5V7.31152H1.5" stroke="#F0F0F0"/>
+    <path d="M5.25731 13.3115L0.971595 7.31152H519.5V13.3115H5.25731Z" stroke="#F0F0F0"/>
+  </svg>
+  <svg width="696" height="12" viewBox="0 0 696 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0.811523H692.479L696 5.81152H0V0.811523Z" fill="#F0F0F0"/>
+    <path d="M0 6.81152H696V11.8115H0V6.81152Z" fill="#F0F0F0"/>
+  </svg>
+</div>
+        </div>
+      </div>
+              <div id="banner-wrapper" class="banner-wrapper no-bg" >
+              
+        </div>
+        <div id="dagstop_wrapper">  <div class="region region--dags-top clearfix">
+      <div class="views-element-container block block-views block-views-blockdags-top-reference-dags-top" id="block-views-block-dags-top-reference-dags-top">
+  
+    
+      <div block="block-views-block-dags-top-reference-dags-top"><div class="view view-dags-top-reference view-id-dags_top_reference view-display-id-dags_top js-view-dom-id-d72abae48be37a3b9f78b8099eb7c8ccc11db038c67528363c2590f19a6200cc">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-field-dags-reference-content-"><div class="field-content"></div></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+
+  </div>
+</div>
+    </div>
+  </header>
+
+  <div class="section-content">
+    
+
+    <div class="layout-container">
+
+        <main id="main" class="column">
+      <a id="main-content" tabindex="-1"></a>      <div class="layout-content">
+              <div class="region region--content clearfix" id="content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+  
+<article id = "404-page"  data-history-node-id="26591" about="/page-not-found-404" class="node node--type-page node--view-mode-full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>&nbsp;</p><h1 class="text-align-center">Page Not Found</h1><p>&nbsp;</p><p class="text-align-center"><a href="/">Visit ago.ca</a></p></div>
+      
+  </div>
+
+</article>
+
+
+
+
+  </div>
+
+      </div>    </main>
+
+
+      </div>
+    
+  </div>
+  <div class="section-dags">
+          </div>
+  <div>
+          <div id="middle-full-width" class="middle">
+          <div class="region region--middle-full-width clearfix">
+      <div class="views-element-container block block-views block-views-blockdags-top-reference-block-1" id="block-views-block-dags-top-reference-block-1">
+  
+    
+      <div block="block-views-block-dags-top-reference-block-1"><div class="block-views-blockdags-top-reference-dags-bottom view view-dags-top-reference view-id-dags_top_reference view-display-id-block_1 js-view-dom-id-49cbdc2314a3e5d6ae06b8c899257a90618c147e0795a71f6843ed8a991f0050">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-field-referenced-content"><div class="field-content"></div></div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+<div id="block-enewssubscribectaform" class="block block-block-content block-block-contentb3a52436-2859-4b05-a01e-eae671d2d666">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><!-- Begin Wordfly Signup Form -->
+<div id="wordfly_embed_signup">
+<label for="mce-EMAIL">Get in the know</label>
+<div class="emailcta-description">Be the first to find out about AGO exhibitions and events, get the behind-the-scenes scoop, and book tickets before your visit. <br />
+Sign up to get AGO news right to your inbox. You can unsubscribe at any time.</div>
+<form id="wordfly-embedded-subscribe-form" method="GET" action=https://pages.wordfly.com/artgalleryontario/pages/Subscribe/ target="_blank">
+<div id="wordfly_embed_signup_fields">
+  <input class="email" type="email" id="wordfly-email" name="email" placeholder="Your Email Address" required />
+  <button id="wordfly-embedded-subscribe" class="button">SUBSCRIBE</button>
+</div>
+</form>
+</div>
+<!-- End Wordfly Signup Form --></div>
+      
+  </div>
+
+  </div>
+
+      </div>
+      </div>
+      <footer id="footer">
+        <div class="region region--footer clearfix">
+      <div class="footer-hero"></div>
+    <div class="footer-wrapper">
+      <div class="separator-line flex items-center">
+  <svg width="520" height="14" viewBox="0 0 520 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0.5 6.81152V1.31152H519.5V7.31152H1.5" stroke="#F0F0F0"/>
+    <path d="M5.25731 13.3115L0.971595 7.31152H519.5V13.3115H5.25731Z" stroke="#F0F0F0"/>
+  </svg>
+  <svg width="696" height="12" viewBox="0 0 696 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0.811523H692.479L696 5.81152H0V0.811523Z" fill="#F0F0F0"/>
+    <path d="M0 6.81152H696V11.8115H0V6.81152Z" fill="#F0F0F0"/>
+  </svg>
+</div>
+      <div class="footer-content">
+        <div id="block-footer" class="block block-block-content block-block-content3ef14826-2125-45d7-b179-7773668e4174">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="contact-info"><img src="/themes/custom/de_theme/logo.svg" alt="AGO logo" width="300" height="98"><p><span>317 Dundas Street West</span> <span>Toronto, Ontario M5T 1G4</span></p></div></div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-footernav-menu" id="block-footernav" class="block block-menu navigation menu--footer-nav">
+            
+  <h2 class="visually-hidden" id="block-footernav-menu">Footer Nav</h2>
+  
+
+        
+                <ul block="block-footernav" class="menu menu--level-1">
+                    <li class="menu-item">
+        <a href="/about" data-drupal-link-system-path="node/18424">About</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://jobs.jobvite.com/ago">Careers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/accessibility" data-drupal-link-system-path="node/1490">Accessibility</a>
+              </li>
+                <li class="menu-item">
+        <a href="/press" data-drupal-link-system-path="node/9131">Press</a>
+              </li>
+                <li class="menu-item">
+        <a href="/support" data-drupal-link-system-path="node/7255">Support</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-footernavsecondary-menu" id="block-footernavsecondary" class="block block-menu navigation menu--footer-nav-secondary">
+            
+  <h2 class="visually-hidden" id="block-footernavsecondary-menu">Footer Nav Secondary</h2>
+  
+
+        
+                <ul block="block-footernavsecondary" class="menu menu--level-1">
+                    <li class="menu-item">
+        <a href="/donate/give" data-drupal-link-system-path="node/38342">Donate</a>
+              </li>
+                <li class="menu-item">
+        <a href="/research" data-drupal-link-system-path="node/36535">Research</a>
+              </li>
+                <li class="menu-item">
+        <a href="/inquiries" data-drupal-link-system-path="node/48864">Inquiries</a>
+              </li>
+                <li class="menu-item">
+        <a href="/visit/host-your-event" data-drupal-link-system-path="node/36512">Venue Rentals</a>
+              </li>
+                <li class="menu-item">
+        <a href="/inquiries/contact" data-drupal-link-system-path="node/8225">Contact</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-footersocialmedia" class="block block-block-content block-block-content197adbc0-0c7e-46a9-8545-37cf42f5cdb4">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="https://www.instagram.com/agotoronto/"><em class="fab fa-instagram"><span class="element-invisible">Instagram</span></em></a><a href="https://www.facebook.com/AGOToronto"><em class="fab fa-facebook"><span class="element-invisible">Facebook</span></em></a> <a href="https://twitter.com/agotoronto"><em class="fab fa-x-twitter"><span class="element-invisible">Twitter</span></em></a> <a href="https://www.pinterest.ca/agotoronto/"><em class="fab fa-pinterest"><span class="element-invisible">Pinterest</span></em></a> <a href="https://www.tiktok.com/@agotoronto"><em class="fab fa-tiktok"><span class="element-invisible">TikTok</span></em></a> <a href="https://www.youtube.com/user/ArtGalleryofOntario"><em class="fab fa-youtube"><span class="element-invisible">YouTube</span></em></a></p></div>
+      
+  </div>
+<div id="block-copyright" class="block block-block-content block-block-content0802ac74-5d12-4440-b5ab-87f2cbcd21a2">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Charitable Registration # 11879 0401 RR0001&nbsp;</p><p>All images reproduced on this site are provided free of charge for research and/or private study purposes only. Any other use, distribution, or reproduction thereof without the express permission of the copyright holder, is subject to limitations imposed by law. Any commercial exploitation of the images is strictly prohibited.</p></div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-de-theme-footer-menu" id="block-de-theme-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-de-theme-footer-menu">Footer menu</h2>
+  
+
+        
+                <ul block="block-de-theme-footer" class="menu menu--level-1">
+                    <li class="menu-item">
+        <a href="/ago-terms-use" data-drupal-link-system-path="node/7057">Terms of Use  </a>
+              </li>
+                <li class="menu-item">
+        <a href="/privacy-policy" data-drupal-link-system-path="node/49081">Privacy Policy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/social-media-code-conduct" data-drupal-link-system-path="node/43095">Social Media Code of Conduct</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-footercopyrighttextupdated" class="block block-block-content block-block-content55b55d3e-ae54-4c8d-9499-96470c36636c">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>©️2026 Art Gallery of Ontario. All rights reserved.</p></div>
+      
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+    </footer>
+  
+
+
+</div>
+
+  </div>
+
+    <div class="off-canvas-wrapper"><div id="off-canvas">
+              <ul>
+                    <li class="menu-item--_a2e3904-13ec-422f-8588-477e50bd1c8f menu-name--main">
+        <span>Visit</span>
+                                <ul>
+                    <li class="menu-item--_0185681-1312-4e2f-aaab-bd6dec86ac17 menu-name--main">
+        <a href="https://visit.ago.ca">Tickets</a>
+              </li>
+                <li class="menu-item--_bf316d4-a488-4cca-a8f8-144daa58f448 menu-name--main">
+        <a href="/visit/location-hours-admission" data-drupal-link-system-path="node/36881">Location, Hours and Admission</a>
+              </li>
+                <li class="menu-item--b70883ca-f38c-43c7-804c-d06b2137f3a4 menu-name--main">
+        <a href="/visit/plan-ahead" data-drupal-link-system-path="node/48936">Plan Ahead</a>
+              </li>
+                <li class="menu-item--_f80899a-c488-4180-a248-6854c0f20642 menu-name--main">
+        <span>Groups</span>
+                                <ul>
+                    <li class="menu-item--_4e47734-b8e1-476f-9408-8f52656eedee menu-name--main">
+        <a href="/visit/group-visits" data-drupal-link-system-path="node/31840">Group Visits</a>
+              </li>
+                <li class="menu-item--afba2790-c5fa-4622-a963-85a0ebf6f317 menu-name--main">
+        <a href="/visit/school-visits" data-drupal-link-system-path="node/46028">School Visits</a>
+              </li>
+                <li class="menu-item--_6e4f80a-7345-42c9-98b4-90177f921572 menu-name--main">
+        <a href="/visit/host-your-event" data-drupal-link-system-path="node/36512">Host Your Event</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--d1be0b44-64bd-4e55-a668-5447ce1b2e26 menu-name--main">
+        <span>Dine</span>
+                                <ul>
+                    <li class="menu-item--_434d4f7-2795-45e5-869c-73c644cdf381 menu-name--main">
+        <a href="/visit/dine/bistro" data-drupal-link-system-path="node/6501">Bistro</a>
+              </li>
+                <li class="menu-item--_f6929b2-2959-4c75-8ee9-7e9bc9192c33 menu-name--main">
+        <a href="/visit/dine/espresso-bar" data-drupal-link-system-path="node/18713">Espresso Bar</a>
+              </li>
+                <li class="menu-item--_1ebcf5b-4a66-413e-a7e4-13ca9100b77f menu-name--main">
+        <a href="/visit/dine/norma-ridley-members-lounge" data-drupal-link-system-path="node/18795">Norma Ridley Members’ Lounge</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--d23c4ee2-2b33-4b0a-8443-c4db39dda057 menu-name--main">
+        <span>Shopping</span>
+                                <ul>
+                    <li class="menu-item--dc02c72b-4fde-4cbb-9a75-e7b10ea7e814 menu-name--main">
+        <a href="https://shop.ago.ca">Shop</a>
+              </li>
+                <li class="menu-item--d960f6c8-8b9b-4904-9886-b4637502447c menu-name--main">
+        <a href="https://rental.ago.ca">Art Rental &amp; Sales</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--_eddfa78-2bfd-444f-8342-648407cf2746 menu-name--main">
+        <span>Art &amp; Artists</span>
+                                <ul>
+                    <li class="menu-item--fb9b0f44-ff26-4511-bb40-c7882cce3988 menu-name--main">
+        <a href="/exhibitions" data-drupal-link-system-path="node/8947">What&#039;s On</a>
+              </li>
+                <li class="menu-item--c91f8b21-e564-45bd-a416-a8279bed998e menu-name--main">
+        <a href="/exhibitions#whats-next" data-drupal-link-system-path="node/8947">What&#039;s Next</a>
+              </li>
+                <li class="menu-item--f326746c-212e-4fd5-a74d-0f648b605808 menu-name--main">
+        <span>Collections</span>
+                                <ul>
+                    <li class="menu-item--_a266a1d-03ed-4128-979e-50dd82359d30 menu-name--main">
+        <a href="/collection" data-drupal-link-system-path="node/1836">Collections</a>
+              </li>
+                <li class="menu-item--_48eb92e-6201-4db7-afc7-edfca2f8cfe0 menu-name--main">
+        <a href="/art-and-artists/thomson-collection" data-drupal-link-system-path="node/7512">The Thomson Collection</a>
+              </li>
+                <li class="menu-item--_c2a5ad6-1641-41a7-b3ea-692fbeb81b05 menu-name--main">
+        <a href="/art-and-artists/collections#collections-in-focus">Collections in Focus</a>
+              </li>
+                <li class="menu-item--_b99bc5f-a1ab-429c-b4b6-ff365c89712e menu-name--main">
+        <a href="/research/conservation" data-drupal-link-system-path="node/31296">Conservation</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--a0117f77-98fa-4307-8852-f786d303e4dc menu-name--main">
+        <a href="/events-and-learning/emerging-artists-program" data-drupal-link-system-path="node/42894">AGO X RBC Emerging Artists Program</a>
+              </li>
+                <li class="menu-item--_67f7705-e71f-4e8c-83f4-0f4824ee707e menu-name--main">
+        <a href="/exhibitions/archive?Year=All" data-drupal-link-query="{&quot;Year&quot;:&quot;All&quot;}" data-drupal-link-system-path="node/18335">Past Exhibitions</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--_729001a-fa3e-4db7-a1d5-6c4fa5bca61f menu-name--main">
+        <span>Events &amp; Learning</span>
+                                <ul>
+                    <li class="menu-item--ed7ed2a5-382e-4435-ad56-7bdb49a0804e menu-name--main">
+        <a href="/events/browse" data-drupal-link-system-path="events/browse">Events Calendar</a>
+              </li>
+                <li class="menu-item--d5a0e77e-cbca-4c69-b745-e161dd25cf7b menu-name--main">
+        <a href="/membership/member-events" data-drupal-link-system-path="node/49853">Member Events</a>
+              </li>
+                <li class="menu-item--_273d50a-855d-48f1-9a15-d4a0e47a060f menu-name--main">
+        <span>Learn</span>
+                                <ul>
+                    <li class="menu-item--b99f4c25-beb0-4bd9-8c26-90eae1f80fea menu-name--main">
+        <a href="/events-and-learning/learn/virtual-school-program" data-drupal-link-system-path="node/41558">Virtual School Programs</a>
+              </li>
+                <li class="menu-item--c2834029-de70-494e-9081-803e36ed1ff3 menu-name--main">
+        <a href="/events-and-learning/learn/learn-and-make" data-drupal-link-system-path="node/40429">Learn &amp; Make</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--_e3fdd61-f804-44da-b313-c841a1c8f8dd menu-name--main">
+        <span>Programs</span>
+                                <ul>
+                    <li class="menu-item--def74da0-ffba-491a-ab39-56714e149a29 menu-name--main">
+        <a href="/events-and-learning/programs/youth" data-drupal-link-system-path="node/34123">Youth</a>
+              </li>
+                <li class="menu-item--_1558290-87a4-4cd9-b7e6-160174b6f8ee menu-name--main">
+        <a href="/events-and-learning/programs/family" data-drupal-link-system-path="node/10566">Family</a>
+              </li>
+                <li class="menu-item--_74196a6-519a-47a6-9dde-b43c088d837c menu-name--main">
+        <a href="/events-and-learning/programs/schools" data-drupal-link-system-path="node/36218">Schools</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--viewsagoc-courses-viewcourses-grid menu-name--main">
+        <a href="/learn/courses" data-drupal-link-system-path="learn/courses">Adult Courses</a>
+              </li>
+                <li class="menu-item--viewsagoc-courses-viewcourses-grid-children menu-name--main">
+        <a href="/learn/courses/children-youth" data-drupal-link-system-path="learn/courses/children-youth">Children &amp; Youth Courses</a>
+              </li>
+                <li class="menu-item--_fd46691-0c47-4c56-8dbb-af81b306566a menu-name--main">
+        <a href="/events-and-learning/learn/summer-art-camp" data-drupal-link-system-path="node/18505">Summer Art Camp</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--b4b4b08f-51e0-4424-89a5-4e6d0945172a menu-name--main">
+        <span>Membership</span>
+                                <ul>
+                    <li class="menu-item--c8ef3f8e-7295-435d-bc22-55937128c6f1 menu-name--main">
+        <a href="/membership/become-a-member" data-drupal-link-system-path="node/49826">Become a Member</a>
+              </li>
+                <li class="menu-item--_28a37ca-1f78-4928-aa77-7816f0ff4a23 menu-name--main">
+        <span>Patron Programs</span>
+                                <ul>
+                    <li class="menu-item--_2172f20-799a-4cdf-a508-ba7dd5176154 menu-name--main">
+        <a href="/membership/curators-circle" data-drupal-link-system-path="node/49813">Curators’ Circle</a>
+              </li>
+                <li class="menu-item--aef0d364-fe80-49cd-bf5a-b4ad18f020f1 menu-name--main">
+        <a href="/support/womens-art-initiative" data-drupal-link-system-path="node/49828">Women’s Art Initiative</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--_91d148c-42f9-41b9-99ef-cb51279a2701 menu-name--main">
+        <a href="/membership/annual-pass" data-drupal-link-system-path="node/49790">Annual Pass</a>
+              </li>
+                <li class="menu-item--ea35488a-4a25-4dc3-9662-d9c62dcb09c0 menu-name--main">
+        <a href="/membership/corporate-membership" data-drupal-link-system-path="node/7237">Corporate Membership</a>
+              </li>
+                <li class="menu-item--c2f5ceaf-2e27-40cf-888b-d778e62c0b9d menu-name--main">
+        <a href="https://visit.ago.ca/account/login">Sign In</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item--f0e55795-84ad-458a-b902-f361a89753c3 menu-name--main">
+        <span>Donate</span>
+                                <ul>
+                    <li class="menu-item--_d3dddc1-8722-4696-b9ff-32aa48f4b80e menu-name--main">
+        <a href="/donate/give" data-drupal-link-system-path="node/38342">Donate</a>
+              </li>
+                <li class="menu-item--dd0324be-510a-46c7-a924-0d587967f2d2 menu-name--main">
+        <a href="/donate/legacy-giving" data-drupal-link-system-path="node/37384">Legacy Giving</a>
+              </li>
+                <li class="menu-item--bf1040eb-9cf3-4ca1-b6ce-ae52f30725b3 menu-name--main">
+        <a href="/support/corporate-partnerships" data-drupal-link-system-path="node/7278">Corporate Partnerships</a>
+              </li>
+                <li class="menu-item--eb8e1f97-566b-4b41-9674-2806e9439b2f menu-name--main">
+        <a href="/donate/volunteering" data-drupal-link-system-path="node/18284">Volunteering</a>
+              </li>
+                <li class="menu-item--_3c3fcaf-8794-4acd-988f-0f657e0c12d9 menu-name--main">
+        <a href="/art-bash">Art Bash</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+</div></div>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"file":"2020-11\/Floor-Burger.jpg"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyFkFFuwyAMhi-E4BB722sPEDngUCuAEaaN0tOPEaJu06q-WN9v_7Zsg3OVIe0GBuilcKoKPE8R082c0DOCUOzVeCuoIFGESpzEPPH_rD4QPy6XF4a6Z3Sfr6obb602B3jspsfBNoBIIKlDBwY3MHPYFwrhlIUjtaUPVWAZtOGcVR_TJkMzDI4oAh7l1Ildq3HBRiVCoAcqh1O9YsSjMV-5smyU0TxRU6KqCkpuZ9Adj5f-0XouCGtmSu-tltNC_q1N6h4oedWeY1fTo-7PkV0qxmPjOjezhz5gDmzX6bsNdfuMXX9V-5n6R0bdCTcxPerI7hbwC0GE5QQ","theme":"de_theme","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"responsive_menu":{"position":"right","theme":"theme-dark","pagedim":"pagedim","modifyViewport":true,"use_bootstrap":false,"breakpoint":"(max-width: 607px)","drag":false},"animations":{"typewriterMultiple":{"name":"Typewriter effect for displaying multiple children elements in a queue.","desc":"CSS selectors of the parent elements. As an example, you may have a parent wrapper with multiple li, p or any other children, in which case the effect will type each children element after the other.","classes":[""]},"typewriter":{"classes":[""]},"bounce":{"classes":[""]},"flash":{"classes":[""]},"pulse":{"classes":[""]},"rubberBand":{"classes":[""]},"shake":{"classes":[""]},"headShake":{"classes":[""]},"swing":{"classes":[""]},"tada":{"classes":[""]},"wobble":{"classes":[""]},"jello":{"classes":[""]},"bounceIn":{"classes":[""]},"bounceInDown":{"classes":[""]},"bounceInLeft":{"classes":[""]},"bounceInRight":{"classes":[""]},"bounceInUp":{"classes":[""]},"bounceOut":{"classes":[""]},"bounceOutDown":{"classes":[""]},"bounceOutLeft":{"classes":[""]},"bounceOutRight":{"classes":[""]},"bounceOutUp":{"classes":[""]},"fadeIn":{"classes":[".section-content img, .section-dags img,  .banner-wrapper, .video-embed-field-responsive-video, .node--view-mode-slider-hero img, .slick-track"]},"fadeInDown":{"classes":[""]},"fadeInDownBig":{"classes":[""]},"fadeInLeft":{"classes":[".super-card-image-left, .column-6-left,  #sidebar-primary"]},"fadeInLeftBig":{"classes":[""]},"fadeInRight":{"classes":[".super-card-image-right, .column-6-right"]},"fadeInRightBig":{"classes":[""]},"fadeInUp":{"classes":[".ago-card, .exhibition-card, .object-card,  .node--type-agoc-grid-item, .node--view-mode-info-grid-item, .node--type-agoc-exhibition, .top-collection-search-block-form, .section-dags .views-row"]},"fadeInUpBig":{"classes":[""]},"fadeOut":{"classes":[""]},"fadeOutDown":{"classes":[""]},"fadeOutDownBig":{"classes":[""]},"fadeOutLeft":{"classes":[""]},"fadeOutLeftBig":{"classes":[""]},"fadeOutRight":{"classes":[""]},"fadeOutRightBig":{"classes":[""]},"fadeOutUp":{"classes":[""]},"fadeOutUpBig":{"classes":[""]},"flipInX":{"classes":[""]},"flipInY":{"classes":[""]},"flipOutX":{"classes":[""]},"flipOutY":{"classes":[""]},"lightSpeedIn":{"classes":[""]},"lightSpeedOut":{"classes":[""]},"rotateIn":{"classes":[""]},"rotateInDownLeft":{"classes":[""]},"rotateInDownRight":{"classes":[""]},"rotateInUpLeft":{"classes":[""]},"rotateInUpRight":{"classes":[""]},"rotateOut":{"classes":[""]},"rotateOutDownLeft":{"classes":[""]},"rotateOutDownRight":{"classes":[""]},"rotateOutUpLeft":{"classes":[""]},"rotateOutUpRight":{"classes":[""]},"hinge":{"classes":[""]},"rollIn":{"classes":[""]},"rollOut":{"classes":[""]},"zoomIn":{"classes":[""]},"zoomInDown":{"classes":[""]},"zoomInLeft":{"classes":[""]},"zoomInRight":{"classes":[""]},"zoomInUp":{"classes":[""]},"zoomOut":{"classes":[""]},"zoomOutDown":{"classes":[""]},"zoomOutLeft":{"classes":[""]},"zoomOutRight":{"classes":[""]},"zoomOutUp":{"classes":[""]},"slideInDown":{"classes":[""]},"slideInLeft":{"classes":[""]},"slideInRight":{"classes":[""]},"slideInUp":{"classes":[""]},"slideOutDown":{"classes":[""]},"slideOutLeft":{"classes":[""]},"slideOutRight":{"classes":[""]},"slideOutUp":{"classes":[""]}},"photoswipe":{"options":{"showHideAnimationType":"zoom","showAnimationDuration":333,"hideAnimationDuration":333,"zoomAnimationDuration":333,"maxWidthToAnimate":4000,"easing":"cubic-bezier(.4,0,.22,1)","bgOpacity":1,"spacing":0.12,"initialZoomLevel":"fit","secondaryZoomLevel":"2.5","maxZoomLevel":"fill","allowPanToNext":true,"loop":true,"wheelToZoom":false,"pinchToClose":true,"clickToCloseNonZoomable":true,"closeOnVerticalDrag":true,"trapFocus":true,"returnFocus":true,"escKey":true,"arrowKeys":true,"imageClickAction":"zoom-or-close","tapAction":"toggle-controls","doubleTapAction":"zoom","bgClickAction":"close","closeTitle":"Close","zoomTitle":"Zoom","arrowPrevTitle":"Previous","arrowNextTitle":"Next","indexIndicatorSep":" \/ ","errorMsg":"The image could not be loaded.","preload":[1,1],"preloaderDelay":2000,"mainClass":"","showHideOpacity":false,"maxSpreadZoom":2,"closeOnScroll":true,"mouseUsed":false,"history":true,"focus":true,"captionOptions":{"type":"auto","mobileLayoutBreakpoint":600,"horizontalEdgeThreshold":20,"mobileCaptionOverlapRatio":0.3,"verticallyCenterImage":false}}},"blazy":{"loadInvisible":false,"offset":100,"saveViewportOffsetDelay":50,"loader":true,"unblazy":false,"visibleClass":false},"blazyIo":{"disconnect":false,"rootMargin":"0px","threshold":[0,0.25,0.5,0.75,1]},"slick":{"accessibility":true,"adaptiveHeight":false,"autoplay":false,"pauseOnHover":true,"pauseOnDotsHover":false,"pauseOnFocus":true,"autoplaySpeed":3000,"arrows":true,"downArrow":false,"downArrowTarget":"","downArrowOffset":0,"centerMode":false,"centerPadding":"50px","dots":false,"dotsClass":"slick-dots","draggable":true,"fade":false,"focusOnSelect":false,"infinite":true,"initialSlide":0,"lazyLoad":"ondemand","mouseWheel":false,"randomize":false,"rtl":false,"rows":1,"slidesPerRow":1,"slide":"","slidesToShow":1,"slidesToScroll":1,"speed":500,"swipe":true,"swipeToSlide":false,"edgeFriction":0.35,"touchMove":true,"touchThreshold":5,"useCSS":true,"cssEase":"ease","cssEaseBezier":"","cssEaseOverride":"","useTransform":true,"easing":"linear","variableWidth":false,"vertical":false,"verticalSwiping":false,"waitForAnimate":true},"TBMegaMenu":{"TBElementsCounter":{"column":10},"theme":"de_theme"},"viewsAjaxHistory":{"fields":{"after_5":"after_5"}},"user":{"uid":0,"permissionsHash":"10467d93e505b7232dd72e7e3ba3cca3bb12236dc6fcc1ae17dc8cfd73515dc3"}}</script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.polyfill.min.js?tahm4n"></script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0-rc.1"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.classlist.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.promise.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.raf.min.js?tahm4n"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/modules/contrib/slick/js/jquery-type-polyfill.min.js?tahm4n"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=11.3.1"></script>
+<script src="/core/misc/drupal.js?v=11.3.1"></script>
+<script src="/core/misc/drupal.init.js?v=11.3.1"></script>
+<script src="/core/misc/debounce.js?v=11.3.1"></script>
+<script src="/modules/contrib/blazy/js/dblazy.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.once.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.sanitizer.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.dom.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/base/blazy.base.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.dataset.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.viewport.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.xlazy.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.observer.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/plugin/blazy.loading.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/polyfill/blazy.webp.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/base/blazy.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/base/io/bio.min.js?tahm4n"></script>
+<script src="/libraries/slick-carousel/slick/slick.min.js?v=1.x"></script>
+<script src="/modules/contrib/blazy/js/base/io/bio.media.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/base/blazy.drupal.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/blazy.load.min.js?tahm4n"></script>
+<script src="/modules/contrib/blazy/js/blazy.compat.min.js?tahm4n"></script>
+<script src="/core/assets/vendor/tabbable/index.umd.min.js?v=6.3.0"></script>
+<script src="https://static.addtoany.com/menu/page.js" defer></script>
+<script src="/modules/contrib/addtoany/js/addtoany.js?v=11.3.1"></script>
+<script src="/modules/custom/ago_menu/js/ago_menu.js?v=11.3.1"></script>
+<script src="/modules/custom/ago_search/js/google_cse.js?v=11.3.1"></script>
+<script src="/modules/custom/animations/js/main.js?v=11.3.1"></script>
+<script src="/libraries/typedJS/typed.js-master/js/typed.js?tahm4n"></script>
+<script src="/libraries/wowJS/WOW-master/dist/wow.min.js?tahm4n"></script>
+<script src="/core/misc/progress.js?v=11.3.1"></script>
+<script src="/core/assets/vendor/loadjs/loadjs.min.js?v=4.3.0"></script>
+<script src="/core/misc/announce.js?v=11.3.1"></script>
+<script src="/core/misc/message.js?v=11.3.1"></script>
+<script src="/core/misc/ajax.js?v=11.3.1"></script>
+<script src="/themes/contrib/stable/js/ajax.js?v=11.3.1"></script>
+<script src="/modules/contrib/blazy/js/base/io/bio.ajax.min.js?tahm4n"></script>
+<script src="/themes/custom/de_theme/bower_components/SimpleStateManager/dist/ssm.min.js?tahm4n"></script>
+<script src="/themes/custom/de_theme/bower_components/matchHeight/jquery.matchHeight-min.js?tahm4n"></script>
+<script src="/libraries/colorbox/jquery.colorbox-min.js?v=11.3.1"></script>
+<script src="https://unpkg.com/swiper@11.0.6/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="/themes/custom/de_theme/dist/js/photoswipe.masonry.js?tahm4n"></script>
+<script src="/themes/custom/de_theme/dist/js/script.min.js?tahm4n"></script>
+<script src="/themes/custom/de_theme/dist/js/agocustomjs/agoFunctions.js?tahm4n"></script>
+<script src="/themes/custom/de_theme/dist/js/homepage-scripts.min.js?tahm4n"></script>
+<script src="/modules/contrib/photoswipe/js/prepare-galleries.js?tahm4n"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe-lightbox.umd.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/umd/photoswipe.umd.min.js"></script>
+<script src="//unpkg.com/photoswipe-dynamic-caption-plugin@1.2.7/dist/photoswipe-dynamic-caption-plugin.umd.min.js"></script>
+<script src="/modules/contrib/photoswipe/modules/photoswipe_dynamic_caption/js/photoswipe_dynamic_caption.init.js?tahm4n"></script>
+<script src="/modules/contrib/photoswipe/js/photoswipe.init.js?tahm4n"></script>
+<script src="/libraries/mmenu/dist/mmenu.js?v=11.3.1"></script>
+<script src="/modules/contrib/responsive_menu/js/responsive_menu.config.js?v=11.3.1"></script>
+<script src="/modules/contrib/slick/js/slick.load.min.js?v=11.3.1"></script>
+<script src="/modules/contrib/tb_megamenu/js/tb-megamenu-frontend.js?v=1.x"></script>
+
+    <script src="/themes/custom/de_theme/dist/js/customphotoswipe.js"></script>
+  </body>
+</html>

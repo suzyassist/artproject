@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Art - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #FF1493 0%, #FFD700 50%, #00BFFF 100%);color:white;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #FF1493;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #fff0f5;border-left: 4px solid #FF1493;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#ffe4ec;padding:1rem;border-radius:4px;border:2px solid #FF1493}
+        .timeline-box {background:linear-gradient(135deg,#4a0e2e 0%,#2a0518 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>🍿 Pop Art</h1><p class="subtitle">1955-1970 · Kunst voor de massa</p></header>
+    <nav class="top-nav">
+        <a href="abstract.html" class="nav-prev">← 🔥 Abstract Expressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="postmodernisme.html" class="nav-next">Postmodernisme 🌀 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-link active">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: Marilyn Monroe</h2>
+                <p class="featured-artist">Andy Warhol, 1962</p>
+                <img src="images/popart/01_warhol_marilyn.jpg" alt="Warhol - Marilyn">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🍿 MASSACULTUUR</h4>
+                    <p><strong>Comics, reclame, film:</strong> Pop Art neemt beelden uit de massamedia. Mickey Mouse, soepblikken, filmsterren - het is allemaal materiaal voor kunst.</p>
+                    <p><strong>Consumentisme:</strong> Het viert én bekritiseert het kapitalisme. We zijn wat we kopen.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🍿 REPRODUCTIE</h4>
+                    <p><strong>Serieproductie:</strong> Warhol's zeefdrukken, multiples. Het unieke kunstwerk is dood - lang leve de reproductie!</p>
+                    <p><strong>Mechanische technieken:</strong> Geen penseelstreken, maar druktechnieken. De machine maakt de kunst.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🍿 IRONIE</h4>
+                    <p><strong>Serieus spel:</strong> Is het kritiek of viering? Pop Art doet allebei tegelijk. Het is cool, afstandelijk, grappig.</p>
+                    <p><strong>Camp:</strong> Kitsch wordt kunst. Een soepblik is mooi omdat het banaliteit verheft.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🍿 BEN POPHAM</h4>
+                    <p><strong>Brits vs Amerikaans:</strong> Engelse Pop Art is intellectueel (Hamilton), Amerikaanse is hard en commercieel (Warhol, Lichtenstein).</p>
+                    <p><strong>Swinging Sixties:</strong> De tijd van The Beatles, minirokken, Londen als cultureel centrum.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1955-1970)</h4>
+
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De wederopbouw na WOII leidt tot welvaart en consumentisme. De "Golden Age of Capitalism". Maar ook: Vietnam, burgerrechten, seksuele revolutie. Pop Art is zowel apolitiek als politiek - het toont de oppervlakte van de samenleving.</p>
+
+                <p><strong>📚 LITERAIR PERSPEKTIEf:</strong> De Beat Generation wordt de Pop Generation. Andy Warhol's "Factory" als nieuw literair salon. magazines als LIFE en Time bepalen het beeld. De cultuur van het celebrity - iedereen kan beroemd zijn voor 15 minuten (Warhol).</p>
+
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> Oppervlakte is diepgang. De "coolness" van Pop Art - geen emotie, geen expressie, alleen het beeld. McLuhan: "The medium is the message." Identiteit wordt gevormd door wat we consumeren.</p>
+
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> Televisie wordt massaal - 90% van Amerikaanse huizen heeft een TV in 1960. De ruimtevaart (1969) verandert het wereldbeeld. Plastic, polyester, synthetisch - nieuwe materialen voor een nieuwe wereld. De auto wordt icoon van vrijheid.</p>
+
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Postmodernisme wordt geboren: het einde van "grote verhalen", het einde van originaliteit. Alles is recyclage, remix, sample. Baudrillard's "simulacrum": de kopie is realer dan het origineel. Warhol's Marilyn is "meer" Marilyn dan Marilyn zelf.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Work 1: Warhol Marilyn -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "Marilyn Diptych" (1962) — Andy Warhol</h3>
+                    <p style="color:#666;font-style:italic;">Tate Modern, Londen · 205 × 145 cm (per paneel) · Zeefdruk op doek</p>
+                </div>
+                <img src="images/popart/01_warhol_marilyn.jpg" loading="lazy" alt="Warhol Marilyn">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gemaakt na Monroe's dood in 1962. Warhol gebruikte een publiciteitsfoto uit 1953. 50 keer hetzelfde gezicht, in felle kleuren en zwart-wit. Het icoon van de icoon.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Herhaling:</strong> 50 identieke beelden, maar elk anders gekleurd. Het massamedium (publiciteitsfoto) wordt kunst door herhaling. Meer is meer.</p>
+                        <p><strong>Zeefdruk:</strong> De techniek is mechanisch, niet handwerk. Je ziet de "fouten" - de inkt is niet perfect verdeeld. Dit maakt het menselijk én machine.</p>
+                        <p><strong>Morte:</strong> De zwart-wit panelen aan de rechterkant suggereren verval, dood. Marilyn als martelaar van de roem. Het is een modern icoon, een heilige voor de massa.</p>
+                        <p><strong>Commodificatie:</strong> Monroe is een product geworden, net als Warhol's soepblikken. Het werk vraagt: wie bezit haar beeld? Zij, de studio's, of wij?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: Lichtenstein Whaam -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "Whaam!" (1963) — Roy Lichtenstein</h3>
+                    <p style="color:#666;font-style:italic;">Tate Modern, Londen · 174 × 407 cm · Acryl en olieverf op doek</p>
+                </div>
+                <img src="images/popart/02_lichtenstein_wham.jpg" loading="lazy" alt="Lichtenstein Whaam">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebaseerd op een paneel uit een oorlogsstrip (All-American Men of War). Lichtenstein vergroot het kleine stripplaatje tot een monumentaal schilderij. De banaliteit van oorlog wordt kunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Ben-Day dots:</strong> De kenmerkende stippen van strips, handgeschilderd! Lichtenstein imiteert de machine met de hand. Het is ambachtelijk fake.</p>
+                        <p><strong>Compositie:</strong> Twee panelen - links het aanvalsvliegtuig, rechts de explosie. Het is bijna abstract, maar het verhaal is duidelijk. Oorlog als entertainment.</p>
+                        <p><strong>Tekst:</strong> "WHAAM!" en "I pressed the fire control..." De tekst maakt het strip, maakt het narratief. Maar het is leeg - geen emotie, alleen actie.</p>
+                        <p><strong>Vietnam:</strong> 1963 is het begin van de Vietnam-oorlog. Dit werk is geen protest, maar het toont de verbeelding van oorlog in de populaire cultuur. Het is kritiek door imitatie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Oldenburg Floor Burger -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "Floor Burger" (1962) — Claes Oldenburg</h3>
+                    <p style="color:#666;font-style:italic;">Art Gallery of Ontario · 132 × 244 cm · Canvas gevuld met schuimrubber</p>
+                </div>
+                <img src="images/popart/03_oldenburg_floor.jpg" loading="lazy" alt="Oldenburg Floor Burger">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een reusachtige cheeseburger die op de vloer ligt. Oldenburg's "soft sculptures" - het harde wordt zacht, het kleine wordt groot. Fast food als monument.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Schaal:</strong> Een burger van meer dan 2 meter! Het alledaagse wordt absurd. Je moet eromheen lopen, eronder door kruipen. Het domineert de ruimte.</p>
+                        <p><strong>Soft sculpture:</strong> Het is van canvas en schuim, niet brons of steen. Het is knuffelbaar, slap, menselijk. De "hardness" van kunst wordt zacht.</p>
+                        <p><strong>Fast food:</strong> De cheeseburger is het ultieme Amerikaanse symbool - snel, goedkoop, overal. Oldenburg maakt er een heiligdom van. Het is bijna een parodie op het consumeren.</p>
+                        <p><strong>Ligging:</strong> Het ligt op de vloer, niet op een sokkel. Het is laag, nederig, toegankelijk. Geen museumafstand, maar intimiteit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Wesselmann Still Life -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Still Life #35" (1963) — Tom Wesselmann</h3>
+                    <p style="color:#666;font-style:italic;">Privécollectie · 244 × 305 cm · Gemengde media op doek</p>
+                </div>
+                <img src="images/popart/04_wesselmann_still.jpg" loading="lazy" alt="Wesselmann Still Life">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Wesselmann's "Great American Nude" serie combineert naakten met reclame, producten, de Amerikaanse droom. Het stilleven wordt levend, commercieel, erotisch.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Collage:</strong> Reclame-uitknipsels, echte objecten (telefoon, lamp), geschilderde delen. Het is een explosie van consumptie en verlangen.</p>
+                        <p><strong>Kleur:</strong> Felle, onnatuurlijke kleuren - de kleuren van reclame, van billboards. Het is visueel lawaai, informatie-overload.</p>
+                        <p><strong>Vrouw als object:</strong> Het naakt is gefragmenteerd - borsten, mond, benen. Het vrouwelijk lichaam als consumentengoed, net als de Coca-Cola en de televisie.</p>
+                        <p><strong>Americana:</strong> Dit ís Amerika in 1963: tv-diners, commerciële seks, plastic geluk. Wesselmann portretteert het zonder oordeel, maar de kritiek is impliciet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Rosenquist President Elect -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "President Elect" (1960-61) — James Rosenquist</h3>
+                    <p style="color:#666;font-style:italic;">MoMA, New York · 198 × 363 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/popart/05_rosenquist_president.jpg" loading="lazy" alt="Rosenquist President Elect">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> John F. Kennedy's gezicht, een cake, een auto. Rosenquist, ex-billboard schilder, gebruikt reclametechnieken voor politieke kritiek. De American Dream als verkooppraatje.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Fragmentatie:</strong> Het beeld is opgedeeld in vakken, zoals billboards langs de snelweg. Je ziet het even, dan is het voorbij. De politiek als reclame.</p>
+                        <p><strong>Associatie:</strong> Kennedy + cake + auto = de belofte van geluk. Maar het is leeg, oppervlakkig. De cake is nep, de auto is een advertentie.</p>
+                        <p><strong>Schaal:</strong> Bijna 4 meter breed! Het overweldigt, net als politieke campagnes. Het is propaganda, maar dan als kunst ontmanteld.</p>
+                        <p><strong>Voorspellend:</strong> Geschilderd voor Kennedy's dood, toont het al de mythevorming. De president als product, als consumptiegoed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Hamilton Just What Is It -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Just what is it that makes today's homes so different, so appealing?" (1956) — Richard Hamilton</h3>
+                    <p style="color:#666;font-style:italic;">Kunsthalle Tübingen · 26 × 25 cm · Collage op papier</p>
+                </div>
+                <img src="images/popart/06_hamilton_just.jpg" loading="lazy" alt="Hamilton Just What Is It">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het eerste Pop Art werk - een collage die de "This is Tomorrow" tentoonstelling aankondigt. De titel vraagt ironisch: wat maakt ons modern? Alles en niets.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Collage:</strong> Uitgeknipte beelden uit Amerikaanse magazines. Het is een puzzle van de moderne wereld. Niets is origineel, alles is geleend.</p>
+                        <p><strong>De naakte man:</strong> Met een lolly als torpedo, voor een Ford logo. De consument als naakte aap, gestuurd door verlangen en merken.</p>
+                        <p><strong>De stripvrouw:</strong> Op de bank, naakt, met een lamp als hoed. Ze is een object, een meubelstuk. De vrouw als interieurdecoratie.</p>
+                        <p><strong>Ironie:</strong> De titel vraagt serieus, maar het antwoord is absurd. Het is een kritiek op de moderniteit, verpakt als viering. Britse intellectuele Pop Art.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: Warhol Campbell's Soup -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "Campbell's Soup Cans" (1962) — Andy Warhol</h3>
+                    <p style="color:#666;font-style:italic;">MoMA, New York · 32 stukken van 51 × 41 cm · Polymerverf op doek</p>
+                </div>
+                <img src="images/popart/07_warhol_soup.jpg" loading="lazy" alt="Warhol Soup Cans">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> 32 soorten soep, handgeschilderd maar lijkend op drukwerk. Warhol's doorbraak - van illustrator tot kunstenaar. Het banale wordt iconisch.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Serie:</strong> 32 identieke formaten, 32 verschillende smaken. Het supermarktschap als kunstwerk. De keuze is oneindig, maar het is allemaal hetzelfde.</p>
+                        <p><strong>Hand vs machine:</strong> Geschilderd, maar zo vlak mogelijk. Warhol wilde het "niet-geschilderde" schilderen. Het is ambachtelijk antikunst.</p>
+                        <p><strong>Consumptie:</strong> "I used to drink it. I used to have the same lunch every day." Warhol's obsessie met herhaling, met het alledaagse.</p>
+                        <p><strong>Merken:</strong> Campbell's is een merk, een logo. Warhol maakt het heilig. Het is een kritiek op de commerciële cultuur door die cultuur te omarmen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Lichtenstein Drowning Girl -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "Drowning Girl" (1963) — Roy Lichtenstein</h3>
+                    <p style="color:#666;font-style:italic;">MoMA, New York · 172 × 170 cm · Olieverf en synthetische polymeren op doek</p>
+                </div>
+                <p style="text-align:center;color:#999;font-style:italic;">[Afbeelding momenteel niet beschikbaar - alternatief wordt gezocht]</p>
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebaseerd op een paneel uit het comic "Run for Love!" (Secret Hearts #83). Een vrouw verdrinkt, maar denkt: "I don't care! I'd rather sink than call Brad for help!" Drama als cliché.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Comic esthetiek:</strong> De stippen, de dikke zwarte lijnen, de tekstballon. Lichtenstein vergroot het kleine tot monumentaal. De "lage" kunst wordt "hoog".</p>
+                        <p><strong>Emotie:</strong> Ze verdrinkt, maar de tekst is stoer, onverschillig. Het is parodie op vrouwen in comics - altijd in nood, altijd dramatisch.</p>
+                        <p><strong>Golf:</strong> De golvende zee is abstract, decoratief. Het is bijna Japans, zoals Hokusai's "Grote Golf". Pop Art en traditionele kunst ontmoeten elkaar.</p>
+                        <p><strong>Brad:</strong> Wie is Brad? Het maakt niet uit. Het is een naam, een archetype. Het is het verhaal van elke vrouw in nood, in elke soap, ooit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Johns Three Flags -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "Three Flags" (1958) — Jasper Johns</h3>
+                    <p style="color:#666;font-style:italic;">Whitney Museum, New York · 78 × 116 cm · Encaustic (heet was) op doek</p>
+                </div>
+                <img src="images/popart/09_johns_flag.jpg" loading="lazy" alt="Johns Three Flags">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Drie vlaggen, steeds kleiner, als een telescoop. Johns schilderde "dingen die al bekend zijn". De vlag als icoon, als abstractie, als vragensteller.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Encaustic:</strong> Heete was met pigment - een oude techniek. Het oppervlak is ruw, tactiel, bijna sculpturaal. Je wilt het aanraken.</p>
+                        <p><strong>Drie lagen:</strong> De grootste vlag is voor, de kleinste achter. Het is een put, een oneindige regressie. Hoeveel vlaggen zijn er? Drie? Oneindig?</p>
+                        <p><strong>Bekend vs gezien:</strong> We zien vlaggen elke dag, maar kijken we? Johns forceert ons te kijken. Het bekende wordt vreemd.</p>
+                        <p><strong>Patriotisme:</strong> Is het een viering of een vraag? Johns weigerde te zeggen. Het is een vlag, maar ook slechts verf op doek. Semiotiek als kunst.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Dine Car Crash -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "The Car Crash" (1960) — Jim Dine</h3>
+                    <p style="color:#666;font-style:italic;">Privécollectie · 183 × 244 cm · Olieverf, collage en voorwerpen op doek</p>
+                </div>
+                <img src="images/popart/10_dine_car.jpg" loading="lazy" alt="Dine Car Crash">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Dine's "Happening" periode - het schilderij als theater. Een auto-ongeluk, een rood kruis, echte voorwerpen geplakt op het doek. Het is agressief, chaotisch, fysiek.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Assemblage:</strong> Geschilderd én echte dingen - een hamer, stukken hout. Het doek wordt reliëf, sculptuur. De grens tussen schilderij en object vervaagt.</p>
+                        <p><strong>Trauma:</strong> Auto-ongelukken zijn Amerikaans - snelheid, dood, film. Maar het rood is ook hart, liefde. Het is een gevoel van crisis.</p>
+                        <p><strong>Actie:</strong> Dine maakte dit tijdens performances. Het schilderen werd theater, lichamelijk, spontaan. Abstract Expressionisme ontmoet Pop Art.</p>
+                        <p><strong>Persoonlijk:</strong> Andere Pop Art is cool, afstandelijk. Dine is emotioneel, ruw. Het is meer als de Expressionisten - kunst als catharsis.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: WE ARE WHAT WE BUY</h2>
+            
+            <div class="timeline-box">
+                <p>Pop Art leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat alles beeld is:</strong> Van Marilyn tot een soepblik - het is allemaal icoon</li>
+                    <li><strong>Dat kopieën realer zijn:</strong> Warhol's Marilyn is "meer" Marilyn dan zijzelf</li>
+                    <li><strong>Dat kunst commercieel kan zijn:</strong> En toch kunst blijven</li>
+                    <li><strong>Dat ironie wapen is:</strong> Lachen om de consumentencultuur is ook kritiek</li>
+                    <li><strong>Dat massa ≠ slecht:</strong> Comics en reclame zijn ook esthetisch</li>
+                </ul>
+                <p>Pop Art is de brug naar Postmodernisme: het einde van het origineel, het tijdperk van de simulatie.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="abstract.html" class="nav-prev">← 🔥 Abstract Expressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="postmodernisme.html" class="nav-next">Postmodernisme 🌀 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postmodernisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .featured-artwork {
+            background: linear-gradient(135deg, #f8f4e8 0%, #fff9e6 100%);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .featured-artwork h2 {
+            color: #1a1a1a;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        .featured-artist {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        .featured-image {
+            width: 100%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-fullwidth {
+            background: #fff;
+            margin: 3rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .artwork-header {
+            border-bottom: 3px solid #c9a227;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        .artwork-header h3 {
+            color: #1a1a1a;
+            font-size: 1.6rem;
+            margin: 0;
+        }
+        .artwork-image-full {
+            width: 100%;
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .artwork-image-full img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        .artwork-content {
+            padding: 0 1rem;
+        }
+        .artwork-content p {
+            text-align: justify;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎨 Postmodernisme</h1>
+        <p class="subtitle">1960-heden</p>
+    </header>
+    <nav class="top-nav">
+        <a href="popart.html" class="nav-prev">← 🍿 Pop Art</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <span></span>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-link active">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: Campbell's Soup Cans</h2>
+                <p class="featured-artist">Andy Warhol, 1962</p>
+                <img src="images/warhol_soup.jpg" alt="Campbell's Soup Cans" class="featured-image">
+            </div>
+            <p><h1>POSTMODERNISME (1960-heden)</h1>
+<h2>Tijdsgeest Context</h2>
+<h3>Politiek Perspectief</h3>
+Het Postmodernisme ontstond in een periode van radicale politieke en sociale omwentelingen. De jaren '60 brachten de protestbewegingen tegen de Vietnamoorlog, de burgerrechtenbeweging in de VS, de studentenopstanden van 1968, en de opkomst van het feminisme en milieuactivisme. De gevestigde orde — politiek, cultureel, epistemologisch — werd overal ter wereld in twijfel getrokken.</p><p>De val van het communisme (1989-1991) en het einde van de Koude Oorlog veranderden het geopolitieke landschap fundamenteel. Het "einde van de geschiedenis" werd afgekondigd, maar tegelijkertijd ontstonden nieuwe conflicten: de opkomst van het terrorisme, de culturele clash tussen het Westen en de islamitische wereld, en de economische ongelijkheid die door globalisering werd versterkt.</p><p><h3>Historisch Perspectief</h3>
+De postindustriële samenleving — beschreven door sociologen als Daniel Bell — vervangt productie door informatie als hoofdbron van rijkdom. De computerrevolutie, het internet, en sociale media transformeren niet alleen de economie maar ook de menselijke ervaring van tijd, ruimte, en identiteit.</p><p>De ecologische crisis wordt een centraal thema. Het besef dat de mensheid het klimaat en het milieu op onomkeerbare wijze aantast, ondermijnt het modernistische geloof in vooruitgang en menselijke meesterschap over de natuur.</p><p><h3>Literair Perspectief</h3>
+De postmoderne literatuur breekt met traditionele narratieve structuren. Autoren als Thomas Pynchon ("Gravity's Rainbow", 1973), Don DeLillo ("White Noise", 1985), en Umberto Eco ("De Naam van de Roos", 1980) creëren werken die metafictief zijn, intertekstueel, en vol verwijzingen naar populaire cultuur.</p><p>De "death of the author" (Roland Barthes) en de "deconstruction" (Jacques Derrida) ondermijnen het idee van een enkele, stabiele betekenis. Teksten zijn netwerken van verwijzingen zonder oorsprong of eindpunt.</p><p><h3>Filosofisch Perspectief</h3>
+Het Postmodernisme is geworteld in het poststructuralisme van Foucault, Derrida, Deleuze, en Baudrillard. Centrale concepten zijn:
+<li><strong>Deconstructie</strong>: het blootleggen van de interne contradicties in teksten en systemen
+<li><strong>Discours en macht</strong> (Foucault): kennis is nooit neutraal maar altijd verbonden met machtsstructuren
+<li><strong>Hyperrealiteit</strong> (Baudrillard): in de media- en consumptiecultuur is de simulatie realer dan het origineel
+<li><strong>Rizoom</strong> (Deleuze): kennis en cultuur zijn netwerken zonder hiërarchie of centrum</p><p>Het "grote verhaal" van de moderniteit — vooruitgang, emancipatie, universalisme — wordt afgewezen als totalitair. In plaats daarvan komt er aandacht voor "kleine verhalen", lokale narratieven, en identiteitspolitiek.</p><p><h3>Psychologisch Perspectief</h3>
+Het postmoderne subject is gefragmenteerd en gelaagd. Identiteit is niet langer stabiel of essentieel, maar een performance — iets dat wordt gedaan, niet iets dat men is. Dit wordt zichtbaar in:
+<li>Genderfluiditeit en deconstructie van genderrollen
+<li>De "prosumer" (producent-consument) die zijn eigen identiteit samenstelt uit consumptiegoederen en media
+<li>Het verlies van het "zelf" in de digitale spiegelwereld van sociale media</p><p>Het postmoderne subject lijdt aan "keuzestress" in een overvloed aan mogelijkheden, en aan nostalgie voor een verloren authenticiteit die nooit heeft bestaan.</p><p>---</p><p><h2>Stijlfiguren en Thema's</h2>
+<h3>Kenmerkende Vormen</h3>
+Het Postmodernisme kenmerkt zich door <strong>pastiche</strong> — het imiteren en combineren van eerdere stijlen zonder ironische afstand. De grens tussen "hoog" en "laag" cultuur wordt opgeheven: Andy Warhol's Campbell's soupblikjes staan naast Da Vinci, remixcultuur en sampling zijn artistieke praktijken geworden.</p><p><strong>Brutalisme</strong> in de architectuur toont ruwe materialen (beton, staal) zonder versiering. <strong>Deconstructivisme</strong> (Frank Gehry, Zaha Hadid) breekt met traditionele geometrie en creërt gebouwen die lijken te bewegen en te vervormen.</p><p><h3>Kleurenpalet</h3>
+Het postmoderne palet is <strong>eclectisch</strong>: er zijn geen verboden kleuren of combinaties. Neonkleuren uit de jaren '80, pastel uit de jaren '90, of "millennial pink" — alles is mogelijk en wordt door elkaar gebruikt.</p><p>Het <strong>monochroom</strong> (all-over een kleur) is een reactie op de informatie-overload: minimalisme als tegenhanger van het visuele lawaai.</p><p><h3>Technieken</h3>
+<strong>Collage en assemblage</strong> zijn basistechnieken: het combineren van gevonden objecten, foto's, en teksten tot nieuwe werken. <strong>Digitale kunst</strong>, <strong>video-installaties</strong>, en <strong>performance</strong> zijn legitiem geworden.</p><p>Het atelier verdwijnt; de kunstenaar wordt een <strong>curator</strong> van beelden en concepten. De hand van de meester telt niet meer; het idee (het "concept") is belangrijker dan de uitvoering.</p><p><h3>Centrale Thema's</h3>
+1. <strong>Ironie en cynisme</strong> - niets is echt, alles is een grap
+2. <strong>Nostalgie</strong> - verlangen naar een verloren authenticiteit
+3. <strong>Consumptiecultuur</strong> - kritiek en viering tegelijk
+4. <strong>Identiteit en representatie</strong> - wie mag wie vertegenwoordigen?
+5. <strong>Globalisering</strong> - lokale versus universele cultuur
+6. <strong>Ecologie en duurzaamheid</strong> - de grenzen van groei</p><p>---</p><p></p>
+        </section>
+
+        <section class="content-section">
+            <h2>De Tien Meest Invloedrijke Werken</h2>
+            
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>1. "Campbell's Soup Cans" (1962) — Andy Warhol</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Museum of Modern Art, New York   | Zeefdruk op canvas</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/warhol_soup.jpg" alt="Campbell's Soup Cans" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Warhol schilderde 32 verschillende soorten Campbell's soep, exact nagemaakt van de commerciële verpakking. Het werk was een provocatie: waarom is dit kunst terwijl de verpakking in de supermarkt dat niet is?</p><p>Warhol's Factory produceerde kunst als een industriële fabriek, met assistenten die de werken maakten volgens zijn instructies. De hand van de kunstenaar was irrelevant — het idee was alles.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit werk vraagt: wat is de waarde van kunst in een consumptiemaatschappij? Is uniciteit nog relevant als alles gereproduceerd kan worden? Warhol's antwoord is zowel een viering als een aanklacht van de massacultuur.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is een grid — de supermarkt als esthetisch model. De kleuren zijn commercieel rood en wit. De techniek (zeefdruk) introduceert "fouten" die de mechanische productie zichtbaar maken.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>2. "Untitled (I shop therefore I am)" (1987) — Barbara Kruger</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Verschillende collecties   | Fotografie met tekst overlay</p>
+    </div>
+    <div class="artwork-image-full" style="background:#f5f5f5; padding:4rem; text-align:center; color:#666; border:2px dashed #ddd;"><p style="margin:0; font-size:1.2rem;">🖼️ Afbeelding niet beschikbaar op Wikimedia Commons</p><p style="margin:0.5rem 0 0 0; font-size:0.9rem;">Untitled (I shop therefore I am) (1987) — Barbara Kruger</p></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Kruger's werk combineert zwart-wit foto's met agressieve tekst in Futura Bold Oblique. "I shop therefore I am" is een parodie op Descartes' "Cogito ergo sum" — identiteit wordt gedefinieerd door consumptie, niet door denken.</p><p>Kruger's achtergrond in grafisch ontwerp en reclame is zichtbaar in haar stijl. Ze draait de commerciële esthetiek tegen zichzelf in: de agressieve kleuren en letters zijn reclame, maar de boodschap is kritisch.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is feministische kunst die de verhouding tussen gender en consumptie onderzoekt. Vrouwen zijn het doelwit van marketing; hun identiteit wordt gevormd door wat ze kopen. Kruger maakt dit mechanisme zichtbaar.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is direct en agressief: rood, zwart, wit. De tekst domineert de beelden. Dit is propaganda-achtige kunst die de taal van de vijand (reclame) gebruikt.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>3. "The Physical Impossibility of Death in the Mind of Someone Living" (1991) — Damien Hirst</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Privécollectie   | Tijgerhaai in formaldehyde</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/hirst_shark.jpg" alt="The Physical Impossibility of Death in the Mind of Someone Living" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Hirst's meesterwerk van "Britart" toont een dode haai opgehangen in een tank van formaldehyde. Het werk werd gekocht door Charles Saatchi voor £50.000 en later door hedgefonds-manager Steve Cohen voor een vermoedelijk veel hoger bedrag.</p><p>Het werk is een meditatie over dood en authenticiteit. De haai is vervangen (de originele begon te vergaan), waardoor de vraag ontstaat: is het nog steeds hetzelfde werk?</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is kunst als spectakel en investering. De schokwaarde en de media-aandacht zijn onderdeel van het werk. Het toont de verhouding tussen kunst, geld, en dood in de postmoderne samenleving.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is minimalistisch: de tank is een rechthoek, de haai een lijn. De kleur is groen-grijs, medisch en onheilspellend. De titel is filosofisch en literair — dit is conceptuele kunst.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>4. "Untitled (Portrait of Ross in L.A.)" (1991) — Félix González-Torres</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Art Institute of Chicago   | Stapel snoepjes, ideaal gewicht 175 lbs</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/gonzalez_candy.jpg" alt="Untitled (Portrait of Ross in L.A.)" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>González-Torres' werk is een portret van zijn partner Ross Laycock, die stierf aan AIDS. De stapel snoepjes weegt 175 pond — Ross' ideale gewicht. Bezoekers mogen snoepjes meenemen; de stapel wordt aangevuld maar krimpt symbolisch.</p><p>Het werk is een meditatie over verlies, liefde, en de tijdelijkheid van het leven. Het is ook politiek: een statement over de AIDS-crisis die door de overheid werd genegeerd.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is kunst als participatie en verdwijning. De snoepjes vertegenwoordigen zowel leven (zoet, begeerd) als dood (verdwijnend). Het werk is een herinnering aan de verloren generatie van de AIDS-epidemie.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is een hoek van de galerij met een stapel glanzende snoepjes. De kleuren zijn fel en commercieel. Het werk verandert constant door de interactie met het publiek — dit is proces-kunst.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>5. "My Bed" (1998) — Tracey Emin</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Tate Britain, Londen   | Installatie met bed, lakens, en persoonlijke voorwerpen</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/emin_tracey.jpg" alt="My Bed" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Emin's werk toont haar eigen bed na een periode van depressie en alcoholmisbruik — met vieze lakens, gebruikte tampons, lege flessen, en sigarettenpeuken. Het is een extreem persoonlijke, quasi-confessionele kunst.</p><p>Het werk veroorzaakte schandalen en discussies. Is dit kunst of expositie? Emin's antwoord: het is allebei. Het persoonlijke is politiek; het privé is publiek.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is kunst als autobiografie en therapie. Emin maakt haar kwetsbaarheid publiek, en daagt de toeschouwer uit om mee te kijken. Het is een afwijzing van de koele afstandelijkheid van het minimalisme.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is chaotisch en intiem. De kleuren zijn aardachtig en vuil. Het bed — symbool van intimiteit en rust — wordt onthuld als een plek van ellende. Dit is "abject art".</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>6. "The Clock" (2010) — Christian Marclay</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Verschillende locaties   | 24-uur video-installatie</p>
+    </div>
+    <div class="artwork-image-full" style="background:#f5f5f5; padding:4rem; text-align:center; color:#666; border:2px dashed #ddd;"><p style="margin:0; font-size:1.2rem;">🖼️ Afbeelding niet beschikbaar op Wikimedia Commons</p><p style="margin:0.5rem 0 0 0; font-size:0.9rem;">The Clock (2010) — Christian Marclay</p></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Marclay's meesterwerk is een montage van duizenden filmfragmenten waarin klokken of tijd voorkomen. De installatie duurt exact 24 uur en loopt synchroon met de echte tijd. Het is een monument van het found footage en de remixcultuur.</p><p>Het werk is een meditatie over tijd, cinema, en het alledaagse. Het toont hoe de tijd in films wordt gerepresenteerd, en hoe cinema onze ervaring van tijd heeft gevormd.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is postmoderne kunst als archief en database. Marclay curateert bestaand materiaal tot iets nieuws. Het werk is ook een commentaar op onze obsessie met tijd en productiviteit.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is een rechthoekig scherm dat de galerij domineert. De beelden veranderen elke minuut, soms vloeiend, soms abrupt. Het is een "tijdmachine" die door de geschiedenis van de cinema reist.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>8. "Girl with a Balloon" (2002/2018) — Banksy</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Straatkunst / privécollectie   | Sjabloon en verf op muur / canvas</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/kapoor_cloud.jpg" alt="Girl with a Balloon" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Banksy's werk toont een meisje dat haar hartvormige ballon laat vliegen. In 2018 werd een versie op canvas verkocht bij Sotheby's voor £1.04 miljoen — en vernietigde zichzelf deels door een ingebouwde shredder.</p><p>Het werk is straatkunst die de galerijwereld binnendringt. Banksy's anonimiteit en zijn politieke boodschappen — anti-kapitalisme, anti-oorlog — maken hem tot een cultfiguur.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is kunst als provocatie en media-event. De "vernietiging" van het werk maakte het alleen maar waardevoller. Banksy speelt met de regels van de kunstmarkt en de aandachtseconomie.</p><p><strong>Stijlanalyse</strong></p><p>De stijl is herkenbaar Banksy: zwart-wit silhouet met een accent van kleur (het rode hart). De compositie is eenvoudig en direct. De boodschap is nostalgisch en melancholisch — verlies van onschuld.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>9. "Infinity Mirror Rooms" (1965-heden) — Yayoi Kusama</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Verschillende locaties   | Installatie met spiegels en LED-lichten</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/banksy_balloon.jpg" alt="Infinity Mirror Rooms" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Kusama's oneindige spiegelkamers creëren een illusie van oneindige ruimte door herhaling en reflectie. De bezoeker wordt ondergedompeld in een universum van licht dat lijkt te bestaan uit oneindig veel sterren.</p><p>Kusama's werk wordt vaak geassocieerd met psychedelische ervaringen en mentale gezondheid (ze woont sinds de jaren '70 vrijwillig in een psychiatrische instelling). Maar het is ook een serieuze onderzoek naar perceptie en oneindigheid.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is kunst als immersive ervaring en selfie-achtergrond. De kamers zijn ontworpen om te worden gefotografeerd en gedeeld op sociale media. Tegelijkertijd is het een meditatie over de individualiteit in een oneindig universum.</p><p><strong>Stijlanalyse</strong></p><p>De ruimte is een kamer met spiegelwanden en -plafonds. LED-lichten hangen als kettingen. De reflectie creëert een oneindig patroon. De ervaring is zowel claustrofobisch als transcendent.</p><p>---</p><p></p>
+    </div>
+</div>
+
+<div class="artwork-fullwidth">
+    <div class="artwork-header">
+        <h3>10. "The Weather Project" (2003) — Olafur Eliasson</h3>
+        <p style="margin:0.5rem 0 0 0; color:#666; font-style:italic;">Tate Modern, Londen   | Installatie met monofrequente lampen, spiegel, en mist</p>
+    </div>
+    <div class="artwork-image-full"><img src="images/kusama_room.jpg" alt="The Weather Project" loading="lazy"></div>
+    <div class="artwork-content">
+        <p><strong>Achtergrond</strong></p><p>Eliasson transformeerde de Turbine Hall van Tate Modern in een kunstmatige zonsondergang. Een halve cirkel van gele lampen werd weerspiegeld in het plafond, creërend een volledige zon. Mistmachines verzachten het licht.</p><p>Het werk trok miljoenen bezoekers. Mensen lagen op de vloer om de "zon" te bekijken, alsof ze aan het strand lagen. Het was een collective ervaring van verwondering.</p><p><strong>Tijdsgeest Vertaling</strong></p><p>Dit is kunst als klimaatstatement en publiek ritueel. Eliasson maakt natuurlijke fenomenen binnen bereik van de stedelijke bezoeker. Het werk is ook een waarschuwing: dit is de enige zon die we hebben.</p><p><strong>Stijlanalyse</strong></p><p>De compositie is een grote hal gevuld met goudgeel licht. De spiegel reflecteert de bezoekers, die deel worden van het werk. De mist dematerialiseert de ruimte. Dit is sublime ervaring in een industriële context.</p>
+    </div>
+</div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art</p>
+
+    <nav class="bottom-nav">
+        <a href="popart.html" class="nav-prev">← 🍿 Pop Art</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <span></span>
+    </nav>
+
+    </footer>
+</body>
+</html>

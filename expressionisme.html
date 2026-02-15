@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Expressionisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background:linear-gradient(135deg,#FF0000 0%,#000000 100%);color:white;padding:2rem;margin-bottom:2rem;border-radius:8px;text-align:center}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background:#fff;margin:3rem 0;padding:2rem;border-radius:8px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom:3px solid #FF0000;margin-bottom:1.5rem;padding-bottom:1rem}
+        .style-analysis-box {background:#f9f9f9;border-left:4px solid #FF0000;padding:1.5rem;margin:1rem 0}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#ffe4e1;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#2c2c2c 0%,#1a1a1a 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .palette {display:flex;gap:0.5rem;margin:0.5rem 0}
+        .color-swatch {width:30px;height:30px;border-radius:50%;border:2px solid #333}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>😱 Expressionisme</h1><p class="subtitle">1905-1930 · Innerlijke Emotie & Vervormde Werkelijkheid</p></header>
+    <nav class="top-nav">
+        <a href="artnouveau.html" class="nav-prev">← 🌿 Art Nouveau</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="kubisme.html" class="nav-next">Kubisme 🔲 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-link active">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: De Schreeuw</h2>
+                <p class="featured-artist" style="color:#ccc">Edvard Munch, 1893</p>
+                <img src="images/expressionisme/01_munch_scream.jpg" alt="Munch - The Scream">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>😰 VERVORMING</h4>
+                    <p><strong>Realiteit buigen:</strong> Objecten en figuren worden vervormd om emotionele toestanden uit te drukken. Natuurgetrouwheid is minder belangrijk dan innerlijke waarheid.</p>
+                    <p><strong>Golven en kronkels:</strong> Lijnen die bewegen en trillen, alsof de hele wereld in angst of extase beweegt.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🎨 FELLE, EXPRESSIEVE KLEUREN</h4>
+                    <p><strong>Niet-natuurlijke kleuren:</strong> Groene gezichten, paarse bomen, rode luchten. Kleur is emotie, geen beschrijving.</p>
+                    <p><strong>Complementaire contrasten:</strong> Rood/groen, blauw/oranje om spanning te creëren.</p>
+                    <div class="palette">
+                        <div class="color-swatch" style="background:#FF0000" title="Vuurrood"></div>
+                        <div class="color-swatch" style="background:#00FF00" title="Giftig Groen"></div>
+                        <div class="color-swatch" style="background:#0000FF" title="Diep Blauw"></div>
+                        <div class="color-swatch" style="background:#FFFF00" title="Fel Geel"></div>
+                        <div class="color-swatch" style="background:#800080" title="Purper"></div>
+                    </div>
+                </div>
+                
+                <div class="style-item">
+                    <h4>📐 HOEKIGE, DYNAMISCHE LIJNEN</h4>
+                    <p><strong>Scherpe hoeken:</strong> Geen zachte Impressionistische rondingen, maar scherpe, gespannen lijnen.</p>
+                    <p><strong>Dynamiek:</strong> Diagonale composities die beweging en instabiliteit suggereren.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>👁️ PSYCHOLOGISCHE DIEPEGANG</h4>
+                    <p><strong>Innerlijk landschap:</strong> De ziel wordt zichtbaar. Angst, eenzaamheid, verlangen.</p>
+                    <p><strong>Symboliek:</strong> Objecten staan niet op zichzelf maar dragen emotionele lading.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1905-1930)</h4>
+                
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De Eerste Wereldoorlog (1914-1918) vernietigt de Europese orde. Keizerrijken vallen, republieken ontstaan. De Russische Revolutie (1917) brengt angst en hoop. In Duitsland broeit het nationalisme. Die Brücke wordt gezien als "ontaarde kunst" door de nazi's (Entartete Kunst, 1937). De politieke chaos reflecteert in de vervormde beelden.</p>
+                
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> Expressionistische poëzie (Trakl, Heym) gebruikt vrije ritmes, schreeuwerige beelden, en apocalyptische thema's. Kafka's verhalen tonen de vervreemding van de moderne mens. Het theater van Wedekind en Kaiser toont neurotische, gepassioneerde figuren. De tekst wordt ruw, direct, geschokt door interpunctie.</p>
+                
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> Freud's "Die Traumdeutung" (1900) en zijn theorie van het onderbewuste (Es, Ich, Über-Ich) revolutioneren het denken over de mens. Dromen, trauma's, verdrongen verlangens komen naar de oppervlakte. De Expressionist schildert niet wat hij ziet, maar wat hij voelt - de innerlijke werkelijkheid primeert.</p>
+                
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> De industrialisatie versnelt. Steden groeien explosief (Berlijn heeft 4 miljoen inwoners in 1920). Massaproductie, massasamenleving, massavernietiging. De Eerste Wereldoorlog introduceert tanks, gifgas, vliegtuigen - de mens wordt een getal in de oorlogsmachine. De Spaanse Griep (1918-1919) doodt miljoenen.</p>
+                
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Nietzsche's "God is dood" en zijn kritiek op de verloochende wereld. Spengler's "Der Untergang des Abendlandes" (1918) voorspelt de ondergang van de westerse beschaving. Existentialisme wijst op de absurditeit van het bestaan. Er is geen objectieve waarheid meer - alleen subjectieve ervaring telt. De kunstenaar is profeet van de ondergang.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "De Schreeuw" (1893) — Edvard Munch</h3>
+                    <p style="color:#666;font-style:italic;">National Museum, Oslo · 91 × 74 cm · Tempera en pastel op karton</p>
+                </div>
+                <img src="images/expressionisme/01_munch_scream.jpg" loading="lazy" alt="Munch - The Scream">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een pad langs de haven van Oslo bij zonsondergang. Munch beschreef het ontstaan: "De zon ging onder, de wolken werden rood als bloed. Ik voelde een schreeuw door de natuur gaan." Dit is het eerste Expressionistische werk, al voor de beweging officieel begon.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vervorming:</strong> Het gezicht is een masker van pure angst - ogen wijd open, mond een gat van afgrijzen. De handen aan de wangen drukken de schreeuw uit. Het lichaam is gedraaid, alsof het in elkaar krimpt.</p>
+                        
+                        <p><strong>Landschap dat schreeuwt:</strong> De hemel is golvende lijnen van rood en oranje, alsof het vuur is. De brug golft mee. De natuur is niet mooi maar bedreigend. Alles trilt.</p>
+                        
+                        <p><strong>Kleuren:</strong> Oranje en rood (alarm, gevaar) domineren. Het gezicht is grijs-groen (dood, ziekte). De contrasten zijn extreem - er is geen middenweg, geen grijs.</p>
+                        
+                        <p><strong>Lijnen:</strong> Golvende, kronkelende lijnen die beweging en instabiliteit suggereren. Er is geen vast punt om vast te houden. Alles beweegt, alles dreigt.</p>
+                        
+                        <p><strong>Eenzaamheid:</strong> De twee figuren op de brug kijken niet om, ze horen niets. De schreeuwende figuur is volledig alleen in zijn angst. Dit is existentiële eenzaamheid.</p>
+                        
+                        <p><strong>Techniek:</strong> Tempera en pastel op karton - niet duurzame materialen, alsof de emotie te heftig is voor olieverf op doek. De oppervlakte is ruw, ongelijk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "Compositie VII" (1913) — Wassily Kandinsky</h3>
+                    <p style="color:#666;font-style:italic;">Tretyakov Gallery, Moskou · 200 × 300 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/03_kandinsky_composition7.jpg" loading="lazy" alt="Kandinsky - Composition VII">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Kandinsky's meesterwerk net voor hij volledig abstract werd. Het is een apocalyptisch visioen - de Dag des Oordeels in abstracte vorm. Er zijn nog herkenbare elementen (paarden, figuren) maar ze zijn opgelost in een storm van kleur.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Chaos en orde:</strong> Ondanks het extreme lijkt het willekeurig, er is een onderliggende structuur. Kandinsky hoorde muziek bij kleuren - dit is een symfonie van vormen.</p>
+                        
+                        <p><strong>Kleuren als emotie:</strong> Blauw = spiritualiteit, rood = vuur/passion, geel = vreugde. De kleuren botsen en mengen zoals emoties dat doen.</p>
+                        
+                        <p><strong>Apocalyps:</strong> De wervelingen suggereren een einde van de wereld. Paarden (apocalyptische ruiters?), figuren die vallen, explosies van licht.</p>
+                        
+                        <p><strong>Grensoverschrijdend:</strong> Dit werk staat op de grens van Expressionisme en abstractie. Het is nog steeds over iets (een visioen), maar het wordt steeds moeilijker te ontcijferen.</p>
+                        
+                        <p><strong>Spiritualiteit:</strong> Kandinsky geloofde dat kunst de ziel kon raken, net als muziek. Je hoeft niets te herkennen om het te voelen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "De Toren van Blauwe Paarden" (1913) — Franz Marc</h3>
+                    <p style="color:#666;font-style:italic;">Städtische Galerie, München · 200 × 130 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/04_marc_bluehorse.jpg" loading="lazy" alt="Marc - Tower of Blue Horses">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de laatste werken van Marc voor hij in 1916 sneuvelde in WWI. Paarden waren voor hem heilige dieren - zuiverder dan mensen. De "Blaue Reiter" (Blauwe Ruiter) groep waar hij toebehoorde, zocht spiritualiteit in kunst.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kleurensymboliek:</strong> Blauw = mannelijk, spiritualiteit, diepte. Geel = vrouwelijk, vreugde, warmte. Rood = zwaarte, aarde, materie. De paarden zijn blauw - ze zijn verheven boven het materiële.</p>
+                        
+                        <p><strong>Torenstructuur:</strong> De paarden stapelen zich op als een toren naar de hemel. Het is een hierarchie van zuiverheid - hoe hoger, hoe meer geestelijk.</p>
+                        
+                        <p><strong>Organische vormen:</strong> Ronde, golvende lijnen. Geen scherpe hoeken - dit is een vreedzame, bijna meditatieve compositie. Anders dan het angstige Expressionisme van Munch.</p>
+                        
+                        <p><strong>Natuurromantiek:</strong> De heuvels en maan suggereren een paradijselijk landschap. Dit is geen echte wereld maar een droom van zuiverheid.</p>
+                        
+                        <p><strong>Primitivisme:</strong> De vereenvoudigde vormen refereren aan volkskunst en middeleeuwse kunst. Marc zocht naar een "oer" taal van beelden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Vrouw met een Hoed" (1905) — Henri Matisse</h3>
+                    <p style="color:#666;font-style:italic;">San Francisco Museum of Modern Art · 79 × 59 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/06_matisse_hat.jpg" loading="lazy" alt="Matisse - Woman with a Hat">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Matisse's vrouw Amélie. Geschilderd in 1905, het jaar dat de term "Fauves" (wilde beesten) werd bedacht door critici. Het schilderij veroorzaakte een schandaal op de Salon d'Automne in Parijs.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Fauve kleuren:</strong> Een groen streep op de neus. Een roze wang. Een blauwe baard. De hoed is een explosie van rood, groen, en geel. Dit is niet hoe mensen eruitzien, maar hoe emoties voelen.</p>
+                        
+                        <p><strong>Losse penseelvoering:</strong> De verf is dik en zichtbaar. Je ziet elke veeg. Er is geen poging om glad en "mooi" te zijn. Het is ruw, direct, eerlijk.</p>
+                        
+                        <p><strong>Vlakheid:</strong> Geen diepte, geen modellering. Het gezicht is een plat vlak van kleur. De achtergrond is groene strepen. Het is bijna een decoratief patroon.</p>
+                        
+                        <p><strong>Matisse vs. Munch:</strong> Beide zijn Expressionisten, maar Matisse is vrolijk waar Munch angstig is. Matisse zoekt schoonheid en vreugde in kleur, zelfs als het "onnatuurlijk" is.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "De Nacht" (1918-1919) — Max Beckmann</h3>
+                    <p style="color:#666;font-style:italic;">Kunstsammlung Nordrhein-Westfalen, Düsseldorf · 133 × 154 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/05_beckmann_night.jpg" loading="lazy" alt="Beckmann - The Night">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd net na WWI, waarin Beckmann diende als medic. De nachtmerrieachtige scène toont geweld, marteling, en claustrofobie. Dit is geen specifieke gebeurtenis maar een visioen van de hel van de oorlog.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Claustrofobie:</strong> De ruimte is een kooi. Het plafond drukt naar beneden, de muren sluiten zich samen. Er is geen ontsnapping mogelijk. De figuren zijn opgepropt in een te kleine ruimte.</p>
+                        
+                        <p><strong>Geweld:</strong> Een man wordt opgehangen, een vrouw wordt vastgebonden, een ander figuur wordt gemarteld. Het is een orgie van wreedheid. Maar het is niet realistisch - het is symbolisch.</p>
+                        
+                        <p><strong>Hoekige vormen:</strong> Scherpe, stekelige lijnen. Alles lijkt gespannen, gespannen tot het maximum. De diagonale compositie maakt het nog onstabieler.</p>
+                        
+                        <p><strong>Kleuren:</strong> Donker, somber. Bruin, grijs, groen - de kleuren van vuilheid en dood. Alleen hier en daar een vlek rood (bloed).</p>
+                        
+                        <p><strong>Symboliek:</strong> De kaart op tafel, de kroonluchter, de spiegel - alles heeft betekenis. Het is een allegorie van de ondergang van de burgerlijke maatschappij.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Zelfportret als Soldaat" (1915) — Ernst Ludwig Kirchner</h3>
+                    <p style="color:#666;font-style:italic;">Allen Memorial Art Museum, Oberlin · 69 × 61 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/08_kirchner_soldier.jpg" loading="lazy" alt="Kirchner - Self-Portrait as Soldier">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Kirchner diende in WWI maar had een zenuwinzinking en werd afgekeurd. Dit schilderij toont zijn trauma. De afgehakte hand rechts symboliseert zijn verloren creativiteit door de oorlog.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>De afgehakte hand:</strong> Het meest schokkende element. De rechterhand - de hand waarmee hij schilderde - is een stomp. Het model naast hem (een naakt) staat voor de kunst die hij niet meer kan maken.</p>
+                        
+                        <p><strong>Gelaatsuitdrukking:</strong> Ogen wijd open, starend, geschokt. Het uniform is te groot - hij is verdwenen in de oorlogsmachine. Het is geen held, maar een slachtoffer.</p>
+                        
+                        <p><strong>Kleuren:</strong> Giftig groen (ziekte), paars (dood), oranje (alarm). Er is geen natuurlijk vleeskleur. De huid is grauw, dodelijk.</p>
+                        
+                        <p><strong>Die Brücke:</strong> Kirchner was een van de oprichters van deze Expressionistische groep. Dit werk toont waarom ze radicalen waren - geen patriotisme, alleen pijn.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "Het Rode Atelier" (1911) — Henri Matisse</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 181 × 219 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/07_matisse_redstudio.jpg" loading="lazy" alt="Matisse - The Red Studio">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Matisse's atelier in Issy-les-Moulineaux, buiten Parijs. De muren zijn in het echt wit, maar Matisse schildert ze rood. Dit is hoe het atelier VOELT, niet hoe het eruitziet.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Alles is rood:</strong> De vloer, de muren, het meubilair - alles domineerd door één kleur. Het is alsof we door een rood filter kijken. Dit is niet realistisch maar expressief.</p>
+                        
+                        <p><strong>Kunst in kunst:</strong> Matisse schildert zijn eigen schilderijen en beelden die in het atelier staan. Het is een autobiografie in rood. We zien zijn hele oeuvre in één kamer.</p>
+                        
+                        <p><strong>Vlakheid:</strong> Geen perspectief, geen diepte. De tafel lijdt te zweven. De stoel heeft geen zitting. Het is decoratief, bijna een behangpatroon.</p>
+                        
+                        <p><strong>Emotie van rood:</strong> Matisse zei dat rood "een kleur van kracht" was. Maar hier is het ook warm, intiem, persoonlijk. Het atelier is zijn wereld, en die wereld is rood.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "De Dans" (1910) — Henri Matisse</h3>
+                    <p style="color:#666;font-style:italic;">Hermitage Museum, St. Petersburg · 260 × 391 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/09_matisse_dance.jpg" loading="lazy" alt="Matisse - The Dance">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Opdracht van de Russische kunstverzamelaar Shchukin. Matisse maakte drie versies. Dit toont vijf naakte figuren die in een kring dansen - een oerbeeld van vreugde en gemeenschap.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Primitivisme:</strong> De figuren zijn vereenvoudigd tot essentie - hoofd, torso, ledematen. Geen details, geen individualiteit. Dit zijn archetypes, geen portretten.</p>
+                        
+                        <p><strong>Beweging in cirkel:</strong> De dansers houden elkaars hand vast en draaien. De cirkel is een oud symbool van eenheid en eeuwigheid. De beweging is zichtbaar in de gebogen lijnen.</p>
+                        
+                        <p><strong>Drie kleuren:</strong> Blauw (hemel/achtergrond), groen (aarde), rood (mensen). De rode figuren springen eruit - de mens is centraal, maar deel van de natuur.</p>
+                        
+                        <p><strong>Vreugde:</strong> Dit is Matisse op zijn meest optimistisch. Geen angst, geen oorlog, alleen dans en lichaam. Het is een utopie van puur genot.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "Straat, Berlijn" (1913) — Ernst Ludwig Kirchner</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 120 × 91 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/02_kirchner_berlin.jpg" loading="lazy" alt="Kirchner - Berlin Street">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het moderne Berlijn van de jaren '10 - wijd boulevards, elegant geklede mensen, prostituees (herkenbaar aan de hoge hoeden). Kirchner toont de vervreemding achter de glitters van de stad.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Scherpe hoeken:</strong> De figuren zijn hoekig, bijna gevaarlijk. De man met de hoge hoed lijkt een roofdier. De vrouwen zijn mannequins, niet mensen.</p>
+                        
+                        <p><strong>Zwarte lijnen:</strong> Dikke, zwarte omtreklijnen (zoals in houtsneden) scheiden de kleurvlakken. Dit verwijst naar primitieve kunst en Japanse prenten.</p>
+                        
+                        <p><strong>Stad als jungle:</strong> De straat is niet vriendelijk maar bedreigend. De mensen kijken niet naar elkaar. Iedereen is alleen in de menigte.</p>
+                        
+                        <p><strong>Kleuren:</strong> Paars, groen, roze - onnatuurlijke kleuren voor een straat. Het is nacht, of het is een nachtmerrie. De stad is vervormd door angst.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Madonna" (1894-1895) — Edvard Munch</h3>
+                    <p style="color:#666;font-style:italic;">Munch Museum, Oslo · 90 × 68 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/expressionisme/10_munch_madonna.jpg" loading="lazy" alt="Munch - Madonna">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een naakte vrouw met gesloten ogen, hoofd achterover. Het is geen traditionele Madonna, maar een visie van extase - zowel spiritueel als seksueel. De sperma-achtige rand rondom veroorzaakte schandalen.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Extase en angst:</strong> Het gezicht toont verrukking, maar ook iets pijnlijks. Dit is de "dood en het leven" tegelijk - het thema van Munch's hele oeuvre ("De Levensdans").</p>
+                        
+                        <p><strong>Rode achtergrond:</strong> Bloed, hartslag, passie. De halo is niet goud maar rood. Dit is een seculiere Madonna, een afgodin van liefde en dood.</p>
+                        
+                        <p><strong>Sensuele lijnen:</strong> De bochtige lijnen van lichaam en haar suggereren beweging en emotie. Het is bijna orgastisch - controversieel voor de jaren '90 van de 19e eeuw.</p>
+                        
+                        <p><strong>Symboliek:</strong> De foetus in de hoek linksonder, de skeletachtige figuur rechtsonder - leven en dood omringen het moment van extase.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE SCHREEUW VAN DE MODERNE MENS</h2>
+            
+            <div class="timeline-box">
+                <p>Het Expressionisme geeft stem aan wie geen stem heeft:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>De soldaat:</strong> Die de hel van de oorlog heeft gezien (Kirchner, Beckmann)</li>
+                    <li><strong>De stedeling:</strong> Die verdwalen in de moderne stad (Kirchner)</li>
+                    <li><strong>De eenzame:</strong> Die angstig is in een goddeloze wereld (Munch)</li>
+                    <li><strong>De zoeker:</strong> Die spiritualiteit zoekt in abstractie (Kandinsky, Marc)</li>
+                    <li><strong>De vreugdevolle:</strong> Die kleur viert als levenskracht (Matisse)</li>
+                </ul>
+                <p>Het Expressionisme zegt: "Je hoeft niet mooi te schilderen. Je hoeft waarachtig te zijn."</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="artnouveau.html" class="nav-prev">← 🌿 Art Nouveau</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="kubisme.html" class="nav-next">Kubisme 🔲 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

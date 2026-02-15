@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Barok - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background:linear-gradient(135deg,#8B4513 0%,#D2691E 100%);color:white;padding:2rem;margin-bottom:2rem;border-radius:8px;text-align:center}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background:#fff;margin:3rem 0;padding:2rem;border-radius:8px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom:3px solid #8B4513;margin-bottom:1.5rem;padding-bottom:1rem}
+        .style-analysis-box {background:#f9f9f9;border-left:4px solid #8B4513;padding:1.5rem;margin:1rem 0}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5f5dc;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#3d2817 0%,#2a1b0f 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>🏛️ Barok</h1><p class="subtitle">1600-1750 · Drama, Licht & Beweging</p></header>
+    <nav class="top-nav">
+        <a href="manierisme.html" class="nav-prev">← 🎭 Maniërisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="neoclassicisme.html" class="nav-next">Neoclassicisme ⚱️ →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-link active">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: De Nachtwacht</h2>
+                <p class="featured-artist" style="color:#ccc">Rembrandt van Rijn, 1642</p>
+                <img src="images/barok/02_rembrandt_nachtwacht.jpg" alt="Rembrandt - The Night Watch">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🎭 DRAMATISCHE LICHTCONTRASTEN (Chiaroscuro)</h4>
+                    <p><strong>Tenebrisme:</strong> Extreme contrasten tussen licht en donker. Caravaggio's methode: een fel lichtbron uit het niets, alsof het een spotlight is in een donker theater.</p>
+                    <p><strong>Sfumato omgekeerd:</strong> Waar de Renaissance zachte overgangen had, heeft de Barok harde schaduwen. Het licht is een acteur in het drama.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>💫 DYNAMISCHE COMPOSITIES</h4>
+                    <p><strong>Diagonalen:</strong> Geen statische symmetrie, maar diagonale lijnen die beweging suggereren. Figuren die uit het beeld lijken te vallen of naar binnen stormen.</p>
+                    <p><strong>Theatraal:</strong> De compositie is als een toneelstuk - een moment van hoogste spanning wordt bevroren.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🎨 RIJKDOM & TEXTUUR</h4>
+                    <p><strong>Weelderige details:</strong> Fluweel, zijde, goud, juwelen - elk oppervlak wordt uitgewerkt. De Barok viert materiële rijkdom als reflectie van goddelijke glorie.</p>
+                    <p><strong>Impasto:</strong> Dikke verflagen die licht vangen. Rembrandt's gouden licht is vaak fysiek reliëf op het doek.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>😢 EMOTIONELE INTENSITEIT</h4>
+                    <p><strong>Pathos:</strong> Het publiek moet VOELEN. Martelingen, extases, tranen - de Barok is emotioneel manipulatief (in de beste zin).</p>
+                    <p><strong>Intimiteit:</strong> Oogcontact met de kijker. De figuur kijkt je aan, trekt je het verhaal in.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1600-1750)</h4>
+                
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De Contrareformatie vecht terug tegen het Protestantisme. De Katholieke Kerk gebruikt kunst als propaganda - martelaarschappen en mystieke visioenen overtuigen het volk. Absolute monarchieën (Lodewijk XIV, de Habsburgers, de Tsaren) tonen hun macht door pracht en praal. Het divine right of kings - de koning regeert door Gods wil. De Dertigjarige Oorlog (1618-1648) verwoest Midden-Europa.</p>
+                
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> Shakespeare (1564-1616) onderzoekt menselijke passies en politieke intriges. Cervantes' "Don Quichot" (1605) ironiseert over ridderromans terwijl het de moderniteit inluidt. Milton's "Paradise Lost" (1667) maakt van de Bijbel epische poëzie. De barokke poëzie (Metaphysical poets, Marino, Gongora) draait om verfijnde beeldspraak en sensualiteit.</p>
+                
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> De mens als theater van passies. Descartes' "Cogito ergo sum" (1637) scheiden denken en voelen. De Barok toont dat het voelen sterker is dan het denken - emoties, mystieke extases, martelaarschappen. De mens is niet rationeel maar passioneel. Portretkunst onthult individuele psychologieën.</p>
+                
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> De Wetenschappelijke Revolutie: Galileo, Kepler, Newton. Telescopen en microscopen openen nieuwe werelden. De ontdekking van het bloedsomloop (Harvey, 1628). Koloniale expansie: Amerika, Azië, Afrika. Goud en zilver stromen binnen. De trans-Atlantische slavenhandel bloeit. De pest (1630, 1656) blijft toeslaan.</p>
+                
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Descartes' rationalisme versus het scepticisme van Montaigne. Spinoza's pantheïsme: God is de natuur. De verhouding tussen geloof en rede wordt heronderhandeld. Mystiek (Teresa van Ávila, Johannes van het Kruis) bloeit. De mens staat tussen hemel en aarde, tussen vergankelijkheid en eeuwigheid.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 TIEN MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Work 1: Rembrandt Night Watch -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "De Nachtwacht" (1642) — Rembrandt van Rijn</h3>
+                    <p style="color:#666;font-style:italic;">Rijksmuseum, Amsterdam · 363 × 437 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/02_rembrandt_nachtwacht.jpg" loading="lazy" alt="Rembrandt - The Night Watch">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Groepsportret van de Amsterdamse schutterij (burgerwacht). De officieren betalen elk voor hun plek in het schilderij. Rembrandt breekt met de traditie van statische rijtjes - hij maakt er een actie-scène van.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Dynamische compositie:</strong> Geen rij, maar een beweging. De luitenant geeft bevel, de musketiers laden. Het is een moment van actie, niet een pose. Diagonale lijnen creëren diepte en spanning.</p>
+                        
+                        <p><strong>Chiaroscuro:</strong> Het meisje met het kippenpootje (het witte laken) is een lichtbaken in het midden. Rembrandt gebruikt licht om het oog te leiden: naar de officieren, naar het meisje, naar de handen die bewegen.</p>
+                        
+                        <p><strong>Psychologische diepgang:</strong> Elk gezicht is individueel. De jonge officier (Frans Banning Cocq) kijkt zelfverzekerd. De andere figuren hebben eigen persoonlijkheden - dit zijn geen types, maar mensen.</p>
+                        
+                        <p><strong>De "nacht":</strong> Het schilderij werd later donkerder door vernis, maar was oorspronkelijk daglicht. De schaduw is Rembrandt's keuze - dramatiek boven documentatie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: Caravaggio Matthew -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "De Roeping van Matteüs" (1599-1600) — Caravaggio</h3>
+                    <p style="color:#666;font-style:italic;">San Luigi dei Francesi, Rome · 322 × 340 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/02_caravaggio_matthew.jpg" loading="lazy" alt="Caravaggio - Calling of St Matthew">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Caravaggio's doorbraak. Jezus roept Matteüs (een tollenaar) om hem als apostel te volgen. Het tafereel speelt in een 17e-eeuwse herberg - Caravaggio schildert het heilige in het alledaagse.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Tenebrisme:</strong> Caravaggio's handelsmerk - het licht komt uit het niets, een soort goddelijke spotlight. De rest is duisternis. Dit creëert theater én spiritualiteit.</p>
+                        
+                        <p><strong>Realisme:</strong> De figuren zijn geen idealen maar echte mensen - met vieze handen, versleten kleding, lelijke gezichten. Caravaggio gebruikte straatmodellen.</p>
+                        
+                        <p><strong>Het moment:</strong> Matteüs wijst naar zichzelf: "Ik?" De hand van Jezus (links) lijkt op de hand van God in Michelangelo's "Schepping van Adam" - Caravaggio citeert de Renaissance.</p>
+                        
+                        <p><strong>Compositie:</strong> Diagonale tafel scheidt de wereld van het geld (rechts) van de wereld van het spirituele (links). Maar de lichtstraal overlapt - genade is mogelijk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Velázquez Meninas -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "Las Meninas" (1656) — Diego Velázquez</h3>
+                    <p style="color:#666;font-style:italic;">Museo del Prado, Madrid · 318 × 276 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/03_velazquez_meninas.jpg" loading="lazy" alt="Velázquez - Las Meninas">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het "schilderij van schilderijen". Velázquez schildert zichzelf terwijl hij het koninklijk gezin portretteert. Maar de koning en koningin zijn alleen zichtbaar in de spiegel.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Spel van blikken:</strong> De infante kijkt naar haar ouders. De hofdames kijken naar de infante. Velázquez kijkt naar ons (of naar de koning en koningin achter ons?). Wie is het onderwerp?</p>
+                        
+                        <p><strong>Meta-kunst:</strong> Velázquez schildert het schilderen. Het doek waar hij aan werkt is naar ons toegekeerd - we zien de achterkant. Wat schildert hij?</p>
+                        
+                        <p><strong>Loose penseelvoering:</strong> Van dichtbij zijn het alleen maar vlekken. Pas van veraf worden het gezichten. Velázquez was hierin vooruit op de Impressionisten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Vermeer Pearl -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Het Meisje met de Parel" (1665) — Johannes Vermeer</h3>
+                    <p style="color:#666;font-style:italic;">Mauritshuis, Den Haag · 44 × 39 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/05_vermeer_pearl.jpg" loading="lazy" alt="Vermeer - Girl with a Pearl Earring">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Vermeer's meest bekende werk, vaak de "Mona Lisa van het Noorden" genoemd. Het is geen portret maar een "tronie" - een studie van een uitdrukking.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Licht:</strong> Het zachte, diffuse licht dat van links komt is typisch Vermeer. Het gezicht gloeit tegen de donkere achtergrond.</p>
+                        
+                        <p><strong>De blik:</strong> Het meisje kijkt over haar schouder, alsof we haar hebben verrast. Haar mond staat een beetje open - is ze aan het spreken? De intimiteit is bijna ongemakkelijk.</p>
+                        
+                        <p><strong>De parel:</strong> Een enkele veeg wit met een reflectie. Het is een abstractie van een parel - Vermeer suggereert meer dan hij toont.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Caravaggio Emmaus -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "Het Avondmaal van Emmaüs" (1601) — Caravaggio</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 141 × 196 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/caravaggio_emmaus.jpg" loading="lazy" alt="Caravaggio - Supper at Emmaus">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het bijbelse verhaal waarin de verrezen Christus zich aan twee discipelen openbaart tijdens het avondmaal. Het moment van herkenning is Caravaggio's onderwerp.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Tenebrisme:</strong> Caravaggio's meest dramatische licht. Christus is het lichtbron - zijn witte hemd gloeit. De discipelen zijn half in schaduw.</p>
+                        
+                        <p><strong>Het moment:</strong> De discipel links steunt zijn handen op de tafel (da Vinci's "Laatste Avondmaal" wordt geciteerd). De discipel rechts spreidt zijn armen - verwondering, erkenning, aanbidding in één gebaar.</p>
+                        
+                        <p><strong>Realisme:</strong> De handen zijn vuil, de kleren zijn armoedig. Dit zijn werkmannen die Christus ontmoeten. Caravaggio maakt het heilige aards.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Gentileschi Judith -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Judith onthoofdt Holofernes" (1620) — Artemisia Gentileschi</h3>
+                    <p style="color:#666;font-style:italic;">Uffizi, Florence · 147 × 108 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/06_gentileschi_judith.jpg" loading="lazy" alt="Gentileschi - Judith Slaying Holofernes">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het bijbelse verhaal van Judith die de Assyrische generaal vermoordt. Gentileschi's versie is de meest brutale - en persoonlijkst. Zij was zelf slachtoffer van verkrachting.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Geweld:</strong> Dit is geen elegante onthoofding. Judith worstelt, haar armen verenken, het bloed spuit. Het is fysiek, wreed, echt.</p>
+                        
+                        <p><strong>Vrouwelijke kracht:</strong> Judith is geen fragiele schoonheid maar een sterke vrouw die haar werk doet. Vrouwen helpen elkaar - mannen zijn overbodig.</p>
+                        
+                        <p><strong>Zelfportret?:</strong> Judith lijkt op Gentileschi zelf. Holofernes lijkt op Agostino Tassi, haar verkrachter. Dit is persoonlijke catharsis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: Rubens Venus -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "Venus en Adonis" (1635) — Peter Paul Rubens</h3>
+                    <p style="color:#666;font-style:italic;">Metropolitan Museum, New York · 197 × 243 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/07_rubens_venus.jpg" loading="lazy" alt="Rubens - Venus and Adonis">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het mythische verhaal van Venus die haar geliefde Adonis probeert tegen te houden om op jacht te gaan (waar hij zal sterven).</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Rubensiaanse vrouwen:</strong> Venus is vol, zacht, vlezig. Dit is Rubens' ideaal van schoonheid - overvloed en vruchtbaarheid. Haar huid is porselein.</p>
+                        
+                        <p><strong>Beweging:</strong> Venus klampt zich vast aan Adonis die weg wil. De honden trekken aan de lijn. Cupido slaapt. Alles is in beweging, spanning, dramatiek.</p>
+                        
+                        <p><strong>Kleur:</strong> Warm roze en wit (Venus' huid), donker rood en bruin (Adonis en de jacht). Het contrast tussen liefde (licht) en dood (donker).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Van Dyck Charles -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "Karel I te Paard" (1637) — Anthony van Dyck</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 123 × 85 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/08_vandyck_charles.jpg" loading="lazy" alt="Van Dyck - Charles I on Horseback">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Karel I van Engeland, geschilderd door zijn hof-schilder. Dit is propaganda - de koning als nobele heerser. Karel zou later worden onthoofd tijdens de Engelse Burgeroorlog.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Machtsbeeld:</strong> De koning kijkt neer op ons (letterlijk en figuurlijk). Het paard is sterk, gehoorzaam, symboliseert de natuur die de koning beheerst.</p>
+                        
+                        <p><strong>Van Dyck's elegantie:</strong> De koning draagt mode - een losse, informele jas die zijn aristocratische nonchalance suggereert.</p>
+                        
+                        <p><strong>Ironie:</strong> Karel I regeerde uiteindelijk zo slecht dat hij werd onthoofd. Dit schilderij toont de glorie die was, niet de tragedie die zou komen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Rembrandt Cross -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "De Kruisoprichting" (1633) — Rembrandt van Rijn</h3>
+                    <p style="color:#666;font-style:italic;">Alte Pinakothek, München · 95 × 73 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/09_rembrandt_cross.jpg" loading="lazy" alt="Rembrandt - Raising of the Cross">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van Rembrandt's vroegste werken, geschilderd toen hij 26 was. Het toont het moment dat Christus aan het kruis wordt genageld.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Dynamiek:</strong> Het kruis wordt opgetild door een groep mannen. De spieren spannen, de touwen knappen, het hout piept. Rembrandt schildert fysieke inspanning.</p>
+                        
+                        <p><strong>Christus:</strong> Het licht valt op Christus' lichaam - het enige moment van stilte in de chaos. Zijn gezicht is vredig terwijl alles om hem heen woedt.</p>
+                        
+                        <p><strong>Schuld:</strong> De man op de voorgrond (mogelijk een zelfportret van Rembrandt) kijkt naar de kijker. Hij is medeplichtig. De toeschouwer wordt betrokken bij het geweld.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Rembrandt Belshazzar -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Het Feestmaal van Belsazar" (1635) — Rembrandt van Rijn</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 168 × 209 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/barok/10_rembrandt_belshazzar.jpg" loading="lazy" alt="Rembrandt - Belshazzar's Feast">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het bijbelse verhaal van koning Belsazar die het heilige gerei uit de tempel van Jeruzalem gebruikt voor een feestmaal. Een hand verschijnt en schrijft aan de muur.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Het moment:</strong> Belsazar schrikt, zijn gasten deinzen terug, de hand gloeit. Het is het exacte moment van goddelijke interventie. Rembrandt bevriest de afschuw.</p>
+                        
+                        <p><strong>Licht:</strong> De hand is het lichtbron - bovennatuurlijk, angstaanjagend. De gouden bekers reflecteren het licht. Rijkdom kan je niet redden van het oordeel.</p>
+                        
+                        <p><strong>Moraal:</strong> De Nederlandse Republiek was protestants - dit is een waarschuwing tegen hoogmoed. God ziet alles, ook in je privé-feestjes.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE THEATER VAN HET GELOOF</h2>
+            
+            <div class="timeline-box">
+                <p>De Barok leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat kunst emotie kan programmeren:</strong> Het licht, de kleur, de compositie - alles dient om ons te raken</li>
+                    <li><strong>Dat heilig en alledaags samengaan:</strong> Caravaggio's heiligen zijn straatvolk</li>
+                    <li><strong>Dat vrouwen krachtig zijn:</strong> Gentileschi's Judith is wraak én gerechtigheid</li>
+                    <li><strong>Dat kunst filosofie is:</strong> Velázquez vraagt "wat is zien?"</li>
+                    <li><strong>Dat rijkdom vergankelijk is:</strong> Belsazar's feest eindigt in angst</li>
+                </ul>
+                <p>De Barok is theater - en wij zijn het publiek.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="manierisme.html" class="nav-prev">← 🎭 Maniërisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="neoclassicisme.html" class="nav-next">Neoclassicisme ⚱️ →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

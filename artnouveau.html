@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Nouveau - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #98FB98 0%, #90EE90 100%);color:#2d5a27;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #228B22;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #228B22;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f0fff0;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#1a472a 0%,#0d2916 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>🌿 Art Nouveau</h1><p class="subtitle">1890-1910 · Organische Lijnen & Decoratieve Kunst</p></header>
+    <nav class="top-nav">
+        <a href="postimpressionisme.html" class="nav-prev">← 🌻 Post-Impressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="expressionisme.html" class="nav-next">Expressionisme 😱 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-link active">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: Job</h2>
+                <p class="featured-artist">Alphonse Mucha, 1896</p>
+                <img src="images/artnouveau/01_mucha_job.jpg" alt="Mucha - Job">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🌿 ORGANISCHE LIJNEN</h4>
+                    <p><strong>Whip-lash curves:</strong> Lange, vloeiende lijnen die golven als plantenstengels. Geen rechte hoeken, geen stijfheid - alles beweegt.</p>
+                    <p><strong>Plantenmotieven:</strong> Lelies, irissen, klimop, vlinders. De natuur is de belangrijkste inspiratiebron.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>👩 VROUWELIJKE FIGUREN</h4>
+                    <p><strong>Lange, slanke vrouwen:</strong> Fatale vrouwen met wuivend haar, decoratieve kleding. Ze zijn sensueel maar niet erotisch - esthetisch ideaal.</p>
+                    <p><strong>Symbolische vrouwen:</strong> Vrouwen als natuur, als leven, als mysterie. De vrouw als centrale figuur in de kunst.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🎨 GESLOTEN COMPOSITIE</h4>
+                    <p><strong>Decoratieve platheid:</strong> Geen diepte, geen perspectief. Het beeld is een patroon, een ornament. Twee-dimensionaliteit wordt gevierd.</p>
+                    <p><strong>Randversiering:</strong> Sierlijke lijsten, decoratieve hoeken. Het doek is een object, niet een raam.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🔮 SYMBOLISME & MYSTERIE</h4>
+                    <p><strong>Droomachtige sfeer:</strong> Mystiek, spiritualiteit, esoterie. De kunst gaat over het onzichtbare, het innerlijke.</p>
+                    <p><strong>Jugendstil:</strong> In Duitsland en Oostenrijk wordt het "Jugendstil" - de stijl van de jeugd, van vernieuwing.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1890-1910)</h4>
+
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De Belle Époque - een periode van welvaart en vrede in West-Europa. Maar onder de oppervlakte groeien spanningen: nationalisme, sociale ongelijkheid, het verval van oude keizerrijken. Art Nouveau is een vlucht in schoonheid, een verlangen naar harmonie in een tijd van verandering.</p>
+
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> Het Symbolisme (Mallarmé, Verlaine, Maeterlinck) zoekt de suggestie boven de directe betekenis. Oscar Wilde's estheticisme: "kunst voor kunst". De decadentie van de fin de siècle - verfijning, sensualiteit, tragiek. Joris-Karl Huysmans' "À rebours" (1884) als bijbel van de beweging.</p>
+
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> De "new woman" - onafhankelijker, publiekelijk zichtbaar. Het onderscheid tussen mannelijk en vrouwelijk wordt benadrukt. Decoratie wordt gezien als vrouwelijk, rationaliteit als mannelijk. De kunstenaar als sensitieve, bijna vrouwelijke figuur.</p>
+
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> De Eiffeltoren (1889) en de wereldtentoonstellingen tonen technologische vooruitgang. De metro in Parijs (1900). Elektriciteit verandert het stadsbeeld. De industriële productie maakt kunst goedkoper en toegankelijker. Het einde van de 19e eeuw brengt angst en hoop.</p>
+
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Nietzsche's kritiek op de moderne beschaving. Het verlangen naar een "totale kunst" (Gesamtkunstwerk) - architectuur, schilderkunst, decoratie, meubels als één geheel. De Arts and Crafts beweging (Ruskin, Morris) kritiseert industriële massaproductie. Kunst moet het leven doordringen.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Work 1: Job -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "Job" (1896) — Alphonse Mucha</h3>
+                    <p style="color:#666;font-style:italic;">Reclameposter · 66 × 46 cm · Kleurenlithografie</p>
+                </div>
+                <img src="images/artnouveau/01_mucha_job.jpg" loading="lazy" alt="Job">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een reclameposter voor Job cigarettepapier. Mucha maakte het beroemd - het wordt het symbool van Art Nouveau. De vrouw rookt, haar haar golft om haar heen. Het is commerciële kunst die tot kunst wordt verheven.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>De vrouw:</strong> Slank, sensueel, passief. Haar ogen zijn half gesloten - extase of vermoeidheid? Ze is een object van schoonheid, geen individu. Dit is het Mucha-type dat hij talloze keren herhaalt.</p>
+                        <p><strong>De lijnen:</strong> Haar haar vormt een halo, een cirkel om haar hoofd. De lijnen golven, kronkelen, eindigen nooit. Het is organische ornamentiek.</p>
+                        <p><strong>Decoratie:</strong> De rand is even belangrijk als het centrale beeld. De letters "JOB" zijn geïntegreerd in het ontwerp. Het is een totaalbeeld.</p>
+                        <p><strong>Commercie:</strong> Dit is reclame, maar op een niveau dat het bijna ironisch maakt. De vrouw is zo mooi dat we vergeten dat ze sigaretten rookt. Kunst verkoopt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: The Kiss -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "De Kus" (1907-1908) — Gustav Klimt</h3>
+                    <p style="color:#666;font-style:italic;">Österreichische Galerie Belvedere, Wenen · 180 × 180 cm · Olieverf en bladgoud op doek</p>
+                </div>
+                <img src="images/artnouveau/02_klimt_kiss.jpg" loading="lazy" alt="The Kiss">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Klimt's meest bekende werk, geschilderd tijdens zijn "gouden periode". Een paar kust elkaar op de rand van een bloemenweelde. Het is tegelijkertijd extatisch en decoratief, erotisch en spiritueel.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Goud:</strong> Echt bladgoud op het doek - Byzantijnse pracht. De man is geometrisch (rechthoeken), de vrouw is organisch (bloemen). Het is man versus vrouw, structuur versus natuur.</p>
+                        <p><strong>Compositie:</strong> Het paar zweeft, niet geankerd in de werkelijkheid. Het is een droom, een visioen. De bloemen om hen heen zijn abstracte patronen - geen echte natuur maar decoratie.</p>
+                        <p><strong>Erotiek:</strong> De vrouw ontvangt de kus, haar hoofd valt achterover. Het is passief en actief tegelijk. Klimt's werk was vaak controversieel vanwege zijn openlijke sensualiteit.</p>
+                        <p><strong>Symboliek:</strong> De kus als universeel symbool van liefde en vergankelijkheid. Maar ook: de eenwording van man en vrouw, van geest en lichaam. Het is bijna religieus in zijn intensiteit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: The Seasons -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "De Seizoenen" (1896) — Alphonse Mucha</h3>
+                    <p style="color:#666;font-style:italic;">Reeks van 4 panelen · Elk 103 × 54 cm · Kleurenlithografie</p>
+                </div>
+                <img src="images/artnouveau/03_mucha_seasons.jpg" loading="lazy" alt="The Seasons">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een reeks van vier panelen die de vier seizoenen verpersoonlijken als vrouwen. Mucha's typische stijl - decoratief, symbolisch, elegant. Het toont hoe Art Nouveau alle aspecten van het leven wilde verfraaien.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Cirkel van het leven:</strong> Lente (jonge vrouw met bloemen), Zomer (rijp, warm), Herfst (vruchten, nadenkend), Winter (oud, vermoeid). Het is een allegorie van vergankelijkheid.</p>
+                        <p><strong>Decoratie:</strong> Elke vrouw is omringd door ornamenten die bij het seizoen passen. De kleding is historiserend - geen moderne jurken maar draperieën. Het is tijdloos.</p>
+                        <p><strong>Kleur:</strong> Pastelkleuren - zacht, dromerig. Geen harde contrasten. De sfeer is melancholisch, nostalgisch. Mucha's palet is onmiddellijk herkenbaar.</p>
+                        <p><strong>Toegankelijkheid:</strong> Dit waren litho's - goedkoop te reproduceren. Art Nouveau wilde het volk bereiken, niet alleen de elite. Schoonheid voor iedereen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Sagrada Familia -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Sagrada Família" (vanaf 1882, nog in aanbouw) — Antoni Gaudí</h3>
+                    <p style="color:#666;font-style:italic;">Barcelona, Spanje · 172 m hoog (gepland) · Stenen en keramiek</p>
+                </div>
+                <img src="images/artnouveau/04_gaudi_sagrada.jpg" loading="lazy" alt="Sagrada Familia">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gaudí's levenswerk, nog steeds in aanbouw (geplande voltooiing: 2026). Een kerk die niet lijkt op enige andere - organisch, barok, modern, middeleeuws tegelijk. UNESCO Werelderfgoed sinds 1984.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Organische architectuur:</strong> Geen rechte lijnen - alles kromt en golft als bomen, stengels, golven. Gaudí bestudeerde de natuur om de structuur te begrijpen. Het lijkt een betoverd bos.</p>
+                        <p><strong>Symboliek:</strong> De 18 torens staan voor Jezus, Maria, de evangelisten en de apostelen. De gevels tonen geboorte, passie en glorie. Het is een catechismus in steen.</p>
+                        <p><strong>Kleur:</strong> Keramische tegels (trencadís) in alle kleuren. Het is speels, bijna kinderlijk. Maar ook spiritueel - het licht dat door de glas-in-loodramen valt is magisch.</p>
+                        <p><strong>Handwerk:</strong> Gaudí werkte met ambachtslieden, niet alleen met machines. Elke steen is uniek. Het is een monument van de pre-industriële arbeid in het industrieel tijdperk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Evening Star -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "Evening Star" (1902) — Alphonse Mucha</h3>
+                    <p style="color:#666;font-style:italic;">Deel van "The Moon and the Stars" serie · 62 × 39 cm · Kleurenlithografie</p>
+                </div>
+                <img src="images/artnouveau/05_mucha_evening.jpg" loading="lazy" alt="Evening Star">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Deel van een serie van vier werken over de maan en sterren. Mucha's typische stijl - een elegante vrouw omringd door decoratieve elementen. De sterren glanzen in haar haar.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Circulaire compositie:</strong> De vrouw staat in een cirkel van ornamenten. Haar haar vloeit naar buiten, wordt één met de decoratie. Het is bijna mandala-achtig.</p>
+                        <p><strong>Kleur:</strong> Nachtblauw, goud, zilver. De sterren zijn heldere accenten. Het is dromerig, melancholisch - de avondster als symbool van verlangen.</p>
+                        <p><strong>De vrouw:</strong> Half gesloten ogen, serene uitdrukking. Ze is niet actief maar een passief object van schoonheid. Dit is het Mucha-archetype.</p>
+                        <p><strong>Symbolisme:</strong> De avondster (Venus) als symbool van liefde en schoonheid. De natuurkrachten verpersoonlijkt als vrouwen - typisch Art Nouveau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Judith I -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Judith I" (1901) — Gustav Klimt</h3>
+                    <p style="color:#666;font-style:italic;">Österreichische Galerie Belvedere, Wenen · 84 × 42 cm · Olieverf en bladgoud op doek</p>
+                </div>
+                <img src="images/artnouveau/06_klimt_judith.jpg" loading="lazy" alt="Judith I">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het bijbelse verhaal van Judith die Holofernes onthoofdt om haar volk te redden. Maar hier is ze niet heroïsch maar sensueel, bijna decadent. Het hoofd van Holofernes is amper zichtbaar.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Sensualiteit:</strong> Judith's blik is half gesloten, haar mond open. Het is extase, niet wraak. Ze draagt goud en juwelen - meer courtisane dan heldin.</p>
+                        <p><strong>Goud:</strong> De gouden achtergrond, de patronen op haar gewaad. Klimt's gouden periode is op zijn hoogtepunt. Het is Byzantijns, heilig, maar ook werelds.</p>
+                        <p><strong>Femme fatale:</strong> Judith als gevaarlijke vrouw die mannen vernietigt. Het fin de siècle thema van de "vrouw als mysterie" wordt hier voluit getoond.</p>
+                        <p><strong>Interpretatie:</strong> Is dit Judith of Salomé? Klimt verwart de verhalen. Het maakt niet uit - het gaat om het beeld van de sensuele, dodelijke vrouw.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: Hotel Tassel -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "Hotel Tassel" (1893-1894) — Victor Horta</h3>
+                    <p style="color:#666;font-style:italic;">Brussel, België · Woonhuis en kantoor · IJzer, glas, steen</p>
+                </div>
+                <img src="images/artnouveau/07_horta_hotel.jpg" loading="lazy" alt="Hotel Tassel">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het eerste Art Nouveau gebouw ter wereld. Horta ontwierp alles: de gevel, het interieur, het meubilair, de deurklinken. Een totaalconcept van organisch design.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>De trap:</strong> De beroemde werveltrap van gietijzer lijkt op plantenstengels die omhoog groeien. Het is structuur als ornament - functioneel en decoratief tegelijk.</p>
+                        <p><strong>Materialen:</strong> IJzer - modern, industrieel - wordt gebruikt voor organische vormen. Het is een paradox: modern materiaal voor natuurlijke vormen.</p>
+                        <p><strong>Licht:</strong> Grote glazen koepel boven de trap. Natuurlijk licht stroomt naar binnen. Art Nouveau gebouwen zijn licht, open, luchtig.</p>
+                        <p><strong>Gesamtkunstwerk:</strong> Elk detail is ontworpen: tegels, lampen, meubels, deurbeslag. Er is geen verschil tussen "hoog" en "laag" kunst.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Princess Hyacinth -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "Princess Hyacinth" (1911) — Alphonse Mucha</h3>
+                    <p style="color:#666;font-style:italic;">Reclameposter voor theater · 125 × 85 cm · Kleurenlithografie</p>
+                </div>
+                <img src="images/artnouveau/08_mucha_princess.jpg" loading="lazy" alt="Princess Hyacinth">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een theaterposter voor een Tsjechisch sprookje. Mucha was zelf Tsjechisch en dit werk combineert Art Nouveau met Slavische folklore. De prinses staat omringd door hyacinten.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Folklore:</strong> De kleding is niet Franse Art Nouveau maar traditioneel Slavisch. Mucha brengt zijn eigen erfgoed in de internationale stijl.</p>
+                        <p><strong>Bloemen:</strong> De hyacinten omringen haar als een halo. Haar naam is letterlijk in beeld gebracht. De natuur en de mens zijn één.</p>
+                        <p><strong>Compositie:</strong> Symmetrisch, statisch, bijna iconisch. De prinses is een heilige, een maagd Maria-figuur. Het is decoratief religieus kunst voor het theater.</p>
+                        <p><strong>Kleur:</strong> Blauw, wit, goud - koude maar heldere kleuren. Het is winters, magisch, sprookjesachtig. Mucha's kleurgebruik is altijd emotioneel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Paris Metro Entrances -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "Paris Metro Ingangen" (1900-1913) — Hector Guimard</h3>
+                    <p style="color:#666;font-style:italic;">Parijs, Frankrijk · Gietijzer en glas · Verschillende locaties</p>
+                </div>
+                <img src="images/artnouveau/09_guimard_metro.jpg" loading="lazy" alt="Paris Metro">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Guimard ontwierp de iconische metroringangen voor de nieuwe Parijse metro. Ze werden meteen een symbool van moderniteit. Slechts 86 van de oorspronkelijke 141 zijn bewaard gebleven.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Organisch ijzer:</strong> De gietijzeren structuren lijken op planten die uit de grond groeien. Het is engineering als botanica. De lijnen zijn asymmetrisch, dynamisch.</p>
+                        <p><strong>Functioneel:</strong> Het zijn niet alleen decoratieve objecten maar bescherming tegen regen, licht 's nachts, oriëntatiepunten. Kunst die werkt.</p>
+                        <p><strong>Herkenbaarheid:</strong> Je herkent een Guimard-ingang meteen. Het is branding avant la lettre. Art Nouveau wordt visitekaartje van Parijs.</p>
+                        <p><strong>Typisch:</strong> De asymmetrie, de golvende lijnen, de bloemmotieven, het groene verf. Het is Art Nouveau in zijn puurste, meest publieke vorm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Expectation -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Expectation" (1905-1909) — Gustav Klimt</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Applied Arts, Wenen · 193 × 115 cm · Mozaïek uitgevoerd in steen, keramiek, goud, edelstenen</p>
+                </div>
+                <img src="images/artnouveau/10_klimt_expectation.jpg" loading="lazy" alt="Expectation">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Oorspronkelijk ontworpen als mozaïek voor de eetzaal van het Stoclet-paleis in Brussel (ook door Josef Hoffmann ontworpen). Een vrouw wacht, omringd door abstracte patronen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Byzantijns:</strong> Het mozaïektechniek, het goud, de platheid. Het is een verwijzing naar Ravenna, naar de early Christian art. Maar dan modern, abstract.</p>
+                        <p><strong>Vrouw:</strong> Haar lichaam is realistisch geschilderd (of gemozaïekt), maar haar gewaad is abstract patroon. Het contrast tussen figuur en decor is typisch Klimt.</p>
+                        <p><strong>Abstractie:</strong> De achtergrond is puur ornament - geometrische vormen, spiralen, bloemen. Het is bijna non-figuratief. Klimt balanceert op de grens van abstractie.</p>
+                        <p><strong>Stoclet Paleis:</strong> Een totaalconcept van de Wiener Werkstätte. Klimt's werk was de blikvanger. Het paleis is UNESCO Werelderfgoed.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE DECORATIE LEVERT</h2>
+            
+            <div class="timeline-box">
+                <p>Art Nouveau leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat de natuur de beste decorateur is:</strong> Planten, bloemen, insecten als ornament</li>
+                    <li><strong>Dat lijnen kunnen dansen:</strong> De whip-lash curve als expressiemiddel</li>
+                    <li><strong>Dat kunst het leven moet doordringen:</strong> Van posters tot gebouwen, van meubels tot sieraden</li>
+                    <li><strong>Dat de vrouw centraal staat:</strong> Als symbool van schoonheid, leven, mysterie</li>
+                    <li><strong>Dat commercialiteit geen schande is:</strong> Mucha's posters zijn kunstwerken</li>
+                </ul>
+                <p>Art Nouveau is de laatste decoratieve stijl voor het modernisme.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="postimpressionisme.html" class="nav-prev">← 🌻 Post-Impressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="expressionisme.html" class="nav-next">Expressionisme 😱 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

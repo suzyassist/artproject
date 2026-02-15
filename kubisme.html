@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kubisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background:linear-gradient(135deg,#8B7355 0%,#D2B48C 100%);color:white;padding:2rem;margin-bottom:2rem;border-radius:8px;text-align:center}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background:#fff;margin:3rem 0;padding:2rem;border-radius:8px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom:3px solid #8B7355;margin-bottom:1.5rem;padding-bottom:1rem}
+        .style-analysis-box {background:#f9f9f9;border-left:4px solid #8B7355;padding:1.5rem;margin:1rem 0}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5f5dc;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#4a4a4a 0%,#2a2a2a 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>📦 Kubisme</h1><p class="subtitle">1907-1914 · Fragmentatie & Meervoudig Perspectief</p></header>
+    <nav class="top-nav">
+        <a href="expressionisme.html" class="nav-prev">← 😱 Expressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="dadaisme.html" class="nav-next">Dadaïsme 🎲 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-linkimpressionisme">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-link active">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: Les Demoiselles d'Avignon</h2>
+                <p class="featured-artist" style="color:#ccc">Pablo Picasso, 1907</p>
+                <img src="images/kubisme/01_picasso_demoiselles.jpg" alt="Picasso - Les Demoiselles d'Avignon">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>📐 GEOMETRISCHE FRAGMENTATIE</h4>
+                    <p><strong>Alles is vlak:</strong> Objecten worden opgebroken in geometrische vormen - kubussen, cilinders, kegels, vlakken. Het ronde wordt hoekig, het organische wordt mechanisch.</p>
+                    <p><strong>Meervoudig perspectief:</strong> Je ziet het object van voren én van opzij tegelijk. De neus kan profiel zijn terwijl de ogen frontaal kijken. Tijd en ruimte worden samengeperst.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🎨 ANALYTISCH vs SYNTHETISCH</h4>
+                    <p><strong>Analytisch (1909-1912):</strong> Monochroom (bruin, grijs), objecten worden geanalyseerd tot hun essentiële vormen. Bijna abstract - soms is het onderwerp nauwelijks herkenbaar.</p>
+                    <p><strong>Synthetisch (1912-1914):</strong> Kleur keert terug, vormen worden eenvoudiger, herkenbaarder. Collage wordt belangrijk - echte materialen (kranten, behang) worden geplakt.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>📰 COLLAGE & PAPIER COLLÉ</h4>
+                    <p><strong>Gemengde media:</strong> Picasso plakt echte kranten, behang, touw op het doek. Dit ondermijnt de "zuiverheid" van de schilderkunst - alles mag.</p>
+                    <p><strong>Werkelijkheid + Illusie:</strong> Het echte materiaal (bijv. een stuk krant) contrasteert met het geschilderde. Wat is echt, wat is afbeelding?</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🌍 PRIMITIVISME & ANDERE CULTUREN</h4>
+                    <p><strong>Maskers:</strong> Afrikaanse en Oceanische maskers inspireren Picasso. Het primitieve wordt modern - de "wilde" heeft iets te leren de "beschaafde".</p>
+                    <p><strong>Platheid:</strong> Net als in Egyptische of Japanse kunst: geen westerse diepte, maar een plat vlak. Het doek is een oppervlak, geen raam.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 VERBAND MET TIJDSGEEST</h4>
+                <p><strong>Einstein & Relativiteit:</strong> Tijd en ruimte zijn niet absoluut. Kubisten schilderen meervoudig perspectief - net zoals Einstein leerde dat observatie afhangt van het standpunt.</p>
+                <p><strong>Industrialisatie:</strong> Machines, steden, snelheid. Het kubistische beeld is als een machine: opgebouwd uit onderdelen, fragmentarisch, modern.</p>
+                <p><strong>Fotografie:</strong> Schilderkunst moet iets anders doen dan "echt lijken". Kubisme geeft de ESSENTIE, niet het uiterlijk.</p>
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> De Belle Époque nadert haar einde. Spanningen tussen Europese grootmachten groeien. De Eerste Wereldoorlog (1914) zal alles veranderen. Het kubisme wordt gezien als "ontaard" door nationalistische critici.</p>
+                
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> Modernisme in de literatuur: Proust's stream of consciousness, Joyce's fragmentarische stijl. Apollinaire's "alcools" (1913) introduceert visuele poëzie. Het woord wordt beeld - parallel aan het breken van het beeld in de kunst.</p>
+                
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> Bergson's filosofie van de "durée" (tijd als ervaring, niet als klok). Het bewustzijn als stroom van fragmenten. De mens ervaart de wereld niet als een camera maar als een flux van indrukken.</p>
+                
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> Einstein's relativiteitstheorieën (1905, 1915) tonen dat ruimte en tijd relatief zijn. Röntgenstralen tonen het innerlijk van het lichaam. Auto's, vliegtuigen, cinematografie veranderen perceptie van ruimte en tijd.</p>
+                
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Einsteins relativiteit: er is geen absoluut standpunt. Nietzsche's perspectivisme: elk standpunt is legitiem. Het kubisme schildert hoe we werkelijk ervaren, niet hoe de camera registreert.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 TIEN MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Work 1: Picasso Demoiselles -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "Les Demoiselles d'Avignon" (1907) — Pablo Picasso</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 244 × 234 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/01_picasso_demoiselles.jpg" loading="lazy" alt="Picasso - Les Demoiselles d'Avignon">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Vijf prostituees in een bordeel in Barcelona (Carrer d'Avinyó). Picasso's doorbraak naar het modernisme. De titel is later bedacht door een vriend - Picasso noemde het "Het Bordeel van Avignon". Dit is het begin van het Kubisme.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Maskers:</strong> De twee figuren rechts hebben Afrikaanse maskers. Picasso bezocht het Trocadéro museum in Parijs en was gefascineerd door "primitieve" kunst. Dit is geen exotisme maar een zoektocht naar essentie.</p>
+                        
+                        <p><strong>Geometrische lichamen:</strong> Borsten zijn kegels, benen zijn cilinders, gezichten zijn diamanten. Het vrouwelijke lichaam wordt opgebroken in hoekige facetten. Schoonheid is niet meer rond maar scherp.</p>
+                        
+                        <p><strong>Meervoudig perspectief:</strong> De neus kan profiel zijn terwijl de ogen frontaal kijken. Je ziet meerdere kanten tegelijk. Dit is niet "vervorming" maar "meer waarheid" - zo zien we de werkelijkheid in tijd.</p>
+                        
+                        <p><strong>Angst:</strong> De figuren zijn niet uitnodigend maar bedreigend. De maskers zijn agressief. Dit is geen prettig bordeel maar een angstdroom van seksualiteit.</p>
+                        
+                        <p><strong>Begin van Kubisme:</strong> Picasso's vrienden (Braque, Derain) waren geschokt. Matisse noemde het "De demoiselles d'Avignon" als spot. Maar het veranderde alles - de weg naar abstractie begint hier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: Braque Still Life -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "Stilleven met Viool en Kan" (1910) — Georges Braque</h3>
+                    <p style="color:#666;font-style:italic;">Analytisch Kubisme · Alternatief werk, vergelijkbare periode</p>
+                </div>
+                <img src="images/kubisme/02_braque_stilllife.jpg" loading="lazy" alt="Braque - Still Life">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een typisch stilleven van het Analytische Kubisme. Braque en Picasso werkten in deze periode zo nauw samen dat hun werken bijna niet te onderscheiden zijn. Het stilleven - het meest traditionele onderwerp - wordt radicaal vernieuwd.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Analytisch Kubisme:</strong> Het object (viool, fles, tafel) is opgebroken in facetten. Je ziet meerdere kanten tegelijk. Het is bijna abstract - alleen de getrainde kijker herkent de objecten.</p>
+                        
+                        <p><strong>Monochroom:</strong> Bruin, grijs, beige - de kleur is eruit geanalyseerd. Alles dient de vorm. Het is als een tekening in olieverf, niet een schilderij in kleur.</p>
+                        
+                        <p><strong>Platheid:</strong> Geen diepte, geen perspectief. Het doek is een plat vlak. Maar toch suggereren de facetten een driedimensionaal object. Het is een paradox: plat én diep.</p>
+                        
+                        <p><strong>Samenwerking:</strong> Braque en Picasso werkten dagelijks samen. Ze spraken af: "Laten we geen ronde vormen meer schilderen." Dit was een revolutie per afspraak.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Picasso Kahnweiler -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "Portret van Daniel-Henry Kahnweiler" (1910) — Pablo Picasso</h3>
+                    <p style="color:#666;font-style:italic;">Art Institute of Chicago · 100 × 73 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/03_picasso_kahnweiler.jpg" loading="lazy" alt="Picasso - Portrait of Kahnweiler">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Kahnweiler was Picasso's kunsthandelaar - en zijn meest loyale supporter. Hij kocht alles wat Picasso en Braque maakten. Dit portret toont hem als een man van cultuur én als een verzamelaar van facetten.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Portret zonder gezicht:</strong> Je ziet Kahnweiler's ogen, neus, mond - maar verdeeld over het doek. Het is een psychologisch portret, niet een fysiek. We zien zijn "essentie" verspreid in ruimte.</p>
+                        
+                        <p><strong>Meervoudig perspectief:</strong> Het gezicht wordt gezien van voren én van opzij. De tijd is samengeperst - alsof je om de persoon heen loopt terwijl je kijkt.</p>
+                        
+                        <p><strong>Monochroom:</strong> Grijs, bruin, beige. De kleur zou afleiden van de vormanalyse. Dit is wetenschap: de mens opgebroken in componenten.</p>
+                        
+                        <p><strong>Compositie:</strong> De figuur is centraal maar gefragmenteerd. De achtergrond en de voorgrond vloeien in elkaar. Er is geen "achter" meer - alleen vlakken.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Picasso Chair -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Stilleven met Rieten Stoelzitting" (1912) — Pablo Picasso</h3>
+                    <p style="color:#666;font-style:italic;">Musée Picasso, Parijs · 29 × 37 cm · Olieverf en oliedoek op doek</p>
+                </div>
+                <img src="images/kubisme/04_picasso_chair.jpg" loading="lazy" alt="Picasso - Still Life with Chair Caning">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het eerste echte collage in de kunstgeschiedenis. Picasso plakt een stuk echt rieten stoelzitting (oliedoek) op het doek, en schildert er omheen. Het begin van het Synthetische Kubisme.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Collage:</strong> Echt materiaal (riet) naast geschilderd materiaal. Wat is waar? De rieten zitting is "echter" dan de geschilderde stukken, maar het is allemaal op een vlak. Dit ondermijnt de schilderkunst zelf.</p>
+                        
+                        <p><strong>Letters en cijfers:</strong> "JOU" en deel van een wijnfles zijn geschilderd. Het gebruik van letters (die betekenis hebben maar ook vorm zijn) is typisch Kubistisch.</p>
+                        
+                        <p><strong>Synthetisch Kubisme:</strong> Kleur keert terug, vormen worden eenvoudiger. We herkennen weer een glas, een pijp, een citroen. Maar ze zijn plat, decoratief, niet "echt".</p>
+                        
+                        <p><strong>Revolutie:</strong> Vóór dit moment was schilderen "namaak". Nu is schilderen "constructie". Kunstenaars mogen alles gebruiken - verf, lijm, krant, touw.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Braque Guitar -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "Man met een Gitaar" (1911-1912) — Georges Braque</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 116 × 81 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/05_braque_guitar.jpg" loading="lazy" alt="Braque - Man with a Guitar">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een typisch werk uit het hoogtepunt van het Analytische Kubisme. Een gitaarspeler in een café - een traditioneel onderwerp dat volledig wordt geherdefinieerd. Het is bijna abstract; alleen de kenner ziet de gitaar en de mens.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Fragmentatie:</strong> De gitaar is opgebroken in facetten. Je ziet de hals, de klankkast, de snaren - maar verspreid over het doek. Het is alsof je door een verbrokkeld raam kijkt.</p>
+                        
+                        <p><strong>Monochroom:</strong> Oker, bruin, grijs. De kleur is teruggebracht tot de essentie. Dit is geen feestelijk café maar een ernstige analyse van vorm.</p>
+                        
+                        <p><strong>Platheid:</strong> Geen diepte. De figuur en de achtergrond zijn één. Maar toch suggereren de lijnen een ruimte - het is een puzzel die je moet oplossen.</p>
+                        
+                        <p><strong>Muziek als structuur:</strong> Braque was zelf muzikant. De gitaar is niet alleen een object maar een metafoor voor compositie - noten, maat, harmonie vertaald in vorm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Picasso Musicians -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "Drie Muzikanten" (1921) — Pablo Picasso</h3>
+                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 201 × 223 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/06_picasso_musicians.jpg" loading="lazy" alt="Picasso - Three Musicians">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd in Fontainebleau, tijdens Picasso's zomer daar. Het toont drie figuren uit de Commedia dell'arte: Harlekijn (links), een monnik (midden), en Pierrot (rechts). Het is Synthetisch Kubisme - groot, kleurrijk, decoratief.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Synthetisch Kubisme:</strong> Kleur keert terug - fel geel, blauw, bruin. De vormen zijn eenvoudiger, herkenbaarder. We zien duidelijk drie figuren. Maar ze zijn nog steeds geometrisch, plat, kubistisch.</p>
+                        
+                        <p><strong>Commedia dell'arte:</strong> Harlekijn (de gele figuur met de ruitjes), de monnik (bruin, met een halsdoek), Pierrot (wit, de melancholieke clown). Picasso identificeerde zich met Harlekijn - de kunstenaar als nar.</p>
+                        
+                        <p><strong>Compositie:</strong> De drie figuren vormen een eenheid. Ze zitten dicht bij elkaar, muziek maken samen. Maar elke figuur is ook een apart vlak - een puzzelstuk in het grotere geheel.</p>
+                        
+                        <p><strong>Neo-classicisme:</strong> Dit werk staat op de grens van Kubisme en Picasso's latere "klassieke" periode. De figuren zijn monumentaal, bijna sculpturaal. Het is Kubisme dat naar de Renaissance kijkt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: Braque Portuguese -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "De Portugees" (1911) — Georges Braque</h3>
+                    <p style="color:#666;font-style:italic;">Kunstmuseum Basel · 117 × 82 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/07_braque_portuguese.jpg" loading="lazy" alt="Braque - The Portuguese">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een portret van een gitarist in een Marseillaanse bar. De titel verwijst naar de Portugese gemeenschap in Marseille. Het is een hoogtepunt van het Analytische Kubisme - bijna abstract, maar met herkenbare elementen.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Letters en cijfers:</strong> "BAL" en cijfers zijn geschilderd. Dit is typisch Kubistisch - letters hebben betekenis maar ook vorm. Ze zijn tegelijkertijd communicatie en decoratie.</p>
+                        
+                        <p><strong>Extreme fragmentatie:</strong> De figuur is bijna niet te herkennen als mens. Je ziet facetten, vlakken, lijnen. Het is alsof de mens is opgelost in geometrie.</p>
+                        
+                        <p><strong>Monochroom:</strong> Bruin, grijs, beige. De kleur is volledig geëlimineerd. Dit is analyse puur - de kleur zou afleiden van de vorm.</p>
+                        
+                        <p><strong>Diepte:</strong> Er zijn suggesties van diepte (diagonale lijnen die weglopen), maar het blijft plat. Het is een tweedimensionaal beeld van een driedimensionale wereld.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Gris Picasso -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "Portret van Pablo Picasso" (1912) — Juan Gris</h3>
+                    <p style="color:#666;font-style:italic;">Art Institute of Chicago · 93 × 74 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/08_gris_picasso.jpg" loading="lazy" alt="Gris - Portrait of Picasso">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Juan Gris' portret van zijn vriend en mentor Picasso. Gris was de derde man van het Kubisme (na Picasso en Braque). Zijn stijl is strakker, meer geometrisch, bijna wetenschappelijk.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Gris' stijl:</strong> Strakker, meer geordend dan Picasso. De vlakken zijn duidelijker, de lijnen zijn preciezer. Gris was een tekenaar voor hij schilder werd - dat zie je.</p>
+                        
+                        <p><strong>Collage-elementen:</strong> Stukken behang, krant, gekleurde papieren. Gris was een meester van het papier collé. Het echte materiaal contrasteert met het geschilderde.</p>
+                        
+                        <p><strong>Herkenbaarheid:</strong> Dit is duidelijk een portret - je ziet Picasso's profiel, zijn hoge voorhoofd, zijn intense blik. Maar het is opgebroken in facetten.</p>
+                        
+                        <p><strong>Kleur:</strong> Gris gebruikt meer kleur dan Picasso in deze periode. Blauw, bruin, beige - ingetogen maar aanwezig. Het is eleganter, minder ruw.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Duchamp Nude -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "Naakt dat een Trap afdaalt, Nr. 2" (1912) — Marcel Duchamp</h3>
+                    <p style="color:#666;font-style:italic;">Philadelphia Museum of Art · 148 × 89 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/05_duchamp_nude.jpg" loading="lazy" alt="Duchamp - Nude Descending a Staircase">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Duchamp's meest bekende schilderij. Een figuur die een trap afdaalt, opgebroken in sequenties van beweging. Geïnspireerd door chronofotografie (Muybridge). Het veroorzaakte een schandaal op de Armory Show in New York (1913).</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Beweging in tijd:</strong> Net zoals een fototoestel met lange sluitertijd beweging vastlegt als strepen, zo toont Duchamp de figuur op meerdere plekken tegelijk. Het is "dynamische" kunst.</p>
+                        
+                        <p><strong>Mechanisch:</strong> De figuur lijkt een machine - een cyborg, een robot. Het is bijna niet menselijk. Duchamp was gefascineerd door technologie en de "einde van de mens".</p>
+                        
+                        <p><strong>Bruin monochrome:</strong> De kleur is ingetogen - bruin, beige, oker. Dit is geen vrolijk schilderij maar een ernstige studie van beweging.</p>
+                        
+                        <p><strong>Invloed:</strong> Dit werk maakte het Amerikaanse publiek woedend. "Een botsing tussen een houtzagerij en een explosief pakhuis," schreef een criticus. Maar het was ook een succes - het toonde dat Europa modern was.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Picasso Mandolin -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Vrouw met een Mandoline" (1909) — Pablo Picasso</h3>
+                    <p style="color:#666;font-style:italic;">Tate Modern, Londen · 92 × 73 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/kubisme/10_picasso_mandolin.jpg" loading="lazy" alt="Picasso - Woman with a Mandolin">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een vroeg Kubistisch werk, nog in de overgangsfase. De vrouw is herkenbaar, de mandoline is herkenbaar - maar beide zijn al opgebroken in facetten. Dit is Picasso op weg naar het volledige Kubisme.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Overgangsfase:</strong> Dit is nog geen volledig Kubisme. De figuur is herkenbaar, de ruimte heeft nog diepte. Maar de beginselen zijn er: fragmentatie, meervoudig perspectief, geometrisering.</p>
+                        
+                        <p><strong>De mandoline:</strong> Het instrument is een ronde vorm die wordt opgebroken in hoeken. Het is metafoor: muziek (rond, vloeiend) wordt visueel (hoekig, statisch).</p>
+                        
+                        <p><strong>Kleur:</strong> Oker, bruin, grijs - maar met vleugjes roze en blauw. Nog niet het extreme monochrome van 1910-1912, maar al onderweg.</p>
+                        
+                        <p><strong>Cézanne:</strong> Dit werk staat in de traditie van Cézanne, die Picasso als "de vader van ons allen" beschouwde. Cézanne's geometrische natuur wordt hier systematisch toegepast.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE WERELD OPGESLOVEN IN VLAKKEN</h2>
+            
+            <div class="timeline-box">
+                <p>Het Kubisme leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat perspectief een keuze is:</strong> We hoeven niet één kant te kiezen - we kunnen alle kanten tegelijk zien</li>
+                    <li><strong>Dat kunst materiaal is:</strong> Verf, doek, lijm, krant - alles mag</li>
+                    <li><strong>Dat "primitief" modern is:</strong> Afrikaanse maskers zijn niet achterlijk maar vooruitstrevend</li>
+                    <li><strong>Dat abstractie begint met analyse:</strong> Je moet eerst weten wat iets IS voordat je het kunt vervormen</li>
+                    <li><strong>Dat de wereld fragmentarisch is:</strong> Na WOI (die net begon toen het Kubisme eindigde) leek de wereld inderdaad gebroken</li>
+                </ul>
+                <p>Picasso en Braque braken de wereld - zodat we hem opnieuw konden zien.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="expressionisme.html" class="nav-prev">← 😱 Expressionisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="dadaisme.html" class="nav-next">Dadaïsme 🎲 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>

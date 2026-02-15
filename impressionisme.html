@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Impressionisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background:linear-gradient(135deg,#87CEEB 0%,#E0F6FF 100%);padding:2rem;margin-bottom:2rem;border-radius:8px;text-align:center}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background:#fff;margin:3rem 0;padding:2rem;border-radius:8px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom:3px solid #87CEEB;margin-bottom:1.5rem;padding-bottom:1rem}
+        .style-analysis-box {background:#f9f9f9;border-left:4px solid #87CEEB;padding:1.5rem;margin:1rem 0}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f0f8ff;padding:1rem;border-radius:4px}
+        .timeline-box {background:linear-gradient(135deg,#fff8dc 0%,#fffacd 100%);padding:1.5rem;margin:1rem 0;border-radius:8px}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+    
+        .top-nav, .bottom-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: var(--white);
+            border-bottom: 1px solid #e0e0e0;
+            gap: 1rem;
+        }
+        .bottom-nav {
+            border-top: 1px solid #e0e0e0;
+            border-bottom: none;
+            margin-top: 2rem;
+        }
+        .top-nav a, .bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .top-nav a:hover, .bottom-nav a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .top-nav .nav-home, .bottom-nav .nav-home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        .top-nav .nav-home:hover, .bottom-nav .nav-home:hover {
+            background: var(--secondary);
+            color: var(--white);
+        }
+        @media (max-width: 768px) {
+            .top-nav, .bottom-nav {
+                padding: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .top-nav a, .bottom-nav a {
+                font-size: 0.8rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>☀️ Impressionisme</h1><p class="subtitle">1860-1890 · Licht, Kleur & Het Vlugge Moment</p></header>
+    <nav class="top-nav">
+        <a href="realisme.html" class="nav-prev">← 🌾 Realisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="postimpressionisme.html" class="nav-next">Post-Impressionisme 🌻 →</a>
+    </nav>
+
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-linkindex">🏠 Home</a>
+            <a href="byzantijns.html" class="side-nav-linkbyzantijns">☦️ Byzantijnse Kunst</a>
+            <a href="romaans.html" class="side-nav-linkromaans">🏰 Romaanse Kunst</a>
+            <a href="gotisch.html" class="side-nav-linkgotisch">⛪ Gotische Kunst</a>
+            <a href="renaissance.html" class="side-nav-linkrenaissance">🏛️ Renaissance</a>
+            <a href="manierisme.html" class="side-nav-linkmanierisme">🎭 Maniërisme</a>
+            <a href="barok.html" class="side-nav-linkbarok">🎪 Barok</a>
+            <a href="neoclassicisme.html" class="side-nav-linkneoclassicisme">⚱️ Neoclassicisme</a>
+            <a href="romanticisme.html" class="side-nav-linkromanticisme">🌊 Romantiek</a>
+            <a href="realisme.html" class="side-nav-linkrealisme">🌾 Realisme</a>
+            <a href="impressionisme.html" class="side-nav-link active">☀️ Impressionisme</a>
+            <a href="postimpressionisme.html" class="side-nav-linkpostimpressionisme">🌻 Post-Impressionisme</a>
+            <a href="artnouveau.html" class="side-nav-linkartnouveau">🌿 Art Nouveau</a>
+            <a href="expressionisme.html" class="side-nav-linkexpressionisme">😱 Expressionisme</a>
+            <a href="kubisme.html" class="side-nav-linkkubisme">🔲 Kubisme</a>
+            <a href="dadaisme.html" class="side-nav-linkdadaisme">🎲 Dadaïsme</a>
+            <a href="destijl.html" class="side-nav-linkdestijl">⬜ De Stijl</a>
+            <a href="surrealisme.html" class="side-nav-linksurrealisme">🦋 Surrealisme</a>
+            <a href="abstract.html" class="side-nav-linkabstract">🔥 Abstract Expressionisme</a>
+            <a href="popart.html" class="side-nav-linkpopart">🍿 Pop Art</a>
+            <a href="postmodernisme.html" class="side-nav-linkpostmodernisme">🌀 Postmodernisme</a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <!-- Navigation -->
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>Meesterwerk: Impression, soleil levant</h2>
+                <p class="featured-artist">Claude Monet, 1872</p>
+                <img src="images/impressionisme/01_monet_impression.jpg" alt="Monet - Impression, soleil levant">
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🖌️ PENSEELVOERING</h4>
+                    <p><strong>Losse, zichtbare streken:</strong> Snelle, spontane penseelstreken die niet verblend worden. Elk gebaar blijft zichtbaar.</p>
+                    <p><strong>Schetsachtig:</strong> Werken lijken "onafgewerkt" volgens academische normen. Dit is bewust: het moment telt meer dan details.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🎨 KLEUR & LICHT</h4>
+                    <p><strong>Primaire kleuren:</strong> Geen zwart voor schaduwen, maar complementaire kleuren.</p>
+                    <p><strong>Optische menging:</strong> Kleuren worden naast elkaar geplaatst om door het oog te mengen.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>🌅 LICHT EFFECTEN</h4>
+                    <p><strong>En plein air:</strong> Schilderen buiten om direct licht te vangen.</p>
+                    <p><strong>Weerspiegeling:</strong> Water, mist, en atmosfeer worden centrale onderwerpen.</p>
+                </div>
+                
+                <div class="style-item">
+                    <h4>👁️ COMPOSITIE</h4>
+                    <p><strong>Afgesneden figuren:</strong> Geïnspireerd door fotografie en Japanse prenten.</p>
+                    <p><strong>Vlakke ruimte:</strong> Diepte door kleurcontrast, niet door perspectief.</p>
+                </div>
+            </div>
+
+            <div class="timeline-box">
+                <h4>🔗 TIJDSGEEST CONTEXT (1860-1890)</h4>
+                
+                <p><strong>🏛️ POLITIEK PERSPECTIEF:</strong> Het Tweede Franse Keizerrijk onder Napoleon III transformeert Parijs. Baron Haussmann slaat brede boulevards door de middeleeuwse stad - niet alleen voor schoonheid, maar ook om opstanden gemakkelijker te kunnen onderdrukken. De nieuwe "flâneurs" (straatwandelaars) worden het onderwerp van kunst. De Commune van Parijs (1871) toont de sociale spanningen onder het glanzende oppervlak.</p>
+                
+                <p><strong>📚 LITERAIR PERSPECTIEF:</strong> Naturalisme en Realisme in de literatuur (Zola, Flaubert) benadrukken het observeren van het alledaagse leven. Baudelaire's "De schilder van het moderne leven" (1863) definieert de moderne kunstenaar als iemand die de "transitorische, vluchtige, contingentie" van het moment vangt. De novelle wordt populair - korte, intense impressies van het leven.</p>
+                
+                <p><strong>🧠 PSYCHOLOGISCH PERSPECTIEF:</strong> De opkomst van de "nieuwe vrouw" - onafhankelijker, publiekelijk aanwezig in café's en parken. De psychologie van het moment, de vluchtige impressie, wordt belangrijker dan de eeuwige waarheid. De moderne mens ervaart een toegenomen tempo van leven - treinen, telegraaf, drukpers versnellen alles.</p>
+                
+                <p><strong>⚙️ HISTORISCH PERSPECTIEF:</strong> De Industriële Revolutie bereikt haar hoogtepunt. Stoommachines, elektriciteit, de Eiffeltoren (1889) - technologie verandert het stadsbeeld. De wereldtentoonstellingen tonen exotische culturen en nieuwe uitvindingen. Japan opent zich voor het Westen (1854) - Japonaiserie wordt enorm populair in de kunst.</p>
+                
+                <p><strong>🎭 FILOSOFISCH PERSPECTIEF:</strong> Positivisme (Auguste Comte) stelt dat alleen observeerbare feiten geldig zijn. De Impressionisten zijn positivisten in de kunst - ze schilderen wat ze zien, niet wat ze weten. Het relativisme van Nietzsche wijst vooruit naar het idee dat waarheid afhangt van perspectief - net zoals licht afhangt van standpunt.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 TIEN MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+
+            <!-- Work 1: Monet Impression -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. "Impression, soleil levant" (1872) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">Musée Marmottan, Parijs · 48 × 63 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/01_monet_impression.jpg" loading="lazy" alt="Monet - Impression, soleil levant">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De haven van Le Havre, Monet's geboorteplaats. Geschilderd in slechts enkele uren tijdens een mistige ochtend. Toen Monet dit werk in 1874 tentoonstelde, noemde criticus Louis Leroy het spottend "een impressionistisch werk" - en zo kreeg de beweging haar naam.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Penseelwerk:</strong> Extreem losse, snelle streken. De bootjes zijn enkele horizontale vegen oranje en zwart. De mist is opgebouwd uit lagen grijsblauw en wit.</p>
+                        
+                        <p><strong>Kleuren:</strong> De opkomende zon is een vlek oranje-geel die alles om zich heen kleurt. Het contrast tussen warm zonlicht (oranje/roze) en koude schaduwen (blauwgrijs) creëert de mistige atmosfeer.</p>
+                        
+                        <p><strong>Licht:</strong> Het licht is het echte onderwerp, niet de haven. De zon breekt door de mist en maakt alles diffuus.</p>
+                        
+                        <p><strong>Compositie:</strong> Geen traditioneel centraal punt. De zon is iets rechts van het midden, de bootjes liggen verspreid. Het is een "snapshot" compositie.</p>
+                        
+                        <p><strong>Tijdsgeest:</strong> Het moderne industriele landschap (stoomboten, fabrieksschoorstenen) wordt romantisch. De snelheid van het schilderen weerspiegelt de snelheid van het moderne leven.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: Monet Water Lilies -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. "Waterlelies" (1906) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">Art Institute of Chicago · 89 × 92 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/02_monet_waterlilies.jpg" loading="lazy" alt="Monet - Water Lilies">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Monet's tuin in Giverny, waar hij vanaf 1890 woonde en werkte. Hij creëerde er een Japanse tuin met een vijver vol waterlelies. Dit is een van 250 schilderijen die hij van dit onderwerp maakte - zijn levenswerk.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Penseelwerk:</strong> Dikke impasto-lagen (relief verf) die bijna driedimensionaal zijn. De bloemen zijn dikke klodders wit en roze, de bladeren zijn snelle groene streken.</p>
+                        
+                        <p><strong>Kleuren:</strong> Een harmonie van groen (blad), blauw (water), wit/roze (bloemen) en violet (schaduwen). Geen bruin of aarde - een volledig "modern" palet.</p>
+                        
+                        <p><strong>Ruimte:</strong> Geen horizon, geen hemel, geen perspectief. Het oppervlak is plat - we kijken van bovenaf op het water.</p>
+                        
+                        <p><strong>Ontwikkeling:</strong> Dit late werk (1906) wijst al naar abstractie. De waterlelies zijn bijna niet herkenbaar als bloemen - het is puur kleur en vorm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Van Gogh Sunflowers -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. "De Zonnebloemen" (1888) — Vincent van Gogh</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 92 × 73 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/03_vangogh_sunflowers.jpg" loading="lazy" alt="Van Gogh - Sunflowers">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Geschilderd in Arles, Zuid-Frankrijk, waar Van Gogh woonde in het "Gele Huis". De zonnebloemen waren bedoeld als decoratie voor de kamer van zijn vriend Gauguin.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Impasto:</strong> Extreem dikke verflagen - soms millimeters dik. Je kunt de structuur voelen. De zonnebloemzaden zijn dikke klodders verf.</p>
+                        
+                        <p><strong>Kleur:</strong> Geel is hier geen beschrijving maar emotie. Van Gogh gebruikt tien tinten geel (van oker tot cadmium).</p>
+                        
+                        <p><strong>Expressieve lijn:</strong> De stengels zijn niet rechte lijnen maar krullende, organische vormen die beweging suggereren.</p>
+                        
+                        <p><strong>Van Gogh vs Impressionisme:</strong> Hij deelt de losse penseelvoering en het heldere palet, maar is expressiever en emotioneler. Dit is eerder Post-Impressionisme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Monet Woman with Parasol -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. "Vrouw met een Parasol" (1875) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery of Art, Washington · 100 × 81 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/04_monet_parasol.jpg" loading="lazy" alt="Monet - Woman with a Parasol">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Monet's vrouw Camille en hun zoon Jean in Argenteuil. Geschilderd in het veld achter hun huis. Het is een zonnige dag in mei, met veel wind.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Beweging:</strong> Alles beweegt. De jurk wappert, het gras buigt, de wolken drijven. Dit is geen statisch portret maar een moment van actie.</p>
+                        
+                        <p><strong>Licht door textiel:</strong> De parasol is doorschijnend - je ziet het silhouet van Camille erachter. Het witte katoen filtert het zonlicht.</p>
+                        
+                        <p><strong>Compositie:</strong> Camille staat op een heuveltop tegen de horizon. Het is een "repoussoir" - een figuur die de diepte benadrukt.</p>
+                        
+                        <p><strong>Kleuren:</strong> De jurk is blauw-grijs (schaduw), maar reflecteert het gras (groen) en de lucht (blauw). Geen kleur is "echt" - alles is licht.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Manet Olympia -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. "Olympia" (1863) — Édouard Manet</h3>
+                    <p style="color:#666;font-style:italic;">Musée d'Orsay, Parijs · 130 × 190 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/05_manet_olympia.jpg" loading="lazy" alt="Manet - Olympia">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een naakte vrouw (model Victorine Meurent) die direct naar de kijker kijkt. Een scandal in 1865 - het publiek schreeuwde toen het werd tentoongesteld.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Flakke kleurvlakken:</strong> Geen modellering, geen overgangen. Het lichaam is bijna wit (geen schaduwen), de achtergrond is donkerbruin.</p>
+                        
+                        <p><strong>De blik:</strong> Olympia kijkt niet verlegen naar beneden (zoals Venus), maar recht naar de kijker. Het is geen mythische godin maar een prostituee.</p>
+                        
+                        <p><strong>Contrast:</strong> Het warme, bleke lichaam tegen de koele, donkere achtergrond. De zwarte dienstbode en de zwarte kat versterken dit contrast.</p>
+                        
+                        <p><strong>Moderniteit:</strong> Geen mythologie, geen allegorie. Gewoon een vrouw in een moderne setting (de orchidee, de sieraden, de kamer).</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Monet Garden -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. "De Tuin in Giverny" (1900) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">Musée d'Orsay, Parijs · 81 × 92 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/06_monet_garden.jpg" loading="lazy" alt="Monet - Garden">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Monet's eigen tuin in Giverny, die hij zelf had ontworpen naar Japanse voorbeelden. De rozen boog leidt naar het water.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Verf mengeling:</strong> Roze, groen, blauw, en wit vloeien in elkaar. Er is geen duidelijk onderscheid tussen bladeren, bloemen, en lucht.</p>
+                        
+                        <p><strong>Japanse invloed:</strong> De boogvormige brug is typisch Japans. De weergave is plat, zonder perspectief - net als op een prent.</p>
+                        
+                        <p><strong>Licht filteren:</strong> Het licht filtert door de bladeren en creëert een schittering van roze en groen.</p>
+                        
+                        <p><strong>Abstractie:</strong> Van dichtbij zijn het alleen maar kleurvlakken. Pas van veraf wordt het een tuin.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: Monet San Giorgio -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. "San Giorgio Maggiore bij Dusk" (1908) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">National Museum Cardiff · 65 × 92 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/07_monet_sangiorgio.jpg" loading="lazy" alt="Monet - San Giorgio">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De kerk van San Giorgio Maggiore in Venetië, gezien vanaf het Piazzetta. Monet bezocht Venetië in 1908 en schilderde 37 werken van de stad.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Zonsondergang palet:</strong> Roze, oranje, violet, en blauw mengen in de lucht. De kerk reflecteert al deze kleuren.</p>
+                        
+                        <p><strong>Water reflectie:</strong> Het water is geen spiegel maar een vibratie van kleur. De reflectie is onscherp, bewegend, ongrijpbaar.</p>
+                        
+                        <p><strong>Architectuur:</strong> De klassieke symmetrie van de kerk wordt ondermijnd door de losse penseelvoering.</p>
+                        
+                        <p><strong>Tijdsaspect:</strong> De titel zegt "bij schemering" - een moment van overgang. De kleuren verdwijnen terwijl we kijken.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Monet Haystacks -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. "Hooibergen" (1891) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">National Gallery of Australia · 65 × 100 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/08_monet_haystacks.jpg" loading="lazy" alt="Monet - Haystacks">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Hooibergen in Giverny. Monet schilderde dezelfde hooibergen 25 keer tussen zomer en winter 1890-1891.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Seriële methode:</strong> Identiek onderwerp, verschillende lichtomstandigheden. De hooibergen zijn alleen een excuus om licht te schilderen.</p>
+                        
+                        <p><strong>Kleur temperatuur:</strong> Warm oranje-rood voor de hooibergen (zonlicht), koel blauw-paars voor de schaduwen.</p>
+                        
+                        <p><strong>Textuur:</strong> De hooibergen zijn opgebouwd uit dikke, korte streken die de structuur van het stro suggereren.</p>
+                        
+                        <p><strong>Compositie:</strong> Twee hooibergen in de voorgrond, één groot in de achtergrond. Het landschap wordt gestileerd tot kleurvlakken.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Monet Cathedral -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. "De Kathedraal van Rouen" (1894) — Claude Monet</h3>
+                    <p style="color:#666;font-style:italic;">Musée d'Orsay, Parijs · 100 × 65 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/09_monet_cathedral.jpg" loading="lazy" alt="Monet - Rouen Cathedral">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De gotische kathedraal van Rouen, geschilderd vanuit een appartement tegenover het gebouw. Monet maakte 30 schilderijen van de kathedraal.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Gothiek als lichtvanger:</strong> De gevel is één groot oppervlak van schaduw en licht. De gebeeldhouwde details verdwijnen.</p>
+                        
+                        <p><strong>Reliëf verf:</strong> Extreem dikke verflagen, vooral in de lichte gedeelten. Monet bouwt het steen op als reliëf.</p>
+                        
+                        <p><strong>Kleur harmonie:</strong> Blauw, oranje, en geel (complementaire kleuren) domineren. De gotiek is niet grijs of beige, maar regenboogkleurig.</p>
+                        
+                        <p><strong>Abstractie:</strong> Van dichtbij zijn het gekke kleurklodders. Pas van veraf wordt het een kathedraal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Renoir Bal du moulin -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. "Bal du moulin de la Galette" (1876) — Pierre-Auguste Renoir</h3>
+                    <p style="color:#666;font-style:italic;">Musée d'Orsay, Parijs · 131 × 175 cm · Olieverf op doek</p>
+                </div>
+                <img src="images/impressionisme/10_renoir_moulin.jpg" loading="lazy" alt="Renoir - Bal du moulin">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het beroemde bal in Montmartre, waar arbeiders en artiesten samenkwamen om te dansen. Geschilderd ter plekke.</p>
+                    
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Dappled light:</strong> Het licht filtert door de bladeren en creëert een schittering van lichtvlekken op de kleding en gezichten.</p>
+                        
+                        <p><strong>Sociale mix:</strong> Heren in hoeden, vrouwen in eenvoudige jurken, alle klassen dansen door elkaar. Dit is de nieuwe democratie van het publieke park.</p>
+                        
+                        <p><strong>Penseelwerk:</strong> Zeer los, bijna vloeiend. De figuren zijn niet tekeningen maar kleurimpressies.</p>
+                        
+                        <p><strong>Kleur:</strong> Warm roze (huid), blauw (jassen), wit (jurken), en groen (bladeren). Het palet is vrolijk, optimistisch.</p>
+                        
+                        <p><strong>Verschil met Monet:</strong> Waar Monet licht en landschap schildert, schildert Renoir mensen en sociale momenten.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE</h2>
+            
+            <div class="timeline-box">
+                <p>Het Impressionisme verandert kunst voor altijd door:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Van binnen naar buiten:</strong> Schilderen in de openlucht</li>
+                    <li><strong>Van eeuwig naar vluchtig:</strong> Het moment telt</li>
+                    <li><strong>Van donker naar licht:</strong> Schaduwen hebben kleur</li>
+                    <li><strong>Van gesloten naar open:</strong> Penseelstreken blijven zichtbaar</li>
+                    <li><strong>Van elite naar modern leven:</strong> Café's, parken, en spoorbruggen</li>
+                </ul>
+                <p>De weg naar modernisme begint hier.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    <nav class="bottom-nav">
+        <a href="realisme.html" class="nav-prev">← 🌾 Realisme</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="postimpressionisme.html" class="nav-next">Post-Impressionisme 🌻 →</a>
+    </nav>
+
+    </footer>
+</body>
+</html>
