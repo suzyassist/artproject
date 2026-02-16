@@ -54,6 +54,9 @@
             border-radius: 12px; 
             box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
         }
         
         .timeline-container { 
@@ -91,7 +94,7 @@
         .timeline-rows { position: relative; }
         .timeline-row {
             position: relative;
-            height: 38px;
+            height: 48px;
             margin-bottom: 2px;
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
@@ -107,11 +110,11 @@
 
         .timeline-bar {
             position: absolute;
-            height: 32px;
-            border-radius: 6px;
+            height: 42px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
-            padding: 0 12px;
+            padding: 0 14px;
             text-decoration: none;
             color: inherit;
             transition: all 0.3s ease;
@@ -161,6 +164,8 @@
         }
         
         /* Zoom levels */
+        .timeline-container.zoom-25 { transform: scale(0.25); }
+        .timeline-container.zoom-33 { transform: scale(0.33); }
         .timeline-container.zoom-50 { transform: scale(0.5); }
         .timeline-container.zoom-75 { transform: scale(0.75); }
         .timeline-container.zoom-100 { transform: scale(1); }
@@ -195,6 +200,7 @@
         
         .legend { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
         .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
+        .legend-icon { font-size: 1.1rem; }
         .legend-color { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); }
         
         .movement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
@@ -336,31 +342,31 @@
                 </div>
             </div>
             
-            <div class="legend" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:0.5rem;">
-                <div class="legend-item"><div class="legend-color era-byzantine"></div> Byzantijns</div>
-                <div class="legend-item"><div class="legend-color era-romanesque"></div> Romaans</div>
-                <div class="legend-item"><div class="legend-color era-gothic"></div> Gotisch</div>
-                <div class="legend-item"><div class="legend-color era-renaissance"></div> Renaissance</div>
-                <div class="legend-item"><div class="legend-color era-mannerism"></div> Maniërisme</div>
-                <div class="legend-item"><div class="legend-color era-baroque"></div> Barok/Rococo</div>
-                <div class="legend-item"><div class="legend-color era-neoclassic"></div> Neoclassicisme</div>
-                <div class="legend-item"><div class="legend-color era-romantic"></div> Romantiek</div>
-                <div class="legend-item"><div class="legend-color era-realism"></div> Realisme</div>
-                <div class="legend-item"><div class="legend-color era-impressionism"></div> Impressionisme</div>
-                <div class="legend-item"><div class="legend-color era-postimpressionism"></div> Post-Imp.</div>
-                <div class="legend-item"><div class="legend-color era-surrealism"></div> Symbolisme/Futurisme</div>
-                <div class="legend-item"><div class="legend-color era-artnouveau"></div> Art Nouveau</div>
-                <div class="legend-item"><div class="legend-color era-expressionism"></div> Expressionisme/Fauv.</div>
-                <div class="legend-item"><div class="legend-color era-cubism"></div> Kubisme</div>
-                <div class="legend-item"><div class="legend-color era-dada"></div> Dadaïsme</div>
-                <div class="legend-item"><div class="legend-color era-destijl"></div> De Stijl</div>
-                <div class="legend-item"><div class="legend-color era-abstract"></div> Abstract Expr.</div>
-                <div class="legend-item"><div class="legend-color era-popart"></div> Pop Art</div>
-                <div class="legend-item"><div class="legend-color era-minimalism"></div> Minimalisme</div>
-                <div class="legend-item"><div class="legend-color era-conceptual"></div> Conceptueel</div>
-                <div class="legend-item"><div class="legend-color era-postmodern"></div> Postmodernisme</div>
-                <div class="legend-item"><div class="legend-color era-contemporary"></div> Hedendaags</div>
-                <div class="legend-item"><div class="legend-color era-digital"></div> Digitaal</div>
+            <div class="legend" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.6rem;">
+                <div class="legend-item"><div class="legend-color era-byzantine"></div><span class="legend-icon">☦️</span> Byzantijns</div>
+                <div class="legend-item"><div class="legend-color era-romanesque"></div><span class="legend-icon">🏰</span> Romaans</div>
+                <div class="legend-item"><div class="legend-color era-gothic"></div><span class="legend-icon">⛪</span> Gotisch</div>
+                <div class="legend-item"><div class="legend-color era-renaissance"></div><span class="legend-icon">🏛️</span> Renaissance</div>
+                <div class="legend-item"><div class="legend-color era-mannerism"></div><span class="legend-icon">🎭</span> Maniërisme</div>
+                <div class="legend-item"><div class="legend-color era-baroque"></div><span class="legend-icon">🎪</span> Barok/Rococo</div>
+                <div class="legend-item"><div class="legend-color era-neoclassic"></div><span class="legend-icon">⚱️</span> Neoclassicisme</div>
+                <div class="legend-item"><div class="legend-color era-romantic"></div><span class="legend-icon">🌊</span> Romantiek</div>
+                <div class="legend-item"><div class="legend-color era-realism"></div><span class="legend-icon">🌾</span> Realisme</div>
+                <div class="legend-item"><div class="legend-color era-impressionism"></div><span class="legend-icon">☀️</span> Impressionisme</div>
+                <div class="legend-item"><div class="legend-color era-postimpressionism"></div><span class="legend-icon">🌻</span> Post-Imp.</div>
+                <div class="legend-item"><div class="legend-color era-artnouveau"></div><span class="legend-icon">🌿</span> Art Nouveau</div>
+                <div class="legend-item"><div class="legend-color era-expressionism"></div><span class="legend-icon">😱</span> Expressionisme</div>
+                <div class="legend-item"><div class="legend-color era-cubism"></div><span class="legend-icon">🔲</span> Kubisme</div>
+                <div class="legend-item"><div class="legend-color era-dada"></div><span class="legend-icon">🎲</span> Dadaïsme</div>
+                <div class="legend-item"><div class="legend-color era-destijl"></div><span class="legend-icon">⬜</span> De Stijl</div>
+                <div class="legend-item"><div class="legend-color era-surrealism"></div><span class="legend-icon">🦋</span> Surrealisme</div>
+                <div class="legend-item"><div class="legend-color era-abstract"></div><span class="legend-icon">🔥</span> Abstract Expr.</div>
+                <div class="legend-item"><div class="legend-color era-popart"></div><span class="legend-icon">🍿</span> Pop Art</div>
+                <div class="legend-item"><div class="legend-color era-minimalism"></div><span class="legend-icon">⬛</span> Minimalisme</div>
+                <div class="legend-item"><div class="legend-color era-conceptual"></div><span class="legend-icon">💡</span> Conceptueel</div>
+                <div class="legend-item"><div class="legend-color era-postmodern"></div><span class="legend-icon">🌀</span> Postmodernisme</div>
+                <div class="legend-item"><div class="legend-color era-contemporary"></div><span class="legend-icon">🌐</span> Hedendaags</div>
+                <div class="legend-item"><div class="legend-color era-digital"></div><span class="legend-icon">💻</span> Digitaal</div>
             </div>
         </section>
 
@@ -551,8 +557,8 @@
         });
         
         // Timeline Zoom Functionality
-        const zoomLevels = [50, 75, 100, 125, 150, 200];
-        let currentZoomIndex = 2; // Start at 100%
+        const zoomLevels = [25, 33, 50, 75, 100, 125, 150, 200];
+        let currentZoomIndex = 2; // Start at 50% for overview
         
         const timelineContainer = document.getElementById('timeline-container');
         const timelineScroll = document.getElementById('timeline-scroll');
