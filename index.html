@@ -79,7 +79,7 @@
             border-bottom: 2px solid #c9a227;
         }
         
-        .timeline-axis { position: absolute; top: 30px; left: 100px; right: 40px; height: 2px; background: linear-gradient(to right, #c9a227 0%, #d4a574 25%, #c9a227 50%, #d4a574 75%, #c9a227 100%); box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        .timeline-axis { position: absolute; top: 30px; left: 100px; right: 40px; height: 3px; background: linear-gradient(to right, #c9a227 0%, #d4a574 25%, #c9a227 50%, #d4a574 75%, #c9a227 100%); box-shadow: 0 2px 4px rgba(0,0,0,0.2); z-index: 10; }
 
         .timeline-year {
             position: absolute;
@@ -92,6 +92,7 @@
             padding: 2px 6px;
             border-radius: 3px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            z-index: 10;
         }
         .timeline-year::after {
             content: '';
@@ -104,7 +105,7 @@
             transform: translateX(-50%);
         }
 
-        .timeline-rows { position: relative; }
+        .timeline-rows { position: relative; margin-top: 50px; }
         .timeline-row {
             position: relative;
             height: 48px;
@@ -213,8 +214,7 @@
         
         .legend { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
         .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
-        .legend-icon { font-size: 1.1rem; }
-        .legend-color { width: 20px; height: 20px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); }
+        .legend-color { width: 28px; height: 28px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); flex-shrink: 0; }
         
         .movement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
         .movement-card { background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; border-left: 4px solid #c9a227; text-align: center; text-decoration: none; color: inherit; }
@@ -361,31 +361,31 @@
                 </div>
             </div>
             
-            <div class="legend" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:0.6rem;">
-                <div class="legend-item"><div class="legend-color era-byzantine"></div><span class="legend-icon">☦️</span> Byzantijns</div>
-                <div class="legend-item"><div class="legend-color era-romanesque"></div><span class="legend-icon">🏰</span> Romaans</div>
-                <div class="legend-item"><div class="legend-color era-gothic"></div><span class="legend-icon">⛪</span> Gotisch</div>
-                <div class="legend-item"><div class="legend-color era-renaissance"></div><span class="legend-icon">🏛️</span> Renaissance</div>
-                <div class="legend-item"><div class="legend-color era-mannerism"></div><span class="legend-icon">🎭</span> Maniërisme</div>
-                <div class="legend-item"><div class="legend-color era-baroque"></div><span class="legend-icon">🎪</span> Barok/Rococo</div>
-                <div class="legend-item"><div class="legend-color era-neoclassic"></div><span class="legend-icon">⚱️</span> Neoclassicisme</div>
-                <div class="legend-item"><div class="legend-color era-romantic"></div><span class="legend-icon">🌊</span> Romantiek</div>
-                <div class="legend-item"><div class="legend-color era-realism"></div><span class="legend-icon">🌾</span> Realisme</div>
-                <div class="legend-item"><div class="legend-color era-impressionism"></div><span class="legend-icon">☀️</span> Impressionisme</div>
-                <div class="legend-item"><div class="legend-color era-postimpressionism"></div><span class="legend-icon">🌻</span> Post-Imp.</div>
-                <div class="legend-item"><div class="legend-color era-artnouveau"></div><span class="legend-icon">🌿</span> Art Nouveau</div>
-                <div class="legend-item"><div class="legend-color era-expressionism"></div><span class="legend-icon">😱</span> Expressionisme</div>
-                <div class="legend-item"><div class="legend-color era-cubism"></div><span class="legend-icon">🔲</span> Kubisme</div>
-                <div class="legend-item"><div class="legend-color era-dada"></div><span class="legend-icon">🎲</span> Dadaïsme</div>
-                <div class="legend-item"><div class="legend-color era-destijl"></div><span class="legend-icon">⬜</span> De Stijl</div>
-                <div class="legend-item"><div class="legend-color era-surrealism"></div><span class="legend-icon">🦋</span> Surrealisme</div>
-                <div class="legend-item"><div class="legend-color era-abstract"></div><span class="legend-icon">🔥</span> Abstract Expr.</div>
-                <div class="legend-item"><div class="legend-color era-popart"></div><span class="legend-icon">🍿</span> Pop Art</div>
-                <div class="legend-item"><div class="legend-color era-minimalism"></div><span class="legend-icon">⬛</span> Minimalisme</div>
-                <div class="legend-item"><div class="legend-color era-conceptual"></div><span class="legend-icon">💡</span> Conceptueel</div>
-                <div class="legend-item"><div class="legend-color era-postmodern"></div><span class="legend-icon">🌀</span> Postmodernisme</div>
-                <div class="legend-item"><div class="legend-color era-contemporary"></div><span class="legend-icon">🌐</span> Hedendaags</div>
-                <div class="legend-item"><div class="legend-color era-digital"></div><span class="legend-icon">💻</span> Digitaal</div>
+            <div class="legend" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.5rem;">
+                <div class="legend-item"><div class="legend-color era-byzantine" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☦️</div><span>Byzantijns</span></div>
+                <div class="legend-item"><div class="legend-color era-romanesque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏰</div><span>Romaans</span></div>
+                <div class="legend-item"><div class="legend-color era-gothic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⛪</div><span>Gotisch</span></div>
+                <div class="legend-item"><div class="legend-color era-renaissance" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏛️</div><span>Renaissance</span></div>
+                <div class="legend-item"><div class="legend-color era-mannerism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎭</div><span>Maniërisme</span></div>
+                <div class="legend-item"><div class="legend-color era-baroque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎪</div><span>Barok/Rococo</span></div>
+                <div class="legend-item"><div class="legend-color era-neoclassic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⚱️</div><span>Neoclassicisme</span></div>
+                <div class="legend-item"><div class="legend-color era-romantic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌊</div><span>Romantiek</span></div>
+                <div class="legend-item"><div class="legend-color era-realism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌾</div><span>Realisme</span></div>
+                <div class="legend-item"><div class="legend-color era-impressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☀️</div><span>Impressionisme</span></div>
+                <div class="legend-item"><div class="legend-color era-postimpressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌻</div><span>Post-Imp.</span></div>
+                <div class="legend-item"><div class="legend-color era-artnouveau" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌿</div><span>Art Nouveau</span></div>
+                <div class="legend-item"><div class="legend-color era-expressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">😱</div><span>Expressionisme</span></div>
+                <div class="legend-item"><div class="legend-color era-cubism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🔲</div><span>Kubisme</span></div>
+                <div class="legend-item"><div class="legend-color era-dada" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎲</div><span>Dadaïsme</span></div>
+                <div class="legend-item"><div class="legend-color era-destijl" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⬜</div><span>De Stijl</span></div>
+                <div class="legend-item"><div class="legend-color era-surrealism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🦋</div><span>Surrealisme</span></div>
+                <div class="legend-item"><div class="legend-color era-abstract" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🔥</div><span>Abstract Expr.</span></div>
+                <div class="legend-item"><div class="legend-color era-popart" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🍿</div><span>Pop Art</span></div>
+                <div class="legend-item"><div class="legend-color era-minimalism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⬛</div><span>Minimalisme</span></div>
+                <div class="legend-item"><div class="legend-color era-conceptual" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">💡</div><span>Conceptueel</span></div>
+                <div class="legend-item"><div class="legend-color era-postmodern" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌀</div><span>Postmodernisme</span></div>
+                <div class="legend-item"><div class="legend-color era-contemporary" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌐</div><span>Hedendaags</span></div>
+                <div class="legend-item"><div class="legend-color era-digital" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">💻</div><span>Digitaal</span></div>
             </div>
         </section>
 
