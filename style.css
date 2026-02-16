@@ -46,41 +46,43 @@ header h1 {
 .menu-button {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 9999;
-    background: var(--secondary);
-    color: var(--white);
-    border: none;
-    font-size: 28px;
-    padding: 10px 15px;
-    border-radius: 8px;
+    background: var(--accent);
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    font-size: 24px;
+    padding: 12px 16px;
+    border-radius: 12px;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .menu-button:hover {
-    background: var(--accent);
-    color: var(--primary);
+    background: var(--primary);
+    color: var(--accent);
     transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(201, 162, 39, 0.6);
 }
 
 /* Side Navigation Panel */
 .side-nav {
     position: fixed;
     top: 0;
-    right: -320px;
+    left: -320px;
     width: 320px;
     height: 100vh;
-    background: var(--secondary);
+    background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
     z-index: 10000;
-    transition: right 0.3s ease;
+    transition: left 0.3s ease;
     overflow-y: auto;
-    box-shadow: -5px 0 20px rgba(0,0,0,0.4);
+    box-shadow: 5px 0 20px rgba(0,0,0,0.4);
 }
 
 .side-nav.open {
-    right: 0;
+    left: 0;
 }
 
 .side-nav-header {
@@ -125,20 +127,38 @@ header h1 {
 }
 
 .side-nav-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     color: var(--white);
     text-decoration: none;
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding: 14px 20px;
+    margin: 6px 10px;
+    border-radius: 10px;
     font-size: 1rem;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.05);
+    border: 2px solid transparent;
 }
 
 .side-nav-link:hover,
 .side-nav-link.active {
     background: var(--accent);
     color: var(--primary);
-    padding-left: 25px;
+    transform: translateX(5px);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(201, 162, 39, 0.3);
+}
+
+.side-nav-link .nav-icon {
+    font-size: 1.5rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.side-nav-link .nav-text {
+    flex: 1;
+    font-weight: 500;
 }
 
 /* Overlay */
@@ -155,6 +175,76 @@ header h1 {
 
 .nav-overlay.show {
     display: block;
+}
+
+/* Top & Bottom Navigation Buttons */
+.top-nav,
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 20px;
+    flex-wrap: wrap;
+}
+
+.top-nav {
+    margin-bottom: 20px;
+    background: rgba(201, 162, 39, 0.1);
+    border-bottom: 2px solid var(--accent);
+}
+
+.bottom-nav {
+    margin-top: 40px;
+    border-top: 2px solid var(--accent);
+    background: rgba(201, 162, 39, 0.05);
+}
+
+.top-nav a,
+.bottom-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 3px solid var(--primary);
+}
+
+.top-nav .nav-prev,
+.top-nav .nav-next,
+.bottom-nav .nav-prev,
+.bottom-nav .nav-next {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.top-nav .nav-prev:hover,
+.top-nav .nav-next:hover,
+.bottom-nav .nav-prev:hover,
+.bottom-nav .nav-next:hover {
+    background: var(--primary);
+    color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.top-nav .nav-home,
+.bottom-nav .nav-home {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.top-nav .nav-home:hover,
+.bottom-nav .nav-home:hover {
+    background: var(--primary);
+    color: var(--accent);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(201, 162, 39, 0.4);
 }
 
 /* Main Content - Mobile First */

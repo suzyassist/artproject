@@ -1,21 +1,12 @@
-# System files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-
-# Temp files
-*.tmp
-.cache/
-
-# IDE files
-.vscode/
-.idea/
-
-# Node modules (if used later)
-node_modules/
-
-# Environment files
-.env
-.env.local
+# Temporary scripts
+compact_timeline.py
+fix_navigation.py
+update_timeline.py
+fix_byzantijns.py
+fix_pantocrator.py
+fix_pantocrator2.py
+fix_remaining.py
+fix_romaans.py
+download_*.py
+download_*.sh
+generate_*.py
