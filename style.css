@@ -627,6 +627,20 @@ footer {
     }
 }
 
+/* Tijdsgeest Link Styles */
+.tijdsgeest-link {
+    background: rgba(201, 162, 39, 0.1);
+    border-left: 3px solid var(--accent);
+    padding: 0.75rem;
+    margin-top: 0.75rem;
+    border-radius: 0 8px 8px 0;
+}
+.tijdsgeest-link h5 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+}
+
 /* Print styles */
 @media print {
     .main-nav,
