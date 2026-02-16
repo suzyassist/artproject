@@ -84,24 +84,26 @@
         .timeline-year {
             position: absolute;
             top: 8px;
-            font-size: 1rem;
+            font-size: 2rem;
             color: #333;
             font-weight: bold;
             transform: translateX(-50%);
             background: white;
-            padding: 4px 10px;
-            border-radius: 4px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 6px 14px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             z-index: 10;
-            border: 1px solid #c9a227;
+            border: 2px solid #c9a227;
+            min-width: 70px;
+            text-align: center;
         }
         .timeline-year::after {
             content: '';
             position: absolute;
-            top: 24px;
+            top: 36px;
             left: 50%;
-            width: 2px;
-            height: 15px;
+            width: 3px;
+            height: 20px;
             background: #c9a227;
             transform: translateX(-50%);
         }
@@ -304,7 +306,19 @@
                     <!-- Sticky Timeline Header -->
                     <div class="timeline-header">
                         <div class="timeline-axis"></div>
+                        <!-- Every 100 years from year 0 to 2100 -->
+                        <div class="timeline-year" style="left:-7000px">0</div>
+                        <div class="timeline-year" style="left:-6500px">100</div>
+                        <div class="timeline-year" style="left:-6000px">200</div>
+                        <div class="timeline-year" style="left:-5500px">300</div>
+                        <div class="timeline-year" style="left:-5000px">400</div>
+                        <div class="timeline-year" style="left:-4500px">500</div>
+                        <div class="timeline-year" style="left:-4000px">600</div>
+                        <div class="timeline-year" style="left:-3500px">700</div>
+                        <div class="timeline-year" style="left:-3000px">800</div>
+                        <div class="timeline-year" style="left:-2500px">900</div>
                         <div class="timeline-year" style="left:-2000px">1000</div>
+                        <div class="timeline-year" style="left:-1500px">1100</div>
                         <div class="timeline-year" style="left:-1000px">1200</div>
                         <div class="timeline-year" style="left:-500px">1300</div>
                         <div class="timeline-year" style="left:0px">1400</div>
@@ -314,6 +328,7 @@
                         <div class="timeline-year" style="left:2000px">1800</div>
                         <div class="timeline-year" style="left:2500px">1900</div>
                         <div class="timeline-year" style="left:3000px">2000</div>
+                        <div class="timeline-year" style="left:3500px">2100</div>
                     </div>
                     
                     <!-- Scrollable Timeline Rows -->
