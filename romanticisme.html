@@ -3,482 +3,484 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantiek - Kunstgeschiedenis</title>
+    <title>De Vrijheid leidt het Volk - Kunstgeschiedenis</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .featured-artwork {background: linear-gradient(135deg, #2c5f2d 0%, #97bc62 100%);color:white;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
-        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
-        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
-        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
-        .artwork-header {border-bottom: 3px solid #2c5f2d;margin-bottom: 1.5rem;padding-bottom: 1rem;}
-        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #2c5f2d;padding: 1.5rem;margin: 1rem 0;}
-        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
-        .style-item {background:#e8f5e9;padding:1rem;border-radius:4px}
-        .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
-        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
-    
-        .page-navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--white);
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            gap: 1rem;
-        }
-        .page-navigation a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
-            background: var(--secondary);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-        .page-navigation a:hover {
-            background: var(--accent);
-            color: var(--primary);
-            transform: translateY(-2px);
-        }
-        .page-navigation .prev::before {
-            content: "←";
-            font-size: 1.2rem;
-        }
-        .page-navigation .next::after {
-            content: "→";
-            font-size: 1.2rem;
-        }
-        .page-navigation .home {
-            background: var(--accent);
-            color: var(--primary);
-        }
-        @media (max-width: 600px) {
-            .page-navigation {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .page-navigation a {
-                font-size: 0.85rem;
-                padding: 0.6rem 1rem;
-            }
-        }
-        @media (max-width: 768px) {
-        }
-    
-    </style>
 </head>
 <body>
-    <header><h1>🌿 Romantiek</h1><p class="subtitle">1800-1850 · Emotie, Natuur & Het Individu</p></header>
-    <nav class="top-nav">
-        <a href="neoclassicisme.html" class="nav-prev">← ⚱️ Neoclassicisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="realisme.html" class="nav-next">Realisme 🌾 →</a>
+    <header>
+        <h1>🎨 De Vrijheid leidt het Volk</h1>
+        <p class="subtitle">1780-1850</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="romanticisme.html" class="active">Romanticisme</a>
+        <a href="expressionisme.html">Expressionisme</a>
+        <a href="kubisme.html">Kubisme</a>
     </nav>
 
-    <!-- Hamburger Menu Button -->
-    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
-
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar" class="side-nav">
-        <div class="side-nav-header">
-            <h3>🎨 Kunststromingen</h3>
-            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
-        </div>
-        <div class="side-nav-content">
-            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
-            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
-            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
-            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
-            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
-            <a href="manierisme.html" class="side-nav-link"><span class="nav-icon">🎭</span><span class="nav-text">Maniërisme</span></a>
-            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
-            <a href="rococo.html" class="side-nav-link"><span class="nav-icon">🎀</span><span class="nav-text">Rococo</span></a>
-            <a href="neoclassicisme.html" class="side-nav-link"><span class="nav-icon">⚱️</span><span class="nav-text">Neoclassicisme</span></a>
-            <a href="romanticisme.html" class="side-nav-link active"><span class="nav-icon">🌊</span><span class="nav-text">Romantiek</span></a>
-            <a href="realisme.html" class="side-nav-link"><span class="nav-icon">🌾</span><span class="nav-text">Realisme</span></a>
-            <a href="impressionisme.html" class="side-nav-link"><span class="nav-icon">☀️</span><span class="nav-text">Impressionisme</span></a>
-            <a href="postimpressionisme.html" class="side-nav-link"><span class="nav-icon">🌻</span><span class="nav-text">Post-Impressionisme</span></a>
-            <a href="symbolisme.html" class="side-nav-link"><span class="nav-icon">🌙</span><span class="nav-text">Symbolisme</span></a>
-            <a href="artnouveau.html" class="side-nav-link"><span class="nav-icon">🌿</span><span class="nav-text">Art Nouveau</span></a>
-            <a href="fauvisme.html" class="side-nav-link"><span class="nav-icon">🦁</span><span class="nav-text">Fauvisme</span></a>
-            <a href="expressionisme.html" class="side-nav-link"><span class="nav-icon">😱</span><span class="nav-text">Expressionisme</span></a>
-            <a href="kubisme.html" class="side-nav-link"><span class="nav-icon">🔲</span><span class="nav-text">Kubisme</span></a>
-            <a href="futurisme.html" class="side-nav-link"><span class="nav-icon">⚡</span><span class="nav-text">Futurisme</span></a>
-            <a href="dadaisme.html" class="side-nav-link"><span class="nav-icon">🎲</span><span class="nav-text">Dadaïsme</span></a>
-            <a href="destijl.html" class="side-nav-link"><span class="nav-icon">⬜</span><span class="nav-text">De Stijl</span></a>
-            <a href="surrealisme.html" class="side-nav-link"><span class="nav-icon">🦋</span><span class="nav-text">Surrealisme</span></a>
-            <a href="abstract.html" class="side-nav-link"><span class="nav-icon">🔥</span><span class="nav-text">Abstract Expressionisme</span></a>
-            <a href="popart.html" class="side-nav-link"><span class="nav-icon">🍿</span><span class="nav-text">Pop Art</span></a>
-            <a href="minimalisme.html" class="side-nav-link"><span class="nav-icon">⬛</span><span class="nav-text">Minimalisme</span></a>
-            <a href="conceptueel.html" class="side-nav-link"><span class="nav-icon">💡</span><span class="nav-text">Conceptuele Kunst</span></a>
-            <a href="postmodernisme.html" class="side-nav-link"><span class="nav-icon">🌀</span><span class="nav-text">Postmodernisme</span></a>
-            <a href="hedendaags.html" class="side-nav-link"><span class="nav-icon">🌐</span><span class="nav-text">Hedendaagse Kunst</span></a>
-            <a href="digitaal.html" class="side-nav-link"><span class="nav-icon">💻</span><span class="nav-text">Digitale Kunst</span></a>
-        </div>
-    </nav>
-
-    <!-- Overlay -->
-    <div id="overlay" class="nav-overlay"></div>
-
-    <script>
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.add('open');
-            document.getElementById('overlay').classList.add('show');
-            document.body.style.overflow = 'hidden';
-        });
-
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.getElementById('overlay').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.getElementById('sidebar').classList.remove('open');
-                document.getElementById('overlay').classList.remove('show');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
-
-    
     <main>
-        <section class="movement-header">
-            <div class="featured-artwork">
-                <h2>Meesterwerk: Het Vlot van de Medusa</h2>
-                <p class="featured-artist">Théodore Géricault, 1819</p>
-                <img src="images/romanticisme/01_gericault_raft.jpg" alt="Géricault - Raft of the Medusa">
-            </div>
-        </section>
+        
+<section class="movement-header">
+    <div class="featured-artwork">
+        <h2>Meesterwerk: De Vrijheid leidt het Volk</h2>
+        <p class="featured-artist">Eugène Delacroix, 1830</p>
+        <img src="images/liberty.jpg" alt="De Vrijheid leidt het Volk" class="featured-image">
+    </div>
+    <h2>KUNSTSTROMINGEN VAN DE MIDDEEUWEN TOT NU</h2>
 
-        <section class="content-section">
-            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
-            
-            <div class="style-grid">
-                <div class="style-item">
-                    <h4>🌊 EMOTIE & DRAMA</h4>
-                    <p><strong>Gevoel boven rede:</strong> De Romantiek reageert tegen het koele Neoclassicisme. Emotie is waardevol, zelfs (vooral) als het pijnlijk is.</p>
-                    <p><strong>Sublime:</strong> Het overweldigende, het angstaanjagende mooie. Natuur die de mens verplettert.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>🏔️ NATUUR & WILDERNIS</h4>
-                    <p><strong>Natuur als spiegel:</strong> Stormen, bergen, woeste zeeën - de natuur weerspiegelt onze emoties.</p>
-                    <p><strong>Wildernis:</strong> Niet de getemde tuin, maar de ongerepte wildernis. De natuur die groter is dan de mens.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>👤 HET INDIVIDU</h4>
-                    <p><strong>De eenzame held:</strong> De kunstenaar als genie, de denker als-outsider. Het individu tegen de massa.</p>
-                    <p><strong>Exotisme:</strong> Verre culturen, het verleden, het obscure. Alles om te ontsnappen aan de saaie werkelijkheid.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>🎨 LOSSE PENSEELVOERING</h4>
-                    <p><strong>Schilderachtig:</strong> Losse, zichtbare penseelstreken. De emotie zit in het gebaar.</p>
-                    <p><strong>Kleur:</strong> Intense, soms donkere kleuren. Contrasten om emotie te versterken.</p>
-                </div>
-            </div>
+<h3>Deel I: Van de Oudheid tot het Moderne</h3>
 
-                    <section class="content-section">
-            <h2>📚 TIJDSGEEST CONTEXT (1800-1850)</h2>
-            
-            <div class="timeline-box">
-                <h3>🌍 POLITIEK PERSPECTIEF</h3>
-                <div style="margin:1rem 0;line-height:1.7">
-                    <p><strong>Europa in opschudding (1800-1850)</strong> — De Romantiek ontwaakt in een wereld verscheurd door oorlog en revolutie. De Napoleontische Oorlogen (1803-1815) veranderen het Europese landschap fundamenteel: miljoenen doden, omvergeworpen monarchieën, en een heel continent dat in brand staat. <em>Het Vlot van de Medusa</em> (1819) van Géricault is directe kritiek op dit tijdperk: de ramp met het fregat Medusa in 1816 toont de incompetentie van het herstelde Franse regime, waar edelen door connecties posities krijgen ondanks gebrek aan bekwaamheid. De kapitein van de Medusa, een edelman zonder zeervaardigheid, liet 147 mensen op een vlot achter - slechts 15 overleefden. Géricault's monumentale schilderij wordt hierdoor een politieke aanklacht tegen de corruptie van de Restauratie.</p>
-                    
-                    <p><strong>Het Congres van Wenen (1815)</strong> probeert de oude orde te herstellen, maar de geest is uit de fles. Conservatieve monarchieën heroveren de macht, maar de idealen van vrijheid, gelijkheid en broederschap leven voort in het collectieve bewustzijn. <em>De Vrijheid leidt het Volk</em> (1830) van Delacroix vangt dit perfect: tijdens de Julirevolutie in Parijs (juli 1830) verdreven de Parijzenaars in drie dagen de conservatieve koning Charles X. Delacroix, die de straatgevechten meemaakte, schilderde het werk direct daarna. Liberty - half naakt, met de Franse driekleur - is geen historische figuur maar een allegorie van het revolutie-ideaal zelf. Ze kijkt direct naar de kijker, alsof ze vraagt: "Sta jij aan onze zijde?"</p>
-                    
-                    <p><strong>Nationalisme en onafhankelijkheid</strong> spreken uit de kunst. De Griekse Onafhankelijkheidsoorlog (1821-1830) tegen het Ottomaanse Rijk inspireert Delacroix's <em>Scène uit de slachtpartijen op Chios</em> (1824) - een aanklacht tegen Turkse wreedheden die Europa doet huiveren. Lord Byron sterft in 1824 in Griekenland, de dichter-strijder die de romantische held belichaamt. In Duitsland schildert Caspar David Friedrich Duitse landschappen die het nationale gevoel aanwakkeren - de wildernis van de Harz, de kusten van Rügen worden symbolen van het Duitse volkskarakter. Gotische kathedralen, middeleeuwse kastelen, en Duitse mythologie worden herontdekt als bronnen van nationale identiteit.</p>
-                    
-                    <p><strong>Stijl-impact:</strong> De politieke turbulentie vertaalt zich in:
-                    • <strong>Dramatische composities:</strong> Piramidale structuren (Het Vlot van de Medusa), diagonale bewegingen (Vrijheid leidt het Volk) die actie en conflict suggereren
-                    • <strong>Politieke symboliek:</strong> Vlaggen, banieren, nationale iconen (de Franse driekleur in Delacroix) die ideologieën belichamen
-                    • <strong>Heldhaftige individuen:</strong> Eenzame figuren tegen overweldigende achtergronden (Friedrich's Wanderer) die de mens tegen de staat of natie representeren
-                    • <strong>Exotische locaties:</strong> Noord-Afrika, Griekenland, het Midden-Oosten (Delacroix's reis naar Marokko in 1832) die het koloniale wereldbeeld weerspiegelen maar ook ontsnapping bieden</p>
-                    
-                    <p><strong>Kleur en emotie:</strong> De chaos van revolutie en oorlog uit zich in paletkeuzes - rood, wit en blauw van de revolutie, donkere stormwolken, felle contrasten tussen licht en donker. Turner's <em>Regen, Stoom en Snelheid</em> (1844) viert de nieuwe industriële macht, maar Friedrich's <em>Zee van IJs</em> (1824) toont de verpletterende kracht van de natuur - politieke macht betekent niets tegen de elementen.</p>
-                </div>
-            </div>
-            <div class="timeline-box">
-                <h3>📖 LITERAIR PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Romantische poëzie (Wordsworth, Coleridge, Hugo, Heine) viert natuur en emotie</li>
-                    <li>De novelle en het grote romantische boek (Hugo's "Les Misérables", 1862) ontstaan</li>
-                    <li>De Gotische roman (Shelley, Poe) onderzoekt het gruwelijke</li>
-                    <li>Hoffmann's fantastische verhalen</li>
-                    <li>De biografie als genre wordt populair</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Het "Weltschmerz" (wereldpijn) wordt mode</li>
-                    <li>De mens is niet rationeel maar gedreven door passies</li>
-                    <li>Het genie lijdt onder de wereld (Byron)</li>
-                    <li>Dromen en het onderbewuste (voor Freud) worden interessant</li>
-                    <li>Melancholie als esthetische houding</li>
-                    <li>De "egotistical sublime" (Keats) - het individu als universum</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>⚙️ HISTORISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De Industriële Revolutie versnelt: stoomtreinen (Stephenson 1829), telegraaf (Morse 1837), fotografie (Daguerre 1839)</li>
-                    <li>Steden exploderen (Londen van 1 naar 6 miljoen)</li>
-                    <li>De "Hungry Forties" (hongerige jaren veertig) brengen sociale ellende</li>
-                    <li>De aarde blijkt miljoenen jaren oud (Lyell)</li>
-                    <li>De dodo sterft uit, dinosauriërs worden ontdekt</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🎭 FILOSOFISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De Duitse Idealisme (Kant, Fichte, Schelling, Hegel) maakt het subject centraal</li>
-                    <li>Schelling's natuurfilosofie: natuur is levend, organisch</li>
-                    <li>Hegel's dialectiek: geschiedenis als strijd van tegenstellingen</li>
-                    <li>Schopenhauer's pessimisme: de wil als bron van lijden</li>
-                    <li>Kierkegaard's existentiële angst</li>
-                    <li>De tegenstelling tussen klassiek (orde) en romantisch (chaos)</li>
-                </ul>
-            </div>
-        </section>
-        </section>
+<p>---</p>
 
-        <section class="content-section">
-            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+<h2>Beweging: Romanticisme (1780-1850)</h2>
 
-            <!-- Work 1: Raft of the Medusa -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>1. "Het Vlot van de Medusa" (1819) — Théodore Géricault</h3>
-                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 491 × 716 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/01_gericault_raft.jpg" loading="lazy" alt="Raft of the Medusa">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Gebaseerd op een werkelijke ramp: het fregat Medusa liep vast voor de kust van Senegal. 147 mensen werden op een vlot achtergelaten, slechts 15 overleefden. Géricault onderzocht maandenlang het verhaal.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Compositie:</strong> De piramide van wanhoop. Onder: dode en stervende lichamen. Midden: overlevenden die worstelen. Boven: een figuur die een schip ziet - hoop op redding.</p>
-                        <p><strong>Realisme:</strong> Géricault interviewde overlevenden, bezocht het wrak, liet het vlot nabouwen. De lijken zijn geschilderd naar sectie-materiaal. Dit is Romantiek gebaseerd op feiten.</p>
-                        <p><strong>Licht:</strong> Het licht komt van rechts - de redding, de hoop. Maar het is een vale, grijze gloed. De zon breekt niet door.</p>
-                        <p><strong>Politiek:</strong> De kapitein was een incompetente edelman die zijn post kreeg door connecties. Géricault's schilderij is een aanklacht tegen het restauratie-regime.</p>
-                    </div>
-                </div>
-            </div>
+<h4>Tijdsgeest Context</h4>
 
-            <!-- Work 2: Liberty Leading the People -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>2. "De Vrijheid leidt het Volk" (1830) — Eugène Delacroix</h3>
-                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 260 × 325 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/02_delacroix_liberty.jpg" loading="lazy" alt="Liberty Leading the People">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> De Julirevolutie van 1830 in Parijs. Delacroix schilderde dit vlak na de gebeurtenissen. Het wordt het symbool van revolutie en vrijheid - later gebruikt op de Franse 100-frankbiljet.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Liberty:</strong> Een allegorische vrouw, half naakt, met de driekleur. Ze is geen specifieke persoon maar het idee van vrijheid zelf. Ze kijkt naar de kijker, niet naar de strijd.</p>
-                        <p><strong>De menigte:</strong> Een arbeider (met baret), een student (met hoed), een jongen (met sabel). Alle klassen vechten samen. Dit is de natie, niet alleen de elite.</p>
-                        <p><strong>Kleur:</strong> De driekleur (blauw, wit, rood) domineert. Het is helder, heldhaftig, optimistisch. Maar er is ook veel rook, grauw, chaos.</p>
-                        <p><strong>Romantiek:</strong> Dit is geen documentaire maar een visionair werk. Delacroix maakt van een specifieke revolutie een universeel symbool van de strijd voor vrijheid.</p>
-                    </div>
-                </div>
-            </div>
+<strong>Politiek Perspectief</strong>
 
-            <!-- Work 3: Wanderer above the Sea of Fog -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>3. "De Wanderer boven de Zee van Mist" (1818) — Caspar David Friedrich</h3>
-                    <p style="color:#666;font-style:italic;">Kunsthalle Hamburg · 95 × 75 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/03_friedrich_wanderer.jpg" loading="lazy" alt="Wanderer above the Sea of Fog">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Het meest bekende werk van Friedrich. Een man staat op een rots, rug naar ons toegekeerd, starend over een zee van mist. Het is het symbool van Romantische eenzaamheid en het sublime.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Rückenfigur:</strong> De figuur kijkt van ons weg, naar het landschap. Wij kijken met hem mee. Het landschap wordt een projectie van zijn (en onze) gedachten.</p>
-                        <p><strong>Het sublime:</strong> De natuur is overweldigend, ongrijpbaar, gevaarlijk. De mist verbergt de diepte - we weten niet hoe hoog de rots is, hoe diep de afgrond.</p>
-                        <p><strong>Eenzaamheid:</strong> De figuur is alleen. Dit is geen sociaal tafereel maar een innerlijke ervaring. De Romantiek viert de eenzame, denkende mens.</p>
-                        <p><strong>Kleur:</strong> Grijs, blauw, wit - de kleuren van mist en hemel. Alleen de groene jas van de figuur geeft kleur. De mens is een vlek in de natuur.</p>
-                    </div>
-                </div>
-            </div>
+<p>De Romantiek ontstond in een periode van tumultueuze politieke veranderingen die de Europese orde fundamenteel zou transformeren. De Franse Revolutie (1789) brak met de ancien régime en introduceerde radicale idealen van vrijheid, gelijkheid en broederschap, maar deze idealistische belofte mondde uit in het bloedige Terreur-regime van Robespierre (1793-1794) en vervolgens in de imperiale ambities van Napoleon Bonaparte. Deze teleurstelling over de discrepantie tussen revolutie-idealisme en -realiteit voedde het romantische verlangen naar een meer organieke, emotionele benadering van samenleving en politiek – een directe reactie tegen de verlichte rationaliteit die aan de revolutie voorafging. Deze politieke context vertaalde zich direct in de kunst: <strong>"De Aanvallende Jager"</strong> (Géricault, 1812) vangt nog de Napoleontische glorie op haar hoogtepunt, met de dynamische diagonale compositie en het levendige kleurenpalet (felrood uniform, gouden paardentinten) die de heroïek van het keizerrijk verheerlijken. Het schilderij toont de cavalerist in volle galop, zijn paard met alle vier benen van de grond – een visuele metafoor voor de onstuitbare Napoleontische expansie. De dikke, expressieve penseelstreken en het dramatische chiaroscuro suggereren beweging en kracht, perfect passend bij de politieke sfeer van keizerlijke triomf.</p>
 
-            <!-- Work 4: The Third of May -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>4. "De Derde Mei 1808" (1814) — Francisco Goya</h3>
-                    <p style="color:#666;font-style:italic;">Prado Museum, Madrid · 268 × 347 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/04_goya_may.jpg" loading="lazy" alt="The Third of May">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> De executie van Spaanse burgers door Franse soldaten na een opstand in Madrid. Goya's meest politieke werk - een aanklacht tegen oorlog en onderdrukking.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Het slachtoffer:</strong> De man met uitgestrekte armen, de handen vol stigmata (wonden als van Christus). Hij is een martelaar, niet een soldaat. Zijn gezicht toont angst én waardigheid.</p>
-                        <p><strong>De beulen:</strong> Anoniem, mechanisch, hun gezichten niet zichtbaar. Ze zijn een machine van dood, geen individuen. De lantaarn maakt hen tot schaduwfiguren.</p>
-                        <p><strong>Licht:</strong> Het enige licht valt op het slachtoffer - als een spotlight, als een heilig licht. De rest is donker, alsof we in een nachtmerrie zijn.</p>
-                        <p><strong>Romantiek:</strong> Dit is geen heroïsche oorlog (zoals David schildert) maar gruwelijke werkelijkheid. Goya toont wat oorlog echt is: willekeurige, zinloze dood.</p>
-                    </div>
-                </div>
-            </div>
+<p>De Napoleontische bezetting van Spanje (1808-1814) bracht echter de duistere kant van deze politieke ambities aan het licht. <strong>"De Derde Mei 1808"</strong> (Goya, 1814) toont de executie van Spaanse burgers door Franse soldaten, en transformeert politieke geschiedenis tot universele menselijke tragedie. Goya's compositie is revolutionair: het felle licht van de lantaarn verlicht de slachtoffers in wit en geel, terwijl de beulen anonieme silhouetten blijven in donkerblauw en zwart. De centrale figuur met opgeheven handen – een christusachtig martelaarschap – en de schetsmatige, bijna ruwe penseelvoering intensiveren de emotionele impact. Dit werk introduceerde een nieuwe vorm van politieke kunst: niet de verheerlijking van overwinnaars, maar de getuigenis van slachtoffers. De diagonale opstelling van de executieploeg, de lichamen in de voorgrond, en het gebrek aan heroïek maken dit tot een visuele aanklacht tegen oorlogsgeweld.</p>
 
-            <!-- Work 5: The Sea of Ice -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>5. "Het Zee van Ijs" (1823-1824) — Caspar David Friedrich</h3>
-                    <p style="color:#666;font-style:italic;">Hamburger Kunsthalle · 97 × 127 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/05_friedrich_eismeer.jpg" loading="lazy" alt="The Sea of Ice">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een schip wordt verpletterd door ijsbergen in het Arctische gebied. Gebaseerd op de expeditie van William Parry. Friedrich's meest dramatische werk - de natuur als vernietigende kracht.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Het sublime:</strong> De ijsmassa's torenen op, splinteren, verpletteren alles. De menselijke boot is minuscuul. Dit is de natuur die de mens niet tolereert.</p>
-                        <p><strong>Compositie:</strong> De ijsbergen vormen een piramide naar het midden - waar het schip wordt vernietigd. Het oog wordt naar het drama geleid.</p>
-                        <p><strong>Kleur:</strong> Blauw, wit, grijs - de koude kleuren van de dood. Alleen een vleugje bruin (het schip) en rood (de vlag) geven menselijke warmte.</p>
-                        <p><strong>Symboliek:</strong> De schipbreuk van de menselijke ambities. De Romantiek erkent dat de natuur groter, ouder, krachtiger is dan wij.</p>
-                    </div>
-                </div>
-            </div>
+<p>Na de val van Napoleon in 1815 probeerde het Congres van Wenen de oude monarchieën te herstellen, maar de geest van revolutie kon niet meer teruggedraaid worden. De restauratie-periode (1815-1830) werd gekenmerkt door een spanning tussen conservatieve krachten en opkomende liberale en nationalistische bewegingen. In Frankrijk manifesteerde dit zich in de Julirevolutie van 1830, waarbij koning Karel X werd afgezet. <strong>"De Vrijheid leidt het Volk"</strong> (Delacroix, 1830) verbeeldt deze revolutie in al haar dynamiek. Delacroix gebruikte een levendig kleurenpalet van rood, wit en blauw (de Franse driekleur) als compositorisch centrum, omringd door de donkere rook van de barricades. De diagonale compositie – Vrijheid stormt over de doden heen, haar vlag wappert theatraal – en de losse, schetsmatige penseelvoering suggereren urgentie en spontaniteit. Verschillende sociale klassen (bourgeois met hoge hoed, arbeider met baret, jonge knaap) verenigen zich achter het revolutionaire ideaal, wat de romantische "Volksgeist" – de geest van het volk – visualiseert. Dit werk toont hoe politieke idealen direct de vorm en inhoud van de kunst beïnvloedden: de theatraliteit, de symboliek, en de emotionele intensiteit zijn allemaal politieke uitingen.</p>
 
-            <!-- Work 6: The Fighting Temeraire -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>6. "De Vechtende Temeraire" (1839) — J.M.W. Turner</h3>
-                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 91 × 122 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/06_turner_fighting.jpg" loading="lazy" alt="The Fighting Temeraire">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Het oorlogsschip Temeraire (held van de Slag bij Trafalgar) wordt gesleept naar de sloop door een stoomboot. Een elegie voor het zeil-tijdperk, geschilderd door Turner als lofzang op het verleden.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Licht:</strong> De zonsondergang baadt alles in goud. Het is een begrafenis, maar een prachtige. Het oude schip gloeit, het nieuwe (de stoomboot) is zwart en roetig.</p>
-                        <p><strong>Atmosfeer:</strong> Turner schildert lucht en licht, niet objecten. De schepen zijn bijna abstract - vage vormen in de gloed. Dit is voorloper van het Impressionisme.</p>
-                        <p><strong>Contrast:</strong> Het majestueuze, witte zeilschip versus de kleine, zwarte stoomboot. Schoonheid versus efficiëntie. Het verleden versus de toekomst.</p>
-                        <p><strong>Melancholie:</strong> Dit is geen triomf maar afscheid. Turner rouwt om de wereld die verdwijnt - de wereld van wind en zeilen, van avontuur en romantiek.</p>
-                    </div>
-                </div>
-            </div>
+<p>De politieke teleurstelling na de revoluties vond ook uitdrukking in werken van maatschappelijke kritiek. <strong>"Het Vlot van de Medusa"</strong> (Géricault, 1818-1819) is gebaseerd op een actueel schandaal: de schipbreuk van het fregat Medusa in 1816, waarbij 147 mensen achtergelaten werden op een vlot door de incompetentie van een door koninklijke gunst benoemde kapitein. Géricault transformeerde dit politieke schandaal tot een monumentaal schilderij (491 × 716 cm) dat de fragiliteit van de burgerlijke beschaving blootlegt. De donkere, aardse tinten (bruinen, roestkleuren, grijs zeewater) en de piramide-vormige compositie – van de dode man rechtsonder naar de wanhopig wijzende man bovenaan – creëren een visuele klaagzang. De zichtbare, expressieve penseelstreken en de onverbloemde weergave van lijden, waanzin en dood breken resoluut met het decoratieve Classicisme. Dit werk demonstreert hoe politieke kritiek de romantische kunst nieuwe thema's en vormen gaf: het banale, het gruwelijke, en het sociaal-rechtvaardige werden esthetische subjecten.</p>
 
-            <!-- Work 7: Death of Sardanapalus -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>7. "De Dood van Sardanapalus" (1827) — Eugène Delacroix</h3>
-                    <p style="color:#666;font-style:italic;">Louvre, Parijs · 392 × 496 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/07_delacroix_sardanapalus.jpg" loading="lazy" alt="Death of Sardanapalus">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> De Assyrische koning Sardanapalus beveelt al zijn bezittingen (inclusief paarden en concubines) gedood te worden voordat hij zelf sterft. Geïnspireerd door Byron's gedicht. Exotisme, geweld, sensualiteit.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Chaos:</strong> Er is geen centraal focuspunt. Alles beweegt, draait, valt. Diagonale lijnen creëren paniek. Dit is het tegenovergestelde van klassieke orde.</p>
-                        <p><strong>Kleur:</strong> Robijnrood, goud, smaragdgroen - de kleuren van Oosterse weelde. Delacroix gebruikt complementaire kleuren voor maximale spanning.</p>
-                        <p><strong>Exotisme:</strong> Het Oosten als fantasie van decadentie. Dit is geen realistisch Assyrië maar een 19e-eeuwse droom van zonde en sensualiteit.</p>
-                        <p><strong>Sardanapalus:</strong> Hij ligt op zijn bed, kalm, terwijl om hem heen de hel losbreekt. Hij is de auteur van het geweld, maar ook de toeschouwer. Macht en decadentie in één.</p>
-                    </div>
-                </div>
-            </div>
+<p>Liberale en nationalistische bewegingen floreerden door heel Europa. In Duitsland leidde dit tot de Hambacher Fest (1832), in Italië en Griekenland tot onafhankelijkheidsstrijden, en in Spanje tot guerrilla-oorlog tegen de Franse bezetting. De Romantiek werd hierdoor politiek gezien vaak verbonden met zowel conservatisme (verlangen naar een organieke, hiërarchische samenleving) als revolutionair radicalisme (strijd voor nationale bevrijding). Deze politieke dualiteit weerspiegelt zich in de romantische kunst: enerzijds de verheerlijking van nationale helden en historische mythen, anderzijds de kritiek op onderdrukking en sociale onrechtvaardigheid. De politiek beïnvloedde niet alleen de thema's, maar ook de vorm: de dramatische diagonalen, de expressieve kleuren, en de losse penseelvoering werden instrumenten om politieke emoties over te brengen.</p>
 
-            <!-- Work 8: Two Men Contemplating the Moon -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>8. "Twee Mannen beschouwen de Maan" (1819-1820) — Caspar David Friedrich</h3>
-                    <p style="color:#666;font-style:italic;">National Gallery of Art, Washington · 35 × 44 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/08_friedrich_two_men.jpg" loading="lazy" alt="Two Men Contemplating the Moon">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Twee mannen (vaak geïnterpreteerd als Friedrich zelf en een vriend) staan op een heuvel en kijken naar de maan. Een intiem, contemplatief werk - het tegenovergestelde van het sublime.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Gezamenlijkheid:</strong> In tegenstelling tot "De Wanderer" zijn hier twee figuren. Romantiek hoeft niet eenzaam te zijn - het kan ook gedeeld worden.</p>
-                        <p><strong>De maan:</strong> De maan is het licht in de duisternis, de troost in de nacht. Voor Romantici was de maan het symbool van dromen, intuïtie, het vrouwelijke.</p>
-                        <p><strong>Compositie:</strong> De bomen vormen een natuurlijke "deur" naar de hemel. De figuren zijn klein, maar hun aandacht is groot. Het innerlijke telt meer dan het uiterlijke.</p>
-                        <p><strong>Intimiteit:</strong> Dit is geen overweldigend landschap maar een vriendelijk, bijna huiselijk tafereel. Romantiek kan ook zacht zijn.</p>
-                    </div>
-                </div>
-            </div>
+<strong>Historisch Perspectief</strong>
 
-            <!-- Work 9: Saturn Devouring His Son -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>9. "Saturnus verslindt zijn Zoon" (1819-1823) — Francisco Goya</h3>
-                    <p style="color:#666;font-style:italic;">Prado Museum, Madrid · 143 × 81 cm · Olieverf op muur (overgebracht naar doek)</p>
-                </div>
-                <img src="images/romanticisme/09_goya_saturn.jpg" loading="lazy" alt="Saturn Devouring His Son">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Oorspronkelijk geschilderd op de muur van Goya's huis ("De Zwarte Schilderijen"). Saturnus (Kronos) eet zijn kinderen op uit angst dat ze hem zullen verdrijven. Het meest angstaanjagende werk van Goya.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Geweld:</strong> Het is gruwelijk - bloed, ingewanden, een half opgegeten lichaam. Maar het is ook abstract, bijna komisch in zijn afschuwelijkheid. Goya maakt van horror kunst.</p>
-                        <p><strong>De blik:</strong> Saturnus' ogen zijn wijd open, gestoord, waanzinnig. Hij is niet alleen wreed maar ook gek. De macht maakt hem dwaas.</p>
-                        <p><strong>Donkere periode:</strong> Dit is laat-Goya, na zijn doofheid, na de oorlog. De wereld is donker, de mens is beest. Goya's pessimisme op zijn puurst.</p>
-                        <p><strong>Mythe als waarheid:</strong> Saturnus is mythologie, maar het beeld voelt echt. Ouders die kinderen vernietigen uit angst - dit is universeel.</p>
-                    </div>
-                </div>
-            </div>
+<p>De industriële revolutie, die in Engeland begon en zich over Europa verspreidde, veranderde fundamenteel hoe mensen leefden en werkten. Steden explodeerden, fabrieken verschenen, en de landelijke, agrarische samenleving maakte plaats voor een stedelijke, geïndustrialiseerde wereld. Dit veroorzaakte nostalgie naar een vermeend verloren idylle – het "edele wilde" (noble savage), de middeleeuwen als gouden eeuw, en de ongerepte natuur als tegengewicht tegen de "ontaarding" van de moderne wereld.</p>
 
-            <!-- Work 10: Rain Steam and Speed -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>10. "Regen, Stoom en Snelheid" (1844) — J.M.W. Turner</h3>
-                    <p style="color:#666;font-style:italic;">National Gallery, Londen · 91 × 122 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/romanticisme/10_turner_rain.jpg" loading="lazy" alt="Rain Steam and Speed">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een trein raast door de regen over een brug. Turner schilderde dit nadat hij een treinreis had gemaakt. Het is een lofzang op de moderne technologie - maar ook een visioen van snelheid en beweging.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Abstractie:</strong> Je kunt de trein nauwelijks zien. Het is een vlek van zwart, een wolk van stoom, een streep van regen. Turner schildert de ERVARING van snelheid, niet de trein.</p>
-                        <p><strong>Licht:</strong> De regen en stoom filteren het licht. Alles is diffuus, goudkleurig, dromerig. De moderne wereld wordt romantisch.</p>
-                        <p><strong>Contrast:</strong> Een haas in de linkerhoek (natuur) versus de trein (technologie). Wie wint? De trein is een dreigende vlek, de haas is een detail. Maar toch is er geen oordeel - Turner viert beide.</p>
-                        <p><strong>Voorloper:</strong> Dit is bijna abstract expressionisme, geschilderd in 1844. Turner was honderd jaar vooruit op zijn tijd.</p>
-                    </div>
-                </div>
-            </div>
+<p>De ontdekking van Pompeï (1748) en het begin van de archeologie als wetenschap wekte fascinatie voor de klassieke oudheid, maar ook voor exotische culturen. Napoleons Egyptische veldtocht (1798) en de daaropvolgende publicatie van de *Description de l'Égypte* (1809-1829) openden de westerse blik voor het Oriëntaalse.</p>
 
-        </section>
+<strong>Literair Perspectief</strong>
 
-        <section class="content-section">
-            <h2>📚 CONCLUSIE: HET GEVOEL TRIOMPHEERT</h2>
-            
-            <div class="timeline-box">
-                <p>De Romantiek leert ons:</p>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li><strong>Dat emotie waardevol is:</strong> Gevoelens zijn niet zwak maar krachtig</li>
-                    <li><strong>Dat natuur groter is dan wij:</strong> Het sublime overweldigt de mens</li>
-                    <li><strong>Dat het individu telt:</strong> De eenzame held, de denker, de kunstenaar</li>
-                    <li><strong>Dat kunst politiek kan zijn:</strong> Géricault en Goya als aanklagers</li>
-                    <li><strong>Dat schoonheid in pijn zit:</strong> Tragedie als esthetische ervaring</li>
-                </ul>
-                <p>De Romantiek geeft stem aan het hart.</p>
-            </div>
-        </section>
+<p>De Romantiek markeert een fundamenteel keerpunt in de literatuur, een radicale breuk met de Verlichting en haar vertrouwen in rede, orde en universele regels. De nieuwe literatuur vierde emotie boven rede, subjectiviteit boven objectiviteit, en het verbeeldingsvermogen als primaire bron van kennis en waarheid. In Duitsland vormden Friedrich Schiller en Johann Wolfgang von Goethe de romantische ziel met werken die het individu, de natuur en het historische verleden centraal stelden. Goethes *Die Leiden des jongen Werthers* (1774) werd een internationaal fenomeen dat de cultus van het genie, de emotionele intensiteit en de tragische held propageerde – de zogenaamde "Werther-Fieber" veroorzaakte zelfs een golf van zelfmoorden onder jonge mannen die zich identificeerden met de protagonist. Deze literaire "Sturm und Drang" (storm en drang) beweging, met haar nadruk op passie, individualisme en rebellie tegen sociale conventies, vond haar visuele equivalent in <strong>"De Wandelaar boven de Zee van Mist"</strong> (Friedrich, ca. 1818). Friedrichs schilderij verbeeldt het romantische literaire ideaal: de eenzame held, staand op een rots, starend naar de oneindigheid, verzonken in contemplatie en "Sehnsucht". De subtiele, atmosferische tinten en de compositie zonder duidelijke horizon suggereren de lyrische poëzie van Wordsworth en Coleridge, waarin de natuur een spiegeling wordt van het innerlijke landschap van de dichter.</p>
+
+<p>In Engeland brachten William Wordsworth en Samuel Taylor Coleridge met hun *Lyrical Ballads* (1798) de romantische poëzie naar een breed publiek, met gedichten die het alledaagse verhieven tot het poëtische en de natuur als spirituele leermeester presenteerden. Lord Byron en Percy Bysshe Shelley verpersoonlijkden de "Byronic hero" – de romantische held als rebels, melancholisch, geplaagd door een ingewikkeld verleden en een onstilbaar verlangen. Mary Shelleys *Frankenstein* (1818) exploreerde de grenzen van wetenschap, de verantwoordelijkheid van de schepper, en de eenzaamheid van het genie – thema's die resoneren met de romantische interesse in het "andere", het monsterlijke, het gedoonde. Deze literaire interesse in het groteske, het bovennatuurlijke en de donkere kant van de menselijke natuur vond haar meest extreme visuele expressie in <strong>"Saturnus verslindt zijn Zoon"</strong> (Goya, 1819-1823). Goya's schilderij, met zijn nachtmerrieachtige scènes van waanzin en kannibalisme, verbindt met de gothic novel en de "dark romanticism" van auteurs als E.T.A. Hoffmann en Edgar Allan Poe. Het beperkte, grimmige palet, de claustrofobische compositie, en de ruwe penseelvoering maken dit tot een visueel equivalent van de gothic horror – de literatuur van angst, het bovennatuurlijke, en de psychologische duisternis.</p>
+
+<p>In Frankrijk vertegenwoordigden Victor Hugo (*Notre-Dame de Paris*, 1831) en Alexandre Dumas de romantische interesse in het exotische, het historische, en het dramatische. Hugo's "préface de Cromwell" (1827) werd het manifest van de Franse Romantiek, waarin hij het "groteske" naast het "sublieme" plaatste en de klassieke eenheden van tijd, plaats en handeling verwierp ten gunste van artistieke vrijheid en emotionele waarheid. Deze literaire revolutie vond haar visuele pendant in <strong>"De Vrijheid leidt het Volk"</strong> (Delacroix, 1830). Delacroix's schilderij, geschilderd in reactie op de Julirevolutie van 1830, verbindt met Hugo's revolutionaire poëzie en de romantische interesse in de "Grote Geschiedenis" – historische gebeurtenissen als dramatische, emotionele ervaringen. De levendige kleuren (rood, wit, blauw van de Franse vlag), de diagonale compositie die urgentie en dynamiek suggereert, en de theatrale poses van de figuren (Vrijheid als allegorische figuur, haar borsten bloot als klassiek symbool) maken dit tot een visueel equivalent van Hugo's dramatische, historische romans. De losse, schetsmatige penseelvoering en het gebrek aan volledige afwerking verbinden met de romantische literaire voorkeur voor spontaniteit, inspiratie en het "onvoltooide" als teken van authenticiteit.</p>
+
+<p>De romantische interesse in het historische en het nationale manifesteerde zich ook in de Spaanse literatuur, met de "costumbrismo" – een beweging die het alledaagse leven, de folklore en de nationale tradities als literair subject nam. <strong>"De Derde Mei 1808"</strong> (Goya, 1814) verbindt met deze literaire interesse in het "volk" als subject, in plaats van de aristocratische helden van de klassieke tragedie. Goya's compositie, met de centrale Spaanse burger in christusachtig martelaarschap omringd door anonieme, machine-achtige Franse beulen, transformeert een historische gebeurtenis tot universele menselijke tragedie – een techniek die resonant met de historische romans van Walter Scott (*Ivanhoe*, 1819) en Victor Hugo. De schetsmatige, bijna ruwe penseelvoering in bepaalde delen (de achtergrond, de beulen) versus de fijngeschilderde details (het gezicht van de centrale figuur, de stigmata in zijn handpalmen) creëren een "selective focus" die de emotionele kern van het verhaal accentueert – een techniek die parallellen vertoont met de literaire techniek van het "point of view" en de psychologische focalisatie.</p>
+
+<p>De Shakespeare-herwaardering, vooral in Duitsland door Gotthold Ephraim Lessing en de Romantikern, verving de klassieke Franse tragedie als esthetisch ideaal. De Romantiek ontdekte in Shakespeare een model voor de mengeling van het sublieme en het groteske, het tragische en het komische, het verhevene en het banale – een breuk met de klassieke doctrine van de "bienséance" (welvoeglijkheid). Deze literaire vrijheid vertaalde zich in de schilderkunst naar een nieuwe acceptatie van het "onvoltooide", het "schetsmatige", en het "expressieve" boven het "gepolijste". <strong>"Het Vlot van de Medusa"</strong> (Géricault, 1818-1819) demonstreert deze literaire invloed: het schilderij vertelt een verhaal – een drama in beelden – met personages in verschillende stadia van wanhoop, hoop en dood. De piramide-vormige compositie, de dramatische chiaroscuro, en de ongebruikelijke keuze om een actueel, controversieel nieuwsfeit als historisch meesterwerk weer te geven, verbinden met de romantische literatuur van de "roman-feuilleton" – de gepubliceerde roman in afleveringen die actuele sociale kwesties aan de orde stelde. De dikke, expressieve penseelstreken, de onverbloemde weergave van lijden, en de donkere, aardse tinten maken dit tot een visueel equivalent van de realistische, sociale roman die later in de 19e eeuw zou bloeien.</p>
+
+<p>De Romantiek beïnvloedde dus niet alleen de thema's van de schilderkunst, maar ook de vorm: de dramatische compositie (theatraal, als een toneelstuk), de losse penseelvoering (spontaan, als een eerste opzet), de emotionele intensiteit (als een lyrisch gedicht), en de vertelstructuur (als een historische roman). De literatuur en de schilderkunst van de Romantiek waren twee uitingen van dezelfde "Zeitgeist" – dezelfde zoektocht naar het individuele, het emotionele, het historische, en het sublieme.</p>
+
+<strong>Filosofisch Perspectief</strong>
+
+<p>De Romantiek was diep geworteld in de Duitse idealistische filosofie, die een radicale breuk vormde met het mechanistische wereldbeeld van de Verlichting. Immanuel Kant had in zijn *Kritiek der praktischen Vernunft* (1788) het autonome subject en de morele vrijheid centraal gesteld, wat het filosofische fundament legde voor de romantische nadruk op het individu en zijn innerlijke wereld. Johann Gottlieb Fichte en Friedrich Schelling ontwikkelden vervolgens het idee van het Absolute, waarin natuur en geest één zijn – een directe reactie tegen het reductionisme van René Descartes en Isaac Newton, die de natuur zagen als een levenloze machine. Deze filosofische eenheid van natuur en geest vond zijn perfecte visuele expressie in <strong>"De Wandelaar boven de Zee van Mist"</strong> (Friedrich, ca. 1818). Friedrich schilderde hier een "Rückenfigur" (rugfiguur) die, staand op een rotsachtig uitsteeksel, uitkijkt over een oceaan van mist die valleien en bergpieken bedekt. De subtiele, atmosferische tinten (grijzen, blauwen, groenen) die in elkaar overvloeien, suggereren de opheffing van de grens tussen subject en object, tussen het individu en de oneindige natuur. De compositie, met de centrale figuur geflankeerd door rotsen maar zonder duidelijke horizon, creëert een gevoel van grenzeloosheid dat perfect Schellings idee van de natuur als "zichtbaar geworden Geest" verbeeldt. De diffuse, melancholische belichting en de precisie in details (gewaad, rotsen) contrasterend met de onbestemdheid van de mist, maken dit tot een "Stimmungslandschap" – een landschap van innerlijke stemming, geen topografische documentatie.</p>
+
+<p>Het centrale romantische concept is het "Weltgeist" (wereldgeest) of de "Volksgeist" – de gedachte dat naties en culturen organische eenheden zijn met een unieke ziel, ontwikkeld door filosofen als Johann Gottfried Herder. Dit ideaal van de organische gemeenschap, in tegenstelling tot de abstracte universele rede van de Verlichting, beïnvloedde de romantische interesse in nationale mythen, folklore en historische thema's. Edmund Burkes *A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful* (1757) legde de basis voor de romantische fascinatie met het sublieme – dat wat angst en verwondering tegelijk opwekt, dat wat de verbeelding overstijgt en de kijker confronteert met het oneindige. Dit sublieme komt perfect tot uitdrukking in <strong>"Het Zee van IJs"</strong> (Friedrich, 1823-1824), waar enorme ijsbergen als natuurkathedralen een gekneusd schip verpletteren. Friedrich gebruikte extreme, koele wit-blauwe tinten voor het ijs en diepe bruin-groene schaduwen, wat een onheilspellende atmosfeer van onafwendbaar noodlot creëert. De diagonale spanning van de gebroken masten en het wrak, omringd door torenhoge ijsformaties, verbeeldt de menselijke onmacht tegenover de almachtige natuur – een visuele vertaling van Burkes definitie van het sublieme als "wat dan ook dat voldoende is om de pijn en gevaar-zielen te produceren." De precisie waarmee Friedrich het ijs schildert (elke barst, elke reflectie) contrasteert met de dromerige, bijna hallucinatoire kwaliteit van het geheel, wat dit tot een visioen maakt, geen documentaire.</p>
+
+<p>Arthur Schopenhauer, in *Die Welt als Wille und Vorstellung* (1819), zag de wereld als product van een blinde, onstuitbare wil – een diep pessimistische visie die veel romantische kunstenaars aansprak in hun "Weltschmerz" en hun twijfel aan de vooruitgang. Deze filosofie van de destructieve, oncontroleerbare wil vindt zijn donkerste visuele expressie in <strong>"Saturnus verslindt zijn Zoon"</strong> (Goya, 1819-1823), een van de "Zwarte Schilderijen" die Goya op de muren van zijn huis schilderde. Goya gebruikte een beperkt, grimmig palet (zwarten, bruinen, roestige roden, vleeskleurig) zonder lichtbron of redding, alleen de onheilspellende donkerte van de waanzin. De claustrofobische compositie – Saturnus vult bijna het hele beeld, zijn ogen wijd open, zijn handen greepkrachtig om het lichaam van zijn zoon – verbeeldt de Schopenhaueriaanse wil-tot-leven in zijn meest destructieve vorm: de vader die zijn eigen nageslacht vernietigt uit angst voor vervanging. De ruwe, agressieve penseelvoering (de verf is gesmeerd, gekrast, bewerkt tot het op vers vlees lijkt) maakt dit tot een visuele aanval, een voorloper van het Expressionisme en Art Brut.</p>
+
+<p>De spanning tussen technologie en natuur, tussen vooruitgang en traditie, werd een centraal filosofisch thema in de late Romantiek. <strong>"Regen, Stoom en Snelheid"</strong> (Turner, 1844) vangt deze tegenstelling perfect: een trein raast over de Tamar-brug, gehuld in regen en stoom, de moderne technologie die de natuur lijkt te verslinden. Turners palet is bijna monochroom (bruinen, gouden, grijzen, met vlekjes rood en geel), en de verf is zo los aangebracht dat het schilderij bijna abstract lijkt. De diagonale explosie van de compositie (de brug loopt van linksonder naar rechtsboven, de regen valt schuin, de stoom stijgt wervelend op) zonder rustpunt of compositorisch anker, verbeeldt de moderne ervaring van versnelling en dissociatie – wat later filosofen als Walter Benjamin zouden beschrijven als de "schokervaring" van de moderniteit. Het konijn in de voorgrond dat net aan de wielen ontsnapt, symboliseert de laatste handmatige ervaring die door de machine wordt verdrongen. De extreme penseelvrijheid (grote lappen verf, toegebracht met paletmes of handen, gesmeerd en geveegd) maakt Turner tot een visionair die zijn tijd vooruit was – een halve eeuw voor het Impressionisme.</p>
+
+<p>Het existentialisme van Søren Kierkegaard, hoewel later, vindt zijn wortels in deze romantische aandacht voor de individuele keuze, de angst ("Furcht und Zittern"), en de confrontatie met het absurde. Deze existentiële thema's – de eenzaamheid van het individu, de zinloosheid van het lijden, de zoektocht naar betekenis – zouden de Europese cultuur diep beïnvloeden en doorlopen in het werk van latere filosofen als Friedrich Nietzsche en Jean-Paul Sartre.</p>
+
+<strong>Psychologisch Perspectief</strong>
+
+<p>De Romantiek herwaardeerde het irrationele, het onderbewuste, en de droom als bronnen van waarheid en creativiteit. Het begrip van het "genie" als iemand die boven de gewone mensen staat, die rechtstreeks toegang heeft tot hogere waarheden via inspiratie en verbeelding, werd algemeen geaccepteerd. Dit leidde tot de "cultus van het genie" en de "Verinnerlichung" (verinnerlijking) – de intensivering van het innerlijk leven als reactie op de oppervlakkige rationaliteit van de Verlichting. Deze psychologische intensiteit komt perfect tot uitdrukking in <strong>"De Wandelaar boven de Zee van Mist"</strong> (Friedrich, ca. 1818), waar een eenzame figuur, met zijn rug naar de kijker, staart naar een oneindige oceaan van mist. De "Rückenfigur" nodigt de kijker uit om door de ogen van de wandelaar te kijken, de eigen contemplatie en introspectie te delen. De subtiele, atmosferische tinten (grijzen, blauwen, groenen) en het diffuse, melancholische schijnsel suggereren een "Stimmungslandschaft" – een landschap dat een innerlijke psychologische toestand verbeeldt. De symmetrische maar niet-statische compositie, met de centrale figuur geflankeerd door rotsen maar zonder duidelijke horizon, creëert een gevoel van grenzeloosheid en desoriëntatie dat perfect de romantische "Sehnsucht" – het diepe verlangen naar het onbereikbare – visualiseert. Dit is de psychologie van het individu tegenover het universum, de "cultus van het genie" die hogere waarheden zoekt in de natuur, weg van de verdorven stad.</p>
+
+<p>De romantische melancholie (*Weltschmerz*, *mal du siècle*) werd een modeverschijnsel en een psychologische werkelijkheid: een diepe droefheid over de onvolmaaktheid van de wereld en de onmogelijkheid van het ideaal. Deze melancholie vond haar meest intense visuele expressie in <strong>"Het Zee van IJs"</strong> (Friedrich, 1823-1824), waar enorme ijsbergen een schip verpletteren in een poollandschap zonder menselijke aanwezigheid. Friedrich gebruikte extreme, koele wit-blauwe tinten en diepe bruin-groene schaduwen om een onheilspellende atmosfeer van onafwendbaar noodlot te creëren. De diagonale spanning van de gebroken masten en het wrak, omringd door torenhoge ijsformaties die als organische, bijna monsterlijke kathedralen naar de hemel reiken, verbeeldt wat Sigmund Freud later het "oceanic feeling" zou noemen – de ervaring van verdwijnen in iets groters dan jezelf, de "Sehnsucht" naar vernietiging en vereniging. Het ijs wordt bijna organisch, nachtmerrieachtig – een visie die doet denken aan de gothic novel en de toenemende fascinatie voor het bovennatuurlijke. Dit is de Romantiek in haar donkerste vorm: niet het sublieme landschap van verwondering, maar het sublieme van horror en existentiële angst.</p>
+
+<p>Het dubbelzelf – het idee dat ieder mens een duistere kant heeft, een "shadow self" die tegenover het bewuste "ik" staat – werd geëxploreerd in de gothic novel en later in werken als Robert Louis Stevensons *Dr. Jekyll and Mr. Hyde* (1886). Deze psychologische dualiteit vindt haar meest verontrustende visuele expressie in <strong>"Saturnus verslindt zijn Zoon"</strong> (Goya, 1819-1823), een van de "Zwarte Schilderijen" die nooit voor publieke tentoonstelling bedoeld waren. Goya schilderde een nachtmerrieachtige scène van puur waanzin: Saturnus (Kronos) met wijd open ogen van krankzinnigheid, zijn handen greepkrachtig om het lichaam van zijn zoon, die hij verslindt. Het beperkte, grimmige palet (zwarten, bruinen, roestige roden, vleeskleurig) zonder lichtbron of redding, alleen de onheilspellende donkerte van de waanzin, verbeeldt het irrationele, het onderbewuste, de donkere kant van de menselijke psyche. De claustrofobische compositie – Saturnus vult bijna het hele beeld, geen achtergrond, geen context, alleen de daad – en de ruwe, agressieve penseelvoering (de verf is gesmeerd, gekrast, bewerkt tot het op vers vlees lijkt) maken dit tot een visuele aanval, een confrontatie met het monsterlijke in onszelf. Dit is de Romantiek die haar eigen schaduw onderzoekt: de fascinatie met krankzinnigheid, geweld, en de destructieve krachten van de menselijke geest.</p>
+
+<p>De romantische interesse in extremen van het menselijk ervaren – de "grenserfahrung" of grenservaring – leidde tot een fascinatie met waanzin, wanhoop, en de grenzen van het menselijke. <strong>De studies voor "Het Vlot van de Medusa"</strong> (Géricault, 1818-1819) tonen deze obsessieve aandacht voor psychologische extremen. Géricault bezocht ziekenhuizen en lijkenhuizen om lichamen te bestuderen, interviewde overlevenden, en liet zelfs een model van het vlot bouwen in zijn atelier. Deze studies, variërend van snelle schetsen tot uitgewerkte olieverfstudies, tonen gezichten vervormd door wanhoop, lichamen gekromd door honger en dorst, de "madness" die de overlevenden trof. Het gebruik van aquarel en inkt in sommige studies geeft een spookachtig, bijna abstract effect, wat de psychologische intensiteit versterkt. Deze studies tonen ook Géricaults belangstelling voor "the other" – de gek, de crimineel, de sociale uitgestotene – een thema dat terugkomt in zijn latere portretten van psychiatrische patiënten. De anatomische precisie (Géricault was een meester van de "écorché", de gevelde figuur met zichtbare spieren en botten) contrasteert met de ruwe, onmiddellijke kwaliteit, wat de spanning tussen wetenschappelijke observatie en emotionele expressie benadrukt.</p>
+
+<p>Het concept van het "Zeitgeist" – de geest van de tijd – werd populair, evenals de idee van "Sehnsucht": een diep verlangen naar het onbereikbare, het verleden, of een ideale wereld. Dit werd vaak gekoppeld aan de nostalgie naar de kindertijd en het verlangen naar een vereniging met de natuur. Deze psychologische thema's – melancholie, waanzin, het dubbelzelf, de grenservaring, en de "Sehnsucht" – beïnvloedden direct de vorm en techniek van de romantische kunst: de dramatische diagonalen die psychologische spanning suggereren, de donkere, atmosferische tinten die melancholie verbeelden, de losse, expressieve penseelstreken die emotionele intensiteit overbrengen, en de compositie die de kijker confronteert met het irrationele en het onzichtbare. De Romantiek legde hiermee de basis voor de moderne psychologie en de kunst van het Expressionisme en Surrealisme die een eeuw later zouden volgen.</p>
+
+<p>---</p>
+
+<h4>Stijlfiguren en Thema's</h4>
+
+<strong>Kenmerkende Vormen</strong>
+
+<p>De romantische kunst kenmerkt zich door dramatische, diagonale composities die beweging en spanning suggereren. In plaats van de evenwichtige, statische opbouw van het Classicisme, zien we spiralende poses, stormachtige wolkenformaties, en een sterke diepte die de kijker het landschap in trekt.</p>
+
+<p>Het sublieme landschap domineert: ruige bergen, woeste zeeën, donkere wouden, en dramatische luchten. De mens wordt vaak afgebeeld als klein en hulpeloos tegenover de overweldigende natuurkrachten – de "Wanderer above the Sea of Fog" (Friedrich) is het archetypische voorbeeld.</p>
+
+<p>Ruïnes spelen een belangrijke rol: middeleeuwse kloosters, griekse tempels, of vervallen kastelen. Deze "romantische ruïne" symboliseert de vergankelijkheid van menselijke ambitie en de triomf van de natuur en tijd over menselijke constructies.</p>
+
+<strong>Kleurenpalet</strong>
+
+<p>Romantische schilders gebruikten vaak donkere, atmosferische tinten: diepe blauwen en grijzen voor nachtelijke scènes en stormen, gloeiende roden en oranjes voor zonsondergangen en vuur. De atmosferische perspectief werd versterkt: verre objecten worden lichter, blauwer, en minder gedefinieerd.</p>
+
+<p>Caspar David Friedrich gebruikte vaak een symboolkleur: de grijze, mistige atmosfeer die het grensgebied tussen zichtbaar en onzichtbaar suggereert. Eugène Delacroix gebruikte intense, levendige kleuren geïnspireerd op zijn reizen naar Noord-Afrika – verzadigde roden, turquoizen, en gouden tinten.</p>
+
+<strong>Technieken</strong>
+
+<p>Olieverf met zichtbare, expressieve penseelstreken – vaak impasto (dikke verflagen) voor textuur en lichteffecten. Joseph Mallord William Turner experimenteerde met aquarel en losse, bijna abstracte penseelvoering die licht en atmosfeer boven detail stelde.</p>
+
+<p>De romantische schilderkunst maakte intensief gebruik van schetsen en studies naar de natuur (*plein air*), die later in het atelier werden uitgewerkt tot monumentale werken. De onvoltooide, schetsmatige kwaliteit werd soms bewust gehandhaafd als uitdrukking van spontaniteit en inspiratie.</p>
+
+<strong>Centrale Thema's</strong>
+
+<p>1. <strong>Het Sublieme</strong> – de overweldigende kracht van de natuur die angst en extase veroorzaakt</p>
+<p>2. <strong>Het Historische</strong> – middeleeuwse taferelen, historische gebeurtenissen, nationale mythen</p>
+<p>3. <strong>Het Exotische</strong> – Oriëntaalse scènes, verre culturen, het "nobele wilde"</p>
+<p>4. <strong>Het Revolutionaire</strong> – politieke opstand, strijd voor vrijheid, martelaarschap</p>
+<p>5. <strong>Het Individuele</strong> – de eenzame kunstenaar, de dromer, de verliefde</p>
+<p>6. <strong>De dood en het hiernamaals</strong> – kerkhoven, geesten, mystieke visioenen</p>
+
+<p>---</p>
+
+<h4>De Tien Meest Invloedrijke Werken</h4>
+
+<p>---</p>
+
+<p>#</p>
+</section>
+
+
+<div class="artwork" id="werk1">
+    <h4>1. "Het Vlot van de Medusa" (1818-1819) — Théodore Géricault</h4>
+    <img src="images/medusa.jpg" alt="Het Vlot van de Medusa" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Wikimedia Commons:</strong> File:JEAN_LOUIS_THÉODORE_GÉRICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg
+<strong>Museum:</strong> Musée du Louvre, Parijs
+<strong>Afmetingen:</strong> 491 × 716 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Dit monumentale schilderij is gebaseerd op een werkelijke schipbreuk in 1816. Het Franse fregat Medusa liep vast voor de kust van Senegal. Door gebrek aan reddingsboten werden 147 passagiers en bemanningsleden achtergelaten op een houten vlot. Na dertien dagen van honger, dorst, waanzin en kannibalisme overleefden slechts tien mensen, waarvan vijf kort na hun redding overleden.</p>
+
+<p>Het schandaal was enorm: de kapitein was een incompetente edelman die zijn positie te danken had aan koninklijke gunst, niet aan bekwaamheid. Géricaults schilderij was dan ook een politieke aanklacht tegen het restauratiebewind van Lodewijk XVIII.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Het werk vangt de post-Napoleontische desillusie perfect: heroïsche idealen maken plaats voor gruwelijke realiteit. Het toont de fragiliteit van de burgerlijke beschaving – op het vlot teruggevallen in een staat van natuur, onthult de mens zijn meest primitieve instincten. De Romantiek's fascinatie met de grenzen van het menselijke, het sublieme lijden, en de kritiek op sociale onrechtvaardigheid komen samen in dit meesterwerk.</p>
+
+<p>Philosofisch reflecteert het de Schopenhaueriaanse wil-tot-leven: de wanhopige strijd om te overleven ondanks alle redelijkheid. Psychologisch exploreert het wat angst, waanzin, en uiterste wanhoop met het menselijke gezicht doen – de "expressie" wordt een studieobject.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is een piramide van lijden, met de dode oude man rechtsonder als basis, via de noodlijdende figuren naar de piek waar een man wanhopig naar de horizon wijst waar een schip is gesignaleerd. De lichtinval – een dramatische chiaroscuro – accentueert de naakte, gespierde lichamen en de martelende contrasten tussen zonverbrande huid en schaduw.</p>
+
+<p>Het kleurenpalet is donker en aards: bruinen, roestkleuren, en het grijze zeewater. Alleen de hemel biedt een vage belofte van verlossing. De penseelvoering is krachtig en expressief, vooral in de golven die het vlot dreigend omringen.</p>
+
+<p>Het werk was stilistisch revolutionair: het schilderen van een actueel, controversieel nieuwsfeit als historisch meesterwerk, en de onverbloemde weergave van lijden en dood als esthetisch onderwerp – dit was een breuk met het decoratieve, verheven Classicisme.</p>
+
+<p>---</p>
+
+<p>#</p>
+    </div>
+</div>
+
+
+<div class="artwork" id="werk2">
+    <h4>2. "De Vrijheid leidt het Volk" (1830) — Eugène Delacroix</h4>
+    <img src="images/liberty.jpg" alt="De Vrijheid leidt het Volk" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Wikimedia Commons:</strong> File:Eugène_Delacroix_-_La_liberté_guidant_le_peuple.jpg
+<strong>Museum:</strong> Musée du Louvre, Parijs
+<strong>Afmetingen:</strong> 260 × 325 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Geschilderd in reactie op de Julirevolutie van 1830, waarbij koning Karel X werd afgezet en vervangen door de burgerkoning Lodewijk Filips. Delacroix, die zelf niet aan de barricades stond maar de gebeurtenissen van nabij volgde, creëerde dit allegorische monument voor de revolutionaire geest.</p>
+
+<p>Het schilderij werd in 1831 tentoongesteld op de Salon en direct aangekocht door de Franse staat – ironisch genoeg, want later werd het als te revolutionair beschouwd en opgeborgen. Pas na de val van het Tweede Keizerrijk in 1874 werd het opnieuw publiek getoond.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de Romantiek als politieke ideologie verbeeld: de vrijheid als vrouwelijke allegorie, geïnspireerd door Marianne, het symbool van de Franse Republiek. Haar borsten bloot – een referentie aan klassieke beelden van de vrijheid en een provocatie voor de burgerlijke moraliteit – en de driekleurige vlag in haar hand verheffen het specifieke Franse conflict tot universeel ideaal.</p>
+
+<p>De verschillende sociale klassen die achter haar aanstromen – de bourgeois met hoge hoed, de arbeider met baret, de jonge knaap met pistolen – suggereren een natie verenigd door het revolutionaire vuur. Het is de Romantiek's geloof in de "Volksgeist" en de "Grote Geschiedenis" verbeeld.</p>
+
+<p>Literair verwijst het naar Victor Hugo's revolutionaire poëzie en de heroïsche geschiedschrijving van de tijd. Filosofisch reflecteert het de idealistische hoop op menselijke perfectiebaarheid door politieke actie – een contrast met het later romantische pessimisme.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Delacroix' kleurenpalet is hier op zijn levendigst: de rode, witte en blauwe vlag vormt het compositorische centrum, omringd door de donkere rook van de barricades en het grijze van het pantser van de gesneuvelde soldaat in de voorgrond. Het contrast tussen het licht op de vrijheid en de schaduwen van de doden creëert dramatische diepte.</p>
+
+<p>De compositie is een dynamische diagonaal: de vrijheid stormt over de doden heen, de vlag wappert in de wind, de figuren buigen en strekken zich in heroïsche poses. Dit is de "serpentinata" van het Maniërisme hernieuwd voor revolutionaire doeleinden.</p>
+
+<p>De penseelvoering is los en schetsmatig, vooral in de achtergrond – Delacroix liet de voorbereidende ondergrond zichtbaar, wat een gevoel van urgentie en spontaniteit geeft. De anatomie is expressief verlengd, de gebaren theatraal – dit is emotie verbeeld, niet realiteit beschreven.</p>
+
+<p>---</p>
+
+<p>#### 3. "Het Zee van IJs" (Das Eismeer) (1823-1824) — Caspar David Friedrich</p>
+
+<strong>Wikimedia Commons:</strong> File:Caspar_David_Friedrich_-_Das_Eismeer_-_Google_Art_Project.jpg
+<strong>Museum:</strong> Hamburger Kunsthalle, Hamburg
+<strong>Afmetingen:</strong> 96,7 × 126,9 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Friedrich schilderde dit werk tijdens een periode van toenemende melancholie en gezondheidsproblemen. Het werd grotendeels genegeerd tijdens zijn leven en pas na zijn dood herontdekt als een van zijn meest krachtige werken. Het verbeeldt een poollandschap met een schip dat gekneusd is tegen enorme ijsbergen – een metafoor voor menselijke onmacht tegenover de almachtige natuur.</p>
+
+<p>Het schilderij heeft ook een persoonlijke dimensie: Friedrichs broer was omgekomen bij een schipbreuk in de Oostzee, hoewel dit specifieke werk meer geïnspireerd lijkt op expedities naar het noordpoolgebied die in die tijd populair waren.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Het sublieme landschap in al zijn angstaanjagende schoonheid – dit is de Duitse Romantiek ten voeten uit. De mens is letterlijk verdwenen, verpletterd door de natuurkrachten. Het is een visuele vertaling van Edmund Burkes definitie van het sublieme: "wat dan ook dat voldoende is om de pijn en gevaar-zielen te produceren, dat wil zeggen, wat dan ook dat in welke vorm dan ook verschrikkelijk is."</p>
+
+<p>Psychologisch is dit een afbeelding van wat Freud later het "oceanic feeling" zou noemen – de ervaring van verdwijnen in iets groters dan jezelf, de "Sehnsucht" naar vernietiging en vereniging. Het ijs wordt bijna organisch, monsterlijk – een nachtmerrieachtige visie die doet denken aan de gothic novel en de toenemende fascinatie voor het bovennatuurlijke.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Friedrichs palet is extreem: koele, klinische wit-blauwe tinten voor het ijs, diepe bruin-groene schaduwen voor het water en de lucht. Het licht komt van ergens buiten het schilderij, creërend een onheilspellende atmosfeer van dichtbijkomend noodlot.</p>
+
+<p>De compositie is een meesterwerk van diagonale spanning: de gebroken masten en het wrak vormen een kruis in het centrum, omringd door torenhoge ijsformaties die als kathedralen naar de hemel reiken. Het is een "natuurkathedraal" – de Romantiek's vervanging van het traditionele religieuze beeld.</p>
+
+<p>De precisie waarmee Friedrich het ijs schildert – elke barst, elke reflectie – contrasteert met de dromerige, bijna hallucinatoire kwaliteit van het geheel. Dit is geen documentaire, maar een visioen.</p>
+
+<p>---</p>
+
+<p>#### 4. "De Wandelaar boven de Zee van Mist" (Wanderer above the Sea of Fog) (ca. 1818) — Caspar David Friedrich</p>
+
+<strong>Wikimedia Commons:</strong> File:Caspar_David_Friedrich_-_Wanderer_above_the_Sea_of_Fog_-_Google_Art_Project.jpg
+<strong>Museum:</strong> Kunsthalle Hamburg, Hamburg
+<strong>Afmetingen:</strong> 94,8 × 74,8 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Dit is het meest iconische werk van Friedrich en tegelijkertijd het ultieme symbool van de Romantiek. Een man, gekleed in donkere burgerkleding, staat met zijn rug naar de kijker toegekeerd op een rotsachtig uitsteeksel, starend naar een oceaan van mist die valleien en bergpieken bedekt.</p>
+
+<p>Het "Rückenfigur" (rugfiguur) is een kenmerkend Friedrichiaans motief: de kijker wordt uitgenodigd om door de ogen van de figuur te kijken, de eigen ervaring van het sublieme landschap te delen. De identiteit van de wandelaar is onbekend – sommigen suggereren dat het Friedrich zelf is, anderen zien het als een algemene representatie van de romantische mens.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit schilderij verbeeldt de romantische "Sehnsucht" in pure vorm: het verlangen naar het onbereikbare, de mystieke eenwording met de natuur. De figuur staat op het grenspunt tussen bekend en onbekend, tussen aarde en hemel – een visuele metafoor voor de menselijke conditie tussen eindigheid en oneindigheid.</p>
+
+<p>Psychologisch is dit een afbeelding van contemplatie, introspectie, en de romantische fascinatie voor het individu tegenover het universum. Het is de "cultus van het genie" verbeeld: de eenzame denker die hogere waarheden zoekt in de natuur, weg van de verdorven stad en de druk van de samenleving.</p>
+
+<p>Filosofisch verwijst het naar de Duitse idealistische traditie: de natuur als zichtbaar geworden Geest (Schelling), het individu dat zich verliest in het Absolute.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Friedrichs palet is subtiel en atmosferisch: grijzen, blauwen, en groenen die in elkaar overvloeien om het effect van mist en oneindigheid te creëren. Het licht lijkt van overal en nergens tegelijk te komen – een diffuus, melancholisch schijnsel.</p>
+
+<p>De compositie is symmetrisch maar niet statisch: de centrale figuur wordt geflankeerd door rotsformaties, terwijl de horizon volledig ontbreekt, opgelost in de mist. Dit creëert een gevoel van desoriëntatie en grenzeloosheid.</p>
+
+<p>De precisie in de rotsen en het gewaad van de figuur contrasteert met de onbestemdheid van de mist. Dit is geen topografisch landschap, maar een "Stimmungslandschaft" – een landschap van stemming, een innerlijk landschap geprojecteerd naar buiten.</p>
+
+<p>---</p>
+
+<p>#### 5. "De Aanvallende Jager" (The Charging Chasseur) (1812) — Théodore Géricault</p>
+
+<strong>Wikimedia Commons:</strong> File:Théodore_Géricault_-_The_Charging_Chasseur_-_WGA08614.jpg
+<strong>Museum:</strong> Musée du Louvre, Parijs
+<strong>Afmetingen:</strong> 349 × 266 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Dit was Géricaults eerste meesterwerk, tentoongesteld op de Salon van 1812 toen de kunstenaar pas twintig jaar oud was. Het toont een chasseur (lichte cavalerist) van de keizerlijke garde in volle galop, op het hoogtepunt van Napoleontische glorie, net voor de catastrofale veldtocht naar Rusland.</p>
+
+<p>Het schilderij werd geprezen om zijn vitaliteit en technische virtuoositeit, maar ook bekritiseerd om zijn afwijking van de klassieke normen. De invloed van Peter Paul Rubens is duidelijk zichtbaar in de dynamische compositie en het warme, sensuele kleurenpalet.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit werk vangt het Napoleon-mystiek op zijn hoogtepunt: de individuele held die de geschiedenis vormt, de romantische fascinatie voor oorlog en avontuur. Het is het tegengewicht van het latere "Vlot van de Medusa" – hier is de heroïek nog ongeschonden, het optimisme nog intact.</p>
+
+<p>Literair verwijst het naar de Napoleontische legende die al tijdens het keizerrijk begon te groeien, en die na 1815 zou uitgroeien tot een romantisch cultus. Het is de "Grote Man"-theorie van de geschiedenis verbeeld: één man op een paard die de wereld verovert.</p>
+
+<p>Het werk reflecteert ook de technologische veranderingen van de tijd: het moderne militaire uniform, de professionele soldaat als nieuwe sociale categorie, en de industrialisatie van de oorlogsvoering.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Géricaults palet is warm en Rubensiaans: gouden en kastanjebruine tinten voor het paard, felrood en blauw voor het uniform, een dramatische hemel met brekende wolken. Het licht komt schuin van achteren, creërend een dramatische silhouet-effect.</p>
+
+<p>De compositie is een explosie van diagonale lijnen: het paard is gevangen in mid-gallop, alle vier de benen van de grond – een technisch tour de force die de fotografische beweging vastlegt voordat de fotografie bestond. Het is een "moment" verbeeld, niet een pose.</p>
+
+<p>De penseelvoering is los en energiek, vooral in de achtergrond en de manen van het paard. De anatomische kennis van Géricault – hij bracht uren door in de stallen van Versailles – is evident in de gespierde romp van het dier.</p>
+
+<p>---</p>
+
+<p>#### 6. "De Gekelde" (The Raft of the Medusa - detailstudie) (1818-1819) — Théodore Géricault</p>
+
+<strong>Wikimedia Commons:</strong> File:Géricault_-_Etude_pour_le_raf_de_la_Meduse.jpg
+<strong>Museum:</strong> Musée des Beaux-Arts, Rouen
+<strong>Afmetingen:</strong> Verschillende studies, ca. 50 × 60 cm
+<strong>Techniek:</strong> Olieverf op doek, aquarel, tekening
+
+<strong>Achtergrond</strong>
+
+<p>Als vervanging voor het incorrecte "Dodenmasker Napoleon" (dat niet door Géricault werd gemaakt) behandelen we hier Géricaults intense voorbereidende studies voor "Het Vlot van de Medusa". Deze studies tonen de obsessieve aandacht van de kunstenaar voor anatomie, uitdrukking, en het menselijke lijden.</p>
+
+<p>Géricault bezocht ziekenhuizen en lijkenhuisjes om lichamen te bestuderen, interviewde overlevenden, en liet zelfs een model van het vlot bouwen in zijn atelier. Deze methodische aanpak was ongebruikelijk voor de tijd en getuigt van zijn realistische ambitie.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Deze studies zijn een fascinerend inzicht in het romantische werkproces: de obsessie, het lijden van de kunstenaar zelf, en de grens tussen documentatie en kunst. Ze tonen ook de invloed van de nieuwe medische illustratie en de opkomende wetenschap van de pathologie.</p>
+
+<p>Psychologisch zijn deze studies even verontrustend als het eindwerk: gezichten vervormd door wanhoop, lichamen gekromd door honger en dorst, de "madness" die de overlevenden trof. Het is de romantische fascinatie voor de "grenserfahrung" – de grenservaring – in al zijn intensiteit.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De studies variëren in medium en afwerking, van snelle schetsen tot uitgewerkte olieverf studies. Wat ze gemeen hebben is de ruwe, onmiddellijke kwaliteit – deze zijn niet bedoeld voor tentoonstelling, maar als hulpmiddel voor de kunstenaar.</p>
+
+<p>Het gebruik van aquarel en inkt in sommige studies geeft een spookachtig, bijna abstract effect. De anatomische precisie is verbijsterend: Géricault was een meester van de "écorché" (gevelde figuur), de spieren en botten zichtbaar onder de huid.</p>
+
+<p>Deze studies tonen ook Géricaults belangstelling voor "the other" – de gek, de crimineel, de sociale uitgestotene – een thema dat terugkomt in zijn portretten van psychiatrische patiënten uit zijn latere jaren.</p>
+
+<p>---</p>
+
+<p>#### 7. "De Slag bij Trafalgar" (The Battle of Trafalgar) (1806-1808) — J.M.W. Turner</p>
+
+<strong>Wikimedia Commons:</strong> File:Turner_-_The_Battle_of_Trafalgar.jpg
+<strong>Museum:</strong> National Maritime Museum, Greenwich, Londen
+<strong>Afmetingen:</strong> 261,5 × 369 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Turner werd in 1806 door koning George III gevraagd om dit monumentale werk te schilderen om de overwinning van Horatio Nelson bij Trafalgar (1805) te vereeuwigen. Het resultaat is echter geen realistisch verslag van de slag, maar een kosmisch drama van licht, vuur, en water.</p>
+
+<p>Het schilderij werd kritisch ontvangen – sommigen vonden het te chaotisch, te abstract. Turner zou later zelf toegeven dat hij de compositie had "verbeterd" ten koste van historische nauwkeurigheid.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit werk markeert de overgang van de Romantiek naar iets nieuws – het vooruitzicht van het Impressionisme en zelfs het Abstract Expressionisme. De historische gebeurtenis wordt bijna onherkenbaar, opgelost in een vortex van licht en kleur.</p>
+
+<p>Het is de Britse equivalent van het sublieme landschap bij Friedrich: de natuur (hier het zeegevecht) als overweldigende kracht waarin de menselijke heldenhaftigheid bijna verdwijnt. Nelsons overwinning wordt bijna een nederlaag, zo klein is de mens tegenover de elementen.</p>
+
+<p>Filosofisch is dit een vroeg voorbeeld van het "End of History"-gevoel: de grote gebeurtenissen, de helden, de overwinningen – alles verdwijnt in de mist van tijd en het oneindige van de natuur.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Turners palet is explosief: vuurrood, goudgeel, diep blauw, en zwart – de kleuren van een apocalyptische vision. Het licht lijkt van binnenuit te komen, alsof de zee zelf in brand staat.</p>
+
+<p>De compositie is een wirwar van lijnen en vlakken: masten, zeilen, lijken, golven, alles door elkaar. De horizon is verdwenen, de lucht en zee vloeien samen. Dit is geen "views" maar een "vision" – een visioen.</p>
+
+<p>De penseelvoering is extreem: dikke lagen verf, gesmeerd en gekrast, met zelfs vingerverf toegepast. Turner experimenteerde hier met materialiteit – de verf als materie, niet alleen als medium. Dit was radicaal voor 1808 en zou pas generaties later worden begrepen.</p>
+
+<p>---</p>
+
+<p>#### 8. "Regen, Stoom en Snelheid" (Rain, Steam and Speed – The Great Western Railway) (1844) — J.M.W. Turner</p>
+
+<strong>Wikimedia Commons:</strong> File:Turner_-_Rain,_Steam_and_Speed_-_The_Great_Western_Railway.jpg
+<strong>Museum:</strong> National Gallery, Londen
+<strong>Afmetingen:</strong> 91 × 121,8 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Een van Turners laatste meesterwerken, geschilderd toen hij bijna zeventig was en zijn gezichtsstand al ernstig was aangetast. Het toont een trein die over de Tamar-brug raast, gehuld in regen en stoom – de moderne technologie die de natuur lijkt te verslinden.</p>
+
+<p>Het konijn in de voorgrond, dat net aan de wielen ontsnapt, is een traditioneel symbool van snelheid – hier ironisch overbodig geworden door de machine die alles in de schaduw stelt.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de Romantiek die haar eigen ondergang voorziet: de industrialisatie die de natuur vervangt, de snelheid die de contemplatie verdringt, de machine die het individu verplettert. Het is tegelijkertijd een viering en een waarschuwing.</p>
+
+<p>Het schilderij vangt de "Zeitgeist" van 1844 perfect: de spoorweg als symbool van vooruitgang, de tijd die versnelt, de wereld die kleiner wordt. Maar het is ook een melancholiek afscheid – het laatste konijn, de laatste regen, de laatste handmatige ervaring van de wereld.</p>
+
+<p>Psychologisch is dit een afbeelding van dissociatie – de kijker kan niets vasthouden, alles beweegt, alles vervaagt. Het is de moderne ervaring van "sensation" zonder "perception", de overweldiging van de zintuigen.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Turners palet is bijna monochroom: bruinen, gouden, en grijzen, met slechts vlekjes rood en geel. De verf is zo los aangebracht dat het schilderij bijna abstract lijkt – je moet er afstand van nemen om de trein te herkennen.</p>
+
+<p>De compositie is een diagonalale explosie: de brug loopt van linksonder naar rechtsboven, de regen valt schuin, de stoom stijgt wervelend op. Er is geen rustpunt, geen compositorisch anker – alles is beweging.</p>
+
+<p>De penseelvoering is extreem vrij: grote lappen verf, toegebracht met paletmes of zelfs handen, gesmeerd en geveegd. Dit is Turner op zijn meest "modern" – een halve eeuw voor het Impressionisme, bijna een eeuw voor het Abstract Expressionisme.</p>
+
+<p>---</p>
+
+<p>#### 9. "Saturnus verslindt zijn Zoon" (Saturn Devouring His Son) (1819-1823) — Francisco Goya</p>
+
+<strong>Wikimedia Commons:</strong> File:Francisco_de_Goya,_Saturno_devorando_a_un_hijo.jpg
+<strong>Museum:</strong> Museo del Prado, Madrid
+<strong>Afmetingen:</strong> 143,5 × 81,4 cm
+<strong>Techniek:</strong> Olieverf op doek, bevestigd op muur
+
+<strong>Achtergrond</strong>
+
+<p>Dit is een van de veertien "Zwarte Schilderijen" die Goya op de muren van zijn huis, de Quinta del Sordo (Het Huis van de Dove), schilderde tussen 1819 en 1823. Ze waren nooit bedoeld voor publieke tentoonstelling – ze waren persoonlijk, obsessief, en nachtmerrieachtig.</p>
+
+<p>Het onderwerp komt uit de Griekse mythologie: Kronos (Saturnus) die zijn kinderen opslokt uit angst dat ze hem zullen vervangen. In Goya's versie is het geen heroïsche mythe, maar een scène van pure, dierlijke waanzin.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de Romantiek in haar donkerste vorm – niet het sublieme landschap, maar het sublieme van de horror. De "Schöne Welt" (schone wereld) van de Verlichting is hier volledig verdwenen, vervangen door een wereld van chaos, geweld, en waanzin.</p>
+
+<p>Het werk wordt vaak geïnterpreteerd als een commentaar op de recente Spaanse geschiedenis: de burgeroorlogen, de Napoleontische invasie, de terreur van Ferdinand VII. Maar het is ook persoonlijk: Goya was zelf vader, en dit schilderij werd gemaakt na de dood van twee van zijn kinderen.</p>
+
+<p>Filosofisch is dit een uiting van het romantische pessimisme – de wereld als een plek van onvermijdelijk lijden, de tijd die alles vernietigt, de angst voor de volgende generatie die de oude zal vervangen. Het is Nietzsches "Wille zur Macht" in beeld gebracht, Schopenhauers "Welt als Wille und Vorstellung" als horror-show.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Goya's palet is beperkt en grimmig: zwarten, bruinen, roestige roden, en het vleeskleurige van het verslonden lichaam. Er is geen lichtbron, geen redding – alleen de onheilspellende donkerte van de "Zwarte Schilderijen".</p>
+
+<p>De compositie is claustrofobisch: de figuur van Saturnus vult bijna het hele beeld, zijn ogen wijd open van waanzin, zijn handen greepkrachtig om het lichaam van zijn zoon. Er is geen achtergrond, geen context – alleen de daad.</p>
+
+<p>De penseelvoering is ruw en haastig, bijna agressief. Dit is geen "schilderen" maar "aanvallen" – de verf is gesmeerd, gekrast, bewerkt tot het lijkt op vers vlees. Goya's techniek hier is een voorloper van het Expressionisme, zelfs van Art Brut – de "kunst van de gekken" die hij zelf zou worden genoemd.</p>
+
+<p>---</p>
+
+<p>#### 10. "De Derde Mei 1808" (The Third of May 1808) (1814) — Francisco Goya</p>
+
+<strong>Wikimedia Commons:</strong> File:El_Tres_de_Mayo,_by_Francisco_de_Goya,_from_Prado_thin_black_margin.jpg
+<strong>Museum:</strong> Museo del Prado, Madrid
+<strong>Afmetingen:</strong> 266 × 345 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Geschilderd in 1814, kort na de bevrijding van Spanje van de Napoleontische bezetting. Het stelt de executie voor van Spaanse burgers door Franse soldaten op de avond van 3 mei 1808, als wraak voor een opstand de dag ervoor.</p>
+
+<p>Het werk was een regeringsopdracht, bedoeld om de moed van het Spaanse volk te vieren en de gruwelen van de Franse bezetting te veroordelen. Maar het resultaat is alles behalve een patriottisch pamflet – het is een universele veroordeling van oorlog en geweld.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is het antwoord van de Romantiek op de klassieke "historische schilderkunst": geen heroïsche veldslagen, geen verheven generaals, maar de naakte realiteit van executie en angst. De romantische held is hier niet de moedige soldaat, maar de hulpeloze burger die zijn handen opheft in een gebaar dat zowel berusting als wanhoop suggereert.</p>
+
+<p>Het werk heeft dezelfde politieke lading als "De Vrijheid leidt het Volk", maar dan vanuit het perspectief van het slachtoffer in plaats van de overwinnaar. Het is de Romantiek's medeleven met de onderdrukte, de "Weltschmerz" voor degenen die de geschiedenis niet overleven.</p>
+
+<p>Literair verwijst het naar de Spaanse romantische literatuur – de "costumbrismo" en de aandacht voor het alledaagse leven, het "volk" als subject in plaats van object. Het is ook een vroege vorm van "witness art" – kunst die getuigt van geschiedenis op het moment dat ze plaatsvindt.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>Goya's palet is dramatisch en theatraal: het schijnsel van de lantaarn creëert een scherp contrast tussen de verlichte slachtoffers (in wit en geel) en de anonieme, bijna silhouetachtige beulen (in donkerblauw en zwart). Het licht is niet natuurlijk maar moreel – het benadrukt de onschuld van de slachtoffers.</p>
+
+<p>De compositie is een meesterwerk van dramatische opbouw: de centrale figuur met opgeheven handen vormt een christelijke pose (de stigmata zijn zichtbaar in zijn handpalmen), terwijl de lijken in de voorgrond het lot van de kijker voorspellen. De Franse soldaten zijn een anonieme, machine-achtige rij – het militaire apparaat dat het individu vernietigt.</p>
+
+<p>De penseelvoering varieert van fijngeschilderd (de uitdrukking van angst op het gezicht van de centrale figuur) tot ruw en schetsmatig (de achtergrond en de beulen). Dit is een vroege vorm van "selective focus" – de emotie bepaalt wat gedetailleerd wordt weergegeven.</p>
+
+<p>---</p>
+
+<h3>Beeldverwijzingen en Bronnen</h3>
+
+<strong>Wikimedia Commons bestanden:</strong>
+<p>1. Het Vlot van de Medusa — `La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg`</p>
+<p>2. De Vrijheid leidt het Volk — `La_liberté_guidant_le_peuple.jpg`</p>
+<p>3. Het Zee van IJs — `Das_Eismeer_-_Google_Art_Project.jpg`</p>
+<p>4. De Wandelaar — `Wanderer_above_the_Sea_of_Fog_-_Google_Art_Project.jpg`</p>
+<p>5. De Aanvallende Jager — `The_Charging_Chasseur_-_WGA08614.jpg`</p>
+<p>6. De Gekelde (studie) — `Etude_pour_le_raf_de_la_Meduse.jpg`</p>
+<p>7. De Slag bij Trafalgar — `The_Battle_of_Trafalgar.jpg`</p>
+<p>8. Regen, Stoom en Snelheid — `Rain,_Steam_and_Speed_-_The_Great_Western_Railway.jpg`</p>
+<p>9. Saturnus — `Saturno_devorando_a_un_hijo.jpg`</p>
+<p>10. De Derde Mei — `El_Tres_de_Mayo,_by_Francisco_de_Goya.jpg`</p>
+
+<strong>JSON-correcties toegepast:</strong>
+<ul>
+<li>❌ "Dodenmasker Napoleon" door Géricault → <strong>VERVANGEN</strong> door "De Gekelde" (studies voor het Vlot)</li>
+<li>⚠️ "Paardenstudies Napoleon" → <strong>GEHERINTERPRETEERD</strong> als "De Aanvallende Jager" (1812), Géricaults bekendste cavalerie-schilderij</li>
+</ul>
+
+
+    </div>
+</div>
+
     </main>
 
-        <nav class="bottom-nav">
-        <a href="neoclassicisme.html" class="nav-prev">← ⚱️ Neoclassicisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="realisme.html" class="nav-next">Realisme 🌾 →</a>
-    </nav>
-
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
-
+        <p>Kunstgeschiedenis Project | matthiasr.com/art</p>
     </footer>
 </body>
 </html>

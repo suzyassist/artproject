@@ -2,519 +2,420 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Expressionisme - Kunstgeschiedenis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het Rode Atelier - Kunstgeschiedenis</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .featured-artwork {background:linear-gradient(135deg,#FF0000 0%,#000000 100%);color:white;padding:2rem;margin-bottom:2rem;border-radius:8px;text-align:center}
-        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
-        .artwork-fullwidth {background:#fff;margin:3rem 0;padding:2rem;border-radius:8px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}
-        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
-        .artwork-header {border-bottom:3px solid #FF0000;margin-bottom:1.5rem;padding-bottom:1rem}
-        .style-analysis-box {background:#f9f9f9;border-left:4px solid #FF0000;padding:1.5rem;margin:1rem 0}
-        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
-        .style-item {background:#ffe4e1;padding:1rem;border-radius:4px}
-        .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
-        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
-        .palette {display:flex;gap:0.5rem;margin:0.5rem 0}
-        .color-swatch {width:30px;height:30px;border-radius:50%;border:2px solid #333}
-    
-        .page-navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--white);
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            gap: 1rem;
-        }
-        .page-navigation a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
-            background: var(--secondary);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-        .page-navigation a:hover {
-            background: var(--accent);
-            color: var(--primary);
-            transform: translateY(-2px);
-        }
-        .page-navigation .prev::before {
-            content: "←";
-            font-size: 1.2rem;
-        }
-        .page-navigation .next::after {
-            content: "→";
-            font-size: 1.2rem;
-        }
-        .page-navigation .home {
-            background: var(--accent);
-            color: var(--primary);
-        }
-        @media (max-width: 600px) {
-            .page-navigation {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .page-navigation a {
-                font-size: 0.85rem;
-                padding: 0.6rem 1rem;
-            }
-        }
-        @media (max-width: 768px) {
-        }
-    
-    </style>
 </head>
 <body>
-    <header><h1>😱 Expressionisme</h1><p class="subtitle">1905-1930 · Innerlijke Emotie & Vervormde Werkelijkheid</p></header>
-    <nav class="top-nav">
-        <a href="fauvisme.html" class="nav-prev">← 🦁 Fauvisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="kubisme.html" class="nav-next">Kubisme 🔲 →</a>
+    <header>
+        <h1>🎨 Het Rode Atelier</h1>
+        <p class="subtitle">1905-1930</p>
+    </header>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="romanticisme.html">Romanticisme</a>
+        <a href="expressionisme.html" class="active">Expressionisme</a>
+        <a href="kubisme.html">Kubisme</a>
     </nav>
 
-    <!-- Hamburger Menu Button -->
-    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
-
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar" class="side-nav">
-        <div class="side-nav-header">
-            <h3>🎨 Kunststromingen</h3>
-            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
-        </div>
-        <div class="side-nav-content">
-            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
-            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
-            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
-            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
-            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
-            <a href="manierisme.html" class="side-nav-link"><span class="nav-icon">🎭</span><span class="nav-text">Maniërisme</span></a>
-            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
-            <a href="rococo.html" class="side-nav-link"><span class="nav-icon">🎀</span><span class="nav-text">Rococo</span></a>
-            <a href="neoclassicisme.html" class="side-nav-link"><span class="nav-icon">⚱️</span><span class="nav-text">Neoclassicisme</span></a>
-            <a href="romanticisme.html" class="side-nav-link"><span class="nav-icon">🌊</span><span class="nav-text">Romantiek</span></a>
-            <a href="realisme.html" class="side-nav-link"><span class="nav-icon">🌾</span><span class="nav-text">Realisme</span></a>
-            <a href="impressionisme.html" class="side-nav-link"><span class="nav-icon">☀️</span><span class="nav-text">Impressionisme</span></a>
-            <a href="postimpressionisme.html" class="side-nav-link"><span class="nav-icon">🌻</span><span class="nav-text">Post-Impressionisme</span></a>
-            <a href="symbolisme.html" class="side-nav-link"><span class="nav-icon">🌙</span><span class="nav-text">Symbolisme</span></a>
-            <a href="artnouveau.html" class="side-nav-link"><span class="nav-icon">🌿</span><span class="nav-text">Art Nouveau</span></a>
-            <a href="fauvisme.html" class="side-nav-link"><span class="nav-icon">🦁</span><span class="nav-text">Fauvisme</span></a>
-            <a href="expressionisme.html" class="side-nav-link active"><span class="nav-icon">😱</span><span class="nav-text">Expressionisme</span></a>
-            <a href="kubisme.html" class="side-nav-link"><span class="nav-icon">🔲</span><span class="nav-text">Kubisme</span></a>
-            <a href="futurisme.html" class="side-nav-link"><span class="nav-icon">⚡</span><span class="nav-text">Futurisme</span></a>
-            <a href="dadaisme.html" class="side-nav-link"><span class="nav-icon">🎲</span><span class="nav-text">Dadaïsme</span></a>
-            <a href="destijl.html" class="side-nav-link"><span class="nav-icon">⬜</span><span class="nav-text">De Stijl</span></a>
-            <a href="surrealisme.html" class="side-nav-link"><span class="nav-icon">🦋</span><span class="nav-text">Surrealisme</span></a>
-            <a href="abstract.html" class="side-nav-link"><span class="nav-icon">🔥</span><span class="nav-text">Abstract Expressionisme</span></a>
-            <a href="popart.html" class="side-nav-link"><span class="nav-icon">🍿</span><span class="nav-text">Pop Art</span></a>
-            <a href="minimalisme.html" class="side-nav-link"><span class="nav-icon">⬛</span><span class="nav-text">Minimalisme</span></a>
-            <a href="conceptueel.html" class="side-nav-link"><span class="nav-icon">💡</span><span class="nav-text">Conceptuele Kunst</span></a>
-            <a href="postmodernisme.html" class="side-nav-link"><span class="nav-icon">🌀</span><span class="nav-text">Postmodernisme</span></a>
-            <a href="hedendaags.html" class="side-nav-link"><span class="nav-icon">🌐</span><span class="nav-text">Hedendaagse Kunst</span></a>
-            <a href="digitaal.html" class="side-nav-link"><span class="nav-icon">💻</span><span class="nav-text">Digitale Kunst</span></a>
-        </div>
-    </nav>
-
-    <!-- Overlay -->
-    <div id="overlay" class="nav-overlay"></div>
-
-    <script>
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.add('open');
-            document.getElementById('overlay').classList.add('show');
-            document.body.style.overflow = 'hidden';
-        });
-
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.getElementById('overlay').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.getElementById('sidebar').classList.remove('open');
-                document.getElementById('overlay').classList.remove('show');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
-
-    
     <main>
-        <section class="movement-header">
-            <div class="featured-artwork">
-                <h2>Meesterwerk: De Schreeuw</h2>
-                <p class="featured-artist" style="color:#ccc">Edvard Munch, 1893</p>
-                <img src="images/expressionisme/01_munch_scream.jpg" alt="Munch - The Scream">
-            </div>
-        </section>
+        
+<section class="movement-header">
+    <div class="featured-artwork">
+        <h2>Meesterwerk: De Schreeuw</h2>
+        <p class="featured-artist">Edvard Munch, 1893</p>
+        <img src="images/munch_schreeuw.jpg" alt="De Schreeuw" class="featured-image">
+    </div>
+    <h2>EXPRESSIONISME (1905-1930)</h2>
 
-        <section class="content-section">
-            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
-            
-            <div class="style-grid">
-                <div class="style-item">
-                    <h4>😰 VERVORMING</h4>
-                    <p><strong>Realiteit buigen:</strong> Objecten en figuren worden vervormd om emotionele toestanden uit te drukken. Natuurgetrouwheid is minder belangrijk dan innerlijke waarheid.</p>
-                    <p><strong>Golven en kronkels:</strong> Lijnen die bewegen en trillen, alsof de hele wereld in angst of extase beweegt.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>🎨 FELLE, EXPRESSIEVE KLEUREN</h4>
-                    <p><strong>Niet-natuurlijke kleuren:</strong> Groene gezichten, paarse bomen, rode luchten. Kleur is emotie, geen beschrijving.</p>
-                    <p><strong>Complementaire contrasten:</strong> Rood/groen, blauw/oranje om spanning te creëren.</p>
-                    <div class="palette">
-                        <div class="color-swatch" style="background:#FF0000" title="Vuurrood"></div>
-                        <div class="color-swatch" style="background:#00FF00" title="Giftig Groen"></div>
-                        <div class="color-swatch" style="background:#0000FF" title="Diep Blauw"></div>
-                        <div class="color-swatch" style="background:#FFFF00" title="Fel Geel"></div>
-                        <div class="color-swatch" style="background:#800080" title="Purper"></div>
-                    </div>
-                </div>
-                
-                <div class="style-item">
-                    <h4>📐 HOEKIGE, DYNAMISCHE LIJNEN</h4>
-                    <p><strong>Scherpe hoeken:</strong> Geen zachte Impressionistische rondingen, maar scherpe, gespannen lijnen.</p>
-                    <p><strong>Dynamiek:</strong> Diagonale composities die beweging en instabiliteit suggereren.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>👁️ PSYCHOLOGISCHE DIEPEGANG</h4>
-                    <p><strong>Innerlijk landschap:</strong> De ziel wordt zichtbaar. Angst, eenzaamheid, verlangen.</p>
-                    <p><strong>Symboliek:</strong> Objecten staan niet op zichzelf maar dragen emotionele lading.</p>
-                </div>
-            </div>
+<h3>Tijdsgeest Context</h3>
 
-                    <section class="content-section">
-            <h2>📚 TIJDSGEEST CONTEXT (1905-1930)</h2>
-            
-            <div class="timeline-box">
-                <h3>🌍 POLITIEK PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De Eerste Wereldoorlog (1914-1918) vernietigt de Europese orde</li>
-                    <li>Keizerrijken vallen, republieken ontstaan</li>
-                    <li>De Russische Revolutie (1917) brengt angst en hoop</li>
-                    <li>In Duitsland broeit het nationalisme</li>
-                    <li>Die Brücke wordt gezien als "ontaarde kunst" door de nazi's (Entartete Kunst, 1937)</li>
-                    <li>De politieke chaos reflecteert in de vervormde beelden</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>📖 LITERAIR PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Expressionistische poëzie (Trakl, Heym) gebruikt vrije ritmes, schreeuwerige beelden, en apocalyptische thema's</li>
-                    <li>Kafka's verhalen tonen de vervreemding van de moderne mens</li>
-                    <li>Het theater van Wedekind en Kaiser toont neurotische, gepassioneerde figuren</li>
-                    <li>De tekst wordt ruw, direct, geschokt door interpunctie</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Freud's "Die Traumdeutung" (1900) en zijn theorie van het onderbewuste (Es, Ich, Über-Ich) revolutioneren het denken over de mens</li>
-                    <li>Dromen, trauma's, verdrongen verlangens komen naar de oppervlakte</li>
-                    <li>De Expressionist schildert niet wat hij ziet, maar wat hij voelt - de innerlijke werkelijkheid primeert</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>⚙️ HISTORISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De industrialisatie versnelt</li>
-                    <li>Steden groeien explosief (Berlijn heeft 4 miljoen inwoners in 1920)</li>
-                    <li>Massaproductie, massasamenleving, massavernietiging</li>
-                    <li>De Eerste Wereldoorlog introduceert tanks, gifgas, vliegtuigen - de mens wordt een getal in de oorlogsmachine</li>
-                    <li>De Spaanse Griep (1918-1919) doodt miljoenen</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🎭 FILOSOFISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Nietzsche's "God is dood" en zijn kritiek op de verloochende wereld</li>
-                    <li>Spengler's "Der Untergang des Abendlandes" (1918) voorspelt de ondergang van de westerse beschaving</li>
-                    <li>Existentialisme wijst op de absurditeit van het bestaan</li>
-                    <li>Er is geen objectieve waarheid meer - alleen subjectieve ervaring telt</li>
-                    <li>De kunstenaar is profeet van de ondergang</li>
-                </ul>
-            </div>
-        </section>
-        </section>
+<h4>Politiek Perspectief</h4>
 
-        <section class="content-section">
-            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
+<p>Het Expressionisme bloeide in een periode van ongekende politieke spanningen die de Europese orde op zijn grondvesten zou doen trillen. Het Duitse Keizerrijk onder Wilhelm II (1888-1918) was expansief, militaristisch en nationalistisch, en streefde naar "Platz an der Sonne" – een gelijke positie naast de gevestigde koloniale mogendheden Groot-Brittannië en Frankrijk. Deze Duitse ambitie leidde tot een wapenwedloop, de vorming van allianties (Driebond vs. Entente), en een sfeer van onvermijdelijke confrontatie die kunstenaars diep verontrustte. De sociaaldemocratische beweging (SPD, opgericht 1875) groeide uit tot de grootste partij, maar werd door de keizer en de conservatieve elites onderdrukt – een spanning die de Expressionisten vastlegden in hun afbeeldingen van arbeiders, stadsproletariaat en sociale onrechtvaardigheid. De industriële revolutie had de Duitse samenleving radicaal getransformeerd: van een agrarische, regionale confederatie naar een geïndustrialiseerde, verstedelijkte natiestaat dieEuropa domineerde. Deze snelle modernisering veroorzaakte diepe sociale onrust, wat zich direct vertaalde in de expressionistische kunst.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>1. "De Schreeuw" (1893) — Edvard Munch</h3>
-                    <p style="color:#666;font-style:italic;">National Museum, Oslo · 91 × 74 cm · Tempera en pastel op karton</p>
-                </div>
-                <img src="images/expressionisme/01_munch_scream.jpg" loading="lazy" alt="Munch - The Scream">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een pad langs de haven van Oslo bij zonsondergang. Munch beschreef het ontstaan: "De zon ging onder, de wolken werden rood als bloed. Ik voelde een schreeuw door de natuur gaan." Dit is het eerste Expressionistische werk, al voor de beweging officieel begon.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Vervorming:</strong> Het gezicht is een masker van pure angst - ogen wijd open, mond een gat van afgrijzen. De handen aan de wangen drukken de schreeuw uit. Het lichaam is gedraaid, alsof het in elkaar krimpt.</p>
-                        
-                        <p><strong>Landschap dat schreeuwt:</strong> De hemel is golvende lijnen van rood en oranje, alsof het vuur is. De brug golft mee. De natuur is niet mooi maar bedreigend. Alles trilt.</p>
-                        
-                        <p><strong>Kleuren:</strong> Oranje en rood (alarm, gevaar) domineren. Het gezicht is grijs-groen (dood, ziekte). De contrasten zijn extreem - er is geen middenweg, geen grijs.</p>
-                        
-                        <p><strong>Lijnen:</strong> Golvende, kronkelende lijnen die beweging en instabiliteit suggereren. Er is geen vast punt om vast te houden. Alles beweegt, alles dreigt.</p>
-                        
-                        <p><strong>Eenzaamheid:</strong> De twee figuren op de brug kijken niet om, ze horen niets. De schreeuwende figuur is volledig alleen in zijn angst. Dit is existentiële eenzaamheid.</p>
-                        
-                        <p><strong>Techniek:</strong> Tempera en pastel op karton - niet duurzame materialen, alsof de emotie te heftig is voor olieverf op doek. De oppervlakte is ruw, ongelijk.</p>
-                    </div>
-                </div>
-            </div>
+<p>De Duitse Expressionisten, gegroepeerd in Die Brücke (1905, Dresden) en Der Blaue Reiter (1911, München), zagen kunst niet als esthetisch tijdverdrijf, maar als een middel voor spirituele en sociale vernieuwing in een tijd van materialisme en moreel verval. Ze verwezen het burgerlijke conformisme, het militaristische nationalisme en het kapitalistische materialisme, en zochten naar een "nieuwe mens" – authentiek, emotioneel, spiritueel – door middel van radicale artistieke expressie. <strong>"Straat, Berlijn"</strong> (Kirchner, 1913) vangt deze pre-oorlogse spanning perfect: twee geklede vrouwen, hun gezichten maskerachtig vervormd met scherpe hoeken en onnatuurlijke tinten (giftig groen, fel oranje, diepblauw), lopen door een Berlijnse straat. De hoekige, agressieve penseelstreken, de claustrofobische compositie (de figuren worden geperst in de beeldruimte), en de ongemakkelijke psychologische spanning tussen de personages verbeelden de angst voor de naderende catastrofe. De mannen op de achtergrond, silhouetten zonder individuele identiteit, suggereren de anonymiteit en vervreemding van de moderne stedelijke massa. Dit is de politiek van angst en onzekerheid verbeeld: het Duitse Keizerrijk op de rand van de afgrond, de burgerlijke orde die uit elkaar valt, de komende oorlog die voelbaar is in elke hoekige lijn en elke disharmonische kleur.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>2. "Compositie VII" (1913) — Wassily Kandinsky</h3>
-                    <p style="color:#666;font-style:italic;">Tretyakov Gallery, Moskou · 200 × 300 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/03_kandinsky_composition7.jpg" loading="lazy" alt="Kandinsky - Composition VII">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Kandinsky's meesterwerk net voor hij volledig abstract werd. Het is een apocalyptisch visioen - de Dag des Oordeels in abstracte vorm. Er zijn nog herkenbare elementen (paarden, figuren) maar ze zijn opgelost in een storm van kleur.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Chaos en orde:</strong> Ondanks het extreme lijkt het willekeurig, er is een onderliggende structuur. Kandinsky hoorde muziek bij kleuren - dit is een symfonie van vormen.</p>
-                        
-                        <p><strong>Kleuren als emotie:</strong> Blauw = spiritualiteit, rood = vuur/passion, geel = vreugde. De kleuren botsen en mengen zoals emoties dat doen.</p>
-                        
-                        <p><strong>Apocalyps:</strong> De wervelingen suggereren een einde van de wereld. Paarden (apocalyptische ruiters?), figuren die vallen, explosies van licht.</p>
-                        
-                        <p><strong>Grensoverschrijdend:</strong> Dit werk staat op de grens van Expressionisme en abstractie. Het is nog steeds over iets (een visioen), maar het wordt steeds moeilijker te ontcijferen.</p>
-                        
-                        <p><strong>Spiritualiteit:</strong> Kandinsky geloofde dat kunst de ziel kon raken, net als muziek. Je hoeft niets te herkennen om het te voelen.</p>
-                    </div>
-                </div>
-            </div>
+<p>De Eerste Wereldoorlog (1914-1918) zou vele Expressionisten het leven kosten of traumatiseren, en de politieke idealen van vóór de oorlog – de hoop op vernieuwing, de "nieuwe mens" – maakten plaats voor wanhoop, cynisme en trauma. Franz Marc en August Macke sneuvelden aan het front, Ernst Ludwig Kirchner raakte gebroken door zijn oorlogservaringen en zou later zelfmoord plegen. <strong>"Zelfportret als Soldaat"</strong> (Kirchner, 1915) is een van de meest directe politieke uitingen van de expressionistische oorlogstrauma: Kirchner toont zichzelf in uniform, zijn rechterhand afgehakt (een symbolische castratie, een verwijzing naar zijn psychische verwonding), zijn gezicht vervormd door angst en shock. De felrode uniform, de giftige groene achtergrond, en de hoekige, bijna kubistische compositie verbeelden de psychologische desintegratie van de kunstenaar-soldaat. Dit is de politiek van de oorlog als persoonlijke catastrofe: niet de heroïek van de strijd, maar de vernietiging van het individu. Het schilderij fungeert als een visuele aanklacht tegen de militaristische politiek die een generatie vernietigde.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>3. "De Toren van Blauwe Paarden" (1913) — Franz Marc</h3>
-                    <p style="color:#666;font-style:italic;">Städtische Galerie, München · 200 × 130 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/04_marc_bluehorse.jpg" loading="lazy" alt="Marc - Tower of Blue Horses">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een van de laatste werken van Marc voor hij in 1916 sneuvelde in WWI. Paarden waren voor hem heilige dieren - zuiverder dan mensen. De "Blaue Reiter" (Blauwe Ruiter) groep waar hij toebehoorde, zocht spiritualiteit in kunst.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Kleurensymboliek:</strong> Blauw = mannelijk, spiritualiteit, diepte. Geel = vrouwelijk, vreugde, warmte. Rood = zwaarte, aarde, materie. De paarden zijn blauw - ze zijn verheven boven het materiële.</p>
-                        
-                        <p><strong>Torenstructuur:</strong> De paarden stapelen zich op als een toren naar de hemel. Het is een hierarchie van zuiverheid - hoe hoger, hoe meer geestelijk.</p>
-                        
-                        <p><strong>Organische vormen:</strong> Ronde, golvende lijnen. Geen scherpe hoeken - dit is een vreedzame, bijna meditatieve compositie. Anders dan het angstige Expressionisme van Munch.</p>
-                        
-                        <p><strong>Natuurromantiek:</strong> De heuvels en maan suggereren een paradijselijk landschap. Dit is geen echte wereld maar een droom van zuiverheid.</p>
-                        
-                        <p><strong>Primitivisme:</strong> De vereenvoudigde vormen refereren aan volkskunst en middeleeuwse kunst. Marc zocht naar een "oer" taal van beelden.</p>
-                    </div>
-                </div>
-            </div>
+<p>Na de oorlog ontstond de Weimar Republiek (1919-1933), een periode van ongekende culturele bloei maar ook politieke instabiliteit, economische crisis en de opkomst van extremisme. De novemberrevolutie van 1918 had de keizer verdreven, maar de nieuwe democratie was fragiel, bedreigd door communistische opstanden (Spartacusopstand, 1919) en rechtse couppogingen (Kapp-Putsch, 1920). De hyperinflatie van 1923 vernietigde de spaargelden van de middenklasse, en de Grote Depressie (1929) bracht massawerkeloosheid. <strong>"De Nacht"</strong> (Beckmann, 1918-1919) vangt deze post-oorlogse chaos: een claustrofobische ruimte vol geweld, marteling en waanzin, waar geen ontsnapping mogelijk is. Beckmanns donkere, picturale palet (bruinen, zwarten, roestkleuren), de vertekende ruimte (geen enkel perspectief, alles dicht op elkaar geperst), en de scènes van wreedheid en absurditeit verbeelden de desillusie na de oorlog. Dit is de politiek van de Weimar-tijd: geen ideale nieuwe wereld, maar een nachtmerrie van geweld, inflatie en politieke chaos.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>4. "Vrouw met een Hoed" (1905) — Henri Matisse</h3>
-                    <p style="color:#666;font-style:italic;">San Francisco Museum of Modern Art · 79 × 59 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/06_matisse_hat.jpg" loading="lazy" alt="Matisse - Woman with a Hat">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Matisse's vrouw Amélie. Geschilderd in 1905, het jaar dat de term "Fauves" (wilde beesten) werd bedacht door critici. Het schilderij veroorzaakte een schandaal op de Salon d'Automne in Parijs.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Fauve kleuren:</strong> Een groen streep op de neus. Een roze wang. Een blauwe baard. De hoed is een explosie van rood, groen, en geel. Dit is niet hoe mensen eruitzien, maar hoe emoties voelen.</p>
-                        
-                        <p><strong>Losse penseelvoering:</strong> De verf is dik en zichtbaar. Je ziet elke veeg. Er is geen poging om glad en "mooi" te zijn. Het is ruw, direct, eerlijk.</p>
-                        
-                        <p><strong>Vlakheid:</strong> Geen diepte, geen modellering. Het gezicht is een plat vlak van kleur. De achtergrond is groene strepen. Het is bijna een decoratief patroon.</p>
-                        
-                        <p><strong>Matisse vs. Munch:</strong> Beide zijn Expressionisten, maar Matisse is vrolijk waar Munch angstig is. Matisse zoekt schoonheid en vreugde in kleur, zelfs als het "onnatuurlijk" is.</p>
-                    </div>
-                </div>
-            </div>
+<p>Expressionisme bleef populair in Berlijn en andere steden, maar met de opkomst van Adolf Hitler en de NSDAP in de jaren '30 werd de beweging vervolgd als "entartete Kunst" (ontaarde kunst). De nazi's beschouwden het Expressionisme als "bolsjewistisch", "joods" en "on-Duits", en in 1937 werden duizenden werken in beslag genomen en vernietigd of verkocht. Vele kunstenaars vluchtten naar het buitenland (Kandinsky naar Frankrijk, Beckmann naar Nederland en de VS), anderen gingen in "innerlijke emigratie". De politiek had de kunst vernietigd, maar de expressionistische erfenis zou na 1945 herleven in het Abstract Expressionisme en het Neo-Expressionisme. De politieke context – van keizerrijk tot oorlog, van revolutie tot republiek, van democratie tot dictatuur – had de Expressionisten niet alleen beïnvloed, maar hun kunst tot een directe politieke daad gemaakt: een aanklacht tegen militarisme, een getuigenis van trauma, een pleidooi voor een nieuwe, menselijke wereld.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>5. "De Nacht" (1918-1919) — Max Beckmann</h3>
-                    <p style="color:#666;font-style:italic;">Kunstsammlung Nordrhein-Westfalen, Düsseldorf · 133 × 154 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/05_beckmann_night.jpg" loading="lazy" alt="Beckmann - The Night">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Geschilderd net na WWI, waarin Beckmann diende als medic. De nachtmerrieachtige scène toont geweld, marteling, en claustrofobie. Dit is geen specifieke gebeurtenis maar een visioen van de hel van de oorlog.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Claustrofobie:</strong> De ruimte is een kooi. Het plafond drukt naar beneden, de muren sluiten zich samen. Er is geen ontsnapping mogelijk. De figuren zijn opgepropt in een te kleine ruimte.</p>
-                        
-                        <p><strong>Geweld:</strong> Een man wordt opgehangen, een vrouw wordt vastgebonden, een ander figuur wordt gemarteld. Het is een orgie van wreedheid. Maar het is niet realistisch - het is symbolisch.</p>
-                        
-                        <p><strong>Hoekige vormen:</strong> Scherpe, stekelige lijnen. Alles lijkt gespannen, gespannen tot het maximum. De diagonale compositie maakt het nog onstabieler.</p>
-                        
-                        <p><strong>Kleuren:</strong> Donker, somber. Bruin, grijs, groen - de kleuren van vuilheid en dood. Alleen hier en daar een vlek rood (bloed).</p>
-                        
-                        <p><strong>Symboliek:</strong> De kaart op tafel, de kroonluchter, de spiegel - alles heeft betekenis. Het is een allegorie van de ondergang van de burgerlijke maatschappij.</p>
-                    </div>
-                </div>
-            </div>
+<h4>Historisch Perspectief</h4>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>6. "Zelfportret als Soldaat" (1915) — Ernst Ludwig Kirchner</h3>
-                    <p style="color:#666;font-style:italic;">Allen Memorial Art Museum, Oberlin · 69 × 61 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/08_kirchner_soldier.jpg" loading="lazy" alt="Kirchner - Self-Portrait as Soldier">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Kirchner diende in WWI maar had een zenuwinzinking en werd afgekeurd. Dit schilderij toont zijn trauma. De afgehakte hand rechts symboliseert zijn verloren creativiteit door de oorlog.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>De afgehakte hand:</strong> Het meest schokkende element. De rechterhand - de hand waarmee hij schilderde - is een stomp. Het model naast hem (een naakt) staat voor de kunst die hij niet meer kan maken.</p>
-                        
-                        <p><strong>Gelaatsuitdrukking:</strong> Ogen wijd open, starend, geschokt. Het uniform is te groot - hij is verdwenen in de oorlogsmachine. Het is geen held, maar een slachtoffer.</p>
-                        
-                        <p><strong>Kleuren:</strong> Giftig groen (ziekte), paars (dood), oranje (alarm). Er is geen natuurlijk vleeskleur. De huid is grauw, dodelijk.</p>
-                        
-                        <p><strong>Die Brücke:</strong> Kirchner was een van de oprichters van deze Expressionistische groep. Dit werk toont waarom ze radicalen waren - geen patriotisme, alleen pijn.</p>
-                    </div>
-                </div>
-            </div>
+<p>De industriële stad explodeerde: Berlijn, Dresden en München groeiden explosief. De mens werd een radertje in de machine, wat leidde tot een gevoel van alienatie en vervreemding (Entfremdung). De psychoanalyse van Sigmund Freud (Traumdeutung, 1900) openbaarde het onderbewuste en de irrationele drijfveren van de mens - thema's die de Expressionisten fascineerden.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>7. "Het Rode Atelier" (1911) — Henri Matisse</h3>
-                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 181 × 219 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/07_matisse_redstudio.jpg" loading="lazy" alt="Matisse - The Red Studio">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Matisse's atelier in Issy-les-Moulineaux, buiten Parijs. De muren zijn in het echt wit, maar Matisse schildert ze rood. Dit is hoe het atelier VOELT, niet hoe het eruitziet.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Alles is rood:</strong> De vloer, de muren, het meubilair - alles domineerd door één kleur. Het is alsof we door een rood filter kijken. Dit is niet realistisch maar expressief.</p>
-                        
-                        <p><strong>Kunst in kunst:</strong> Matisse schildert zijn eigen schilderijen en beelden die in het atelier staan. Het is een autobiografie in rood. We zien zijn hele oeuvre in één kamer.</p>
-                        
-                        <p><strong>Vlakheid:</strong> Geen perspectief, geen diepte. De tafel lijdt te zweven. De stoel heeft geen zitting. Het is decoratief, bijna een behangpatroon.</p>
-                        
-                        <p><strong>Emotie van rood:</strong> Matisse zei dat rood "een kleur van kracht" was. Maar hier is het ook warm, intiem, persoonlijk. Het atelier is zijn wereld, en die wereld is rood.</p>
-                    </div>
-                </div>
-            </div>
+<p>De koloniale expansie bracht "primitieve" kunst uit Afrika en Oceanië naar Europa. Deze maskers en beeldhouwwerken, met hun vervormde proporties en expressieve kracht, inspireerden de Expressionisten om afstand te doen van het naturalistische ideaal. Het Ethnologisches Museum in Dresden was een belangrijke bron van inspiratie voor Die Brücke.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>8. "De Dans" (1910) — Henri Matisse</h3>
-                    <p style="color:#666;font-style:italic;">Hermitage Museum, St. Petersburg · 260 × 391 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/09_matisse_dance.jpg" loading="lazy" alt="Matisse - The Dance">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Opdracht van de Russische kunstverzamelaar Shchukin. Matisse maakte drie versies. Dit toont vijf naakte figuren die in een kring dansen - een oerbeeld van vreugde en gemeenschap.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Primitivisme:</strong> De figuren zijn vereenvoudigd tot essentie - hoofd, torso, ledematen. Geen details, geen individualiteit. Dit zijn archetypes, geen portretten.</p>
-                        
-                        <p><strong>Beweging in cirkel:</strong> De dansers houden elkaars hand vast en draaien. De cirkel is een oud symbool van eenheid en eeuwigheid. De beweging is zichtbaar in de gebogen lijnen.</p>
-                        
-                        <p><strong>Drie kleuren:</strong> Blauw (hemel/achtergrond), groen (aarde), rood (mensen). De rode figuren springen eruit - de mens is centraal, maar deel van de natuur.</p>
-                        
-                        <p><strong>Vreugde:</strong> Dit is Matisse op zijn meest optimistisch. Geen angst, geen oorlog, alleen dans en lichaam. Het is een utopie van puur genot.</p>
-                    </div>
-                </div>
-            </div>
+<p>Technologische veranderingen waren fundamenteel: de auto, de film, de telefoon veranderden de ervaring van tijd en ruimte. De stad werd een sensuele overlaad: neonreclames, trams, mensenmassa's. Dit alles werd verwerkt in de expressionistische kunst.</p>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>9. "Straat, Berlijn" (1913) — Ernst Ludwig Kirchner</h3>
-                    <p style="color:#666;font-style:italic;">Museum of Modern Art, New York · 120 × 91 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/02_kirchner_berlin.jpg" loading="lazy" alt="Kirchner - Berlin Street">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Het moderne Berlijn van de jaren '10 - wijd boulevards, elegant geklede mensen, prostituees (herkenbaar aan de hoge hoeden). Kirchner toont de vervreemding achter de glitters van de stad.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Scherpe hoeken:</strong> De figuren zijn hoekig, bijna gevaarlijk. De man met de hoge hoed lijkt een roofdier. De vrouwen zijn mannequins, niet mensen.</p>
-                        
-                        <p><strong>Zwarte lijnen:</strong> Dikke, zwarte omtreklijnen (zoals in houtsneden) scheiden de kleurvlakken. Dit verwijst naar primitieve kunst en Japanse prenten.</p>
-                        
-                        <p><strong>Stad als jungle:</strong> De straat is niet vriendelijk maar bedreigend. De mensen kijken niet naar elkaar. Iedereen is alleen in de menigte.</p>
-                        
-                        <p><strong>Kleuren:</strong> Paars, groen, roze - onnatuurlijke kleuren voor een straat. Het is nacht, of het is een nachtmerrie. De stad is vervormd door angst.</p>
-                    </div>
-                </div>
-            </div>
+<h4>Literair Perspectief</h4>
 
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>10. "Madonna" (1894-1895) — Edvard Munch</h3>
-                    <p style="color:#666;font-style:italic;">Munch Museum, Oslo · 90 × 68 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/expressionisme/10_munch_madonna.jpg" loading="lazy" alt="Munch - Madonna">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een naakte vrouw met gesloten ogen, hoofd achterover. Het is geen traditionele Madonna, maar een visie van extase - zowel spiritueel als seksueel. De sperma-achtige rand rondom veroorzaakte schandalen.</p>
-                    
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Extase en angst:</strong> Het gezicht toont verrukking, maar ook iets pijnlijks. Dit is de "dood en het leven" tegelijk - het thema van Munch's hele oeuvre ("De Levensdans").</p>
-                        
-                        <p><strong>Rode achtergrond:</strong> Bloed, hartslag, passie. De halo is niet goud maar rood. Dit is een seculiere Madonna, een afgodin van liefde en dood.</p>
-                        
-                        <p><strong>Sensuele lijnen:</strong> De bochtige lijnen van lichaam en haar suggereren beweging en emotie. Het is bijna orgastisch - controversieel voor de jaren '90 van de 19e eeuw.</p>
-                        
-                        <p><strong>Symboliek:</strong> De foetus in de hoek linksonder, de skeletachtige figuur rechtsonder - leven en dood omringen het moment van extase.</p>
-                    </div>
-                </div>
-            </div>
+<p>De literatuur van deze periode was even brutaal, vernieuwend en fundamenteel als de beeldende kunst van het Expressionisme. August Strindberg (1849-1912), de Zweedse dramaturg, schreef expressionistische toneelstukken die radicaal braken met de traditionele dramaturgie van het naturalisme en het symbolisme. *Ett drömspel* (Een droomspel, 1902) gebruikt de droomlogica als structuur: scènes vervloeien in elkaar, tijd en ruimte zijn vloeibaar, personages zijn symbolen eerder dan realistische individuen. Deze literaire techniek – de "stream of consciousness", de associatieve logica, de droomwereld – vond zijn visuele equivalent in de expressionistische schilderkunst die de buitenwereld vervormt om de innerlijke realiteit uit te drukken. Frank Wedekind (1864-1918) behandelde in zijn "Lulu"-cyclus (*Erdgeist*, 1895; *Die Büchse der Pandora*, 1904) schokkende thema's – prostitutie, lesbisch verlangen, moord, decadentie – met een nieuwe directheid die het burgerlijke taboe doorbrak. De literatuur en de schilderkunst van het Expressionisme deelden dezelfde doelstelling: het verstoren van de gevestigde orde, het zichtbaar maken van het verborgene, het uitspreken van het onuitsprekelijke. <strong>"Straat, Berlijn"</strong> (Ernst Ludwig Kirchner, 1913) vertoont parallellen met deze literaire moderniteit: twee vrouwen lopen door een Berlijnse straat, hun gezichten maskerachtig vervormd, hun poses ongemakkelijk theatraal, de hele compositie claustrofobisch en gespannen. Net als in Wedekinds toneelstukken zijn deze figuren geen realistische portretten, maar symbolen van de moderne stad – de prostitutie, de decadentie, de vervreemding. De hoekige, agressieve penseelstreken en de onnatuurlijke kleuren (giftig groen, fel oranje) verbeelden wat Wedekind in woorden uitdrukte: de onderstroom van geweld en seksualiteit die onder de burgerlijke façade schuilgaat.</p>
 
-        </section>
+<p>In de poëzie brak het expressionistische manifest *Menschheitsdämmerung* (De schemering van de mensheid, 1919), samengesteld door Kurt Pinthus, met alle conventies van de lyriek. Dichters als Gottfried Benn (1886-1956) en Georg Heym (1887-1912) gebruikten vrije ritmes (geen rijm, geen vast metrum), schokkende beelden (lijkhuizen, steden in vlammen, apocalyptische visioenen), en een toon van urgentie en wanhoop die de naderende catastrofe van de Eerste Wereldoorlog voorspelde. Benns gedicht *Morgue* (1912), met zijn klinische beschrijvingen van lijken en medische procedures, brak taboes rond dood en ontbinding – net zoals de expressionistische schilders (zoals Munch in <strong>"De Schreeuw"</strong>, 1893) de angst en de waanzin verbeeldden. <strong>"De Schreeuw"</strong> is zelf een visueel gedicht: de diagonale compositie, de organische lijnen, de contrastrijke kleuren – alles is gericht op het overbrengen van één existentiële emotie, net zoals het expressionistische gedicht alles ondergeschikt maakt aan de emotionele uitbarsting. Munchs schilderij en Heyms gedichten delen dezelfde apocalyptische visie: het einde van de oude wereld, de ondergang van de burgerlijke beschaving, de komst van iets nieuws en verschrikkelijks. De figuur in "De Schreeuw" is de protagonist van het expressionistische gedicht: alleen, angstig, schreeuwend tegen een universum dat niet antwoordt.</p>
 
-        <section class="content-section">
-            <h2>📚 CONCLUSIE: DE SCHREEUW VAN DE MODERNE MENS</h2>
-            
-            <div class="timeline-box">
-                <p>Het Expressionisme geeft stem aan wie geen stem heeft:</p>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li><strong>De soldaat:</strong> Die de hel van de oorlog heeft gezien (Kirchner, Beckmann)</li>
-                    <li><strong>De stedeling:</strong> Die verdwalen in de moderne stad (Kirchner)</li>
-                    <li><strong>De eenzame:</strong> Die angstig is in een goddeloze wereld (Munch)</li>
-                    <li><strong>De zoeker:</strong> Die spiritualiteit zoekt in abstractie (Kandinsky, Marc)</li>
-                    <li><strong>De vreugdevolle:</strong> Die kleur viert als levenskracht (Matisse)</li>
-                </ul>
-                <p>Het Expressionisme zegt: "Je hoeft niet mooi te schilderen. Je hoeft waarachtig te zijn."</p>
-            </div>
-        </section>
+<p>Franz Kafka (1883-1924), hoewel later bekend dan zijn tijdgenoten, schreef in deze periode zijn eerste werken (*Das Urteil*, 1912; *Die Verwandlung*, 1915) die de literatuur fundamenteel zouden veranderen. Kafka's nachtmerrieachtige verhalen, waarin de werkelijkheid onlogisch en dreigend is, bureaucratie een ondoorgrondelijk monster, en het individu machteloos staat tegenover onzichtbare krachten, resoneren diep met de expressionistische kunst. <strong>"De Nacht"</strong> (Max Beckmann, 1918-1919) vertoont parallellen met Kafka's wereld: een claustrofobische ruimte vol geweld en waanzin, waar geen ontsnapping mogelijk is en geen logica heerst. Beckmanns donkere tinten, vertekende ruimte en scènes van wreedheid verbeelden wat Kafka in woorden beschreef: de nachtmerrie van de moderne existentie. De figuren in "De Nacht" – gemarteld, wanhopig, gevangen in een absurde wereld – zijn de personages uit Kafka's verhalen: slachtoffers van een systeem dat ze niet begrijpen, gevangen in een web van zinloos geweld.</p>
+
+<p>Het expressionistische theater van Ernst Toller (1893-1939) en Georg Kaiser (1878-1945) verweerde het burgerlijke drama van het naturalisme en pleitte voor een nieuwe, abstracte vorm van theater. De toneelstukken zijn episodisch (geen continue handeling), symbolisch (personages zijn types, geen individuen), en politiek geladen (aanklachten tegen oorlog, kapitalisme, onrechtvaardigheid). Tollers *Die Wandlung* (De verandering, 1919) en Kaisers *Gas* (1918) gebruiken expressionistische middelen – vervorming, typisering, symboliek – om maatschappelijke boodschappen over te brengen. <strong>"Zelfportret als Soldaat"</strong> (Ernst Ludwig Kirchner, 1915) vertoont parallellen met dit expressionistische theater: Kirchner toont zichzelf niet als realistisch individu, maar als type – de getraumatiseerde soldaat, de gebroken kunstenaar, het slachtoffer van de oorlog. De symboliek (de afgehakte hand, het rode uniform, de giftige achtergrond) en de theatrale pose (stijf, rigide, starend) maken dit schilderij tot een toneelstuk in beeld, een visueel equivalent van Toller en Kaisers expressionistische drama's. De literatuur en de schilderkunst van het Expressionisme waren dus twee uitingen van dezelfde "Zeitgeist": dezelfde zoektocht naar nieuwe vormen, dezelfde afkeer van het naturalisme, dezelfde behoefte om de innerlijke wereld te verbeelden, dezelfde politieke urgentie. De dichters en de schilders lazen elkaars werk, bezochten dezelfde cafés en theaters, en deelden dezelfde visie op kunst als revolutionaire daad.</p>
+
+<h4>Filosofisch Perspectief</h4>
+
+<p>Het Expressionisme is diep geworteld in de Duitse Lebensphilosophie (levensfilosofie), een filosofische beweging die zich keerde tegen het wetenschappelijke positivisme en het mechanistische wereldbeeld van de 19e eeuw. Friedrich Nietzsche (1844-1900), in *Also sprach Zarathustra* (1883-1892) en andere werken, was de belangrijkste denker die de Expressionisten inspireerde. Zijn concept van de "Wille zur Macht" – een fundamentele drang naar expansie, creativiteit en zelfoverwinning die alle leven drijft – bood een alternatief voor zowel het christelijke moralisme als het materialistische determinisme. Nietzsches aanklacht tegen de "slaafse moraliteit" van het christendom, zijn viering van het "Übermensch" (bovenmens) die eigen waarden schept, en zijn profetie van de "Umwertung aller Werte" (herwaardering van alle waarden) resoneren diep in het expressionistische ideaal van de kunstenaar als visionair, als schepper van een nieuwe werkelijkheid. <strong>"De Toren van Blauwe Paarden"</strong> (Franz Marc, 1913) verbeeldt deze Nietzscheaanse spiritualiteit: vier paarden, hun lichamen vereenvoudigd tot architectonische vormen, hun manen en staarten wapperend in de wind, rijzen op naar een kristallijnen hemel. Marc, die Nietzsche las en bewonderde, zag in de dieren een pure, onbedorven levenskracht – een "Wille zur Macht" zonder de corruptie van de menselijke beschaving. De overheersende blauwe tinten (symbolisch voor het mannelijke, het spirituele, het ascetische) en de rood-oranje accenten (het vrouwelijke, het aardse, het zinnelijke) creëren een pantheïstische harmonie waarin de dieren één worden met de kosmos. De compositie, met de paarden als een toren die naar de hemel reikt, suggereert een spirituele opgang – de "Übermensch" als dier, ontsnapt aan de burgerlijke bekrompenheid.</p>
+
+<p>Henri Bergson (1859-1941), de Franse filosoof van de "élan vital" (levensdrang), beïnvloedde vooral de Der Blaue Reiter kunstenaars. Bergson bekritiseerde het mechanistische, causale denken van de wetenschap en pleitte voor "intuïtie" als methode om de diepere realiteit van het leven te vatten. Zijn concept van "durée" (duur) – de subjectieve, kwalitatieve ervaring van tijd als continue stroom, niet als mechanische opeenvolging – vond zijn visuele equivalent in de expressionistische kunst die de innerlijke ervaring boven de buitenwereld plaatste. Wilhelm Dilthey (1833-1911) legde de nadruk op "Verstehen" (begrijpen) versus "Erklären" (verklaren): de menswetenschappen moeten de innerlijke betekenis van leven en cultuur vatten, niet causale wetten formuleren. Deze filosofische nadruk op subjectiviteit, innerlijkheid en betekenisgeving is de kern van het expressionisme.</p>
+
+<p>Het existentialisme van Søren Kierkegaard (1813-1855) werd rond 1900 herontdekt en beïnvloedde Expressionisten met zijn nadruk op subjectiviteit, angst ("Furcht und Zittern"), en de radicale keuze. Kierkegaards idee dat waarheid subjectiviteit is, dat het individu moet kiezen voor het absurde (het geloof), en dat angst het besef is van oneindige vrijheid – dit alles resonant met de expressionistische zoektocht naar authenticiteit in een tijd van onzekerheid. <strong>"De Schreeuw"</strong> (Edvard Munch, 1893) is de perfecte visuele vertaling van deze existentialistische angst: een vervormde figuur op een brug, handen tegen de wangen, mond wijd open in een stille schreeuw, terwijl de lucht en het landschap meetrillen in de echo van deze existentiële noodkreet. Munch beschreef hoe hij tijdens een wandeling "de natuur hoorde schreeuwen" – een ervaring van "Angst" als fundamentele bestaansmodaliteit, niet als specifieke angst voor een object, maar als het besef van de leegte, de betekeloosheid, de absurditeit van het bestaan. De diagonale compositie (de brugleuning leidt het oog naar de figuur), de organische, vloeibare lijnen (de werkelijkheid lost op), en het contrast tussen de rode/oranje hemel en de blauw-groene fjord verbeelden de wereld die bezwijkt onder de existentiële angst.</p>
+
+<p>De theosofie en andere esoterische stromingen (antroposofie, rozenkruisers) waren enorm populair onder Expressionisten, die zochten naar spirituele alternatieven voor het materialisme en positivisme van de 19e eeuw. Wassily Kandinsky (1866-1944), een van de belangrijkste Expressionisten, was diep beïnvloed door theosofie en schreef *Über das Geistige in der Kunst* (1911) – een manifest waarin hij de spirituele functie van kunst verdedigde. Kandinsky argumenteerde dat kleur en vorm een directe, innerlijke werking hebben op de ziel, onafhankelijk van de representatie van objecten. Zijn theorie van de "innerlijke noodzakelijkheid" stelde dat de kunstenaar niet de buitenwereld moet kopiëren, maar zijn innerlijke visie moet uitdrukken door middel van abstracte vormen en kleuren. <strong>"Compositie VII"</strong> (Kandinsky, 1913) is de ultieme toepassing van deze theosofische filosofie: een complex, bijna abstract schilderij vol organische vormen, kleurige vlekken en dynamische lijnen die geen herkenbare objecten voorstellen, maar een spirituele "klank" proberen weer te geven. Kandinsky zag kunst als een "weg naar het spirituele", analoog aan muziek (die ook geen objecten representeert maar direct het gevoel raakt), en hij noemde zijn schilderijen "composities" naar muzikale termen. De vloeiende overgangen tussen kleuren (rood naar blauw, geel naar groen), de wervelende compositie zonder duidelijk centrum, en de ambiguïteit tussen figuratie en abstractie verbeelden de theosofische zoektocht naar een hogere, spirituele realiteit achter de materiële schijn.</p>
+
+<p>Franz Marc (1880-1916), een andere Der Blaue Reiter kunstenaar, ontwikkelde een eigen pantheïstische filosofie waarin dieren een directe verbinding hadden met de goddelijke natuur. Zijn schilderij <strong>"Gele Koe"</strong> (1911) toont een koe in een berglandschap, haar lichaam vereenvoudigd tot organische vormen, haar kleur onnatuurlijk geel (symbool voor het vrouwelijke, het zinnelijke, het aardse). Marc zag in de dieren een onbedorven onschuld, een "paradijselijke" toestand voor de zondeval van het menselijk bewustzijn. De felgele koe, omringd door blauwe bergen en rode bloemen, verbeeldt een harmonie die de mens verloren heeft – een pantheïstische eenheid van alle leven. Deze filosofische stromingen – Nietzscheïsme, Bergsonisme, existentialisme, theosofie – beïnvloedden niet alleen de thema's van het Expressionisme, maar ook de vorm: de vervorming (expressie van innerlijke waarheid boven uiterlijke realiteit), de anti-naturalistische kleuren (spirituele betekenis boven visuele correctheid), en de abstractie (weg van de materiële wereld naar het geestelijke ideaal).</p>
+
+<h4>Psychologisch Perspectief</h4>
+
+<p>Het Expressionisme is in essentie een psychologische kunststroming – misschien wel de eerste moderne kunstbeweging die de psychologie niet alleen als thema gebruikte, maar als fundamentele methode. Niet de buitenwereld wordt afgebeeld zoals het oog die ziet, maar de innerlijke wereld – de emoties, angsten, verlangens en trauma's van de kunstenaar – zoals de ziel die ervaart. Dit sluit nauw aan bij de psychoanalyse van Sigmund Freud (1856-1939), wiens *Die Traumdeutung* (De droomduiding, 1900) het onderbewuste, de verdrongen wensen en de irrationele drijfveren van de mens openbaarde als de eigenlijke motoren van het gedrag. Freuds theorie over het id (het onbewuste, driftleven), het ego (het bewuste ik) en het superego (het geweten, de maatschappelijke normen) bood een model voor de psychische conflicten die Expressionisten in hun werk uitbeeldden. De droomwereld, die Freud als de "koninklijke weg naar het onbewuste" zag, werd een belangrijk thema in de expressionistische kunst: de surreële vervormingen, de nachtmerrieachtige scènes, de logica die plaatsmaakt voor associatie en emotie.</p>
+
+<strong>"De Schreeuw"</strong> (Edvard Munch, 1893) is het icoon van de expressionistische psychologie: een vervormde figuur op een brug, handen tegen de wangen, mond wijd open in een stille schreeuw, terwijl de omgeving meetrilt in een golvend patroon dat de psychologische resonantie van de angst verbeeldt. Munch beschreef de ervaring: "Ik voelde een oneindige schreeuw door de natuur gaan." Dit is existentiële angst – niet de angst voor een specifiek gevaar, maar de fundamentele angst voor het bestaan zelf, wat Freud later "Angst" zou noemen. De diagonale compositie (de brugleuning leidt het oog naar de figuur), de organische, vloeibare lijnen (de werkelijkheid lost op onder de druk van de emotie), en het contrast tussen de rode/oranje hemel (de kleur van angst, passie, bloed) en de blauw-groene fjord (de kleur van melancholie, kalmte) verbeelden de psychologische toestand van de protagonist. Het gezicht, dat bijna oplost in een schedelachtige vorm, de handen die de wangen omklemmen in een gebaar van pure wanhoop, en de ogen die staren in de leegte – dit is de psychologie van de moderne mens: geïsoleerd, angstig, geconfronteerd met de betekeloosheid van het bestaan.
+
+<p>De kunstenaar als medium, als profeet, als genezer van de samenleving – dit is de expressionistische visie die parallellen vertoont met de psychoanalytische opvatting van de kunstenaar als iemand die toegang heeft tot het collectieve onbewuste. De vervorming van de werkelijkheid is geen artistieke concessie aan het modieuze, maar een noodzaak: alleen door radicale vervorming kan de ware, innerlijke werkelijkheid worden uitgedrukt. <strong>"Straat, Berlijn"</strong> (Ernst Ludwig Kirchner, 1913) demonstreert deze psychologische methode: twee vrouwen lopen door een Berlijnse straat, hun gezichten maskerachtig vervormd met scherpe hoeken en onnatuurlijke tinten (giftig groen, fel oranje, diepblauw). De hoekige, agressieve penseelstreken, de claustrofobische compositie (de figuren worden geperst in de beeldruimte), en de ongemakkelijke psychologische spanning tussen de personages verbeelden de vervreemding van de moderne mens in de metropool. Kirchner, die leed aan depressies en angstneurosen, gebruikte de vervorming om zijn eigen psychologische toestand uit te drukken: de angst voor de anonimiteit van de stad, de spanning tussen individu en massa, het gevoel van isolement temidden van duizenden mensen. De mannen op de achtergrond, silhouetten zonder individuele trekken, verbeelden de psychologische fenomenen van "depersonalisatie" en "derealisatie" – het gevoel dat anderen geen echte personen zijn, maar slechts schimmen in een nachtmerrie.</p>
+
+<p>De interesse in psychiatrie en waanzin was niet toevallig maar essentieel voor het Expressionisme. Vele kunstenaars bezochten psychiatrische inrichtingen om patiënten te observeren, en de grens tussen genialiteit en waanzin was dun – zowel in de artistieke praktijk als in het publieke discours. <strong>"Zelfportret als Soldaat"</strong> (Ernst Ludwig Kirchner, 1915) is een directe weergave van oorlogsneurose (wat later PTSD zou worden genoemd): Kirchner toont zichzelf in uniform, zijn rechterhand afgehakt (een symbolische verwijzing naar zijn psychische verwonding, zijn onvermogen om nog te schilderen), zijn gezicht vervormd door angst en shock. De felrode uniform (de kleur van bloed, geweld, trauma), de giftige groene achtergrond (de kleur van ziekte, verval, gal), en de hoekige, bijna kubistische compositie verbeelden de psychologische desintegratie van de kunstenaar-soldaat. Kirchner, die in 1914 vrijwillig dienst nam maar al snel instortte en naar een sanatorium werd gestuurd, verwerkte zijn trauma in dit schilderij – een vorm van "kunsttherapie" avant la lettre. De grote ogen, starend in de verte, de open mond (echo van Munchs "Schreeuw"), en de rigide, houterige pose verbeelden de "freezing" reactie van het getraumatiseerde psyche.</p>
+
+<p>De post-oorlogse trauma's werden ook verwerkt in <strong>"De Nacht"</strong> (Max Beckmann, 1918-1919), een claustrofobische scènes vol geweld, marteling en waanzin. Beckmann, die als verpleger aan het front diende en de gruwelen van de oorlog van nabij meemaakte, schilderde deze nachtmerrie als een getuigenis van zijn psychische wonden. De donkere, picturale tinten (bruinen, zwarten, roestkleuren), de vertekende ruimte (geen enkel perspectief, alles dicht op elkaar geperst), en de scènes van wreedheid en absurditeit verbeelden de posttraumatische stress van een generatie. De psychologie van het Expressionisme is dus niet alleen een kwestie van thema's, maar van methode: de vervorming, de kleur, de compositie zijn allemaal psychologische instrumenten om de innerlijke wereld zichtbaar te maken.</p>
+
+<p>De expressionistische belangstelling voor psychiatrie en waanzin manifesteerde zich ook in de interesse voor "primitieve" toestanden – het kindlijke, het dierlijke, het onbedorvene – die Emile Nolde in zijn bijbelse taferelen met extatische intensiteit verbeeldde. <strong>"Vrouw met een Hoed"</strong> (Henri Matisse, 1905), hoewel niet strikt expressionistisch, toont dezelfde psychologische bevrijding: een vrouw met een grote hoed, haar gezicht geschilderd in onnatuurlijke tinten (groen op de neus, roze op de wang, blauw op de kin), haar blik direct en uitdagend. Matisse's abrupte breuk met het naturalisme (de kleuren zijn niet wat ze "moeten" zijn) verbeeldt een psychologische bevrijding van de conventies, een terugkeer naar de spontaniteit en emotionaliteit van het kind. De losse, zichtbare penseelstreken en het "onafgemaakte" aspect van het schilderij suggereren een psychische directheid – de kunstenaar schildert niet wat hij ziet, maar wat hij voelt.</p>
+
+<p>---</p>
+
+<h3>Stijlfiguren en Thema's</h3>
+
+<h4>Kenmerkende Vormen</h4>
+
+<p>Het Expressionisme kenmerkt zich door vervorming en vereenvoudiging. Menselijke figuren worden uitgerekt, gecomprimeerd, of gehoekt - alles dient de emotionele expressie. Het perspectief is vaak verstoord, de ruimte is claustrofobisch of juist oneindig leeg.</p>
+
+<p>De lijn is belangrijker dan het volume: scherpe, hoekige contourlijnen omlijsten vlakken van pure kleur. Deze "cloisonné"-techniek (gescheiden kleurvlakken) is geleend van de Art Nouveau en de "primitieve" kunst.</p>
+
+<h4>Kleurenpalet</h4>
+
+<p>Het Expressionistische palet is intens en anti-naturalistisch. Kleuren worden niet gekozen naar werkelijkheid, maar naar emotionele lading. Fel rood voor passie of geweld, diep blauw voor melancholie, giftig groen voor ziekte of decadentie.</p>
+
+<p>Ernst Ludwig Kirchner en Die Brücke gebruiken hoogverzadigde, complementaire kleuren (rood tegen groen, blauw tegen oranje) voor maximale visuele spanning. Der Blaue Reiter, met Kandinsky en Marc, is meer geïnteresseerd in de spirituele en muzikale kwaliteiten van kleur.</p>
+
+<h4>Technieken</h4>
+
+<p>Olieverf wordt dik aangebracht (impasto) met zichtbare, agressieve penseelstreken. De hand van de kunstenaar is overal zichtbaar - dit is geen illusionistische "venster naar de wereld".</p>
+
+<p>De houtsnede wordt herontdekt als medium: de grove lijnen, het contrast tussen zwart en wit, de primitive kracht van het mes in het hout - dit alles sluit perfect aan bij expressionistische idealen.</p>
+
+<h4>Centrale Thema's</h4>
+
+<p>1. <strong>De moderne stad</strong> - als bron van alienatie en opwinding</p>
+<p>2. <strong>Het naakt</strong> - de "nieuwe mens", onverhuld en authentiek</p>
+<p>3. <strong>Oorlog en geweld</strong> - als traumatische ervaring</p>
+<p>4. <strong>Spiritualiteit</strong> - zoeken naar verlossing door kunst</p>
+<p>5. <strong>Primitivisme</strong> - terug naar de oorsprong</p>
+<p>6. <strong>Apocalyps</strong> - het einde van de oude wereld</p>
+
+<p>---</p>
+
+<h3>De Tien Meest Invloedrijke Werken</h3>
+
+
+</section>
+
+
+<div class="artwork" id="werk1">
+    <h4>1. "De Schreeuw" (1893) — Edvard Munch</h4>
+    <img src="images/munch_schreeuw.jpg" alt="De Schreeuw" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> National Gallery of Norway, Oslo
+<strong>Afmetingen:</strong> 91 × 73 cm
+<strong>Techniek:</strong> Olieverf, tempera en pastel op karton
+
+<strong>Achtergrond</strong>
+
+<p>Munch schilderde meerdere versies van dit meesterwerk tussen 1893 en 1910. Het beeld ontstond tijdens een wandeling bij zonsondergang toen Munch een "oneindige schreeuw door de natuur" voelde. Het schilderij toont een vervormde figuur op een brug, handen tegen de wangen, mond wijd open in een stille schreeuw.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is angst verbeeld - niet als specifieke dreiging, maar als existentiële toestand. De moderne mens, alleen op een brug, geconfronteerd met de leegte van het universum. Munch noemde dit "de leegte die overal wacht." Het werk voorspelt de 20e eeuw: de oorlogen, de massavernietiging, het gevoel van onthechting.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is een diagonale wig: de brugleuning leidt het oog naar de schreeuwende figuur. De lijnen zijn organisch en vloeiend, bijna vloeibaar - de werkelijkheid lost op. Het kleurenpalet is beperkt maar intens: de rode/oranje hemel tegen de blauw-groene fjord creëert een maximale spanning. Munch gebruikte pastel en tempera over olieverf, wat een ruwe textuur geeft.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk2">
+    <h4>2. "Straat, Berlijn" (1913) — Ernst Ludwig Kirchner</h4>
+    <img src="images/kirchner_berlijn.jpg" alt="Straat, Berlijn" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Museum of Modern Art, New York
+<strong>Afmetingen:</strong> 120.6 × 91.1 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Kirchner, een van de oprichters van Die Brücke, schilderde dit werk tijdens zijn verblijf in Berlijn. De stad fascineerde en verontrustte hem tegelijk: de snelle bewegingen, de anonimiteit, de gevaarlijke spanning van het moderne leven. Het schilderij toont een typische Berlijnse straat met hoeren en hun potentiële klanten.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de moderne stad als nachtmerrie. De figuren zijn als marionetten, mechanisch bewegend in een decor van neon en asfalt. Het is de Entfremdung (vervreemding) verbeeld: mensen zijn dicht bij elkaar maar volledig geïsoleerd. Het thema van de prostituee is dubbelzinnig: zowel symbool van de vercommercialisering van het lichaam als van de bevrijding van burgerlijke moraal.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is een wirwar van diagonale lijnen en scherpe hoeken. De figuren zijn als marionetten, met starre, maskerachtige gezichten. Het kleurenpalet is intens: felle roden en groenen, met zwarte contourlijnen die alles bijeenhouden. Kirchners penseelvoering is nerveus en agressief.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk3">
+    <h4>3. "Compositie VII" (1913) — Wassily Kandinsky</h4>
+    <img src="images/kandinsky_compositie.jpg" alt="Compositie VII" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Tretyakov Gallery, Moskou
+<strong>Afmetingen:</strong> 200 × 300 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Kandinsky's meesterwerk, geschilderd in München net voor de Eerste Wereldoorlog. Het is een van zijn laatste grote werken voor hij terugkeerde naar Rusland. Het thema is volgens Kandinsky zelf "Wederopstanding, het oordeel, en het einde van de wereld" - apocalyptische thema's die resoneren met de dreigende oorlog.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de apocalyps van de oude wereld verbeeld, maar ook de geboorte van een nieuwe. De chaotische vormen en kleuren suggereren zowel vernietiging als schepping. Het is Kandinsky's theosofische visie: de materiële wereld lost op in het spirituele. Het werk reflecteert de pre-revolutionaire spanning in Rusland en het algemene cultuurpessimisme van de tijd.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is complex en veellagig: vormen lijken te zweven, te botsen, te transformeren. Er zijn herkenbare elementen (ruiters, bergen, water), maar ze zijn opgelost in een algehele beweging. Het kleurenpalet is intens: warme roden en gele, koele blauwen. Kandinsky's techniek is subtiel: dunne lagen, glazes.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk4">
+    <h4>4. "De Toren van Blauwe Paarden" (1913) — Franz Marc</h4>
+    <img src="images/marc_blauwe_paarden.jpg" alt="De Toren van Blauwe Paarden" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Städtische Galerie im Lenbachhaus, München
+<strong>Afmetingen:</strong> 200 × 130 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Franz Marc, medeoprichter van Der Blaue Reiter, schilderde dit meesterwerk in het laatste jaar van zijn leven. Marc zag dieren als puurder en meer spiritueel dan mensen. Paarden waren zijn favoriete onderwerp: "Het paard is het meest volmaakte wezen van allemaal." Het schilderij toont vier paarden in verschillende kleuren gestapeld in een torenachtige compositie.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Marc's kleuren waren niet decoratief maar spiritueel geladen: blauw voor mannelijkheid en spiritualiteit, geel voor vrouwelijke vreugde, rood voor zwaarte. Dit was zijn poging om een nieuwe, universele taal te creëren. Het werk reflecteert de theosofische interesse van Der Blaue Reiter: de materiële wereld is slechts een gordijn voor een hogere realiteit.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is verticaal en symmetrisch: de paarden vormen een toren van kleur. De vormen zijn vereenvoudigd en gecurveerd, met vloeiende lijnen. Het kleurenpalet is intens en harmonieus: diepe blauwen, warme gele, en accenten van rood. Marc's penseelvoering is glad en precies.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk5">
+    <h4>5. "Gele Koe" (1911) — Franz Marc</h4>
+    <img src="images/marc_gele_koe.jpg" alt="Gele Koe" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Solomon R. Guggenheim Museum, New York
+<strong>Afmetingen:</strong> 140 × 190 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Een van Marc's meest vrolijke en optimistische werken. De gele koe danst en springt over een groen-blauw landschap. Het schilderij ademt vreugde, levenslust, en een bijna mystieke verbinding met de natuur. Marc zag dieren als dichter bij de oorsprong van het leven dan mensen.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit schilderij staat in schril contrast met de groeiende militarisering en industrialisering van Duitsland. Het is een utopische visie van harmonie tussen mens, dier, en natuur - een visie die door de Eerste Wereldoorlog zou worden vernietigd. Marc's kleuren zijn spiritueel: geel voor vrouwelijke warmte, blauw voor mannelijke spiritualiteit.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is dynamisch en bijna abstract: de koe vult het hele schilderij, haar vormen zijn gecurveerd en vloeiend. De perspectief is verstoord. Het kleurenpalet is helder en harmonieus: felle gele, diepe blauwen, en levendige groenen. Marc's penseelvoering is glad en precies.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk6">
+    <h4>6. "Dance Hall Bellevue" (1909-1910) — Ernst Ludwig Kirchner</h4>
+    <img src="images/kirchner_dance_hall.jpg" alt="Dance Hall Bellevue" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> National Gallery of Art, Washington D.C.
+<strong>Afmetingen:</strong> 125 × 90 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Kirchner schilderde dit werk tijdens zijn periode in Dresden, voor hij naar Berlijn verhuisde. Het toont een drukke danszaal vol mensen die dansen en feesten. De danszaal Bellevue was een bekende uitgaansgelegenheid in Dresden. Het schilderij vangt de energie en hectiek van het moderne stadsleven.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit werk toont de dubbelzinnigheid van het moderne leven: enerzijds de opwinding en sensatie van de grote stad, anderzijds de vervreemding en anonimiteit. De dansers zijn als marionetten, mechanisch bewegend in een decor van neon en asfalt. Het is de Entfremdung (vervreemding) verbeeld in een setting van vermaak.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is een wirwar van diagonale lijnen en scherpe hoeken. De figuren zijn uitgerekt en vervormd, met maskerachtige gezichten. Het kleurenpalet is intens: felle roden, groenen, en gele, met zwarte contourlijnen. Kirchners penseelvoering is nerveus en agressief - je voelt de adrenaline van de kunstenaar.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk7">
+    <h4>7. "Zelfportret als Soldaat" (1915) — Ernst Ludwig Kirchner</h4>
+    <img src="images/kirchner_soldaat.jpg" alt="Zelfportret als Soldaat" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Allen Memorial Art Museum, Oberlin
+<strong>Afmetingen:</strong> 69 × 61 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Kirchner schilderde dit zelfportret tijdens zijn militaire dienst in de Eerste Wereldoorlog. Hij was in zenuwinzinking geraakt (PTSD) en had geprobeerd om zelfmoord te plegen door in zijn pols te snijden. Het schilderij toont hem in uniform, met een afgehakte hand, starend naar de kijker met holle ogen.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de traumatische werkelijkheid van de moderne oorlog verbeeld. Niet heroïsche veldslagen, maar de ineenstorting van de menselijke geest. De afgehakte hand is symbolisch: het betekent dat hij niet meer kan schilderen, dat de oorlog zijn kunstenaarschap heeft vernietigd. Het reflecteert de groeiende kritiek op de militarisering.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is frontaal en confrontatieel: de soldaat Kirchner staart ons aan, beschuldigend en angstig tegelijk. Het uniform is nauwkeurig geschilderd, maar het gezicht is vervormd, bijna maskerachtig. Het kleurenpalet is grimmig: bruinen, groenen, en een enkele felle rode accent.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk8">
+    <h4>8. "De Nacht" (1918-1919) — Max Beckmann</h4>
+    <img src="images/beckmann_nacht.jpg" alt="De Nacht" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Kunstsammlung Nordrhein-Westfalen, Düsseldorf
+<strong>Afmetingen:</strong> 133 × 154 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Beckmann schilderde dit meesterwerk in de nasleep van de Eerste Wereldoorlog. Het toont een claustrofobische hotelkamer waar een familie lijdt: een man hangt vast aan de gordijnen, een vrouw wordt vastgebonden, een kind huilt. Beckmann, die als genezer had gediend in de oorlog, had de gruwelen van het front gezien.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit is de burgerlijke orde ontmaskerd. Niet de oorlog is de grootste gruwel, maar de "normaliteit" waarnaar men terugkeert. De Expressionisten hadden de samenleving willen veranderen, maar de oorlog had hun idealen verraden. Het schilderij reflecteert de toenemende pessimisme van de late Expressionisten.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is een claustrofobische kooi: de lijnen van het bed, de gordijnen, de tafel vormen een gevangenis. De figuren zijn vervormd, bijna grotesk. Het kleurenpalet is donker en grimmig: bruinen, zwarten, en enkele felle accenten van rood en groen. De ruimte is plat, zonder diepte.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk9">
+    <h4>9. "Vrouw met een Hoed" (1905) — Henri Matisse</h4>
+    <img src="images/matisse_hoed.jpg" alt="Vrouw met een Hoed" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> San Francisco Museum of Modern Art
+<strong>Afmetingen:</strong> 81 × 60 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Matisse's controversiële portret van zijn vrouw Amélie, geschilderd in 1905. Het publiek was geschokt door het felle, anti-naturalistische kleurenpalet - de critic Louis Vauxcelles noemde Matisse en zijn medestanders "fauves" (wilde beesten). Amélie draagt een elegante hoed, maar haar gezicht is groen en roze gestreept.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit schilderij markeert het begin van het Fauvisme, de Franse variant van het Expressionisme. Waar de Duitse Expressionisten angst en alienatie uitdrukten, gebruikten de Fauves kleur voor vreugde en sensualiteit. Het is een optimistische reactie op de moderne wereld. Het schilderij staat symbool voor de bevrijding van de kunstenaar van de plicht om te representeren.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is traditioneel (een buste-portret), maar de uitvoering is radicaal. De penseelstreken zijn zichtbaar en los, de kleuren zijn fel en onvermengd. Er is geen schaduw, geen modelle - alleen vlakken van pure kleur. Het kleurenpalet is extreem: felle roden, groenen, blauwen, en gele.</p>
+
+<p>---</p>
+
+
+    </div>
+</div>
+
+
+<div class="artwork" id="werk10">
+    <h4>10. "Het Rode Atelier" (1911) — Henri Matisse</h4>
+    <img src="images/matisse_rode_atelier.jpg" alt="Het Rode Atelier" class="artwork-image">
+    <div class="artwork-text">
+        
+
+<strong>Museum:</strong> Museum of Modern Art, New York
+<strong>Afmetingen:</strong> 181 × 219 cm
+<strong>Techniek:</strong> Olieverf op doek
+
+<strong>Achtergrond</strong>
+
+<p>Matisse's meesterwerk toont zijn eigen atelier, maar alles is rood - de muren, de vloer, de tafel. Het schilderij staat vol met zijn eigen werken: sculpturen, kommen, flessen, en meubels zweven in de rode ruimte. Het is een visioen van de kunstenaar als schepper van een eigen wereld.</p>
+
+<strong>Tijdsgeest Vertaling</strong>
+
+<p>Dit schilderij verwoordt de modernistische droom van de kunstenaar als autonome schepper. Matisse heeft zijn eigen universum gecreëerd, gedomineerd door één kleur die alle emoties omvat: passie, warmte, levenslust, en spiritualiteit. Het is een statement over de superioriteit van de binnenwereld boven de buitenwereld.</p>
+
+<strong>Stijlanalyse</strong>
+
+<p>De compositie is bijna abstract: de ruimte is plat, zonder perspectief. De voorwerpen lijken te zweven in de rode zee. Het kleurenpalet wordt gedomineerd door verschillende tinten rood, met accenten van wit, zwart, en groen. Matisse's penseelvoering is vrij en decoratief.</p>
+
+    </div>
+</div>
+
     </main>
 
-        <nav class="bottom-nav">
-        <a href="fauvisme.html" class="nav-prev">← 🦁 Fauvisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="kubisme.html" class="nav-next">Kubisme 🔲 →</a>
-    </nav>
-
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
-
+        <p>Kunstgeschiedenis Project | matthiasr.com/art</p>
     </footer>
 </body>
 </html>
