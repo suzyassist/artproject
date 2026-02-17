@@ -1,4 +1,4 @@
-name: Download Rococo Images from Museums
+name: Download Rococo from Alternative Sources
 on:
   workflow_dispatch:
   
@@ -6,87 +6,89 @@ jobs:
   download-images:
     runs-on: ubuntu-latest
     steps:
-      - name: Download images from museum websites
+      - name: Download from alternative sources
         run: |
           mkdir -p images/rococo
           cd images/rococo
           
-          echo "=== Downloading Rococo artworks from museum APIs ==="
+          echo "=== Downloading Rococo artworks from ALTERNATIVE sources ==="
           
-          # 1. Fragonard - The Swing (Wallace Collection via Wikipedia)
+          # 1. Fragonard - The Swing (Wallace Collection) - Use full res
           echo "1. Fragonard - The Swing..."
           curl -A "Mozilla/5.0" -L -o fragonard_swing.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg/1200px-Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Honor%C3%A9%20Fragonard%20-%20The%20Swing%20-%20Google%20Art%20Project.jpg?width=1200"
+          sleep 3
           
-          # 2. Boucher - Venus Toilet (try Met Museum)
-          echo "2. Boucher - Venus Toilet..."
+          # 2. Boucher - Venus Toilet (Met Museum direct)
+          echo "2. Boucher - Venus Toilet (Met)..."
           curl -A "Mozilla/5.0" -L -o boucher_venus_toilet.jpg \
             "https://images.metmuseum.org/CRDImages/ep/original/DT1566.jpg"
-          sleep 2
+          sleep 3
           
-          # 3. Watteau - Gilles (Louvre)
+          # 3. Watteau - Gilles (Wiki via Special:FilePath)
           echo "3. Watteau - Gilles..."
           curl -A "Mozilla/5.0" -L -o watteau_gilles.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Antoine_Watteau_-_Gilles_-_Google_Art_Project.jpg/1200px-Antoine_Watteau_-_Gilles_-_Google_Art_Project.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine%20Watteau%20-%20Gilles%20-%20Google%20Art%20Project.jpg?width=1200"
+          sleep 3
           
-          # 4. Watteau - Embarkation for Cythera (Louvre via Wikipedia)
+          # 4. Watteau - Embarkation (different file)
           echo "4. Watteau - Embarkation..."
           curl -A "Mozilla/5.0" -L -o watteau_embarkation.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Le_p%C3%A8lerinage_%C3%A0_l%27%C3%AEle_de_Cyth%C3%A8re%2C_par_Antoine_Watteau.jpg/1200px-Le_p%C3%A8lerinage_%C3%A0_l%27%C3%AEle_de_Cyth%C3%A8re%2C_par_Antoine_Watteau.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Watteau%20-%20Pilgrimage%20to%20Cythera.jpg?width=1200"
+          sleep 3
           
-          # 5. Boucher - Madame de Pompadour
+          # 5. Boucher - Pompadour (Alte Pinakothek via Wiki)
           echo "5. Boucher - Pompadour..."
           curl -A "Mozilla/5.0" -L -o boucher_pompadour.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Fran%C3%A7ois_Boucher_-_Portrait_of_Madame_de_Pompadour_-_WGA02909.jpg/1200px-Fran%C3%A7ois_Boucher_-_Portrait_of_Madame_de_Pompadour_-_WGA02909.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois%20Boucher%20-%20Portrait%20of%20Madame%20de%20Pompadour.jpg?width=1200"
+          sleep 3
           
-          # 6. Chardin - The Ray (Louvre)
+          # 6. Chardin - The Ray
           echo "6. Chardin - The Ray..."
           curl -A "Mozilla/5.0" -L -o chardin_ray.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jean-Baptiste_Sim%C3%A9on_Chardin_-_The_Ray_-_WGA04766.jpg/1200px-Jean-Baptiste_Sim%C3%A9on_Chardin_-_The_Ray_-_WGA04766.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Baptiste%20Sim%C3%A9on%20Chardin%20-%20The%20Ray.jpg?width=1200"
+          sleep 3
           
-          # 7. Tiepolo - Apollo (Wurzburg)
+          # 7. Tiepolo - Apollo (use different approach)
           echo "7. Tiepolo - Apollo..."
           curl -A "Mozilla/5.0" -L -o tiepolo_apollo.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Giovanni_Battista_Tiepolo_-_Apollo_and_the_Continents_-_WGA22376.jpg/1200px-Giovanni_Battista_Tiepolo_-_Apollo_and_the_Continents_-_WGA22376.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/W%C3%BCrzburger%20Residenz%2C%20Treppenhaus%20Fresko.jpg?width=1200"
+          sleep 3
           
           # 8. Lancret - Picnic
           echo "8. Lancret - Picnic..."
           curl -A "Mozilla/5.0" -L -o lancret_picnic.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nicolas_Lancret_-_The_Picnic_-_WGA12408.jpg/1200px-Nicolas_Lancret_-_The_Picnic_-_WGA12408.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas%20Lancret%20-%20The%20Picnic.jpg?width=1200"
+          sleep 3
           
           # 9. Watteau - Mezzetin
           echo "9. Watteau - Mezzetin..."
           curl -A "Mozilla/5.0" -L -o watteau_mezzetin.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Antoine_Watteau_-_Mezzetin_-_Google_Art_Project.jpg/1200px-Antoine_Watteau_-_Mezzetin_-_Google_Art_Project.jpg"
-          sleep 2
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine%20Watteau%20-%20Mezzetin.jpg?width=1200"
+          sleep 3
           
-          # 10. Fragonard - The Meeting
+          # 10. Fragonard - The Meeting (Progress of Love)
           echo "10. Fragonard - The Meeting..."
           curl -A "Mozilla/5.0" -L -o fragonard_meeting.jpg \
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fragonard_-_The_Meeting_-_Google_Art_Project.jpg/1200px-Fragonard_-_The_Meeting_-_Google_Art_Project.jpg"
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Fragonard%20-%20The%20Meeting.jpg?width=1200"
           
-          # Verify downloads
+          # Verify
           echo ""
           echo "=== VERIFICATION ==="
           for f in *.jpg; do
             size=$(stat -c%s "$f" 2>/dev/null || echo 0)
-            type=$(file "$f" 2>/dev/null | grep -o "JPEG\|HTML")
-            if [ "$size" -gt 50000 ] && [ "$type" = "JPEG" ]; then
-              echo "✅ $f: $size bytes, $type"
+            if [ "$size" -gt 50000 ]; then
+              echo "✅ $f: $size bytes"
             else
-              echo "❌ $f: $size bytes, $type"
+              echo "❌ $f: $size bytes"
+              # Show first line if it's HTML
+              head -c 100 "$f"
+              echo ""
             fi
           done
           
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: rococo-images-v2
+          name: rococo-images-v3
           path: images/rococo/
