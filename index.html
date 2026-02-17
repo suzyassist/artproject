@@ -8,43 +8,6 @@
     <style>
         .timeline-section { margin: 3rem 0; }
         
-        /* Zoom Controls */
-        .timeline-controls {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 1rem;
-        }
-        .zoom-btn {
-            background: var(--accent);
-            color: var(--primary);
-            border: 2px solid var(--primary);
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .zoom-btn:hover {
-            background: var(--primary);
-            color: var(--accent);
-            transform: scale(1.1);
-        }
-        .zoom-level {
-            display: flex;
-            align-items: center;
-            padding: 0 15px;
-            background: white;
-            border-radius: 20px;
-            font-weight: bold;
-            color: #666;
-        }
-        
         .timeline-scroll { 
             overflow-x: auto; 
             overflow-y: auto; 
@@ -60,21 +23,12 @@
             position: relative; 
             min-width: 100%;
             padding: 0;
-            transform-origin: left top;
             min-height: 700px;
         }
         
-        /* Zoom levels - scale the entire container including header */
-        .timeline-container.zoom-25 { transform: scale(0.25); min-height: 1400px; }
-        .timeline-container.zoom-33 { transform: scale(0.33); min-height: 1100px; }
-        .timeline-container.zoom-50 { transform: scale(0.5); min-height: 900px; }
-        .timeline-container.zoom-75 { transform: scale(0.75); min-height: 750px; }
-        .timeline-container.zoom-100 { transform: scale(1); min-height: 700px; }
-        .timeline-container.zoom-125 { transform: scale(1.25); min-height: 600px; }
-        .timeline-container.zoom-150 { transform: scale(1.5); min-height: 550px; }
-        .timeline-container.zoom-200 { transform: scale(2); min-height: 500px; }
+        /* No zoom - fixed at 100% */
         
-        /* Timeline header - now INSIDE the scaled container */
+        /* Timeline header - inside container */
         .timeline-header {
             position: sticky;
             top: 0;
@@ -311,14 +265,7 @@
 
         <section class="timeline-section">
             <h2>📅 Chronologische Tijdlijn</h2>
-            <p style="text-align:center;color:#666;margin-bottom:1rem;"><strong>Scroll horizontaal</strong> om alle stromingen te zien. Elke stroming heeft zijn eigen tijdslijn zonder overlapping.</p>
-            
-            <!-- Zoom Controls -->
-            <div class="timeline-controls">
-                <button class="zoom-btn" id="zoom-out" title="Uitzoomen">−</button>
-                <div class="zoom-level"><span id="zoom-value">100%</span></div>
-                <button class="zoom-btn" id="zoom-in" title="Inzoomen">+</button>
-            </div>
+            <p style="text-align:center;color:#666;margin-bottom:1rem;"><strong>Scroll horizontaal</strong> om alle stromingen te zien. Elke stroming heeft zijn eigen rij zonder overlapping.</p>
             
             <div class="timeline-scroll" id="timeline-scroll">
                 <div class="timeline-container" id="timeline-container">
@@ -694,82 +641,6 @@
                 document.body.style.overflow = '';
             }
         });
-        
-        // Timeline Zoom
-        const zoomLevels = [25, 33, 50, 75, 100, 125, 150, 200];
-        let currentZoomIndex = 2; // Start at 50%
-        
-        const timelineContainer = document.getElementById('timeline-container');
-        const timelineScroll = document.getElementById('timeline-scroll');
-        const zoomValue = document.getElementById('zoom-value');
-        const zoomInBtn = document.getElementById('zoom-in');
-        const zoomOutBtn = document.getElementById('zoom-out');
-        
-        function updateZoom() {
-            const zoom = zoomLevels[currentZoomIndex];
-            timelineContainer.className = 'timeline-container zoom-' + zoom;
-            zoomValue.textContent = zoom + '%';
-            
-            updateTextVisibility(zoom);
-            
-            // Adjust max-height for vertical scrolling
-            if (zoom >= 200) {
-                timelineScroll.style.maxHeight = '900px';
-            } else if (zoom >= 150) {
-                timelineScroll.style.maxHeight = '700px';
-            } else if (zoom >= 100) {
-                timelineScroll.style.maxHeight = '600px';
-            } else {
-                timelineScroll.style.maxHeight = '500px';
-            }
-            
-            zoomOutBtn.disabled = currentZoomIndex === 0;
-            zoomInBtn.disabled = currentZoomIndex === zoomLevels.length - 1;
-            zoomOutBtn.style.opacity = currentZoomIndex === 0 ? 0.5 : 1;
-            zoomInBtn.style.opacity = currentZoomIndex === zoomLevels.length - 1 ? 0.5 : 1;
-        }
-        
-        function updateTextVisibility(zoom) {
-            const bars = document.querySelectorAll('.timeline-bar');
-            bars.forEach(bar => {
-                const rect = bar.getBoundingClientRect();
-                const style = window.getComputedStyle(bar);
-                const paddingLeft = parseInt(style.paddingLeft);
-                const paddingRight = parseInt(style.paddingRight);
-                const availableWidth = rect.width - paddingLeft - paddingRight - 30;
-                
-                const nameEl = bar.querySelector('.name');
-                const yearsEl = bar.querySelector('.years');
-                
-                if (nameEl && yearsEl) {
-                    const nameWidth = nameEl.textContent.length * 8;
-                    const yearsWidth = yearsEl.textContent.length * 6;
-                    const totalTextWidth = Math.max(nameWidth, yearsWidth) + 10;
-                    
-                    if (availableWidth >= totalTextWidth && zoom >= 75) {
-                        bar.classList.remove('hide-text');
-                    } else {
-                        bar.classList.add('hide-text');
-                    }
-                }
-            });
-        }
-        
-        zoomInBtn.addEventListener('click', function() {
-            if (currentZoomIndex < zoomLevels.length - 1) {
-                currentZoomIndex++;
-                updateZoom();
-            }
-        });
-        
-        zoomOutBtn.addEventListener('click', function() {
-            if (currentZoomIndex > 0) {
-                currentZoomIndex--;
-                updateZoom();
-            }
-        });
-        
-        updateZoom();
     </script>
 </body>
 </html>
