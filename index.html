@@ -503,15 +503,14 @@
         ];
 
         // Timeline configuration
-        const baseYear = 1400; // Year at position 0
-        const pixelsPerYear = 5;
-        const minYear = 0;
+        const minYear = 300;
         const maxYear = 2100;
-        const containerWidth = (maxYear - minYear) * pixelsPerYear + 100; // Extra padding
+        const pixelsPerYear = 5;
+        const containerWidth = (maxYear - minYear) * pixelsPerYear + 100;
 
         // Convert year to pixel position
         function yearToPx(year) {
-            return (year - minYear) * pixelsPerYear + 50; // 50px left padding
+            return (year - minYear) * pixelsPerYear + 50;
         }
 
         // Check if two movements overlap
