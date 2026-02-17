@@ -54,27 +54,28 @@
             border-radius: 12px; 
             box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
-            max-height: 350px;
+            max-height: 600px;
         }
         
         .timeline-container { 
             position: relative; 
-            min-width: 9000px; 
-            padding: 0 40px 20px 40px; 
+            min-width: 3600px;
+            max-width: 3600px;
+            padding: 0 20px 20px 20px; 
             transform-origin: left top;
             transition: transform 0.3s ease;
-            min-height: 500px;
+            min-height: 700px;
         }
         
-        /* Zoom levels - adjusted for more rows */
-        .timeline-container.zoom-25 { transform: scale(0.25); min-height: 1200px; }
-        .timeline-container.zoom-33 { transform: scale(0.33); min-height: 900px; }
-        .timeline-container.zoom-50 { transform: scale(0.5); min-height: 700px; }
-        .timeline-container.zoom-75 { transform: scale(0.75); min-height: 550px; }
-        .timeline-container.zoom-100 { transform: scale(1); min-height: 500px; }
-        .timeline-container.zoom-125 { transform: scale(1.25); min-height: 400px; }
-        .timeline-container.zoom-150 { transform: scale(1.5); min-height: 350px; }
-        .timeline-container.zoom-200 { transform: scale(2); min-height: 320px; }
+        /* Zoom levels - taller to show all rows at 200% */
+        .timeline-container.zoom-25 { transform: scale(0.25); min-height: 1400px; }
+        .timeline-container.zoom-33 { transform: scale(0.33); min-height: 1100px; }
+        .timeline-container.zoom-50 { transform: scale(0.5); min-height: 900px; }
+        .timeline-container.zoom-75 { transform: scale(0.75); min-height: 750px; }
+        .timeline-container.zoom-100 { transform: scale(1); min-height: 700px; }
+        .timeline-container.zoom-125 { transform: scale(1.25); min-height: 600px; }
+        .timeline-container.zoom-150 { transform: scale(1.5); min-height: 550px; }
+        .timeline-container.zoom-200 { transform: scale(2); min-height: 500px; }
         
         /* Sticky timeline header with years */
         .timeline-scroll-wrapper {
@@ -91,17 +92,18 @@
         }
         .timeline-header-inner {
             position: relative;
-            min-width: 9000px;
-            padding: 0 40px 0 5500px;
+            min-width: 3600px;
+            max-width: 3600px;
+            padding: 0 20px 0 20px;
             height: 100%;
         }
         .timeline-header .timeline-axis {
             position: absolute;
             top: 50px;
-            left: -7000px;
-            right: -1000px;
+            left: 0;
+            right: 0;
             height: 4px;
-            background: linear-gradient(to right, #c9a227 0%, #d4a574 25%, #c9a227 50%, #d4a574 75%, #c9a227 100%);
+            background: linear-gradient(to right, #c9a227 0%, #d4a574 50%, #c9a227 100%);
             box-shadow: 0 2px 4px rgba(0,0,0,0.2);
             z-index: 10;
         }
@@ -188,11 +190,11 @@
         }
         .timeline-bar .name {
             font-weight: bold;
-            font-size: 0.85rem;
+            font-size: 0.7rem;
             white-space: nowrap;
         }
         .timeline-bar .years {
-            font-size: 0.65rem;
+            font-size: 0.55rem;
             opacity: 0.9;
             font-weight: 500;
         }
@@ -241,7 +243,8 @@
         .era-digital { background: linear-gradient(135deg, #00BFFF 0%, #1E90FF 100%); color: white; }
         
         .legend { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; }
-        .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
+        .legend-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; text-decoration: none; color: inherit; }
+        .legend-item:hover { background: #e9ecef; border-radius: 4px; }
         .legend-color { width: 28px; height: 28px; border-radius: 4px; border: 1px solid rgba(0,0,0,0.1); flex-shrink: 0; }
         
         .movement-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
@@ -346,30 +349,30 @@
             </div>
             
             <div class="legend" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.5rem;">
-                <div class="legend-item"><div class="legend-color era-byzantine" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☦️</div><span>Byzantijns</span></div>
-                <div class="legend-item"><div class="legend-color era-romanesque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏰</div><span>Romaans</span></div>
-                <div class="legend-item"><div class="legend-color era-gothic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⛪</div><span>Gotisch</span></div>
-                <div class="legend-item"><div class="legend-color era-renaissance" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏛️</div><span>Renaissance</span></div>
-                <div class="legend-item"><div class="legend-color era-mannerism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎭</div><span>Maniërisme</span></div>
-                <div class="legend-item"><div class="legend-color era-baroque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎪</div><span>Barok/Rococo</span></div>
-                <div class="legend-item"><div class="legend-color era-neoclassic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⚱️</div><span>Neoclassicisme</span></div>
-                <div class="legend-item"><div class="legend-color era-romantic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌊</div><span>Romantiek</span></div>
-                <div class="legend-item"><div class="legend-color era-realism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌾</div><span>Realisme</span></div>
-                <div class="legend-item"><div class="legend-color era-impressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☀️</div><span>Impressionisme</span></div>
-                <div class="legend-item"><div class="legend-color era-postimpressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌻</div><span>Post-Imp.</span></div>
-                <div class="legend-item"><div class="legend-color era-artnouveau" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌿</div><span>Art Nouveau</span></div>
-                <div class="legend-item"><div class="legend-color era-expressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">😱</div><span>Expressionisme</span></div>
-                <div class="legend-item"><div class="legend-color era-cubism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🔲</div><span>Kubisme</span></div>
-                <div class="legend-item"><div class="legend-color era-dada" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎲</div><span>Dadaïsme</span></div>
-                <div class="legend-item"><div class="legend-color era-destijl" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⬜</div><span>De Stijl</span></div>
-                <div class="legend-item"><div class="legend-color era-surrealism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🦋</div><span>Surrealisme</span></div>
-                <div class="legend-item"><div class="legend-color era-abstract" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🔥</div><span>Abstract Expr.</span></div>
-                <div class="legend-item"><div class="legend-color era-popart" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🍿</div><span>Pop Art</span></div>
-                <div class="legend-item"><div class="legend-color era-minimalism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⬛</div><span>Minimalisme</span></div>
-                <div class="legend-item"><div class="legend-color era-conceptual" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">💡</div><span>Conceptueel</span></div>
-                <div class="legend-item"><div class="legend-color era-postmodern" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌀</div><span>Postmodernisme</span></div>
-                <div class="legend-item"><div class="legend-color era-contemporary" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌐</div><span>Hedendaags</span></div>
-                <div class="legend-item"><div class="legend-color era-digital" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">💻</div><span>Digitaal</span></div>
+                <a href="byzantijns.html" class="legend-item"><div class="legend-color era-byzantine" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☦️</div><span>Byzantijns</span></a>
+                <a href="romaans.html" class="legend-item"><div class="legend-color era-romanesque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏰</div><span>Romaans</span></a>
+                <a href="gotisch.html" class="legend-item"><div class="legend-color era-gothic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⛪</div><span>Gotisch</span></a>
+                <a href="renaissance.html" class="legend-item"><div class="legend-color era-renaissance" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏛️</div><span>Renaissance</span></a>
+                <a href="manierisme.html" class="legend-item"><div class="legend-color era-mannerism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎭</div><span>Maniërisme</span></a>
+                <a href="barok.html" class="legend-item"><div class="legend-color era-baroque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎪</div><span>Barok/Rococo</span></a>
+                <a href="neoclassicisme.html" class="legend-item"><div class="legend-color era-neoclassic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⚱️</div><span>Neoclassicisme</span></a>
+                <a href="romanticisme.html" class="legend-item"><div class="legend-color era-romantic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌊</div><span>Romantiek</span></a>
+                <a href="realisme.html" class="legend-item"><div class="legend-color era-realism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌾</div><span>Realisme</span></a>
+                <a href="impressionisme.html" class="legend-item"><div class="legend-color era-impressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☀️</div><span>Impressionisme</span></a>
+                <a href="postimpressionisme.html" class="legend-item"><div class="legend-color era-postimpressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌻</div><span>Post-Imp.</span></a>
+                <a href="artnouveau.html" class="legend-item"><div class="legend-color era-artnouveau" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌿</div><span>Art Nouveau</span></a>
+                <a href="expressionisme.html" class="legend-item"><div class="legend-color era-expressionism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">😱</div><span>Expressionisme</span></a>
+                <a href="kubisme.html" class="legend-item"><div class="legend-color era-cubism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🔲</div><span>Kubisme</span></a>
+                <a href="dadaisme.html" class="legend-item"><div class="legend-color era-dada" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🎲</div><span>Dadaïsme</span></a>
+                <a href="destijl.html" class="legend-item"><div class="legend-color era-destijl" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⬜</div><span>De Stijl</span></a>
+                <a href="surrealisme.html" class="legend-item"><div class="legend-color era-surrealism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🦋</div><span>Surrealisme</span></a>
+                <a href="abstract.html" class="legend-item"><div class="legend-color era-abstract" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🔥</div><span>Abstract Expr.</span></a>
+                <a href="popart.html" class="legend-item"><div class="legend-color era-popart" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🍿</div><span>Pop Art</span></a>
+                <a href="minimalisme.html" class="legend-item"><div class="legend-color era-minimalism" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⬛</div><span>Minimalisme</span></a>
+                <a href="conceptueel.html" class="legend-item"><div class="legend-color era-conceptual" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">💡</div><span>Conceptueel</span></a>
+                <a href="postmodernisme.html" class="legend-item"><div class="legend-color era-postmodern" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌀</div><span>Postmodernisme</span></a>
+                <a href="hedendaags.html" class="legend-item"><div class="legend-color era-contemporary" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🌐</div><span>Hedendaags</span></a>
+                <a href="digitaal.html" class="legend-item"><div class="legend-color era-digital" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">💻</div><span>Digitaal</span></a>
             </div>
         </section>
 
@@ -566,6 +569,8 @@
         // Timeline configuration
         const baseYear = 1400; // Year at position 0
         const pixelsPerYear = 5;
+        const minYear = 0;
+        const maxYear = 2100;
 
         // Convert year to pixel position
         function yearToPx(year) {
@@ -574,13 +579,17 @@
 
         // Check if two movements overlap
         function overlaps(m1, m2) {
-            return !(m1.end <= m2.start || m2.end <= m1.start);
+            // Use strict comparison - only allow on same row if one ends BEFORE the other starts
+            return m1.start < m2.end && m2.start < m1.end;
         }
 
         // Assign rows to movements - no overlaps allowed
         function assignRows(movements) {
-            // Sort by start year
-            const sorted = [...movements].sort((a, b) => a.start - b.start);
+            // Sort by start year, then by duration (longer first for better packing)
+            const sorted = [...movements].sort((a, b) => {
+                if (a.start !== b.start) return a.start - b.start;
+                return (b.end - b.start) - (a.end - a.start);
+            });
             const rows = []; // Array of arrays, each containing movements for that row
             
             sorted.forEach(movement => {
@@ -616,10 +625,8 @@
         // Generate year markers
         function generateYearMarkers() {
             const headerInner = document.getElementById('timeline-header-inner');
-            const startYear = 0;
-            const endYear = 2100;
             
-            for (let year = startYear; year <= endYear; year += 100) {
+            for (let year = minYear; year <= maxYear; year += 100) {
                 const left = yearToPx(year);
                 const yearEl = document.createElement('div');
                 yearEl.className = 'timeline-year';
@@ -628,12 +635,7 @@
                 headerInner.appendChild(yearEl);
             }
             
-            // Also update axis position
-            const axis = headerInner.querySelector('.timeline-axis');
-            if (axis) {
-                axis.style.left = (yearToPx(startYear) - 100) + 'px';
-                axis.style.right = (yearToPx(endYear) + 100) + 'px';
-            }
+            // Axis is handled by CSS - full width of container
         }
 
         // Generate timeline bars
@@ -722,12 +724,15 @@
             
             updateTextVisibility(zoom);
             
-            if (zoom >= 150) {
-                timelineScroll.style.maxHeight = '600px';
+            // Adjust max-height for vertical scrolling
+            if (zoom >= 200) {
+                timelineScroll.style.maxHeight = '900px';
+            } else if (zoom >= 150) {
+                timelineScroll.style.maxHeight = '700px';
             } else if (zoom >= 100) {
-                timelineScroll.style.maxHeight = '450px';
+                timelineScroll.style.maxHeight = '600px';
             } else {
-                timelineScroll.style.maxHeight = '350px';
+                timelineScroll.style.maxHeight = '500px';
             }
             
             zoomOutBtn.disabled = currentZoomIndex === 0;

@@ -1,0 +1,63 @@
+name: Download Rococo Images
+on:
+  workflow_dispatch:
+  
+jobs:
+  download-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download images
+        run: |
+          mkdir -p images/rococo
+          cd images/rococo
+          
+          # Download all 10 Rococo images from Wikimedia Commons
+          curl -A "Mozilla/5.0" -L -o fragonard_swing.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg/1200px-Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o boucher_venus_toilet.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Fran%C3%A7ois_Boucher_-_The_Toilet_of_Venus_-_Google_Art_Project.jpg/1200px-Fran%C3%A7ois_Boucher_-_The_Toilet_of_Venus_-_Google_Art_Project.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o watteau_gilles.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Antoine_Watteau_-_Gilles_-_Google_Art_Project.jpg/1200px-Antoine_Watteau_-_Gilles_-_Google_Art_Project.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o watteau_embarkation.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Watteau_-_The_Embarkation_for_Cythera_-_WGA25453.jpg/1200px-Watteau_-_The_Embarkation_for_Cythera_-_WGA25453.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o boucher_pompadour.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Fran%C3%A7ois_Boucher_-_Portrait_of_Madame_de_Pompadour_-_WGA02909.jpg/1200px-Fran%C3%A7ois_Boucher_-_Portrait_of_Madame_de_Pompadour_-_WGA02909.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o chardin_ray.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jean-Baptiste_Sim%C3%A9on_Chardin_-_The_Ray_-_WGA04766.jpg/1200px-Jean-Baptiste_Sim%C3%A9on_Chardin_-_The_Ray_-_WGA04766.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o tiepolo_apollo.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Giovanni_Battista_Tiepolo_-_Apollo_and_the_Continents_-_WGA22376.jpg/1200px-Giovanni_Battista_Tiepolo_-_Apollo_and_the_Continents_-_WGA22376.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o lancret_picnic.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Nicolas_Lancret_-_The_Picnic_-_WGA12408.jpg/1200px-Nicolas_Lancret_-_The_Picnic_-_WGA12408.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o watteau_mezzetin.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Antoine_Watteau_-_Mezzetin_-_Google_Art_Project.jpg/1200px-Antoine_Watteau_-_Mezzetin_-_Google_Art_Project.jpg"
+          
+          sleep 2
+          curl -A "Mozilla/5.0" -L -o fragonard_meeting.jpg \
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fragonard_-_The_Meeting_-_Google_Art_Project.jpg/1200px-Fragonard_-_The_Meeting_-_Google_Art_Project.jpg"
+          
+          # Verify downloads
+          echo "=== VERIFICATION ==="
+          ls -la
+          file *.jpg
+          
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rococo-images
+          path: images/rococo/
