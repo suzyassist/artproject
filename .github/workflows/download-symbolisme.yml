@@ -1,0 +1,77 @@
+name: Download Missing Symbolisme Images
+on:
+  workflow_dispatch:
+
+jobs:
+  download-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Download missing Symbolisme artworks
+        run: |
+          mkdir -p images/symbolisme
+          cd images/symbolisme
+
+          echo "=== Downloading missing Symbolisme artworks ==="
+
+          # 1. Jean Delville - The Blind (1891)
+          echo "1. Jean Delville - The Blind..."
+          curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -o delville_blind.jpg \
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Delville_-_The_Blind.jpg?width=1200"
+          sleep 3
+
+          # 2. Jan Toorop - Voice of the Blood (De roep van de bloede)
+          echo "2. Jan Toorop - Voice of the Blood..."
+          curl -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" -L -o toorop_voice_blood.jpg \
+            "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_Toorop_-_De_roep_van_de_bloede.jpg?width=1200"
+          sleep 3
+
+          # Verify
+          echo ""
+          echo "=== VERIFICATION ==="
+          for f in delville_blind.jpg toorop_voice_blood.jpg; do
+            if [ -f "$f" ]; then
+              size=$(stat -c%s "$f" 2>/dev/null || echo 0)
+              type=$(file -b "$f" | cut -d',' -f1)
+              if [ "$size" -gt 50000 ] && [ "$type" = "JPEG image" ]; then
+                echo "✅ $f: $size bytes - $type"
+              else
+                echo "❌ $f: $size bytes - $type"
+                head -c 200 "$f"
+                echo ""
+              fi
+            else
+              echo "❌ $f: NOT FOUND"
+            fi
+          done
+
+      - name: Commit and push if successful
+        run: |
+          cd images/symbolisme
+
+          # Check if both files are valid JPEGs
+          delville_size=$(stat -c%s delville_blind.jpg 2>/dev/null || echo 0)
+          toorop_size=$(stat -c%s toorop_voice_blood.jpg 2>/dev/null || echo 0)
+
+          if [ "$delville_size" -gt 50000 ] && [ "$toorop_size" -gt 50000 ]; then
+            echo "✅ Both images downloaded successfully"
+            cd ../..
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add images/symbolisme/delville_blind.jpg images/symbolisme/toorop_voice_blood.jpg
+            git commit -m "Add missing Symbolisme images (Delville, Toorop)" || echo "No changes to commit"
+            git push
+            echo "✅ Images committed and pushed"
+          else
+            echo "❌ Download failed - not committing"
+            exit 1
+          fi
+
+      - name: Upload artifacts (backup)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: symbolisme-images
+          path: images/symbolisme/
