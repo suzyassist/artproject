@@ -103,13 +103,13 @@
             border-radius: 8px;
             display: flex;
             align-items: center;
-            padding: 0 14px;
+            padding: 0 10px;
             text-decoration: none;
             color: inherit;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
             border: 2px solid rgba(255,255,255,0.4);
-            min-width: 120px;
+            min-width: 100px;
             top: 3px;
             overflow: hidden;
         }
@@ -120,26 +120,24 @@
             border-color: #fff;
         }
         .timeline-bar .icon {
-            font-size: 1.2rem;
-            margin-right: 8px;
+            font-size: 1rem;
+            margin-right: 6px;
             flex-shrink: 0;
-            transition: margin 0.2s ease;
         }
         .timeline-bar .info {
             display: flex;
             flex-direction: column;
-            line-height: 1.2;
+            line-height: 1.1;
             overflow: hidden;
             white-space: nowrap;
-            transition: opacity 0.2s ease;
         }
         .timeline-bar .name {
             font-weight: bold;
-            font-size: 0.7rem;
+            font-size: 0.6rem;
             white-space: nowrap;
         }
         .timeline-bar .years {
-            font-size: 0.55rem;
+            font-size: 0.5rem;
             opacity: 0.9;
             font-weight: 500;
         }
@@ -472,9 +470,9 @@
     <script>
         // Timeline data with all movements
         const movements = [
-            { name: "Byzantijnse Kunst", icon: "☦️", start: 330, end: 1453, href: "byzantijns.html", cssClass: "era-byzantine" },
-            { name: "Romaanse Kunst", icon: "🏰", start: 800, end: 1200, href: "romaans.html", cssClass: "era-romanesque" },
-            { name: "Gotische Kunst", icon: "⛪", start: 1140, end: 1500, href: "gotisch.html", cssClass: "era-gothic" },
+            { name: "Byzantijns", icon: "☦️", start: 330, end: 1453, href: "byzantijns.html", cssClass: "era-byzantine" },
+            { name: "Romaans", icon: "🏰", start: 800, end: 1200, href: "romaans.html", cssClass: "era-romanesque" },
+            { name: "Gotisch", icon: "⛪", start: 1140, end: 1500, href: "gotisch.html", cssClass: "era-gothic" },
             { name: "Renaissance", icon: "🏛️", start: 1400, end: 1600, href: "renaissance.html", cssClass: "era-renaissance" },
             { name: "Maniërisme", icon: "🎭", start: 1520, end: 1620, href: "manierisme.html", cssClass: "era-mannerism" },
             { name: "Barok", icon: "🎪", start: 1600, end: 1750, href: "barok.html", cssClass: "era-baroque" },
@@ -483,7 +481,7 @@
             { name: "Romantiek", icon: "🌊", start: 1780, end: 1850, href: "romanticisme.html", cssClass: "era-romantic" },
             { name: "Realisme", icon: "🌾", start: 1840, end: 1880, href: "realisme.html", cssClass: "era-realism" },
             { name: "Impressionisme", icon: "☀️", start: 1860, end: 1890, href: "impressionisme.html", cssClass: "era-impressionism" },
-            { name: "Post-Impressionisme", icon: "🌻", start: 1880, end: 1900, href: "postimpressionisme.html", cssClass: "era-postimpressionism" },
+            { name: "Post-Imp.", icon: "🌻", start: 1880, end: 1900, href: "postimpressionisme.html", cssClass: "era-postimpressionism" },
             { name: "Symbolisme", icon: "🌙", start: 1880, end: 1910, href: "symbolisme.html", cssClass: "era-surrealism" },
             { name: "Art Nouveau", icon: "🌿", start: 1890, end: 1910, href: "artnouveau.html", cssClass: "era-artnouveau" },
             { name: "Fauvisme", icon: "🦁", start: 1905, end: 1908, href: "fauvisme.html", cssClass: "era-expressionism" },
@@ -493,13 +491,13 @@
             { name: "Dadaïsme", icon: "🎲", start: 1916, end: 1924, href: "dadaisme.html", cssClass: "era-dada" },
             { name: "De Stijl", icon: "⬜", start: 1917, end: 1931, href: "destijl.html", cssClass: "era-destijl" },
             { name: "Surrealisme", icon: "🦋", start: 1924, end: 1966, href: "surrealisme.html", cssClass: "era-surrealism" },
-            { name: "Abstract Expressionisme", icon: "🔥", start: 1940, end: 1960, href: "abstract.html", cssClass: "era-abstract" },
+            { name: "Abstract Expr.", icon: "🔥", start: 1940, end: 1960, href: "abstract.html", cssClass: "era-abstract" },
             { name: "Pop Art", icon: "🍿", start: 1955, end: 1970, href: "popart.html", cssClass: "era-popart" },
             { name: "Minimalisme", icon: "⬛", start: 1960, end: 1975, href: "minimalisme.html", cssClass: "era-minimalism" },
-            { name: "Conceptuele Kunst", icon: "💡", start: 1960, end: 1980, href: "conceptueel.html", cssClass: "era-conceptual" },
+            { name: "Conceptueel", icon: "💡", start: 1960, end: 1980, href: "conceptueel.html", cssClass: "era-conceptual" },
             { name: "Postmodernisme", icon: "🌀", start: 1970, end: 2000, href: "postmodernisme.html", cssClass: "era-postmodern" },
-            { name: "Hedendaagse Kunst", icon: "🌐", start: 1980, end: 2025, href: "hedendaags.html", cssClass: "era-contemporary" },
-            { name: "Digitale Kunst", icon: "💻", start: 1990, end: 2025, href: "digitaal.html", cssClass: "era-digital" }
+            { name: "Hedendaags", icon: "🌐", start: 1980, end: 2025, href: "hedendaags.html", cssClass: "era-contemporary" },
+            { name: "Digitaal", icon: "💻", start: 1990, end: 2025, href: "digitaal.html", cssClass: "era-digital" }
         ];
 
         // Timeline configuration
