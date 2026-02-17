@@ -54,71 +54,86 @@
             border-radius: 12px; 
             box-shadow: inset 0 2px 10px rgba(0,0,0,0.05);
             transition: all 0.3s ease;
-            min-height: 300px;
-            display: flex;
-            align-items: flex-start;
+            max-height: 350px;
         }
         
         .timeline-container { 
             position: relative; 
             min-width: 9000px; 
-            padding: 0 40px 20px 5500px; 
+            padding: 0 40px 20px 40px; 
             transform-origin: left top;
             transition: transform 0.3s ease;
-            min-height: 350px;
+            min-height: 500px;
         }
         
-        /* Zoom levels with adjusted heights to show all rows (now 6 rows) */
-        .timeline-container.zoom-25 { transform: scale(0.25); min-height: 900px; }
-        .timeline-container.zoom-33 { transform: scale(0.33); min-height: 750px; }
-        .timeline-container.zoom-50 { transform: scale(0.5); min-height: 550px; }
-        .timeline-container.zoom-75 { transform: scale(0.75); min-height: 450px; }
-        .timeline-container.zoom-100 { transform: scale(1); min-height: 400px; }
-        .timeline-container.zoom-125 { transform: scale(1.25); min-height: 350px; }
-        .timeline-container.zoom-150 { transform: scale(1.5); min-height: 320px; }
-        .timeline-container.zoom-200 { transform: scale(2); min-height: 300px; }
+        /* Zoom levels - adjusted for more rows */
+        .timeline-container.zoom-25 { transform: scale(0.25); min-height: 1200px; }
+        .timeline-container.zoom-33 { transform: scale(0.33); min-height: 900px; }
+        .timeline-container.zoom-50 { transform: scale(0.5); min-height: 700px; }
+        .timeline-container.zoom-75 { transform: scale(0.75); min-height: 550px; }
+        .timeline-container.zoom-100 { transform: scale(1); min-height: 500px; }
+        .timeline-container.zoom-125 { transform: scale(1.25); min-height: 400px; }
+        .timeline-container.zoom-150 { transform: scale(1.5); min-height: 350px; }
+        .timeline-container.zoom-200 { transform: scale(2); min-height: 320px; }
         
         /* Sticky timeline header with years */
+        .timeline-scroll-wrapper {
+            position: relative;
+        }
         .timeline-header {
             position: sticky;
             top: 0;
             z-index: 100;
             background: linear-gradient(180deg, #f8f9fa 0%, #f0f0f0 100%);
-            height: 55px;
-            margin-bottom: 10px;
+            height: 60px;
             border-bottom: 2px solid #c9a227;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        
-        .timeline-axis { position: absolute; top: 70px; left: -7000px; right: -1000px; height: 4px; background: linear-gradient(to right, #c9a227 0%, #d4a574 25%, #c9a227 50%, #d4a574 75%, #c9a227 100%); box-shadow: 0 2px 4px rgba(0,0,0,0.2); z-index: 10; }
+        .timeline-header-inner {
+            position: relative;
+            min-width: 9000px;
+            padding: 0 40px 0 5500px;
+            height: 100%;
+        }
+        .timeline-header .timeline-axis {
+            position: absolute;
+            top: 50px;
+            left: -7000px;
+            right: -1000px;
+            height: 4px;
+            background: linear-gradient(to right, #c9a227 0%, #d4a574 25%, #c9a227 50%, #d4a574 75%, #c9a227 100%);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
 
         .timeline-year {
             position: absolute;
             top: 8px;
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: #333;
             font-weight: bold;
             transform: translateX(-50%);
             background: white;
-            padding: 6px 14px;
+            padding: 4px 10px;
             border-radius: 6px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.15);
             z-index: 10;
             border: 2px solid #c9a227;
-            min-width: 70px;
+            min-width: 55px;
             text-align: center;
         }
         .timeline-year::after {
             content: '';
             position: absolute;
-            top: 46px;
+            top: 38px;
             left: 50%;
             width: 2px;
-            height: 25px;
+            height: 18px;
             background: #c9a227;
             transform: translateX(-50%);
         }
 
-        .timeline-rows { position: relative; margin-top: 80px; }
+        .timeline-rows { position: relative; margin-top: 10px; }
         .timeline-row {
             position: relative;
             height: 52px;
@@ -311,83 +326,20 @@
                 <button class="zoom-btn" id="zoom-in" title="Inzoomen">+</button>
             </div>
             
-            <div class="timeline-scroll" id="timeline-scroll">
-                <div class="timeline-container" id="timeline-container">
-                    <!-- Sticky Timeline Header -->
-                    <div class="timeline-header">
+            <div class="timeline-scroll-wrapper">
+                <!-- Sticky Timeline Header (always visible) -->
+                <div class="timeline-header">
+                    <div class="timeline-header-inner" id="timeline-header-inner">
                         <div class="timeline-axis"></div>
-                        <!-- Every 100 years from year 0 to 2100 -->
-                        <div class="timeline-year" style="left:-7000px">0</div>
-                        <div class="timeline-year" style="left:-6500px">100</div>
-                        <div class="timeline-year" style="left:-6000px">200</div>
-                        <div class="timeline-year" style="left:-5500px">300</div>
-                        <div class="timeline-year" style="left:-5000px">400</div>
-                        <div class="timeline-year" style="left:-4500px">500</div>
-                        <div class="timeline-year" style="left:-4000px">600</div>
-                        <div class="timeline-year" style="left:-3500px">700</div>
-                        <div class="timeline-year" style="left:-3000px">800</div>
-                        <div class="timeline-year" style="left:-2500px">900</div>
-                        <div class="timeline-year" style="left:-2000px">1000</div>
-                        <div class="timeline-year" style="left:-1500px">1100</div>
-                        <div class="timeline-year" style="left:-1000px">1200</div>
-                        <div class="timeline-year" style="left:-500px">1300</div>
-                        <div class="timeline-year" style="left:0px">1400</div>
-                        <div class="timeline-year" style="left:500px">1500</div>
-                        <div class="timeline-year" style="left:1000px">1600</div>
-                        <div class="timeline-year" style="left:1500px">1700</div>
-                        <div class="timeline-year" style="left:2000px">1800</div>
-                        <div class="timeline-year" style="left:2500px">1900</div>
-                        <div class="timeline-year" style="left:3000px">2000</div>
-                        <div class="timeline-year" style="left:3500px">2100</div>
+                        <!-- Years will be populated by JS -->
                     </div>
-                    
-                    <!-- Scrollable Timeline Rows -->
-                                        <div class="timeline-rows">
-                        <!-- Row 1: Early movements (300-1500) -->
-                        <div class="timeline-row">
-                            <a href="byzantijns.html" class="timeline-bar era-byzantine" style="left:-5350px;width:5615px;"><span class="icon">☦️</span><div class="info"><span class="name">Byzantijnse Kunst</span><span class="years">330 - 1453</span></div></a>
-                        </div>
-                        <!-- Row 2: Medieval (800-1500) -->
-                        <div class="timeline-row">
-                            <a href="romaans.html" class="timeline-bar era-romanesque" style="left:-3000px;width:2000px;"><span class="icon">🏰</span><div class="info"><span class="name">Romaanse Kunst</span><span class="years">800 - 1200</span></div></a>
-                            <a href="gotisch.html" class="timeline-bar era-gothic" style="left:-1300px;width:1800px;"><span class="icon">⛪</span><div class="info"><span class="name">Gotische Kunst</span><span class="years">1140 - 1500</span></div></a>
-                        </div>
-                        <!-- Row 3: Renaissance & Baroque (1400-1750) -->
-                        <div class="timeline-row">
-                            <a href="renaissance.html" class="timeline-bar era-renaissance" style="left:0px;width:1000px;"><span class="icon">🏛️</span><div class="info"><span class="name">Renaissance</span><span class="years">1400 - 1600</span></div></a>
-                            <a href="manierisme.html" class="timeline-bar era-mannerism" style="left:600px;width:500px;"><span class="icon">🎭</span><div class="info"><span class="name">Maniërisme</span><span class="years">1520 - 1620</span></div></a>
-                            <a href="barok.html" class="timeline-bar era-baroque" style="left:1000px;width:750px;"><span class="icon">🎪</span><div class="info"><span class="name">Barok</span><span class="years">1600 - 1750</span></div></a>
-                            <a href="rococo.html" class="timeline-bar era-baroque" style="left:1600px;width:300px;"><span class="icon">🎀</span><div class="info"><span class="name">Rococo</span><span class="years">1720 - 1780</span></div></a>
-                        </div>
-                        <!-- Row 4: Late 18th - 19th century (1750-1900) -->
-                        <div class="timeline-row">
-                            <a href="neoclassicisme.html" class="timeline-bar era-neoclassic" style="left:1750px;width:500px;"><span class="icon">⚱️</span><div class="info"><span class="name">Neoclassicisme</span><span class="years">1750 - 1850</span></div></a>
-                            <a href="romanticisme.html" class="timeline-bar era-romantic" style="left:1900px;width:350px;"><span class="icon">🌊</span><div class="info"><span class="name">Romantiek</span><span class="years">1780 - 1850</span></div></a>
-                            <a href="realisme.html" class="timeline-bar era-realism" style="left:2200px;width:200px;"><span class="icon">🌾</span><div class="info"><span class="name">Realisme</span><span class="years">1840 - 1880</span></div></a>
-                            <a href="impressionisme.html" class="timeline-bar era-impressionism" style="left:2300px;width:150px;"><span class="icon">☀️</span><div class="info"><span class="name">Impressionisme</span><span class="years">1860 - 1890</span></div></a>
-                            <a href="postimpressionisme.html" class="timeline-bar era-postimpressionism" style="left:2400px;width:100px;"><span class="icon">🌻</span><div class="info"><span class="name">Post-Impressionisme</span><span class="years">1880 - 1900</span></div></a>
-                            <a href="symbolisme.html" class="timeline-bar era-surrealism" style="left:2400px;width:150px;"><span class="icon">🌙</span><div class="info"><span class="name">Symbolisme</span><span class="years">1880 - 1910</span></div></a>
-                            <a href="artnouveau.html" class="timeline-bar era-artnouveau" style="left:2450px;width:100px;"><span class="icon">🌿</span><div class="info"><span class="name">Art Nouveau</span><span class="years">1890 - 1910</span></div></a>
-                        </div>
-                        <!-- Row 5: Early 20th century (1900-1930) -->
-                        <div class="timeline-row">
-                            <a href="fauvisme.html" class="timeline-bar era-expressionism" style="left:2525px;width:100px;"><span class="icon">🦁</span><div class="info"><span class="name">Fauvisme</span><span class="years">1905 - 1908</span></div></a>
-                            <a href="expressionisme.html" class="timeline-bar era-expressionism" style="left:2545px;width:125px;"><span class="icon">😱</span><div class="info"><span class="name">Expressionisme</span><span class="years">1905 - 1930</span></div></a>
-                            <a href="kubisme.html" class="timeline-bar era-cubism" style="left:2570px;width:100px;"><span class="icon">🔲</span><div class="info"><span class="name">Kubisme</span><span class="years">1907 - 1914</span></div></a>
-                            <a href="futurisme.html" class="timeline-bar era-surrealism" style="left:2580px;width:105px;"><span class="icon">⚡</span><div class="info"><span class="name">Futurisme</span><span class="years">1909 - 1930</span></div></a>
-                            <a href="dadaisme.html" class="timeline-bar era-dada" style="left:2600px;width:100px;"><span class="icon">🎲</span><div class="info"><span class="name">Dadaïsme</span><span class="years">1916 - 1924</span></div></a>
-                            <a href="destijl.html" class="timeline-bar era-destijl" style="left:2605px;width:100px;"><span class="icon">⬜</span><div class="info"><span class="name">De Stijl</span><span class="years">1917 - 1931</span></div></a>
-                            <a href="surrealisme.html" class="timeline-bar era-surrealism" style="left:2620px;width:210px;"><span class="icon">🦋</span><div class="info"><span class="name">Surrealisme</span><span class="years">1924 - 1966</span></div></a>
-                        </div>
-                        <!-- Row 6: Post-war to contemporary (1940-2025) -->
-                        <div class="timeline-row">
-                            <a href="abstract.html" class="timeline-bar era-abstract" style="left:2700px;width:100px;"><span class="icon">🔥</span><div class="info"><span class="name">Abstract Expressionisme</span><span class="years">1940 - 1960</span></div></a>
-                            <a href="popart.html" class="timeline-bar era-popart" style="left:2775px;width:100px;"><span class="icon">🍿</span><div class="info"><span class="name">Pop Art</span><span class="years">1955 - 1970</span></div></a>
-                            <a href="minimalisme.html" class="timeline-bar era-minimalism" style="left:2800px;width:100px;"><span class="icon">⬛</span><div class="info"><span class="name">Minimalisme</span><span class="years">1960 - 1975</span></div></a>
-                            <a href="conceptueel.html" class="timeline-bar era-conceptual" style="left:2820px;width:100px;"><span class="icon">💡</span><div class="info"><span class="name">Conceptuele Kunst</span><span class="years">1960 - 1980</span></div></a>
-                            <a href="postmodernisme.html" class="timeline-bar era-postmodern" style="left:2850px;width:150px;"><span class="icon">🌀</span><div class="info"><span class="name">Postmodernisme</span><span class="years">1970 - 2000</span></div></a>
-                            <a href="hedendaags.html" class="timeline-bar era-contemporary" style="left:2900px;width:225px;"><span class="icon">🌐</span><div class="info"><span class="name">Hedendaagse Kunst</span><span class="years">1980 - 2025</span></div></a>
-                            <a href="digitaal.html" class="timeline-bar era-digital" style="left:2950px;width:175px;"><span class="icon">💻</span><div class="info"><span class="name">Digitale Kunst</span><span class="years">1990 - 2025</span></div></a>
+                </div>
+                
+                <!-- Scrollable Timeline Rows -->
+                <div class="timeline-scroll" id="timeline-scroll">
+                    <div class="timeline-container" id="timeline-container">
+                        <div class="timeline-rows" id="timeline-rows">
+                            <!-- Movements will be populated by JS with proper row assignment -->
                         </div>
                     </div>
                 </div>
@@ -579,7 +531,154 @@
     </footer>
 
     <script>
-        // Simple menu toggle
+        // Timeline data with all movements
+        const movements = [
+            { name: "Byzantijnse Kunst", icon: "☦️", start: 330, end: 1453, href: "byzantijns.html", cssClass: "era-byzantine" },
+            { name: "Romaanse Kunst", icon: "🏰", start: 800, end: 1200, href: "romaans.html", cssClass: "era-romanesque" },
+            { name: "Gotische Kunst", icon: "⛪", start: 1140, end: 1500, href: "gotisch.html", cssClass: "era-gothic" },
+            { name: "Renaissance", icon: "🏛️", start: 1400, end: 1600, href: "renaissance.html", cssClass: "era-renaissance" },
+            { name: "Maniërisme", icon: "🎭", start: 1520, end: 1620, href: "manierisme.html", cssClass: "era-mannerism" },
+            { name: "Barok", icon: "🎪", start: 1600, end: 1750, href: "barok.html", cssClass: "era-baroque" },
+            { name: "Rococo", icon: "🎀", start: 1720, end: 1780, href: "rococo.html", cssClass: "era-baroque" },
+            { name: "Neoclassicisme", icon: "⚱️", start: 1750, end: 1850, href: "neoclassicisme.html", cssClass: "era-neoclassic" },
+            { name: "Romantiek", icon: "🌊", start: 1780, end: 1850, href: "romanticisme.html", cssClass: "era-romantic" },
+            { name: "Realisme", icon: "🌾", start: 1840, end: 1880, href: "realisme.html", cssClass: "era-realism" },
+            { name: "Impressionisme", icon: "☀️", start: 1860, end: 1890, href: "impressionisme.html", cssClass: "era-impressionism" },
+            { name: "Post-Impressionisme", icon: "🌻", start: 1880, end: 1900, href: "postimpressionisme.html", cssClass: "era-postimpressionism" },
+            { name: "Symbolisme", icon: "🌙", start: 1880, end: 1910, href: "symbolisme.html", cssClass: "era-surrealism" },
+            { name: "Art Nouveau", icon: "🌿", start: 1890, end: 1910, href: "artnouveau.html", cssClass: "era-artnouveau" },
+            { name: "Fauvisme", icon: "🦁", start: 1905, end: 1908, href: "fauvisme.html", cssClass: "era-expressionism" },
+            { name: "Expressionisme", icon: "😱", start: 1905, end: 1930, href: "expressionisme.html", cssClass: "era-expressionism" },
+            { name: "Kubisme", icon: "🔲", start: 1907, end: 1914, href: "kubisme.html", cssClass: "era-cubism" },
+            { name: "Futurisme", icon: "⚡", start: 1909, end: 1930, href: "futurisme.html", cssClass: "era-surrealism" },
+            { name: "Dadaïsme", icon: "🎲", start: 1916, end: 1924, href: "dadaisme.html", cssClass: "era-dada" },
+            { name: "De Stijl", icon: "⬜", start: 1917, end: 1931, href: "destijl.html", cssClass: "era-destijl" },
+            { name: "Surrealisme", icon: "🦋", start: 1924, end: 1966, href: "surrealisme.html", cssClass: "era-surrealism" },
+            { name: "Abstract Expressionisme", icon: "🔥", start: 1940, end: 1960, href: "abstract.html", cssClass: "era-abstract" },
+            { name: "Pop Art", icon: "🍿", start: 1955, end: 1970, href: "popart.html", cssClass: "era-popart" },
+            { name: "Minimalisme", icon: "⬛", start: 1960, end: 1975, href: "minimalisme.html", cssClass: "era-minimalism" },
+            { name: "Conceptuele Kunst", icon: "💡", start: 1960, end: 1980, href: "conceptueel.html", cssClass: "era-conceptual" },
+            { name: "Postmodernisme", icon: "🌀", start: 1970, end: 2000, href: "postmodernisme.html", cssClass: "era-postmodern" },
+            { name: "Hedendaagse Kunst", icon: "🌐", start: 1980, end: 2025, href: "hedendaags.html", cssClass: "era-contemporary" },
+            { name: "Digitale Kunst", icon: "💻", start: 1990, end: 2025, href: "digitaal.html", cssClass: "era-digital" }
+        ];
+
+        // Timeline configuration
+        const baseYear = 1400; // Year at position 0
+        const pixelsPerYear = 5;
+
+        // Convert year to pixel position
+        function yearToPx(year) {
+            return (year - baseYear) * pixelsPerYear;
+        }
+
+        // Check if two movements overlap
+        function overlaps(m1, m2) {
+            return !(m1.end <= m2.start || m2.end <= m1.start);
+        }
+
+        // Assign rows to movements - no overlaps allowed
+        function assignRows(movements) {
+            // Sort by start year
+            const sorted = [...movements].sort((a, b) => a.start - b.start);
+            const rows = []; // Array of arrays, each containing movements for that row
+            
+            sorted.forEach(movement => {
+                // Find first row where this movement doesn't overlap with any existing
+                let foundRow = -1;
+                for (let i = 0; i < rows.length; i++) {
+                    const rowMovements = rows[i];
+                    const hasOverlap = rowMovements.some(m => overlaps(movement, m));
+                    if (!hasOverlap) {
+                        foundRow = i;
+                        break;
+                    }
+                }
+                
+                if (foundRow >= 0) {
+                    rows[foundRow].push(movement);
+                } else {
+                    rows.push([movement]);
+                }
+            });
+            
+            // Create result with row numbers
+            const result = {};
+            rows.forEach((rowMovements, rowIndex) => {
+                rowMovements.forEach(m => {
+                    result[m.name] = rowIndex;
+                });
+            });
+            
+            return { rowAssignments: result, totalRows: rows.length };
+        }
+
+        // Generate year markers
+        function generateYearMarkers() {
+            const headerInner = document.getElementById('timeline-header-inner');
+            const startYear = 0;
+            const endYear = 2100;
+            
+            for (let year = startYear; year <= endYear; year += 100) {
+                const left = yearToPx(year);
+                const yearEl = document.createElement('div');
+                yearEl.className = 'timeline-year';
+                yearEl.style.left = left + 'px';
+                yearEl.textContent = year;
+                headerInner.appendChild(yearEl);
+            }
+            
+            // Also update axis position
+            const axis = headerInner.querySelector('.timeline-axis');
+            if (axis) {
+                axis.style.left = (yearToPx(startYear) - 100) + 'px';
+                axis.style.right = (yearToPx(endYear) + 100) + 'px';
+            }
+        }
+
+        // Generate timeline bars
+        function generateTimeline() {
+            const { rowAssignments, totalRows } = assignRows(movements);
+            const container = document.getElementById('timeline-rows');
+            container.innerHTML = '';
+            
+            // Create rows
+            for (let i = 0; i < totalRows; i++) {
+                const rowEl = document.createElement('div');
+                rowEl.className = 'timeline-row';
+                rowEl.id = 'row-' + i;
+                container.appendChild(rowEl);
+            }
+            
+            // Add movements to their rows
+            movements.forEach(m => {
+                const rowIndex = rowAssignments[m.name];
+                const rowEl = document.getElementById('row-' + rowIndex);
+                
+                const left = yearToPx(m.start);
+                const width = yearToPx(m.end) - yearToPx(m.start);
+                
+                const bar = document.createElement('a');
+                bar.href = m.href;
+                bar.className = 'timeline-bar ' + m.cssClass;
+                bar.style.left = left + 'px';
+                bar.style.width = Math.max(width, 80) + 'px'; // Minimum width
+                bar.innerHTML = `<span class="icon">${m.icon}</span><div class="info"><span class="name">${m.name}</span><span class="years">${m.start} - ${m.end}</span></div>`;
+                
+                rowEl.appendChild(bar);
+            });
+            
+            // Update container height based on rows
+            const containerEl = document.getElementById('timeline-container');
+            const minHeight = 100 + (totalRows * 56);
+            containerEl.style.minHeight = minHeight + 'px';
+        }
+
+        // Initialize timeline
+        generateYearMarkers();
+        generateTimeline();
+
+        // Menu toggle
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.add('open');
             document.getElementById('overlay').classList.add('show');
@@ -598,7 +697,6 @@
             document.body.style.overflow = '';
         });
 
-        // Close on Escape key
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 document.getElementById('sidebar').classList.remove('open');
@@ -607,9 +705,9 @@
             }
         });
         
-        // Timeline Zoom Functionality
+        // Timeline Zoom
         const zoomLevels = [25, 33, 50, 75, 100, 125, 150, 200];
-        let currentZoomIndex = 2; // Start at 50% for overview
+        let currentZoomIndex = 2; // Start at 50%
         
         const timelineContainer = document.getElementById('timeline-container');
         const timelineScroll = document.getElementById('timeline-scroll');
@@ -622,10 +720,8 @@
             timelineContainer.className = 'timeline-container zoom-' + zoom;
             zoomValue.textContent = zoom + '%';
             
-            // Update text visibility based on zoom level
             updateTextVisibility(zoom);
             
-            // Adjust max-height for vertical scrolling at higher zoom
             if (zoom >= 150) {
                 timelineScroll.style.maxHeight = '600px';
             } else if (zoom >= 100) {
@@ -634,7 +730,6 @@
                 timelineScroll.style.maxHeight = '350px';
             }
             
-            // Update button states
             zoomOutBtn.disabled = currentZoomIndex === 0;
             zoomInBtn.disabled = currentZoomIndex === zoomLevels.length - 1;
             zoomOutBtn.style.opacity = currentZoomIndex === 0 ? 0.5 : 1;
@@ -644,16 +739,12 @@
         function updateTextVisibility(zoom) {
             const bars = document.querySelectorAll('.timeline-bar');
             bars.forEach(bar => {
-                // Get the actual rendered width
                 const rect = bar.getBoundingClientRect();
                 const style = window.getComputedStyle(bar);
                 const paddingLeft = parseInt(style.paddingLeft);
                 const paddingRight = parseInt(style.paddingRight);
+                const availableWidth = rect.width - paddingLeft - paddingRight - 30;
                 
-                // Available space for text (minus padding and icon)
-                const availableWidth = rect.width - paddingLeft - paddingRight - 30; // 30px for icon
-                
-                // Estimate text width (rough: 8px per character for name, 6px for years)
                 const nameEl = bar.querySelector('.name');
                 const yearsEl = bar.querySelector('.years');
                 
@@ -662,7 +753,6 @@
                     const yearsWidth = yearsEl.textContent.length * 6;
                     const totalTextWidth = Math.max(nameWidth, yearsWidth) + 10;
                     
-                    // Show text only if it fits
                     if (availableWidth >= totalTextWidth && zoom >= 75) {
                         bar.classList.remove('hide-text');
                     } else {
@@ -686,7 +776,12 @@
             }
         });
         
-        // Initialize
+        // Sync horizontal scroll between header and content
+        const headerInner = document.getElementById('timeline-header-inner');
+        timelineScroll.addEventListener('scroll', function() {
+            headerInner.style.transform = 'translateX(-' + this.scrollLeft + 'px)';
+        });
+        
         updateZoom();
     </script>
 </body>
