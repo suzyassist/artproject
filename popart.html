@@ -3,467 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Art - Kunstgeschiedenis</title>
+    <title>Pop Art - Politiek Perspectief | Kunstgeschiedenis</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .featured-artwork {background: linear-gradient(135deg, #FF1493 0%, #FFD700 50%, #00BFFF 100%);color:white;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
-        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
-        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
-        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
-        .artwork-header {border-bottom: 3px solid #FF1493;margin-bottom: 1.5rem;padding-bottom: 1rem;}
-        .style-analysis-box {background: #fff0f5;border-left: 4px solid #FF1493;padding: 1.5rem;margin: 1rem 0;}
-        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
-        .style-item {background:#ffe4ec;padding:1rem;border-radius:4px;border:2px solid #FF1493}
-        .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
-        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
-    
-        .page-navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--white);
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            gap: 1rem;
-        }
-        .page-navigation a {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
-            background: var(--secondary);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
-        }
-        .page-navigation a:hover {
-            background: var(--accent);
-            color: var(--primary);
-            transform: translateY(-2px);
-        }
-        .page-navigation .prev::before {
-            content: "←";
-            font-size: 1.2rem;
-        }
-        .page-navigation .next::after {
-            content: "→";
-            font-size: 1.2rem;
-        }
-        .page-navigation .home {
-            background: var(--accent);
-            color: var(--primary);
-        }
-        @media (max-width: 600px) {
-            .page-navigation {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .page-navigation a {
-                font-size: 0.85rem;
-                padding: 0.6rem 1rem;
-            }
-        }
-        @media (max-width: 768px) {
-        }
-    
-    </style>
 </head>
 <body>
-    <header><h1>🍿 Pop Art</h1><p class="subtitle">1955-1970 · Kunst voor de massa</p></header>
-    <nav class="top-nav">
-        <a href="abstract.html" class="nav-prev">← 🎨 Abstract Expressionisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="minimalisme.html" class="nav-next">Minimalisme ⬜ →</a>
+    <nav>
+        <a href="index.html">← Terug naar Overzicht</a>
     </nav>
-
-    <!-- Hamburger Menu Button -->
-    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
-
-    <!-- Sidebar Navigation -->
-    <nav id="sidebar" class="side-nav">
-        <div class="side-nav-header">
-            <h3>🎨 Kunststromingen</h3>
-            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
-        </div>
-        <div class="side-nav-content">
-            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
-            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
-            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
-            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
-            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
-            <a href="manierisme.html" class="side-nav-link"><span class="nav-icon">🎭</span><span class="nav-text">Maniërisme</span></a>
-            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
-            <a href="rococo.html" class="side-nav-link"><span class="nav-icon">🎀</span><span class="nav-text">Rococo</span></a>
-            <a href="neoclassicisme.html" class="side-nav-link"><span class="nav-icon">⚱️</span><span class="nav-text">Neoclassicisme</span></a>
-            <a href="romanticisme.html" class="side-nav-link"><span class="nav-icon">🌊</span><span class="nav-text">Romantiek</span></a>
-            <a href="realisme.html" class="side-nav-link"><span class="nav-icon">🌾</span><span class="nav-text">Realisme</span></a>
-            <a href="impressionisme.html" class="side-nav-link"><span class="nav-icon">☀️</span><span class="nav-text">Impressionisme</span></a>
-            <a href="postimpressionisme.html" class="side-nav-link"><span class="nav-icon">🌻</span><span class="nav-text">Post-Impressionisme</span></a>
-            <a href="symbolisme.html" class="side-nav-link"><span class="nav-icon">🌙</span><span class="nav-text">Symbolisme</span></a>
-            <a href="artnouveau.html" class="side-nav-link"><span class="nav-icon">🌿</span><span class="nav-text">Art Nouveau</span></a>
-            <a href="fauvisme.html" class="side-nav-link"><span class="nav-icon">🦁</span><span class="nav-text">Fauvisme</span></a>
-            <a href="expressionisme.html" class="side-nav-link"><span class="nav-icon">😱</span><span class="nav-text">Expressionisme</span></a>
-            <a href="kubisme.html" class="side-nav-link"><span class="nav-icon">🔲</span><span class="nav-text">Kubisme</span></a>
-            <a href="futurisme.html" class="side-nav-link"><span class="nav-icon">⚡</span><span class="nav-text">Futurisme</span></a>
-            <a href="dadaisme.html" class="side-nav-link"><span class="nav-icon">🎲</span><span class="nav-text">Dadaïsme</span></a>
-            <a href="destijl.html" class="side-nav-link"><span class="nav-icon">⬜</span><span class="nav-text">De Stijl</span></a>
-            <a href="surrealisme.html" class="side-nav-link"><span class="nav-icon">🦋</span><span class="nav-text">Surrealisme</span></a>
-            <a href="abstract.html" class="side-nav-link"><span class="nav-icon">🔥</span><span class="nav-text">Abstract Expressionisme</span></a>
-            <a href="popart.html" class="side-nav-link active"><span class="nav-icon">🍿</span><span class="nav-text">Pop Art</span></a>
-            <a href="minimalisme.html" class="side-nav-link"><span class="nav-icon">⬛</span><span class="nav-text">Minimalisme</span></a>
-            <a href="conceptueel.html" class="side-nav-link"><span class="nav-icon">💡</span><span class="nav-text">Conceptuele Kunst</span></a>
-            <a href="postmodernisme.html" class="side-nav-link"><span class="nav-icon">🌀</span><span class="nav-text">Postmodernisme</span></a>
-            <a href="hedendaags.html" class="side-nav-link"><span class="nav-icon">🌐</span><span class="nav-text">Hedendaagse Kunst</span></a>
-            <a href="digitaal.html" class="side-nav-link"><span class="nav-icon">💻</span><span class="nav-text">Digitale Kunst</span></a>
-        </div>
-    </nav>
-
-    <!-- Overlay -->
-    <div id="overlay" class="nav-overlay"></div>
-
-    <script>
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.add('open');
-            document.getElementById('overlay').classList.add('show');
-            document.body.style.overflow = 'hidden';
-        });
-
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.getElementById('overlay').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.getElementById('sidebar').classList.remove('open');
-                document.getElementById('overlay').classList.remove('show');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
-
+    
+    <header>
+        <h1>Pop Art (ca. 1950-1970)</h1>
+        <h2>Politiek Perspectief</h2>
+    </header>
     
     <main>
-        <section class="movement-header">
-            <div class="featured-artwork">
-                <h2>Meesterwerk: Marilyn Monroe</h2>
-                <p class="featured-artist">Andy Warhol, 1962</p>
-                <img src="images/popart/01_warhol_marilyn.jpg" alt="Warhol - Marilyn">
-            </div>
+        <section class="context">
+            <h3>Politieke Context</h3>
+            <p>De Pop Art ontstond in de jaren '50 en '60, een periode van economische bloei in het Westen, de Koude Oorlog, en massaconsumptie. Kunstenaars reageerden op de overweldigende aanwezigheid van reclame, merken en media in het dagelijks leven, en transformeerden commercieel beeldmateriaal tot politieke commentaren op de samenleving.</p>
         </section>
-
-        <section class="content-section">
-            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
+        
+        <section class="analysis">
+            <h3>Stijlfiguren & Thema's</h3>
             
-            <div class="style-grid">
-                <div class="style-item">
-                    <h4>🍿 MASSACULTUUR</h4>
-                    <p><strong>Comics, reclame, film:</strong> Pop Art neemt beelden uit de massamedia. Mickey Mouse, soepblikken, filmsterren - het is allemaal materiaal voor kunst.</p>
-                    <p><strong>Consumentisme:</strong> Het viert én bekritiseert het kapitalisme. We zijn wat we kopen.</p>
-                </div>
+            <div class="theme-block">
+                <h4>1. Consumerisme & Kapitalisme</h4>
                 
-                <div class="style-item">
-                    <h4>🍿 REPRODUCTIE</h4>
-                    <p><strong>Serieproductie:</strong> Warhol's zeefdrukken, multiples. Het unieke kunstwerk is dood - lang leve de reproductie!</p>
-                    <p><strong>Mechanische technieken:</strong> Geen penseelstreken, maar druktechnieken. De machine maakt de kunst.</p>
-                </div>
+                <h5>Stijlfiguren</h5>
+                <ul class="style-list">
+                    <li><strong>Primary Colors:</strong> Opgewekte, synthetische kleurenpaletten (geel, rood, blauw) ontleend aan advertenties en productverpakkingen die de energie van de consumptiemaatschappij reflecteren.</li>
+                    <li><strong>Halftone Pattern:</strong> De rasterpunten-techniek uit de drukkerij, waarbij afbeeldingen worden opgebouwd uit kleine gekleurde stippen, direct ontleend aan goedkope drukwerk en strips.</li>
+                    <li><strong>Comic Strip Aesthetic:</strong> Dikke zwarte contouren, spraakballonnen, en onomatopeeën (WHAM! POW!) die de visuele taal van massamedia overnemen.</li>
+                    <li><strong>Flat Colors:</strong> Gebrek aan diepte of schaduw, waardoor het werk er mechanisch en industrieel uitziet.</li>
+                </ul>
                 
-                <div class="style-item">
-                    <h4>🍿 IRONIE</h4>
-                    <p><strong>Serieus spel:</strong> Is het kritiek of viering? Pop Art doet allebei tegelijk. Het is cool, afstandelijk, grappig.</p>
-                    <p><strong>Camp:</strong> Kitsch wordt kunst. Een soepblik is mooi omdat het banaliteit verheft.</p>
-                </div>
+                <h5>Thematiek</h5>
+                <ul>
+                    <li><strong>Commodity Fetishism:</strong> Het verheffen van alledaagse producten (soepblikken, frisdrank) tot kunstobjecten onthult de irrationele waarde die kapitalisme aan consumptiegoederen toekent.</li>
+                    <li><strong>Luxury Culture Critique:</strong> Door beroemdheden en merken uit te beelden, spiegelt Pop Art de obsessie met status en rijkdom.</li>
+                    <li><strong>Advertising Parody:</strong> De onpersoonlijke, repetitieve aard van reclame wordt gekopieerd en daarmee bekritiseerd.</li>
+                </ul>
                 
-                <div class="style-item">
-                    <h4>🍿 BEN POPHAM</h4>
-                    <p><strong>Brits vs Amerikaans:</strong> Engelse Pop Art is intellectueel (Hamilton), Amerikaanse is hard en commercieel (Warhol, Lichtenstein).</p>
-                    <p><strong>Swinging Sixties:</strong> De tijd van The Beatles, minirokken, Londen als cultureel centrum.</p>
-                </div>
+                <p class="interpretation"><strong>Interpretatie:</strong> Pop Art houdt de consumptiemaatschappij een spiegel voor door haar eigen visuele taal te gebruiken. De heldere kleuren en commerciële esthetiek zijn geen viering maar een kritische reflectie op hoe kapitalisme cultuur koloniseert.</p>
+                
+                <p class="reference"><strong>Voorbeeld:</strong> Andy Warhols <em>Campbell's Soup Cans</em> (1962) en <em>Marilyn Diptych</em> (1962).</p>
             </div>
-
-                    <section class="content-section">
-            <h2>📚 TIJDSGEEST CONTEXT (1955-1970)</h2>
             
-            <div class="timeline-box">
-                <h3>🌍 POLITIEK PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De wederopbouw na WOII leidt tot welvaart en consumentisme</li>
-                    <li>De "Golden Age of Capitalism"</li>
-                    <li>Maar ook: Vietnam, burgerrechten, seksuele revolutie</li>
-                    <li>Pop Art is zowel apolitiek als politiek - het toont de oppervlakte van de samenleving</li>
+            <div class="theme-block">
+                <h4>2. Anti-elitisme & Democratisering</h4>
+                
+                <h5>Stijlfiguren</h5>
+                <ul class="style-list">
+                    <li><strong>Mass Production Aesthetic:</strong> Serigraaf (zeefdruk) maakt identieke kopieën mogelijk, waardoor kunst net als industriële producten reproduceerbaar wordt.</li>
+                    <li><strong>Everyday Objects:</strong> Alledaagse voorwerpen (blikjes, wasmachines, hamburgers) worden tot kunst verheven, waarmee de grens tussen "hoge" en "lage" cultuur vervaagt.</li>
+                    <li><strong>Repetition:</strong> Het herhalen van hetzelfde beeld (zoals 32 soepblikken of 50 Marilyn's) benadrukt de massaproductie en vermindert de uniciteit van het kunstwerk.</li>
+                    <li><strong>Appropriation:</strong> Het direct overnemen van bestaande beelden uit media reclame ontkracht het idee van de "geniale kunstenaar" als enige schepper.</li>
                 </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>📖 LITERAIR PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De Beat Generation wordt de Pop Generation</li>
-                    <li>Andy Warhol's "Factory" als nieuw literair salon</li>
-                    <li>magazines als LIFE en Time bepalen het beeld</li>
-                    <li>De cultuur van het celebrity - iedereen kan beroemd zijn voor 15 minuten (Warhol)</li>
+                
+                <h5>Thematiek</h5>
+                <ul>
+                    <li><strong>Art for Everyone:</strong> Door goedkope reproductietechnieken en herkenbare onderwerpen wordt kunst toegankelijk voor een breed publiek.</li>
+                    <li><strong>Snobbery vs Accessibility:</strong> Pop Art daagt de intellectuele elitisme van Abstract Expressionisme uit door populaire cultuur serieus te nemen.</li>
+                    <li><strong>Democratization of Taste:</strong> De scheiding tussen "fijne kunst" en "commerciële kunst" wordt doorbroken.</li>
                 </ul>
+                
+                <p class="interpretation"><strong>Interpretatie:</strong> Pop Art is anti-elitistisch door kunst te ontdoen van auratische uniciteit. Door massaproductie-technieken te gebruiken, stelt Pop Art dat kunst niet exclusief hoort te zijn. De stijlfiguren benadrukken dat in een democratische samenleving ook de visuele cultuur van de massa kunstwaardig is.</p>
+                
+                <p class="reference"><strong>Voorbeeld:</strong> Roy Lichtensteins <em>Look Mickey</em> (1961) en Claes Oldenburgs <em>Floor Burger</em> (1962).</p>
             </div>
-            <div class="timeline-box">
-                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Oppervlakte is diepgang</li>
-                    <li>De "coolness" van Pop Art - geen emotie, geen expressie, alleen het beeld</li>
-                    <li>McLuhan: "The medium is the message</li>
-                    <li>" Identiteit wordt gevormd door wat we consumeren</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>⚙️ HISTORISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Televisie wordt massaal - 90% van Amerikaanse huizen heeft een TV in 1960</li>
-                    <li>De ruimtevaart (1969) verandert het wereldbeeld</li>
-                    <li>Plastic, polyester, synthetisch - nieuwe materialen voor een nieuwe wereld</li>
-                    <li>De auto wordt icoon van vrijheid</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🎭 FILOSOFISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Postmodernisme wordt geboren: het einde van "grote verhalen", het einde van originaliteit</li>
-                    <li>Alles is recyclage, remix, sample</li>
-                    <li>Baudrillard's "simulacrum": de kopie is realer dan het origineel</li>
-                    <li>Warhol's Marilyn is "meer" Marilyn dan Marilyn zelf</li>
-                </ul>
-            </div>
-        </section>
-        </section>
-
-        <section class="content-section">
-            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
-
-            <!-- Work 1: Warhol Marilyn -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>1. "Marilyn Diptych" (1962) — Andy Warhol</h3>
-                    <p style="color:#666;font-style:italic;">Tate Modern, Londen · 205 × 145 cm (per paneel) · Zeefdruk op doek</p>
-                </div>
-                <img src="images/popart/01_warhol_marilyn.jpg" loading="lazy" alt="Warhol Marilyn">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Gemaakt na Monroe's dood in 1962. Warhol gebruikte een publiciteitsfoto uit 1953. 50 keer hetzelfde gezicht, in felle kleuren en zwart-wit. Het icoon van de icoon.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Herhaling:</strong> 50 identieke beelden, maar elk anders gekleurd. Het massamedium (publiciteitsfoto) wordt kunst door herhaling. Meer is meer.</p>
-                        <p><strong>Zeefdruk:</strong> De techniek is mechanisch, niet handwerk. Je ziet de "fouten" - de inkt is niet perfect verdeeld. Dit maakt het menselijk én machine.</p>
-                        <p><strong>Morte:</strong> De zwart-wit panelen aan de rechterkant suggereren verval, dood. Marilyn als martelaar van de roem. Het is een modern icoon, een heilige voor de massa.</p>
-                        <p><strong>Commodificatie:</strong> Monroe is een product geworden, net als Warhol's soepblikken. Het werk vraagt: wie bezit haar beeld? Zij, de studio's, of wij?</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 2: Lichtenstein Whaam -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>2. "Whaam!" (1963) — Roy Lichtenstein</h3>
-                    <p style="color:#666;font-style:italic;">Tate Modern, Londen · 174 × 407 cm · Acryl en olieverf op doek</p>
-                </div>
-                <img src="images/popart/02_lichtenstein_wham.jpg" loading="lazy" alt="Lichtenstein Whaam">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Gebaseerd op een paneel uit een oorlogsstrip (All-American Men of War). Lichtenstein vergroot het kleine stripplaatje tot een monumentaal schilderij. De banaliteit van oorlog wordt kunst.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Ben-Day dots:</strong> De kenmerkende stippen van strips, handgeschilderd! Lichtenstein imiteert de machine met de hand. Het is ambachtelijk fake.</p>
-                        <p><strong>Compositie:</strong> Twee panelen - links het aanvalsvliegtuig, rechts de explosie. Het is bijna abstract, maar het verhaal is duidelijk. Oorlog als entertainment.</p>
-                        <p><strong>Tekst:</strong> "WHAAM!" en "I pressed the fire control..." De tekst maakt het strip, maakt het narratief. Maar het is leeg - geen emotie, alleen actie.</p>
-                        <p><strong>Vietnam:</strong> 1963 is het begin van de Vietnam-oorlog. Dit werk is geen protest, maar het toont de verbeelding van oorlog in de populaire cultuur. Het is kritiek door imitatie.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 3: Oldenburg Floor Burger -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>3. "Floor Burger" (1962) — Claes Oldenburg</h3>
-                    <p style="color:#666;font-style:italic;">Art Gallery of Ontario · 132 × 244 cm · Canvas gevuld met schuimrubber</p>
-                </div>
-                <img src="images/popart/03_oldenburg_floor.jpg" loading="lazy" alt="Oldenburg Floor Burger">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een reusachtige cheeseburger die op de vloer ligt. Oldenburg's "soft sculptures" - het harde wordt zacht, het kleine wordt groot. Fast food als monument.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Schaal:</strong> Een burger van meer dan 2 meter! Het alledaagse wordt absurd. Je moet eromheen lopen, eronder door kruipen. Het domineert de ruimte.</p>
-                        <p><strong>Soft sculpture:</strong> Het is van canvas en schuim, niet brons of steen. Het is knuffelbaar, slap, menselijk. De "hardness" van kunst wordt zacht.</p>
-                        <p><strong>Fast food:</strong> De cheeseburger is het ultieme Amerikaanse symbool - snel, goedkoop, overal. Oldenburg maakt er een heiligdom van. Het is bijna een parodie op het consumeren.</p>
-                        <p><strong>Ligging:</strong> Het ligt op de vloer, niet op een sokkel. Het is laag, nederig, toegankelijk. Geen museumafstand, maar intimiteit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 4: Wesselmann Still Life -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>4. "Still Life #35" (1963) — Tom Wesselmann</h3>
-                    <p style="color:#666;font-style:italic;">Privécollectie · 244 × 305 cm · Gemengde media op doek</p>
-                </div>
-                <img src="images/popart/04_wesselmann_still.jpg" loading="lazy" alt="Wesselmann Still Life">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Wesselmann's "Great American Nude" serie combineert naakten met reclame, producten, de Amerikaanse droom. Het stilleven wordt levend, commercieel, erotisch.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Collage:</strong> Reclame-uitknipsels, echte objecten (telefoon, lamp), geschilderde delen. Het is een explosie van consumptie en verlangen.</p>
-                        <p><strong>Kleur:</strong> Felle, onnatuurlijke kleuren - de kleuren van reclame, van billboards. Het is visueel lawaai, informatie-overload.</p>
-                        <p><strong>Vrouw als object:</strong> Het naakt is gefragmenteerd - borsten, mond, benen. Het vrouwelijk lichaam als consumentengoed, net als de Coca-Cola en de televisie.</p>
-                        <p><strong>Americana:</strong> Dit ís Amerika in 1963: tv-diners, commerciële seks, plastic geluk. Wesselmann portretteert het zonder oordeel, maar de kritiek is impliciet.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 5: Rosenquist President Elect -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>5. "President Elect" (1960-61) — James Rosenquist</h3>
-                    <p style="color:#666;font-style:italic;">MoMA, New York · 198 × 363 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/popart/05_rosenquist_president.jpg" loading="lazy" alt="Rosenquist President Elect">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> John F. Kennedy's gezicht, een cake, een auto. Rosenquist, ex-billboard schilder, gebruikt reclametechnieken voor politieke kritiek. De American Dream als verkooppraatje.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Fragmentatie:</strong> Het beeld is opgedeeld in vakken, zoals billboards langs de snelweg. Je ziet het even, dan is het voorbij. De politiek als reclame.</p>
-                        <p><strong>Associatie:</strong> Kennedy + cake + auto = de belofte van geluk. Maar het is leeg, oppervlakkig. De cake is nep, de auto is een advertentie.</p>
-                        <p><strong>Schaal:</strong> Bijna 4 meter breed! Het overweldigt, net als politieke campagnes. Het is propaganda, maar dan als kunst ontmanteld.</p>
-                        <p><strong>Voorspellend:</strong> Geschilderd voor Kennedy's dood, toont het al de mythevorming. De president als product, als consumptiegoed.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 6: Hamilton Just What Is It -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>6. "Just what is it that makes today's homes so different, so appealing?" (1956) — Richard Hamilton</h3>
-                    <p style="color:#666;font-style:italic;">Kunsthalle Tübingen · 26 × 25 cm · Collage op papier</p>
-                </div>
-                <img src="images/popart/06_hamilton_just.jpg" loading="lazy" alt="Hamilton Just What Is It">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Het eerste Pop Art werk - een collage die de "This is Tomorrow" tentoonstelling aankondigt. De titel vraagt ironisch: wat maakt ons modern? Alles en niets.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Collage:</strong> Uitgeknipte beelden uit Amerikaanse magazines. Het is een puzzle van de moderne wereld. Niets is origineel, alles is geleend.</p>
-                        <p><strong>De naakte man:</strong> Met een lolly als torpedo, voor een Ford logo. De consument als naakte aap, gestuurd door verlangen en merken.</p>
-                        <p><strong>De stripvrouw:</strong> Op de bank, naakt, met een lamp als hoed. Ze is een object, een meubelstuk. De vrouw als interieurdecoratie.</p>
-                        <p><strong>Ironie:</strong> De titel vraagt serieus, maar het antwoord is absurd. Het is een kritiek op de moderniteit, verpakt als viering. Britse intellectuele Pop Art.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 7: Warhol Campbell's Soup -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>7. "Campbell's Soup Cans" (1962) — Andy Warhol</h3>
-                    <p style="color:#666;font-style:italic;">MoMA, New York · 32 stukken van 51 × 41 cm · Polymerverf op doek</p>
-                </div>
-                <img src="images/popart/07_warhol_soup.jpg" loading="lazy" alt="Warhol Soup Cans">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> 32 soorten soep, handgeschilderd maar lijkend op drukwerk. Warhol's doorbraak - van illustrator tot kunstenaar. Het banale wordt iconisch.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Serie:</strong> 32 identieke formaten, 32 verschillende smaken. Het supermarktschap als kunstwerk. De keuze is oneindig, maar het is allemaal hetzelfde.</p>
-                        <p><strong>Hand vs machine:</strong> Geschilderd, maar zo vlak mogelijk. Warhol wilde het "niet-geschilderde" schilderen. Het is ambachtelijk antikunst.</p>
-                        <p><strong>Consumptie:</strong> "I used to drink it. I used to have the same lunch every day." Warhol's obsessie met herhaling, met het alledaagse.</p>
-                        <p><strong>Merken:</strong> Campbell's is een merk, een logo. Warhol maakt het heilig. Het is een kritiek op de commerciële cultuur door die cultuur te omarmen.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 8: Lichtenstein Drowning Girl -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>8. "Drowning Girl" (1963) — Roy Lichtenstein</h3>
-                    <p style="color:#666;font-style:italic;">MoMA, New York · 172 × 170 cm · Olieverf en synthetische polymeren op doek</p>
-                </div>
-                <p style="text-align:center;color:#999;font-style:italic;">[Afbeelding momenteel niet beschikbaar - alternatief wordt gezocht]</p>
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Gebaseerd op een paneel uit het comic "Run for Love!" (Secret Hearts #83). Een vrouw verdrinkt, maar denkt: "I don't care! I'd rather sink than call Brad for help!" Drama als cliché.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Comic esthetiek:</strong> De stippen, de dikke zwarte lijnen, de tekstballon. Lichtenstein vergroot het kleine tot monumentaal. De "lage" kunst wordt "hoog".</p>
-                        <p><strong>Emotie:</strong> Ze verdrinkt, maar de tekst is stoer, onverschillig. Het is parodie op vrouwen in comics - altijd in nood, altijd dramatisch.</p>
-                        <p><strong>Golf:</strong> De golvende zee is abstract, decoratief. Het is bijna Japans, zoals Hokusai's "Grote Golf". Pop Art en traditionele kunst ontmoeten elkaar.</p>
-                        <p><strong>Brad:</strong> Wie is Brad? Het maakt niet uit. Het is een naam, een archetype. Het is het verhaal van elke vrouw in nood, in elke soap, ooit.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 9: Johns Three Flags -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>9. "Three Flags" (1958) — Jasper Johns</h3>
-                    <p style="color:#666;font-style:italic;">Whitney Museum, New York · 78 × 116 cm · Encaustic (heet was) op doek</p>
-                </div>
-                <img src="images/popart/09_johns_flag.jpg" loading="lazy" alt="Johns Three Flags">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Drie vlaggen, steeds kleiner, als een telescoop. Johns schilderde "dingen die al bekend zijn". De vlag als icoon, als abstractie, als vragensteller.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Encaustic:</strong> Heete was met pigment - een oude techniek. Het oppervlak is ruw, tactiel, bijna sculpturaal. Je wilt het aanraken.</p>
-                        <p><strong>Drie lagen:</strong> De grootste vlag is voor, de kleinste achter. Het is een put, een oneindige regressie. Hoeveel vlaggen zijn er? Drie? Oneindig?</p>
-                        <p><strong>Bekend vs gezien:</strong> We zien vlaggen elke dag, maar kijken we? Johns forceert ons te kijken. Het bekende wordt vreemd.</p>
-                        <p><strong>Patriotisme:</strong> Is het een viering of een vraag? Johns weigerde te zeggen. Het is een vlag, maar ook slechts verf op doek. Semiotiek als kunst.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 10: Dine Car Crash -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>10. "The Car Crash" (1960) — Jim Dine</h3>
-                    <p style="color:#666;font-style:italic;">Privécollectie · 183 × 244 cm · Olieverf, collage en voorwerpen op doek</p>
-                </div>
-                <img src="images/popart/10_dine_car.jpg" loading="lazy" alt="Dine Car Crash">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Dine's "Happening" periode - het schilderij als theater. Een auto-ongeluk, een rood kruis, echte voorwerpen geplakt op het doek. Het is agressief, chaotisch, fysiek.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Assemblage:</strong> Geschilderd én echte dingen - een hamer, stukken hout. Het doek wordt reliëf, sculptuur. De grens tussen schilderij en object vervaagt.</p>
-                        <p><strong>Trauma:</strong> Auto-ongelukken zijn Amerikaans - snelheid, dood, film. Maar het rood is ook hart, liefde. Het is een gevoel van crisis.</p>
-                        <p><strong>Actie:</strong> Dine maakte dit tijdens performances. Het schilderen werd theater, lichamelijk, spontaan. Abstract Expressionisme ontmoet Pop Art.</p>
-                        <p><strong>Persoonlijk:</strong> Andere Pop Art is cool, afstandelijk. Dine is emotioneel, ruw. Het is meer als de Expressionisten - kunst als catharsis.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="content-section">
-            <h2>📚 CONCLUSIE: WE ARE WHAT WE BUY</h2>
             
-            <div class="timeline-box">
-                <p>Pop Art leert ons:</p>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li><strong>Dat alles beeld is:</strong> Van Marilyn tot een soepblik - het is allemaal icoon</li>
-                    <li><strong>Dat kopieën realer zijn:</strong> Warhol's Marilyn is "meer" Marilyn dan zijzelf</li>
-                    <li><strong>Dat kunst commercieel kan zijn:</strong> En toch kunst blijven</li>
-                    <li><strong>Dat ironie wapen is:</strong> Lachen om de consumentencultuur is ook kritiek</li>
-                    <li><strong>Dat massa ≠ slecht:</strong> Comics en reclame zijn ook esthetisch</li>
+            <div class="theme-block">
+                <h4>3. Political Dissent & Anti-war</h4>
+                
+                <h5>Stijlfiguren</h5>
+                <ul class="style-list">
+                    <li><strong>Political Slogans:</strong> Korte, krachtige teksten ontleend aan demonstraties en propaganda die direct appelleren aan de kijker.</li>
+                    <li><strong>War Imagery:</strong> Afbeeldingen van militairen, wapens, en strijd direct uit strips en nieuwsmedia, maar vervreemd door felle kleuren en vergroting.</li>
+                    <li><strong>Critique of Consumerism:</strong> Door oorlogsbeelden te combineren met commerciële esthetiek, onthult Pop Art de link tussen oorlogseconomie en consumptiemaatschappij.</li>
+                    <li><strong>Dissonant Juxtaposition:</strong> Het naast elkaar plaatsen van vrolijke kleuren met gewelddadige onderwerpen creëert cognitieve dissonantie.</li>
                 </ul>
-                <p>Pop Art is de brug naar Postmodernisme: het einde van het origineel, het tijdperk van de simulatie.</p>
+                
+                <h5>Thematiek</h5>
+                <ul>
+                    <li><strong>War Propaganda Critique:</strong> Pop Art laat zien hoe media oorlog "verkopen" via gestileerde, heldere beelden die het geweld maskeren.</li>
+                    <li><strong>Political Engagement:</strong> In de jaren '60, met de Vietnamoorlog en burgerrechtenbeweging, gebruiken kunstenaars Pop Art-taal voor directe kritiek.</li>
+                    <li><strong>Consumerism vs Violence:</strong> De parallel tussen de manier waarop zowel producten als oorlogen worden "gemarket".</li>
+                </ul>
+                
+                <p class="interpretation"><strong>Interpretatie:</strong> Pop Art functioneert als politieke kritiek door de visuele strategieën van propaganda en commercie te kopiëren en daarmee te ontmaskeren. De vrolijke, vlakke stijl waarin oorlogsbeelden worden gepresenteerd toont hoe media geweld normaliseert en esthetiseert.</p>
+                
+                <p class="reference"><strong>Voorbeeld:</strong> James Rosenquists <em>F-111</em> (1964) en Eduardo Paolozzi's collages met militaire beelden.</p>
             </div>
+            
+            <div class="theme-block">
+                <h4>4. Media Influence & Commercialization</h4>
+                
+                <h5>Stijlfiguren</h5>
+                <ul class="style-list">
+                    <li><strong>Graphic Design Techniques:</strong> Lettertypes, lay-outs, en composities ontleend aan advertenties, tijdschriften en posters.</li>
+                    <li><strong>Brand Logos:</strong> Directe weergave van merklogo's (Coca-Cola, Campbell's, Brillo) die de alomtegenwoordigheid van bedrijven in het dagelijks leven tonen.</li>
+                    <li><strong>Television Aesthetic:</strong> Beelden met laag contrast, rasterpatronen, en de "gekleurde" kvaliteit van tv-schermen die de overheersing van elektronische media weerspiegelen.</li>
+                    <li><strong>Appropriated Photography:</strong> Het direct kopiëren van persfoto's en mediabeelden zonder auteursrechtelijke schroom.</li>
+                </ul>
+                
+                <h5>Thematiek</h5>
+                <ul>
+                    <li><strong>Media Manipulation:</strong> Pop Art toont hoe media onze perceptie van realiteit vormen door beelden te herhalen, uit te vergroten, en te isoleren.</li>
+                    <li><strong>Commercial Culture:</strong> De volledige infiltratie van commercie in de persoonlijke levenssfeer wordt zichtbaar door alledaagse objecten te isoleren en te verheffen.</li>
+                    <li><strong>Truth vs Illusion:</strong> Door de kunstmatigheid van mediabeelden te benadrukken (rasterpunten, vlakke kleuren), stelt Pop Art vragen over wat "echt" is in een door media gedomineerde wereld.</li>
+                </ul>
+                
+                <p class="interpretation"><strong>Interpretatie:</strong> Pop Art functioneert als een media-archeologie die de visuele taal van commercie en televisie ontleedt. Door deze technieken te isoleren en te intensiveren, toont Pop Art hoe media realiteit construeren in plaats van slechts weer te geven. De stijlfiguren zijn geen esthetische keuzes maar politieke statements over de machtsstructuren achter beeldvorming.</p>
+                
+                <p class="reference"><strong>Voorbeeld:</strong> Warhols <em>Green Coca-Cola Bottles</em> (1962) en Lichtensteins <em>Whaam!</em> (1963).</p>
+            </div>
+        </section>
+        
+        <section class="summary">
+            <h3>Conclusie</h3>
+            <p>De politieke kracht van Pop Art ligt niet in expliciete boodschappen, maar in de <strong>subversieve adoptie</strong> van de visuele taal van kapitalisme en media. Door heldere kleuren, halftones, strips-esthetiek, en massaproductie-technieken te gebruiken, houdt Pop Art de consumptiemaatschappelijk een spiegel voor. De stijlfiguren zijn politieke instrumenten die de grenzen tussen kunst en commercie, elite en massa, en waarheid en illusie onderzoeken en ondermijnen.</p>
         </section>
     </main>
-
-        <nav class="bottom-nav">
-        <a href="abstract.html" class="nav-prev">← 🎨 Abstract Expressionisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="minimalisme.html" class="nav-next">Minimalisme ⬜ →</a>
-    </nav>
-
+    
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
-
+        <p>© 2025 Kunstgeschiedenis Project | <a href="index.html">Terug naar overzicht</a></p>
     </footer>
 </body>
 </html>
