@@ -3,20 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Stijl - Kunstgeschiedenis</title>
+    <title>De Stijl - Politiek Perspectief</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .featured-artwork {background: linear-gradient(135deg, #FF0000 0%, #FFFFFF 50%, #0000FF 100%);color:black;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
-        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
-        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
-        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
-        .artwork-header {border-bottom: 3px solid #000;margin-bottom: 1.5rem;padding-bottom: 1rem;}
-        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #000;padding: 1.5rem;margin: 1rem 0;}
-        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
-        .style-item {background:#fff;padding:1rem;border-radius:4px;border:2px solid #000}
-        .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
-        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
-    
+        .political-header {
+            background: linear-gradient(135deg, #FF0000 0%, #FFFF00 50%, #0000FF 100%);
+            color: black;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .style-element-box {
+            background: #f9f9f9;
+            border-left: 4px solid #000;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .political-point {
+            background: white;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .style-figures {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .interpretation {
+            background: #e7f3ff;
+            border-left: 4px solid #0066cc;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .artwork-ref {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5rem;
+            padding: 0.5rem;
+            background: #f5f5f5;
+        }
         .page-navigation {
             display: flex;
             justify-content: space-between;
@@ -45,18 +74,6 @@
             color: var(--primary);
             transform: translateY(-2px);
         }
-        .page-navigation .prev::before {
-            content: "←";
-            font-size: 1.2rem;
-        }
-        .page-navigation .next::after {
-            content: "→";
-            font-size: 1.2rem;
-        }
-        .page-navigation .home {
-            background: var(--accent);
-            color: var(--primary);
-        }
         @media (max-width: 600px) {
             .page-navigation {
                 flex-wrap: wrap;
@@ -67,23 +84,20 @@
                 padding: 0.6rem 1rem;
             }
         }
-        @media (max-width: 768px) {
-        }
-    
     </style>
 </head>
 <body>
-    <header><h1>⬛ De Stijl</h1><p class="subtitle">1917-1931 · Puur Abstraktie & Universele Harmonie</p></header>
+    <header>
+        <h1>⬛ De Stijl — Politiek Perspectief</h1>
+        <p class="subtitle">1917-1931 · Stijlfiguren als Politieke Statements</p>
+    </header>
     <nav class="top-nav">
         <a href="surrealisme.html" class="nav-prev">← 🦋 Surrealisme</a>
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="abstract.html" class="nav-next">Abstract Expressionisme 🎨 →</a>
     </nav>
 
-    <!-- Hamburger Menu Button -->
     <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
-
-    <!-- Sidebar Navigation -->
     <nav id="sidebar" class="side-nav">
         <div class="side-nav-header">
             <h3>🎨 Kunststromingen</h3>
@@ -91,38 +105,12 @@
         </div>
         <div class="side-nav-content">
             <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
-            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
-            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
-            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
-            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
-            <a href="manierisme.html" class="side-nav-link"><span class="nav-icon">🎭</span><span class="nav-text">Maniërisme</span></a>
-            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
-            <a href="rococo.html" class="side-nav-link"><span class="nav-icon">🎀</span><span class="nav-text">Rococo</span></a>
-            <a href="neoclassicisme.html" class="side-nav-link"><span class="nav-icon">⚱️</span><span class="nav-text">Neoclassicisme</span></a>
-            <a href="romanticisme.html" class="side-nav-link"><span class="nav-icon">🌊</span><span class="nav-text">Romantiek</span></a>
-            <a href="realisme.html" class="side-nav-link"><span class="nav-icon">🌾</span><span class="nav-text">Realisme</span></a>
-            <a href="impressionisme.html" class="side-nav-link"><span class="nav-icon">☀️</span><span class="nav-text">Impressionisme</span></a>
-            <a href="postimpressionisme.html" class="side-nav-link"><span class="nav-icon">🌻</span><span class="nav-text">Post-Impressionisme</span></a>
-            <a href="symbolisme.html" class="side-nav-link"><span class="nav-icon">🌙</span><span class="nav-text">Symbolisme</span></a>
-            <a href="artnouveau.html" class="side-nav-link"><span class="nav-icon">🌿</span><span class="nav-text">Art Nouveau</span></a>
-            <a href="fauvisme.html" class="side-nav-link"><span class="nav-icon">🦁</span><span class="nav-text">Fauvisme</span></a>
-            <a href="expressionisme.html" class="side-nav-link"><span class="nav-icon">😱</span><span class="nav-text">Expressionisme</span></a>
-            <a href="kubisme.html" class="side-nav-link"><span class="nav-icon">🔲</span><span class="nav-text">Kubisme</span></a>
-            <a href="futurisme.html" class="side-nav-link"><span class="nav-icon">⚡</span><span class="nav-text">Futurisme</span></a>
             <a href="dadaisme.html" class="side-nav-link"><span class="nav-icon">🎲</span><span class="nav-text">Dadaïsme</span></a>
             <a href="destijl.html" class="side-nav-link active"><span class="nav-icon">⬜</span><span class="nav-text">De Stijl</span></a>
             <a href="surrealisme.html" class="side-nav-link"><span class="nav-icon">🦋</span><span class="nav-text">Surrealisme</span></a>
             <a href="abstract.html" class="side-nav-link"><span class="nav-icon">🔥</span><span class="nav-text">Abstract Expressionisme</span></a>
-            <a href="popart.html" class="side-nav-link"><span class="nav-icon">🍿</span><span class="nav-text">Pop Art</span></a>
-            <a href="minimalisme.html" class="side-nav-link"><span class="nav-icon">⬛</span><span class="nav-text">Minimalisme</span></a>
-            <a href="conceptueel.html" class="side-nav-link"><span class="nav-icon">💡</span><span class="nav-text">Conceptuele Kunst</span></a>
-            <a href="postmodernisme.html" class="side-nav-link"><span class="nav-icon">🌀</span><span class="nav-text">Postmodernisme</span></a>
-            <a href="hedendaags.html" class="side-nav-link"><span class="nav-icon">🌐</span><span class="nav-text">Hedendaagse Kunst</span></a>
-            <a href="digitaal.html" class="side-nav-link"><span class="nav-icon">💻</span><span class="nav-text">Digitale Kunst</span></a>
         </div>
     </nav>
-
-    <!-- Overlay -->
     <div id="overlay" class="nav-overlay"></div>
 
     <script>
@@ -131,19 +119,16 @@
             document.getElementById('overlay').classList.add('show');
             document.body.style.overflow = 'hidden';
         });
-
         document.getElementById('close-btn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('overlay').classList.remove('show');
             document.body.style.overflow = '';
         });
-
         document.getElementById('overlay').addEventListener('click', function() {
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('overlay').classList.remove('show');
             document.body.style.overflow = '';
         });
-
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 document.getElementById('sidebar').classList.remove('open');
@@ -153,362 +138,167 @@
         });
     </script>
 
-    
     <main>
+        <!-- POLITICAL CONTEXT -->
         <section class="movement-header">
-            <div class="featured-artwork">
-                <h2>Meesterwerk: Compositie met Rood, Geel en Blauw</h2>
-                <p class="featured-artist">Piet Mondrian, 1930</p>
-                <img src="images/destijl/01_mondrian_composition.jpg" alt="Mondrian - Composition">
+            <div class="political-header">
+                <h2>Politieke Context</h2>
+                <p>Nederland tijdens de Eerste Wereldoorlog (1914-1918) — Neutraliteit als broedplaats voor utopische kunst</p>
             </div>
         </section>
 
         <section class="content-section">
-            <h2>⚜️ UITGEBREIDE STIJLFIGUREN</h2>
-            
-            <div class="style-grid">
-                <div class="style-item">
-                    <h4>⬛ ELEMENTAIRE VORMEN</h4>
-                    <p><strong>Rechthoeken en lijnen:</strong> Alleen horizontale en verticale lijnen. Geen diagonalen, geen curves. De essentie van vorm.</p>
-                    <p><strong>Primaire kleuren:</strong> Alleen rood, geel, blauw (plus zwart, wit, grijs). De grondstoffen van alle kleur.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>⚖️ BALANS & EVENWICHT</h4>
-                    <p><strong>Asymmetrische evenwicht:</strong> Geen symmetrie, maar dynamisch evenwicht. De compositie is "correct" zonder spiegelbeeld te zijn.</p>
-                    <p><strong>Verhoudingen:</strong> De "dynamische evenwicht" zoeken tussen grote en kleine vlakken, dikke en dunne lijnen.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>🔲 UNIVERSELE WAARDEN</h4>
-                    <p><strong>Neo-plasticisme:</strong> Van Doesburg's term. Niet persoonlijk, niet nationaal, niet tijdgebonden - universeel.</p>
-                    <p><strong>Harmonie:</strong> Kunst als reflectie van universele orde. De schilderijen zijn filosofische statements.</p>
-                </div>
-                
-                <div class="style-item">
-                    <h4>🏠 TOTALE KUNST</h4>
-                    <p><strong>Gesamtkunstwerk:</strong> Niet alleen schilderkunst, maar ook architectuur, meubels, typografie. Alles in één stijl.</p>
-                    <p><strong>Functionalisme:</strong> Vorm volgt functie. Kunst moet bruikbaar zijn, niet alleen mooi.</p>
-                </div>
-            </div>
-
-                    <section class="content-section">
-            <h2>📚 TIJDSGEEST CONTEXT (1917-1931)</h2>
-            
-            <div class="timeline-box">
-                <h3>🌍 POLITIEK PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De Eerste Wereldoorlog (1914-1918) maakt internationale samenwerking onmogelijk</li>
-                    <li>Nederland is neutraal en wordt toevluchtsoord voor kunstenaars</li>
-                    <li>De revolutie in Rusland (1917) inspireert utopische ideeën</li>
-                    <li>De Stijl is utopisch, internationalistisch, pacifistisch - kunst als alternatief voor oorlog</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>📖 LITERAIR PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Het manifest als literair genre - De Stijl publiceert veel theoretische teksten</li>
-                    <li>Theo van Doesburg schrijft gedichten zonder woorden ("woordloos gedicht")</li>
-                    <li>De afwijzing van traditionele narratief</li>
-                    <li>Literatuur moet net als beeldende kunst abstract worden</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De zoektocht naar objectiviteit, het verwerpen van subjectiviteit</li>
-                    <li>De "reinheid" van de geest door abstractie</li>
-                    <li>De mens als deel van universele orde, niet als individu</li>
-                    <li>Mystiek van getallen en verhoudingen (gulden snede)</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>⚙️ HISTORISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>De industriële massaproductie maakt functionalisme mogelijk</li>
-                    <li>De woningnood na WO I vraagt om efficiënte, goedkope architectuur</li>
-                    <li>Nieuwe materialen: gewapend beton, staal, glas</li>
-                    <li>De Stijl-architectuur is modern, hygiënisch, licht</li>
-                </ul>
-            </div>
-            <div class="timeline-box">
-                <h3>🎭 FILOSOFISCH PERSPECTIEF</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li>Neoplatonisme: de wereld van ideeën boven de zintuiglijke wereld</li>
-                    <li>Hetosophie (Blavatsky): universele spirituele waarheden</li>
-                    <li>De utopie van een nieuwe samenleving door kunst</li>
-                    <li>De Stijl is een religie zonder God - de abstractie als heilig</li>
-                </ul>
-            </div>
-        </section>
+            <p>De Eerste Wereldoorlog verwoest Europa, maar Nederland blijft neutraal. Deze isolation wordt een toevluchtsoord voor kunstenaars die de chaos ontvluchten. De Russische Revolutie van 1917 inspireert utopische ideeën over een nieuwe samenleving. In deze context ontstaat De Stijl — niet als esthetische beweging, maar als politiek manifest voor een betere wereld.</p>
+            <p>Theo van Doesburg richt in 1917 het tijdschrift "De Stijl" op. De beweging streeft naar universele harmonie boven nationale verdeeldheid, naar collectivisme boven bourgeois individualisme, naar functionalisme boven decadente versiering. Elk visueel element wordt een politieke keuze.</p>
         </section>
 
+        <!-- STYLE FIGURES & THEMES -->
         <section class="content-section">
-            <h2>🏛️ POLITIEK PERSPECTIEF — STIJLFIGUREN & THEMA'S</h2>
+            <h2>🎨 Stijlfiguren & Thema's — Visuele Politiek</h2>
             
-            <div class="style-grid">
-                <div class="style-item">
-                    <h4>🏭 ANTI-INDUSTRIALISME & TECHNOLOGISCHE TEGENARGUMENTEN</h4>
-                    <p><strong>Stijlfiguren:</strong> Geometric abstraction, Dynamic verticality</p>
-                    <p><strong>Thema's:</strong> Organic harmony, Nature > machine</p>
-                    <p><strong>Interpretatie:</strong> De geometrische abstractie verzet zich tegen de rommelige, chaotische esthetiek van de industrialisatie. De verticale lijnen suggereren een alternatieve vitaliteit - organisch, niet mechanisch. Pure vormen als afwijzing van de fabriekscultuur.</p>
-                </div>
+            <!-- Political Point 1: Anti-individualism -->
+            <div class="political-point">
+                <h3>1. Anti-individualisme & Collectivistische Idealen</h3>
                 
-                <div class="style-item">
-                    <h4>👥 ANTI-INDIVIDUALISME & COLLECTIVISTISCHE IDEALEN</h4>
-                    <p><strong>Stijlfiguren:</strong> Horizontality, Balanced asymmetry</p>
-                    <p><strong>Thema's:</strong> Gemeenschap vs individualiteit, Functional art</p>
-                    <p><strong>Interpretatie:</strong> De horizontale composities symboliseren egaliteit - geen element domineert permanent. De decoratieve evenwichtigheid weerspiegelt collectieve harmonie boven persoonlijke expressie. Kunst als gemeenschapsproject, niet als individueel statement.</p>
+                <div class="style-figures">
+                    <h4>📊 Stijlfiguren:</h4>
+                    <ul>
+                        <li><strong>Horizontality (Horizontale compositie):</strong> De platte, horizontale uitstraling van De Stijl-composities symboliseert egaliteit. Geen element domineert permanent; elk vlak heeft evenveel recht op bestaan. Dit is visuele democratie.</li>
+                        <li><strong>Geometric purity (Geometrische zuiverheid):</strong> De reductie tot rechthoeken en primaire kleuren verwerpt persoonlijke stijl. Mondrian's "nieuwe beelding" elimineert het persoonlijke handschrift van de kunstenaar. Het individu verdwijnt in het universele.</li>
+                        <li><strong>Balanced asymmetry (Balancerende asymmetrie):</strong> De composities zijn niet symmetrisch, maar toch in evenwicht. Dit weerspiegelt collectieve harmonie — niet door gelijkheid af te dwingen, maar door organische balans tussen verschillende elementen.</li>
+                    </ul>
                 </div>
-                
-                <div class="style-item">
-                    <h4>⚙️ FUNCTIONALISME & ANTI-DECORATIE</h4>
-                    <p><strong>Stijlfiguren:</strong> Anti-decorative, Functional</p>
-                    <p><strong>Thema's:</strong> Art as function, Kunst als nut</p>
-                    <p><strong>Interpretatie:</strong> Functioneel ontwerp wordt het artistieke doel zelf. De anti-decoratieve benadering is "vlees voor de ziel" - het verwerpt de bourgeois obsessie met versiering. Dit is een politieke keuze: anti-establishment door esthetische soberheid.</p>
+
+                <div class="style-element-box">
+                    <h4>🎭 Thema's:</h4>
+                    <ul>
+                        <li><strong>Gemeenschap vs individualiteit:</strong> De Stijl verwerpt het romantische genie-ideaal. Kunst is geen persoonlijke expressie, maar een bijdrage aan de universele orde.</li>
+                        <li><strong>Functionele kunst:</strong> Kunst moet nuttig zijn voor de samenleving, niet een statussymbool voor de bourgeoisie.</li>
+                        <li><strong>Anti-bourgeois individualisme:</strong> De rijke klasse viert individualiteit door unieke, decoratieve kunst. De Stijl daagt dit uit met universele, sobere vormen.</li>
+                    </ul>
                 </div>
-                
-                <div class="style-item">
-                    <h4>⚡ ANTI-TRADITIONEEL & VERNIEWEND</h4>
-                    <p><strong>Stijlfiguren:</strong> Rectangular forms, Geometric purity</p>
-                    <p><strong>Thema's:</strong> Anti-traditioneel, Moderniteit</p>
-                    <p><strong>Interpretatie:</strong> De rectificatie (rechthoekige vormen) breekt bewust met de ronde, organische traditie. Het platisme introduceert nieuwe waarden - kunst moet vernieuwen, niet herhalen. De geometrische zuiverheid is een manifest voor de toekomst.</p>
+
+                <div class="interpretation">
+                    <h4>💡 Interpretatie:</h4>
+                    <p>De geometrische abstractie en horizontale composities van De Stijl zijn directe aanvallen op het bourgeois individualisme. Door persoonlijke stijl te elimineren, creëren ze een visuele taal die iedereen kan bezitten — niet de elite, maar de gemeenschap. De "nieuwe beelding" is niet esthetisch, maar sociaal: kunst als gereedschap voor een nieuwe, egalitaire samenleving.</p>
+                    <p class="artwork-ref">Referentie: Mondrian's "Compositie met Rood, Geel en Blauw" (1930) — geen persoonlijk verhaal, maar universele verhoudingen.</p>
                 </div>
             </div>
 
-            <div class="timeline-box">
-                <h3>🎨 KERNSTIJLELEMENTEN</h3>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li><strong>Geometric abstraction:</strong> De natuur gereduceerd tot universele vormen</li>
-                    <li><strong>Dynamic verticality:</strong> Opwaartse energie als spiritueel alternatief</li>
-                    <li><strong>Horizontale compositie:</strong> Egaliteit en balans tussen elementen</li>
-                    <li><strong>Balanced asymmetry:</strong> Dynamisch evenwicht zonder symmetrie</li>
-                    <li><strong>Anti-decoratief:</strong> Functionele schoonheid boven oppervlakkige versiering</li>
-                </ul>
+            <!-- Political Point 2: Functionalism -->
+            <div class="political-point">
+                <h3>2. Functionalisme & Anti-decoratie</h3>
+                
+                <div class="style-figures">
+                    <h4>📊 Stijlfiguren:</h4>
+                    <ul>
+                        <li><strong>Anti-decorative (Anti-decoratief):</strong> De volledige afwezigheid van ornament, franje, en decoratie. Elk element moet functioneel zijn. Dit is een visuele aanval op de victoriaanse en Art Nouveau esthetiek van de heersende klasse.</li>
+                        <li><strong>Functional design (Functioneel ontwerp):</strong> De vorm volgt direct uit de functie. Rietveld's "Rood-blauwe Stoel" (1917) is ongemakkelijk, maar conceptueel puur — het stoel-zijn is belangrijker dan het zitten.</li>
+                        <li><strong>Material honesty (Materiaal-eerlijkheid):</strong> Geen vermommingen. Hout ziet eruit als hout, staal als staal. De anti-decoratieve benadering eist transparantie — een metafoor voor sociale eerlijkheid.</li>
+                    </ul>
+                </div>
+
+                <div class="style-element-box">
+                    <h4>🎭 Thema's:</h4>
+                    <ul>
+                        <li><strong>Kunst als nut:</strong> De Stijl verwerpt "l'art pour l'art". Kunst moet bijdragen aan de maatschappij, niet eraan ontsnappen.</li>
+                        <li><strong>Anti-bourgeois comfort:</strong> De bourgeoisie viert comfort, luxe, en versiering. De Stijl viert soberheid, functionaliteit, en orde. Dit is klasse-oorlog op esthetisch niveau.</li>
+                        <li><strong>Democratische esthetiek:</strong> Functionalisme maakt kunst toegankelijk. Goedkope materialen, eenvoudige constructie — kunst voor het volk, niet voor de elite.</li>
+                    </ul>
+                </div>
+
+                <div class="interpretation">
+                    <h4>💡 Interpretatie:</h4>
+                    <p>Het anti-decoratieve standpunt van De Stijl is fundamenteel politiek. Decoratie symboliseert de overvloed van de heersende klasse — tijd, middelen, en ruimte voor het overbodige. Door decoratie te verwerpen, verwerpen ze de bourgeois levensstijl zelf. Functioneel ontwerp wordt een ethische keuze: eerlijkheid boven hypocrisie, noodzaak boven luxe.</p>
+                    <p class="artwork-ref">Referentie: Rietveld's "Rood-blauwe Stoel" (1917) — ongemakkelijk maar conceptueel zuiver, functionaliteit boven comfort.</p>
+                </div>
+            </div>
+
+            <!-- Political Point 3: Modernity -->
+            <div class="political-point">
+                <h3>3. Moderniteit & Vernieuwing</h3>
+                
+                <div class="style-figures">
+                    <h4>📊 Stijlfiguren:</h4>
+                    <ul>
+                        <li><strong>Primary colors (Primaire kleuren):</strong> Rood, geel, blauw — de elementaire bouwstenen van alle kleur. Door alleen deze te gebruiken, bouwt De Stijl aan een nieuwe visuele taal, vrij van historische bagage.</li>
+                        <li><strong>Rectangular forms (Rechthoekige vormen):</strong> De afwijzing van ronde, organische vormen ten gunste van rechthoeken. Dit is de taal van de moderne stad, de industriële productie, de toekomst.</li>
+                        <li><strong>Grid structure (Rasterstructuur):</strong> Het rechthoekige raster weerspiegelt de moderne stadsplanning en industriële orde. Het is visuele moderniteit.</li>
+                    </ul>
+                </div>
+
+                <div class="style-element-box">
+                    <h4>🎭 Thema's:</h4>
+                    <ul>
+                        <li><strong>Moderniteit:</strong> De Stijl omarmt de machine-eeuw. De geometrische orde past bij fabrieken, auto's, en radio's — niet bij kastelen en kathedralen.</li>
+                        <li><strong>Breaking with tradition:</strong> Elke verwijzing naar het verleden wordt vermeden. Geen klassieke motieven, geen religieuze symboliek, geen romantische natuur.</li>
+                        <li><strong>Vooruitgang:</strong> Kunst moet vooruit kijken, niet achterom. De Stijl is een manifest voor de toekomst, een blauwdruk voor een nieuwe wereld.</li>
+                    </ul>
+                </div>
+
+                <div class="interpretation">
+                    <h4>💡 Interpretatie:</h4>
+                    <p>De primaire kleuren en rechthoekige vormen zijn niet esthetisch maar ideologisch. Ze vertegenwoordigen een breuk met het verleden — met de rijke, gecompliceerde kleurenpaletten van de traditie, met de organische, asymmetrische vormen van de natuur. De Stijl kiest voor de moderne tijd: rationeel, geordend, universeel. Dit is politieke vernieuwing in visuele vorm — het verleden achter zich laten voor een betere toekomst.</p>
+                    <p class="artwork-ref">Referentie: Mondrian's "Broadway Boogie Woogie" (1942-1943) — het moderne stadsraster als visuele muziek.</p>
+                </div>
+            </div>
+
+            <!-- Political Point 4: Anti-traditional -->
+            <div class="political-point">
+                <h3>4. Anti-traditioneel — Breken met het Verleden</h3>
+                
+                <div class="style-figures">
+                    <h4>📊 Stijlfiguren:</h4>
+                    <ul>
+                        <li><strong>Geometric abstraction (Geometrische abstractie):</strong> De volledige eliminatie van natuurlijke vormen. Geen bomen, geen mensen, geen landschappen — alleen geometrie. Dit is de ultieme breuk met de westerse traditie.</li>
+                        <li><strong>Straight lines (Rechte lijnen):</strong> De obsessie met horizontale en verticale lijnen, de afwijzing van diagonalen (bij Mondrian) en curves. Rechte lijnen zijn menselijk, geordend, rationeel — tegenover de chaotische natuur.</li>
+                        <li><strong>Neoplasticism (Neo-plasticisme):</strong> Van Doesburg's term voor de nieuwe beeldtaal. "Neo" = nieuw, "plasticisme" = vormgeving. Het is een bewuste breuk met het "plasticisme" van de renaissance.</li>
+                    </ul>
+                </div>
+
+                <div class="style-element-box">
+                    <h4>🎭 Thema's:</h4>
+                    <ul>
+                        <li><strong>Anti-traditioneel:</strong> De Stijl verwerpt de gehele westerse kunstgeschiedenis. Geen perspectief, geen clair-obscur, geen compositieregels uit de renaissance.</li>
+                        <li><strong>Rationaliteit:</strong> De geometrische orde is rationeel, niet emotioneel. De Stijl verkiest verstand boven gevoel — een moderne, wetenschappelijke benadering.</li>
+                        <li><strong>Politieke vernieuwing:</strong> Breken met de kunsttraditie = breken met de sociale traditie. De oude orde (monarchie, kerk, aristocratie) wordt aangevallen via hun esthetische symbolen.</li>
+                    </ul>
+                </div>
+
+                <div class="interpretation">
+                    <h4>💡 Interpretatie:</h4>
+                    <p>De geometrische abstractie en rechte lijnen zijn revolutionair. De westerse kunsttraditie is gebouwd op de natuur — op de weergave van de zichtbare wereld. De Stijl verwerpt dit volledig. Ze creëren een nieuwe visuele taal die geen verwantschap heeft met het verleden. Dit is politiek in de diepste zin: de esthetiek van de oude orde (kerk, aristocratie, bourgeoisie) wordt vervangen door een esthetiek van de nieuwe tijd (rede, egaliteit, vooruitgang).</p>
+                    <p class="artwork-ref">Referentie: Van Doesburg's "Compositie VIII (De Koe)" (1918) — het abstractieproces als demonstratie van breuk met natuurlijke vormen.</p>
+                </div>
             </div>
         </section>
 
+        <!-- CONCLUSION -->
         <section class="content-section">
-            <h2>🎨 MEESTERWERKEN - GEDETAILLEERDE ANALYSE</h2>
-
-            <!-- Work 1: Composition with Red Yellow and Blue -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>1. "Compositie met Rood, Geel en Blauw" (1930) — Piet Mondrian</h3>
-                    <p style="color:#666;font-style:italic;">Privécollectie · 46 × 46 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/destijl/01_mondrian_composition.jpg" loading="lazy" alt="Composition with Red Yellow and Blue">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een van Mondrian's meest bekende werken, geschilderd in Parijs. Het toont zijn volwassen stijl: asymmetrische balans, primaire kleuren, zwarte lijnen. Het is bijna een logo van De Stijl geworden.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Compositie:</strong> Niet symmetrisch, maar in evenwicht. Het grote rode vlak links wordt gecompenseerd door kleinere gele en blauwe vlakken rechts. De witruimte is even belangrijk als de gekleurde vlakken.</p>
-                        <p><strong>Lijnen:</strong> Zwarte lijnen scheiden de vlakken. Ze zijn niet alleen grenzen maar ook elementen op zich. De dikte varieert subtiel - het is niet mechanisch.</p>
-                        <p><strong>Kleur:</strong> Rood, geel, blauw - de primaire kleuren. Wit en zwart. Mondrian gebruikte soms jaren om de "juiste" verhouding te vinden.</p>
-                        <p><strong>Universalisme:</strong> Dit is geen landschap, geen portret, geen verhaal. Het is pure relatie: kleur, lijn, vlak. Mondrian zocht "universele schoonheid".</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 2: Red and Blue Chair -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>2. "Rood-blauwe Stoel" (1917) — Gerrit Rietveld</h3>
-                    <p style="color:#666;font-style:italic;">Verschillende versies · 88 × 26 × 66 cm · Geschilderd hout</p>
-                </div>
-                <img src="images/destijl/02_rietveld_chair.jpg" loading="lazy" alt="Red and Blue Chair">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Oorspronkelijk ontworpen in ongeverfd hout, later geverfd in de De Stijl-kleuren. Niet comfortabel, maar conceptueel belangrijk. Het meubel als abstracte sculptuur.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Ontleding:</strong> De stoel is teruggebracht tot zijn essentie: een zitvlak, een rugleuning, poten. Geen versiering, alleen constructie. Het is "eerlijk" ontwerp.</p>
-                        <p><strong>Kleur:</strong> De rode rug, de blauwe zitting, de gele armleuningen (in sommige versies). De kleuren benadrukken de verschillende delen. Het is een driedimensionaal Mondriaan.</p>
-                        <p><strong>Ruimte:</strong> De stoel neemt weinig ruimte in - doorzichtig, luchtig. De negatieve ruimte (de openingen) is even belangrijk als de houten delen.</p>
-                        <p><strong>Invloed:</strong> Deze stoel beïnvloedde generaties ontwerpers. Het concept van "form follows function" en de esthetisering van functionaliteit worden hier geboren.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 3: Broadway Boogie Woogie -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>3. "Broadway Boogie Woogie" (1942-1943) — Piet Mondrian</h3>
-                    <p style="color:#666;font-style:italic;">MoMA, New York · 127 × 127 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/destijl/03_mondrian_broadway.jpg" loading="lazy" alt="Broadway Boogie Woogie">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Mondrian's laatste voltooide werk, geschilderd in New York. Geïnspireerd door de stad: de straten, de jazz, de energie. Een verrassende ontwikkeling in zijn strenge stijl.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Ritme:</strong> De kleine blokjes kleur pulseren als muziek. De titel verwijst naar jazz - boogie woogie is een pianostijl. Het is Mondrian's meest "muzikale" werk.</p>
-                        <p><strong>Kleur:</strong> Niet alleen primaire kleuren, maar ook grijs, wit, en kleurvlakken die tegen elkaar praten. Het is levendiger, dynamischer dan zijn vroege werk.</p>
-                        <p><strong>Stad:</strong> Het raster lijkt op de straten van Manhattan. De gele lijn is Broadway. Mondrian, die altijd universeel wilde zijn, werd beïnvloed door de concrete stad.</p>
-                        <p><strong>Ontwikkeling:</strong> Dit toont dat De Stijl niet statisch was. Mondrian bleef zoeken, verfijnen, veranderen. De lijnen worden vlakken, de rust wordt beweging.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 4: Composition VIII -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>4. "Compositie VIII (De Koe)" (1918) — Theo van Doesburg</h3>
-                    <p style="color:#666;font-style:italic;">MoMA, New York · 64 × 50 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/destijl/04_vandoesburg_composition.jpg" loading="lazy" alt="Composition VIII">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Van Doesburg's abstractie van een koe - van herkenbaar naar volledig abstract. Het toont het De Stijl-proces: de natuur wordt geometrie. Een belangrijk pedagogisch werk.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Abstractie:</strong> Van Doesburg toonde vaak het proces: eerst de koe, dan steeds abstracter, tot alleen vlakken overblijven. Het is een leermiddel: zo werkt abstractie.</p>
-                        <p><strong>Diagonaal:</strong> Let op: Van Doesburg gebruikt diagonalen! Dit was later een breukpunt met Mondrian, die diagonaal taboe verklaarde. Maar hier is het nog binnen De Stijl.</p>
-                        <p><strong>Kleur:</strong> Primair, maar ook bruin en grijs. Van Doesburg was minder strikt dan Mondrian. Hij zocht balans tussen orde en expressie.</p>
-                        <p><strong>Proces:</strong> Het werk laat zien dat abstractie niet willekeurig is. Het is een distillatie van de werkelijkheid, niet een verwerping ervan.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 5: Rietveld Schroder House -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>5. "Rietveld Schröder Huis" (1924) — Gerrit Rietveld</h3>
-                    <p style="color:#666;font-style:italic;">Utrecht, Nederland · Woonhuis · Beton, staal, hout, glas</p>
-                </div>
-                <img src="images/destijl/05_rietveld_schroder.jpg" loading="lazy" alt="Rietveld Schroder House">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Het enige gebouw dat volledig volgens De Stijl principes is ontworpen. Commissioned by Truus Schröder, die meedacht in het ontwerp. UNESCO Werelderfgoed sinds 2000.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Flexibiliteit:</strong> De bovenverdieping heeft geen vaste muren, alleen schuifpanelen. De ruimte is aanpasbaar - revolutionair voor 1924.</p>
-                        <p><strong>Kleur:</strong> Buiten: grijs, zwart, wit met primaire kleuren als accenten. Binnen: witte muren, gekleurde vloeren en meubels. Het huis is een driedimensionaal schilderij.</p>
-                        <p><strong>Constructie:</strong> Betonnen palen (zichtbaar!) dragen het gebouw. De muren zijn niet dragend - ze zijn alleen maar schermen. Dit is modernistisch fundament.</p>
-                        <p><strong>Leefbaarheid:</strong> Het is niet alleen een statement, maar ook een thuis. Truus Schröder woonde er tot haar dood in 1985. Het bewijst dat De Stijl praktisch kan zijn.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 6: Georges Vantongerloo Composition -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>6. "Compositie" (1920) — Georges Vantongerloo</h3>
-                    <p style="color:#666;font-style:italic;">Privécollectie · 80 × 60 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/destijl/06_vantongerloo_composition.jpg" loading="lazy" alt="Vantongerloo Composition">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Vantongerloo was een van de oprichters van De Stijl. Zijn werk is minder bekend dan Mondriaans, maar even radicaal. Hij zocht de wiskundige basis van schoonheid.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Wiskunde:</strong> Vantongerloo gebruikte wiskundige verhoudingen - de gulden snede, de Fibonacci-reeks. De verhoudingen van de vlakken zijn exact berekend.</p>
-                        <p><strong>Ruimte:</strong> Diepte door overlapping - het is bijna reliëf. De vlakken lijken voor en achter elkaar te zweven. Dit is dynamisch evenwicht in actie.</p>
-                        <p><strong>Kleur:</strong> Primair, maar subtiel gemengd. Het blauw is niet één blauw, maar verschillende tinten. Vantongerloo was kleurspecialist.</p>
-                        <p><strong>Architectuur:</strong> Later werd Vantongerloo architect. Dit schilderij is bijna een plattegrond - ruimtelijk denken in twee dimensies.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 7: Rhythm of a Russian Dance -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>7. "Ritme van een Russische Dans" (1918) — Theo van Doesburg</h3>
-                    <p style="color:#666;font-style:italic;">Privécollectie · 50 × 60 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/destijl/07_vandoesburg_rhythm.jpg" loading="lazy" alt="Rhythm of a Russian Dance">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Geïnspireerd door Russische volksdansen die Van Doesburg zag. De dansbewegingen worden vertaald naar abstracte vormen. Het toont dat De Stijl niet stil hoeft te staan.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Beweging:</strong> De kleine, verspringende vlakken suggereren danspasjes. Het is bijna animatie - alsof de figuren bewegen. Van Doesburg wilde dynamiek in de statische compositie.</p>
-                        <p><strong>Ritme:</strong> De herhaling van vormen creëert een beat, een maat. Het is muziek voor het oog. De kleurcontrasten zijn accenten, drumslagen.</p>
-                        <p><strong>Constructivisme:</strong> Dit werk staat op de grens van De Stijl en het Russisch Constructivisme. Van Doesburg was geïnteresseerd in de Russische avant-garde.</p>
-                        <p><strong>Serie:</strong> Van Doesburg maakte meerdere "Ritme" schilderijen. Het was een zoektocht - hoe ver kan abstractie gaan en toch herkenbaar blijven?</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 8: Victory Boogie Woogie -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>8. "Victory Boogie Woogie" (1942-1944) — Piet Mondrian</h3>
-                    <p style="color:#666;font-style:italic;">Gemeentemuseum Den Haag · 127 × 127 cm · Olieverf en papier op doek</p>
-                </div>
-                <img src="images/destijl/08_mondrian_victory.jpg" loading="lazy" alt="Victory Boogie Woogie">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Mondrian's laatste werk, onvoltooid bij zijn dood. Geschilderd in New York tijdens WOII. De titel verwijst naar de geallieerde overwinning. Het is zijn meest complexe werk.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Complexiteit:</strong> Geen zwarte lijnen meer - alleen gekleurde stroken die elkaar kruisen. Het is een web van kleur. Mondrian's stijl evolueerde tot het einde.</p>
-                        <p><strong>Kleur:</strong> Meer kleuren dan ooit - niet alleen primair, maar ook pastel, grijs. De kleurvlakken zijn smaller, sneller. Het stadslicht van New York.</p>
-                        <p><strong>Papier:</strong> Mondrian plakte stroken papier op het doek - een collage-techniek. Het is informeler, experimenteler. De oorlog maakte hem flexibeler.</p>
-                        <p><strong>Victorie:</strong> Het optimisme spat eraf. Ondanks de oorlog, ondanks zijn ziekte (longontsteking), maakte Mondrian dit vierende werk. Kunst als hoop.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 9: Pure Painting -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>9. "Pure Schilderkunst" (1920) — Theo van Doesburg</h3>
-                    <p style="color:#666;font-style:italic;">Privécollectie · 60 × 60 cm · Olieverf op doek</p>
-                </div>
-                <img src="images/destijl/09_vandoesburg_pure.jpg" loading="lazy" alt="Pure Painting">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een manifest in verf - de titel zegt het al. Van Doesburg's visie op wat schilderkunst zou moeten zijn: puur, abstract, universeel. Geen verwijzing naar de buitenwereld.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Pure vorm:</strong> Slechts drie kleuren (rood, geel, blauw) en wit. Slechts rechthoeken. Geen grijs, geen zwart lijnen, geen complicaties. Het absolute minimum.</p>
-                        <p><strong>Evenwicht:</strong> De compositie is bijna symmetrisch, maar niet helemaal. De blauwe strook bovenaan breekt de balans. Het is statisch maar niet saai.</p>
-                        <p><strong>Filosofie:</strong> Dit is De Stijl in een notendop. Van Doesburg schreef: "De schilderkunst is geen verhaal, geen decoratie, maar zuivere constructie van het zichtbare."</p>
-                        <p><strong>Invloed:</strong> Dit type werk beïnvloedde later de Concrete Kunst en de Minimal Art. Het idee dat kunst over zichzelf gaat, begint hier.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Work 10: End Table -->
-            <div class="artwork-fullwidth">
-                <div class="artwork-header">
-                    <h3>10. "Bijzettafel" (1923) — Gerrit Rietveld</h3>
-                    <p style="color:#666;font-style:italic;">Verschillende versies · 60 × 50 × 50 cm · Geschilderd hout</p>
-                </div>
-                <img src="images/destijl/10_rietveld_table.jpg" loading="lazy" alt="End Table">
-                <div class="artwork-content">
-                    <p><strong>Achtergrond:</strong> Een eenvoudige bijzettafel die Rietveld ontwierp voor de Schröder woning. Geproduceerd door de firma Gerard van de Groenekan. Functioneel ontwerp als kunstwerk.</p>
-                    <div class="style-analysis-box">
-                        <h5>🔍 STIJLANALYSE</h5>
-                        <p><strong>Constructie:</strong> De tafel bestaat uit simpele houten planken, rechtop gezet. Geen versiering, alleen functionele verbindingen. Het is eerlijk - je ziet hoe het werkt.</p>
-                        <p><strong>Kleur:</strong> Primair rood, geel, blauw, plus zwart en wit. De kleur maakt de delen zichtbaar: het blad, de poten, de verbindingen. Het is een schilderij in ruimte.</p>
-                        <p><strong>Minimalisme:</strong> Zo weinig materiaal mogelijk, zo veel effect mogelijk. Rietveld vroeg zich af: wat is essentieel aan een tafel? Alleen een vlak op hoogte.</p>
-                        <p><strong>Massaproductie:</strong> Het ontwerp is eenvoudig genoeg om goedkoop te produceren. Rietveld droomde van democratisch design - mooie dingen voor iedereen.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="content-section">
-            <h2>📚 CONCLUSIE: DE PURE ORDE</h2>
-            
-            <div class="timeline-box">
-                <p>De Stijl leert ons:</p>
-                <ul style="margin:1rem 0;padding-left:1.5rem">
-                    <li><strong>Dat minder meer is:</strong> Terug naar de essentie - vorm en kleur</li>
-                    <li><strong>Dat kunst universeel kan zijn:</strong> Geen nationaliteit, geen individualiteit</li>
-                    <li><strong>Dat abstractie niet willekeurig is:</strong> Het is distillatie, niet destructie</li>
-                    <li><strong>Dat schoonheid functioneel is:</strong> Meubels, huizen, steden kunnen "goed" zijn</li>
-                    <li><strong>Dat harmonie mogelijk is:</strong> Ondanks de chaos van de wereld</li>
+            <h2>📚 Conclusie: Stijl als Politiek Wapen</h2>
+            <div class="style-element-box">
+                <p>De Stijl is vaak gezien als een esthetische beweging — beautiful geometrische composities met primaire kleuren. Maar deze interpretatie mist het punt. Elk visueel element van De Stijl is een politieke keuze:</p>
+                <ul>
+                    <li><strong>Horizontality</strong> = democratie boven hiërarchie</li>
+                    <li><strong>Geometric purity</strong> = collectivisme boven individualisme</li>
+                    <li><strong>Anti-decoratie</strong> = anti-bourgeois, anti-establishment</li>
+                    <li><strong>Primary colors</strong> = nieuwe wereld, vrij van verleden</li>
+                    <li><strong>Rectangular forms</strong> = moderne orde, rationele toekomst</li>
+                    <li><strong>Geometric abstraction</strong> = breuk met traditie, politieke vernieuwing</li>
                 </ul>
-                <p>De Stijl is de laatste utopie - kunst als redding van de wereld.</p>
+                <p>De Stijl is een utopie in verf en hout — een visuele blauwdruk voor een betere samenleving. Dat de utopie nooit is gerealiseerd, doet niets af aan de kracht van de visie.</p>
             </div>
         </section>
     </main>
 
-        <nav class="bottom-nav">
-        <a href="surrealisme.html" class="nav-prev">← 🦋 Surrealisme</a>
-        <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="abstract.html" class="nav-next">Abstract Expressionisme 🎨 →</a>
+    <nav class="page-navigation">
+        <a href="dadaisme.html" class="prev">← Dadaïsme</a>
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="surrealisme.html" class="next">Surrealisme →</a>
     </nav>
 
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
-
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | Politieke Perspectieven</p>
     </footer>
 </body>
 </html>
