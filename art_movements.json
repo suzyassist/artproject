@@ -10655,6 +10655,7 @@
         "technieken": [],
         "motieven": []
       },
+      "political_perspective": "De politieke context van CoBrA (1948-1951) werd gevormd door de uitzonderlijke nasleep van de Tweede Wereldoorlog, waarin Europa verwoest was en probeerde te herbouwen in een nieuw geopolitiek landschap. Terwijl het continent nog in puin lag, verdeelden de Verenigde Staten en de Sovjet-Unie de wereld in twee ideologische blokken. De IJzeren Gordijn viel over Europa, met Winston Churchill die in maart 1946 in zijn beroemde toespraak in Fulton, Missouri, waarschuwde voor de Sovjet-expansie. De Berlijnse Blokkade (juni 1948 - mei 1949) markeerde een van de eerste grote confrontaties van de Koude Oorlog, waarbij de Sovjets alle toegangswegen tot West-Berlijn afsloten en het Westen reageerde met een massale luchtbrug die miljoenen tonnen voedsel en brandstof per dag aanvoerde.\n\nIn deze context lanceerden de Verenigde Staten in april 1948 het Marshallplan, een economisch herstelprogramma van $13 miljard (equivalent aan $137 miljard in 2025) voor West-Europa. Het plan had expliciet als doel de democratische en economische systemen te herbouwen en de verspreiding van het communisme tegen te gaan. De Sovjet-Unie weigerde deelname en dwong ook Oost-Europese landen om af te zien, wat de politieke scheuring van het continent versterkte. Intussen werd in 1949 de Noord-Atlantische Verdragsorganisatie (NATO) opgericht als militair bondgenootschap tegen Sovjet-agressie. De eerste Sovjet-kernproef in augustus 1949 beëindigde het Amerikaanse atoommonopolie en verhoogde de internationale spanning verder. In juni 1950 brak de Koreaanse Oorlog uit toen Noord-Korea Zuid-Korea binnenviel, wat de eerste grote proxy-oorlog van de Koude Oorlog werd en de algehele sfeer van urgente mondiale crisis versterkte.\n\nDe sociale dynamiek van de naoorlogse periode werd gekenmerkt door een diep verlangen naar hernieuwing en een afkeer van autoritaire structuren. Tijdens de oorlogsjaren was Nederland geïsoleerd geweest van de internationale kunstwereld, wat een intens verlangen schiep naar artistieke vrijheid en internationale verbinding. De CoBrA-kunstenaars, afkomstig uit Kopenhagen, Brussel en Amsterdam, reageerden op de 'steriele' en 'autoritaire' sfeer die ze ervoeren in de gevestigde kunstwereld. Hun manifest 'La cause était entendue' (1948) bekritiseerde expliciet de autoritaire atmosfeer van het Centre International de Documentation sur l'Art d'Avant-garde. De beweging deelde een interesse in het marxisme en een fundamentele anti-autoritaire houding die direct voortkwam uit de recente ervaring met fascisme en oorlog. Hun werk verwelkomde wat ze zagen als 'onbeschaafde' vormen van expressie - kindertekeningen, primitieve kunst, graffiti - als bewuste afwijzing van 'beschaafde' academische kunst die ze associeerden met gevestigde autoriteit.\n\nDe politieke context verklaart direct de stijlkenmerken van CoBrA. De spontane werkmethode en experimentele benadering weerspiegelden een diepe behoefte aan vrijheid na jaren van bezetting en censuur. De bewondering voor kindertekeningen en primitieve kunstvormen vertaalde de anti-autoritaire politieke houding naar esthetische voorkeuren - het kind en de primitieve mens werden gezien als zuivere expressies van vrijheid, onbedorven door maatschappelijke conventies. De felle kleuren en 'gewelddadige' penseelstreken drukten een urgentie en intensiteit uit die paste bij een wereld in crisis. De geabstraheerde menselijke figuren, vaak beschreven als 'subhumaan' of 'monsterachtig', weerspiegelden de 'terreur en zwakte van onze tijd' zoals de kunstenaars zelf zeiden. Karel Appel's uitspraak 'We wilden opnieuw beginnen als een kind' belichaamde de radicale wens tot hernieuwing die voortkwam uit de politieke en sociale ontwrichting van de oorlog. De nadruk op samenwerking tussen kunstenaars uit verschillende landen - de beweging heette naar de hoofdsteden Copenhagen, Brussels, Amsterdam - weerspiegelde een bewuste poging om internationale verbintenissen te smeden in een verscheurd Europa, een artistiek alternatief voor de politieke en militaire allianties die het continent verdeelden.\n\nBronnen: Wikipedia - CoBrA, Cold War, Marshall Plan, Korean War, Aftermath of World War II.",
       "works": [
         {
           "title": "Vrolijke Kinderen",
@@ -21579,6 +21580,30 @@
           },
           "identifiers": {
             "wikidata_qid": null,
+            "commons_file": null,
+            "iiif_manifest": null
+          },
+          "copyright": {
+            "status": null,
+            "license": null,
+            "rights_holder": null,
+            "jurisdiction": null,
+            "expiry_year_estimate": null,
+            "source_confidence": null,
+            "publish_ok": null,
+            "notes": null
+          },
+          "links": {
+            "direct_image": null,
+            "info_page": null,
+            "source": null
+          }
+        }
+      ],
+      "needs_research": true
+    }
+  ]
+}null,
             "commons_file": null,
             "iiif_manifest": null
           },
