@@ -5496,7 +5496,8 @@
           }
         }
       ],
-      "needs_research": false
+      "needs_research": false,
+      "political_perspective": "De Rococo (1700-1760) bloeide tijdens een unieke politieke periode in Europa, gekenmerkt door de spanning tussen het verlicht absolutisme en de oude aristocratische orde van het ancien régime. In Frankrijk, het geestelijk centrum van de stijl, heerste Lodewijk XV (1715-1774) als absolute monarch, maar de werkelijke macht werd uitgeoefend door kardinaal Fleury (1726-1743) en een netwerk van hovelingen. Het verlicht absolutisme, beleden door vorsten als Frederik de Grote van Pruisen en Catharina de Grote van Rusland, probeerde de Verlichtingsidealen van rede, tolerantie en vooruitgang te combineren met centrale staatscontrole. Deze paradox – vorsten die \"voor het volk, maar niet door het volk\" regeerden – schiep een politieke cultuur van hervorming van bovenaf, maar ook van aristocratische onafhankelijkheid en intellectuele vrijheid binnen de grenzen van de staatsorde.\n\nDe sociale dynamiek van de Rococo-periode werd gedomineerd door de saloncultuur, die in Parijs ontwikkelde tot een alternatieve publieke sfeer. Vrouwen als Madame Geoffrin, Madame de Tencin en Madame du Deffand organiseerden regelmatige bijeenkomsten waar aristocraten, bourgeoisie, filosofen en kunstenaars in relatieve gelijkheid discussieerden over literatuur, filosofie en politiek. Deze salons fungeerden als \"scholen van beschaving\" waar de kunst van het gesprek, de dialoog en het verfijnde sociale verkeer werden geoefend. De opkomst van de bourgeoisie, verrijkt door handel en industrie, betekende een geleidelijke verschuiving van de strikte hiërarchie van het hof naar een meer gemengde samenleving waarin rijkdom en intellect status konden verlenen naast geboorte.\n\nDeze politieke en sociale context verklaart direct de kenmerken van de Rococo-stijl. De nadruk op aristocratische vrije tijd, verfijning en speelsheid weerspiegelde een elitecultuur die haar macht deels al had verloren aan de bureaucratie van de absolute staat, maar haar culturele supremie behield door excessieve verfijning. De asymmetrische, organische ornamentiek met schelpmotieven, acanthusbladeren en slingerende ranken verbeelde een wereld die de strenge geometrie van het Lodewijk XIV-tijdperk afzwoer voor gratie, lichtheid en beweging. De pastelkleuren – perzik, crème, zachtblauw en goud – schiepen een sfeer van intimiteit en verfíning die paste bij de particuliere salons en boudoirs van de aristocratie. De thematiek van pastorale idyllen, mythologische liefdesscènes en fêtes galantes verheerlijkte een geïdealiseerde wereld van aristocratische recreatie, vrij van politieke zorg en maatschappelijke spanning. De Rococo was niet louter een decoratieve stijl, maar de visuele expressie van een sociale orde die haar ondergang nog niet voorvoelde – een wereld van schoonheid, verfíning en spel die binnen enkele decennia zou worden verzwolgen door de Revolutie.\n\nBronnen: Wikipedia - Rococo, Enlightened absolutism, Salon (gathering), Ancien Régime, Louis XV."
     },
     {
       "id": "neoclassicisme",
@@ -21609,27 +21610,4 @@
       "needs_research": true
     }
   ]
-}null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": true
-    }
-  ]
+}
