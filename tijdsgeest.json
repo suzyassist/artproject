@@ -1,0 +1,238 @@
+{
+  "art_movements": [
+    {
+      "name": "Byzantijns",
+      "period": "330-1453",
+      "political_perspective": {
+        "title": "Het Byzantijnse Keizerrijk: Gods Koninkrijk op Aarde",
+        "sections": [
+          {
+            "title": "Het Byzantijnse Keizerrijk: Gods Koninkrijk op Aarde",
+            "content": "Het Byzantijnse Rijk, dat voortkwam uit het Oost-Romeinse Keizerrijk, was meer dan een politieke entiteit – het was een theocratie waar keizer en kerk onlosmakelijk verbonden waren. Toen keizer Constantijn in 330 de hoofdstad verplaatste naar Byzantium (later Constantinopel genoemd), creëerde hij niet alleen een nieuw machtscentrum, maar een nieuwe religieus-politieke orde. De keizer werd gezien als Gods plaatsvervanger op aarde, de 'autokrator' wiens absolutisme niet alleen door zwaarden, maar door goddelijk recht werd gerechtvaardigd.",
+            "sources": ["Wikipedia: Byzantine Empire", "Wikipedia: Justinian Dynasty"]
+          },
+          {
+            "title": "Keizerlijk Absolutisme en Religieuze Macht",
+            "content": "De Byzantijnse keizer oefende een unieke vorm van macht uit die zowel wereldlijk als geestelijk was. Hij benoemde patriarchen, riep concilies bijeen, en bepaalde theologische doctrine. Dit 'caesaropapisme' – waar de keizer zowel staatshoofd als hoofd van de kerk was – creëerde een systeem waarin politieke en religieuze autoriteit samensmolten. Justinianus I (527-565) belichaamde dit ideaal perfect: hij reconstrueerde de Hagia Sophia als manifestatie van keizerlijke macht én goddelijke glorie, en codificeerde het Romeinse recht in de Codex Justinianus.",
+            "sources": ["Wikipedia: Justinian dynasty"]
+          },
+          {
+            "title": "De Iconoclastische Controverse (726-843)",
+            "content": "De meest ingrijpende religieuze-politieke crisis was de iconoclastische strijd. Keizer Leo III verbood in 726 de verering van iconen, wat leidde tot decennia van burgeroorlog, vervolging en machtsstrijd. Deze strijd was niet alleen theologisch – het ging over de grenzen van keizerlijke macht over de kerk. Patriarchen die iconen verdedigden werden afgezet, monniken vervolgd, en mozaïeken vernietigd. Het conflict verdeelde het rijk: de oostelijke, armere provincies steunden vaak de iconoclastische keizers, terwijl Constantinopel en de westerse provincies de iconen verdedigden.",
+            "sources": ["Wikipedia: Byzantine Iconoclasm"]
+          },
+          {
+            "title": "Oorlog en Overleving: De Arabisch-Byzantijnse Strijd",
+            "content": "Vanaf de 7e eeuw voerde het rijk een existentiële strijd tegen de Arabisch-Islamitische expansie. Na de desastreuze Byzantijns-Sassanidische oorlogen (602-628) en de Pest van Justinianus was het rijk verzwakt toen de Rashidoen- en Umayyad-legers Syrië, Egypte en Noord-Afrika veroverden. Constantinopel weerstond twee grote belegeringen (674-678 en 717-718), deels dankzij het beroemde 'Griekse vuur'. De grens stabiliseerde langs de Taurus-gebergtes in Anatolië, waar een 'niemandsland' ontstond door constante plunderingen.",
+            "sources": ["Wikipedia: Arab-Byzantine wars"]
+          },
+          {
+            "title": "Fragmentatie en Uitdagingen",
+            "content": "Naast externe dreigingen kampte het rijk met interne fragmentatie. Slavische stammen vestigden zich op de Balkan, Goten in Italië, en uiteindelijk leidden de kruistochten tot de catastrofale plundering van Constantinopel in 1204 door Latijnse kruisvaarders. Het rijk herstelde zich gedeeltelijk onder de Palaiologen-dynastie, maar werd uiteindelijk in 1453 door de Ottomanen veroverd.",
+            "sources": ["Wikipedia: Byzantine Empire"]
+          },
+          {
+            "title": "Sociale Dynamiek en Hervormers",
+            "content": "De Byzantijnse samenleving kende een georganiseerde burgerklasse in de steden, maar het platteland werd gedomineerd door 'themata' – militaire districten waar boeren-soldaten land ontvingen in ruil voor dienst. Monastieke bewegingen vormden een alternatieve machtsbasis, soms in conflict met de keizer (zoals tijdens het iconoclasme), soms als steunpilaar. De Macedonische Renaissance (9e-11e eeuw) bracht intellectuele en artistieke vernieuwing na de iconoclastische periode, maar kon de structurele verzwakking niet stoppen.",
+            "sources": ["Wikipedia: Byzantine Empire"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gotisch",
+      "period": "1140-1500",
+      "political_perspective": {
+        "title": "Keizerlijke Centralisatie en Kerkelijke Macht",
+        "sections": [
+          {
+            "title": "Koninklijke Centralisatie en Staatshervorming",
+            "content": "De Capetingers (900-1328) consolideerden hun macht en centraliseerden het koninkrijk via feodale hervormingen. Koninklijke domeinen vergrooten, rechtbanken en schatkamers gestandaardiseerd, en de koning kreeg een steeds grotere rol in de lokale bestuursstructuur. De kapittelwet van 1315 (Philippe IV) reformeerde de taxatie en rechtbanken, beperkte de onbetwiste macht van de lokale adel en stelde de koninklijke autoriteit weer centraal.",
+            "sources": ["Wikipedia: Capetian dynasty", "Wikipedia: Hundred Years' War"]
+          },
+          {
+            "title": "De Honderdjarige Oorlog (1337-1453)",
+            "content": "Een decenniumlange oorlog tussen Engeland en Frankrijk over de Franse troon. Verschillende fase: (1) De diplomatieke fase (1337-1360) over de claim van de Engelse koning op de Franse troon, (2) De militaire fase (1360-1415) met schermutselingen, (3) De burgeroorlogsfase (1415-1429) na de terugkeer van Hendrik V en Charles VII, (4) De definitieve fase (1429-1453) met de overwinning van Charles VII. Jeanne d'Arc (1412-1431) speelde een cruciale rol in het moraleverhogende effect op de Franse troepen.",
+            "sources": ["Wikipedia: Hundred Years' War", "Wikipedia: Joan of Arc"]
+          },
+          {
+            "title": "Stedelijke Opkomst en Bourgeoisie",
+            "content": "De groei van steden (Londen, Parijs, Boulogne, Avignon, Vienne, Lyon, Toulouse, Montpellier, Bordeaux) creëerde een nieuwe sociale klasse: de bourgeoisie. Steden verkregen stadsvrijheden, zelfbestuur en economische autonomie. De handel floriseerde, de gilden organiseerden arbeid, en stadsburgers ontwikkelden een nieuwe identiteit los van het platteland. Dit veranderde de sociale dynamiek: stedelingen werden steeds belangrijker voor de economie en politiek.",
+            "sources": ["Wikipedia: Medieval commune", "Wikipedia: Burgher"]
+          },
+          {
+            "title": "Statenvorming en Regionale Diversiteit",
+            "content": "Na de val van de Karolingen ontstonden diverse regionale keizerrijkjes: Aquitanië, Bourgondië, Champagne, Flanderen, Normandië, Provence, Toulouse. Elke regio had zijn eigen gewoonten, wetten en machtsstructuren. De val van het West-Romeinse Rijk werd doorlopen als lokale decentralisatie, wat leidde tot een rijke diversiteit aan lokale culturen en instellingen. De koning had alleen maar de facto controle over het centrale gebied rond Parijs.",
+            "sources": ["Wikipedia: Kingdom of France", "Wikipedia: feudalism"]
+          },
+          {
+            "title": "Religieuze Conflicten en Schisma",
+            "content": "Twee grote crisis's: (1) Het Westers Schisma (1378-1417) waarbij er twee (en later drie) concurrente pausen waren. Pausen bevonden zich in Avignon (Fransgezind) en Rome (Italië-gezind), wat leidde tot concurrentie over inkomsten en politieke invloed. (2) Het Avignonse Pausdom (1309-1376) waar de pausen resideerden in Avignon onder Franse invloed, wat leidde tot anti-pauselijke sentimenten en kritiek op de kerk. De oorzaak was een mix van dynastieke politiek, financiele onrust en machtsstrijd tussen de Franse koning en de paus.",
+            "sources": ["Wikipedia: Western Schism", "Wikipedia: Avignon Papacy"]
+          },
+          {
+            "title": "Universiteiten en Intellectuele Cultuur",
+            "content": "Universiteiten werden centraal van intellectueel en academisch leven. Parijs (1200), Oxford (1167), Bologna (1088), Cambridge (1209) ontwikkelden zich tot centrum van geleerdheid, theologie, recht en geneeskunde. Studenten en docenten konden hun eigen wetten en instellingen vormen. Universiteiten speelden een rol in de intellectuele en sociale bewegingen van de late middeleeuwen, waaronder het Humanisme, de Renaissance en de Reformatie.",
+            "sources": ["Wikipedia: Medieval university", "Wikipedia: List of medieval universities"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Renaissance",
+      "period": "1400-1600",
+      "political_perspective": {
+        "title": "Staatshervorming en Centrale Macht",
+        "sections": [
+          {
+            "title": "Monarchale Centralisatie",
+            "content": "De Renaissance zag de opkomst van sterkere centrale regeringen, vooral in Italië. De 'civitas' (stadstaat) evolueerde naar 'principato' (heerschappij) van een enkele heerser. Keizer Maximiliaan I (1459-1519), paus Julius II (1503-1513) en koning Frans I van Frankrijk (1494-1547) consolideerden hun macht via diplomatie, legerhervormingen en controle over de economie. De Florentijnse Republiek (1397-1494) was een uitzondering: een oligarchische republiek geleid door rijke families (De Medici, De' Medici, Albizzi).",
+            "sources": ["Wikipedia: Renaissance politics", "Wikipedia: List of Renaissance philosophers"]
+          },
+          {
+            "title": "De Italiaanse Oorlogen (1494-1559)",
+            "content": "Een reeks conflicten tussen Frankrijk, Spanje, het Heilige Roomse Rijk, Engeland en de Italiaanse staten over de controle van Italië. De Italiaanse staten (Venetië, Florence, Milaan, Napels, de Pauselijke State, Savoye, Mantua, Ferrara) waren vechtpaarden in deze 'Grote Oorlogen'. De oorlogen werden gemotiveerd door dynastieke belangen, territoriale claims en het streven naar hegemonie in Italië. De Slag bij Pavia (1525) en de Vrede van Cateau-Cambrésis (1559) bezegelden Spaanse dominantie in Italië.",
+            "sources": ["Wikipedia: Italian Wars", "Wikipedia: Battle of Pavia"]
+          },
+          {
+            "title": "Kerk en Staat: Conflict en Eenheid",
+            "content": "In Italië was de kerk centraal in de politiek. De pausen waren tevens wereldlijke heersers van de 'Pauselijke State'. Conflicten over kerkelijke autoriteit, politieke macht en religieuze ideeën leidden tot spanningen. Het Concilie van Konstanz (1414-1418) en het Concilie van Bazel (1431-1449) probeerden de kerk te herstellen, maar de conclusie was dat alleen de paus absolute autoriteit had. De nepotisme, simonie en corruptie binnen de kerk zorgden voor spanningen met de secularen.",
+            "sources": ["Wikipedia: Papal States", "Wikipedia: Conciliarism"]
+          },
+          {
+            "title": "Venetië als Republiek",
+            "content": "Venetië was een unieke politieke structuur: een oligarchische republiek geleid door een raad van invloedrijke families en doges. De doge was een ceremoniële leider, maar de echte macht lag bij de 'Signoria', de raad van 120 leden, en het 'Great Council' van 600 leden. Venetië was een 'civitas' met zijn eigen wetten, munteenheid en militaire macht. Het was een corrupte, maar efficiente democratie: macht was voorbehouden aan de rijksten, en de volkssoevereiniteit bestond niet.",
+            "sources": ["Wikipedia: Government of the Republic of Venice", "Wikipedia: Doge of Venice"]
+          },
+          {
+            "title": "Machiavelli en de Politieke Theorie",
+            "content": "Niccolò Machiavelli (1469-1527) schreef 'Il Principe' (1513) – een analyse van politieke macht en staatshervorming. Hij betoogde dat de staat een centraal principe is en dat de leider (prins) een ethisch moreel model moet volgen. Machiavelli's 'principe' moet vast, standvastig en wispelturig zijn, maar moet ook vrienden kunnen maken en kundig leiders om zich heen hebben. Zijn ideeën werden beïnvloed door de politieke realiteit van zijn tijd: de Italiaanse oorlogen, de val van de Medici, en de Spaanse dominantie.",
+            "sources": ["Wikipedia: The Prince", "Wikipedia: Niccolò Machiavelli"]
+          },
+          {
+            "title": "Religieuze Chaos en de Reformatie",
+            "content": "De Renaissance eindigde in religieuze chaos met de Protestantse Reformatie. De doctrine, rituelen en structuur van de Rooms-Katholieke Kerk kwamen onder vuur. Maarten Luther (1483-1546) publiceerde zijn 95 these's in 1517, wat leidde tot de Duitse en Europese Reformatie. De strijd tussen katholieken en protestanten leidde tot burgeroorlogen, zoals de Franse Religieuze Oorlogen (1562-1598) en de Nederlandse Opstand (1568-1648). De pest (1347-1351), de Zwarte Dood, en de pest epidemieën in de 14e eeuw verzwakten de macht van de kerk en zorgden voor sociale onrust.",
+            "sources": ["Wikipedia: Protestant Reformation", "Wikipedia: Religious wars"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Manierisme",
+      "period": "1520-1600",
+      "political_perspective": {
+        "title": "Contrasterende Voorkeuren",
+        "sections": [
+          {
+            "title": "Polities en Coronaties",
+            "content": "De manieristen lieten het meeste werk over politieke en religieuze onderwerpen. Ze schilderden portretten, kroningen, huwelijken en herdenkingen voor de elites. Denk aan 'Het huwelijk van Lorenzo de' Medici' (1570) van Pontormo – een geslaagde representatie van een politiek evenement. Het Sint-Lorenzabeeld (1520-1534) van Michelangelo was een kunstwerk voor de St.-Lorenzakerk, een publieke plek voor herdenking en cultus van heiligen.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Art of the Renaissance"]
+          },
+          {
+            "title": "Denken en Moraal",
+            "content": "De manieristen waren intellectueel en soms skeptisch. Ze onderzochten de menselijke natuur, de natuur en het universum via de wetenschappen (anatomie, astronomie, natuurkunde). De moraal van de manieristen was duister: ze gebruikten ambivalente thema's, soms ironisch, soms mystiek. Denk aan 'Het scheldend paartje' (1533) van Parmigianino – ironische portretten van de menselijke zwakheid en het falen van de mens.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Michelangelo"]
+          },
+          {
+            "title": "Grootmeesters en Academies",
+            "content": "De manieristen werden geassocieerd met de academies, wetenschappelijke studies en het ontwikkelen van theorieën. Giorgio Vasari (1511-1574) schreef 'De Levenden' (1550) – een historisch werk over Italiaanse kunstenaars. Vasari's werk is een politiek en cultureel document: hij schetst de geschiedenis van de kunst van de Renaissance tot de manieristen en benadrukt de rol van de kunstenaar als geïnspireerde held.",
+            "sources": ["Wikipedia: Giorgio Vasari", "Wikipedia: Mannerism"]
+          },
+          {
+            "title": "Gezin en Extravagantie",
+            "content": "De manieristen verkozen het gezin boven het individu. Ze gebruikten extraverse thema's als intimiteit, levendigheid, en het gezin. Denk aan 'Het gezin van Agnolo Doni' (1506) van Michelangelo – een geslaagde representatie van een gezin. De manieristen waren ook gefascineerd door het contrast van goud tegen zwart (beeld van 1664-1667 van 'Extravagantie' door Domenico Fontana), wat symboliseerde de menselijke dualiteit: innerlijke rust en uiterlijke chaos.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Agnolo Doni"]
+          },
+          {
+            "title": "Beschaving en Verdwenen Gezinnen",
+            "content": "De manieristen verkozen beschaving boven de natuur. Ze schilderden portretten van rijke families, hun kinderen en hun gezinnen. Denk aan 'Het gezin van Cosimo de' Medici' (1539) van Bronzino – een geslaagde representatie van een familie. De manieristen waren ook gefascineerd door de spiegel: 'Het gesprek' (1533) van Pontormo – ironische portretten van gesprekken, metaforen voor de menselijke zwakheid en het falen van de mens.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Agnolo Doni"]
+          },
+          {
+            "title": "Mensen en Het Universum",
+            "content": "De manieristen verkozen mensen boven het universum. Ze schilderden portretten van individuen, hun families en hun relaties. Denk aan 'Het gezin van Cosimo de' Medici' (1539) van Bronzino – een geslaagde representatie van een familie. De manieristen waren ook gefascineerd door de chaos en de menselijke zwakheid: 'Het gesprek' (1533) van Pontormo – ironische portretten van gesprekken, metaforen voor het falen van de mens.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Agnolo Doni"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Barok",
+      "period": "1600-1750",
+      "political_perspective": {
+        "title": "Contrasterende Voorkeuren",
+        "sections": [
+          {
+            "title": "Polities en Coronaties",
+            "content": "De baroktijd liet het meeste werk over politieke en religieuze onderwerpen. Ze schilderden kroningen, huwelijken en herdenkingen voor de elites. Denk aan 'Het huwelijk van Lorenzo de' Medici' (1570) van Pontormo – een geslaagde representatie van een politiek evenement. Het Sint-Lorenzabeeld (1520-1534) van Michelangelo was een kunstwerk voor de St.-Lorenzakerk, een publieke plek voor herdenking en cultus van heiligen.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Art of the Renaissance"]
+          },
+          {
+            "title": "Denken en Moraal",
+            "content": "De manieristen waren intellectueel en soms skeptisch. Ze onderzochten de menselijke natuur, de natuur en het universum via de wetenschappen (anatomie, astronomie, natuurkunde). De moraal van de manieristen was duister: ze gebruikten ambivalente thema's, soms ironisch, soms mystiek. Denk aan 'Het scheldend paartje' (1533) van Parmigianino – ironische portretten van de menselijke zwakheid en het falen van de mens.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Michelangelo"]
+          },
+          {
+            "title": "Grootmeesters en Academies",
+            "content": "De manieristen werden geassocieerd met de academies, wetenschappelijke studies en het ontwikkelen van theorieën. Giorgio Vasari (1511-1574) schreef 'De Levenden' (1550) – een historisch werk over Italiaanse kunstenaars. Vasari's werk is een politiek en cultureel document: hij schetst de geschiedenis van de kunst van de Renaissance tot de manieristen en benadrukt de rol van de kunstenaar als geïnspireerde held.",
+            "sources": ["Wikipedia: Giorgio Vasari", "Wikipedia: Mannerism"]
+          },
+          {
+            "title": "Gezin en Extravagantie",
+            "content": "De manieristen verkozen het gezin boven het individu. Ze gebruikten extraverse thema's als intimiteit, levendigheid, en het gezin. Denk aan 'Het gezin van Agnolo Doni' (1506) van Michelangelo – een geslaagde representatie van een gezin. De manieristen waren ook gefascineerd door het contrast van goud tegen zwart (beeld van 1664-1667 van 'Extravagantie' door Domenico Fontana), wat symboliseerde de menselijke dualiteit: innerlijke rust en uiterlijke chaos.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Agnolo Doni"]
+          },
+          {
+            "title": "Beschaving en Verdwenen Gezinnen",
+            "content": "De manieristen verkozen beschaving boven de natuur. Ze schilderden portretten van rijke families, hun kinderen en hun gezinnen. Denk aan 'Het gezin van Cosimo de' Medici' (1539) van Bronzino – een geslaagde representatie van een familie. De manieristen waren ook gefascineerd door de spiegel: 'Het gesprek' (1533) van Pontormo – ironische portretten van gesprekken, metaforen voor de menselijke zwakheid en het falen van de mens.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Agnolo Doni"]
+          },
+          {
+            "title": "Mensen en Het Universum",
+            "content": "De manieristen verkozen mensen boven het universum. Ze schilderden portretten van individuen, hun families en hun relaties. Denk aan 'Het gezin van Cosimo de' Medici' (1539) van Bronzino – een geslaagde representatie van een familie. De manieristen waren ook gefascineerd door de chaos en de menselijke zwakheid: 'Het gesprek' (1533) van Pontormo – ironische portretten van gesprekken, metaforen voor het falen van de mens.",
+            "sources": ["Wikipedia: Mannerism", "Wikipedia: Agnolo Doni"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Romaans",
+      "period": "1000-1200",
+      "political_perspective": {
+        "title": "Feodalisme & Fragmentatie",
+        "sections": [
+          {
+            "title": "Feodalisme & Fragmentatie",
+            "content": "Het Feodale systeem zorgde voor een sterk geregionaliseerde maatschappij. Graven, hertogen en baronnen hadden de facto controle over hun territoria. Landgoederen waren erfelijk en overgedragen via het 'feodum'. De koning was slechts de facto heerser van een klein centraal gebied rond Parijs (Île-de-France). De lokale elites hadden de echte politieke, economische en militaire macht.",
+            "sources": ["Wikipedia: Feudalism", "Wikipedia: Feudal society"]
+          },
+          {
+            "title": "Investituurstrijd (1075-1122)",
+            "content": "Een conflict tussen keizer Hendrik IV (Heilige Roomse Rijk) en paus Gregorius VII over wie het recht had om bisschoppen en abten aan te stellen (investituur). De keizer wilde de controle over de kerkelijke hiërarchie behouden, terwijl de paus beweerde dat de kerk boven de staat stond. De oorzaak was een mix van politieke, religieuze en economische factoren. De uiteindelijke overwinning ging naar de paus, maar leidde tot een eeuw van onrust in Europa.",
+            "sources": ["Wikipedia: Investituret Contest", "Wikipedia: Henry IV, Holy Roman Emperor"]
+          },
+          {
+            "title": "Kruistochten en religieuze oorlogvoering",
+            "content": "De Kruistochten waren militaire expeditie's om heilige plaatsen (Jeruzalem) te bevrijden van de islamitische bezetting (1071-1099). De eerste kruistocht (1096-1099) was een succes: Jeruzalem werd ingenomen en een aantal kruisvaardersstaten werden opgericht (Edessa, Antiochië, Tripoli, Jeruzalem). De kruistochten hadden grote impact op de Europese politiek, economie en cultuur: meer handel, grotere expansie van het christendom, en meer contact met het oosten.",
+            "sources": ["Wikipedia: Crusades", "Wikipedia: First Crusade"]
+          },
+          {
+            "title": "Statenvorming (Normandische verovering, Reconquista)",
+            "content": "De Normandische verovering van Engeland (1066) onder Willem de Veroveraar vormde de basis voor een sterke centrale staat. De Reconquista (711-1492) was de reconquisita van het Iberisch schiereiland van de Moren door het Koninkrijk Castilië en Aragón. Beide waren processen van staatsvorming die leidden tot sterkere centrale machten, bureaucratische ontwikkeling en militaire expansie. De Normandische verovering van Zuid-Italië en Sicilië (1030-1091) had vergelijkbare effecten.",
+            "sources": ["Wikipedia: Norman conquest of England", "Wikipedia: Reconquista"]
+          },
+          {
+            "title": "Sociale bewegingen (stedelijke opkomst, gilden)",
+            "content": "De 12e eeuw zag een sterke stedelijke opkomst. Steden groeiden uit handelscentra tot zelfstandige steden met hun eigen wetten, belastingen en militaire organisatie. Gilden organiseerden arbeid en productie, en kregen politieke invloed. De bourgeoisie werd een nieuwe sociale klasse met eigen waarden en belangen. Dit leidde tot sociale bewegingen en spanningen tussen steden en het platteland, en uiteindelijk tot grotere sociale en politieke mobiliteit.",
+            "sources": ["Wikipedia: Medieval commune", "Wikipedia: Guilds in the Middle Ages"]
+          },
+          {
+            "title": "Bronnen",
+            "content": "Bronnen: Hollister & Bennett, Duby, Southern",
+            "sources": ["Hollister & Bennett, Duby, Southern"]
+          }
+        ]
+      }
+    }
+  ]
+}
