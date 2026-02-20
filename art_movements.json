@@ -1006,11 +1006,12 @@
           "title": "Salon de la Princesse",
           "creator": "Hôtel de Soubise",
           "image": {
-            "url": null,
+            "url": "/images/rococo/salon_de_la_princesse.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Hôtel de Soubise, Salon de la Princesse",
+            "commons_file": "salon_de_la_princesse.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -1018,17 +1019,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/salon_de_la_princesse.jpg",
             "info_page": null,
             "source": null
           }
