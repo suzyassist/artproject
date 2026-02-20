@@ -751,11 +751,12 @@
           "title": "De Schommel",
           "creator": "Fragonard",
           "image": {
-            "url": null,
+            "url": "/images/rococo/fragonard_swing.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Fragonard, De Schommel",
+            "commons_file": "fragonard_swing.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -763,17 +764,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/fragonard_swing.jpg",
             "info_page": null,
             "source": null
           }
@@ -813,11 +814,12 @@
           "title": "Venus en Mars",
           "creator": "Boucher",
           "image": {
-            "url": null,
+            "url": "/images/rococo/boucher_venus.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Boucher, Venus en Mars",
+            "commons_file": "boucher_venus.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -825,17 +827,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/boucher_venus.jpg",
             "info_page": null,
             "source": null
           }
@@ -844,11 +846,12 @@
           "title": "Madame de Pompadour",
           "creator": "Boucher",
           "image": {
-            "url": null,
+            "url": "/images/rococo/boucher_pompadour.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Boucher, Madame de Pompadour",
+            "commons_file": "boucher_pompadour.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -856,17 +859,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/boucher_pompadour.jpg",
             "info_page": null,
             "source": null
           }
@@ -875,11 +878,12 @@
           "title": "L'Embarquement pour Cythère",
           "creator": "Watteau",
           "image": {
-            "url": null,
+            "url": "/images/rococo/watteau_cythera.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Watteau, L'Embarquement pour Cythère",
+            "commons_file": "watteau_cythera.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -887,17 +891,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/watteau_cythera.jpg",
             "info_page": null,
             "source": null
           }
@@ -906,11 +910,12 @@
           "title": "Gilles (Pierrot)",
           "creator": "Watteau",
           "image": {
-            "url": null,
+            "url": "/images/rococo/watteau_gilles.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Watteau, Gilles (Pierrot)",
+            "commons_file": "watteau_gilles.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -918,17 +923,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/watteau_gilles.jpg",
             "info_page": null,
             "source": null
           }
@@ -937,11 +942,12 @@
           "title": "Triomf van Aurora",
           "creator": "Tiepolo",
           "image": {
-            "url": null,
+            "url": "/images/rococo/tiepolo_apollo.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Tiepolo, Triomf van Aurora",
+            "commons_file": "tiepolo_apollo.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -949,17 +955,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/rococo/tiepolo_apollo.jpg",
             "info_page": null,
             "source": null
           }
