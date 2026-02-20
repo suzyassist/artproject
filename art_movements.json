@@ -2132,11 +2132,12 @@
           "title": "Impression, Soleil Levant",
           "creator": "Monet",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/01_monet_impression.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Monet, Impression, Soleil Levant",
+            "commons_file": "01_monet_impression.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2144,17 +2145,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/01_monet_impression.jpg",
             "info_page": null,
             "source": null
           }
@@ -2163,11 +2164,12 @@
           "title": "Waterlelies",
           "creator": "Monet",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/02_monet_waterlilies.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Monet, Waterlelies",
+            "commons_file": "02_monet_waterlilies.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2175,17 +2177,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/02_monet_waterlilies.jpg",
             "info_page": null,
             "source": null
           }
@@ -2194,11 +2196,12 @@
           "title": "Kathedraal van Rouen (serie)",
           "creator": "Monet",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/09_monet_cathedral.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Monet, Kathedraal van Rouen (serie)",
+            "commons_file": "09_monet_cathedral.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2206,17 +2209,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/09_monet_cathedral.jpg",
             "info_page": null,
             "source": null
           }
@@ -2225,11 +2228,12 @@
           "title": "Bal du Moulin de la Galette",
           "creator": "Renoir",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/10_renoir_moulin.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Renoir, Bal du Moulin de la Galette",
+            "commons_file": "10_renoir_moulin.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2237,17 +2241,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/10_renoir_moulin.jpg",
             "info_page": null,
             "source": null
           }
@@ -2256,11 +2260,12 @@
           "title": "Luncheon of the Boating Party",
           "creator": "Renoir",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/06_monet_garden.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Renoir, Luncheon of the Boating Party",
+            "commons_file": "06_monet_garden.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2268,17 +2273,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/06_monet_garden.jpg",
             "info_page": null,
             "source": null
           }
@@ -2380,11 +2385,12 @@
           "title": "Giverny-tuinen",
           "creator": "Monet",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/06_monet_garden.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Monet, Giverny-tuinen",
+            "commons_file": "06_monet_garden.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2392,17 +2398,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/06_monet_garden.jpg",
             "info_page": null,
             "source": null
           }
@@ -2411,11 +2417,12 @@
           "title": "Vrouw met Parasol",
           "creator": "Monet",
           "image": {
-            "url": null,
+            "url": "/images/impressionisme/04_monet_parasol.jpg",
             "page": null,
             "source": null,
-            "license": null,
-            "attribution": null
+            "license": "CC0 / Public Domain",
+            "attribution": "Monet, Vrouw met Parasol",
+            "commons_file": "04_monet_parasol.jpg"
           },
           "identifiers": {
             "wikidata_qid": null,
@@ -2423,17 +2430,17 @@
             "iiif_manifest": null
           },
           "copyright": {
-            "status": null,
+            "status": "public_domain",
             "license": null,
             "rights_holder": null,
             "jurisdiction": null,
             "expiry_year_estimate": null,
             "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
+            "publish_ok": true,
+            "notes": "Archived from Wikimedia Commons"
           },
           "links": {
-            "direct_image": null,
+            "direct_image": "/images/impressionisme/04_monet_parasol.jpg",
             "info_page": null,
             "source": null
           }
