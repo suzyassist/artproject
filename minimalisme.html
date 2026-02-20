@@ -1,15 +1,88 @@
-<!DOCTYPE html><html lang='nl'><head><meta charset='UTF-8'><title>Minimalisme - Kunstgeschiedenis</title><link rel='stylesheet' href='style.css'><style>.featured-artwork{background:linear-gradient(135deg,#f5f5f5 0%,#e0e0e0 100%);padding:2rem;margin-bottom:2rem;border-radius:8px;text-align:center}.featured-artwork h2{color:#1a1a1a;font-size:1.8rem;margin-bottom:0.5rem}.featured-artist{color:#666;font-style:italic;margin-bottom:1.5rem;font-size:1.2rem}.artwork-fullwidth{background:#fff;margin:3rem 0;padding:2rem;border-radius:8px;box-shadow:0 2px 15px rgba(0,0,0,0.1)}.artwork-header{border-bottom:3px solid #999;margin-bottom:1.5rem;padding-bottom:1rem}.style-analysis-box{background:#f9f9f9;border-left:4px solid #999;padding:1rem;margin:1rem 0}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalisme - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #2F4F4F 0%, #000000 100%);color:white;padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #000000;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #faf0fa;border-left: 4px solid #000000;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5f5f5;padding:1rem;border-radius:4px;border:2px solid #000000}
         .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
         .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
-</style></head><body><header><h1>⬜ Minimalisme</h1><p class='subtitle'>1960-1970 · Eenvoud & Geometrische Reductie</p></header>
-        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>⬛ Minimalisme</h1><p class="subtitle">1960-1975 · Eenvoud & Essentie</p></header>
     <nav class="top-nav">
-        <a href="popart.html" class="nav-prev">← 🎬 Pop Art</a>
+        <a href="popart.html" class="nav-prev">← 🍿 Pop Art</a>
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="conceptueel.html" class="nav-next">Conceptuele Kunst 💡 →</a>
     </nav>
 
+    <!-- Hamburger Menu Button -->
     <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
     <!-- Sidebar Navigation -->
     <nav id="sidebar" class="side-nav">
         <div class="side-nav-header">
@@ -50,7 +123,39 @@
     </nav>
 
     <!-- Overlay -->
-    <div id="overlay" class="nav-overlay"></div><main><section class='movement-header'><div class='featured-artwork'><h2>Meesterwerk: Untitled (Stack)</h2><p class='featured-artist'>Donald Judd, 1967</p><img src='images/minimalisme/donald_judd_tate_liverpool.jpg' alt='Donald Judd - Untitled' style='max-width:100%;height:auto;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,0.1);'></div>
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+<section class='movement-header'><div class='featured-artwork'><h2>Meesterwerk: Untitled (Stack)</h2><p class='featured-artist'>Donald Judd, 1967</p><img src='images/minimalisme/donald_judd_tate_liverpool.jpg' alt='Donald Judd - Untitled' style='max-width:100%;height:auto;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,0.1);'></div>
         <section class="content-section">
             <h2>📚 TIJDSGEEST CONTEXT (1960-1975)</h2>
             
@@ -138,41 +243,18 @@
 <div class='artwork-fullwidth'><div class='artwork-header'><h3>9. "Laberinto de Pontevedra" (1984) — Robert Morris</h3><p style='margin:0.5rem 0 0 0;color:#666;font-style:italic;'>Illa das Esculturas, Pontevedra, Spanje | Graniet</p></div><div class='artwork-content'><img src='images/minimalisme/robert_morris_labyrinth.jpg' alt='Robert Morris - Laberinto de Pontevedra' style='max-width:100%;height:auto;margin:1rem 0;border-radius:4px;'><h4>Achtergrond</h4><p>Een monumentaal granieten labyrint op een sculptuureiland in Spanje. Morris, een sleutelfiguur in het minimalisme, creëerde dit werk als onderdeel van zijn onderzoek naar ruimte, oriëntatie en de ervaring van de toeschouwer.</p><div class='style-analysis-box'><h5>Stijlanalyse</h5><p><strong>Ruimtelijke ervaring:</strong> Het labyrint nodigt uit tot fysieke interactie - het is een werk dat je moet betreden.</p><p><strong>Minimalisme in landschap:</strong> Eenvoudige geometrische vormen die resoneren met hun natuurlijke omgeving.</p><p><strong>Process:</strong> Het werk benadrukt het proces van oriëntatie en het lichaam in de ruimte.</p></div></div></div>
 
 <div class='artwork-fullwidth'><div class='artwork-header'><h3>10. "First Conversion" (2003) — Robert Ryman</h3><p style='margin:0.5rem 0 0 0;color:#666;font-style:italic;'>Museum of Modern Art, New York | Reliëfdruk | 34 × 34 cm</p></div><div class='artwork-content'><img src='images/minimalisme/robert_ryman_first_conversion.jpg' alt='Robert Ryman - First Conversion' style='max-width:100%;height:auto;margin:1rem 0;border-radius:4px;'><h4>Achtergrond</h4><p>Een wit reliëfdruk op aluminium paneel met twee stalen pinnen. Ryman's hele oeuvre verkent wit op wit, waarbij hij de grenzen van schilderkunst onderzoekt door te focussen op materiaal, licht en oppervlak.</p><div class='style-analysis-box'><h5>Stijlanalyse</h5><p><strong>Monochroom:</strong> Wit op wit - geen representatie, alleen de pure ervaring van kleur en licht.</p><p><strong>Materialiteit:</strong> Lino, vilt, aluminium en staal - het materiaal wordt zelf het onderwerp.</p><p><strong>Presentie:</strong> Het werk is letterlijk wat het is - "what you see is what you see."</p></div></div></div>
-</section></main>    <nav class="bottom-nav">
-        <a href="popart.html" class="nav-prev">← 🎬 Pop Art</a>
+</section>
+    </main>
+
+        <nav class="bottom-nav">
+        <a href="popart.html" class="nav-prev">← 🍿 Pop Art</a>
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="conceptueel.html" class="nav-next">Conceptuele Kunst 💡 →</a>
     </nav>
 
-    <footer><p>Kunstgeschiedenis Project | matthiasr.com/art | 15 Kunststromingen</p>
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
 
     </footer>
-    <script>
-        // Menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.add('open');
-            document.getElementById('overlay').classList.add('show');
-            document.body.style.overflow = 'hidden';
-        });
-
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.getElementById('overlay').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.remove('open');
-            document.getElementById('overlay').classList.remove('show');
-            document.body.style.overflow = '';
-        });
-
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.getElementById('sidebar').classList.remove('open');
-                document.getElementById('overlay').classList.remove('show');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
-</body></html>
+</body>
+</html>

@@ -11,11 +11,65 @@
         .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
         .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
         .artwork-header {border-bottom: 3px solid #8B4513;margin-bottom: 1.5rem;padding-bottom: 1rem;}
-        .style-analysis-box {background: #f9f9f9;border-left: 4px solid #8B4513;padding: 1.5rem;margin: 1rem 0;}
+        .style-analysis-box {background: #faf0fa;border-left: 4px solid #8B4513;padding: 1.5rem;margin: 1rem 0;}
         .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
-        .style-item {background:#faf0e6;padding:1rem;border-radius:4px}
+        .style-item {background:#faf0e6;padding:1rem;border-radius:4px;border:2px solid #8B4513}
         .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
         .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+        }
+    
     </style>
 </head>
 <body>
@@ -25,9 +79,16 @@
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="gotisch.html" class="nav-next">Gotische Kunst ⛪ →</a>
     </nav>
+
+    <!-- Hamburger Menu Button -->
     <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
     <nav id="sidebar" class="side-nav">
-        <div class="side-nav-header"><h3>🎨 Kunststromingen</h3><button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button></div>
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
         <div class="side-nav-content">
             <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
             <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
@@ -60,26 +121,41 @@
             <a href="digitaal.html" class="side-nav-link"><span class="nav-icon">💻</span><span class="nav-text">Digitale Kunst</span></a>
         </div>
     </nav>
+
+    <!-- Overlay -->
     <div id="overlay" class="nav-overlay"></div>
+
     <script>
         document.getElementById('menu-btn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.add('open');
             document.getElementById('overlay').classList.add('show');
             document.body.style.overflow = 'hidden';
         });
+
         document.getElementById('close-btn').addEventListener('click', function() {
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('overlay').classList.remove('show');
             document.body.style.overflow = '';
         });
+
         document.getElementById('overlay').addEventListener('click', function() {
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('overlay').classList.remove('show');
             document.body.style.overflow = '';
         });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
     </script>
 
+    
     <main>
+
         <section class="movement-header">
             <div class="featured-artwork">
                 <h2>🏆 Meesterwerk: Sainte-Foy de Conques</h2>
@@ -377,6 +453,7 @@ Deze literaire erfenis vormde de conceptuele basis voor de Romaanse beeldhouwkun
                 <p>De Romaanse periode was de tijd van de kruistochten, de pelgrims, en de eerste bloei van de westerse cultuur na de val van Rome.</p>
             </div>
         </section>
+    
     </main>
 
         <nav class="bottom-nav">
@@ -386,7 +463,8 @@ Deze literaire erfenis vormde de conceptuele basis voor de Romaanse beeldhouwkun
     </nav>
 
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art | 20 Kunststromingen</p>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
     </footer>
 </body>
 </html>
