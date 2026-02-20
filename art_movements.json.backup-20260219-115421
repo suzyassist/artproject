@@ -10,7 +10,7 @@
   "movements": [
     {
       "id": "manierisme",
-      "name": "Maniërisme",
+      "name": "Mani\u00ebrisme",
       "type": "canon",
       "start": 1520,
       "end": 1600,
@@ -19,7 +19,7 @@
           "kunstmatigheid",
           "verlengde proporties",
           "complexe ruimte",
-          "spanning/ambiguïteit"
+          "spanning/ambigu\u00efteit"
         ],
         "stijlfiguren": [
           "serpentinata",
@@ -676,7 +676,7 @@
         },
         {
           "title": "Las Meninas",
-          "creator": "Velázquez",
+          "creator": "Vel\u00e1zquez",
           "image": {
             "url": null,
             "page": null,
@@ -718,13 +718,13 @@
         "kenmerken": [
           "lichtheid",
           "speelsheid",
-          "intieme scènes",
+          "intieme sc\u00e8nes",
           "decoratieve overvloed"
         ],
         "stijlfiguren": [
           "rocaille",
           "S-curve",
-          "pastorale mise-en-scène",
+          "pastorale mise-en-sc\u00e8ne",
           "luchtige penseel"
         ],
         "palet": [
@@ -870,7 +870,7 @@
           }
         },
         {
-          "title": "L'Embarquement pour Cythère",
+          "title": "L'Embarquement pour Cyth\u00e8re",
           "creator": "Watteau",
           "image": {
             "url": null,
@@ -964,7 +964,7 @@
         },
         {
           "title": "Amalienburg",
-          "creator": "München (interieur)",
+          "creator": "M\u00fcnchen (interieur)",
           "image": {
             "url": null,
             "page": null,
@@ -995,7 +995,7 @@
         },
         {
           "title": "Salon de la Princesse",
-          "creator": "Hôtel de Soubise",
+          "creator": "H\u00f4tel de Soubise",
           "image": {
             "url": null,
             "page": null,
@@ -1026,7 +1026,7 @@
         },
         {
           "title": "Portret van Marie-Antoinette",
-          "creator": "Vigée Le Brun",
+          "creator": "Vig\u00e9e Le Brun",
           "image": {
             "url": null,
             "page": null,
@@ -1057,7 +1057,7 @@
         }
       ],
       "needs_research": false,
-      "political_perspective": "De Rococo (1700-1760) bloeide tijdens een unieke politieke periode in Europa, gekenmerkt door de spanning tussen het verlicht absolutisme en de oude aristocratische orde van het ancien régime. In Frankrijk, het geestelijk centrum van de stijl, heerste Lodewijk XV (1715-1774) als absolute monarch, maar de werkelijke macht werd uitgeoefend door kardinaal Fleury (1726-1743) en een netwerk van hovelingen. Het verlicht absolutisme, beleden door vorsten als Frederik de Grote van Pruisen en Catharina de Grote van Rusland, probeerde de Verlichtingsidealen van rede, tolerantie en vooruitgang te combineren met centrale staatscontrole. Deze paradox – vorsten die \"voor het volk, maar niet door het volk\" regeerden – schiep een politieke cultuur van hervorming van bovenaf, maar ook van aristocratische onafhankelijkheid en intellectuele vrijheid binnen de grenzen van de staatsorde.\n\nDe sociale dynamiek van de Rococo-periode werd gedomineerd door de saloncultuur, die in Parijs ontwikkelde tot een alternatieve publieke sfeer. Vrouwen als Madame Geoffrin, Madame de Tencin en Madame du Deffand organiseerden regelmatige bijeenkomsten waar aristocraten, bourgeoisie, filosofen en kunstenaars in relatieve gelijkheid discussieerden over literatuur, filosofie en politiek. Deze salons fungeerden als \"scholen van beschaving\" waar de kunst van het gesprek, de dialoog en het verfijnde sociale verkeer werden geoefend. De opkomst van de bourgeoisie, verrijkt door handel en industrie, betekende een geleidelijke verschuiving van de strikte hiërarchie van het hof naar een meer gemengde samenleving waarin rijkdom en intellect status konden verlenen naast geboorte.\n\nDeze politieke en sociale context verklaart direct de kenmerken van de Rococo-stijl. De nadruk op aristocratische vrije tijd, verfijning en speelsheid weerspiegelde een elitecultuur die haar macht deels al had verloren aan de bureaucratie van de absolute staat, maar haar culturele supremie behield door excessieve verfijning. De asymmetrische, organische ornamentiek met schelpmotieven, acanthusbladeren en slingerende ranken verbeelde een wereld die de strenge geometrie van het Lodewijk XIV-tijdperk afzwoer voor gratie, lichtheid en beweging. De pastelkleuren – perzik, crème, zachtblauw en goud – schiepen een sfeer van intimiteit en verfíning die paste bij de particuliere salons en boudoirs van de aristocratie. De thematiek van pastorale idyllen, mythologische liefdesscènes en fêtes galantes verheerlijkte een geïdealiseerde wereld van aristocratische recreatie, vrij van politieke zorg en maatschappelijke spanning. De Rococo was niet louter een decoratieve stijl, maar de visuele expressie van een sociale orde die haar ondergang nog niet voorvoelde – een wereld van schoonheid, verfíning en spel die binnen enkele decennia zou worden verzwolgen door de Revolutie.\n\nBronnen: Wikipedia - Rococo, Enlightened absolutism, Salon (gathering), Ancien Régime, Louis XV."
+      "political_perspective": "De Rococo (1700-1760) bloeide tijdens een unieke politieke periode in Europa, gekenmerkt door de spanning tussen het verlicht absolutisme en de oude aristocratische orde van het ancien r\u00e9gime. In Frankrijk, het geestelijk centrum van de stijl, heerste Lodewijk XV (1715-1774) als absolute monarch, maar de werkelijke macht werd uitgeoefend door kardinaal Fleury (1726-1743) en een netwerk van hovelingen. Het verlicht absolutisme, beleden door vorsten als Frederik de Grote van Pruisen en Catharina de Grote van Rusland, probeerde de Verlichtingsidealen van rede, tolerantie en vooruitgang te combineren met centrale staatscontrole. Deze paradox \u2013 vorsten die \"voor het volk, maar niet door het volk\" regeerden \u2013 schiep een politieke cultuur van hervorming van bovenaf, maar ook van aristocratische onafhankelijkheid en intellectuele vrijheid binnen de grenzen van de staatsorde.\n\nDe sociale dynamiek van de Rococo-periode werd gedomineerd door de saloncultuur, die in Parijs ontwikkelde tot een alternatieve publieke sfeer. Vrouwen als Madame Geoffrin, Madame de Tencin en Madame du Deffand organiseerden regelmatige bijeenkomsten waar aristocraten, bourgeoisie, filosofen en kunstenaars in relatieve gelijkheid discussieerden over literatuur, filosofie en politiek. Deze salons fungeerden als \"scholen van beschaving\" waar de kunst van het gesprek, de dialoog en het verfijnde sociale verkeer werden geoefend. De opkomst van de bourgeoisie, verrijkt door handel en industrie, betekende een geleidelijke verschuiving van de strikte hi\u00ebrarchie van het hof naar een meer gemengde samenleving waarin rijkdom en intellect status konden verlenen naast geboorte.\n\nDeze politieke en sociale context verklaart direct de kenmerken van de Rococo-stijl. De nadruk op aristocratische vrije tijd, verfijning en speelsheid weerspiegelde een elitecultuur die haar macht deels al had verloren aan de bureaucratie van de absolute staat, maar haar culturele supremie behield door excessieve verfijning. De asymmetrische, organische ornamentiek met schelpmotieven, acanthusbladeren en slingerende ranken verbeelde een wereld die de strenge geometrie van het Lodewijk XIV-tijdperk afzwoer voor gratie, lichtheid en beweging. De pastelkleuren \u2013 perzik, cr\u00e8me, zachtblauw en goud \u2013 schiepen een sfeer van intimiteit en verf\u00edning die paste bij de particuliere salons en boudoirs van de aristocratie. De thematiek van pastorale idyllen, mythologische liefdessc\u00e8nes en f\u00eates galantes verheerlijkte een ge\u00efdealiseerde wereld van aristocratische recreatie, vrij van politieke zorg en maatschappelijke spanning. De Rococo was niet louter een decoratieve stijl, maar de visuele expressie van een sociale orde die haar ondergang nog niet voorvoelde \u2013 een wereld van schoonheid, verf\u00edning en spel die binnen enkele decennia zou worden verzwolgen door de Revolutie.\n\nBronnen: Wikipedia - Rococo, Enlightened absolutism, Salon (gathering), Ancien R\u00e9gime, Louis XV."
     },
     {
       "id": "neoclassicisme",
@@ -1075,7 +1075,7 @@
         "stijlfiguren": [
           "frontaliteit",
           "heldere volumes",
-          "heroïsche naakt",
+          "hero\u00efsche naakt",
           "antieke architectuur"
         ],
         "palet": [
@@ -1095,7 +1095,7 @@
           "mythologie"
         ]
       },
-      "political_perspective": "Het Neoclassicisme (1750-1850) ontstond in een tijdperk van fundamentele politieke transformatie die Europa's politieke landschap voorgoed veranderde. De Verlichting, die in de late 17e eeuw begon met denkers als René Descartes en John Locke, legde de intellectuele basis door rede, empirisme en individuele vrijheid boven traditie en dogma te stellen. Verlichte filosofen zoals Voltaire, Montesquieu en Jean-Jacques Rousseau bekritiseerden het absolutisme en stelden alternatieve staatsmodellen voor: Montesquieu's trias politica (scheiding der machten) en Rousseau's sociaal contract, waarin de soevereiniteit bij het volk berust. Deze ideeën werden verspreid door nieuwe instituties: literaire salons, vrijmetselaarsloges, koffiehuizen en een explosieve groei van drukpers en periodieken. De Encyclopédie van Diderot en d'Alembert (1751-1772) systematiseerde de kennis van de tijd en democratiseerde de toegang tot verlichte ideeën.\n\nDeze intellectuele stroming vertaalde zich in verlicht absolutisme, waarbij vorsten zoals Frederik de Grote van Pruisen, Catharina de Grote van Rusland en keizer Jozef II van Oostenrijk hun macht gebruikten om rationele hervormingen door te voeren: modernisering van rechtssystemen, bevordering van onderwijs en beperking van kerkelijke macht. Dit creëerde een paradox waarin vorsten hun eigen autoriteit versterkten in naam van vooruitgang, maar ook de kiem legden voor bredere politieke participatie.\n\nDe Franse Revolutie (1789-1799) vormde het keerpunt. Voortgekomen uit financiële crisis, sociale ongelijkheid en de onvrede van de opkomende bourgeoisie, begon de revolutie met de bijeenroeping van de Staten-Generaal en de bestorming van de Bastille op 14 juli 1789. De revolutie schafte het ancien régime af, vernietigde de privileges van adel en geestelijkheid, en verhief vrijheid, gelijkheid en broederschap tot staatsprincipe. De Constitutionele Monarchie (1789-1792) werd gevolgd door de Eerste Republiek (1792-1799), de Terreur onder Robespierre (1793-1794), en uiteindelijk de staatsgreep van Napoleon Bonaparte in 1799. De revolutie introduceerde universele rechten, seculiere staat en nationale identiteit, maar toonde ook de donkere kant van radicale politieke verandering door massale executies en politieke instabiliteit.\n\nDe Napoleontische Oorlogen (1803-1815) verspreidden revolutionaire ideeën en de Napoleontische Code door heel Europa, ondanks de militaire conflicten die meer dan een miljoen levens eisten. Napoleon reorganiseerde Europa's politieke kaart, ontbond het Heilige Roomse Rijk en verspreidde meritocratische principes. Zijn nederlaag bij Waterloo in 1815 en het Congres van Wenen probeerden de oude orde te herstellen, maar konden de verlichte ideeën niet ongedaan maken.\n\nNa 1815 ontwikkelde nationalisme zich als dominante ideologie. De revoluties van 1848 toonden de kracht van nationale aspiraties, waarbij Duitsland en Italië werden verenigd door gemeenschappelijke culturele identiteit, en volkeren zoals Griekenland, Servië, Bulgarije en Polen onafhankelijkheid streden tegen het Ottomaanse en Russische rijk. Nationalisme transformeerde Europa van dynastieke monarchieën naar natiestaten.\n\nDe sociale dynamiek werd gekenmerkt door de opkomst van een zelfbewuste bourgeoisie die door handel, industrie en intellectuele activiteit haar positie versterkte. Literaire salons werden centra van politieke discussie, en de nieuwe publieke sfeer werd een politieke macht. De Industriële Revolutie, die in de late 18e eeuw in Groot-Brittannië begon, transformeerde economische en sociale structuren, creëerde nieuwe rijkdom en leidde tot urbanisatie.\n\nDeze politieke context verklaart direct de kenmerken van het Neoclassicisme. De terugkeer naar klassieke orde, symmetrie en rationele compositie weerspiegelt de verlichte voorliefde voor rede, wetmatigheid en universele principes. De archeologische nauwkeurigheid, gevoed door opgravingen in Pompeï en Herculaneum, verbond kunst met wetenschappelijke methodologie. Antieke thema's uit Romeinse en Griekse geschiedenis – zoals David's 'De Eed van de Horatii' – verheerlijkten republikeinse deugden van zelfopoffering, burgerzin en morele vastberadenheid, en boden modellen voor het ideale staatsburgerschap in een tijd van revolutie. De strakke contour en friesachtige compositie riepen associaties op met duidelijke wetten en principes. De heldere volumes en heroïsche naakten belichaamden de stoïcijnse morele kracht die de nieuwe burgerij nastreefde. De koelheid en helderheid van het palet weerspiegelde rationele distantie en objectiviteit. Het Neoclassicisme was niet slechts een artistieke stijl, maar een visuele articulatie van de politieke idealen van een tijdperk dat de basis legde voor de moderne democratische staat en nationale identiteit.\n\nBronnen: Wikipedia - Neoclassicism, Age of Enlightenment, French Revolution, Napoleonic Wars, Rise of nationalism in Europe.",
+      "political_perspective": "Het Neoclassicisme (1750-1850) ontstond in een tijdperk van fundamentele politieke transformatie die Europa's politieke landschap voorgoed veranderde. De Verlichting, die in de late 17e eeuw begon met denkers als Ren\u00e9 Descartes en John Locke, legde de intellectuele basis door rede, empirisme en individuele vrijheid boven traditie en dogma te stellen. Verlichte filosofen zoals Voltaire, Montesquieu en Jean-Jacques Rousseau bekritiseerden het absolutisme en stelden alternatieve staatsmodellen voor: Montesquieu's trias politica (scheiding der machten) en Rousseau's sociaal contract, waarin de soevereiniteit bij het volk berust. Deze idee\u00ebn werden verspreid door nieuwe instituties: literaire salons, vrijmetselaarsloges, koffiehuizen en een explosieve groei van drukpers en periodieken. De Encyclop\u00e9die van Diderot en d'Alembert (1751-1772) systematiseerde de kennis van de tijd en democratiseerde de toegang tot verlichte idee\u00ebn.\n\nDeze intellectuele stroming vertaalde zich in verlicht absolutisme, waarbij vorsten zoals Frederik de Grote van Pruisen, Catharina de Grote van Rusland en keizer Jozef II van Oostenrijk hun macht gebruikten om rationele hervormingen door te voeren: modernisering van rechtssystemen, bevordering van onderwijs en beperking van kerkelijke macht. Dit cre\u00eberde een paradox waarin vorsten hun eigen autoriteit versterkten in naam van vooruitgang, maar ook de kiem legden voor bredere politieke participatie.\n\nDe Franse Revolutie (1789-1799) vormde het keerpunt. Voortgekomen uit financi\u00eble crisis, sociale ongelijkheid en de onvrede van de opkomende bourgeoisie, begon de revolutie met de bijeenroeping van de Staten-Generaal en de bestorming van de Bastille op 14 juli 1789. De revolutie schafte het ancien r\u00e9gime af, vernietigde de privileges van adel en geestelijkheid, en verhief vrijheid, gelijkheid en broederschap tot staatsprincipe. De Constitutionele Monarchie (1789-1792) werd gevolgd door de Eerste Republiek (1792-1799), de Terreur onder Robespierre (1793-1794), en uiteindelijk de staatsgreep van Napoleon Bonaparte in 1799. De revolutie introduceerde universele rechten, seculiere staat en nationale identiteit, maar toonde ook de donkere kant van radicale politieke verandering door massale executies en politieke instabiliteit.\n\nDe Napoleontische Oorlogen (1803-1815) verspreidden revolutionaire idee\u00ebn en de Napoleontische Code door heel Europa, ondanks de militaire conflicten die meer dan een miljoen levens eisten. Napoleon reorganiseerde Europa's politieke kaart, ontbond het Heilige Roomse Rijk en verspreidde meritocratische principes. Zijn nederlaag bij Waterloo in 1815 en het Congres van Wenen probeerden de oude orde te herstellen, maar konden de verlichte idee\u00ebn niet ongedaan maken.\n\nNa 1815 ontwikkelde nationalisme zich als dominante ideologie. De revoluties van 1848 toonden de kracht van nationale aspiraties, waarbij Duitsland en Itali\u00eb werden verenigd door gemeenschappelijke culturele identiteit, en volkeren zoals Griekenland, Servi\u00eb, Bulgarije en Polen onafhankelijkheid streden tegen het Ottomaanse en Russische rijk. Nationalisme transformeerde Europa van dynastieke monarchie\u00ebn naar natiestaten.\n\nDe sociale dynamiek werd gekenmerkt door de opkomst van een zelfbewuste bourgeoisie die door handel, industrie en intellectuele activiteit haar positie versterkte. Literaire salons werden centra van politieke discussie, en de nieuwe publieke sfeer werd een politieke macht. De Industri\u00eble Revolutie, die in de late 18e eeuw in Groot-Brittanni\u00eb begon, transformeerde economische en sociale structuren, cre\u00eberde nieuwe rijkdom en leidde tot urbanisatie.\n\nDeze politieke context verklaart direct de kenmerken van het Neoclassicisme. De terugkeer naar klassieke orde, symmetrie en rationele compositie weerspiegelt de verlichte voorliefde voor rede, wetmatigheid en universele principes. De archeologische nauwkeurigheid, gevoed door opgravingen in Pompe\u00ef en Herculaneum, verbond kunst met wetenschappelijke methodologie. Antieke thema's uit Romeinse en Griekse geschiedenis \u2013 zoals David's 'De Eed van de Horatii' \u2013 verheerlijkten republikeinse deugden van zelfopoffering, burgerzin en morele vastberadenheid, en boden modellen voor het ideale staatsburgerschap in een tijd van revolutie. De strakke contour en friesachtige compositie riepen associaties op met duidelijke wetten en principes. De heldere volumes en hero\u00efsche naakten belichaamden de sto\u00efcijnse morele kracht die de nieuwe burgerij nastreefde. De koelheid en helderheid van het palet weerspiegelde rationele distantie en objectiviteit. Het Neoclassicisme was niet slechts een artistieke stijl, maar een visuele articulatie van de politieke idealen van een tijdperk dat de basis legde voor de moderne democratische staat en nationale identiteit.\n\nBronnen: Wikipedia - Neoclassicism, Age of Enlightenment, French Revolution, Napoleonic Wars, Rise of nationalism in Europe.",
       "works": [
         {
           "title": "Dood van Marat",
@@ -1394,7 +1394,7 @@
         ],
         "stijlfiguren": [
           "dramatische wolken",
-          "ruïnes",
+          "ru\u00efnes",
           "storm en mist",
           "sterke diagonalen"
         ],
@@ -1415,11 +1415,11 @@
           "nacht"
         ]
       },
-      "political_perspective": "De Romantiek (1780-1850) ontwikkelde zich in een tijdperk van radicale politieke transformaties die fundamenteel van invloed waren op de artistieke expressie. De Franse Revolutie (1789-1799) vormde het centrale keerpunt: zij verwoestte het Ancien Régime, de absolute monarchie en de aristocratische orde, en introduceerde idealen van vrijheid, gelijkheid en broederschap. Deze revolutie inspireerde de eerste generatie Romantici, die sympathiseerden met de revolutionaire idealen van individuele vrijheid en nationale zelfbeschikking. De daaropvolgende Napoleontische Oorlogen (1803-1815) verspreidden deze ideeën door heel Europa, maar brachten ook enorme destructie en lijden, wat leidde tot een diepe ambivalentie ten aanzien van politieke verandering en een fascinatie met het sublieme en het catastrofale.\n\nNa de nederlaag van Napoleon in 1815 probeerde het Congres van Wenen en de daaropvolgende Restauratie onder leiding van Metternich de oude orde te herstellen. Dit conservatieve systeem, gebaseerd op een balans van macht tussen de grote imperia (het Oostenrijkse, Russische, Pruisische en gereanimeerde Franse monarchie), onderdrukte liberale en nationalistische aspiraties. Deze repressie zaaide echter de zaden voor nieuwe revoluties. De Julirevolutie van 1830 in Frankrijk, glorierijk vastgelegd in Delacroix' 'De Vrijheid leidt het Volk', toonde dat de revolutionaire geest onverwoestbaar was. De revolutiegolf van 1848, die heel Europa trof van Parijs tot Wenen en Berlijn, vormde het hoogtepunt van de Romantische politieke passie, hoewel deze uiteindelijk faalde en leidde tot een conservatieve tegenreactie.\n\nDe sociale dynamiek van deze periode werd gekenmerkt door de opkomst van een nieuwe bourgeoisie: een welvarende middenklasse van handelaren, industriëlen en intellectuelen die zowel de belangrijkste begunstigden als critici waren van de Industriële Revolutie. Deze klasse verwierp de conventies van de aristocratie en vierde het individu als bron van authenticiteit en creativiteit. Het concept van het 'Romantische genie' - de eenzame, getormenteerde kunstenaar wiens passie en intuïtie belangrijker waren dan regels en traditie - werd het icoon van deze nieuwe sociale orde. De 'Byronic hero', genoemd naar Lord Byron, belichaamde dit ideaal: een afstandelijke, rebelsche, briljante figuur die boven de massa verheven was.\n\nDeze politieke en sociale context verklaart direct de karakteristieken van de Romantische kunst. De nadruk op emotie boven rationaliteit was een reactie tegen de Verlichtingsidealen die gedeeltelijk verantwoordelijk werden gehouden voor de excessen van de Terreur en de Napoleontische oorlogen. Het sublieme - de overweldigende ervaring van natuurgeweld die ontzag en angst opwekt - gaf uitdrukking aan een wereld in turbulente verandering, waar oude zekerheden wegvielen. De Romantische fascinatie met het exotische (het oosterse, het middeleeuwse, het folkloristische) diende als ontsnapping uit de als beklemmend ervaren moderniteit en vierde culturen die als 'authentieker' werden gezien. Romantisch nationalisme, dat volksverhalen, mythen en nationale epieken verzamelde (zoals de Gebroeders Grimm in Duitsland), verbond artistieke expressie direct met politieke aspiraties van nationale eenwording, wat resulteerde in de unificatie van Italië en Duitsland later in de eeuw. De Romantische held - of het nu ging om de eenzame wandelaar bij Friedrich of de revolutionaire vrijheidsstrijder bij Delacroix - was direct gevormd door de politieke idealen van individuele vrijheid en nationale verheffing.\n\nBronnen: Wikipedia - Romanticism, Romantic nationalism, French Revolution, Napoleonic Wars, Revolutions of 1848.",
+      "political_perspective": "De Romantiek (1780-1850) ontwikkelde zich in een tijdperk van radicale politieke transformaties die fundamenteel van invloed waren op de artistieke expressie. De Franse Revolutie (1789-1799) vormde het centrale keerpunt: zij verwoestte het Ancien R\u00e9gime, de absolute monarchie en de aristocratische orde, en introduceerde idealen van vrijheid, gelijkheid en broederschap. Deze revolutie inspireerde de eerste generatie Romantici, die sympathiseerden met de revolutionaire idealen van individuele vrijheid en nationale zelfbeschikking. De daaropvolgende Napoleontische Oorlogen (1803-1815) verspreidden deze idee\u00ebn door heel Europa, maar brachten ook enorme destructie en lijden, wat leidde tot een diepe ambivalentie ten aanzien van politieke verandering en een fascinatie met het sublieme en het catastrofale.\n\nNa de nederlaag van Napoleon in 1815 probeerde het Congres van Wenen en de daaropvolgende Restauratie onder leiding van Metternich de oude orde te herstellen. Dit conservatieve systeem, gebaseerd op een balans van macht tussen de grote imperia (het Oostenrijkse, Russische, Pruisische en gereanimeerde Franse monarchie), onderdrukte liberale en nationalistische aspiraties. Deze repressie zaaide echter de zaden voor nieuwe revoluties. De Julirevolutie van 1830 in Frankrijk, glorierijk vastgelegd in Delacroix' 'De Vrijheid leidt het Volk', toonde dat de revolutionaire geest onverwoestbaar was. De revolutiegolf van 1848, die heel Europa trof van Parijs tot Wenen en Berlijn, vormde het hoogtepunt van de Romantische politieke passie, hoewel deze uiteindelijk faalde en leidde tot een conservatieve tegenreactie.\n\nDe sociale dynamiek van deze periode werd gekenmerkt door de opkomst van een nieuwe bourgeoisie: een welvarende middenklasse van handelaren, industri\u00eblen en intellectuelen die zowel de belangrijkste begunstigden als critici waren van de Industri\u00eble Revolutie. Deze klasse verwierp de conventies van de aristocratie en vierde het individu als bron van authenticiteit en creativiteit. Het concept van het 'Romantische genie' - de eenzame, getormenteerde kunstenaar wiens passie en intu\u00eftie belangrijker waren dan regels en traditie - werd het icoon van deze nieuwe sociale orde. De 'Byronic hero', genoemd naar Lord Byron, belichaamde dit ideaal: een afstandelijke, rebelsche, briljante figuur die boven de massa verheven was.\n\nDeze politieke en sociale context verklaart direct de karakteristieken van de Romantische kunst. De nadruk op emotie boven rationaliteit was een reactie tegen de Verlichtingsidealen die gedeeltelijk verantwoordelijk werden gehouden voor de excessen van de Terreur en de Napoleontische oorlogen. Het sublieme - de overweldigende ervaring van natuurgeweld die ontzag en angst opwekt - gaf uitdrukking aan een wereld in turbulente verandering, waar oude zekerheden wegvielen. De Romantische fascinatie met het exotische (het oosterse, het middeleeuwse, het folkloristische) diende als ontsnapping uit de als beklemmend ervaren moderniteit en vierde culturen die als 'authentieker' werden gezien. Romantisch nationalisme, dat volksverhalen, mythen en nationale epieken verzamelde (zoals de Gebroeders Grimm in Duitsland), verbond artistieke expressie direct met politieke aspiraties van nationale eenwording, wat resulteerde in de unificatie van Itali\u00eb en Duitsland later in de eeuw. De Romantische held - of het nu ging om de eenzame wandelaar bij Friedrich of de revolutionaire vrijheidsstrijder bij Delacroix - was direct gevormd door de politieke idealen van individuele vrijheid en nationale verheffing.\n\nBronnen: Wikipedia - Romanticism, Romantic nationalism, French Revolution, Napoleonic Wars, Revolutions of 1848.",
       "works": [
         {
           "title": "Vlot van de Medusa",
-          "creator": "Géricault",
+          "creator": "G\u00e9ricault",
           "image": {
             "url": null,
             "page": null,
@@ -1543,7 +1543,7 @@
         },
         {
           "title": "Paardenstudies Napoleon",
-          "creator": "Géricault",
+          "creator": "G\u00e9ricault",
           "image": {
             "url": null,
             "page": null,
@@ -1574,7 +1574,7 @@
         },
         {
           "title": "Dodenmasker Napoleon",
-          "creator": "Géricault",
+          "creator": "G\u00e9ricault",
           "image": {
             "url": null,
             "page": null,
@@ -1736,7 +1736,7 @@
       "type": "canon",
       "start": 1840,
       "end": 1880,
-      "political_perspective": "Het Realisme (1840-1880) ontstond in een periode van fundamentele politieke en sociale transformaties die voortkwamen uit de Eerste Industriële Revolutie (1760-1840) en leidden naar de Tweede Industriële Revolutie (1870-1914). De politieke structuur werd gekenmerkt door de opkomst van liberale democratieën en de afname van absolutistische monarchieën, maar deze transitie verliep met aanzienlijke spanningen. In Frankrijk, het hart van de Realistische beweging, resulteerde de Julirevolutie van 1830 in de Julimonarchie onder Louis-Philippe, die echter weinig deed aan de sociale ongelijkheid. De beperkte kieswet, die het stemrecht gaf aan slechts ongeveer 250.000 van de rijkste mannen in Frankrijk, vervreemdde zowel de arbeidersklasse als de opkomende middenklasse van het politieke proces.\n\nDe sleutelgebeurtenis die de Realistische kunst direct beïnvloedde waren de Revoluties van 1848, ook bekend als de 'lente van de volkeren'. Deze revolutiegolf overspoelde Europa van januari 1848 tot oktober 1849 en trof meer dan vijftig landen, waaronder Frankrijk, de Duitse staten, het Oostenrijkse Rijk en de Italiaanse staten. De Februarirevolutie in Frankrijk in 1848 leidde tot de oprichting van de Tweede Franse Republiek en de invoering van algemeen mannenkiesrecht, maar de tegenstellingen tussen radicale arbeiders en de gematigde regering resulteerden in de bloedige Juni-Dagen-opstand, waarbij duizenden arbeiders werden gedood door het leger onder generaal Cavaignac. Deze contrarevolutie markeerde het einde van de revolutionaire hoop voor velen en creëerde een klimaat van desillusie dat weerspiegeld werd in de kunst.\n\nDe sociale dynamiek van deze periode werd gedomineerd door de gevolgen van industrialisatie en urbanisatie. De Eerste Industriële Revolutie had de traditionele economie getransformeerd van handmatige productie naar machinale fabricage, wat leidde tot massale migratie van het platteland naar de steden. In 1848 was het grootste deel van de arbeiders nog steeds ambachtslieden in plaats van fabrieksarbeiders, maar de mechanisering bedreigde bestaande beroepen, vooral in de textielindustrie en metaalbewerking. Dit leidde tot een groeiend gevoel van onzekerheid onder arbeiders, wiens levensstandaard en sociale status afnamen door de overgang naar kapitalistische productie. De arbeidersmarkten in steden raakten oververzadigd door de toestroom van het platteland, wat leidde tot dalende lonen en stijgende levenskosten. De aardappelenhongersnood van 1845-1847, veroorzaakt door aardappelziekte, trof heel Noord-Europa en leidde tot massale hongersnood, migratie en sociale onrust. Voedselrellen braken uit over heel Europa, met meer dan 400 rellen alleen al in Frankrijk tussen 1846 en 1847.\n\nTegelijkertijd ontstond een nieuwe industriële middenklasse van fabrikanten, handelaren en professionals die welvaart verwierf door de nieuwe economische mogelijkheden, maar die politiek vaak werd buitengesloten door de oude aristocratie. Deze 'intellectuele proletariaat' van onderbetaalde leraren, journalisten en ambtenaren vormde vaak de leiders van de revolutionaire beweging. De werkende klasse ontwikkelde vroege vormen van arbeidersorganisaties, cooperaties en vakbonden, hoewel deze nog los en onorganiseerd waren vergeleken met latere periodes.\n\nDeze politieke en sociale context verklaart direct de kenmerken van de Realistische kunst. De afwijzing van het Romanticisme, met zijn geïdealiseerde, emotionele en exotische onderwerpen, was een directe reactie tegen een kunstvorm die de werkelijkheid van het alledaagse leven verdoezelde. Realistische schilders zoals Gustave Courbet, Jean-François Millet en Honoré Daumier richtten zich bewust op arbeiders, boeren en gewone mensen in hun dagelijkse omgeving, precies de groepen die door de industrialisatie en social upheaval het meest werden getroffen. Courbets 'De Steenhouwers' (1849), zijn eerste controversiële werk, toonde twee mannen tegen een liefdeloze, stenige wegberm, waarbij de verhulling van hun gezichten de ontmenselijkende aard van hun monotone, repetitieve arbeid benadrukte. De keuze voor alledaagse onderwerpen en objectieve observatie was geen esthetische voorkeur, maar een politieke en sociale keuze: het tonen van de 'onplezierige of smerige aspecten van het leven' die eerder in de kunst werden vermeden. De nadruk op sociale observatie en anti-idealiserende voorstelling was een vorm van sociaal commentaar op de gevolgen van industrialisatie en de politieke crisis van 1848. De kunst werd een middel om de realiteit van de arbeidersklasse en de sociale ongelijkheid zichtbaar te maken, een directe weerspiegeling van de tijdgeest waarin het Realisme ontstond.\n\nBronnen: Wikipedia - Realism (art movement), Industrial Revolution, Second Industrial Revolution, Revolutions of 1848.",
+      "political_perspective": "Het Realisme (1840-1880) ontstond in een periode van fundamentele politieke en sociale transformaties die voortkwamen uit de Eerste Industri\u00eble Revolutie (1760-1840) en leidden naar de Tweede Industri\u00eble Revolutie (1870-1914). De politieke structuur werd gekenmerkt door de opkomst van liberale democratie\u00ebn en de afname van absolutistische monarchie\u00ebn, maar deze transitie verliep met aanzienlijke spanningen. In Frankrijk, het hart van de Realistische beweging, resulteerde de Julirevolutie van 1830 in de Julimonarchie onder Louis-Philippe, die echter weinig deed aan de sociale ongelijkheid. De beperkte kieswet, die het stemrecht gaf aan slechts ongeveer 250.000 van de rijkste mannen in Frankrijk, vervreemdde zowel de arbeidersklasse als de opkomende middenklasse van het politieke proces.\n\nDe sleutelgebeurtenis die de Realistische kunst direct be\u00efnvloedde waren de Revoluties van 1848, ook bekend als de 'lente van de volkeren'. Deze revolutiegolf overspoelde Europa van januari 1848 tot oktober 1849 en trof meer dan vijftig landen, waaronder Frankrijk, de Duitse staten, het Oostenrijkse Rijk en de Italiaanse staten. De Februarirevolutie in Frankrijk in 1848 leidde tot de oprichting van de Tweede Franse Republiek en de invoering van algemeen mannenkiesrecht, maar de tegenstellingen tussen radicale arbeiders en de gematigde regering resulteerden in de bloedige Juni-Dagen-opstand, waarbij duizenden arbeiders werden gedood door het leger onder generaal Cavaignac. Deze contrarevolutie markeerde het einde van de revolutionaire hoop voor velen en cre\u00eberde een klimaat van desillusie dat weerspiegeld werd in de kunst.\n\nDe sociale dynamiek van deze periode werd gedomineerd door de gevolgen van industrialisatie en urbanisatie. De Eerste Industri\u00eble Revolutie had de traditionele economie getransformeerd van handmatige productie naar machinale fabricage, wat leidde tot massale migratie van het platteland naar de steden. In 1848 was het grootste deel van de arbeiders nog steeds ambachtslieden in plaats van fabrieksarbeiders, maar de mechanisering bedreigde bestaande beroepen, vooral in de textielindustrie en metaalbewerking. Dit leidde tot een groeiend gevoel van onzekerheid onder arbeiders, wiens levensstandaard en sociale status afnamen door de overgang naar kapitalistische productie. De arbeidersmarkten in steden raakten oververzadigd door de toestroom van het platteland, wat leidde tot dalende lonen en stijgende levenskosten. De aardappelenhongersnood van 1845-1847, veroorzaakt door aardappelziekte, trof heel Noord-Europa en leidde tot massale hongersnood, migratie en sociale onrust. Voedselrellen braken uit over heel Europa, met meer dan 400 rellen alleen al in Frankrijk tussen 1846 en 1847.\n\nTegelijkertijd ontstond een nieuwe industri\u00eble middenklasse van fabrikanten, handelaren en professionals die welvaart verwierf door de nieuwe economische mogelijkheden, maar die politiek vaak werd buitengesloten door de oude aristocratie. Deze 'intellectuele proletariaat' van onderbetaalde leraren, journalisten en ambtenaren vormde vaak de leiders van de revolutionaire beweging. De werkende klasse ontwikkelde vroege vormen van arbeidersorganisaties, cooperaties en vakbonden, hoewel deze nog los en onorganiseerd waren vergeleken met latere periodes.\n\nDeze politieke en sociale context verklaart direct de kenmerken van de Realistische kunst. De afwijzing van het Romanticisme, met zijn ge\u00efdealiseerde, emotionele en exotische onderwerpen, was een directe reactie tegen een kunstvorm die de werkelijkheid van het alledaagse leven verdoezelde. Realistische schilders zoals Gustave Courbet, Jean-Fran\u00e7ois Millet en Honor\u00e9 Daumier richtten zich bewust op arbeiders, boeren en gewone mensen in hun dagelijkse omgeving, precies de groepen die door de industrialisatie en social upheaval het meest werden getroffen. Courbets 'De Steenhouwers' (1849), zijn eerste controversi\u00eble werk, toonde twee mannen tegen een liefdeloze, stenige wegberm, waarbij de verhulling van hun gezichten de ontmenselijkende aard van hun monotone, repetitieve arbeid benadrukte. De keuze voor alledaagse onderwerpen en objectieve observatie was geen esthetische voorkeur, maar een politieke en sociale keuze: het tonen van de 'onplezierige of smerige aspecten van het leven' die eerder in de kunst werden vermeden. De nadruk op sociale observatie en anti-idealiserende voorstelling was een vorm van sociaal commentaar op de gevolgen van industrialisatie en de politieke crisis van 1848. De kunst werd een middel om de realiteit van de arbeidersklasse en de sociale ongelijkheid zichtbaar te maken, een directe weerspiegeling van de tijdgeest waarin het Realisme ontstond.\n\nBronnen: Wikipedia - Realism (art movement), Industrial Revolution, Second Industrial Revolution, Revolutions of 1848.",
       "visual": {
         "kenmerken": [
           "alledaags leven",
@@ -1763,7 +1763,7 @@
         "motieven": [
           "arbeid",
           "boeren",
-          "stedelijke scènes",
+          "stedelijke sc\u00e8nes",
           "portret"
         ]
       },
@@ -2049,7 +2049,7 @@
         },
         {
           "title": "Moeder en kind",
-          "creator": "Jozef Israëls",
+          "creator": "Jozef Isra\u00ebls",
           "image": {
             "url": null,
             "page": null,
@@ -2429,7 +2429,7 @@
           }
         }
       ],
-      "political_perspective": "Het impressionisme (1870-1890) ontwikkelde zich in een politieke context die werd gekenmerkt door dramatische transformaties: de val van het Tweede Franse Keizerrijk, de traumatische Frans-Duitse Oorlog, de revolutionaire Parijse Commune, en de opkomst van de Derde Republiek die zou uitgroeien tot de langstdurende staatsvorm sinds de Revolutie van 1789. Deze periode van politieke instabiliteit en wederopbouw legde de basis voor de Belle Époque, een gouden eeuw van culturele bloei die direct de thema's en technieken van het impressionisme beïnvloedde.\n\nDe Frans-Duitse Oorlog (1870-1871) vormde het keerpunt. In september 1870 werd keizer Napoleon III gevangengenomen bij Sedan, wat leidde tot de val van het Tweede Keizerrijk en de uitroeping van de Derde Republiek op 4 september. De daaropvolgende belegering van Parijs door de Pruisen duurde van september 1870 tot januari 1871 en veroorzaakte hongersnood en ontbering. De nederlaag werd bezegeld met het Verdrag van Frankfurt (mei 1871), waarbij Frankrijk Alsace-Lorraine moest afstaan en enorme herstelbetalingen deed. Deze nationale vernedering creëerde een diepgaand trauma en revanchisme dat de Franse politiek decennialang zou domineren.\n\nDe Parijse Commune (maart-mei 1871) was de meest traumatische gebeurtenis. Na de wapenstilstand met Pruisen weigerden de Parijse Nationale Garde en arbeiders de autoriteit van de nieuwe conservatieve regering in Versailles te erkennen. Gedurende twee maanden regeerde een revolutionaire regering Parijs met progressieve maatregelen zoals scheiding van kerk en staat, afschaffing van kinderarbeid en huurverlaging. De bloedige onderdrukking tijdens de \"Bloedige Week\" (21-28 mei 1871) resulteerde in 10.000-20.000 doden en 43.000 gevangenen, wat een diepe tweedeling in de Franse samenleving achterliet tussen de republikeinse steden en het conservatieve platteland. Veel kunstenaars, waaronder Courbet en Manet, werden direct betrokken bij of geraakt door deze gebeurtenissen.\n\nDe Derde Republiek (1870-1940) bracht na een periode van politieke crises stabiliteit en modernisering. Aanvankelijk werd een monarchie overwogen, maar het uitstel van de restauratie en de geleidelijke groei van republikeinse steun leidden ertoe dat de republiek permanent werd. Onder leiders zoals Jules Ferry werden cruciale hervormingen doorgevoerd: gratis en verplicht onderwijs (1881-1882), secularisering van de overheid (laïcité), en koloniale expansie. Deze politieke stabiliteit tijdens de Belle Époque (1871-1914) schiep een klimaat van optimisme, economische groei en culturele innovatie.\n\nDe urbanisatie van Parijs, begonnen onder Haussmann tijdens het Tweede Keizerrijk (1853-1870), transformeerde de stad fundamenteel en creëerde de moderne metropool die de impressionisten zouden vastleggen. De aanleg van brede boulevards, parken zoals het Bois de Boulogne en Bois de Vincennes, en nieuwe pleinen zoals de Place de l'Opéra veranderden het stedelijke landschap en de sociale dynamiek. Deze nieuwe openbare ruimtes werden het domein van de opkomende bourgeoisie, die genoot van vrije tijd, amusement en consumptie in cafés, cabarets, theaters en aan de Seine.\n\nDe sociale dynamiek werd gekenmerkt door een bloeiende middenklasse en een nieuwe leisure class. De industriële revolutie en economische groei creëerden een bourgeoisie die zich kon veroorloven om kunst te verzamelen, te reizen en hun vrije tijd door te brengen in de nieuwe stedelijke plezierruimtes. Salons, café-concerts, opera's en jaarmarkten werden de sociale arena's waar de nieuwe rijken paradeerden. Deze bourgeois cultuur van vermaak en consumptie werd het primaire onderwerp van het impressionisme.\n\nDe politieke context verklaart direct de kenmerken van het impressionisme. De nadruk op modern stedelijk leven – danszalen, café-concerts, theaters, parken en rivieroevers – weerspiegelt de nieuwe sociale realiteit van de Belle Époque bourgeoisie. De \"en plein air\" techniek en de studie van licht en kleur vielen samen met de nieuwe ervaring van de gemoderniseerde stad met haar brede boulevards, glasconstructies (zoals Les Halles) en reflecterende oppervlakken. De momentopname-esthetiek en het fotografische cropping weerspiegelden de verhoogde tempo van het moderne leven en de invloed van nieuwe technologieën zoals fotografie. De losse penseelstreek en zichtbare toets benadrukten het persoonlijke, subjectieve perspectief van de individuele kunstenaar, wat paste bij de republikeinse nadruk op individuele vrijheid. De keuze voor alledaagse onderwerpen – stranden, tuinen, stations en stadsgezichten – was een bewuste afwijzing van de academische traditie die historische, mythologische en religieuze thema's prefereerde, wat paste bij de secularisering van de Derde Republiek.\n\nDe impressionisten schilderden niet de politieke trauma's van de oorlog en de Commune, maar de nieuwe realiteit van vrede, voorspoed en moderniteit die daarop volgde. Hun kunst was een visuele viering van het moderne leven zoals dat ontstond onder de politieke stabiliteit van de Derde Republiek.\n\nBronnen: Wikipedia - Franco-Prussian War, Paris Commune, French Third Republic, Belle Époque, Haussmann's renovation of Paris.",
+      "political_perspective": "Het impressionisme (1870-1890) ontwikkelde zich in een politieke context die werd gekenmerkt door dramatische transformaties: de val van het Tweede Franse Keizerrijk, de traumatische Frans-Duitse Oorlog, de revolutionaire Parijse Commune, en de opkomst van de Derde Republiek die zou uitgroeien tot de langstdurende staatsvorm sinds de Revolutie van 1789. Deze periode van politieke instabiliteit en wederopbouw legde de basis voor de Belle \u00c9poque, een gouden eeuw van culturele bloei die direct de thema's en technieken van het impressionisme be\u00efnvloedde.\n\nDe Frans-Duitse Oorlog (1870-1871) vormde het keerpunt. In september 1870 werd keizer Napoleon III gevangengenomen bij Sedan, wat leidde tot de val van het Tweede Keizerrijk en de uitroeping van de Derde Republiek op 4 september. De daaropvolgende belegering van Parijs door de Pruisen duurde van september 1870 tot januari 1871 en veroorzaakte hongersnood en ontbering. De nederlaag werd bezegeld met het Verdrag van Frankfurt (mei 1871), waarbij Frankrijk Alsace-Lorraine moest afstaan en enorme herstelbetalingen deed. Deze nationale vernedering cre\u00eberde een diepgaand trauma en revanchisme dat de Franse politiek decennialang zou domineren.\n\nDe Parijse Commune (maart-mei 1871) was de meest traumatische gebeurtenis. Na de wapenstilstand met Pruisen weigerden de Parijse Nationale Garde en arbeiders de autoriteit van de nieuwe conservatieve regering in Versailles te erkennen. Gedurende twee maanden regeerde een revolutionaire regering Parijs met progressieve maatregelen zoals scheiding van kerk en staat, afschaffing van kinderarbeid en huurverlaging. De bloedige onderdrukking tijdens de \"Bloedige Week\" (21-28 mei 1871) resulteerde in 10.000-20.000 doden en 43.000 gevangenen, wat een diepe tweedeling in de Franse samenleving achterliet tussen de republikeinse steden en het conservatieve platteland. Veel kunstenaars, waaronder Courbet en Manet, werden direct betrokken bij of geraakt door deze gebeurtenissen.\n\nDe Derde Republiek (1870-1940) bracht na een periode van politieke crises stabiliteit en modernisering. Aanvankelijk werd een monarchie overwogen, maar het uitstel van de restauratie en de geleidelijke groei van republikeinse steun leidden ertoe dat de republiek permanent werd. Onder leiders zoals Jules Ferry werden cruciale hervormingen doorgevoerd: gratis en verplicht onderwijs (1881-1882), secularisering van de overheid (la\u00efcit\u00e9), en koloniale expansie. Deze politieke stabiliteit tijdens de Belle \u00c9poque (1871-1914) schiep een klimaat van optimisme, economische groei en culturele innovatie.\n\nDe urbanisatie van Parijs, begonnen onder Haussmann tijdens het Tweede Keizerrijk (1853-1870), transformeerde de stad fundamenteel en cre\u00eberde de moderne metropool die de impressionisten zouden vastleggen. De aanleg van brede boulevards, parken zoals het Bois de Boulogne en Bois de Vincennes, en nieuwe pleinen zoals de Place de l'Op\u00e9ra veranderden het stedelijke landschap en de sociale dynamiek. Deze nieuwe openbare ruimtes werden het domein van de opkomende bourgeoisie, die genoot van vrije tijd, amusement en consumptie in caf\u00e9s, cabarets, theaters en aan de Seine.\n\nDe sociale dynamiek werd gekenmerkt door een bloeiende middenklasse en een nieuwe leisure class. De industri\u00eble revolutie en economische groei cre\u00eberden een bourgeoisie die zich kon veroorloven om kunst te verzamelen, te reizen en hun vrije tijd door te brengen in de nieuwe stedelijke plezierruimtes. Salons, caf\u00e9-concerts, opera's en jaarmarkten werden de sociale arena's waar de nieuwe rijken paradeerden. Deze bourgeois cultuur van vermaak en consumptie werd het primaire onderwerp van het impressionisme.\n\nDe politieke context verklaart direct de kenmerken van het impressionisme. De nadruk op modern stedelijk leven \u2013 danszalen, caf\u00e9-concerts, theaters, parken en rivieroevers \u2013 weerspiegelt de nieuwe sociale realiteit van de Belle \u00c9poque bourgeoisie. De \"en plein air\" techniek en de studie van licht en kleur vielen samen met de nieuwe ervaring van de gemoderniseerde stad met haar brede boulevards, glasconstructies (zoals Les Halles) en reflecterende oppervlakken. De momentopname-esthetiek en het fotografische cropping weerspiegelden de verhoogde tempo van het moderne leven en de invloed van nieuwe technologie\u00ebn zoals fotografie. De losse penseelstreek en zichtbare toets benadrukten het persoonlijke, subjectieve perspectief van de individuele kunstenaar, wat paste bij de republikeinse nadruk op individuele vrijheid. De keuze voor alledaagse onderwerpen \u2013 stranden, tuinen, stations en stadsgezichten \u2013 was een bewuste afwijzing van de academische traditie die historische, mythologische en religieuze thema's prefereerde, wat paste bij de secularisering van de Derde Republiek.\n\nDe impressionisten schilderden niet de politieke trauma's van de oorlog en de Commune, maar de nieuwe realiteit van vrede, voorspoed en moderniteit die daarop volgde. Hun kunst was een visuele viering van het moderne leven zoals dat ontstond onder de politieke stabiliteit van de Derde Republiek.\n\nBronnen: Wikipedia - Franco-Prussian War, Paris Commune, French Third Republic, Belle \u00c9poque, Haussmann's renovation of Paris.",
       "needs_research": false
     },
     {
@@ -2468,7 +2468,7 @@
           "visioen"
         ]
       },
-      "political_perspective": "Het Symbolisme (1880-1910) bloeide tijdens de fin de siècle, een periode van diepe culturele pessimisme en decadentie die de Europese intellectuele elite in zijn greep hield. De politieke structuur werd gekenmerkt door een fundamentele revolte tegen materialisme, rationalisme, positivisme en de bourgeois-liberale democratie. Deze generatie omarmde daarentegen emotionalisme, irrationalisme, subjectivisme en vitalisme, gedreven door het gevoel dat de beschaving in een crisis verkeerde die een totale oplossing vereiste. De filosoof Arthur Schopenhauer had met zijn pessimistische wereldbeeld de intellectuele toon gezet: kunst diende als tijdelijke toevluchtsoord uit de wereld van strijd en lijden. Deze filosofische onderstroom vond directe expressie in de symbolistische esthetiek, waarin droomtoestanden en het subjectieve innerlijk werden verheerlijkt boven rationele observatie.\n\nBelangrijke politieke gebeurtenissen omvatten de opkomst van het anarchistisch activisme in de jaren 1890. Anarchisten pleegden bomaanslagen en moorden die de publieke opinie schokten, wat leidde tot repressieve wetten die de vrijheid van meningsuiting beperkten. Tegelijkertijd ondermijnde de opkomst van wetenschappelijke rationaliteit, psychologie en secularisering de traditionele religieuze zekerheden. De degeneratietheorie van B.A. Morel en Max Nordau's invloedrijke werk 'Degeneration' (1892) suggereerden dat samenlevingen konden degenereren onder invloed van nationale omstandigheden of buitenlandse culturele invloeden. Nordau identificeerde twee dominante trekken bij gedegenereerden: egomanie (pathologische zelfabsorptie) en mystiek (verminderd vermogen om primaire waarnemingen te vertalen tot volledig ontwikkelde ideeën). Deze kenmerken werden direct toegepast op symbolistische werken, die werden gezien als uitingen van maatschappelijk verval. Desondanks zochten intellectuelen naar alternatieve spirituele paden, waardoor het symbolisme een reactie werd tegen zowel wetenschappelijk materialisme als politiek positivisme.\n\nDe sociale dynamiek werd gekenmerkt door een zich terugtrekkende intellectuele elite die zich in privé-salons en exclusieve kringen organiseerde. Figuren zoals Joséphin Péladan, een occultist die de Salon de la Rose + Croix oprichtte (1892-1897), promootten spiritualisme, mystiek en idealisme. Symbolistische kunstenaars identificeerden zich als 'poètes maudits' (vervloekte dichters) – vervreemd van de bourgeois maatschappij, geplaagd door existentiële angst en een obsessie met de dood, seksualiteit en het bovennatuurlijke. Paul Verlaine's essayreeks over 'poètes maudits' (1884) portretteerde dichters wiens genialiteit hen isoleerde van tijdgenoten en leidde tot hermetische schrijfstijlen. Deze elite distantieerde zich bewust van het massapubliek en zocht naar een persoonlijke, hermetische taal van symbolen die alleen ingewijden konden decoderen. Alternatieve spiritualiteit bloeide als tegenreactie op zowel het christendom als wetenschappelijk positivisme: occultisme, hermetisme, rozenkruisersbewegingen en spiritisme wonnen aan populariteit.\n\nDe verbinding met de artistieke stijl is direct: de politieke context van maatschappelijke onzekerheid, culturele pessimisme en de zoektocht naar alternatieve zekerheden vertaalde zich in een kunst die droomtoestanden, het occult en het subjectieve innerlijke wereld verheerlijkte. Waar naturalisten en realisten de sociale werkelijkheid probeerden vast te leggen, zochten symbolisten naar de eeuwige waarheden achter de zichtbare wereld. Stéphane Mallarmé definieerde symbolisme als 'het object evoceren om geleidelijk een zielenstoestand te openbaren'. Het doel was niet het object zelf, maar het suggereren van het ideaal door mysterie. De nadruk op synesthesie – het verwarren van zintuigen zoals geur, klank en kleur – weerspiegelde de wens om de rigide categorisering van de wetenschappelijke wereld te doorbreken. Kunstenaars gebruikten mythologische en droombeeldvorming, met symbolen die intens persoonlijk, privé, obscuur en ambigu waren. De politieke crisis van de fin de siècle – met zijn gelijktijdige angst voor degeneratie en hoop op een nieuwe eeuw – vertaalde zich in een kunst die de grenzen tussen droom en werkelijkheid, leven en dood, eros en thanatos voortdurend liet vervagen.\n\nBronnen: Wikipedia - Symbolism (movement), Fin de siècle, Decadence.",
+      "political_perspective": "Het Symbolisme (1880-1910) bloeide tijdens de fin de si\u00e8cle, een periode van diepe culturele pessimisme en decadentie die de Europese intellectuele elite in zijn greep hield. De politieke structuur werd gekenmerkt door een fundamentele revolte tegen materialisme, rationalisme, positivisme en de bourgeois-liberale democratie. Deze generatie omarmde daarentegen emotionalisme, irrationalisme, subjectivisme en vitalisme, gedreven door het gevoel dat de beschaving in een crisis verkeerde die een totale oplossing vereiste. De filosoof Arthur Schopenhauer had met zijn pessimistische wereldbeeld de intellectuele toon gezet: kunst diende als tijdelijke toevluchtsoord uit de wereld van strijd en lijden. Deze filosofische onderstroom vond directe expressie in de symbolistische esthetiek, waarin droomtoestanden en het subjectieve innerlijk werden verheerlijkt boven rationele observatie.\n\nBelangrijke politieke gebeurtenissen omvatten de opkomst van het anarchistisch activisme in de jaren 1890. Anarchisten pleegden bomaanslagen en moorden die de publieke opinie schokten, wat leidde tot repressieve wetten die de vrijheid van meningsuiting beperkten. Tegelijkertijd ondermijnde de opkomst van wetenschappelijke rationaliteit, psychologie en secularisering de traditionele religieuze zekerheden. De degeneratietheorie van B.A. Morel en Max Nordau's invloedrijke werk 'Degeneration' (1892) suggereerden dat samenlevingen konden degenereren onder invloed van nationale omstandigheden of buitenlandse culturele invloeden. Nordau identificeerde twee dominante trekken bij gedegenereerden: egomanie (pathologische zelfabsorptie) en mystiek (verminderd vermogen om primaire waarnemingen te vertalen tot volledig ontwikkelde idee\u00ebn). Deze kenmerken werden direct toegepast op symbolistische werken, die werden gezien als uitingen van maatschappelijk verval. Desondanks zochten intellectuelen naar alternatieve spirituele paden, waardoor het symbolisme een reactie werd tegen zowel wetenschappelijk materialisme als politiek positivisme.\n\nDe sociale dynamiek werd gekenmerkt door een zich terugtrekkende intellectuele elite die zich in priv\u00e9-salons en exclusieve kringen organiseerde. Figuren zoals Jos\u00e9phin P\u00e9ladan, een occultist die de Salon de la Rose + Croix oprichtte (1892-1897), promootten spiritualisme, mystiek en idealisme. Symbolistische kunstenaars identificeerden zich als 'po\u00e8tes maudits' (vervloekte dichters) \u2013 vervreemd van de bourgeois maatschappij, geplaagd door existenti\u00eble angst en een obsessie met de dood, seksualiteit en het bovennatuurlijke. Paul Verlaine's essayreeks over 'po\u00e8tes maudits' (1884) portretteerde dichters wiens genialiteit hen isoleerde van tijdgenoten en leidde tot hermetische schrijfstijlen. Deze elite distantieerde zich bewust van het massapubliek en zocht naar een persoonlijke, hermetische taal van symbolen die alleen ingewijden konden decoderen. Alternatieve spiritualiteit bloeide als tegenreactie op zowel het christendom als wetenschappelijk positivisme: occultisme, hermetisme, rozenkruisersbewegingen en spiritisme wonnen aan populariteit.\n\nDe verbinding met de artistieke stijl is direct: de politieke context van maatschappelijke onzekerheid, culturele pessimisme en de zoektocht naar alternatieve zekerheden vertaalde zich in een kunst die droomtoestanden, het occult en het subjectieve innerlijke wereld verheerlijkte. Waar naturalisten en realisten de sociale werkelijkheid probeerden vast te leggen, zochten symbolisten naar de eeuwige waarheden achter de zichtbare wereld. St\u00e9phane Mallarm\u00e9 definieerde symbolisme als 'het object evoceren om geleidelijk een zielenstoestand te openbaren'. Het doel was niet het object zelf, maar het suggereren van het ideaal door mysterie. De nadruk op synesthesie \u2013 het verwarren van zintuigen zoals geur, klank en kleur \u2013 weerspiegelde de wens om de rigide categorisering van de wetenschappelijke wereld te doorbreken. Kunstenaars gebruikten mythologische en droombeeldvorming, met symbolen die intens persoonlijk, priv\u00e9, obscuur en ambigu waren. De politieke crisis van de fin de si\u00e8cle \u2013 met zijn gelijktijdige angst voor degeneratie en hoop op een nieuwe eeuw \u2013 vertaalde zich in een kunst die de grenzen tussen droom en werkelijkheid, leven en dood, eros en thanatos voortdurend liet vervagen.\n\nBronnen: Wikipedia - Symbolism (movement), Fin de si\u00e8cle, Decadence.",
       "works": [
         {
           "title": "De Kus",
@@ -2564,8 +2564,8 @@
           }
         },
         {
-          "title": "L'Île des Morts",
-          "creator": "Arnold Böcklin",
+          "title": "L'\u00cele des Morts",
+          "creator": "Arnold B\u00f6cklin",
           "image": {
             "url": null,
             "page": null,
@@ -2719,7 +2719,7 @@
           }
         },
         {
-          "title": "Salomé",
+          "title": "Salom\u00e9",
           "creator": "Gustave Moreau",
           "image": {
             "url": null,
@@ -2819,7 +2819,7 @@
           "mythe/eksotisme"
         ]
       },
-      "political_perspective": "Het Postimpressionisme (1886-1905) ontwikkelde zich tijdens de Belle Époque, een periode van ongekende politieke stabiliteit, economische welvaart en culturele bloei in Frankrijk en Europa. Na de Frans-Duitse Oorlog (1870-1871) en de val van de Parijse Commune genoot de Derde Franse Republiek een periode van relatieve rust, gekenmerkt door revanchisme jegens Duitsland en een hernieuwde nationale trots. Deze politieke context verschafte de intellectuele en materiële ruimte waarin kunstenaars konden experimenteren met nieuwe vormen van expressie, vrij van de directe druk van oorlog of revolutie.\n\nDe periode werd gedomineerd door de Tweede Industriële Revolutie, die fundamentele veranderingen in de Europese samenleving teweegbracht. Wetenschappelijke ontdekkingen zoals de radioactiviteit door Henri Becquerel (1896) en het werk van Marie Curie markeerden een nieuw tijdperk van technologische vooruitgang. De uitvinding van de telegraaf, telefoon en elektriciteit transformeerde communicatie en industrie, terwijl de constructie van het Suezkanaal (1869) en de expansie van spoorwegen de wereld kleiner maakten. Deze wetenschappelijke en technologische vooruitgang stimuleerde een klimaat van rationalisme en experiment, dat ook de kunst beïnvloedde: kunstenaars zoals Georges Seurat pasten wetenschappelijke principes toe op kleur en compositie via het pointillisme.\n\nTegelijkertijd vond de 'Scramble for Africa' plaats, waarbij Europese mogendheden tussen 1880 en 1914 bijna 90 procent van het Afrikaanse continent koloniseerden. De Berlijnse Conferentie van 1884-1885 reguleerde deze koloniale expansie en zette de toon voor een tijdperk van imperialisme en nationale rivaliteit. Frankrijk breidde zijn koloniale rijk uit in West-Afrika en Indochina, wat niet alleen economische voordelen bracht maar ook een crisis van Europese identiteit en moraal. Deze koloniale context weerspiegelde zich indirect in de kunst: kunstenaars zoals Paul Gauguin zochten naar 'authentieke' ervaringen buiten de westerse beschaving, in exotische locaties zoals Tahiti, als reactie op de als beklemmend ervaren Europese moderniteit.\n\nDe meest ontwrichtende politieke gebeurtenis was ongetwijfeld de Dreyfus-affaire (1894-1906), die de Franse samenleving diep verdeelde. De vals beschuldigde Joodse officier Alfred Dreyfus werd tot levenslang veroordeeld wegens hoogverraad, wat een golf van antisemitisme en politieke polarisatie ontketende. De open brief 'J'accuse...!' van Émile Zola in 1898 markeerde het hoogtepunt van een strijd tussen republikeinse, antiklerikale Dreyfusards en conservatieve, pro-leger anti-Dreyfusards. Deze crisis onthulde de spanningen binnen de Franse samenleving en leidde tot een herdefiniëring van individuele en collectieve identiteit. De affaire demonstreerde de kracht van individuele gewetensvolheid tegenover staatsgezag, een thema dat ook in de Postimpressionistische kunst tot uiting kwam: kunstenaars stelden hun persoonlijke visie boven de heersende academische conventies.\n\nDe sociale dynamiek van de Belle Époque werd gekenmerkt door snelle verstedelijking en de opkomst van nieuwe sociale theorieën. De Parijse bourgeoisie, de nouveaux riches en de culturele elite bezochten cabarets zoals de Moulin Rouge en de Folies Bergère, terwijl een groot economisch onderklasse in de sloppenwijken en op het platteland in armoede leefde. Tegelijkertijd ontwikkelde de arbeidersbeweging zich, met de oprichting van de Tweede Internationale in 1889. Nieuwe filosofische stromingen zoals het existentialisme en de psychoanalyse (later ontwikkeld door Freud) begonnen het individu centraal te stellen. Deze nadruk op individualiteit en persoonlijke ervaring vertaalde zich direct in de Postimpressionistische esthetiek: waar het Impressionisme nog het ogenblikkelijke, visuele aspect vastlegde, zochten Postimpressionisten naar de innerlijke waarheid en emotionele resonantie achter het uiterlijke schijnsel.\n\nDe politieke context verklaart de kenmerkende stijl van het Postimpressionisme: de subjectieve visie en persoonlijke emotie weerspiegelden de opkomst van het moderne individu in een tijdperk van massale sociale verandering; de formele experimentatie met kleur, vorm en compositie (zoals het pointillisme van Seurat en het synthetisme van Gauguin) weerspiegelde de wetenschappelijke en technologische innovatie van de Tweede Industriële Revolutie; de symbolische inhoud en de zoektocht naar diepere betekenis weerspiegelden de spirituele en identiteitscrisis die voortvloeide uit kolonialisme, modernisering en de Dreyfus-affaire; en de nadruk op expressiviteit boven naturalisme weerspiegelde een bredere culturele verschuiving van objectieve waarheid naar subjectieve ervaring. Kunstenaars zoals Vincent van Gogh, Paul Cézanne en Henri de Toulouse-Lautrec transformeerden persoonlijke emotionele toestanden en sociale observaties tot universele visuele taal, wat de basis legde voor het Modernisme van de twintigste eeuw.\n\nBronnen: Wikipedia - Post-Impressionism, Belle Époque, Dreyfus Affair, Second Industrial Revolution, Scramble for Africa.",
+      "political_perspective": "Het Postimpressionisme (1886-1905) ontwikkelde zich tijdens de Belle \u00c9poque, een periode van ongekende politieke stabiliteit, economische welvaart en culturele bloei in Frankrijk en Europa. Na de Frans-Duitse Oorlog (1870-1871) en de val van de Parijse Commune genoot de Derde Franse Republiek een periode van relatieve rust, gekenmerkt door revanchisme jegens Duitsland en een hernieuwde nationale trots. Deze politieke context verschafte de intellectuele en materi\u00eble ruimte waarin kunstenaars konden experimenteren met nieuwe vormen van expressie, vrij van de directe druk van oorlog of revolutie.\n\nDe periode werd gedomineerd door de Tweede Industri\u00eble Revolutie, die fundamentele veranderingen in de Europese samenleving teweegbracht. Wetenschappelijke ontdekkingen zoals de radioactiviteit door Henri Becquerel (1896) en het werk van Marie Curie markeerden een nieuw tijdperk van technologische vooruitgang. De uitvinding van de telegraaf, telefoon en elektriciteit transformeerde communicatie en industrie, terwijl de constructie van het Suezkanaal (1869) en de expansie van spoorwegen de wereld kleiner maakten. Deze wetenschappelijke en technologische vooruitgang stimuleerde een klimaat van rationalisme en experiment, dat ook de kunst be\u00efnvloedde: kunstenaars zoals Georges Seurat pasten wetenschappelijke principes toe op kleur en compositie via het pointillisme.\n\nTegelijkertijd vond de 'Scramble for Africa' plaats, waarbij Europese mogendheden tussen 1880 en 1914 bijna 90 procent van het Afrikaanse continent koloniseerden. De Berlijnse Conferentie van 1884-1885 reguleerde deze koloniale expansie en zette de toon voor een tijdperk van imperialisme en nationale rivaliteit. Frankrijk breidde zijn koloniale rijk uit in West-Afrika en Indochina, wat niet alleen economische voordelen bracht maar ook een crisis van Europese identiteit en moraal. Deze koloniale context weerspiegelde zich indirect in de kunst: kunstenaars zoals Paul Gauguin zochten naar 'authentieke' ervaringen buiten de westerse beschaving, in exotische locaties zoals Tahiti, als reactie op de als beklemmend ervaren Europese moderniteit.\n\nDe meest ontwrichtende politieke gebeurtenis was ongetwijfeld de Dreyfus-affaire (1894-1906), die de Franse samenleving diep verdeelde. De vals beschuldigde Joodse officier Alfred Dreyfus werd tot levenslang veroordeeld wegens hoogverraad, wat een golf van antisemitisme en politieke polarisatie ontketende. De open brief 'J'accuse...!' van \u00c9mile Zola in 1898 markeerde het hoogtepunt van een strijd tussen republikeinse, antiklerikale Dreyfusards en conservatieve, pro-leger anti-Dreyfusards. Deze crisis onthulde de spanningen binnen de Franse samenleving en leidde tot een herdefini\u00ebring van individuele en collectieve identiteit. De affaire demonstreerde de kracht van individuele gewetensvolheid tegenover staatsgezag, een thema dat ook in de Postimpressionistische kunst tot uiting kwam: kunstenaars stelden hun persoonlijke visie boven de heersende academische conventies.\n\nDe sociale dynamiek van de Belle \u00c9poque werd gekenmerkt door snelle verstedelijking en de opkomst van nieuwe sociale theorie\u00ebn. De Parijse bourgeoisie, de nouveaux riches en de culturele elite bezochten cabarets zoals de Moulin Rouge en de Folies Berg\u00e8re, terwijl een groot economisch onderklasse in de sloppenwijken en op het platteland in armoede leefde. Tegelijkertijd ontwikkelde de arbeidersbeweging zich, met de oprichting van de Tweede Internationale in 1889. Nieuwe filosofische stromingen zoals het existentialisme en de psychoanalyse (later ontwikkeld door Freud) begonnen het individu centraal te stellen. Deze nadruk op individualiteit en persoonlijke ervaring vertaalde zich direct in de Postimpressionistische esthetiek: waar het Impressionisme nog het ogenblikkelijke, visuele aspect vastlegde, zochten Postimpressionisten naar de innerlijke waarheid en emotionele resonantie achter het uiterlijke schijnsel.\n\nDe politieke context verklaart de kenmerkende stijl van het Postimpressionisme: de subjectieve visie en persoonlijke emotie weerspiegelden de opkomst van het moderne individu in een tijdperk van massale sociale verandering; de formele experimentatie met kleur, vorm en compositie (zoals het pointillisme van Seurat en het synthetisme van Gauguin) weerspiegelde de wetenschappelijke en technologische innovatie van de Tweede Industri\u00eble Revolutie; de symbolische inhoud en de zoektocht naar diepere betekenis weerspiegelden de spirituele en identiteitscrisis die voortvloeide uit kolonialisme, modernisering en de Dreyfus-affaire; en de nadruk op expressiviteit boven naturalisme weerspiegelde een bredere culturele verschuiving van objectieve waarheid naar subjectieve ervaring. Kunstenaars zoals Vincent van Gogh, Paul C\u00e9zanne en Henri de Toulouse-Lautrec transformeerden persoonlijke emotionele toestanden en sociale observaties tot universele visuele taal, wat de basis legde voor het Modernisme van de twintigste eeuw.\n\nBronnen: Wikipedia - Post-Impressionism, Belle \u00c9poque, Dreyfus Affair, Second Industrial Revolution, Scramble for Africa.",
       "works": [
         {
           "title": "Sterrennacht",
@@ -2916,7 +2916,7 @@
         },
         {
           "title": "Mont Sainte-Victoire",
-          "creator": "Paul Cézanne",
+          "creator": "Paul C\u00e9zanne",
           "image": {
             "url": null,
             "page": null,
@@ -2947,7 +2947,7 @@
         },
         {
           "title": "De Kaartspelers",
-          "creator": "Paul Cézanne",
+          "creator": "Paul C\u00e9zanne",
           "image": {
             "url": null,
             "page": null,
@@ -3039,7 +3039,7 @@
           }
         },
         {
-          "title": "Bathers at Asnières",
+          "title": "Bathers at Asni\u00e8res",
           "creator": "Georges Seurat",
           "image": {
             "url": null,
@@ -3266,7 +3266,7 @@
         },
         {
           "title": "Portret van Derain",
-          "creator": "André Derain",
+          "creator": "Andr\u00e9 Derain",
           "image": {
             "url": null,
             "page": null,
@@ -3454,7 +3454,7 @@
         "motieven": [
           "stad",
           "naakt",
-          "existentiële thema's",
+          "existenti\u00eble thema's",
           "natuur als emotie"
         ]
       },
@@ -3491,7 +3491,7 @@
           }
         },
         {
-          "title": "De Brücke-houtsneden",
+          "title": "De Br\u00fccke-houtsneden",
           "creator": "Kirchner",
           "image": {
             "url": null,
@@ -3646,8 +3646,8 @@
           }
         },
         {
-          "title": "Mädchen unter Bäumen",
-          "creator": "Gabriele Münter",
+          "title": "M\u00e4dchen unter B\u00e4umen",
+          "creator": "Gabriele M\u00fcnter",
           "image": {
             "url": null,
             "page": null,
@@ -3797,7 +3797,7 @@
         ],
         "technieken": [
           "collage",
-          "papier collé",
+          "papier coll\u00e9",
           "geometrische constructie"
         ],
         "motieven": [
@@ -4119,7 +4119,7 @@
           }
         }
       ],
-      "political_perspective": "Het Kubisme (1907-1914) ontstond tijdens de Belle Époque, een periode van ongekende welvaart en technologische vooruitgang in Frankrijk en Europa. De politieke structuur werd gedomineerd door de Derde Franse Republiek, een parlementaire democratie die stabiliteit genoot na de turbulente jaren van de Parijse Commune (1871) en de nederlaag in de Frans-Pruisische Oorlog. Deze periode werd gekenmerkt door industriële kapitalisme op zijn hoogtepunt: de Tweede Industriële Revolutie bracht elektrificatie, de telefoon, automobielen en spoorwegnetwerken die de Europese samenleving fundamenteel transformeerden. Parijs fungeerde als het centrum van deze nieuwe wereldorde, een kosmopolitische metropool waar kapitaal, koloniale goederen en culturele innovatie samenvloeiden. De Eiffeltoren (1889), gebouwd voor de Wereldtentoonstelling, symboliseerde de technologische suprematie en industriële macht van het moderne Frankrijk.\n\nDe politieke gebeurtenissen van deze periode werden gedomineerd door de 'Scramble for Africa' en koloniale expansie, waarbij Frankrijk enorme gebieden in Noord- en West-Afrika koloniseerde. Deze imperialistische politiek bracht niet alleen rijkdom en exotische goederen naar Parijs, maar ook een stroom van Afrikaanse kunstvoorwerpen die kunstenaars als Picasso en Braque direct beïnvloedden. De Dreyfus-affaire (1894-1906) had de Franse samenleving diep verdeeld en de rol van intellectuelen in de politiek geherdefinieerd, wat een cultuur van kritisch denken en anti-autoritair sentiment onder kunstenaars en schrijvers creëerde. Ondanks de schijnbare stabiliteit groeide de militaire spanning in Europa: de Eerste (1905-1906) en Tweede Marokkaanse Crisis (1911) brachten Frankrijk en Duitsland aan de rand van oorlog, terwijl de Balkanoorlogen (1912-1913) het continent destabiliseerden.\n\nDe sociale dynamiek van de Belle Époque werd gekenmerkt door een bloeiende intellectuele avant-garde die zich verzette tegen de gevestigde bourgeois-cultuur. Kunstenaars, schrijvers en filosofen - van Gertrude Stein tot Guillaume Apollinaire - vormden een kosmopolitisch netwerk in de wijk Montmartre en Montparnasse, waar cafés en ateliers fungeerden als laboratoria voor radicale nieuwe ideeën. Deze intellectuelen verwierpen de traditionele academische kunst, de sentimentaliteit van de burgerlijke cultuur en de illusie van continuïteit met het verleden. Henri Bergson's filosofie van 'durée' (duurzaamheid) en het idee dat werkelijkheid subjectief en fluent was, bood een theoretisch kader voor de fragmentatie van perspectief en tijd die kenmerkend zou worden voor het Kubisme. De ontdekking van Afrikaanse en Oceanische kunst door Europese avant-garde kunstenaars leidde tot een fundamentele heroverweging van de westerse representatietraditie.\n\nDeze politieke en sociale context verklaart direct de kenmerken van het Kubisme. De fragmentatie van vormen en het meervoudig perspectief weerspiegelden de desintegratie van een vaste, stabiele wereldorde en de ervaring van een samenleving in versnelling. Waar de traditionele schilderkunst één vast punt vanwaar de werkelijkheid werd waargenomen veronderstelde, stelden Picasso en Braque voor dat werkelijkheid alleen begrepen kon worden vanuit meerdere gezichtspunten tegelijk - een directe artistieke vertaling van Bergson's ideeën over tijd en bewustzijn. De geometrische abstractie en reductie tot basisvormen (cilinders, bollen, kegels) weerspiegelde de industriële machine-esthetiek en de nieuwe visuele taal van de moderne tijd. De collagetechniek, geïntroduceerd in 1912, bracht fragmenten van het moderne dagelijks leven (krantenteksten, behangpapier, stof) direct op het doek, wat de infiltratie van de massacultuur en consumptiemaatschappij in de artistieke praktijk symboliseerde. De anti-traditionele houding van de kubisten - hun weigering om het illusionisme van de Renaissance-perspectief te handhaven - was een directe aanval op de gevestigde orde, zowel in de kunst als in de bredere cultuur. Het Kubisme, in zijn radicale breuk met het verleden, was daarmee niet alleen een artistieke revolutie, maar ook een politiek statement tegen de burgerlijke waarden van de Belle Époque, vlak voordat de Eerste Wereldoorlog deze wereld zou vernietigen.\n\nBronnen: Wikipedia - Cubism, Belle Époque, Second Industrial Revolution, Avant-garde.",
+      "political_perspective": "Het Kubisme (1907-1914) ontstond tijdens de Belle \u00c9poque, een periode van ongekende welvaart en technologische vooruitgang in Frankrijk en Europa. De politieke structuur werd gedomineerd door de Derde Franse Republiek, een parlementaire democratie die stabiliteit genoot na de turbulente jaren van de Parijse Commune (1871) en de nederlaag in de Frans-Pruisische Oorlog. Deze periode werd gekenmerkt door industri\u00eble kapitalisme op zijn hoogtepunt: de Tweede Industri\u00eble Revolutie bracht elektrificatie, de telefoon, automobielen en spoorwegnetwerken die de Europese samenleving fundamenteel transformeerden. Parijs fungeerde als het centrum van deze nieuwe wereldorde, een kosmopolitische metropool waar kapitaal, koloniale goederen en culturele innovatie samenvloeiden. De Eiffeltoren (1889), gebouwd voor de Wereldtentoonstelling, symboliseerde de technologische suprematie en industri\u00eble macht van het moderne Frankrijk.\n\nDe politieke gebeurtenissen van deze periode werden gedomineerd door de 'Scramble for Africa' en koloniale expansie, waarbij Frankrijk enorme gebieden in Noord- en West-Afrika koloniseerde. Deze imperialistische politiek bracht niet alleen rijkdom en exotische goederen naar Parijs, maar ook een stroom van Afrikaanse kunstvoorwerpen die kunstenaars als Picasso en Braque direct be\u00efnvloedden. De Dreyfus-affaire (1894-1906) had de Franse samenleving diep verdeeld en de rol van intellectuelen in de politiek geherdefinieerd, wat een cultuur van kritisch denken en anti-autoritair sentiment onder kunstenaars en schrijvers cre\u00eberde. Ondanks de schijnbare stabiliteit groeide de militaire spanning in Europa: de Eerste (1905-1906) en Tweede Marokkaanse Crisis (1911) brachten Frankrijk en Duitsland aan de rand van oorlog, terwijl de Balkanoorlogen (1912-1913) het continent destabiliseerden.\n\nDe sociale dynamiek van de Belle \u00c9poque werd gekenmerkt door een bloeiende intellectuele avant-garde die zich verzette tegen de gevestigde bourgeois-cultuur. Kunstenaars, schrijvers en filosofen - van Gertrude Stein tot Guillaume Apollinaire - vormden een kosmopolitisch netwerk in de wijk Montmartre en Montparnasse, waar caf\u00e9s en ateliers fungeerden als laboratoria voor radicale nieuwe idee\u00ebn. Deze intellectuelen verwierpen de traditionele academische kunst, de sentimentaliteit van de burgerlijke cultuur en de illusie van continu\u00efteit met het verleden. Henri Bergson's filosofie van 'dur\u00e9e' (duurzaamheid) en het idee dat werkelijkheid subjectief en fluent was, bood een theoretisch kader voor de fragmentatie van perspectief en tijd die kenmerkend zou worden voor het Kubisme. De ontdekking van Afrikaanse en Oceanische kunst door Europese avant-garde kunstenaars leidde tot een fundamentele heroverweging van de westerse representatietraditie.\n\nDeze politieke en sociale context verklaart direct de kenmerken van het Kubisme. De fragmentatie van vormen en het meervoudig perspectief weerspiegelden de desintegratie van een vaste, stabiele wereldorde en de ervaring van een samenleving in versnelling. Waar de traditionele schilderkunst \u00e9\u00e9n vast punt vanwaar de werkelijkheid werd waargenomen veronderstelde, stelden Picasso en Braque voor dat werkelijkheid alleen begrepen kon worden vanuit meerdere gezichtspunten tegelijk - een directe artistieke vertaling van Bergson's idee\u00ebn over tijd en bewustzijn. De geometrische abstractie en reductie tot basisvormen (cilinders, bollen, kegels) weerspiegelde de industri\u00eble machine-esthetiek en de nieuwe visuele taal van de moderne tijd. De collagetechniek, ge\u00efntroduceerd in 1912, bracht fragmenten van het moderne dagelijks leven (krantenteksten, behangpapier, stof) direct op het doek, wat de infiltratie van de massacultuur en consumptiemaatschappij in de artistieke praktijk symboliseerde. De anti-traditionele houding van de kubisten - hun weigering om het illusionisme van de Renaissance-perspectief te handhaven - was een directe aanval op de gevestigde orde, zowel in de kunst als in de bredere cultuur. Het Kubisme, in zijn radicale breuk met het verleden, was daarmee niet alleen een artistieke revolutie, maar ook een politiek statement tegen de burgerlijke waarden van de Belle \u00c9poque, vlak voordat de Eerste Wereldoorlog deze wereld zou vernietigen.\n\nBronnen: Wikipedia - Cubism, Belle \u00c9poque, Second Industrial Revolution, Avant-garde.",
       "needs_research": false
     },
     {
@@ -4158,7 +4158,7 @@
           "arbeid"
         ]
       },
-      "political_perspective": "Het Futurisme ontstond in 1909 in Italië, een land dat werd gekenmerkt door een diepe kloof tussen het geïndustrialiseerde noorden en het agrarische, archaïsche zuiden. De politieke context werd gedomineerd door de spanning tussen modernisering en traditie, waarbij Italië worstelde om zijn plaats te vinden als moderne natie-staat. Het land had pas in 1861 zijn eenheid bereikt en zocht nog steeds naar een coherente nationale identiteit, wat leidde tot intense nationalistische sentimenten onder intellectuelen en kunstenaars.\n\nDe industriële revolutie had in Noord-Italië een dynamische kapitalistische economie gecreëerd, met fabrieken, spoorwegen en stedelijke centra die in rap tempo moderniseerden. Milan en Turijn werden centra van industrie en technologie, waar de arbeidersklasse in fabrieken werkte onder uitbuitende omstandigheden. Deze industriële proletarisering creëerde een nieuwe sociale dynamiek: de massa's stedelijke arbeiders die in overbevolkte wijken woonden, vormden een schril contrast met de burgerij die profiteerde van de economische groei. De futuristen verheerlijkten deze moderne arbeid en zagen in de machine de belichaming van menselijke vooruitgang.\n\nNacionalisme en patriottisme stonden centraal in het Futuristische gedachtegoed. Filippo Tommaso Marinetti, de oprichter van de beweging, riep in zijn Manifesto van 1909 op tot de verheerlijking van oorlog \"als 's werelds enige hygiëne\", militarisme, patriottisme en \"de destructieve daad van vrijheidsbrengers\". Deze retoriek weerspiegelde de Italiaanse onvrede over de zogenaamde \"mutilated victory\" na de Eerste Wereldoorlog, waarbij Italië ondanks zijn overwinning op Oostenrijk-Hongarije niet alle beloofde territoria kreeg. De futuristen waren fervente voorstanders van interventie tegen Oostenrijk-Hongarije en velen meldden zich in 1915 vrijwillig aan toen Italië de oorlog in ging.\n\nDe Eerste Wereldoorlog (1915-1918 voor Italië) was een cruciaal keerpunt. Marinetti vocht in de bergen van Trentino en produceerde oorlogspropaganda. De oorlogservaring verstevigde de futuristische fascinatie met geweld, snelheid en technologische vernietiging. Umberto Boccioni, een van de belangrijkste schilders van de beweging, sneuvelde in 1916, wat het einde van de eerste fase van het Futurisme markeerde. Na de oorlog zou Marinetti de beweging nieuw leven inblazen, maar de politieke context was fundamenteel veranderd.\n\nDe naoorlogse periode zag de opkomst van het fascisme, met Benito Mussolini aan het hoofd. Marinetti richtte in 1918 het Futuristische Politieke Partij op, dat in 1919 fuseerde met Mussolini's Fasci Italiani di Combattimento, wat Marinetti tot een van de eerste leden van de Nationale Fascistische Partij maakte. Hoewel hij later in conflict kwam met bepaalde aspecten van het fascistische regime, bleef hij tot zijn dood in 1944 een supporter van Mussolini. De futuristen en fascisten deelden kernwaarden: nationalisme, bewondering voor geweld, oppositie tegen parlementaire democratie, en een ideaal van modernisering en vitalisme.\n\nDe artistieke stijl van het Futurisme weerspiegelde direct deze politieke en sociale context. De obsessie met snelheid en dynamiek verbeeldde de acceleratie van het moderne leven door technologie en industrie. De machinecultus - treinen, auto's, vliegtuigen - symboliseerde de overwinning van de mens op de natuur en de overtuiging dat geweld en vernietiging noodzakelijk waren voor vooruitgang. De diagonale lijnen en bewegingsvragen in schilderijen zoals Balla's \"Dynamism of a Dog on a Leash\" (1912) evoceerden de fragmentatie en chaos van het moderne stadsleven. De verheerlijking van oorlog en strijd vond zijn weerspiegeling in werken als Boccioni's \"Unique Forms of Continuity in Space\" (1913), dat de kracht en energie van een strijder in beweging uitbeeldde.\n\nBronnen: Wikipedia - Futurism, Italian Futurism, Filippo Tommaso Marinetti, World War I, Fascism.",
+      "political_perspective": "Het Futurisme ontstond in 1909 in Itali\u00eb, een land dat werd gekenmerkt door een diepe kloof tussen het ge\u00efndustrialiseerde noorden en het agrarische, archa\u00efsche zuiden. De politieke context werd gedomineerd door de spanning tussen modernisering en traditie, waarbij Itali\u00eb worstelde om zijn plaats te vinden als moderne natie-staat. Het land had pas in 1861 zijn eenheid bereikt en zocht nog steeds naar een coherente nationale identiteit, wat leidde tot intense nationalistische sentimenten onder intellectuelen en kunstenaars.\n\nDe industri\u00eble revolutie had in Noord-Itali\u00eb een dynamische kapitalistische economie gecre\u00eberd, met fabrieken, spoorwegen en stedelijke centra die in rap tempo moderniseerden. Milan en Turijn werden centra van industrie en technologie, waar de arbeidersklasse in fabrieken werkte onder uitbuitende omstandigheden. Deze industri\u00eble proletarisering cre\u00eberde een nieuwe sociale dynamiek: de massa's stedelijke arbeiders die in overbevolkte wijken woonden, vormden een schril contrast met de burgerij die profiteerde van de economische groei. De futuristen verheerlijkten deze moderne arbeid en zagen in de machine de belichaming van menselijke vooruitgang.\n\nNacionalisme en patriottisme stonden centraal in het Futuristische gedachtegoed. Filippo Tommaso Marinetti, de oprichter van de beweging, riep in zijn Manifesto van 1909 op tot de verheerlijking van oorlog \"als 's werelds enige hygi\u00ebne\", militarisme, patriottisme en \"de destructieve daad van vrijheidsbrengers\". Deze retoriek weerspiegelde de Italiaanse onvrede over de zogenaamde \"mutilated victory\" na de Eerste Wereldoorlog, waarbij Itali\u00eb ondanks zijn overwinning op Oostenrijk-Hongarije niet alle beloofde territoria kreeg. De futuristen waren fervente voorstanders van interventie tegen Oostenrijk-Hongarije en velen meldden zich in 1915 vrijwillig aan toen Itali\u00eb de oorlog in ging.\n\nDe Eerste Wereldoorlog (1915-1918 voor Itali\u00eb) was een cruciaal keerpunt. Marinetti vocht in de bergen van Trentino en produceerde oorlogspropaganda. De oorlogservaring verstevigde de futuristische fascinatie met geweld, snelheid en technologische vernietiging. Umberto Boccioni, een van de belangrijkste schilders van de beweging, sneuvelde in 1916, wat het einde van de eerste fase van het Futurisme markeerde. Na de oorlog zou Marinetti de beweging nieuw leven inblazen, maar de politieke context was fundamenteel veranderd.\n\nDe naoorlogse periode zag de opkomst van het fascisme, met Benito Mussolini aan het hoofd. Marinetti richtte in 1918 het Futuristische Politieke Partij op, dat in 1919 fuseerde met Mussolini's Fasci Italiani di Combattimento, wat Marinetti tot een van de eerste leden van de Nationale Fascistische Partij maakte. Hoewel hij later in conflict kwam met bepaalde aspecten van het fascistische regime, bleef hij tot zijn dood in 1944 een supporter van Mussolini. De futuristen en fascisten deelden kernwaarden: nationalisme, bewondering voor geweld, oppositie tegen parlementaire democratie, en een ideaal van modernisering en vitalisme.\n\nDe artistieke stijl van het Futurisme weerspiegelde direct deze politieke en sociale context. De obsessie met snelheid en dynamiek verbeeldde de acceleratie van het moderne leven door technologie en industrie. De machinecultus - treinen, auto's, vliegtuigen - symboliseerde de overwinning van de mens op de natuur en de overtuiging dat geweld en vernietiging noodzakelijk waren voor vooruitgang. De diagonale lijnen en bewegingsvragen in schilderijen zoals Balla's \"Dynamism of a Dog on a Leash\" (1912) evoceerden de fragmentatie en chaos van het moderne stadsleven. De verheerlijking van oorlog en strijd vond zijn weerspiegeling in werken als Boccioni's \"Unique Forms of Continuity in Space\" (1913), dat de kracht en energie van een strijder in beweging uitbeeldde.\n\nBronnen: Wikipedia - Futurism, Italian Futurism, Filippo Tommaso Marinetti, World War I, Fascism.",
       "works": [
         {
           "title": "Unique Forms of Continuity in Space",
@@ -4286,7 +4286,7 @@
         },
         {
           "title": "Carica di Lancieri",
-          "creator": "Carlo Carrà",
+          "creator": "Carlo Carr\u00e0",
           "image": {
             "url": null,
             "page": null,
@@ -4317,7 +4317,7 @@
         },
         {
           "title": "Funeral of the Anarchist Galli",
-          "creator": "Carlo Carrà",
+          "creator": "Carlo Carr\u00e0",
           "image": {
             "url": null,
             "page": null,
@@ -4474,7 +4474,7 @@
       "needs_research": false
     },
     {
-      "id": "destijl",
+      "id": "de-stijl",
       "name": "De Stijl",
       "type": "canon",
       "start": 1917,
@@ -4509,7 +4509,7 @@
           "typografie"
         ]
       },
-      "political_perspective": "De Stijl (1917-1931) ontstond in een unieke politieke context: het neutrale Nederland tijdens de Eerste Wereldoorlog. Terwijl de rest van Europa verscheurd werd door conflict, behield Nederland zijn neutraliteit, een positie die sinds 1830 een hoeksteen van het Nederlandse buitenlandse beleid was. Deze neutraliteit betekende echter geen afwezigheid van oorlogsinvloeden: het land mobiliseerde zijn leger, huisvestte een miljoen Belgische vluchtelingen, en ondervond economische druk van zowel de geallieerden als de centrale mogendheden. De Nederlandse handelsvloot leed zware verliezen door Duitse U-boot aanvallen, en voedselschaarste leidde tot onrust, waaronder de aardappelrellen in Amsterdam in 1917. Deze crisissfeer creëerde een behoefte aan orde, rationaliteit en universele waarden die direct weerspiegeld werd in De Stijl's zoektocht naar een zuivere, geometrische taal.\n\nDe politieke erfenis van de Nederlandse Gouden Eeuw bleef voelbaar: een traditie van handel, tolerantie en pragmatisch burgerschap die de Nederlandse identiteit vormde. De rationele aanpak van ruimtelijke problemen en de nadruk op functionaliteit in de Nederlandse cultuur vonden hun echo in De Stijl's 'neoplasticisme' (nieuwe beelding), dat streefde naar een universele visuele taal gebaseerd op wiskundige principes en harmonie. De theosofische ideeën van M.H.J. Schoenmaekers, die publiceerde over \"Het nieuwe wereldbeeld\" (1915) en \"Beginselen der beeldende wiskunde\" (1916), beïnvloedden Piet Mondriaan en andere leden die zochten naar spirituele waarheid door geometrische abstractie.\n\nDe Eerste Wereldoorlog had Nederlandse kunstenaars geïsoleerd van het internationale kunstcircuit, vooral van Parijs, dat het centrum van de moderne kunst was. Mondriaan, die in 1912 naar Parijs was verhuisd, zat vast in Nederland toen de oorlog uitbrak en kon niet terugkeren. Deze gedwongen isolatie leidde tot de ontwikkeling van een onafhankelijke Nederlandse moderne beweging. Theo van Doesburg, een Schrijver, dichter en kunstenaar met een uitgaande persoonlijkheid, begon rond 1915 kunstenaars te verzamelen om een tijdschrift en beweging te starten. In 1917 verenigde hij Mondriaan, Bart van der Leck, Vilmos Huszár, J.J.P. Oud, Jan Wils en later Gerrit Rietveld in De Stijl.\n\nDe naoorlogse Weimar Republiek (1919-1933) bood een vruchtbare context voor de verspreiding van De Stijl ideeën. Van Doesburg reisde naar Weimar en legde contacten met het Bauhaus, waar zijn publicaties en theorieën invloedrijk werden. De moderne, rationele esthetiek van De Stijl resoneerde met de Weimar cultuur van experiment en vooruitgangsgeloof, hoewel de Republiek zelf worstelde met hyperinflatie, politieke extremisme en de zware lasten van het Verdrag van Versailles. De Stijl manifest van november 1918, dat de vernietiging van de oude kunst en de opbouw van een nieuwe, universele cultuur bepleitte, weerspiegelde de revolutionaire geest van de tijd.\n\nDe sociale dynamiek van De Stijl was die van een intellectuele elite: universitair opgeleide kunstenaars, architecten en theoretici die internationale connecties onderhielden ondanks de oorlogsisolatie. De beweging was geen hechte groep; veel communicatie verliep per brief, en Mondriaan en Rietveld ontmoetten elkaar bijvoorbeeld nooit persoonlijk. Rond 1921 veranderde het karakter van de groep door invloeden van het Bauhaus, Kazimir Malevich en het Russisch constructivisme. In 1924 brak Mondriaan met de groep toen Van Doesburg het 'elementarisme' introduceerde, dat diagonale lijnen toestond. Dit conflict weerspiegelde de spanning tussen puurheid en evolutie binnen de beweging.\n\nDe verbinding met de stijl is direct: de geometrische abstractie en reductie tot horizontale en verticale lijnen, primaire kleuren (rood, geel, blauw) en niet-kleuren (zwart, wit, grijs) vertaalden de zoektocht naar universele orde en harmonie in visuele vorm. De asymmetrische balans en het raster weerspiegelden een wereldbeeld gebaseerd op evenwicht en tegenstellingen. Functioneel design, zoals Rietveld's Rood-Blauwe Stoel (1917-1923) en het Rietveld Schröderhuis (1924), demonstreerde de toepassing van deze principes op het dagelijks leven. De Stijl zocht een nieuwe esthetiek die voorbij ging aan nationale grenzen en persoonlijke expressie, een visioen van een geordende, rationele wereld die contrasteerde met de chaos en destructie van de Eerste Wereldoorlog. De beweging eindigde met de dood van Van Doesburg in 1931, maar haar invloed op de architectuur van het modernisme en het Bauhaus bleef groot.\n\nBronnen: Wikipedia - De Stijl, Netherlands in World War I, Weimar Republic.",
+      "political_perspective": "De Stijl (1917-1931) ontstond in een unieke politieke context: het neutrale Nederland tijdens de Eerste Wereldoorlog. Terwijl de rest van Europa verscheurd werd door conflict, behield Nederland zijn neutraliteit, een positie die sinds 1830 een hoeksteen van het Nederlandse buitenlandse beleid was. Deze neutraliteit betekende echter geen afwezigheid van oorlogsinvloeden: het land mobiliseerde zijn leger, huisvestte een miljoen Belgische vluchtelingen, en ondervond economische druk van zowel de geallieerden als de centrale mogendheden. De Nederlandse handelsvloot leed zware verliezen door Duitse U-boot aanvallen, en voedselschaarste leidde tot onrust, waaronder de aardappelrellen in Amsterdam in 1917. Deze crisissfeer cre\u00eberde een behoefte aan orde, rationaliteit en universele waarden die direct weerspiegeld werd in De Stijl's zoektocht naar een zuivere, geometrische taal.\n\nDe politieke erfenis van de Nederlandse Gouden Eeuw bleef voelbaar: een traditie van handel, tolerantie en pragmatisch burgerschap die de Nederlandse identiteit vormde. De rationele aanpak van ruimtelijke problemen en de nadruk op functionaliteit in de Nederlandse cultuur vonden hun echo in De Stijl's 'neoplasticisme' (nieuwe beelding), dat streefde naar een universele visuele taal gebaseerd op wiskundige principes en harmonie. De theosofische idee\u00ebn van M.H.J. Schoenmaekers, die publiceerde over \"Het nieuwe wereldbeeld\" (1915) en \"Beginselen der beeldende wiskunde\" (1916), be\u00efnvloedden Piet Mondriaan en andere leden die zochten naar spirituele waarheid door geometrische abstractie.\n\nDe Eerste Wereldoorlog had Nederlandse kunstenaars ge\u00efsoleerd van het internationale kunstcircuit, vooral van Parijs, dat het centrum van de moderne kunst was. Mondriaan, die in 1912 naar Parijs was verhuisd, zat vast in Nederland toen de oorlog uitbrak en kon niet terugkeren. Deze gedwongen isolatie leidde tot de ontwikkeling van een onafhankelijke Nederlandse moderne beweging. Theo van Doesburg, een Schrijver, dichter en kunstenaar met een uitgaande persoonlijkheid, begon rond 1915 kunstenaars te verzamelen om een tijdschrift en beweging te starten. In 1917 verenigde hij Mondriaan, Bart van der Leck, Vilmos Husz\u00e1r, J.J.P. Oud, Jan Wils en later Gerrit Rietveld in De Stijl.\n\nDe naoorlogse Weimar Republiek (1919-1933) bood een vruchtbare context voor de verspreiding van De Stijl idee\u00ebn. Van Doesburg reisde naar Weimar en legde contacten met het Bauhaus, waar zijn publicaties en theorie\u00ebn invloedrijk werden. De moderne, rationele esthetiek van De Stijl resoneerde met de Weimar cultuur van experiment en vooruitgangsgeloof, hoewel de Republiek zelf worstelde met hyperinflatie, politieke extremisme en de zware lasten van het Verdrag van Versailles. De Stijl manifest van november 1918, dat de vernietiging van de oude kunst en de opbouw van een nieuwe, universele cultuur bepleitte, weerspiegelde de revolutionaire geest van de tijd.\n\nDe sociale dynamiek van De Stijl was die van een intellectuele elite: universitair opgeleide kunstenaars, architecten en theoretici die internationale connecties onderhielden ondanks de oorlogsisolatie. De beweging was geen hechte groep; veel communicatie verliep per brief, en Mondriaan en Rietveld ontmoetten elkaar bijvoorbeeld nooit persoonlijk. Rond 1921 veranderde het karakter van de groep door invloeden van het Bauhaus, Kazimir Malevich en het Russisch constructivisme. In 1924 brak Mondriaan met de groep toen Van Doesburg het 'elementarisme' introduceerde, dat diagonale lijnen toestond. Dit conflict weerspiegelde de spanning tussen puurheid en evolutie binnen de beweging.\n\nDe verbinding met de stijl is direct: de geometrische abstractie en reductie tot horizontale en verticale lijnen, primaire kleuren (rood, geel, blauw) en niet-kleuren (zwart, wit, grijs) vertaalden de zoektocht naar universele orde en harmonie in visuele vorm. De asymmetrische balans en het raster weerspiegelden een wereldbeeld gebaseerd op evenwicht en tegenstellingen. Functioneel design, zoals Rietveld's Rood-Blauwe Stoel (1917-1923) en het Rietveld Schr\u00f6derhuis (1924), demonstreerde de toepassing van deze principes op het dagelijks leven. De Stijl zocht een nieuwe esthetiek die voorbij ging aan nationale grenzen en persoonlijke expressie, een visioen van een geordende, rationele wereld die contrasteerde met de chaos en destructie van de Eerste Wereldoorlog. De beweging eindigde met de dood van Van Doesburg in 1931, maar haar invloed op de architectuur van het modernisme en het Bauhaus bleef groot.\n\nBronnen: Wikipedia - De Stijl, Netherlands in World War I, Weimar Republic.",
       "works": [
         {
           "title": "Compositie in Rood, Blauw en Geel",
@@ -4605,7 +4605,7 @@
           }
         },
         {
-          "title": "Rietveld Schröderhuis",
+          "title": "Rietveld Schr\u00f6derhuis",
           "creator": "Gerrit Rietveld",
           "image": {
             "url": null,
@@ -4729,7 +4729,7 @@
           }
         },
         {
-          "title": "Café Aubette interieur",
+          "title": "Caf\u00e9 Aubette interieur",
           "creator": "Van Doesburg",
           "image": {
             "url": null,
@@ -4825,7 +4825,7 @@
       "needs_research": false
     },
     {
-      "id": "abstract expressionisme",
+      "id": "abstract-expressionisme",
       "name": "Abstract Expressionisme",
       "type": "canon",
       "start": 1943,
@@ -5172,15 +5172,15 @@
         }
       ],
       "needs_research": false,
-      "political_perspective": "De politieke context van het Abstract Expressionisme (1940-1960) werd gevormd door de nasleep van de Tweede Wereldoorlog en het begin van de Koude Oorlog, die de wereld verdeelde in twee ideologische blokken: het kapitalistische Westen onder leiding van de Verenigde Staten en het communistische Oostblok onder Sovjet-invloed. Deze bipolaire wereldorde creëerde een klimaat van intense politieke spanning, angst voor kernoorlog en ideologische confrontatie. In de Verenigde Staten manifesteerde zich dit in McCarthyisme, een periode van politieke repressie en vervolging van vermeende communisten en linkse sympathisanten, die van 1947 tot halverwege de jaren 1950 duurde. Senator Joseph McCarthy en het House Un-American Activities Committee (HUAC) beschuldigden duizenden Amerikanen van communistische sympathieën, wat leidde tot zwarte lijsten, ontslagen en maatschappelijke uitstoting in de entertainmentindustrie, academische wereld en overheid.\n\nDe sociale dynamiek van de naoorlogse periode werd gekenmerkt door existentiële angst en trauma. De Holocaust, de atoombommen op Hiroshima en Nagasaki, en de ontdekking van de volle omvang van oorlogsmisdaden hadden een diepgaande impact op het collectieve bewustzijn. Amerikaanse kunstenaars, veelal Europese immigranten die voor de nazi's waren gevlucht, brachten deze ervaringen van verlies, ontwrichting en existentiële bedreiging mee. De Koude Oorlogsespionage, onthuld door zaken als de Rosenberg-zaak en de ontdekking van Sovjet-spionage in de Verenigde Staten, versterkte de atmosfeer van paranoia en achterdocht. Tegelijkertijd benadrukte de Amerikaanse ideologie individuele vrijheid als contrast met het collectivisme van het Sovjet-systeem, wat een unieke nadruk op individualisme en persoonlijke expressie schiep.\n\nAbstract Expressionisme ontwikkelde zich in deze context als een kunstvorm die diep verbonden was met de politieke en sociale realiteit. De stijlkenmerken - spontane actie (action painting), grote schaal, emotionele intensiteit en individualisme - weerspiegelden direct de naoorlogse existentiële angst en de behoefte aan persoonlijke expressie in een wereld die werd gedomineerd door massavernietigingswapens en ideologische polarisatie. Jackson Pollock's drip-techniek en het concept van het doek als \"arena waarin men handelt\" (zoals critici als Harold Rosenberg beschreven) belichaamden een existentiële worsteling met het maken van kunst zelf, bevrijd van politieke, esthetische en morele conventies. De grote schaal van de werken - vaak meters breed - creëerde een overweldigende, bijna sublieme ervaring die de toeschouwer confronteerde met de enorme krachten van de moderne wereld.\n\nDe beweging kreeg onverwachte politieke betekenis toen bleek dat de CIA abstract expressionisme promootte als cultureel instrument in de Koude Oorlog. Via organisaties als het Congress for Cultural Freedom financierde de CIA tentoonstellingen en promotie van Amerikaanse abstract expressionisten in Europa, om aan te tonen dat de Verenigde Staten een toevluchtsoord was voor vrije gedachte en artistieke vrijheid, in contrast met het socialistisch realisme van de Sovjet-Unie. Kunstenaars zoals Mark Rothko en Barnett Newman, wiens werk werd gekenmerkt door monochrome kleurvelden en spirituele intensiteit, werden onbedoeld instrumenten in deze culturele propaganda. Toch bleef de beweging in essentie apolitiek - de volledige abstractie maakte het veilig in een tijd van censuur, aangezien het geen herkenbare politieke boodschappen bevatte, terwijl het tegelijkertijd de Amerikaanse waarden van individuele vrijheid en creatieve expressie belichaamde.\n\nDe psychologische impact van de oorlog en de dreiging van kernvernietiging vond directe expressie in de emotionele intensiteit en de \"all-over\" compositie van abstract expressionistische werken, die geen centraal brandpunt hadden en de toeschouwer omringden met een gevoel van oneindigheid en existentiële urgentie. De kunst werd een middel om de onzegbare traumatische ervaringen van de moderne tijd uit te drukken zonder expliciete representatie, wat het mogelijk maakte om universele thema's van angst, vrijheid en menselijke waardigheid te verkennen binnen de specifieke politieke context van de vroege Koude Oorlog.\n\nBronnen: Wikipedia - Abstract Expressionism, Cold War, McCarthyism."
+      "political_perspective": "De politieke context van het Abstract Expressionisme (1940-1960) werd gevormd door de nasleep van de Tweede Wereldoorlog en het begin van de Koude Oorlog, die de wereld verdeelde in twee ideologische blokken: het kapitalistische Westen onder leiding van de Verenigde Staten en het communistische Oostblok onder Sovjet-invloed. Deze bipolaire wereldorde cre\u00eberde een klimaat van intense politieke spanning, angst voor kernoorlog en ideologische confrontatie. In de Verenigde Staten manifesteerde zich dit in McCarthyisme, een periode van politieke repressie en vervolging van vermeende communisten en linkse sympathisanten, die van 1947 tot halverwege de jaren 1950 duurde. Senator Joseph McCarthy en het House Un-American Activities Committee (HUAC) beschuldigden duizenden Amerikanen van communistische sympathie\u00ebn, wat leidde tot zwarte lijsten, ontslagen en maatschappelijke uitstoting in de entertainmentindustrie, academische wereld en overheid.\n\nDe sociale dynamiek van de naoorlogse periode werd gekenmerkt door existenti\u00eble angst en trauma. De Holocaust, de atoombommen op Hiroshima en Nagasaki, en de ontdekking van de volle omvang van oorlogsmisdaden hadden een diepgaande impact op het collectieve bewustzijn. Amerikaanse kunstenaars, veelal Europese immigranten die voor de nazi's waren gevlucht, brachten deze ervaringen van verlies, ontwrichting en existenti\u00eble bedreiging mee. De Koude Oorlogsespionage, onthuld door zaken als de Rosenberg-zaak en de ontdekking van Sovjet-spionage in de Verenigde Staten, versterkte de atmosfeer van paranoia en achterdocht. Tegelijkertijd benadrukte de Amerikaanse ideologie individuele vrijheid als contrast met het collectivisme van het Sovjet-systeem, wat een unieke nadruk op individualisme en persoonlijke expressie schiep.\n\nAbstract Expressionisme ontwikkelde zich in deze context als een kunstvorm die diep verbonden was met de politieke en sociale realiteit. De stijlkenmerken - spontane actie (action painting), grote schaal, emotionele intensiteit en individualisme - weerspiegelden direct de naoorlogse existenti\u00eble angst en de behoefte aan persoonlijke expressie in een wereld die werd gedomineerd door massavernietigingswapens en ideologische polarisatie. Jackson Pollock's drip-techniek en het concept van het doek als \"arena waarin men handelt\" (zoals critici als Harold Rosenberg beschreven) belichaamden een existenti\u00eble worsteling met het maken van kunst zelf, bevrijd van politieke, esthetische en morele conventies. De grote schaal van de werken - vaak meters breed - cre\u00eberde een overweldigende, bijna sublieme ervaring die de toeschouwer confronteerde met de enorme krachten van de moderne wereld.\n\nDe beweging kreeg onverwachte politieke betekenis toen bleek dat de CIA abstract expressionisme promootte als cultureel instrument in de Koude Oorlog. Via organisaties als het Congress for Cultural Freedom financierde de CIA tentoonstellingen en promotie van Amerikaanse abstract expressionisten in Europa, om aan te tonen dat de Verenigde Staten een toevluchtsoord was voor vrije gedachte en artistieke vrijheid, in contrast met het socialistisch realisme van de Sovjet-Unie. Kunstenaars zoals Mark Rothko en Barnett Newman, wiens werk werd gekenmerkt door monochrome kleurvelden en spirituele intensiteit, werden onbedoeld instrumenten in deze culturele propaganda. Toch bleef de beweging in essentie apolitiek - de volledige abstractie maakte het veilig in een tijd van censuur, aangezien het geen herkenbare politieke boodschappen bevatte, terwijl het tegelijkertijd de Amerikaanse waarden van individuele vrijheid en creatieve expressie belichaamde.\n\nDe psychologische impact van de oorlog en de dreiging van kernvernietiging vond directe expressie in de emotionele intensiteit en de \"all-over\" compositie van abstract expressionistische werken, die geen centraal brandpunt hadden en de toeschouwer omringden met een gevoel van oneindigheid en existenti\u00eble urgentie. De kunst werd een middel om de onzegbare traumatische ervaringen van de moderne tijd uit te drukken zonder expliciete representatie, wat het mogelijk maakte om universele thema's van angst, vrijheid en menselijke waardigheid te verkennen binnen de specifieke politieke context van de vroege Koude Oorlog.\n\nBronnen: Wikipedia - Abstract Expressionism, Cold War, McCarthyism."
     },
     {
-      "id": "postmodern",
-      "name": "Postmodern",
+      "id": "postmodernisme",
+      "name": "Postmodernisme",
       "type": "canon",
       "start": 1960,
       "end": 2000,
-      "political_perspective": "Het politieke landschap van het postmodernisme (1970-1990) werd gekenmerkt door fundamentele transformaties in de economische, technologische en culturele orde van de westerse wereld. De overgang van de moderne naar de postmoderne conditie voltrok zich tegen de achtergrond van wat filosofen zoals Fredric Jameson 'laatkapitalisme' noemden – een fase van kapitalisme gekenmerkt door globalisering, flexibele kapitaalaccumulatie en de dominantie van consumentencultuur. De ineenstorting van het Bretton Woods-systeem in 1971, gevolgd door de oliecrises van 1973 en 1979, markeerde het einde van de naoorlogse economische bloei en de opkomst van een nieuwe economische orde waarin financiële markten en transnationale corporaties steeds meer macht verwierven. Deze economische verschuiving ging gepaard met de de-industrialisatie van westerse economieën, de groei van de dienstensector en de opkomst van wat sociologen de 'informatiemaatschappij' noemden.\n\nDe informatie- en communicatietechnologie onderging in deze periode een revolutie die de sociale en politieke dynamiek fundamenteel veranderde. De introductie van persoonlijke computers, satelliettelevisie en beginnende digitale netwerken creëerde wat Marshall McLuhan een 'global village' noemde – een wereld waarin informatie direct en wereldwijd kon worden verspreid. Deze mediasaturation leidde tot wat Jean Baudrillard 'hyperrealiteit' beschreef: een toestand waarin simulaties en beelden losgekoppeld raakten van de werkelijkheid die ze oorspronkelijk vertegenwoordigden. De politieke gevolgen waren ingrijpend: traditionele autoriteitsstructuren en grootschalige ideologische kaders verloren hun legitimerende kracht, terwijl culturele relativisme en skeptisisme ten aanzien van 'grote verhalen' (metanarratieven) zoals het marxisme, het liberalisme en zelfs de Verlichting zelf postmoderne denkers zoals Jean-François Lyotard karakteriseerden als het definiërende kenmerk van de postmoderne conditie.\n\nSociaal gezien werd deze periode gekenmerkt door een explosie van pluralisme en diversiteit. De burgerrechtenbeweging, de tweede feministische golf, de holebi-emancipatie en postkoloniale bewegingen daagden gevestigde hiërarchieën en identiteitscategorieën uit. Deze 'identiteitspolitiek' verdrong de traditionele klassepolitiek als de dominante vorm van sociaal-politieke mobilisatie. De culturele gevolgen manifesteerden zich in een celebratie van diversiteit, multiculturalisme en het recht op verschil. Ironie, zelfbewuste verwijzing en een speelse menging van hoge en lage cultuur werden de dominante esthetische strategieën in een wereld waarin ernstige politieke en culturele verbintenissen als verdacht of naief werden beschouwd. Michel Foucault's analyse van macht als diffuus en alomtegenwoordig, in plaats van geconcentreerd in staat of klasse, weerspiegelde deze verschuiving naar een meer gedescentraliseerd begrip van sociale controle.\n\nDe verbinding tussen deze politieke context en de postmoderne kunststijl was direct en fundamenteel. De postmoderne kunstenaars omarmden pastiche – de bewuste menging van verschillende historische stijlen en genres – als een weerspiegeling van een cultuur die haar historische samenhang had verloren en slechts nog kon putten uit een arsenaal aan 'dode' stijlen. Ironie functioneerde als een strategie om afstand te nemen van de serieuze politieke en culturele pretenties die in de twintigste eeuw tot catastrofes hadden geleid. Appropriation – het kritische hergebruiken van bestaande beelden en tekens – verwoordde de postmoderne these dat alles al gezegd was, dat originaliteit een illusie was, en dat de enige mogelijke creatieve daad was om bestaande culturele artefacten te hercontextualiseren. Hybriditeit tenslotte – de menging van verschillende culturele tradities en identiteiten – spiegelde de multiculturele, geglobaliseerde wereld waarin vaste grenzen tussen 'hoger' en 'lager', 'eigen' en 'vreemd' waren vervaagd. Architecten zoals Robert Venturi en Michael Graves pasten deze principes toe in hun 'double coding' architectuur, die zowel moderne als traditionele elementen combineerde om een breder publiek aan te spreken. In de beeldende kunst vertaalde deze politieke conditie zich in werken die de grenzen tussen kunst en commercie, tussen hoge en lage cultuur, en tussen verschillende mediavormen doelbewust vervaagden.\n\nBronnen: Wikipedia - Postmodernism, Postmodernity, Late capitalism, Information Age, Cultural relativism.",
+      "political_perspective": "Het politieke landschap van het postmodernisme (1970-1990) werd gekenmerkt door fundamentele transformaties in de economische, technologische en culturele orde van de westerse wereld. De overgang van de moderne naar de postmoderne conditie voltrok zich tegen de achtergrond van wat filosofen zoals Fredric Jameson 'laatkapitalisme' noemden \u2013 een fase van kapitalisme gekenmerkt door globalisering, flexibele kapitaalaccumulatie en de dominantie van consumentencultuur. De ineenstorting van het Bretton Woods-systeem in 1971, gevolgd door de oliecrises van 1973 en 1979, markeerde het einde van de naoorlogse economische bloei en de opkomst van een nieuwe economische orde waarin financi\u00eble markten en transnationale corporaties steeds meer macht verwierven. Deze economische verschuiving ging gepaard met de de-industrialisatie van westerse economie\u00ebn, de groei van de dienstensector en de opkomst van wat sociologen de 'informatiemaatschappij' noemden.\n\nDe informatie- en communicatietechnologie onderging in deze periode een revolutie die de sociale en politieke dynamiek fundamenteel veranderde. De introductie van persoonlijke computers, satelliettelevisie en beginnende digitale netwerken cre\u00eberde wat Marshall McLuhan een 'global village' noemde \u2013 een wereld waarin informatie direct en wereldwijd kon worden verspreid. Deze mediasaturation leidde tot wat Jean Baudrillard 'hyperrealiteit' beschreef: een toestand waarin simulaties en beelden losgekoppeld raakten van de werkelijkheid die ze oorspronkelijk vertegenwoordigden. De politieke gevolgen waren ingrijpend: traditionele autoriteitsstructuren en grootschalige ideologische kaders verloren hun legitimerende kracht, terwijl culturele relativisme en skeptisisme ten aanzien van 'grote verhalen' (metanarratieven) zoals het marxisme, het liberalisme en zelfs de Verlichting zelf postmoderne denkers zoals Jean-Fran\u00e7ois Lyotard karakteriseerden als het defini\u00ebrende kenmerk van de postmoderne conditie.\n\nSociaal gezien werd deze periode gekenmerkt door een explosie van pluralisme en diversiteit. De burgerrechtenbeweging, de tweede feministische golf, de holebi-emancipatie en postkoloniale bewegingen daagden gevestigde hi\u00ebrarchie\u00ebn en identiteitscategorie\u00ebn uit. Deze 'identiteitspolitiek' verdrong de traditionele klassepolitiek als de dominante vorm van sociaal-politieke mobilisatie. De culturele gevolgen manifesteerden zich in een celebratie van diversiteit, multiculturalisme en het recht op verschil. Ironie, zelfbewuste verwijzing en een speelse menging van hoge en lage cultuur werden de dominante esthetische strategie\u00ebn in een wereld waarin ernstige politieke en culturele verbintenissen als verdacht of naief werden beschouwd. Michel Foucault's analyse van macht als diffuus en alomtegenwoordig, in plaats van geconcentreerd in staat of klasse, weerspiegelde deze verschuiving naar een meer gedescentraliseerd begrip van sociale controle.\n\nDe verbinding tussen deze politieke context en de postmoderne kunststijl was direct en fundamenteel. De postmoderne kunstenaars omarmden pastiche \u2013 de bewuste menging van verschillende historische stijlen en genres \u2013 als een weerspiegeling van een cultuur die haar historische samenhang had verloren en slechts nog kon putten uit een arsenaal aan 'dode' stijlen. Ironie functioneerde als een strategie om afstand te nemen van de serieuze politieke en culturele pretenties die in de twintigste eeuw tot catastrofes hadden geleid. Appropriation \u2013 het kritische hergebruiken van bestaande beelden en tekens \u2013 verwoordde de postmoderne these dat alles al gezegd was, dat originaliteit een illusie was, en dat de enige mogelijke creatieve daad was om bestaande culturele artefacten te hercontextualiseren. Hybriditeit tenslotte \u2013 de menging van verschillende culturele tradities en identiteiten \u2013 spiegelde de multiculturele, geglobaliseerde wereld waarin vaste grenzen tussen 'hoger' en 'lager', 'eigen' en 'vreemd' waren vervaagd. Architecten zoals Robert Venturi en Michael Graves pasten deze principes toe in hun 'double coding' architectuur, die zowel moderne als traditionele elementen combineerde om een breder publiek aan te spreken. In de beeldende kunst vertaalde deze politieke conditie zich in werken die de grenzen tussen kunst en commercie, tussen hoge en lage cultuur, en tussen verschillende mediavormen doelbewust vervaagden.\n\nBronnen: Wikipedia - Postmodernism, Postmodernity, Late capitalism, Information Age, Cultural relativism.",
       "visual": {
         "kenmerken": [
           "pastiche",
@@ -5832,7 +5832,7 @@
           "oneindig perspectief"
         ],
         "palet": [
-          "koele helderheid (Dalí)",
+          "koele helderheid (Dal\u00ed)",
           "vlak en grafisch (Magritte)"
         ],
         "technieken": [
@@ -5847,11 +5847,11 @@
           "desolate landschappen"
         ]
       },
-      "political_perspective": "Het surrealisme ontstond in 1924 in het Parijs van de na-oorlogse jaren, in een tijdperk dat werd gekenmerkt door politieke instabiliteit en diepe desillusie over de 'verstandige' beschaving die had geleid tot de slachtpartijen van de Eerste Wereldoorlog. De Weimarrepubliek (1919-1933) in Duitsland belichaamde deze spanningen: een jonge democratie die worstelde met hyperinflatie, politiek extremisme en de vernederende bepalingen van het Verdrag van Versailles. In deze context van culturele en intellectuele crisis vond de psychoanalytische beweging van Sigmund Freud vruchtbare bodem. Breton, die tijdens de oorlog in een neurologisch ziekenhuis had gewerkt met soldaten die leden aan shellshock, omarmde Freuds technieken van droomanalyse en vrije associatie als instrumenten voor de bevrijding van het onbewuste.\n\nDe politieke context van het interbellum was er een van ideologische polarisatie. Veel surrealisten, waaronder Breton, Louis Aragon en Paul Éluard, sloten zich in 1927 aan bij de Franse Communistische Partij, overtuigd dat de revolutie niet alleen politiek maar ook mentaal moest zijn. Breton verklaarde expliciet dat surrealisme bovenal een revolutionaire beweging was, gericht op de bevrijding van de mens van 'valse rationaliteit' en onderdrukkende gebruiken en structuren. Deze anti-bourgeois houding vertaalde zich direct in de artistieke praktijk: het verwerpen van logica, conventionele moraal en esthetische tradities werd een daad van politiek verzet tegen een samenleving die de oorlog had mogelijk gemaakt.\n\nDe opkomst van het nationaalsocialisme in Duitsland (1933-1945) vormde een existentiële bedreiging voor de surrealistische beweging. De nazi's bestempelden moderne kunst als 'Entartete Kunst' (ontaarde kunst) en organiseerden in 1937 een beruchte tentoonstelling om deze te ridiculiseren en te veroordelen. Max Ernst, een van de belangrijkste surrealisten, werd gearresteerd door de Gestapo en wist te ontsnappen naar de Verenigde Staten. Salvador Dalí werd uit de surrealistische groep gezet vanwege zijn weigering zich politiek uit te spreken tegen het fascisme. André Breton vluchtte naar New York, waar hij een belangrijk steunpunt werd voor Europese kunstenaars in ballingschap. Deze gedwongen migratie verspreidde het surrealisme wereldwijd, maar brak ook de oorspronkelijke cohesie van de groep.\n\nDe Tweede Wereldoorlog (1939-1945) was het dieptepunt van de rationaliteit die surrealisme altijd al had aangevallen. Het surrealisme had voorspeld dat de 'beschaving' barbarij kon voortbrengen, en de Holocaust en totale oorlog bevestigden deze vrees op gruwelijke wijze. Het verzet tegen de bezetting in Frankrijk trok sommige surrealisten aan, terwijl anderen, zoals Breton, de oorlog vanuit Amerika gadesloegen. Na de oorlog keerde Breton terug naar Parijs en probeerde de beweging te herstellen, maar de naoorlogse wereld was fundamenteel veranderd.\n\nDe politieke context verklaart direct de stilistische kenmerken van het surrealisme. De droomlogica en het onheimelijke weerspiegelden een wereld waarin de 'reële' orde had gefaald en irrationele krachten de overhand hadden. Het automatisme — het spontaan schrijven of schilderen zonder censuur — was een directe toepassing van Freuds theorieën en een politieke daad tegen gevestigde autoriteit. De desolate landschappen van Dalí en de paradoxale objecten van Magritte verbeelden een realiteit die haar coherentie had verloren. De bevrijding uit de werkelijkheid die het surrealisme nastreefde, was geen esthetische escapisme maar een radicaal antwoord op een politieke en sociale orde die had geleid tot oorlog, onderdrukking en massamoord. Het surrealisme was, zoals Breton benadrukte, 'een kreet van de geest die terugkeert naar zichzelf'.\n\nBronnen: Wikipedia - Surrealism, André Breton, Weimar Republic, Nazi Germany.",
+      "political_perspective": "Het surrealisme ontstond in 1924 in het Parijs van de na-oorlogse jaren, in een tijdperk dat werd gekenmerkt door politieke instabiliteit en diepe desillusie over de 'verstandige' beschaving die had geleid tot de slachtpartijen van de Eerste Wereldoorlog. De Weimarrepubliek (1919-1933) in Duitsland belichaamde deze spanningen: een jonge democratie die worstelde met hyperinflatie, politiek extremisme en de vernederende bepalingen van het Verdrag van Versailles. In deze context van culturele en intellectuele crisis vond de psychoanalytische beweging van Sigmund Freud vruchtbare bodem. Breton, die tijdens de oorlog in een neurologisch ziekenhuis had gewerkt met soldaten die leden aan shellshock, omarmde Freuds technieken van droomanalyse en vrije associatie als instrumenten voor de bevrijding van het onbewuste.\n\nDe politieke context van het interbellum was er een van ideologische polarisatie. Veel surrealisten, waaronder Breton, Louis Aragon en Paul \u00c9luard, sloten zich in 1927 aan bij de Franse Communistische Partij, overtuigd dat de revolutie niet alleen politiek maar ook mentaal moest zijn. Breton verklaarde expliciet dat surrealisme bovenal een revolutionaire beweging was, gericht op de bevrijding van de mens van 'valse rationaliteit' en onderdrukkende gebruiken en structuren. Deze anti-bourgeois houding vertaalde zich direct in de artistieke praktijk: het verwerpen van logica, conventionele moraal en esthetische tradities werd een daad van politiek verzet tegen een samenleving die de oorlog had mogelijk gemaakt.\n\nDe opkomst van het nationaalsocialisme in Duitsland (1933-1945) vormde een existenti\u00eble bedreiging voor de surrealistische beweging. De nazi's bestempelden moderne kunst als 'Entartete Kunst' (ontaarde kunst) en organiseerden in 1937 een beruchte tentoonstelling om deze te ridiculiseren en te veroordelen. Max Ernst, een van de belangrijkste surrealisten, werd gearresteerd door de Gestapo en wist te ontsnappen naar de Verenigde Staten. Salvador Dal\u00ed werd uit de surrealistische groep gezet vanwege zijn weigering zich politiek uit te spreken tegen het fascisme. Andr\u00e9 Breton vluchtte naar New York, waar hij een belangrijk steunpunt werd voor Europese kunstenaars in ballingschap. Deze gedwongen migratie verspreidde het surrealisme wereldwijd, maar brak ook de oorspronkelijke cohesie van de groep.\n\nDe Tweede Wereldoorlog (1939-1945) was het dieptepunt van de rationaliteit die surrealisme altijd al had aangevallen. Het surrealisme had voorspeld dat de 'beschaving' barbarij kon voortbrengen, en de Holocaust en totale oorlog bevestigden deze vrees op gruwelijke wijze. Het verzet tegen de bezetting in Frankrijk trok sommige surrealisten aan, terwijl anderen, zoals Breton, de oorlog vanuit Amerika gadesloegen. Na de oorlog keerde Breton terug naar Parijs en probeerde de beweging te herstellen, maar de naoorlogse wereld was fundamenteel veranderd.\n\nDe politieke context verklaart direct de stilistische kenmerken van het surrealisme. De droomlogica en het onheimelijke weerspiegelden een wereld waarin de 're\u00eble' orde had gefaald en irrationele krachten de overhand hadden. Het automatisme \u2014 het spontaan schrijven of schilderen zonder censuur \u2014 was een directe toepassing van Freuds theorie\u00ebn en een politieke daad tegen gevestigde autoriteit. De desolate landschappen van Dal\u00ed en de paradoxale objecten van Magritte verbeelden een realiteit die haar coherentie had verloren. De bevrijding uit de werkelijkheid die het surrealisme nastreefde, was geen esthetische escapisme maar een radicaal antwoord op een politieke en sociale orde die had geleid tot oorlog, onderdrukking en massamoord. Het surrealisme was, zoals Breton benadrukte, 'een kreet van de geest die terugkeert naar zichzelf'.\n\nBronnen: Wikipedia - Surrealism, Andr\u00e9 Breton, Weimar Republic, Nazi Germany.",
       "works": [
         {
           "title": "La Persistencia de la Memoria",
-          "creator": "Salvador Dalí",
+          "creator": "Salvador Dal\u00ed",
           "image": {
             "url": null,
             "page": null,
@@ -5882,7 +5882,7 @@
         },
         {
           "title": "De Olifanten",
-          "creator": "Salvador Dalí",
+          "creator": "Salvador Dal\u00ed",
           "image": {
             "url": null,
             "page": null,
@@ -5913,7 +5913,7 @@
         },
         {
           "title": "The Elephants",
-          "creator": "Dalí",
+          "creator": "Dal\u00ed",
           "image": {
             "url": null,
             "page": null,
@@ -5944,7 +5944,7 @@
         },
         {
           "title": "The Lovers",
-          "creator": "René Magritte",
+          "creator": "Ren\u00e9 Magritte",
           "image": {
             "url": null,
             "page": null,
@@ -6099,7 +6099,7 @@
         },
         {
           "title": "Carnaval d'Arlequin",
-          "creator": "Joan Miró",
+          "creator": "Joan Mir\u00f3",
           "image": {
             "url": null,
             "page": null,
@@ -6130,1102 +6130,7 @@
         },
         {
           "title": "De Blauwe Ster",
-          "creator": "Miró",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false
-    },
-    {
-      "name": "Dadaisme",
-      "type": "canon",
-      "start": 1916,
-      "end": 1924,
-      "visual": {
-        "kenmerken": [
-          "antikunst",
-          "chaos",
-          "onbedoeld",
-          "absurde humor"
-        ],
-        "stijlfiguren": [
-          "collage",
-          "ready-mades",
-          "zufällige assemblage"
-        ],
-        "palet": [
-          "concurrerend",
-          "contrast"
-        ],
-        "technieken": [
-          "montage",
-          "collage",
-          "fotomontage"
-        ],
-        "motieven": [
-          "anti-art",
-          "anti-logica",
-          "ironie",
-          "pessimisme"
-        ]
-      },
-      "works": [
-        {
-          "title": "Fontein (Fountain)",
-          "creator": "Marcel Duchamp",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "Die Tante",
-          "creator": "Hans Arp",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "dadaisme"
-    },
-    {
-      "name": "Pop Art",
-      "type": "canon",
-      "start": 1950,
-      "end": 1970,
-      "visual": {
-        "kenmerken": [
-          "hergebruik van dagelijks objecten",
-          "massaproductie esthetiek",
-          "harde randen",
-          "simpele vormen"
-        ],
-        "stijlfiguren": [
-          "appropriatie",
-          "serigraphie",
-          "mega-afmetingen"
-        ],
-        "palet": [
-          "donker en fel",
-          "contrastrijk"
-        ],
-        "technieken": [
-          "lithografie",
-          "acryl",
-          "aquarel"
-        ],
-        "motieven": [
-          "consumentencultuur",
-          "media",
-          "reclame",
-          "melk, eieren, pittenzakken"
-        ]
-      },
-      "works": [
-        {
-          "title": "Campbell's Soup Cans",
-          "creator": "Andy Warhol",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "Marilyn Monroe",
-          "creator": "Andy Warhol",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "popart"
-    },
-    {
-      "name": "Postmodern",
-      "type": "canon",
-      "start": 1970,
-      "end": 1990,
-      "visual": {
-        "kenmerken": [
-          "plaatsing van kleurrijkheid",
-          "groeiend zelfbewustzijn",
-          "relationele 3D",
-          "hergebruik en collages"
-        ],
-        "stijlfiguren": [
-          "metafictie",
-          "appropriatie",
-          "bricolage"
-        ],
-        "palet": [
-          "donker en somber",
-          "harde randen"
-        ],
-        "technieken": [
-          "serigraphie",
-          "aquarel"
-        ],
-        "motieven": [
-          "referentie naar kunstgeschiedenis",
-          "skepticisme"
-        ]
-      },
-      "works": [
-        {
-          "title": "Campbell's Soup Cans II",
-          "creator": "Andy Warhol",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "The Gold of the Americas",
-          "creator": "Rebecca Morgan",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "postmodern"
-    },
-    {
-      "name": "Hedendaags",
-      "type": "canon",
-      "start": null,
-      "end": null,
-      "visual": {
-        "kenmerken": [
-          "divers",
-          "non-lineair",
-          "experimenteel"
-        ],
-        "stijlfiguren": [
-          "melange",
-          "einde van de geschiedenis van de kunst"
-        ],
-        "palet": [
-          "divers"
-        ],
-        "technieken": [
-          "meerdere technieken"
-        ],
-        "motieven": [
-          "kunst in de samenleving",
-          "cross-disciplinair"
-        ]
-      },
-      "works": [
-        {
-          "title": "Tilted Arc",
-          "creator": "Richard Serra",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "Tether",
-          "creator": "El Anatsui",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "hedendaags"
-    },
-    {
-      "name": "Digitaal",
-      "type": "canon",
-      "start": 2000,
-      "end": null,
-      "visual": {
-        "kenmerken": [
-          "digitale technieken",
-          "vector graphics",
-          "photo manipulation"
-        ],
-        "stijlfiguren": [
-          "pixel art",
-          "generative art",
-          "3D render"
-        ],
-        "palet": [
-          "digitale kleurenpaletten"
-        ],
-        "technieken": [
-          "software",
-          "compositie",
-          "rendering"
-        ],
-        "motieven": [
-          "technologie en kunst",
-          "digitalisering"
-        ]
-      },
-      "works": [
-        {
-          "title": "Fluid Fields",
-          "creator": "Julian Opie",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "digitaal"
-    },
-    {
-      "name": "Byzantijns",
-      "type": "canon",
-      "start": 330,
-      "end": 1453,
-      "visual": {
-        "kenmerken": [
-          "abstracte sfumbatid",
-          "geometrische stijl",
-          "rechte lijnen",
-          "gold leaf"
-        ],
-        "stijlfiguren": [
-          "middeleeuwse afbeelding"
-        ],
-        "palet": [
-          "rood, groen, blauw, goud"
-        ],
-        "technieken": [
-          "mosaïeken",
-          "muurschilderkunst",
-          "miniatuur"
-        ],
-        "motieven": [
-          "christelijke thema's",
-          "geestelijk leven"
-        ]
-      },
-      "works": [
-        {
-          "title": "Mosaïek van de Hoogste Koning",
-          "creator": "Justinianus I",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "St. Sophia",
-          "creator": "Anthemius van Tralles en Isidorus van Miletus",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "byzantijns"
-    },
-    {
-      "name": "Conceptueel",
-      "type": "canon",
-      "start": 1960,
-      "end": null,
-      "visual": {
-        "kenmerken": [
-          "idee boven vorm",
-          "kunst als idee",
-          "conceptuele vooruitgang"
-        ],
-        "stijlfiguren": [
-          "process art",
-          "land art",
-          "performance art"
-        ],
-        "palet": [
-          "geen specifiek palet"
-        ],
-        "technieken": [
-          "tekst",
-          "documentatie",
-          "installatie"
-        ],
-        "motieven": [
-          "intellectuele vooruitgang",
-          "kunst als methode"
-        ]
-      },
-      "works": [
-        {
-          "title": "One and Three Chairs",
-          "creator": "Joseph Kosuth",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "Mona Lisa with an Eyepatch",
-          "creator": "John Baldessari",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "conceptueel"
-    },
-    {
-      "name": "Gotisch",
-      "type": "canon",
-      "start": 1140,
-      "end": 1500,
-      "visual": {
-        "kenmerken": [
-          "spiraalvormige, asymmetrische vormen",
-          "natuurlijke vormen",
-          "inconsistente details",
-          "naakte menselijke vormen"
-        ],
-        "stijlfiguren": [
-          "criticism of classical rules",
-          "sheer modeling",
-          "giants",
-          "sphinxes"
-        ],
-        "palet": [
-          "biblical red and green",
-          "gilded accents"
-        ],
-        "technieken": [
-          "glacis",
-          "stained glass",
-          "gilding"
-        ],
-        "motieven": [
-          "St. Luke painting",
-          "monks",
-          "pilgrims",
-          "holy figures"
-        ]
-      },
-      "works": [
-        {
-          "title": "Grote Kathedraal van Reims",
-          "creator": "N/A",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "De Madonna van Reims",
-          "creator": "Giles de Corbie",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "gotisch"
-    },
-    {
-      "name": "Renaissance",
-      "type": "canon",
-      "start": 1400,
-      "end": 1600,
-      "visual": {
-        "kenmerken": [
-          "perspectief",
-          "nieuw denken",
-          "verzorgd uitgevoerd"
-        ],
-        "stijlfiguren": [
-          "figuratief",
-          "herhaalde wereldbeeld"
-        ],
-        "palet": [
-          "hoog contrast"
-        ],
-        "technieken": [
-          "olieverf",
-          "tempera"
-        ],
-        "motieven": [
-          "Heraderster"
-        ]
-      },
-      "works": [
-        {
-          "title": "Laest",
-          "creator": "Botticelli",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "De Davidschilderijen",
-          "creator": "Donatello, Verrocchio, Michelangelo",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "renaissance"
-    },
-    {
-      "name": "Postmodernisme",
-      "type": "canon",
-      "start": 1890,
-      "end": 1910,
-      "visual": {
-        "kenmerken": [
-          "naturalistische ornamenten",
-          "ingewikkelde regels",
-          "geleidelijk verdwijnen"
-        ],
-        "stijlfiguren": [
-          "apropriatie",
-          "beïnvloedingen",
-          "karakteristieke stylische kenmerken",
-          "organisch",
-          "georganiseerde chaoticiteit"
-        ],
-        "palet": [
-          "geen specifiek palet"
-        ],
-        "technieken": [
-          "Illustratie",
-          "stencil"
-        ],
-        "motieven": [
-          "infinitesimal afdruk"
-        ]
-      },
-      "works": [
-        {
-          "title": "Wisteria",
-          "creator": "Hector Guimard",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "Vrouw met een Hoed",
-          "creator": "Matisse",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "postmodernisme"
-    },
-    {
-      "name": "Romaans",
-      "type": "canon",
-      "start": 1970,
-      "end": 1990,
-      "visual": {
-        "kenmerken": [
-          "interdisciplinair",
-          "citaten",
-          "metafictie"
-        ],
-        "stijlfiguren": [
-          "conceptuele vooruitgang"
-        ],
-        "palet": [
-          "donker en somber"
-        ],
-        "technieken": [
-          "aquarel"
-        ],
-        "motieven": [
-          "referentie naar kunstgeschiedenis"
-        ]
-      },
-      "works": [
-        {
-          "title": "Campbell's Soup Cans",
-          "creator": "Andy Warhol",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        }
-      ],
-      "needs_research": false,
-      "id": "romaans"
-    },
-    {
-      "name": "Romaans",
-      "type": "canon",
-      "start": 1000,
-      "end": 1400,
-      "visual": {
-        "kenmerken": [
-          "enorme kerk",
-          "kleinere kerk",
-          "abten en kloosters",
-          "heidens monumenten"
-        ],
-        "stijlfiguren": [
-          "waterval",
-          "romane sculptuur",
-          "bronzen deuren"
-        ],
-        "palet": [
-          "bibiellisch rood en groen",
-          "goudaccenten"
-        ],
-        "technieken": [
-          "glacis",
-          "mosaïeken",
-          "muurschilderkunst"
-        ],
-        "motieven": [
-          "kruisweg",
-          "steden en markten",
-          "transformatie van de menselijke vorm",
-          "gerichte en nepotistische religieuze thema's"
-        ]
-      },
-      "works": [
-        {
-          "title": "Grote Kathedraal van Cluny III",
-          "creator": "N/A",
-          "image": {
-            "url": null,
-            "page": null,
-            "source": null,
-            "license": null,
-            "attribution": null
-          },
-          "identifiers": {
-            "wikidata_qid": null,
-            "commons_file": null,
-            "iiif_manifest": null
-          },
-          "copyright": {
-            "status": null,
-            "license": null,
-            "rights_holder": null,
-            "jurisdiction": null,
-            "expiry_year_estimate": null,
-            "source_confidence": null,
-            "publish_ok": null,
-            "notes": null
-          },
-          "links": {
-            "direct_image": null,
-            "info_page": null,
-            "source": null
-          }
-        },
-        {
-          "title": "De Madonna van Reims",
-          "creator": "Giles de Corbie",
+          "creator": "Mir\u00f3",
           "image": {
             "url": null,
             "page": null,
