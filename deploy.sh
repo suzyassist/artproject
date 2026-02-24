@@ -28,7 +28,12 @@ else
 fi
 
 echo "📤 Uploading to One.com server..."
-lftp -c "open -u $REMOTE_USER,'$REMOTE_PASS' sftp://$REMOTE_HOST; mirror -R --parallel=6 --delete . $REMOTE_PATH"
+
+# First, ensure directories exist on server
+lftp -c "open -u $REMOTE_USER,'$REMOTE_PASS' sftp://$REMOTE_HOST; mkdir -p $REMOTE_PATH/images/postmodern $REMOTE_PATH/images/postmodernisme $REMOTE_PATH/images/hedendaags; exit 0"
+
+# Then upload all files
+lftp -c "open -u $REMOTE_USER,'$REMOTE_PASS' sftp://$REMOTE_HOST; mirror -R --parallel=6 --no-perms . $REMOTE_PATH"
 
 echo "✅ Deploy complete!"
 echo "   GitHub: https://github.com/suzyassist/artproject"
