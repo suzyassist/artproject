@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotische Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #f8f4e8 0%, #fff9e6 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #4169E1;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #faf0fa;border-left: 4px solid #4169E1;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#e6f0fa;padding:1rem;border-radius:4px;border:2px solid #4169E1}
+        .timeline-box {background:linear-gradient(135deg,#2c1810 0%,#1a0f08 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+    
+        .page-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            gap: 1rem;
+        }
+        .page-navigation a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--secondary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .page-navigation a:hover {
+            background: var(--accent);
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+        .page-navigation .prev::before {
+            content: "←";
+            font-size: 1.2rem;
+        }
+        .page-navigation .next::after {
+            content: "→";
+            font-size: 1.2rem;
+        }
+        .page-navigation .home {
+            background: var(--accent);
+            color: var(--primary);
+        }
+        @media (max-width: 600px) {
+            .page-navigation {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .page-navigation a {
+                font-size: 0.85rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+        }
+    
+    </style>
+</head>
+<body>
+    <header><h1>⛪ Gotische Kunst</h1><p class="subtitle">1140-1500 · Streven naar het Licht</p></header>
+    <nav class="top-nav">
+        <a href="romaans.html" class="nav-prev">← 🏰 Romaanse Kunst</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="renaissance.html" class="nav-next">Renaissance 🏛️ →</a>
+    </nav>
+
+    <!-- Hamburger Menu Button -->
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
+            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
+            <a href="gotisch.html" class="side-nav-link active"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
+            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
+            <a href="manierisme.html" class="side-nav-link"><span class="nav-icon">🎭</span><span class="nav-text">Maniërisme</span></a>
+            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
+            <a href="rococo.html" class="side-nav-link"><span class="nav-icon">🎀</span><span class="nav-text">Rococo</span></a>
+            <a href="neoclassicisme.html" class="side-nav-link"><span class="nav-icon">⚱️</span><span class="nav-text">Neoclassicisme</span></a>
+            <a href="romanticisme.html" class="side-nav-link"><span class="nav-icon">🌊</span><span class="nav-text">Romantiek</span></a>
+            <a href="realisme.html" class="side-nav-link"><span class="nav-icon">🌾</span><span class="nav-text">Realisme</span></a>
+            <a href="impressionisme.html" class="side-nav-link"><span class="nav-icon">☀️</span><span class="nav-text">Impressionisme</span></a>
+            <a href="postimpressionisme.html" class="side-nav-link"><span class="nav-icon">🌻</span><span class="nav-text">Post-Impressionisme</span></a>
+            <a href="symbolisme.html" class="side-nav-link"><span class="nav-icon">🌙</span><span class="nav-text">Symbolisme</span></a>
+            <a href="artnouveau.html" class="side-nav-link"><span class="nav-icon">🌿</span><span class="nav-text">Art Nouveau</span></a>
+            <a href="fauvisme.html" class="side-nav-link"><span class="nav-icon">🦁</span><span class="nav-text">Fauvisme</span></a>
+            <a href="expressionisme.html" class="side-nav-link"><span class="nav-icon">😱</span><span class="nav-text">Expressionisme</span></a>
+            <a href="kubisme.html" class="side-nav-link"><span class="nav-icon">🔲</span><span class="nav-text">Kubisme</span></a>
+            <a href="futurisme.html" class="side-nav-link"><span class="nav-icon">⚡</span><span class="nav-text">Futurisme</span></a>
+            <a href="dadaisme.html" class="side-nav-link"><span class="nav-icon">🎲</span><span class="nav-text">Dadaïsme</span></a>
+            <a href="destijl.html" class="side-nav-link"><span class="nav-icon">⬜</span><span class="nav-text">De Stijl</span></a>
+            <a href="surrealisme.html" class="side-nav-link"><span class="nav-icon">🦋</span><span class="nav-text">Surrealisme</span></a>
+            <a href="abstract.html" class="side-nav-link"><span class="nav-icon">🔥</span><span class="nav-text">Abstract Expressionisme</span></a>
+            <a href="popart.html" class="side-nav-link"><span class="nav-icon">🍿</span><span class="nav-text">Pop Art</span></a>
+            <a href="minimalisme.html" class="side-nav-link"><span class="nav-icon">⬛</span><span class="nav-text">Minimalisme</span></a>
+            <a href="conceptueel.html" class="side-nav-link"><span class="nav-icon">💡</span><span class="nav-text">Conceptuele Kunst</span></a>
+            <a href="postmodernisme.html" class="side-nav-link"><span class="nav-icon">🌀</span><span class="nav-text">Postmodernisme</span></a>
+            <a href="hedendaags.html" class="side-nav-link"><span class="nav-icon">🌐</span><span class="nav-text">Hedendaagse Kunst</span></a>
+            <a href="digitaal.html" class="side-nav-link"><span class="nav-icon">💻</span><span class="nav-text">Digitale Kunst</span></a>
+        </div>
+    </nav>
+
+    <!-- Overlay -->
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('sidebar').classList.remove('open');
+                document.getElementById('overlay').classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+
+    
+    <main>
+
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Notre-Dame de Paris</h2>
+                <p>Het icoon van de Gotiek en de kathedraal die een stad bezielt</p>
+                <img src="images/gotisch/01_notredame.jpg" alt="Notre-Dame de Paris">
+                <p><em>Parijs, Frankrijk, 1163-1345</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT (1140-1500)</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>De Gotische kunst (1140-1500) ontwikkelde zich tijdens een periode van fundamentele politieke transformatie die Europa veranderde van een feodale maatschappij naar een systeem van centraliserende natiestaten en opkomende stedelijke republieken. De politieke structuur werd gekenmerkt door een spanningsveld tussen drie krachten: de centraliserende monarchieën (vooral in Frankrijk en Engeland), de pauselijke autoriteit (die zijn hoogtepunt bereikte onder Innocentius III, 1198-1216), en de opkomende stedelijke gemeenten die grotere autonomie opeisten. De Gotische stijl ontstond in Île-de-France onder bescherming van abt Suger van Saint-Denis, een adviseur van koning Lodewijk VI en Lodewijk VII, en werd direct geassocieerd met de koninklijke autoriteit van het Franse huis Capet. De kathedraal werd niet slechts een religieus gebouw, maar een symbool van stedelijke trots, bisschoppelijke macht en koninklijke legitimiteit.</p>
+                <p>De sociale dynamiek werd gedomineerd door de opkomst van steden en een nieuwe middenklasse van kooplieden, ambachtslieden en bankiers die rijkdom vergaarden door handel en industrie. Deze bourgeoisie begon kunst te patroneren, zowel religieus als profaan, wat leidde tot een explosie van artistieke productie. De gilden, die kunstenaars organiseerden en reguleerden, werden invloedrijke politieke krachten in stedelijke regeringen. De universiteiten, die in deze periode werden gesticht (Bologna, Parijs, Oxford, Cambridge), schiepen een nieuwe intellectuele klasse die humanistische ideeën begon te ontwikkelen. De kerk bleef de belangrijkste patroon, maar de secularisering van de samenleving zette door: profane literatuur, ridderromans en hofkunst bloeiden naast religieuze producties. De kruistochten, hoewel uiteindelijk militair onsuccesvol, stimuleerden culturele uitwisseling en de handel in luxe goederen.</p>
+                <p>Belangrijke politieke gebeurtenissen omvatten de Reconquista in Spanje (voltooid in 1492), de Honderdjarige Oorlog tussen Engeland en Frankrijk (1337-1453), de Zwarte Dood (1347-1351) die een derde van de Europese bevolking doodde, en het Westers Schisma (1378-1417) dat de kerk verdeelde. De Honderdjarige Oorlog verzwakte de Franse en Engelse adel, versterkte de koninklijke macht en leidde tot de opkomst van nationale identiteiten. De Zwarte Dood ondermijnde het feodale systeem door arbeidsschaarste te creëren die de positie van boeren en arbeiders verbeterde. Het Schisma ondermijnde de pauselijke autoriteit en stimuleerde conciliarisme en nationale kerken.</p>
+                <p>De verbinding tussen politiek en artistieke stijl was direct en veelzijdig. De Gotische architectuur, met zijn spitse bogen, ribgewelven, luchtbogen en grote glas-in-loodramen, was een technische revolutie die mogelijk werd gemaakt door grotere rijkdom, stedelijke organisatie en kerkelijke ambitie. De verticaliteit van de kathedraal - gericht op de hemel - verbeeldde de spirituele aspiraties van een samenleving die geloofde in een goddelijke orde. De transparantie van de muren, vervangen door gekleurd glas, creëerde een 'hemels licht' dat de neoplatonische theologie van het licht van abt Suger visualiseerde. De sculpturale programma's van kathedralen, met hun increasingly naturalistische figuren, verbeeldden de sociale hiërarchie - koningen, bisschoppen, kooplieden, ambachtslieden - en boden modellen van deugd en vroomheid. De verluchte manuscripten en altaarstukken, vaak geproduceerd voor lekenpatronen, demonstreerden de welvaart en status van de nieuwe middenklasse. De International Gothic stijl (ca. 1380-1420), gekenmerkt door verfijning, elegantie en uniformiteit, verbeeldde de kosmopolitische hofcultuur van de Europese aristocratie. De Gotische kunst was niet slechts een expressie van religieuze devotie, maar een instrument van politieke legitimatie, stedelijke identiteit en sociale differentiatie.</p>
+                <p><em>Bronnen: Wikipedia - Gothic art, Gothic architecture, Abbot Suger, Hundred Years' War, Black Death, Western Schism, Rise of the medieval town.</em></p>
+            </div>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>De Gotische periode (1140-1500) bracht een literaire revolutie die parallel liep aan de architectonische innovaties van de gotische kathedraal. Scholastiek, hoofse liefdespoëzie en kathedraalverhalen vormden een intellectuele en esthetische eenheid. De scholastiek, de filosofische methode van de middeleeuwse universiteiten, bereikte haar hoogtepunt met Thomas van Aquino's 'Summa Theologica' (1265-1274). Dit systematische werk, dat rede en geloof verenigde, vertaalde zich naar de gotische kathedraal: zowel het gebouw als het boek waren 'summae' - allesomvattende totaliteiten die de christelijke wereldorde belichaamden. De verticale drang van de kathedraal weerspiegelde de scholastieke aspiratie om het goddelijke te bereiken door rationele analyse. De logische structuur van scholastieke traktaten - quaestiones, articuli, argumenta - vond haar visuele pendant in de gelaagde gevels, de rangschikking van figuren en de hiërarchische orde van het beeldenprogramma. Hoofse liefdespoëzie ('fin'amor') ontwikkelde zich aan de hoven van Aquitanië en Champagne. De troubadours van Zuid-Frankrijk (Bernart de Ventadorn, 12e eeuw) en de trouvères van Noord-Frankrijk (Chrétien de Troyes) componeerden lyriek en romances over onbereikbare liefde, ridderlijke deugd en avontuur. Chrétien de Troyes' Arthur-romances ('Lancelot', 'Yvain', 'Perceval', ca. 1170-1190) introduceerden het Graal-motief en verspreidden de legenden van de Tafelronde. Deze literatuur inspireerde gotische beeldhouwwerken: ridderscènes op kapitelen, de 'beau idéal' van aristocratische elegantie in heiligenbeelden, en de verfijning van gotische stijlfiguren. Het concept van 'hoofse liefde' - de verering van een edele vrouw door een dienende ridder - weerspiegelde zich in de verfijnde, hemelse Madonna-beelden van de 13e en 14e eeuw. Kathedraal-literatuur omvatte enerzijds liturgische teksten (missalen, breviaria, gradualia) die de rituele functie van het gebouw ondersteunden, en anderzijds visionaire verhalen en stichtelijke traktaten die de gelovigen voorbereidden op de visuele ervaring. Het 'Speculum Maius' van Vincent van Beauvais (13e eeuw), een encyclopedisch werk dat de hele kennis van de tijd samenvatte, functioneerde als een literair equivalent van de kathedraal als 'universum in steen'. Gotieke manuscripten, verlucht met miniaturen, toonden een wisselwerking tussen tekst en beeld die kenmerkend was voor de periode: de 'Très Riches Heures' van de Gebroeders Limburg en de manuscripten van Jean Fouquet verenigden literaire en visuele kunst in ongekende verfijning.
+Deze literaire vernieuwing vertaalde zich direct in de gotische kunst. De rode draad van de Rose Window, met zijn complexe iconografische programma's, kan worden gelezen als een visueel equivalent van de scholastieke summa - een poging om alle kennis in één coherent systeem te vatten. De verticale aspiratie van de gotische kathedraal weerspiegelde het literaire ideaal van mystieke verheffing dat men aantreft in de werken van Meister Eckhart en Ruusbroec. De naturalistische details in gotische beeldhouwkunst - de planten, de dieren, de menselijke figuren - beantwoordden aan hetzelfde realisme dat men zag ontstaan in de literatuur van de stedelijke chroniques en de vroegmoderne poëzie.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>De gotische kunst, die floreerde tussen circa 1140 en 1500 in Europa, vertoonde een opmerkelijke psychologische complexiteit die direct verband hield met de middeleeuwse opvattingen over ziel, psychè en goddelijkheid. Waar moderne psychologie pas in de late negentiende eeuw zou ontstaan, kunnen we de gotische kunst begrijpen als een visuele psychologie die innerlijke toestanden externaliseerde in architectuur, beeldhouwkunst en glas-in-lood.</p>
+                <p>De gotische kathedraal zelf kan psychologisch worden geïnterpreteerd als een 'transformationele ruimte' die de bezoeker van aardse naar hemelse staat voerde. Abt Suger (1081-1151) van Saint-Denis beschreef in zijn geschriften hoe het licht door de gekleurde ramen de ziel kon verheffen – een ervaring die moderne psychologen zouden herkennen als een 'altered state of consciousness' of veranderde bewustzijnstoestand. De verticale lijnen van de gotische architectuur, die naar de hemel reikten, creëerden een psychologische impact van transcendence die vergelijkbaar was met wat mystici in meditatie ervaren.</p>
+                <p>De beeldhouwwerken van gotische kathedralen, zoals die van de Kathedraal van Chartres (1194-1220), externaliseerden psychische toestanden in de vorm van duivels, demonen en verleidsters aan de buitenkant, en heiligen en engelen binnenin. Deze spatial division kan psychologisch worden begrepen als een projectie van de middeleeuwse psyche: de strijd tussen 'buitenwereld' (verleiding, zonde) en 'binnenwereld' (zuiverheid, goddelijkheid). De 'grotesken' en 'chimères' op de balustrades van Notre-Dame de Paris (1163-1345) vertoonden trekken van wat Sigmund Freud (1856-1939) later 'het unheimliche' zou noemen: het bekende dat vreemd en angstwekkend wordt.</p>
+                <p>Giotto di Bondone (1267-1337) introduceerde in de Scrovegni Kapel in Padua (1303-1305) een psychologische expressiviteit die vooruitliep op de Renaissance. Zijn 'De Kus van Judas' toont gezichten met duidelijke emoties – woede, verraad, angst – die de toeschouwer direct aanspreken op een niveau dat psychologen 'emotional contagion' noemen: het overnemen van andermans emoties. Giotto's figuren bewegen in een driedimensionale ruimte die psychologische diepgang suggereert, waarmee hij afstand nam van de vlakke symboliek van de romaanse kunst.</p>
+                <p>De gotische miniaturen in getijdenboeken, zoals het 'Très Riches Heures du Duc de Berry' (1412-1416) van de gebroeders Limburg, vertoonden een psychologische aandacht voor individuele ervaring die modern aandoet. De landbouwers die in januari kou lijden, de hovelingen die in mei paardrijden – elk tafereel toont specifieke psychische toestanden die de kijker kan herkennen. Deze 'psychologische realisme' anticipeerde op de latere ontwikkeling van portretkunst waarin individuele persoonlijkheid centraal zou komen te staan.</p>
+                <p>De gotische kunst gebruikte kleur psychologisch: het diepe blauw van de Maagd Maria in de ramen van Sainte-Chapelle (1248) suggereerde kalmte en hemelse majesteit, terwijl het rood van Christus' lijden direct emotionele reacties uitlokte. Deze kleurpsychologie, die eeuwen later door Johann Wolfgang von Goethe (1749-1832) in 'Zur Farbenlehre' (1810) theoretisch zou worden onderbouwd, maakte van de gotische kathedraal een 'psychologische machine' die de gelovige door een reeks emotionele toestanden leidde.</p>
+                <p>De gotische fascinatie met dood en vergankelijkheid, zichtbaar in 'dodendansen' en 'memento mori' beelden, weerspiegelde wat psychologen 'terror management theory' noemen: de menselijke behoefte om angst voor de dood te beheersen door culturele constructies. De 'transi' graven, zoals dat van René de Chalon (1544-1566) in Bar-le-Duc, toonden het lijk in staat van ontbinding, een confrontatie met sterfelijkheid die psychologisch functioneerde als een 'memento' om het aardse leven serieuzer te nemen.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>De gotische kunst ontwikkelde zich vanaf het midden van de twaalfde eeuw in het Île-de-France rond Parijs en verspreidde zich over heel Europa tot aan de vijftiende eeuw. Deze periode werd gekenmerkt door ongekende stedelijke groei, de opkomst van universiteiten en een diepgaande transformatie van de Europese samenleving. De technologische context was revolutionair: architecten ontwikkelden nieuwe constructietechnieken zoals het kruisribgewelf, spitsbogen en luchtbogen die mogelijk maakten dat kerken tot ongekende hoogten konden reiken met muren die grotendeels uit glas bestonden. De kathedralen van Chartres, waarvan de bouw in 1194 begon, Parijs, begonnen in 1163, en Reims, gestart rond 1210, getuigen van deze technologische doorbraak die de middeleeuwse bouwkunst fundamenteel veranderde. De economische context was die van een bloeiende handelseconomie: steden groeiden tot welvarende centra van ambacht en handel, gilden organiseerden productie en handel, en een rijke burgerklasse ontwikkelde die als opdrachtgevers konden fungeren naast de adel en de kerk. De jaarmarkten van Champagne fungeerden als internationale handelsknooppunten waar goederen en ideeën uit heel Europa werden uitgewisseld. De sociale context werd gekenmerkt door de opkomst van steden als nieuwe machtscentra, wat leidde tot spanningen tussen stedelijke elites en feodale heren. Universiteiten zoals die van Parijs, Bologna en Oxford werden opgericht en trokken studenten en geleerden uit heel Europa aan, wat leidde tot een intellectuele heropleving die bekend staat als de twaalfde-eeuwse renaissance. De religieuze context was essentieel: de katholieke kerk was de belangrijkste opdrachtgever voor gotische kunst, en de kathedralen fungeerden als symbolen van zowel goddelijke als stedelijke trots. De kruistochten, die van 1096 tot 1291 duurden, brachten Europese christenen in contact met de islamitische wereld en Byzantium, wat leidde tot culturele uitwisseling en de import van luxegoederen, waaronder zijde, specerijen en nieuwe wetenschappelijke kennis. De politieke context zag de consolidatie van nationale monarchieën zoals Frankrijk onder Filips II August die regeerde van 1180 tot 1223 en Engeland onder Hendrik II die regeerde van 1154 tot 1189, terwijl het Heilige Roomse Rijk meer gefragmenteerd bleef. De literaire context omvatte de opkomst van hofse literatuur met dichters als Chrétien de Troyes en de troubadours van Zuid-Frankrijk, die idealen van ridderlijkheid en romantische liefde vierden die ook in de beeldende kunsten werden weerspiegeld. De intellectuele context werd gedomineerd door de scholastiek van Thomas van Aquino die probeerde geloof en rede te verenigen, wat paste bij een cultuur die zowel mystieke devotie als rationele analyse waardeerde. Gotische kunst was hierdoor niet alleen religieus maar ook intellectueel, met kathedralen die als 'stenen encyclopedieën' fungeerden waarin theologische concepten visueel werden uitgedrukt.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>De Gotische kunst (1140-1500) ontstond in een filosofische context die werd getransformeerd door de herontdekking van Aristoteles via Arabische vertalingen (vooral door Averroës, 1126-1198) en de synthese van christelijke theologie met aristotelische filosofie door Thomas van Aquino (1225-1274). De scholastieke revolutie van de 13e eeuw fundeerde een nieuwe epistemologie: niet alleen geloof, maar ook rede leidt tot kennis van God. Thomas' 'Summa Theologica' (1265-1274) argumenteerde dat natuur en genade, rede en geloof, niet tegenstrijdig zijn maar complementair. Deze synthese vertaalde zich direct naar de Gotische esthetica: de Gotische kathedraal was een 'stenen Summa', een rationele ordening van licht en ruimte die Gods schepping weerspiegelde. De bouwheer Abt Suger van Saint-Denis (ca. 1081-1151) beschreef in zijn 'Liber de Rebus in Administratione sua Gestis' hoe het gekleurde licht van de gebrandschilderde ramen hem leidde tot 'contemplatio caelestis' (hemelse beschouwing): het licht was niet slechts fysiek, maar 'anagogisch' (leidend naar het hogere). Metafysisch gezien was de Gotische kunst geworteld in het neoplatonische lichtsymbolisme van Pseudo-Dionysius, maar nu verrijkt met aristotelische natuurfilosofie. Licht werd beschouwd als de meest spirituele van alle materiële dingen - een 'tussenzone' tussen het stoffelijke en het geestelijke. De Gotische kathedraal, met haar hoge gewelven, slanke zuilen en uitgestrekte glas-in-loodramen, was een 'lux continua', een continue stroom van goddelijk licht dat de gelovigen verhief van het aardse naar het hemelse. De 'lucernarum' (lichtkoepels) en 'fenestrae' (ramen) verwezen naar de 'lumen gloriae' (licht van de heerlijkheid), het ongeschapen licht dat de gelovigen in de hemel zouden aanschouwen. Ethisch gezien versterkte de Gotische kunst de opkomende stedelijke cultuur: de kathedraal was niet alleen een kerk, maar ook een symbool van stedelijke trots en burgerzin. De bouw van een kathedraal (zoals Chartres, Notre-Dame van Parijs, Reims) vereiste de samenwerking van de hele stedelijke gemeenschap - clerus, adel, kooplieden, ambachtslieden - en verbeeldde de sociale harmonie die Thomas in zijn politieke filosofie beschreef. De burgerzin (civitas) werd verheven tot een deugd: de stadsbewoner die bijdroeg aan de kathedraalbouw oefende 'caritas' (naastenliefde) en 'pietas' (vroomheid). De Gotische kathedraal was een 'civitas Dei' (stad van God) op aarde, een voorafschaduwing van het hemelse Jeruzalem. De Gotische sculptuur - met name de portaalbeelden (zoals in Chartres, Reims) - toonde een nieuwe humanisering: de heiligen, koningen en profeten zijn niet langer de starre, frontale figuren van de Romaanse kunst, maar individuen met uitdrukkingen, gebaren en beweging. Dit weerspiegelde de aristotelische nadruk op individualiteit en de franciscaanse spiritualiteit van de 'via positiva': Gods aanwezigheid is niet alleen transcendent, maar ook immanent in de mens. De 'beau Dieu' van Amiens en de 'Vierge dorée' van Amiens verbeelden deze nieuwe humanisering: Christus als de leraar met een vriendelijk gezicht, Maria als de liefdevolle moeder. De Gotische muurschilderingen (zoals in de Sainte-Chapelle in Parijs) versterkten deze visuele theologie: de verhalen van het Oude en Nieuwe Testament zijn niet slechts illustraties, maar 'typologische' verwijzingen die de gelovigen oproepen de heilsgeschiedenis te begrijpen. De Rose ramen (zoals in Chartres) symboliseerden de eeuwigheid: de cirkel, zonder begin of einde, verwees naar Gods tijdloosheid, terwijl de stralen (als de wielen van Ezechiels troon) Gods alomvattendheid verbeeldden. De Gotische architectuur, met haar 'ogiven' (ribgewelven), 'arc-boutants' (steunbogen) en 'fleurs-de-lis' (lelies), was een technisch meesterwerk dat de grenzen van het mogelijke verlegde - een visuele bevestiging van de scholastieke overtuiging dat rede en techniek in dienst kunnen staan van het geloof. De 'schorpioen' van Chartres (de contrasterende zuilen) verwees naar de 'via negativa' en 'via positiva' van Pseudo-Dionysius: de mens kan God zowel via ontkenning als via bevestiging benaderen. De Gotische kunst, met haar nadruk op verticaliteit (de hemel zoeken), licht (God aanschouwen) en harmonie (de orde van de schepping), was een visuele synthese van de scholastieke filosofie, waarbij rede en geloof, natuur en genade, individu en gemeenschap werden verzoend.</p>
+                <p><em>Bronnen: Stanford Encyclopedia of Philosophy - 'Aquinas', 'Scholasticism', 'Medieval Political Philosophy'; Wikipedia - 'Gothic art', 'Abbot Suger', 'Gothic architecture', 'Scholasticism', 'Pseudo-Dionysius'.</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🏛️ Architectuur</h4>
+                    <p><strong>Spitsbogen:</strong> Puntige bogen leiden druk naar beneden - hogere gewelven.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🪟 Ramen</h4>
+                    <p><strong>Glas-in-lood:</strong> Gekleurde ramen vertellen Bijbelverhalen in licht.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🌉 Steunberen</h4>
+                    <p><strong>Vliegende steunberen:</strong> Waterspuwers en steunberen houden de muren.</p>
+                </div>
+                <div class="style-item">
+                    <h4>📐 Verticaal</h4>
+                    <p><strong>Streven naar boven:</strong> Spitse torens en zuilen heffen de blik naar de hemel.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🎨 Realisme</h4>
+                    <p><strong>Natuurgetrouw:</strong> Figuren hebben individuele gezichten, kleding valt natuurlijk.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🌹 Decoratie</h4>
+                    <p><strong>Flamboyant:</strong> Vlamvormige lijnen en overvloedige versiering.</p>
+                </div>
+            </div>
+
+            <h3>🎯 Centrale Thema's</h3>
+            <ul style="margin:1rem 0;padding-left:1.5rem">
+                <li><strong>De Maagd Maria:</strong> Notre-Dame (Onze Lieve Vrouwe) is overal</li>
+                <li><strong>Heiligenverhalen:</strong> Legenden van martelaren en wonderen</li>
+                <li><strong>Het Laatste Oordeel:</strong> Christus als rechter</li>
+                <li><strong>Natuur:</strong> Planten en dieren als goddelijke schepping</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEEST INVLOEDRIJKE WERKEN</h2>
+
+            <!-- Work 1: Notre-Dame -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Notre-Dame de Paris (1163-1345)</h3>
+                    <p style="color:#666;font-style:italic">Parijs, Frankrijk · Vroege Gotiek</p>
+                </div>
+                <img src="images/gotisch/01_notredame.jpg" loading="lazy" alt="Notre-Dame de Paris">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebouwd op de Île de la Cité, het hart van Parijs. Beroemd door Victor Hugo's roman (1831) en de recente brand (2019).</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Westfaçade:</strong> Twee torens, drie portalen met het Laatste Oordeel, de Maagd, en Sint-Anna.</p>
+                        <p><strong>Rozetramen:</strong> Drie enorme ronde ramen - de westelijke toont schepping en einde der tijden.</p>
+                        <p><strong>Vliegende steunberen:</strong> De beroemde "spinnenpoten" - technisch noodzakelijk, esthetisch iconisch.</p>
+                        <p><strong>Interieur:</strong> Dubbele zijbeuken creëren een brede, lichte ruimte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 2: Chartres -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Kathedraal van Chartres (1205-1240)</h3>
+                    <p style="color:#666;font-style:italic">Chartres, Frankrijk · Hooggotiek</p>
+                </div>
+                <img src="images/gotisch/02_chartres.jpg" loading="lazy" alt="Chartres Cathedral">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Grootste ensemble van originele 13e-eeuwse ramen. Beroemd om het "Chartres-blauw".</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Rozet Noordtransept:</strong> 13-meter diameter roos met de Maagd omringd door profeten.</p>
+                        <p><strong>Glas-in-lood:</strong> 172 ramen met 5000+ figuren - een visuele Bijbel.</p>
+                        <p><strong>Chartres-blauw:</strong> Unieke kobaltblauwe kleur - het geheim is verloren gegaan.</p>
+                        <p><strong>Labyrinth:</strong> In de vloer - een pelgrimsroute voor hen die niet naar Santiago kunnen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 3: Sainte-Chapelle -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Sainte-Chapelle (1242-1248)</h3>
+                    <p style="color:#666;font-style:italic">Parijs, Frankrijk · Koninklijke kapel</p>
+                </div>
+                <img src="images/gotisch/03_saintechapelle.jpg" loading="lazy" alt="Sainte-Chapelle">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebouwd door Lodewijk IX voor de Doornenkroon. Een juweel van licht, geen parochiekerk.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Bovenkapel:</strong> 15 enorme ramen, 6,5 meter hoog, 1113 scènes uit de Bijbel.</p>
+                        <p><strong>Licht als materie:</strong> De muren zijn bijna niet zichtbaar - puur licht en kleur.</p>
+                        <p><strong>Relieven:</strong> De kroon van doornen werd hier bewaard achter gouden tralies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 4: Reims -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Kathedraal van Reims (1211-1275)</h3>
+                    <p style="color:#666;font-style:italic">Reims, Frankrijk · Kroningskerk</p>
+                </div>
+                <img src="images/gotisch/04_reims.jpg" loading="lazy" alt="Reims Cathedral">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Hier werden de koningen van Frankrijk gekroond. De façade is een meesterwerk van beeldhouwkunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Portaalfiguren:</strong> De "Reims-smile" - figuren met subtiele glimlach, individuele gezichten.</p>
+                        <p><strong>Engel met glimlach:</strong> Beroemdste beeld - een engel die lacht, symbool van hoop.</p>
+                        <p><strong>Koepel torens:</strong> Open kroonlijsten - luchtig en elegant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 5: Amiens -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Kathedraal van Amiens (1220-1270)</h3>
+                    <p style="color:#666;font-style:italic">Amiens, Frankrijk · Klassieke Gotiek</p>
+                </div>
+                <img src="images/gotisch/05_amiens.jpg" loading="lazy" alt="Amiens Cathedral">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Grootste Gotische kathedraal van Frankrijk (42 meter hoog). Gebouwd in recordtempo.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Westfaçade:</strong> Meest harmonieuze van alle Gotische kathedralen - perfecte balans.</p>
+                        <p><strong>Beeldhouwkunst:</strong> Meer dan 4000 beelden - het Laatste Oordeel is een meesterwerk.</p>
+                        <p><strong>Labyrinth:</strong> In de vloer - spirituele oefening voor pelgrims.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 6: Cologne -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Dom van Keulen (1248-1880)</h3>
+                    <p style="color:#666;font-style:italic">Keulen, Duitsland · Hooggotiek</p>
+                </div>
+                <img src="images/gotisch/06_cologne.jpg" loading="lazy" alt="Cologne Cathedral">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Bouw stopte 300 jaar, voltooid in 19e eeuw. Bevat relieken van de Drie Koningen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Torens:</strong> 157 meter hoog - grootste kerktorens tot 1880.</p>
+                        <p><strong>Drieluikvensters:</strong> Meer glas dan steen.</p>
+                        <p><strong>Driekoningenschrijn:</strong> Gouden reliekschrijn met de Wijzen uit het Oosten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 7: Ghent Altarpiece -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Lam Gods Altaarstuk (1432)</h3>
+                    <p style="color:#666;font-style:italic">Sint-Baafskathedraal, Gent · Jan en Hubert van Eyck</p>
+                </div>
+                <img src="images/gotisch/07_ghent.jpg" loading="lazy" alt="Ghent Altarpiece">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Meesterwerk van de Vlaamse Primitieven. Meerdere malen gestolen (WO I en WO II).</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Olieverf innovatie:</strong> Perfectioneerden olieverf - ongekende diepte en detail.</p>
+                        <p><strong>Open en dicht:</strong> Gesloten: aankondiging; open: Lam Gods en mystiek offer.</p>
+                        <p><strong>Detail:</strong> Elk grashalm is geschilderd, de spiegels reflecteren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 8: Tres Riches Heures -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Très Riches Heures (1412-1416)</h3>
+                    <p style="color:#666;font-style:italic">Chantilly · Gebroeders van Limburg</p>
+                </div>
+                <img src="images/gotisch/08_tresriches.jpg" loading="lazy" alt="Tres Riches Heures">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Getijdenboek voor Jean de France, hertog van Berry. Bekendste miniatuurschilderkunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kalender:</strong> 12 maanden tonen het leven van adel en boeren.</p>
+                        <p><strong>Astronomie:</strong> Zon in zijn teken, maanstanden boven elk tafereel.</p>
+                        <p><strong>Internationale Gotiek:</strong> Elegant, sierlijk, rijk - stijl van de Europese hoven.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 9: Westminster -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Westminster Abbey (1245-1517)</h3>
+                    <p style="color:#666;font-style:italic">Londen, Engeland · Engelse Gotiek</p>
+                </div>
+                <img src="images/gotisch/09_westminster.jpg" loading="lazy" alt="Westminster Abbey">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Krooningskerk van Engeland sinds 1066. Begraafplaats van monarchen en beroemdheden.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Perpendiculaire stijl:</strong> Verticale lijnen, fanvaulting - typisch Engels.</p>
+                        <p><strong>Grafmonumenten:</strong> Van Elizabeth I tot Isaac Newton - pantheon van Britse geschiedenis.</p>
+                        <p><strong>Stone of Scone:</strong> Onder de krooningsstoel - symbool van Schots-Engelse eenheid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Work 10: Milan -->
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Dom van Milaan (1386-1965)</h3>
+                    <p style="color:#666;font-style:italic">Milaan, Italië · Laatgotiek</p>
+                </div>
+                <img src="images/gotisch/10_milan.jpg" loading="lazy" alt="Milan Cathedral">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Laatste grote kathedraal van Europa, 500 jaar in aanbouw. Derde grootste kerk ter wereld.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Spitsen:</strong> 135 spitsen en 3400 beelden - meer is meer.</p>
+                        <p><strong>Marmer:</strong> Roze, wit en grijs marmer uit de Alpen.</p>
+                        <p><strong>Madonnina:</strong> Gouden Madonna van 4 meter hoog bovenop de koepel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: LICHT EN VERTICALITEIT</h2>
+            <div class="timeline-box">
+                <p>De Gotische kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Dat steen kan zweven:</strong> Vliegende steunberen en spitsbogen</li>
+                    <li><strong>Dat licht goddelijk is:</strong> Gekleurde ramen transformeren zonlicht</li>
+                    <li><strong>Dat de mens individu is:</strong> Realistische portretten</li>
+                    <li><strong>Dat natuur goddelijk is:</strong> Planten en dieren als decoratie</li>
+                </ul>
+                <p>De Gotiek was de hoogste uiting van de middeleeuwse geest - een streven naar hemel op aarde.</p>
+            </div>
+        </section>
+    
+    </main>
+
+        <nav class="bottom-nav">
+        <a href="romaans.html" class="nav-prev">← 🏰 Romaanse Kunst</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="renaissance.html" class="nav-next">Renaissance 🏛️ →</a>
+    </nav>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 25 Kunststromingen</p>
+
+    </footer>
+</body>
+</html>
