@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #8B0000 0%, #DC143C 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;color: white;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #8B0000;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #fff5f5;border-left: 4px solid #8B0000;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#fff0f0;padding:1rem;border-radius:4px;border:2px solid #8B0000}
+        .timeline-box {background:linear-gradient(135deg,#8B0000 0%,#4a0000 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
+</head>
+<body>
+    <header><h1>🏯 Chinese Kunst</h1><p class="subtitle">2000 v.Chr. - 1912 · Van Bronzen Dynastieën tot Qing</p></header>
+    <nav class="top-nav">
+        <a href="oudgrieks.html" class="nav-prev">← Oud-Griekse Kunst 🏛️</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="japans.html" class="nav-next">Japanse Kunst 🎌 →</a>
+    </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="chinees.html" class="side-nav-link active"><span class="nav-icon">🏯</span><span class="nav-text">Chinese Kunst</span></a>
+            <a href="japans.html" class="side-nav-link"><span class="nav-icon">🎌</span><span class="nav-text">Japanse Kunst</span></a>
+            <a href="islamitisch.html" class="side-nav-link"><span class="nav-icon">🕌</span><span class="nav-text">Islamitische Kunst</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Along the River During the Qingming Festival</h2>
+                <p>De meest beroemde Chinese scroll painting - 5 meter stadsleven in 12e eeuw Kaifeng</p>
+                <img src="images/chinees/01_qingming.jpg" alt="Qingming Scroll">
+                <p><em>Zhang Zeduan, 12e eeuw · Song Dynasty · Handscroll, inkt op papier</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>📜 Kalligrafie</h4>
+                    <p><strong>Schrift als kunst:</strong> Karakters met penselen. Ritme, balans, energie (qi).</p>
+                </div>
+                <div class="style-item">
+                    <h4>🏔️ Landschap</h4>
+                    <p><strong>Shan shui:</strong> Bergen en water. Mens klein, natuur groot. Taoïstische visie.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🐉 Symboliek</h4>
+                    <p><strong>Dierentekens:</strong> Draak = keizer, Kraanvogel = lang leven, Vis = overvloed.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🖌️ Techniek</h4>
+                    <p><strong>Gongbi vs Xieyi:</strong> Precies gedetailleerd vs. spontane expressie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEESTERWERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Along the River During the Qingming Festival (12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Zhang Zeduan · Song Dynasty · Handscroll, inkt op papier · 528 cm lang</p>
+                </div>
+                <img src="images/chinees/01_qingming.jpg" loading="lazy" alt="Qingming Scroll">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De beroemdste Chinese schilderij. Toont het dagelijks leven in de hoofdstad Kaifeng tijdens het Qingming festival.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Handscroll - van rechts naar links bekijken. Geleidelijke overgangen.</p>
+                        <p><strong>Detail:</strong> 814 mensen, 60 dieren, 28 boten, 30 gebouwen. Alle lagen van de samenleving.</p>
+                        <p><strong>Techniek:</strong> Gongbi - precies, gedetailleerd penselenwerk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Travelers Among Mountains and Streams (ca. 1000)</h3>
+                    <p style="color:#666;font-style:italic">Fan Kuan · Song Dynasty · Hanging scroll, inkt op papier · 206 cm hoog</p>
+                </div>
+                <img src="images/chinees/02_travelers.jpg" loading="lazy" alt="Travelers Among Mountains">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het definitieve voorbeeld van Noordelijke Song landschapsschilderkunst. Reizigers zijn klein tegenover de enorme natuur.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Schaal:</strong> Mens klein, natuur groot. Taoïstische nederigheid.</p>
+                        <p><strong>Compositie:</strong> Drie plan: voorgrond, midden, achtergrond. Centrale berg domineert.</p>
+                        <p><strong>Techniek:</strong> Raindrop texture strokes voor rotsen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Terracotta Army (ca. 210 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Qin Shi Huang Mausoleum · Xi'an · ~8000 levensgrote figuren</p>
+                </div>
+                <img src="images/chinees/03_terracotta.jpg" loading="lazy" alt="Terracotta Army">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Eerste keizer Qin Shi Huang liet een heel leger van klei maken om hem in het hiernamaals te beschermen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Realisme:</strong> Elke soldaat heeft uniek gezicht. Echte wapens, harnassen.</p>
+                        <p><strong>Schaal:</strong> 8000+ soldaten, paarden, wagens. Drie putten.</p>
+                        <p><strong>Techniek:</strong> Onderdelen apart gemaakt, dan geassembleerd en beschilderd.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Court Ladies Adorning Their Hair with Flowers (ca. 750)</h3>
+                    <p style="color:#666;font-style:italic">Zhou Fang · Tang Dynasty · Handscroll, kleur op zijde · 46 cm hoog</p>
+                </div>
+                <img src="images/chinees/04_ladies.jpg" loading="lazy" alt="Court Ladies">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Tang Dynasty hofcultuur op zijn hoogtepunt. Weelderige vrouwen in rustige momenten.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Figuren:</strong> Volle, ronde gezichten - Tang ideaal van schoonheid. Rijke gewaden.</p>
+                        <p><strong>Compositie:</strong> Vrouwelijke elegance, informeel. Geen narratief.</p>
+                        <p><strong>Kleur:</strong> Rood, wit, groen. Verfijnde tinten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Six Persimmons (13e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Mu Qi · Song Dynasty · Hanging scroll, inkt op papier · 36 cm hoog</p>
+                </div>
+                <img src="images/chinees/05_persimmons.jpg" loading="lazy" alt="Six Persimmons">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Zen boeddhistische monnik. Eenvoudigste en meest diepzinnige stillife ooit.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Minimalisme:</strong> Zes vruchten, witte achtergrond. Niets overbodigs.</p>
+                        <p><strong>Techniek:</strong> Xieyi - spontaan, suggestief. Variatie in inkt tinten.</p>
+                        <p><strong>Filosofie:</strong> Zen - elk moment is compleet. Gewone dingen zijn heilig.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Porselein Vaas met Draken (18e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Qing Dynasty · Famille Rose · Keizerlijke porselein werkplaatsen</p>
+                </div>
+                <img src="images/chinees/06_porselein.jpg" loading="lazy" alt="Porcelain Vase">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Chinees porselein was wereldwijd het meest gewilde luxeproduct. Qing perfectioneerde de kunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Materiaal:</strong> Kaolien klei, 1300°C. Doorzichtig, klokgeluid.</p>
+                        <p><strong>Decoratie:</strong> Famille Rose - roze, groen, geel email. Draak motief.</p>
+                        <p><strong>Techniek:</strong> Onderglazuur blauw + email bovenop. Meerdere brandingen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Early Spring (1072)</h3>
+                    <p style="color:#666;font-style:italic">Guo Xi · Song Dynasty · Hanging scroll, inkt op zijde · 158 cm hoog</p>
+                </div>
+                <img src="images/chinees/07_earlyspring.jpg" loading="lazy" alt="Early Spring">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Guo Xi was hofschilder. Schreef "The Great Message of Landscape Painting".</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Atmosfeer:</strong> Mist, wolken, nevel. Seizoenssfeer - lente ontwaking.</p>
+                        <p><strong>Diepte:</strong> Atmospherisch perspectief. Drie plan duidelijk.</p>
+                        <p><strong>Techniek:</strong> Crab-claw takken, rots texturen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Orchid Pavilion Gathering (353)</h3>
+                    <p style="color:#666;font-style:italic">Wang Xizhi · Jin Dynasty · Kalligrafie · Origineel verloren</p>
+                </div>
+                <img src="images/chinees/08_orchid.jpg" loading="lazy" alt="Orchid Pavilion Preface">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De belangrijkste kalligrafie in Chinese geschiedenis. Wang Xizhi schreef het tijdens een feest.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Schrift:</strong> Running Script (Xingshu) - vloeiend, spontaan.</p>
+                        <p><strong>Expressie:</strong> Elk karakter uniek. Emotie zichtbaar in penselenstreken.</p>
+                        <p><strong>Invloed:</strong> Alle latere kalligrafen bestudeerden dit werk.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Dwelling in the Fuchun Mountains (1350)</h3>
+                    <p style="color:#666;font-style:italic">Huang Gongwang · Yuan Dynasty · Handscroll, inkt op papier · 690 cm lang</p>
+                </div>
+                <img src="images/chinees/09_fuchun.jpg" loading="lazy" alt="Fuchun Mountains">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De beroemdste Yuan landschap. Huang schilderde het voor een vriend, over meerdere jaren.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Stijl:</strong> Literati - schilderen voor zelfexpressie, niet voor geld.</p>
+                        <p><strong>Techniek:</strong> Droge penselen, lichte inkt. Subtiel, intellectueel.</p>
+                        <p><strong>Geschiedenis:</strong> Doormidden gesneden, twee helften in verschillende musea.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Shanshui zonder Mensen (11e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Li Cheng · Song Dynasty · Hanging scroll, inkt op zijde</p>
+                </div>
+                <img src="images/chinees/10_shanshui.jpg" loading="lazy" alt="Shanshui">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Li Cheng was een van de drie grote landschapsschilders van de Noordelijke Song.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Uitgestrekte vlaktes, verre bergen. Leegte als element.</p>
+                        <p><strong>Techniek:</strong> Spijker-achtige texturen voor rotsen.</p>
+                        <p><strong>Filosofie:</strong> Natuur zonder mens - zuivere meditatie.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: HET MIDDENRIJK</h2>
+            <div class="timeline-box">
+                <p>De Chinese kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Kalligrafie:</strong> Schrift is de hoogste kunstvorm</li>
+                    <li><strong>Natuur:</strong> Landschap weerspiegelt kosmische harmonie</li>
+                    <li><strong>Traditie:</strong> Eerbied voor voorgangers, innovatie binnen kaders</li>
+                    <li><strong>Materiaal:</strong> Inkt, papier, penselen - eenvoudige tools, diepe expressie</li>
+                    <li><strong>Filosofie:</strong> Confucianisme, Taoïsme, Boeddhisme verenigd</li>
+                </ul>
+                <p>"Inkt en penselen vangen de essentie van bergen en rivieren - niet hun vorm, maar hun geest." - Guo Xi</p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="page-navigation">
+        <a href="oudgrieks.html" class="prev">← Oud-Griekse Kunst</a>
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="japans.html" class="next">Japanse Kunst 🎌 →</a>
+    </nav>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | Wereldkunst Reeks</p>
+    </footer>
+</body>
+</html>
