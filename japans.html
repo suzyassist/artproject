@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanse Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #DC143C 0%, #8B0000 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;color: white;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #DC143C;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #fff5f5;border-left: 4px solid #DC143C;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#fff0f0;padding:1rem;border-radius:4px;border:2px solid #DC143C}
+        .timeline-box {background:linear-gradient(135deg,#DC143C 0%,#8B0000 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
+</head>
+<body>
+    <header><h1>🎌 Japanse Kunst</h1><p class="subtitle">794 - 1868 · Van Heian naar Edo</p></header>
+    <nav class="top-nav">
+        <a href="chinees.html" class="nav-prev">← Chinese Kunst 🏯</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="islamitisch.html" class="nav-next">Islamitische Kunst 🕌 →</a>
+    </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="chinees.html" class="side-nav-link"><span class="nav-icon">🏯</span><span class="nav-text">Chinese Kunst</span></a>
+            <a href="japans.html" class="side-nav-link active"><span class="nav-icon">🎌</span><span class="nav-text">Japanse Kunst</span></a>
+            <a href="islamitisch.html" class="side-nav-link"><span class="nav-icon">🕌</span><span class="nav-text">Islamitische Kunst</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: The Great Wave off Kanagawa</h2>
+                <p>Het iconische symbool van Japanse kunst - een gigantische golf dreigt boten te verzwelgen</p>
+                <img src="images/japans/01_greatwave.jpg" alt="The Great Wave off Kanagawa">
+                <p><em>Katsushika Hokusai, 1831 · Edo Period · Ukiyo-e woodblock print · 26 × 38 cm</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🌊 Ukiyo-e</h4>
+                    <p><strong>Drijvende wereld:</strong> Houtsneden van het stadsleven. Vergankelijkheid, plezier, schoonheid.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🧘 Zen</h4>
+                    <p><strong>Boeddhistische eenvoud:</strong> Minimalisme, asymmetrie, leegte (ma), natuurlijke imperfectie.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🌸 Seizoenen</h4>
+                    <p><strong>Natuur als gids:</strong> Sakura (kersenbloesem), herfstbladeren, sneeuw. Alles is tijdelijk.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🍂 Wabi-sabi</h4>
+                    <p><strong>Schoonheid in imperfectie:</strong> Eenvoud, veroudering, natuurlijke materialen, rustiek.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEESTERWERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. The Great Wave off Kanagawa (1831)</h3>
+                    <p style="color:#666;font-style:italic">Katsushika Hokusai · Edo Period · Ukiyo-e woodblock print · 26 × 38 cm</p>
+                </div>
+                <img src="images/japans/01_greatwave.jpg" loading="lazy" alt="The Great Wave off Kanagawa">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het beroemdste Japanse kunstwerk ter wereld. Onderdeel van de "36 Views of Mount Fuji" serie. Toont vissers in boten die een enorme golf trotseren, met Mount Fuji klein op de achtergrond.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Dramatische diagonaal van de golf. Fuji klein en stil op de achtergrond - contrast tussen natuurgeweld en eeuwige berg.</p>
+                        <p><strong>Techniek:</strong> Ukiyo-e houtsnede. Pruisisch blauw (geïmporteerd uit Duitsland) + traditionele indigo.</p>
+                        <p><strong>Thema:</strong> Mens versus natuur. De golf is zowel mooi als dodelijk. Mono no aware - het besef van vergankelijkheid.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Red Fuji (1831)</h3>
+                    <p style="color:#666;font-style:italic">Katsushika Hokusai · Edo Period · Ukiyo-e woodblock print · 26 × 38 cm</p>
+                </div>
+                <img src="images/japans/02_redfuji.jpg" loading="lazy" alt="Red Fuji">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Eveneens uit de "36 Views of Mount Fuji" serie. Toont de berg bij zonsopgang in de late zomer, wanneer de berg rood lijkt.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Minimalisme:</strong> Alleen de berg, wolken, en lucht. Geen mensen. Zuivere vorm.</p>
+                        <p><strong>Kleur:</strong> Warme rode en oranje tinten contrasteren met blauwe wolken. Geometrische eenvoud.</p>
+                        <p><strong>Symbool:</strong> Fuji is heilig. De berg vertegenwoordigt eeuwigheid, spiritualiteit, Japan zelf.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Rain Shower at Shōno (1834)</h3>
+                    <p style="color:#666;font-style:italic">Utagawa Hiroshige · Edo Period · Ukiyo-e woodblock print · 35 × 23 cm</p>
+                </div>
+                <img src="images/japans/03_rainshower.jpg" loading="lazy" alt="Rain Shower at Shōno">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Uit de beroemde "53 Stations of the Tōkaidō" serie. Toont reizigers die plotseling verrast worden door een regenbui.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Atmosfeer:</strong> Diagonale regenlijnen creëren beweging en urgentie. Reizigers bukken, houden hoeden vast.</p>
+                        <p><strong>Compositie:</strong> Diepte door bomen en pad dat wegvoert. Grijs/blauwe tinten voor regenachtige sfeer.</p>
+                        <p><strong>Techniek:</strong> Bokashi - graduele inktverloop voor natte effecten. Houtsnede als medium voor atmosfeer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Portrait of Otani Oniji III (1794)</h3>
+                    <p style="color:#666;font-style:italic">Tōshūsai Sharaku · Edo Period · Ukiyo-e woodblock print · 38 × 25 cm</p>
+                </div>
+                <img src="images/japans/04_oniji.jpg" loading="lazy" alt="Portrait of Otani Oniji III">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Kabuki theater was de populairste vorm van entertainment in Edo Japan. Sharaku schilderde acteurs met ongekende psychologische diepgang.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Expressie:</strong> Extreem overdreven gelaatstrekken. Felle blik, agressieve houding. De acteur speelt een slechterik (yakko).</p>
+                        <p><strong>Techniek:</strong> Yasuri (schrapijzer) textuur voor haar. Witte huid, zwarte baard, rode lippen - dramatisch contrast.</p>
+                        <p><strong>Invloed:</strong> Slechts 10 maanden actief, maar revolutionair. Beïnvloedde later Toulouse-Lautrec en Picasso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Wind God and Thunder God (17e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Tawaraya Sōtatsu · Edo Period · Byōbu (vouwbaar scherm), inkt en kleur op papier · 170 × 150 cm</p>
+                </div>
+                <img src="images/japans/05_windthunder.jpg" loading="lazy" alt="Wind God and Thunder God">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de meest iconische Japanse schilddoeken. Twee goden - Fūjin (wind) en Raijin (donder) - afgebeeld op een gouden achtergrond.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Twee figuren aan weerszijden van het scherm. Asymmetrische balans. Witte windzak en dondersymbolen.</p>
+                        <p><strong>Techniek:</strong> Tarashikomi - nat-in-nat techniek voor organische vormen. Gouden achtergrond (kinpaku) voor goddelijke sfeer.</p>
+                        <p><strong>Mythologie:</strong> Shinto-goden die natuurkrachten beheersen. Beschermers van de kosmos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Pine Trees (1595)</h3>
+                    <p style="color:#666;font-style:italic">Hasegawa Tōhaku · Momoyama Period · Byōbu (zesluik), inkt op papier · 156 × 363 cm</p>
+                </div>
+                <img src="images/japans/06_pinetrees.jpg" loading="lazy" alt="Pine Trees">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een zesluik (zesdelig scherm) dat dennenbomen in mist toont. Beschouwd als een van de belangrijkste Japanse inktschilderijen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Atmosfeer:</strong> Mist en leegte (ma) domineren. Bomen verschijnen en verdwijnen. Zen esthetiek.</p>
+                        <p><strong>Techniek:</strong> Suibokuga - Chinese inkttraditie maar Japanse verfijning. Variatie in inktintensiteit voor diepte.</p>
+                        <p><strong>Symbool:</strong> Den = lang leven, standvastigheid. Winterse naaktakken = veerkracht.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Tale of Genji Scroll (12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Anoniem · Heian Period · Emaki (handscroll), kleur op papier · 22 cm hoog</p>
+                </div>
+                <img src="images/japans/07_genji.jpg" loading="lazy" alt="Tale of Genji Scroll">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Illustraties bij 's werelds eerste roman, "Het Verhaal van Genji" (ca. 1000) door Murasaki Shikibu. Toont het hofleven in Heian Japan.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Stijl:</strong> Yamato-e - typisch Japans, niet Chinees. Felle kleuren, vlakke patronen, gouden wolken.</p>
+                        <p><strong>Techniek:</strong> Kirifuri - "weggevallen daken" om interieurs te tonen. Gezichten nauwelijks gedetailleerd.</p>
+                        <p><strong>Verhaal:</strong> Scènes uit het leven van prins Genji. Liefde, intrigue, hofetiquette.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Fūjin Raijin (18e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Ogata Kōrin · Edo Period · Byōbu (tweeluik), inkt en kleur op papier · 165 × 183 cm</p>
+                </div>
+                <img src="images/japans/08_fuujin_raijin.jpg" loading="lazy" alt="Fūjin Raijin by Kōrin">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Kōrin's interpretatie van hetzelfde thema als Sōtatsu. De wind- en dondergoden op een effen gouden achtergrond.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vormgeving:</strong> Abstracter dan Sōtatsu. Vloeiende lijnen, decoratieve patronen. Rinpa-school esthetiek.</p>
+                        <p><strong>Techniek:</strong> Tarashikomi en Tarashikomi-kata - gecontroleerde onregelmatigheden voor textuur.</p>
+                        <p><strong>Erkenning:</strong> Kōrin herinterpreteerde klassieke thema's met decoratieve flair. Invloed op Art Nouveau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Samurai Armor (Edo Period, 17e-19e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Anoniem · Edo Period · IJzer, leer, lak, zijde, goud · Volledig harnas</p>
+                </div>
+                <img src="images/japans/09_samurai.jpg" loading="lazy" alt="Samurai Armor">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Japanse samurai harnassen waren zowel functioneel als kunstwerken. Elke clan had eigen kleuren en symbolen (mon).</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Constructie:</strong> Duizenden kleine metalen platen (sane) verbonden met zijde. Flexibel, licht, sterk.</p>
+                        <p><strong>Decoratie:</strong> Lacquer (urushi) bescherming. Helm (kabuto) met opvallende vormen. Demonische maskers (menpo) om vijanden angst aan te jagen.</p>
+                        <p><strong>Symbool:</strong> Bushido - de weg van de krijger. Eer, loyaliteit, discipline. Harnas als verlengstuk van de ziel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Zen Garden Ryoan-ji (15e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Anoniem · Muromachi Period · Karesansui (droog landschapstuin) · 30 × 10 meter</p>
+                </div>
+                <img src="images/japans/10_ryoanji.jpg" loading="lazy" alt="Ryoan-ji Zen Garden">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De beroemdste Zen-tuin ter wereld. Vijftien rotsen in een zee van wit grind. Aangelegd bij de Ryoan-ji tempel in Kyoto.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Ontwerp:</strong> Extreme minimalist. Alleen rotsen, grind, mos. Geen bomen, geen bloemen, geen water.</p>
+                        <p><strong>Compositie:</strong> 15 rotsen in 5 groepen. Onmogelijk om alle 15 tegelijk te zien - altijd één verborgen. Pas bij verlichting zie je ze allemaal.</p>
+                        <p><strong>Filosofie:</strong> Zen meditatie. Leegte (mu) is essentieel. De tuin is een koan - een raadsel om de geest te openen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎌 CONCLUSIE: HET LAND VAN DE RIJZENDE ZON</h2>
+            <div class="timeline-box">
+                <p>De Japanse kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Ukiyo-e:</strong> De vergankelijke wereld vastgelegd in houtsneden</li>
+                    <li><strong>Wabi-sabi:</strong> Schoonheid in imperfectie en eenvoud</li>
+                    <li><strong>Zen:</strong> Leegte en stilte als pad naar verlichting</li>
+                    <li><strong>Natuur:</strong> Seizoenen als metafoor voor het leven</li>
+                    <li><strong>Handwerk:</strong> Meesterschap in alle materialen - papier, lak, staal</li>
+                </ul>
+                <p>"De kunst van Japan is niet om de werkelijkheid te kopiëren, maar om de essentie te vatten - één penseelstreek zegt meer dan duizend details." - Zen wijsheid</p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="page-navigation">
+        <a href="chinees.html" class="prev">← Chinese Kunst</a>
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="islamitisch.html" class="next">Islamitische Kunst 🕌 →</a>
+    </nav>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | Wereldkunst Reeks</p>
+    </footer>
+</body>
+</html>

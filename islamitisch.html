@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamitische Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #006400 0%, #228B22 50%, #DAA520 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;color: white;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #006400;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f0fff0;border-left: 4px solid #006400;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5f5dc;padding:1rem;border-radius:4px;border:2px solid #DAA520}
+        .timeline-box {background:linear-gradient(135deg,#006400 0%,#004d00 50%,#DAA520 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
+</head>
+<body>
+    <header><h1>🕌 Islamitische Kunst</h1><p class="subtitle">7e eeuw - heden · Van Damascus tot Istanbul</p></header>
+    <nav class="top-nav">
+        <a href="japans.html" class="nav-prev">← Japanse Kunst 🎌</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="romeins.html" class="nav-next">Romeinse Kunst 🏛️ →</a>
+    </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="chinees.html" class="side-nav-link"><span class="nav-icon">🏯</span><span class="nav-text">Chinese Kunst</span></a>
+            <a href="japans.html" class="side-nav-link"><span class="nav-icon">🎌</span><span class="nav-text">Japanse Kunst</span></a>
+            <a href="islamitisch.html" class="side-nav-link active"><span class="nav-icon">🕌</span><span class="nav-text">Islamitische Kunst</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Alhambra Paleis</h2>
+                <p>Het hoogtepunt van islamitische architectuur - geometrische perfectie in Granada</p>
+                <img src="images/islamitisch/01_alhambra.jpg" alt="Alhambra Palace Interior">
+                <p><em>Nasrid Dynasty, 14e eeuw · Granada, Spanje · Muqarnas, stucwerk, tegels</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>📜 Kalligrafie</h4>
+                    <p><strong>Het goddelijke woord:</strong> Koranverzen als hoogste kunstvorm. Arabisch schrift verheven tot schoonheid.</p>
+                </div>
+                <div class="style-item">
+                    <h4>⬡ Geometrie</h4>
+                    <p><strong>Oneindige patronen:</strong> Wiskundige precisie. Tessellaties die het oneindige symboliseren.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🌿 Arabesque</h4>
+                    <p><strong>Organische vormen:</strong> Ranken, bladeren, bloemen. Rhythme en flow zonder begin of einde.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🚫 Aniconisme</h4>
+                    <p><strong>Geen afbeeldingen:</strong> Vermijding van menselijke/dierlijke figuren in religieuze context.</p>
+                </div>
+                <div class="style-item">
+                    <h4>☀️ Licht</h4>
+                    <p><strong>Spirituele verlichting:</strong> Licht als metafoor voor Allah. Vensters, lantaarns, spiegels.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden. Islamitische kalifaten, veroveringen, dynastieën (Omajjaden, Abbasiden, Ottomanen), politieke eenheid versus culturele diversiteit.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden. Perzische poëzie (Hafez, Rumi), Duizend-en-één-nacht, Shahnama (Boek der Koningen), Arabische literatuur.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden. Soefisme en mystiek, contemplatie, meditatie, overgave (islam = onderwerping).</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden. Zijderoute handel, wetenschappelijke revolutie, bibliotheken, vertalingen, kruistochten, Reconquista.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden. Islamitische filosofie (Avicenna, Averroës), theologische debatten, verhouding tot Griekse filosofie.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEESTERWERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Alhambra Paleis Interieur (14e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Nasrid Dynasty · Granada, Spanje · Architectuur, stucwerk, tegels</p>
+                </div>
+                <img src="images/islamitisch/01_alhambra.jpg" loading="lazy" alt="Alhambra Palace">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het Alhambra is het ultieme meesterwerk van islamitische architectuur in Europa. Gebouwd door de Nasriden, de laatste Moslimdynastie in Spanje. Het paleis combineert geometrische patronen, kalligrafie en arabesque tot een harmonieus geheel.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Architectuur:</strong> Muqarnas - stalactiet-achtige gewelven. Patio's met waterpartijen.</p>
+                        <p><strong>Decoratie:</strong> Elke centimeter bedekt met patronen. Geen lege ruimtes (horror vacui).</p>
+                        <p><strong>Symboliek:</strong> Oneindige patronen = oneindigheid van Allah. Water = paradijs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Taj Mahal (1653)</h3>
+                    <p style="color:#666;font-style:italic">Shah Jahan · Agra, India · Wit marmer, edelstenen · 17 hectare complex</p>
+                </div>
+                <img src="images/islamitisch/02_tajmahal.jpg" loading="lazy" alt="Taj Mahal">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Shah Jahan bouwde dit mausoleum voor zijn geliefde vrouw Mumtaz Mahal. Het is het perfecte symmetrische gebouw, een meesterwerk van Mughal-architectuur.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Volmaakte symmetrie. Centrale koepel, vier minaretten. Spiegelbeeld in vijver.</p>
+                        <p><strong>Materiaal:</strong> Wit marmer met inlegwerk van edelstenen (pietra dura). Verandert van kleur met het licht.</p>
+                        <p><strong>Invloed:</strong> Perzische, Indiase en islamitische elementen verenigd.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Blue Quran Manuscript (9e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Ifriqiya (Tunesië) · Kalligrafie op perkament · Goud op indigo</p>
+                </div>
+                <img src="images/islamitisch/03_bluequran.jpg" loading="lazy" alt="Blue Quran">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de meest luxueuze Korans ooit gemaakt. Gouden letters op diepblauw perkament. Waarschijnlijk gemaakt voor de Aghlabidische kaliefen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kalligrafie:</strong> Kufisch schrift - hoekig, monumentaal. Goudblad op indigo-geverfd perkament.</p>
+                        <p><strong>Techniek:</strong> Elk vel met de hand geverfd. Ongebruikelijk duur materiaal.</p>
+                        <p><strong>Symboliek:</strong> Blauw = hemel/paradijs. Goud = goddelijk licht.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Mihrab uit Isfahan (1354)</h3>
+                    <p style="color:#666;font-style:italic">Ilkhanid periode · Isfahan, Iran · Geglazuurde tegels · 3,5 meter hoog</p>
+                </div>
+                <img src="images/islamitisch/04_mihrab.jpg" loading="lazy" alt="Mihrab Isfahan">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De mihrab is de gebedsnis die de richting naar Mekka aangeeft. Dit exemplaar uit de Jameh Mosque van Isfahan is een hoogtepunt van tegelkunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vorm:</strong> Boogvorm met punt. Mozaïek van duizenden tegels.</p>
+                        <p><strong>Decoratie:</strong> Koranverzen in Thuluth-kalligrafie. Geometrische patronen in blauw en goud.</p>
+                        <p><strong>Functie:</strong> Lichtinval accentueert de diepte. Spiritueel brandpunt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Ardabil Tapijt (1539-1540)</h3>
+                    <p style="color:#666;font-style:italic">Tabriz, Iran · Safavid periode · Wol, zijde · 10,5 × 5,3 meter</p>
+                </div>
+                <img src="images/islamitisch/05_ardabil.jpg" loading="lazy" alt="Ardabil Carpet">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het beroemdste Perzische tapijt ter wereld. Gemaakt voor het Ardabil-heiligdom. Er bestaan twee identieke exemplaren - één in Londen, één in Los Angeles.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Centraal medaillon met stralend patroon. Symmetrisch ontwerp.</p>
+                        <p><strong>Techniek:</strong> 25-30 miljoen knopen. 10 jaar werk door een heel atelier.</p>
+                        <p><strong>Kleuren:</strong> Diep blauw, rood, ivoor. Natuurlijke verfstoffen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Dome of the Rock Interieur (691)</h3>
+                    <p style="color:#666;font-style:italic">Jeruzalem · Omajjaden · Gouden koepel, mozaïeken · 20 meter diameter</p>
+                </div>
+                <img src="images/islamitisch/06_domeofrock.jpg" loading="lazy" alt="Dome of the Rock Interior">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het oudste bewaarde islamitische monument. Gebouwd op de Tempelberg, heilig voor joden, christenen en moslims. De gouden koepel is een icoon van Jeruzalem.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Architectuur:</strong> Byzantijnse invloed. Centraalbouw op octogonale basis.</p>
+                        <p><strong>Mozaïeken:</strong> 1200 m² gouden mozaïeken. Plantenmotieven, juwelen, kroon.</p>
+                        <p><strong>Kalligrafie:</strong> Koranverzen in gouden tegels rondom de binnenkoepel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Shahnama Miniature (16e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Safavid periode · Tabriz, Iran · Gouache op papier · 30 × 20 cm</p>
+                </div>
+                <img src="images/islamitisch/07_shahnama.jpg" loading="lazy" alt="Shahnama Miniature">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het Shahnama (Boek der Koningen) van Ferdowsi is het Perzische nationale epos. Miniaturen beelden heroïsche scènes uit van koningen, helden en demonen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Verhalend:</strong> Meerdere scènes in één afbeelding. Levendige actie.</p>
+                        <p><strong>Kleur:</strong> Rijk palet - lapis lazuli blauw, goud, scharlakenrood.</p>
+                        <p><strong>Detail:</strong> Microscopisch kleine details. Elk patroon perfect uitgevoerd.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Iznik Keramiek Schaal (16e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Iznik, Turkije · Ottomaanse periode · Frit keramiek · 40 cm diameter</p>
+                </div>
+                <img src="images/islamitisch/08_iznik.jpg" loading="lazy" alt="Iznik Pottery">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Iznik-keramiek is het hoogtepunt van Ottomaanse ambachtskunst. Deze schalen werden gebruikt voor feesten en als architecturale decoratie.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Techniek:</strong> Frit-pasta (glaspasta) voor witte basis. Qorami-rood - unieke kleur die alleen Iznik heeft.</p>
+                        <p><strong>Patronen:</strong> Tulpen, anjers, hyacinten. Chinese invloed via de Zijderoute.</p>
+                        <p><strong>Kleuren:</strong> Kobaltblauw, turkoois, saliegroen, koraalrood op wit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Grote Moskee van Córdoba - Bogen (8e-10e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Omajjaden van Córdoba · Spanje · Horseshoe bogen, marmer · 23.400 m²</p>
+                </div>
+                <img src="images/islamitisch/09_cordoba.jpg" loading="lazy" alt="Great Mosque of Cordoba">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Mezquita is een van de belangrijkste islamitische monumenten in het westen. De bos van bogen creëert een oneindigheidseffect dat typerend is voor islamitische kunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Architectuur:</strong> 856 zuilen met dubbele bogen. Rood-witte steen voor visueel ritme.</p>
+                        <p><strong>Ruimte:</strong> Geen centraal brandpunt. Overal bidden mogelijk.</p>
+                        <p><strong>Invloed:</strong> Visigotische, Byzantijnse en Romeinse elementen hergebruikt.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Buraq Miniature (16e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Isfahan school · Safavid periode · Gouache, goud op papier · 25 × 18 cm</p>
+                </div>
+                <img src="images/islamitisch/10_buraq.jpg" loading="lazy" alt="Buraq Miniature">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Buraq is het mythische wezen dat de profeet Mohammed droeg tijdens zijn Nachtreis van Mekka naar Jeruzalem. Vaak afgebeeld met vrouwelijk gezicht en pauwenstaart.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Onderwerp:</strong> Fantastisch wezen - paard met vleugels, vrouwengezicht. Hoewel aniconisme, miniaturen maakten uitzondering voor seculiere/mythologische scènes.</p>
+                        <p><strong>Stijl:</strong> Isfahan school - elegante figuren, delicate penseelstreken.</p>
+                        <p><strong>Details:</strong> Gouden halo, sierlijk tuinlandschap, wolkenbanden.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE WEG NAAR HET ONEINDIGE</h2>
+            <div class="timeline-box">
+                <p>De islamitische kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Kalligrafie:</strong> Het geschreven woord is de hoogste kunst</li>
+                    <li><strong>Geometrie:</strong> Wiskundige patronen weerspiegelen de orde van het universum</li>
+                    <li><strong>Aniconisme:</strong> Door afwezigheid van figuren, aanwezigheid van het goddelijke</li>
+                    <li><strong>Arabesque:</strong> Organische vormen zonder begin of einde</li>
+                    <li><strong>Licht:</strong> Materieel licht als metafoor voor spirituele verlichting</li>
+                </ul>
+                <p>"Allah is mooi en houdt van schoonheid." - Hadith</p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="page-navigation">
+        <a href="japans.html" class="prev">← Japanse Kunst</a>
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="romeins.html" class="next">Romeinse Kunst 🏛️ →</a>
+    </nav>
+
+    <footer>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | Wereldkunst Reeks</p>
+    </footer>
+</body>
+</html>
