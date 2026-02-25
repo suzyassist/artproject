@@ -5,25 +5,347 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vroeg-Christelijke Kunst - Kunstgeschiedenis</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #f8f4e8 0%, #fff9e6 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #8b4513;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #faf5f0;border-left: 4px solid #8b4513;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5ebe0;padding:1rem;border-radius:4px;border:2px solid #8b4513}
+        .timeline-box {background:linear-gradient(135deg,#3d2914 0%,#1f150a 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
 </head>
 <body>
-    <header>
-        <h1>✝️ Vroeg-Christelijke Kunst</h1>
-        <p class="subtitle">100-500 n.Chr. · De Eerste Christelijke Beelden</p>
-    </header>
+    <header><h1>✝️ Vroeg-Christelijke Kunst</h1><p class="subtitle">100-500 n.Chr. · De Eerste Christelijke Beelden</p></header>
     <nav class="top-nav">
         <a href="romeins.html" class="nav-prev">← Romeinse Kunst 🏛️</a>
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="byzantijns.html" class="nav-next">Byzantijnse Kunst ☦️ →</a>
     </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="vroegchristelijk.html" class="side-nav-link active"><span class="nav-icon">✝️</span><span class="nav-text">Vroeg-Christelijke Kunst</span></a>
+            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
+            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
+            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
+            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
+            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
     <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Catacomben van Rome</h2>
+                <p>De oudste christelijke kunst - verborgen fresco's in ondergrondse gangen</p>
+                <img src="images/vroegchristelijk/01_catacomben.jpg" alt="Catacomben van Rome">
+                <p><em>Rome, 2e-4e eeuw n.Chr. · Ondergrondse begraafplaatsen</em></p>
+            </div>
+        </section>
+
         <section class="content-section">
-            <h2>🚧 In ontwikkeling</h2>
-            <p>Deze pagina wordt binnenkort voltooid met 10 meesterwerken en uitgebreide tijdsgeest context.</p>
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🐟 Symboliek</h4>
+                    <p><strong>Ichthys:</strong> Vis als acroniem voor "Jezus Christus, Zoon van God, Redder". Geheim taal.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🖼️ Stijl</h4>
+                    <p><strong>Eenvoud:</strong> Vlakke figuren, weinig detail. Inhoud belangrijker dan vorm.</p>
+                </div>
+                <div class="style-item">
+                    <h4>📚 Typologie</h4>
+                    <p><strong>Oud & Nieuw:</strong> Mozes = Christus, Jona = Opstanding. Verbinding Testamenten.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🏛️ Architectuur</h4>
+                    <p><strong>Basilica:</strong> Romeinse rechtbank werd kerk. Schip, zijbeuken, apsis.</p>
+                </div>
+                <div class="style-item">
+                    <h4>⚰️ Functie</h4>
+                    <p><strong>Graf:</strong> Meeste kunst in catacomben en op sarcofagen. Dodencultus.</p>
+                </div>
+                <div class="style-item">
+                    <h4>✨ Materiaal</h4>
+                    <p><strong>Goedkoop:</strong> Fresco, marmer, mozaïek. Geen goud, luxe. Nederigheid.</p>
+                </div>
+            </div>
+
+            <h3>🎯 Centrale Thema's</h3>
+            <ul style="margin:1rem 0;padding-left:1.5rem">
+                <li><strong>Goede Herder:</strong> Christus als herder met schaap - zorgzaamheid, opoffering</li>
+                <li><strong>Opstanding:</strong> Jona en de walvis, Lazarus, drie mannen in de oven</li>
+                <li><strong>Doop:</strong> Johannes de Doper, wonderbronnen, naaktheid = onschuld</li>
+                <li><strong>Eucharistie:</strong> Brood en wijn, mirakel van de broodvermenigvuldiging</li>
+                <li><strong>Oranten:</strong> Biddende figuren met opgeheven armen - de ziel in gebed</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEEST INVLOEDRIJKE WERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Catacomben van Priscilla (2e-3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Rome · Ondergronds · Fresco's</p>
+                </div>
+                <img src="images/vroegchristelijk/01_catacomben.jpg" loading="lazy" alt="Catacomben Priscilla">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de oudste catacomben. De "Koningin van de Catacomben" genoemd. Bevat de oudste bekende afbeelding van Maria met kind.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Fresco:</strong> Snel geschilderd, vlak, eenvoudig. Niet voor show, maar voor devotie.</p>
+                        <p><strong>Oranten:</strong> Biddende figuren met opgeheven armen. Vrouwelijke Orant = kerk of ziel.</p>
+                        <p><strong>Symboliek:</strong> Duif, anker, vis, pa en veulen. Geheim taal voor ingewijden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. De Goede Herder (3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Catacomben van Domitilla, Rome · Fresco</p>
+                </div>
+                <img src="images/vroegchristelijk/02_goedeherder.jpg" loading="lazy" alt="Goede Herder">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Christus afgebeeld als herder met schaap op schouders. Terugkerend naar de kudde. Een van de oudste Christus-afbeeldingen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Hermes-achtig:</strong> Korte tuniek, sandalen, baardloos. Onschuldig, jong.</p>
+                        <p><strong>Symboliek:</strong> Schaap = verloren ziel die wordt gered. 99 andere schapen = gemeente.</p>
+                        <p><strong>Ongevaarlijk:</strong> Geen koning, geen krijger. Een nederige herder. Veilig voor Romeinen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Sarcaaf van Junius Bassus (359 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Vaticaanse Museen, Rome · Marmer</p>
+                </div>
+                <img src="images/vroegchristelijk/03_bassus.jpg" loading="lazy" alt="Sarcaaf van Junius Bassus">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de mooiste vroeg-christelijke sarcofagen. Junius Bassus was prefect van Rome, bekeerd op zijn sterfbed.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Tien panelen:</strong> Oud- en Nieuwtestamentische scènes. Adam en Eva, Jona, Christus, etc.</p>
+                        <p><strong>Romeinse stijl:</strong> Kwaliteit van keizerlijke kunst. Christelijke inhoud, klassieke vorm.</p>
+                        <p><strong>Christus in centrum:</strong> Tussen Petrus en Paulus. Boven: troon, onder: hemelpoort.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Mozaïeken van Santa Pudenziana (ca. 400 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Rome · Apsismozaïek</p>
+                </div>
+                <img src="images/vroegchristelijk/04_pudenziana.jpg" loading="lazy" alt="Santa Pudenziana">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de oudste apsismozaïeken in Rome. Christus als leraar te midden van apostelen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Klassiek:</strong> Nog sterk beïnvloed door Romeinse stijl. Realistische portretten.</p>
+                        <p><strong>Symboliek:</strong> Edelstenen op boek, gouden halo's. Begin van christelijke pracht.</p>
+                        <p><strong>Jeruzalem:</strong> Achtergrond toont ideale stad. Het hemelse Jeruzalem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Jona en de Walvis (3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Catacomben van Priscilla, Rome · Fresco</p>
+                </div>
+                <img src="images/vroegchristelijk/05_jona.jpg" loading="lazy" alt="Jona en de Walvis">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het verhaal van Jona (drie dagen in de vis) werd gezien als voorafschaduwing van Christus' opstanding.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Triptiek:</strong> Jona in zee, Jona uitgestoten, Jona rustend onder kalebas.</p>
+                        <p><strong>Typologie:</strong> Oudtestamentisch verhaal = voorspelling Nieuwtestamentische opstanding.</p>
+                        <p><strong>Naaktheid:</strong> Jona naakt = onschuld, herstelde paradijsstaat.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Oudste Sint-Pieter (320-330 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Vaticaanstad, Rome · Basilica</p>
+                </div>
+                <img src="images/vroegchristelijk/06_sintpieter.jpg" loading="lazy" alt="Oude Sint-Pieter">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebouwd door Constantijn boven het graf van Petrus. De eerste grote christelijke kerk. Vervangen door huidige Sint-Pieter (1506-1626).</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Basilica-plan:</strong> Schip, vier zijbeuken, transept, apsis. 120 meter lang.</p>
+                        <p><strong>Romeinse basis:</strong> Gebaseerd op Romeinse rechtszaal (basilica). Hergebruik van zuilen.</p>
+                        <p><strong>Doel:</strong> Grafkerk. Pelgrims konden langs het graf van Petrus lopen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Christus als Zonnegod (3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Catacomben van Petrus en Marcellinus, Rome · Fresco</p>
+                </div>
+                <img src="images/vroegchristelijk/07_zonnegod.jpg" loading="lazy" alt="Christus als Zonnegod">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Christus afgebeeld als Sol Invictus (Onoverwinnelijke Zon). Syncretisme tussen christendom en Romeinse religie.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Hybriditeit:</strong> Christus met zonneklaar, wagen, stralen. Rijdt naar de hemel.</p>
+                        <p><strong>Politiek:</strong> Sol Invictus was favoriete god van keizers. Christus als alternatief.</p>
+                        <p><strong>Transformatie:</strong> Zon = licht = waarheid = Christus. Theologische adaptatie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Maaltijd van de Zeven (3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Catacomben van Callixtus, Rome · Fresco</p>
+                </div>
+                <img src="images/vroegchristelijk/08_maaltijd.jpg" loading="lazy" alt="Maaltijd van de Zeven">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Toont de maaltijd na de wonderbare visvangst. Zeven discipelen aan tafel met brood en vis.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Eucharistie:</strong> Brood en vis = Christus' lichaam. Zeven = volheid, universele kerk.</p>
+                        <p><strong>Eenvoud:</strong> Vlak, weinig detail. Figuren identiek. Collective, niet individueel.</p>
+                        <p><strong>Romeins banket:</strong> Gebaseerd op Romeinse diner-scènes. Adaptatie van bestaande vorm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Ivoren diptiek van de Nicomachi en Symmachi (ca. 400 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Verspreid (Parijs, Londen) · Ivoor</p>
+                </div>
+                <img src="images/vroegchristelijk/09_diptiek.jpg" loading="lazy" alt="Diptiek">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Laat-classieke ivoren diptiek met heidense offerscènes. Toont de spanning tussen oud en nieuw.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Klassiek:</strong> Perfecte proporties, natuurlijk movement. Nog volop klassieke traditie.</p>
+                        <p><strong>Politiek:</strong> Nicomachi en Symmachi waren heidense aristocraten. Verzet tegen christendom.</p>
+                        <p><strong>Overgang:</strong> Dezelfde ambachtslieden maakten heidense én christelijke ivoren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Drie Jongelingen in de Vlammenoven (3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Catacomben van Priscilla, Rome · Fresco</p>
+                </div>
+                <img src="images/vroegchristelijk/10_oven.jpg" loading="lazy" alt="Drie Jongelingen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het bijbelverhaal (Daniël 3) van drie Joodse jongelingen die weigeren een afgodsbeeld te aanbidden en in de oven worden gegooid maar gered door een engel.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Martelaarschap:</strong> Joodse jongelingen = christelijke martelaren. Weerstand tegen Rome.</p>
+                        <p><strong>Verlossing:</strong> Engel redt uit vuur. God beschermt de gelovigen.</p>
+                        <p><strong>Typologie:</strong> Oudtestamentisch verhaal = voorbeeld voor christelijke vervolgingen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT (100-500 n.Chr.)</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>De vroeg-christelijke kunst ontstond binnen het Romeinse Rijk, eerst als verborgen, vervolgde minderheid en later als staatsgodsdienst. Christenen werden in de eerste drie eeuwen periodiek vervolgd: Nero (64 n.Chr.) gebruikte hen als zondebokken voor de brand van Rome, Decius (250) eiste offers aan de keizer, Diocletianus (303-311) voerde de Grote Vervolging. Deze context verklaart de bescheidenheid en symboliek van vroege christelijke kunst: vis, anker, duif waren herkenbaar voor ingewijden maar onschuldig voor buitenstaanders. De catacomben - ondergrondse begraafplaatsen buiten de muren - boden een relatief veilige ruimte voor bijeenkomsten en kunst. De keerpunt kwam met Constantijn (312-337), die na zijn overwinning bij de Milvische Brug het christendom legaliseerde (Edict van Milaan, 313). Plotseling konden christenen openlijk kerken bouwen. Constantijns moeder Helena liet kerken bouwen in het Heilig Land. Theodosius I (379-395) maakte het christendom tot staatsgodsdienst (380) en verbood heidense cultus (391). De kerk werd rijk, machtig, de bouwheer van indrukwekkende basilieken. De val van het West-Romeinse rijk (476) betekende niet het einde van de kerk - integendeel, de kerk vulde het machtsvacuüm en werd de drager van beschaving in de middeleeuwen. De paus van Rome werd de opvolger van de keizer.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>De vroeg-christelijke literatuur begon met de geschriften van het Nieuwe Testament: evangeliën (Marcus ca. 70, Mattheüs en Lucas ca. 80-90, Johannes ca. 95), Handelingen, brieven van Paulus (50-60), Openbaring (ca. 95). Deze teksten vormden de canonieke basis voor alle latere christelijke kunst. De Apostolische Vaders (1e-2e eeuw) - Clemens van Rome, Ignatius van Antiochië, Polycarpus - boden vroege interpretaties. Apologeten zoals Justinus Martyr en Tertullianus verdedigden het christendom tegen heidense beschuldigingen. De kerkvaders van de 3e-5e eeuw ontwikkelden systematische theologie: Origenes' bijbelexegese, Athanasius' verdediging van de incarnatie, Augustinus' belijdenissen en De Civitate Dei. Deze theologische werken definieerden doctrine en iconografie: de Drie-eenheid, de dubbele natuur van Christus, de zondeval en verlossing. Latijnse vertalingen (Vetus Latina, Vulgaat) maakten de bijbel toegankelijk voor het Westen. De literatuur creëerde de symboliek die in kunst werd vertaald: Ichthys (vis), Chi-Rho (Christus-monogram), Lamm Gods, Pelikaan (opoffering). De catacombenschilderingen illustreren bijbelverhalen - Jona, Daniël, de drie jongelingen, de Goede Herder - die in de liturgie werden voorgelezen.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>De vroeg-christelijke psychologie werd gedomineerd door de spanning tussen deze wereld en de volgende. Het christendom bood hoop op verrijzenis, eeuwig leven, Gods liefde - een radicaal alternatief voor de Romeinse nadruk op eer, roem, materiële welvaart. Het concept van zonde en schuld, beïnvloed door Augustinus' doctrine van de erfzonde, schiep een diep bewustzijn van menselijke onvolmaaktheid en behoefte aan genade. De martelaar - die liever stierf dan zijn geloof te verloochenen - werd het psychologische ideaal: moed, overtuiging, vertrouwen in God. De orant-figuur (biddende met opgeheven armen) verbeeldt de ziel die naar God verlangt. De nadruk op nederigheid, caritas (liefde), vergeving betekende een psychologische revolutie ten opzichte van Romeinse waarden van macht en dominantie. Het kloosterleven (vanaf de 4e eeuw) bood een psychologische toevlucht: ascese, gebed, gemeenschap, vrij van wereldse zorgen. De angst voor het Laatste Oordeel en de hoop op hemel vormden een krachtig emotioneel kader dat alle aspecten van het leven beïnvloedde. De collectieve identiteit van de kerk als "lichaam van Christus" bood psychologische steun in onzekere tijden.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>De vroeg-christelijke kunst ontwikkelde zich in vier fasen. De pre-Constantijnse periode (100-313) zag ondergrondse kunst in catacomben, op sarcofagen, en in huis-kerken (domus ecclesiae). De stijl was eenvoudig, symbolisch, beïnvloed door Romeinse volkskunst. De Constantijnse periode (313-400) bracht openbare kerken: basilieken, centraalbouw, doopkapellen. Santa Maria Maggiore, San Paolo fuori le Mura, de Heilige Grafkerk. Mozaïeken werden rijker, iconografie complexer. De post-Constantijnse periode (400-500) zag de volledige integratie van kerk en staat. Theodosius, Galla Placidia, Justinianus (in het Oosten) bouwden indrukwekkende kerken. De kunst werd monumentaal: mozaïeken in Santa Sabina, de mausoleum van Galla Placidia in Ravenna. De overgang naar Byzantijnse kunst was vloeiend - de mozaïeken van San Vitale (547) zijn zowel vroeg-christelijk als Byzantijns. De technologische context: fresco-techniek (verf op natte pleister), mozaïek (gekleurde tesserae in mortel), sarcofaagproductie (marmer uit deerste eeuwse ateliers). De sociale context: van vervolgde minderheid naar staatskerk, van arme gemeenten naar rijke bisdommen.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>De vroeg-christelijke filosofie was een synthese van bijbelse openbaring en Grieks-Romeinse wijsbegeerte. Platonische ideeën (de onsterfelijke ziel, de transcendentie God) werden geassimileerd en getransformeerd. Augustinus (354-430) verenigde Platonisme met christelijke theologie: de ziel kent God door introspectie, de wereld is schaduw van het goddelijk licht. Het neoplatonisme van Plotinus (204-270) beïnvloedde zowel heidense als christelijke denkers. De discussies over de natuur van Christus (mens? God? Beide?) leidden tot concilies: Nicea (325), Constantinopel (381), Efeze (431), Chalcedon (451). De doctrine van de Drie-eenheid - één God in drie personen - werd geformaliseerd. Esthetisch gezien ontwikkelde de kerk een theologie van het beeld: mochten beelden van Christus en heiligen worden gemaakt? Het Tweede Gebod verbood afgodsbeelden, maar de incarnatie (God werd mens) rechtvaardigde menselijke afbeelding. De catechumenen (doopleerlingen) werden voorbereid door preken en rituelen; de gedoopten hadden toegang tot de eucharistie en de volledige liturgie. De filosofie van de kerkvaders bepaalde wat wel en niet kon worden afgebeeld, welke symbolen correct waren, welke scènes geschikt voor welke context (doop, graf, altaar).</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE EERSTE STAP</h2>
+            <div class="timeline-box">
+                <p>De vroeg-christelijke kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Bescheidenheid:</strong> Kunst begon in het verborgene, arm en eenvoudig</li>
+                    <li><strong>Symboliek:</strong> Geheim taal voor ingewijden - vis, anker, duif</li>
+                    <li><strong>Transformatie:</strong> Van vervolgde sekte naar staatsgodsdienst in drie eeuwen</li>
+                    <li><strong>Typologie:</strong> Oudtestamentische verhalen als voorspelling van Christus</li>
+                    <li><strong>Continuïteit:</strong> Romeinse vormen, christelijke inhoud</li>
+                </ul>
+                <p>"De vroeg-christelijke kunst is de eerste taal van een nieuwe wereldbeschouwing." - André Grabar</p>
+            </div>
         </section>
     </main>
+
+    <nav class="page-navigation">
+        <a href="romeins.html" class="prev">← Romeinse Kunst 🏛️</a>
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="byzantijns.html" class="next">Byzantijnse Kunst ☦️ →</a>
+    </nav>
+
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art</p>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 28+ Kunststromingen</p>
     </footer>
 </body>
 </html>
