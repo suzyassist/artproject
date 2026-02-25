@@ -5,24 +5,345 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oud-Griekse Kunst - Kunstgeschiedenis</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #f8f4e8 0%, #fff9e6 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #1e90ff;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f0f8ff;border-left: 4px solid #1e90ff;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#e6f3ff;padding:1rem;border-radius:4px;border:2px solid #1e90ff}
+        .timeline-box {background:linear-gradient(135deg,#1a3a5c 0%,#0d2137 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
 </head>
 <body>
-    <header>
-        <h1>🏛️ Oud-Griekse Kunst</h1>
-        <p class="subtitle">800-31 v.Chr. · De Geboorte van de Westerse Kunst</p>
-    </header>
+    <header><h1>🏛️ Oud-Griekse Kunst</h1><p class="subtitle">800-31 v.Chr. · De Geboorte van de Westerse Kunst</p></header>
     <nav class="top-nav">
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="romeins.html" class="nav-next">Romeinse Kunst 🏛️ →</a>
     </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link active"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="vroegchristelijk.html" class="side-nav-link"><span class="nav-icon">✝️</span><span class="nav-text">Vroeg-Christelijke Kunst</span></a>
+            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
+            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
+            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
+            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
+            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
     <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: De Parthenon</h2>
+                <p>Het ultieme symbool van klassieke Griekse architectuur en democratie</p>
+                <img src="images/oudgrieks/01_parthenon.jpg" alt="Parthenon">
+                <p><em>Athene, 447-432 v.Chr. · Architecten: Ictinus en Callicrates</em></p>
+            </div>
+        </section>
+
         <section class="content-section">
-            <h2>🚧 In ontwikkeling</h2>
-            <p>Deze pagina wordt binnenkort voltooid met 10 meesterwerken en uitgebreide tijdsgeest context.</p>
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🖼️ Voorstelling</h4>
+                    <p><strong>Idealisering:</strong> Perfecte menselijke proporties. Het menselijk lichaam als maat aller dingen.</p>
+                </div>
+                <div class="style-item">
+                    <h4>✨ Materiaal</h4>
+                    <p><strong>Marmer:</strong> Wit Pentelisch marmer voor beelden en tempels. Oorspronkelijk beschilderd.</p>
+                </div>
+                <div class="style-item">
+                    <h4>📐 Proporites</h4>
+                    <p><strong>Kanon:</strong> Polykleitos' "Kanon" - 7 koppen hoog, wiskundige verhoudingen.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🏛️ Architectuur</h4>
+                    <p><strong>Ordes:</strong> Dorisch, Ionisch, Korinthisch. Zuilen, frontons, friezen.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🎨 Kleur</h4>
+                    <p><strong>Polychromie:</strong> Beelden en tempels waren oorspronkelijk kleurrijk beschilderd.</p>
+                </div>
+                <div class="style-item">
+                    <h4>👁️ Expressie</h4>
+                    <p><strong>Beheersing:</strong> Rustige gelaatstrekken, geconcentreerde blik. Emoties onder controle.</p>
+                </div>
+            </div>
+
+            <h3>🎯 Centrale Thema's</h3>
+            <ul style="margin:1rem 0;padding-left:1.5rem">
+                <li><strong>Het ideaal van kalokagathia:</strong> Schoonheid en deugd zijn één</li>
+                <li><strong>Humanisme:</strong> De mens als maat aller dingen (Protagoras)</li>
+                <li><strong>Rationaliteit:</strong> Wiskunde, geometrie, proportie bepalen schoonheid</li>
+                <li><strong>Mythologie:</strong> Goden en helden als onderwerp</li>
+                <li><strong>Nacktheid:</strong> Het naakte lichaam als uitdrukking van perfectie</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEEST INVLOEDRIJKE WERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. De Parthenon (447-432 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Akropolis, Athene · Architecten: Ictinus en Callicrates · Dorische orde</p>
+                </div>
+                <img src="images/oudgrieks/01_parthenon.jpg" loading="lazy" alt="Parthenon">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gebouwd in opdracht van Pericles ter ere van de godin Athena, beschermvrouwe van Athene. Het hoogtepunt van de klassieke Griekse architectuur.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Dorische orde:</strong> Eenvoudige kapiteel, geen basis. 8x17 zuilen. Entasis (zwelling) voor visuele correctie.</p>
+                        <p><strong>Proporites:</strong> Gulden snede verhoudingen. 69,5 x 30,9 meter.</p>
+                        <p><strong>Beeldhouwwerk:</strong> Phidias' friezen en metopen. Panathenaic Processie, Amazonomachie, Centauromachie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Venus van Milo (ca. 130-100 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Louvre, Parijs · Marmer · 203 cm hoog · Hellenistisch</p>
+                </div>
+                <img src="images/oudgrieks/02_venusmilo.jpg" loading="lazy" alt="Venus van Milo">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gevonden op het eiland Melos in 1820. Waarschijnlijk Aphrodite (Venus). Een van de beroemdste Griekse beelden.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>S-vorm:</strong> Contraposto houding - gewicht op één been, heupen gedraaid.</p>
+                        <p><strong>Draperie:</strong> Realistische weergave van stof die van de heupen glijdt.</p>
+                        <p><strong>Mysterie:</strong> Ontbrekende armen - wat hield ze vast? Appel? Spiegel? Schild?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Nike van Samothrace (ca. 190 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Louvre, Parijs · Marmer · 244 cm hoog · Hellenistisch</p>
+                </div>
+                <img src="images/oudgrieks/03_nike.jpg" loading="lazy" alt="Nike van Samothrace">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gevonden in het heiligdom van de Grote Goden op Samothrace. Victoria (overwinning) op de boeg van een oorlogsschip.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Beweging:</strong> Nike landt op het schip, kleding waait in de wind. Dramatisch en dynamisch.</p>
+                        <p><strong>Textuur:</strong> Dunne, doorweekte stof (natdraperie) die het lichaam volgt.</p>
+                        <p><strong>Compositie:</strong> Diagonaal, voorwaarts bewegend. De kijker wordt betrokken.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Discobolus (ca. 460-450 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Origineel bronzen (verloren) · Romeinse marmer kopieën · Myron</p>
+                </div>
+                <img src="images/oudgrieks/04_discobolus.jpg" loading="lazy" alt="Discobolus">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een atleet in de moment vlak voor de worp. Het klassieke ideaal van geconcentreerde beweging.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Bevriezing:</strong> Het spanningsvolle moment vastgelegd in steen. Geconcentreerde rust.</p>
+                        <p><strong>Compositie:</strong> Spiraalvormig, meerdere gezichtspunten. Ruggengraat als as.</p>
+                        <p><strong>Realisme:</strong> Gespierde atletenlijf, anatomisch correct. Gezicht kalm, lichaam actief.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Doryphoros (Speerdrager) (ca. 440 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Origineel bronzen (verloren) · Polykleitos · Romeinse kopieën</p>
+                </div>
+                <img src="images/oudgrieks/05_doryphoros.jpg" loading="lazy" alt="Doryphoros">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Polykleitos schreef de "Kanon" - een traktaat over perfecte proporties. Dit beeld is de belichaming ervan.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Contrapposto:</strong> Gewicht op rechterbeen, linker ontspannen. Heupen en schouders tegenovergesteld.</p>
+                        <p><strong>Proporites:</strong> 7 koppen hoog. Wiskundige verhoudingen tussen lichaamsdelen.</p>
+                        <p><strong>Evenwicht:</strong> Statisch en dynamisch tegelijk. De perfecte atleet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Laocoöngroep (ca. 25 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Vaticaanse Musea, Rome · Marmer · Hellenistisch · Agesander, Athenodorus, Polydorus</p>
+                </div>
+                <img src="images/oudgrieks/06_laocoon.jpg" loading="lazy" alt="Laocoöngroep">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Laocoön, Trojaanse priester, gewaarschuwd tegen het houten paard. Goden straffen hem met slangen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Drama:</strong> Intens lijden, spieren gespannen, mond open in schreeuw. Pathos.</p>
+                        <p><strong>Compositie:</strong> Piramidaal. Laocoön in het midden, zonen aan weerszijden.</p>
+                        <p><strong>Detail:</strong> Slangen kronkelen door de compositie, verbinden de figuren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Riace Bronzen (ca. 460-430 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Museo Nazionale, Reggio Calabria · Brons · 198 cm hoog</p>
+                </div>
+                <img src="images/oudgrieks/07_riace.jpg" loading="lazy" alt="Riace Bronzen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> In 1972 gevonden voor de kust van Riace. Twee levensgrote bronzen krijgers. Zeldzame Griekse bronzen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Techniek:</strong> Verloren wasmethode. Ogen van glas, tanden van zilver, lippen van koper.</p>
+                        <p><strong>Contraposto:</strong> Gewicht op één been, ontspannen houding.</p>
+                        <p><strong>Realisme:</strong> Aders, spieren, haartjes. Anatomische perfectie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Sounion Kouros (ca. 580 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Nationaal Archeologisch Museum, Athene · Marmer · 305 cm hoog · Archaïsch</p>
+                </div>
+                <img src="images/oudgrieks/08_sounion.jpg" loading="lazy" alt="Sounion Kouros">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een "kouros" - standbeeld van een naakte jonge man. Vroegste vorm van levensgrote Griekse beeldhouwkunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Frontaal:</strong> Recht naar voren, linkervoet naar voren. Egyptische invloed.</p>
+                        <p><strong>Archaïsche glimlach:</strong> Vage, enigmatische glimlach. Kenmerkend voor vroege periode.</p>
+                        <p><strong>Geometric:</strong> Blokvormig, vlakke spieren. Nog niet naturalistisch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Theater van Epidauros (ca. 340 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Epidauros, Griekenland · Architect: Polykleitos de Jongere</p>
+                </div>
+                <img src="images/oudgrieks/09_epidaurus.jpg" loading="lazy" alt="Theater van Epidauros">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het best bewaarde Griekse theater. 14.000 toeschouwers. Perfecte akoestiek.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Semi-cirkel:</strong> 55 rijen in perfecte halve cirkel. Iedereen ziet het podium.</p>
+                        <p><strong>Akoestiek:</strong> Fluistering op het podium is hoorbaar in de hoogste rij.</p>
+                        <p><strong>Harmonie:</strong> Landschap en architectuur versmelten. Natuur als decor.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Athena Parthenos (ca. 438 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Origineel: goud en ivoor (verloren) · Phidias · 12 meter hoog</p>
+                </div>
+                <img src="images/oudgrieks/10_athena.jpg" loading="lazy" alt="Athena Parthenos">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het cultbeeld van de Parthenon. Phidias' meesterwerk. Chryselefantine (goud en ivoor) techniek.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Monumentaal:</strong> 12 meter hoog, staand in de cel. Overweldigend.</p>
+                        <p><strong>Attributen:</strong> Helm, schild met Medusa, Nikè in hand, speer.</p>
+                        <p><strong>Materialen:</strong> Ivoor voor huid, goud voor kleding (1 ton goud!).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT (800-31 v.Chr.)</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>De Oud-Griekse kunst ontwikkelde zich binnen een uniek politiek landschap van onafhankelijke stadstaten (poleis) die elk hun eigen regeringsvorm hadden. Athene ontwikkelde de democratie (508 v.Chr.), waarin vrije mannelijke burgers direct stemden over wetten en beleid. Deze democratische ervaring had diepe invloed op de kunst: openbare gebouwen zoals de Parthenon waren niet alleen religieuze tempels, maar ook symbolen van burgerlijke trots en collectieve identiteit. De Perzische Oorlogen (490-479 v.Chr.) verenigden de Griekse steden tegen een gemeenschappelijke vijand en leidden tot een gouden eeuw van Athense dominantie. De kunst van deze periode weerspiegelt de waarden van democratie, burgerschap en individuele excellentie. Sparta daarentegen ontwikkelde een militair oligarchie die de nadruk legde op discipline en eenvoud, wat zich vertaalde in een meer sobere kunststijl. De Peloponnesische Oorlog (431-404 v.Chr.) tussen Athene en Sparta bracht deze gouden eeuw tot een einde en leidde tot meer introspectieve, emotionele kunst in de 4e eeuw. De verovering door Philippus II van Macedonië (338 v.Chr.) en daarna Alexander de Grote transformeerde de politieke kaart en leidde tot het Hellenisme, waarin Griekse kunst zich verspreidde over een enorm rijk van Egypte tot India.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>De Griekse literatuur en kunst waren onlosmakelijk verbonden. Homerus' Ilias en Odyssee (8e eeuw v.Chr.) vormden de canon van Griekse mythologie en heldenverhalen die in beeldhouwkunst en schilderkunst werden uitgebeeld. Het Griekse theater, met tragedies van Aeschylus, Sophocles en Euripides, en komedies van Aristophanes, bood complexe verkenningen van menselijke ervaringen die ook in de beeldende kunst werden weerspiegeld. Filosofen zoals Plato en Aristoteles ontwikkelden theorieën over schoonheid, mimiek en kunst die eeuwenlang invloedrijk zouden blijven. Plato's kritiek op kunst als "tweemaal verwijderd van de werkelijkheid" en Aristoteles' concept van mimesis (naboosting) vormden de basis voor westerse esthetiek. Historici zoals Herodotus en Thucydides documenteerden de gebeurtenissen die in kunstwerken werden gevierd of herdacht. De Griekse mythen van goden en helden - Zeus, Athena, Apollo, Aphrodite, Heracles, Theseus - vormden een gedeelde culturele taal die in tempeldecoraties, vaasschilderingen en beeldhouwwerken werd vertaald.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>De Griekse mens ontwikkelde een uniek concept van het zelf. Het ideaal van kalokagathia - de eenheid van schoonheid (kalos) en deugd (agathos) - betekende dat fysieke perfectie werd gezien als weerspiegeling van morele excellentie. Het orakel van Delphi's spreuk "Ken uzelf" (gnōthi seauton) moedigde introspectie en zelfkennis aan. Griekse filosofen exploreerden de menselijke psyche: Plato's driedeling van de ziel (rede, wil, begeerte) en Aristoteles' concept van eudaimonia (geluk door deugd) bieden psychologische kaders die in de kunst werden weerspiegeld. De Griekse nadruk op beheersing, evenwicht en matigheid (sophrosyne) vertaalde zich naar kunstwerken die rust, concentratie en waardigheid uitstralen. De archaïsche glimlach op vroege beelden suggereert een serene, transcendentale staat. De klassieke periode ontwikkelde het ideaal van "noble simplicity and quiet grandeur" (Winckelmann). De hellenistische periode bracht meer emotionele expressie: pijn, extase, angst, ouderdom - de volledige menselijke ervaring.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>De Oud-Griekse kunst beslaat meer dan zeven eeuwen en evolueerde door verschillende periodes. De Archaïsche periode (800-480 v.Chr.) zag de opkomst van levensgrote marmeren standbeelden (kouroi en korai), beïnvloed door Egyptische modellen maar met uniek Griekse elementen zoals de archaïsche glimlach. De Klassieke periode (480-323 v.Chr.) brak met deze rigiditeit en ontwikkelde contrapposto, natuurlijkheid en perfecte proporties. Pericles' Athene werd het centrum van artistieke innovatie met Phidias, Polykleitos en Myron als grote meesters. De Hellenistische periode (323-31 v.Chr.) na Alexander de Grote verspreidde Griekse kunst over het oostelijke Middellandse Zeegebied en ontwikkelde meer dramatische, emotionele en technische complexe werken zoals de Laocoöngroep en de Nike van Samothrace. Griekse kunstenaars werkten in marmer, brons, terracotta en schilderkunst (nu grotendeels verloren). De technologie van brons gieten (verloren wasmethode) maakte dynamische, vrijstaande beelden mogelijk die marmer niet kon evenaren.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>Griekse filosofie en kunst deelden een bezorgdheid met schoonheid, waarheid en de aard van de werkelijkheid. Pythagoras ontdekte wiskundige verhoudingen in muziek en introduceerde het concept van kosmische harmonie. Plato's theorie van Ideas stelde dat de zichtbare wereld slechts een schaduw was van perfecte, eeuwige vormen - kunst was dus tweemaal verwijderd van waarheid. Aristoteles daarentegen waardeerde kunst als middel om universele waarheden uit te drukken door middel van mimesis (naboosting). Het concept van arete (excellentie) doordrong zowel ethiek als esthetiek: het doel van leven was excellentie te bereiken in lichaam en geest. De gulden snede (phi), ontdekt door de Grieken, werd toegepast in architectuur en beeldhouwkunst als de perfecte verhouding. Griekse esthetiek waardeerde symmetrie, proportionaliteit, harmonie en evenwicht - concepten die direct kwamen uit wiskundige en filosofische denkwijzen. Het menselijk lichaam werd gezien als microkosmos van het universum, met dezelfde wiskundige principes.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: DE MENS ALS MAAT</h2>
+            <div class="timeline-box">
+                <p>De Oud-Griekse kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Humanisme:</strong> De mens is de maat aller dingen - Protagoras</li>
+                    <li><strong>Rationaliteit:</strong> Schoonheid is wiskundig, meetbaar, leerbaar</li>
+                    <li><strong>Idealisering:</strong> Kunst toont niet wat is, maar wat zou moeten zijn</li>
+                    <li><strong>Evenwicht:</strong> Sophrosyne - matigheid, beheersing, harmonie</li>
+                    <li><strong>Erfenis:</strong> Alle westerse kunst staat in de schuld van Griekenland</li>
+                </ul>
+                <p>"Wat de Oud-Griekse kunst onsterfelijk maakt, is niet de perfectie van de vorm, maar het geloof dat schoonheid en waarheid één zijn." - John Keats</p>
+            </div>
         </section>
     </main>
+
+    <nav class="page-navigation">
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="romeins.html" class="next">Romeinse Kunst 🏛️ →</a>
+    </nav>
+
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art</p>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 28+ Kunststromingen</p>
     </footer>
 </body>
 </html>
