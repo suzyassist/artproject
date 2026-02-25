@@ -5,25 +5,347 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romeinse Kunst - Kunstgeschiedenis</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #f8f4e8 0%, #fff9e6 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #8b0000;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #fff0f0;border-left: 4px solid #8b0000;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#ffe6e6;padding:1rem;border-radius:4px;border:2px solid #8b0000}
+        .timeline-box {background:linear-gradient(135deg,#4a1a1a 0%,#2d0f0f 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
 </head>
 <body>
-    <header>
-        <h1>🏛️ Romeinse Kunst</h1>
-        <p class="subtitle">500 v.Chr. - 500 n.Chr. · De Erfenamen van Griekenland</p>
-    </header>
+    <header><h1>🏛️ Romeinse Kunst</h1><p class="subtitle">500 v.Chr. - 500 n.Chr. · De Erfenamen van Griekenland</p></header>
     <nav class="top-nav">
         <a href="oudgrieks.html" class="nav-prev">← Oud-Griekse Kunst 🏛️</a>
         <a href="index.html" class="nav-home">🏠 Home</a>
         <a href="vroegchristelijk.html" class="nav-next">Vroeg-Christelijke Kunst ✝️ →</a>
     </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link active"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="vroegchristelijk.html" class="side-nav-link"><span class="nav-icon">✝️</span><span class="nav-text">Vroeg-Christelijke Kunst</span></a>
+            <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
+            <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
+            <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
+            <a href="renaissance.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Renaissance</span></a>
+            <a href="barok.html" class="side-nav-link"><span class="nav-icon">🎪</span><span class="nav-text">Barok</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
     <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Het Colosseum</h2>
+                <p>Het grootste amfitheater ooit gebouwd - symbool van Romeinse macht en techniek</p>
+                <img src="images/romeins/01_colosseum.jpg" alt="Colosseum">
+                <p><em>Rome, 70-80 n.Chr. · Vespasianus en Titus</em></p>
+            </div>
+        </section>
+
         <section class="content-section">
-            <h2>🚧 In ontwikkeling</h2>
-            <p>Deze pagina wordt binnenkort voltooid met 10 meesterwerken en uitgebreide tijdsgeest context.</p>
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🖼️ Realisme</h4>
+                    <p><strong>Portretten:</strong> Echte rimpels, littekens, ouderdom. Geen idealisering zoals Grieken.</p>
+                </div>
+                <div class="style-item">
+                    <h4>✨ Materialen</h4>
+                    <p><strong>Beton:</strong> Romeinse uitvinding. Maakte enorme constructies mogelijk.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🏛️ Architectuur</h4>
+                    <p><strong>Innovatie:</strong> Boog, koepel, beton. Nuttige gebouwen: aquaducten, baden, wegen.</p>
+                </div>
+                <div class="style-item">
+                    <h4>📖 Propaganda</h4>
+                    <p><strong>Triomfbogen:</strong> Vier overwinningen, legitimeer keizers. Kunst als politiek instrument.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🎭 Copieën</h4>
+                    <p><strong>Griekse meesters:</strong> Romeinen kopieerden Griekse beelden. Meeste Griekse kunst bekend via Romeinse kopieën.</p>
+                </div>
+                <div class="style-item">
+                    <h4>📊 Schaal</h4>
+                    <p><strong>Monumentaal:</strong> Alles groter, meer, indrukwekkender. Imperium als maatstaf.</p>
+                </div>
+            </div>
+
+            <h3>🎯 Centrale Thema's</h3>
+            <ul style="margin:1rem 0;padding-left:1.5rem">
+                <li><strong>Keizercultus:</strong> De keizer als goddelijk figuur, afgebeeld in tempels</li>
+                <li><strong>Militaire glorie:</strong> Overwinningen, veroveringen, legioenen</li>
+                <li><strong>Nutsbouwkunst:</strong> Aquaducten, wegen, badhuizen - kunst in dienst van het volk</li>
+                <li><strong>Realisme:</strong> Individuele portretten, niet geïdealiseerd</li>
+                <li><strong>Erfenis:</strong> Griekse kunst overgenomen en aangepast</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEEST INVLOEDRIJKE WERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Het Colosseum (70-80 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Rome · Vespasianus en Titus · Amfitheater</p>
+                </div>
+                <img src="images/romeins/01_colosseum.jpg" loading="lazy" alt="Colosseum">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het grootste amfitheater ooit gebouwd. 50.000-80.000 toeschouwers. Gladiatorengevechten, dierengevechten, executes.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Beton:</strong> Romeinse uitvinding maakte dit mogelijk. 80 ingangen, 4 verdiepingen.</p>
+                        <p><strong>Ordes:</strong> Dorisch beneden, dan Ionisch, Korinthisch boven. Hiërarchie in steen.</p>
+                        <p><strong>Doel:</strong> Brood en spelen - politieke controle door entertainment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Pantheon (118-128 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Rome · Hadrianus · Tempel voor alle goden</p>
+                </div>
+                <img src="images/romeins/02_pantheon.jpg" loading="lazy" alt="Pantheon">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Best bewaarde Romeinse gebouw. later kerk. Koepel was 1300 jaar de grootste ter wereld.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Koepel:</strong> 43 meter diameter, oculus van 8,9 meter. Licht als goddelijk symbool.</p>
+                        <p><strong>Beton:</strong> Lichter materiaal naar boven. Ingenieuze techniek.</p>
+                        <p><strong>Harmonie:</strong> Cirkel en rechthoek perfect verenigd.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Augustus van Prima Porta (ca. 20 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Vaticaanse Museen, Rome · Marmer · 2,03 meter</p>
+                </div>
+                <img src="images/romeins/03_augustus.jpg" loading="lazy" alt="Augustus van Prima Porta">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Portret van keizer Augustus als idealiseerde heerser. Gevonden bij de villa van Livia.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Doryphoros-pose:</strong> Gebaseerd op Polykleitos. Griekse idealen + Romeinse portretkunst.</p>
+                        <p><strong>Cuiras:</strong> Harnas met religieuze en politieke symbolen. Parthen gevangenen.</p>
+                        <p><strong>Propaganda:</strong> Jong en krachtig, hoewel Augustus toen 76 was.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Zuil van Trajanus (113 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Rome · Apollodorus van Damascus · 38 meter hoog</p>
+                </div>
+                <img src="images/romeins/04_trajan.jpg" loading="lazy" alt="Zuil van Trajanus">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Viert Trajanus' overwinning op de Daciërs. 2500 figuren in spiraalvormig reliëf.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Narratief:</strong> Verhaal van de oorlog van beneden naar boven. Als een stripverhaal.</p>
+                        <p><strong>Detail:</strong> Schepen, bruggen, veldslagen, Trajanus verschijnt 59 keer.</p>
+                        <p><strong>Functie:</strong> As van Trajanus in de basis, gouden standbeeld bovenop (nu Sint-Pieter).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Laocoöngroep (Romeinse kopie, ca. 25 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Vaticaanse Museen, Rome · Marmer</p>
+                </div>
+                <img src="images/romeins/05_laocoon.jpg" loading="lazy" alt="Laocoöngroep">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Romeinse kopie van Grieks origineel. Gevonden in 1506, grote invloed op Renaissance.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Hellenistisch:</strong> Dramatische pijn, spieren gespannen, mond open.</p>
+                        <p><strong>Compositie:</strong> Piramidaal, drie figuren verbonden door slangen.</p>
+                        <p><strong>Erfenis:</strong> Belangrijkste beeldhouwwerk voor Michelangelo en zijn tijdgenoten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Equestrian Standbeeld van Marcus Aurelius (ca. 176 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Capitoline Musea, Rome · Brons · 4,24 meter</p>
+                </div>
+                <img src="images/romeins/06_marcusaurelius.jpg" loading="lazy" alt="Marcus Aurelius">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Enige overgebleven Romeinse ruiterstandbeeld. Overleefde omdat men dacht dat het Constantijn was.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Verhoudingen:</strong> Paard kleiner dan echt voor evenwicht. Keizer dominant.</p>
+                        <p><strong>Gebaar:</strong> Rechterhand uitgestrekt - clementia (genade) naar onderworpen vijand.</p>
+                        <p><strong>Filosofische keizer:</strong> Baard, nadenkende blik. Stoïcijn op paard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Pont du Gard (ca. 50 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Nîmes, Frankrijk · Aquaduct · 49 meter hoog</p>
+                </div>
+                <img src="images/romeins/07_pontdugard.jpg" loading="lazy" alt="Pont du Gard">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Aquaduct dat water bracht naar Nîmes. 50 km lang, 200.000 m³ water per dag.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Engineering:</strong> Val van slechts 17 meter over 50 km. Precisie zonder moderne instrumenten.</p>
+                        <p><strong>Esthetiek:</strong> Drie niveaus bogen, verhouding 6:4:1. Praktisch én mooi.</p>
+                        <p><strong>Gebruik:</strong> Geen mortel tussen stenen - alleen wrijving houdt het bijeen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Boog van Constantijn (315 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Rome · Triomfboog · 21 meter hoog</p>
+                </div>
+                <img src="images/romeins/08_constantijn.jpg" loading="lazy" alt="Boog van Constantijn">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Viert Constantijns overwinning op Maxentius. Gemaakt met onderdelen van eerdere monumenten.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Spolia:</strong> Hergebruikte beelden van Trajanus, Hadrianus, Marcus Aurelius.</p>
+                        <p><strong>Overgang:</strong> Klassieke stijl (gestolen) vs. late Romeinse stijl (nieuwe reliëfs).</p>
+                        <p><strong>Christendom:</strong> Constantijn legaliseerde het christendom (313). Begin van nieuwe tijd.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Fresco's uit Pompeï (1e eeuw n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Pompeï, Italië · Muurschilderingen</p>
+                </div>
+                <img src="images/romeins/09_pompeii.jpg" loading="lazy" alt="Pompeï Fresco's">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Pompeï bedolven door Vesuvius (79 n.Chr.). Fresco's bewaard door as.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vier stijlen:</strong> Incrustatie, architecturaal, ornamenteel, fantastisch.</p>
+                        <p><strong>Onderwerpen:</strong> Mythologie, stillevens, portretten, landschappen.</p>
+                        <p><strong>Ilusionisme:</strong> Geschilderde ramen, tuinen, architectuur. Ruimte vergroten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Standbeeld van Junius Brutus (ca. 300 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Capitoline Musea, Rome · Brons · Etruskisch/Romeins</p>
+                </div>
+                <img src="images/romeins/10_brutus.jpg" loading="lazy" alt="Junius Brutus">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Een van de vroegste Romeinse portretbustes. Mogelijk Lucius Junius Brutus, stichter van de Republiek.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Verisme:</strong> Realistische weergave van gezicht - rimpels, harde blik.</p>
+                        <p><strong>Etruskisch:</strong> Invloed van Etruskische bronstechniek en stijl.</p>
+                        <p><strong>Politiek:</strong> De Republiek - geen koningen, senaat regeert. Ernst en autoriteit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT (500 v.Chr. - 500 n.Chr.)</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>De Romeinse kunst ontwikkelde zich binnen een politiek systeem dat evolueerde van koninkrijk (753-509 v.Chr.) naar republiek (509-27 v.Chr.) naar keizerrijk (27 v.Chr.-476 n.Chr.). De Republiek werd gekenmerkt door een complexe machtsbalans tussen senaat, magistraten en volksvergaderingen. Deze politieke cultuur van competitie tussen aristocratische families (nobilitas) stimuleerde openbare kunst als middel om prestige te verwerven: triomfbogen, tempels, standbeelden vierden individuele prestaties in dienst van de staat. De overgang naar het keizerrijk onder Augustus (27 v.Chr.) bracht een nieuwe kunstpolitiek: de keizer werd de belangrijkste opdrachtgever, kunst diende ter legitimatie van zijn heerschappij. Het Romanum imperium was een multinational state dat diverse culturen omvatte - Grieken, Egyptenaren, Galliërs, Syriërs - maar allen werden onderworpen aan Roman law en Roman peace (Pax Romana). De kunst weerspiegelde deze universaliteit: Griekse stijlen werden aangepast voor Romeinse doeleinden, lokale tradities werden geassimileerd. De keizercultus, waarbij overleden keizers werden vergoddelijkt (divus), vereiste tempels, standbeelden en rituelen die de hele bevolking bonden aan het regime. Het leger was de ruggengraat van het imperium - legioenen aan de grenzen (Rijn, Donau, Eufraat) beschermden een rijk van 5 miljoen km² met 60-70 miljoen inwoners. De weg naar verval begon in de 3e eeuw: burgeroorlogen, economische crisis, barbaarse invasies. De splitsing tussen Oost en West (395) en de val van Romulus Augustulus (476) betekenden het einde van het West-Romeinse rijk, maar het Oost-Romeinse (Byzantijnse) rijk overleefde nog 1000 jaar.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>Romeinse literatuur begon met vertalingen van Griekse werken - Livius Andronicus vertaalde de Odyssee (3e eeuw v.Chr.). De Gouden Eeuw (Augustus, 27 v.Chr.-14 n.Chr.) bracht Vergilius' Aeneïs (het nationale epos dat Trojaanse oorsprong claimde), Horatius' Odes, Ovidius' Metamorfosen. Deze werken boden mythen en verhalen die in beeldhouwkunst en schilderkunst werden uitgebeeld. Historici zoals Livius en Tacitus documenteerden de geschiedenis die in reliëfs werd gevierd. De Zilveren Eeuw (1e eeuw n.Chr.) bracht Seneca's tragedies, Petronius' Satyricon, Juvenalis' satires. Rhetorica was centraal in Romeinse opleiding - de kunst van overtuiging die ook in visuele propaganda werd toegepast. Architectuurtraktaten zoals Vitruvius' De architectura (1e eeuw v.Chr.) systematiseerden bouwkundige kennis en beïnvloedden de Renaissance. Christelijke literatuur ontstond in de 2e eeuw: evangeliën, brieven van Paulus, apologetische werken. In de 4e eeuw werd het Latijn van de kerk (Vulgata bijbel) de basis voor middeleeuws Latijn. De overgang van klassieke naar christelijke literatuur weerspiegelde de transformatie van de Romeinse wereld.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>De Romeinse geest was pragmatisch, juridisch, gericht op nut en resultaat. In tegenstelling tot de Griekse nadruk op theorie en contemplatie, waardeerden Romeinen praktische toepassing: ingenieurs, juristen, administrateurs. Het ideaal van pietas - plichtsgetrouwheid tegenover goden, familie, staat - vormde de psychologische basis voor sociaal gedrag. Virtus (mannenmoed, excellentie) was niet alleen individueel maar ook collectief: de burgers diende de staat. De patria potestas (vaderlijke macht) gaf de pater familias absolute autoriteit over zijn familie, wat de hiërarchische aard van de Romeinse samenleving weerspiegelde. Het realisme in Romeinse portretten - rimpels, littekens, ouderdom - duidt op een cultuur die individuele ervaring en wijsheid waardeerde boven Griekse idealisering. De latere keizertijd bracht nieuwe psychologische stromingen: het christendom met zijn nadruk op zonde, verlossing, eeuwig leven; Mithras-cultus met initiatierituelen; Stoïcijnse filosofie (Marcus Aurelius) met zijn acceptatie van lot. De onzekerheid van de 3e eeuw - invasies, economische crisis, snelle keizerswisselingen - creëerde angst en zoektocht naar spirituele zekerheid, wat bijdroeg aan de opkomst van mysteriereligies en uiteindelijk het christendom.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>De Romeinse kunst evolueerde over duizend jaar. De koningstijd (753-509 v.Chr.) liet weinig sporen - vooral Etruskische invloed. De Republiek (509-27 v.Chr.) ontwikkelde veristische portretten, tempels op podia, triomfbogen. De verovering van Griekenland (146 v.Chr.) bracht een stroom van Griekse kunstenaars en kunstwerken naar Rome, wat leidde tot copieën en adaptaties. De vroege keizertijd (27 v.Chr.-180 n.Chr.) - Augustus, Tiberius, Nero, Vespasianus, Trajanus, Hadrianus - zag de bouw van het Colosseum, Pantheon, fora, aquaducten. Klassieke stijl werd dominant. De late keizertijd (193-476 n.Chr.) bracht de crisis van de 3e eeuw, de tetrarchie (Diocletianus), Constantinopel als nieuwe hoofdstad (330), het christendom als staatsgodsdienst (380). De kunst werd meer abstract, symbolisch, hiërarchisch - voorbode van middeleeuwse stijl. De val van het West-Romeinse rijk (476) betekende het einde van een tijdperk, maar de Byzantijnse en middeleeuwse kunst zette Romeinse tradities voort.</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>Romeinse filosofie was grotendeels Grieks erfgoed, maar met praktische toepassing. Stoïcisme (Seneca, Marcus Aurelius) benadrukte deugd, plicht, acceptatie van lot - passend bij Romeinse waarden van discipline en plichtsgetrouwheid. Epicurisme (Lucretius) zocht geluk door afwezigheid van pijn en angst. Academisch scepticisme (Cicero) paste bij de juridisch-rhetorische cultuur. Het Romeinse recht ontwikkelde concepten van jurisprudentie, contracten, eigendom die eeuwenlang invloedrijk bleven. Het ideaal van natural law (ius naturale) - universele principes boven positief recht - weerspiegelde Stoïcijnse ideeën. In de late oudheid vertaalde neoplatonisme (Plotinus) Plato's ideeën in een religieus systeem dat het christendom beïnvloedde (Augustinus). Het christendom zelf bracht nieuwe concepten: schepping ex nihilo, zondeval, incarnatie, verlossing - theologische kaders die de middeleeuwse kunst zouden domineren.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 CONCLUSIE: NUT EN SCHOOONHEID</h2>
+            <div class="timeline-box">
+                <p>De Romeinse kunst leert ons:</p>
+                <ul style="margin:1rem 0;padding-left:1.5rem">
+                    <li><strong>Pragmatisme:</strong> Kunst moet nuttig zijn - wegen, aquaducten, badhuizen</li>
+                    <li><strong>Realisme:</strong> Portretten tonen echte mensen, niet ideale goden</li>
+                    <li><strong>Innovatie:</strong> Beton, boog, koepel - nieuwe technieken voor nieuwe mogelijkheden</li>
+                    <li><strong>Propaganda:</strong> Kunst als instrument van politieke macht</li>
+                    <li><strong>Erfenis:</strong> Griekse kunst bewaard voor de toekomst</li>
+                </ul>
+                <p>"De Romeinen maakten geen kunst om naar te kijken, maar om mee te leven." - Paul Zanker</p>
+            </div>
         </section>
     </main>
+
+    <nav class="page-navigation">
+        <a href="oudgrieks.html" class="prev">← Oud-Griekse Kunst 🏛️</a>
+        <a href="index.html" class="home">🏠 Home</a>
+        <a href="vroegchristelijk.html" class="next">Vroeg-Christelijke Kunst ✝️ →</a>
+    </nav>
+
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art</p>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 28+ Kunststromingen</p>
     </footer>
 </body>
 </html>
