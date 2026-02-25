@@ -160,6 +160,9 @@
         .timeline-container.zoom-150 { transform: scale(1.5); }
         .timeline-container.zoom-200 { transform: scale(2); }
         
+        .era-classical { background: linear-gradient(135deg, #1E90FF 0%, #4169E1 100%); color: white; }
+        .era-roman { background: linear-gradient(135deg, #8B0000 0%, #B22222 100%); color: white; }
+        .era-earlychristian { background: linear-gradient(135deg, #DEB887 0%, #D2691E 100%); color: #2c1810; }
         .era-byzantine { background: linear-gradient(135deg, #4B0082 0%, #8B4513 100%); color: white; }
         .era-romanesque { background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%); color: white; }
         .era-gothic { background: linear-gradient(135deg, #2F4F4F 0%, #483D8B 100%); color: white; }
@@ -203,11 +206,11 @@
 <body>
     <header>
         <h1>🎨 Kunstgeschiedenis</h1>
-        <p class="subtitle">25 Kunststromingen van Renaissance tot Digitale Kunst</p>
+        <p class="subtitle">28 Kunststromingen van Oudheid tot Digitale Kunst</p>
     </header>
     <nav class="top-nav">
         <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="byzantijns.html" class="nav-next">Byzantijnse Kunst ☦️ →</a>
+        <a href="oudgrieks.html" class="nav-next">Oud-Griekse Kunst 🏛️ →</a>
     </nav>
 
     <!-- Hamburger Menu Button -->
@@ -221,6 +224,9 @@
         </div>
         <div class="side-nav-content">
             <a href="index.html" class="side-nav-link active"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="vroegchristelijk.html" class="side-nav-link"><span class="nav-icon">✝️</span><span class="nav-text">Vroeg-Christelijke Kunst</span></a>
             <a href="byzantijns.html" class="side-nav-link"><span class="nav-icon">☦️</span><span class="nav-text">Byzantijnse Kunst</span></a>
             <a href="romaans.html" class="side-nav-link"><span class="nav-icon">🏰</span><span class="nav-text">Romaanse Kunst</span></a>
             <a href="gotisch.html" class="side-nav-link"><span class="nav-icon">⛪</span><span class="nav-text">Gotische Kunst</span></a>
@@ -283,6 +289,9 @@
             </div>
             
             <div class="legend" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.5rem;">
+                <a href="oudgrieks.html" class="legend-item"><div class="legend-color era-classical" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏛️</div><span>Oud-Grieks</span></a>
+                <a href="romeins.html" class="legend-item"><div class="legend-color era-roman" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏛️</div><span>Romeins</span></a>
+                <a href="vroegchristelijk.html" class="legend-item"><div class="legend-color era-earlychristian" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">✝️</div><span>Vroeg-Christelijk</span></a>
                 <a href="byzantijns.html" class="legend-item"><div class="legend-color era-byzantine" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">☦️</div><span>Byzantijns</span></a>
                 <a href="romaans.html" class="legend-item"><div class="legend-color era-romanesque" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">🏰</div><span>Romaans</span></a>
                 <a href="gotisch.html" class="legend-item"><div class="legend-color era-gothic" style="display:flex;align-items:center;justify-content:center;font-size:1rem;">⛪</div><span>Gotisch</span></a>
@@ -313,6 +322,27 @@
         <section class="content-section">
             <h2>🎨 Ontdek de Stromingen</h2>
             <div class="movement-grid">
+                <a href="oudgrieks.html" class="movement-card">
+                    <div class="movement-icon">🏛️</div>
+                    <div class="period">800 v.Chr. - 31 v.Chr.</div>
+                    <h3>Oud-Griekse Kunst</h3>
+                    <p>Ideaal, harmonie, klassieke schoonheid</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="romeins.html" class="movement-card">
+                    <div class="movement-icon">🏛️</div>
+                    <div class="period">500 v.Chr. - 476 n.Chr.</div>
+                    <h3>Romeinse Kunst</h3>
+                    <p>Praktisch, realistisch, imperiale macht</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
+                <a href="vroegchristelijk.html" class="movement-card">
+                    <div class="movement-icon">✝️</div>
+                    <div class="period">100 - 500</div>
+                    <h3>Vroeg-Christelijke Kunst</h3>
+                    <p>Symboliek, catacomben, eenvoud</p>
+                    <span class="badge complete">Compleet</span>
+                </a>
                 <a href="byzantijns.html" class="movement-card">
                     <div class="movement-icon">☦️</div>
                     <div class="period">330 - 1453</div>
@@ -515,17 +545,20 @@
 
         <nav class="bottom-nav">
         <a href="index.html" class="nav-home">🏠 Home</a>
-        <a href="byzantijns.html" class="nav-next">Byzantijnse Kunst ☦️ →</a>
+        <a href="oudgrieks.html" class="nav-next">Oud-Griekse Kunst 🏛️ →</a>
     </nav>
 
     <footer>
-        <p>Kunstgeschiedenis Project | matthiasr.com/art | 17 Stromingen Compleet | 170+ Kunstwerken</p>
+        <p>Kunstgeschiedenis Project | matthiasr.com/art | 28 Stromingen Compleet | 280+ Kunstwerken</p>
 
     </footer>
 
     <script>
         // Timeline data with all movements
         const movements = [
+            { name: "Oud-Grieks", icon: "🏛️", start: -800, end: -31, href: "oudgrieks.html", cssClass: "era-classical" },
+            { name: "Romeins", icon: "🏛️", start: -500, end: 476, href: "romeins.html", cssClass: "era-roman" },
+            { name: "Vroeg-Christ.", icon: "✝️", start: 100, end: 500, href: "vroegchristelijk.html", cssClass: "era-earlychristian" },
             { name: "Byzantijns", icon: "☦️", start: 330, end: 1453, href: "byzantijns.html", cssClass: "era-byzantine" },
             { name: "Romaans", icon: "🏰", start: 800, end: 1200, href: "romaans.html", cssClass: "era-romanesque" },
             { name: "Gotisch", icon: "⛪", start: 1140, end: 1500, href: "gotisch.html", cssClass: "era-gothic" },
@@ -557,7 +590,7 @@
         ];
 
         // Timeline configuration
-        const minYear = 300;
+        const minYear = -800;
         const maxYear = 2100;
         const pixelsPerYear = 5;
         const containerWidth = (maxYear - minYear) * pixelsPerYear + 100;
@@ -622,7 +655,12 @@
                 const yearEl = document.createElement('div');
                 yearEl.className = 'timeline-year';
                 yearEl.style.left = left + 'px';
-                yearEl.textContent = year;
+                // Format year: negative = BC, positive = AD
+                if (year < 0) {
+                    yearEl.textContent = Math.abs(year) + ' v.Chr.';
+                } else {
+                    yearEl.textContent = year;
+                }
                 headerInner.appendChild(yearEl);
             }
         }
@@ -660,7 +698,9 @@
                 bar.className = 'timeline-bar ' + m.cssClass;
                 bar.style.left = left + 'px';
                 bar.style.width = Math.max(width, 80) + 'px';
-                bar.innerHTML = `<span class="icon">${m.icon}</span><div class="info"><span class="name">${m.name}</span><span class="years">${m.start} - ${m.end}</span></div>`;
+                // Format years for display
+                const formatYear = (y) => y < 0 ? Math.abs(y) + ' v.Chr.' : y;
+                bar.innerHTML = `<span class="icon">${m.icon}</span><div class="info"><span class="name">${m.name}</span><span class="years">${formatYear(m.start)} - ${formatYear(m.end)}</span></div>`;
                 
                 rowEl.appendChild(bar);
             });
