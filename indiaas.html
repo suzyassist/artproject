@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiase Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #FF9933 0%, #FF7F00 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;color: white;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #FF9933;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #fff8f0;border-left: 4px solid #FF9933;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#fff5e6;padding:1rem;border-radius:4px;border:2px solid #FF9933}
+        .timeline-box {background:linear-gradient(135deg,#FF9933 0%,#cc6600 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
+</head>
+<body>
+    <header><h1>🇮🇳 Indiase Kunst</h1><p class="subtitle">3000 v.Chr. - Heden · Van Indus tot Hedendaagse Diaspora</p></header>
+    <nav class="top-nav">
+        <a href="precolumbiaans.html" class="nav-prev">← Pre-Columbiaanse Kunst 🏺</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="afrikaans.html" class="nav-next">Afrikaanse Kunst 🌍 →</a>
+    </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="chinees.html" class="side-nav-link"><span class="nav-icon">🏯</span><span class="nav-text">Chinese Kunst</span></a>
+            <a href="japans.html" class="side-nav-link"><span class="nav-icon">🎌</span><span class="nav-text">Japanse Kunst</span></a>
+            <a href="indiaas.html" class="side-nav-link active"><span class="nav-icon">🇮🇳</span><span class="nav-text">Indiase Kunst</span></a>
+            <a href="islamitisch.html" class="side-nav-link"><span class="nav-icon">🕌</span><span class="nav-text">Islamitische Kunst</span></a>
+            <a href="precolumbiaans.html" class="side-nav-link"><span class="nav-icon">🏺</span><span class="nav-text">Pre-Columbiaanse Kunst</span></a>
+            <a href="afrikaans.html" class="side-nav-link"><span class="nav-icon">🌍</span><span class="nav-text">Afrikaanse Kunst</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Ajanta Grotten Fresco's (5e - 6e eeuw)</h2>
+                <p>Meesterwerken van boeddhistische verhalen - indrukwekkende muurschilderingen in rotsen</p>
+                <img src="images/indiaas/01_ajanta.jpg" alt="Ajanta Grotten">
+                <p><em>Boeddhistische monasteren · Maharashtra, India · Fresco, klei op steen</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🙏 Boeddhisme & Hindoeïsme</h4>
+                    <p><strong>Religieuze kunst:</strong> Goden, godinnen, heiligen, boeddha's. Spirituele vertellingen.</p>
+                </div>
+                <div class="style-item">
+                    <h4>👑 Koninklijke Kunst</h4>
+                    <p><strong>Padenavastra:</strong> Koninklijke beelden van Chola, Pallava. Majestueus en stijlvol.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🏛️ Tempelarchitectuur</h4>
+                    <p><strong>Shikhara:</strong> Torenvormige tempels, gopurams (Zuid-India). Gevormde architectuur.</p>
+                </div>
+                <div class="style-item">
+                    <h4>✨ Miniaturen</h4>
+                    <p><strong>Rangoli:</strong> Handgemaakte vloermotieven. Rajasthani miniaturen, Pahari.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEESTERWERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Ajanta Grotten Fresco's (5e - 6e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Boeddhistische Monasteren · Maharashtra, India · Fresco, klei op steen</p>
+                </div>
+                <img src="images/indiaas/01_ajanta.jpg" loading="lazy" alt="Ajanta Grotten">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Ajanta grotten bevatten 30 boeddhistische tempels met indrukwekkende fresco's die het leven van de boeddha en verhalen uit de Jataka's vertellen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Techniek:</strong> Fresco - klei op natte muur, zonnedroogend.</p>
+                        <p><strong>Compositie:</strong> Dynamische beweging, verhalende sequenties.</p>
+                        <p><strong>Betekenis:</strong> Een van de grootste collecties van oude Indiase kunst.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Khajuraho Tempels (950 - 1050)</h3>
+                    <p style="color:#666;font-style:italic">Chandela Dynastie · Kalksteen · Madhya Pradesh, India</p>
+                </div>
+                <img src="images/indiaas/02_khajuraho.jpg" loading="lazy" alt="Khajuraho Tempels">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Khajuraho tempels zijn beroemd om hun elegante erotische sculpturen - zowel van kunstzinnige kwaliteit als erotische verwachting.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kunst:</strong> Versierd met lichamelijke taferelen, dansers, dieren, goden.</p>
+                        <p><strong>Symboliek:</strong> Het bindt tempelkunst met sensualiteit en levensvreugde.</p>
+                        <p><strong>Functie:</strong> Literatuur en spirituele symboliek, geen pornografie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Koninklijke Standbeeld van Ganga Devi (12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Hoysala Dynastie · Kalksteen · Karnataka, India</p>
+                </div>
+                <img src="images/indiaas/03_ganga_devi.jpg" loading="lazy" alt="Ganga Devi">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Dit prachtige standbeeld toont de godin Ganga (de Ganges) op een elefant, met haar zuster Yamuna op een ander dier.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Detail:</strong> Meer dan 500 tonen gewicht, versterkte voetbasis.</p>
+                        <p><strong>Stijl:</strong> Hoysala stijl - complex reliefwerk, delicate trekken.</p>
+                        <p><strong>Positie:</strong> Grootste cultusbeeld van Karnataka.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Elefantastempel (Hoysaleswara) (12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Hoysala Dynastie · Kalksteen · Karnataka, India</p>
+                </div>
+                <img src="images/indiaas/04_elefantentempel.jpg" loading="lazy" alt="Elefantastempel">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De tempel is gebouwd als ode aan de Hoysala koninklijke dynastie, met talloze mythologische sculpturen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Structuur:</strong> Poligonaal opgebouwd uit 24 honderden specifieke polijste steensoorten.</p>
+                        <p><strong>Scènes:</strong> Uitgelijnde religieuze teksten, 1500+ standbeelden.</p>
+                        <p><strong>Architectuur:</strong> 16 mischellijnen, gebeeldhouwde planken.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Taj Mahal (1632 - 1653)</h3>
+                    <p style="color:#666;font-style:italic">Mogol · Marmer · Agra, India</p>
+                </div>
+                <img src="images/indiaas/05_taj_mahal.jpg" loading="lazy" alt="Taj Mahal">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het mausoleum van Shah Jahan voor zijn vrouw Mumtaz Mahal - een icoon van liefde en architectuur.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Architectuur:</strong> Perfecte symmetrie, marmer met ingebedde edelstenen.</p>
+                        <p><strong>Detail:</strong> Ingebedde parels, robijnen, saffieren in het marmer.</p>
+                        <p><strong>Invloed:</strong> Islamitische, Perzische, Indiase en Europese stijlen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Ellora Caves (600 - 1000)</h3>
+                    <p style="color:#666;font-style:italic">Maratha Dynastie · Rotsgravingen · Maharashtra, India</p>
+                </div>
+                <img src="images/indiaas/06_ellora.jpg" loading="lazy" alt="Ellora Caves">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> 12 holte-kerkens (blijven: boeddhistisch), 17 hindoeïstische tempels en 1 joodse synagoge in een lineaire structuur.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Techniek:</strong> Grote formaten van 300 tonn, grotschilderingen, extreem gedetailleerde architectuur.</p>
+                        <p><strong>Bestaand:</strong> De Vishvakarma tempel - de grootste enkele steen op een platform.</p>
+                        <p><strong>Functie:</strong> Verken jegelijkzeeker en vrede tussen religies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Koninklijk Basalt Beeld (2e - 3e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Maurya Dynastie · Basalt · Bihar, India</p>
+                </div>
+                <img src="images/indiaas/07_ashoka.jpg" loading="lazy" alt="Ashoka Edict">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Dit monumentale beeld van Ashoka de Grote wordt vaak geassocieerd met Asoka's koninklijke leiderschap.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Stijl:</strong> Stijlvolle eenvoud, belangrijke religieuze symboliek voor boeddhisme.</p>
+                        <p><strong>Functie:</strong> Reusachtige steengroepen, soms 20-40 meter hoog.</p>
+                        <p><strong>Inspiraat:</strong> Directe inspiratie voor China's Yungang en Longmen grotten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Koninklijk Bronzen Beeld (10e - 12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Chola Dynastie · Brons · Tamil Nadu, India</p>
+                </div>
+                <img src="images/indiaas/08_chola_bronze.jpg" loading="lazy" alt="Chola Bronzen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Chola's maakten 'klassieke' standbeelden die nog steeds een inspiratiebron vormen voor moderne Indiase kunstenaars.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Stijl:</strong> Klassieke en expressieve stijl, fijn gedetailleerde sculpturen.</p>
+                        <p><strong>Positie:</strong> Grote diversiteit, zowel religieus als koninklijk.</p>
+                        <p><strong>Betekenis:</strong> Gevormde Indiase stijl en grote techneuten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Miniaturen (Pahari/Rajasthani) (17e - 19e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Indiase Regeringen · Verf, papier · Rajasthan, Himalaya</p>
+                </div>
+                <img src="images/indiaas/09_miniaturen.jpg" loading="lazy" alt="Indiase Miniaturen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Indiase miniaturen zijn zeer gedetailleerde, kleurrijke afbeeldingen van boeddhistische, hindoeïstische en islamitische verhalen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Detail:</strong> Zoals een goudlief, "geen schaduw van een eend" (an-e-sab-zadeh).</p>
+                        <p><strong>Techniek:</strong> Pigmenten van planten en mineralen, vlekbestendige koperoxide.</p>
+                        <p><strong>Betekenis:</strong> Eerste Indiase mode van kunst en design.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Sri Yantra Mandala (Traditioneel)</h3>
+                    <p style="color:#666;font-style:italic">Tantrische Traditie · Teken/Tekening · Geheel India</p>
+                </div>
+                <img src="images/indiaas/10_sri_yantra.jpg" loading="lazy" alt="Sri Yantra">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Sri Yantra is een complexe geometrische mystieke tekening die dient als mantra-visualisatie voor tantrische rituelen.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Formaat:</strong> Complex concentrisch diagram met negen geassocieerde getallen.</p>
+                        <p><strong>Symboliek:</strong> Voorstelling van de kosmische structuur en de godin Tripura Sundari.</p>
+                        <p><strong>Functie:</strong> Meditatief visualisatie voor yogi's en mystici.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="page-navigation">
+            <a href="precolumbiaans.html">← Pre-Columbiaanse Kunst</a>
+            <a href="index.html">🏠 Terug naar Home</a>
+            <a href="afrikaans.html">Afrikaanse Kunst →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kunstgeschiedenis - Indiase Kunst</p>
+    </footer>
+</body>
+</html>

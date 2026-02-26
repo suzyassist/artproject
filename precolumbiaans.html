@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Columbiaanse Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #2E8B57 0%, #228B22 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;color: white;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #2E8B57;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #f0fff4;border-left: 4px solid #2E8B57;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#f5fff5;padding:1rem;border-radius:4px;border:2px solid #2E8B57}
+        .timeline-box {background:linear-gradient(135deg,#2E8B57 0%,#1a5c3a 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
+</head>
+<body>
+    <header><h1>🏺 Pre-Columbiaanse Kunst</h1><p class="subtitle">2000 v.Chr. - 1521 · Van Olmeken tot Azteken</p></header>
+    <nav class="top-nav">
+        <a href="islamitisch.html" class="nav-prev">← Islamitische Kunst 🕌</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="afrikaans.html" class="nav-next">Afrikaanse Kunst 🌍 →</a>
+    </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="chinees.html" class="side-nav-link"><span class="nav-icon">🏯</span><span class="nav-text">Chinese Kunst</span></a>
+            <a href="japans.html" class="side-nav-link"><span class="nav-icon">🎌</span><span class="nav-text">Japanse Kunst</span></a>
+            <a href="indiaas.html" class="side-nav-link"><span class="nav-icon">🇮🇳</span><span class="nav-text">Indiase Kunst</span></a>
+            <a href="islamitisch.html" class="side-nav-link"><span class="nav-icon">🕌</span><span class="nav-text">Islamitische Kunst</span></a>
+            <a href="precolumbiaans.html" class="side-nav-link active"><span class="nav-icon">🏺</span><span class="nav-text">Pre-Columbiaanse Kunst</span></a>
+            <a href="indiaas.html" class="side-nav-link"><span class="nav-icon">🇮🇳</span><span class="nav-text">Indiase Kunst</span></a>
+            <a href="afrikaans.html" class="side-nav-link"><span class="nav-icon">🌍</span><span class="nav-text">Afrikaanse Kunst</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Azteekse Kalendersteen</h2>
+                <p>Het beroemdste symbool van Azteekse astronomie en kosmologie - 24 ton basalt</p>
+                <img src="images/precolumbiaans/01_aztec_calendar.jpg" alt="Azteekse Kalendersteen">
+                <p><em>Azteken, 1479 · Basalt · Diameter 3.6 meter · Mexico City</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>💀 Dood & Offer</h4>
+                    <p><strong>Rituele kunst:</strong> Menselijke offers, doodskultus. Bloed als levenskracht voor de zon.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🐍 Godenwereld</h4>
+                    <p><strong>Pantheon:</strong> Quetzalcoatl (gevederde slang), Tlaloc (regen), Huitzilopochtli (oorlog).</p>
+                </div>
+                <div class="style-item">
+                    <h4>📊 Kalenders</h4>
+                    <p><strong>Tijdrekening:</strong> Complexe kalendersystemen. 260-daagse rituele kalender, 365-daagse zonnekalender.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🧱 Architectuur</h4>
+                    <p><strong>Tempelpiramides:</strong> Gelaagde structuren, trappen, altar platformen. Steen op steen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEESTERWERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Azteekse Kalendersteen (1479)</h3>
+                    <p style="color:#666;font-style:italic">Azteken · Basalt · Diameter 3.6 meter · Mexico City</p>
+                </div>
+                <img src="images/precolumbiaans/01_aztec_calendar.jpg" loading="lazy" alt="Azteekse Kalendersteen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De zonnesteen is een enorm astronomisch instrument dat de Azteekse kosmologie en tijdrekening samenvat.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Compositie:</strong> Radiaal ontwerp met Tonatiuh (zonnegod) in het centrum.</p>
+                        <p><strong>Symboliek:</strong> Vier vorige werelden, 20 dagtekens, Venus cyclus.</p>
+                        <p><strong>Techniek:</strong> Gesculpteerd uit één stuk basalt, 24 ton.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Olmeekse Colossale Hoofden (1200 - 900 v.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Olmeken · Basalt · Veracruz, Mexico</p>
+                </div>
+                <img src="images/precolumbiaans/02_olmec_head.jpg" loading="lazy" alt="Olmeeks Colossaal Hoofd">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De 17 bekende kolossale hoofden zijn de meest iconische kunstwerken van de Olmeekse beschaving, de "moedercultuur" van Meso-Amerika.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Schaal:</strong> 1.5 - 3 meter hoog, 6-50 ton per stuk.</p>
+                        <p><strong>Realisme:</strong> Individuele gelaatstrekken, mogelijk portretten van heersers.</p>
+                        <p><strong>Techniek:</strong> Basalt van 80 km afstand getransporteerd zonder wielen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Maya Tempel van Kukulcán (El Castillo) (9e - 12e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Maya · Kalksteen · Chichén Itzá, Mexico</p>
+                </div>
+                <img src="images/precolumbiaans/03_el_castillo.jpg" loading="lazy" alt="Tempel van Kukulcán">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De piramide is een astronomisch monument dat tijdens equinoxen een schaduw "slang" produceert die de trappen afdaalt.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Architectuur:</strong> 4 zijden, 91 trappen per zijde = 365 + platform = dagen per jaar.</p>
+                        <p><strong>Symboliek:</strong> Gevederde slang Kukulcán daalt neer tijdens equinox.</p>
+                        <p><strong>Functie:</strong> Tempel én astronomische kalender.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Pacal de Grote Grafmonument (683)</h3>
+                    <p style="color:#666;font-style:italic">Maya · Jade, steen · Palenque, Mexico</p>
+                </div>
+                <img src="images/precolumbiaans/04_pacal.jpg" loading="lazy" alt="Pacal Grafmonument">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Het graf van koning Pacal bevat een ingewikkeld deksel dat zijn reis naar de onderwereld en hergeboorte verbeeldt.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Reliëf:</strong> Complex hiërogliefisch ontwerp, kosmologische symboliek.</p>
+                        <p><strong>Icoon:</strong> Pacal daalt af langs de Wereldboom naar Xibalba.</p>
+                        <p><strong>Argument:</strong> Sommigen interpreteren dit als "ancient astronaut" - maar het is kosmologisch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Moche Portret Vaas (100 - 800 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Moche · Keramiek · Peru</p>
+                </div>
+                <img src="images/precolumbiaans/05_moche.jpg" loading="lazy" alt="Moche Portret Vaas">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Moche maakten duizenden portretvaassen met individuele gelaatstrekken - een uniek fenomeen in pre-Columbiaanse kunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Realisme:</strong> Portretten van specifieke individuen, littekens, gezichtsuitdrukkingen.</p>
+                        <p><strong>Techniek:</strong> Stemple bus en handmodellering, rood/wit beschilderd.</p>
+                        <p><strong>Functie:</strong> Ceremonieel, mogelijk elite portretten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Coyolxauhqui Steen (1473)</h3>
+                    <p style="color:#666;font-style:italic">Azteken · Steen · Mexico City</p>
+                </div>
+                <img src="images/precolumbiaans/06_coyolxauhqui.jpg" loading="lazy" alt="Coyolxauhqui Steen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Deze schijf toont de gedecapiteerde godin Coyolxauhqui, verslagen door haar broer Huitzilopochtli - mythe van de Templo Mayor.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Onderwerp:</strong> Gedismembreerde godin met klok-ornamenten, schedel, slangen.</p>
+                        <p><strong>Locatie:</strong> Oorspronkelijk aan de basis van de Templo Mayor.</p>
+                        <p><strong>Mythe:</strong> Symboliseert de overwinning van de zon (Huitzilopochtli) op de maan (Coyolxauhqui).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Nazca Lijnen (200 v.Chr. - 600 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Nazca · Aarde · Zuid-Peru</p>
+                </div>
+                <img src="images/precolumbiaans/07_nazca.jpg" loading="lazy" alt="Nazca Lijnen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Enorme geoglyphs in de woestijn - dieren, planten, geometrische vormen - alleen volledig zichtbaar vanuit de lucht.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Schaal:</strong> Sommige figuren 200+ meter lang, 450 km2 gebied.</p>
+                        <p><strong>Techniek:</strong> Donkere stenen verwijderd, lichte ondergrond zichtbaar.</p>
+                        <p><strong>Doel:</strong> Rituele paden, astronomische kalender, of aanbidding vanuit de lucht?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Teotihuacán Zonnepiramide (100 - 200 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Teotihuacán · Steen, pleister · Mexico</p>
+                </div>
+                <img src="images/precolumbiaans/08_teotihuacan.jpg" loading="lazy" alt="Zonnepiramide">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Zonnepiramide is het grootste gebouw van Teotihuacán, de grootste stad van het pre-Columbiaanse Amerika.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Afmetingen:</strong> 65 meter hoog, 225 meter breed aan de basis.</p>
+                        <p><strong>Oriëntatie:</strong> Uitgelijnd met astronomische fenomenen.</p>
+                        <p><strong>Betekenis:</strong> Centrum van de scheppingsmythe, "plaats waar goden werden geschapen".</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Mixtec Goudsmeedkunst (13e - 15e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Mixtec · Goud · Oaxaca, Mexico</p>
+                </div>
+                <img src="images/precolumbiaans/09_mixtec.jpg" loading="lazy" alt="Mixtec Goud">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Mixtec waren meesters in goudsmeedkunst. Hun werk inspireerde de Spaanse veroveraars tot de mythe van El Dorado.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Techniek:</strong> Cire perdue (verloren was), hameren, filigraan.</p>
+                        <p><strong>Onderwerpen:</strong> Dieren, goden, geometrische patronen.</p>
+                        <p><strong>Status:</strong> Grafgeschenken voor elite, meest gesmolten door Spanjaarden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Inca Machu Picchu (15e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Inca · Steen · Peru</p>
+                </div>
+                <img src="images/precolumbiaans/10_machu_picchu.jpg" loading="lazy" alt="Machu Picchu">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Machu Picchu is een Inca citadel op 2430 meter hoogte, gebouwd als koninklijk landgoed of religieus centrum.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Architectuur:</strong> PolYGONAAL metselwerk zonder mortier - stenen passen perfect.</p>
+                        <p><strong>Integratie:</strong> Harmonie met het landschap, terrassen voor landbouw.</p>
+                        <p><strong>Ingenieurswerk:</strong> Seismisch bestendig, geavanceerd drainagesysteem.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="page-navigation">
+            <a href="islamitisch.html">← Islamitische Kunst</a>
+            <a href="index.html">🏠 Terug naar Home</a>
+            <a href="indiaas.html">Indiase Kunst →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kunstgeschiedenis - Pre-Columbiaanse Kunst</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afrikaanse Kunst - Kunstgeschiedenis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .featured-artwork {background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);padding: 2rem;margin-bottom: 2rem;border-radius: 8px;text-align: center;color: white;}
+        .featured-artwork img {width:100%;max-width:800px;height:auto;border-radius:4px;margin-top:1rem}
+        .artwork-fullwidth {background: #fff;margin: 3rem 0;padding: 2rem;border-radius: 8px;box-shadow: 0 2px 15px rgba(0,0,0,0.1);}
+        .artwork-fullwidth img {width:100%;max-width:800px;height:auto;display:block;margin:1rem auto}
+        .artwork-header {border-bottom: 3px solid #8B4513;margin-bottom: 1.5rem;padding-bottom: 1rem;}
+        .style-analysis-box {background: #fff5f0;border-left: 4px solid #8B4513;padding: 1.5rem;margin: 1rem 0;}
+        .style-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1rem 0}
+        .style-item {background:#fff8f0;padding:1rem;border-radius:4px;border:2px solid #8B4513}
+        .timeline-box {background:linear-gradient(135deg,#8B4513 0%,#5a2d0c 100%);color:white;padding:1.5rem;margin:1rem 0;border-radius:8px}
+        .timeline-box h2, .timeline-box h3, .timeline-box h4, .timeline-box h5 {color:white !important}
+        .page-navigation {display: flex;justify-content: space-between;align-items: center;background: var(--white);padding: 1.5rem;margin-top: 2rem;border-radius: 8px;box-shadow: 0 2px 10px rgba(0,0,0,0.1);gap: 1rem;}
+        .page-navigation a {display: flex;align-items: center;gap: 0.5rem;padding: 0.75rem 1.25rem;background: var(--secondary);color: var(--white);text-decoration: none;border-radius: 6px;transition: all 0.3s ease;font-size: 0.95rem;}
+        .page-navigation a:hover {background: var(--accent);color: var(--primary);transform: translateY(-2px);}
+    </style>
+</head>
+<body>
+    <header><h1>🌍 Afrikaanse Kunst</h1><p class="subtitle">3000 v.Chr. - Heden · Van Nok tot Hedendaagse Diaspora</p></header>
+    <nav class="top-nav">
+        <a href="precolumbiaans.html" class="nav-prev">← Pre-Columbiaanse Kunst 🏺</a>
+        <a href="index.html" class="nav-home">🏠 Home</a>
+        <a href="index.html" class="nav-next">Meer Stromingen →</a>
+    </nav>
+
+    <button id="menu-btn" class="menu-button" aria-label="Menu openen">☰</button>
+
+    <nav id="sidebar" class="side-nav">
+        <div class="side-nav-header">
+            <h3>🎨 Kunststromingen</h3>
+            <button id="close-btn" class="close-button" aria-label="Menu sluiten">×</button>
+        </div>
+        <div class="side-nav-content">
+            <a href="index.html" class="side-nav-link"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+            <a href="oudgrieks.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Oud-Griekse Kunst</span></a>
+            <a href="romeins.html" class="side-nav-link"><span class="nav-icon">🏛️</span><span class="nav-text">Romeinse Kunst</span></a>
+            <a href="chinees.html" class="side-nav-link"><span class="nav-icon">🏯</span><span class="nav-text">Chinese Kunst</span></a>
+            <a href="japans.html" class="side-nav-link"><span class="nav-icon">🎌</span><span class="nav-text">Japanse Kunst</span></a>
+            <a href="indiaas.html" class="side-nav-link"><span class="nav-icon">🇮🇳</span><span class="nav-text">Indiase Kunst</span></a>
+            <a href="islamitisch.html" class="side-nav-link"><span class="nav-icon">🕌</span><span class="nav-text">Islamitische Kunst</span></a>
+            <a href="precolumbiaans.html" class="side-nav-link"><span class="nav-icon">🏺</span><span class="nav-text">Pre-Columbiaanse Kunst</span></a>
+            <a href="afrikaans.html" class="side-nav-link active"><span class="nav-icon">🌍</span><span class="nav-text">Afrikaanse Kunst</span></a>
+        </div>
+    </nav>
+
+    <div id="overlay" class="nav-overlay"></div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('overlay').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        });
+        document.getElementById('close-btn').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('overlay').classList.remove('show');
+            document.body.style.overflow = '';
+        });
+    </script>
+
+    <main>
+        <section class="movement-header">
+            <div class="featured-artwork">
+                <h2>🏆 Meesterwerk: Nok Terracotta Hoofd</h2>
+                <p>Een van de oudste bekende Afrikaanse sculpturen - 2500 jaar oud uit Nigeria</p>
+                <img src="images/afrikaans/01_nok.jpg" alt="Nok Terracotta Hoofd">
+                <p><em>Nok Cultuur, ca. 500 v.Chr. - 200 n.Chr. · Terracotta · Nigeria</em></p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🎨 STIJLFIGUREN & THEMA'S</h2>
+            
+            <div class="style-grid">
+                <div class="style-item">
+                    <h4>🗿 Abstraktie</h4>
+                    <p><strong>Stijlisering:</strong> Menselijke figuren vereenvoudigd tot essentiële vormen. Geometrische patronen.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🎭 Maskers</h4>
+                    <p><strong>Rituele kunst:</strong> Houten maskers voor ceremonies. Verbinding met voorouders en geesten.</p>
+                </div>
+                <div class="style-item">
+                    <h4>🪘 Materialen</h4>
+                    <p><strong>Natuurlijk:</strong> Hout, ivoor, brons, terracotta, kralen. Elk materiaal met symbolische betekenis.</p>
+                </div>
+                <div class="style-item">
+                    <h4>⚡ Energie</h4>
+                    <p><strong>Dynamiek:</strong> Beweging en spanning in sculpturen. Levendige expressie ondanks abstractie.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>📚 TIJDSGEEST CONTEXT</h2>
+            
+            <div class="timeline-box">
+                <h3>🌍 POLITIEK PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>📖 LITERAIR PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🧠 PSYCHOLOGISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>🏛️ HISTORISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+
+            <div class="timeline-box">
+                <h3>💭 FILOSOFISCH PERSPECTIEF</h3>
+                <p>PLACEHOLDER - Te expanden naar 500+ woorden</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🖼️ TOP 10 MEESTERWERKEN</h2>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>1. Nok Terracotta Hoofd (ca. 500 v.Chr. - 200 n.Chr.)</h3>
+                    <p style="color:#666;font-style:italic">Nok Cultuur · Terracotta · Nigeria</p>
+                </div>
+                <img src="images/afrikaans/01_nok.jpg" loading="lazy" alt="Nok Terracotta Hoofd">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Nok cultuur produceerde de eerste bekende terracotta sculpturen in Sub-Sahara Afrika. Deze hoofden tonen geavanceerde technische vaardigheid.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vorm:</strong> Stijlvolle abstractie met realistische details. Driehoekige ogen, open mond.</p>
+                        <p><strong>Techniek:</strong> Handgevormd terracotta, gedroogd in de zon.</p>
+                        <p><strong>Betekenis:</strong> Mogelijk voorouderverering of religieuze ceremonies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>2. Benin Bronzen (16e - 17e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Koninkrijk Benin · Brons · Nigeria</p>
+                </div>
+                <img src="images/afrikaans/02_benin.jpg" loading="lazy" alt="Benin Bronzen">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Benin bronzen zijn een collectie van meer dan 1000 plaquettes en sculpturen die het hof van de Oba (koning) documenteren.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Techniek:</strong> Cire perdue (verloren was) giettechniek. Hoge kwaliteit metallurgie.</p>
+                        <p><strong>Onderwerp:</strong> Hofleven, rituelen, Portugese handelaren, militaire scènes.</p>
+                        <p><strong>Invloed:</strong> Getoond de geavanceerde beschaving van pre-koloniaal Afrika.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>3. Ife Terracotta Hoofden (12e - 15e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Ife Cultuur · Terracotta · Nigeria</p>
+                </div>
+                <img src="images/afrikaans/03_ife.jpg" loading="lazy" alt="Ife Terracotta Hoofd">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Ife hoofden zijn beroemd om hun naturalistische stijl en worden beschouwd als meesterwerken van Afrikaanse kunst.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Naturalisme:</strong> Opvallend realistisch in vergelijking met andere Afrikaanse tradities.</p>
+                        <p><strong>Detail:</strong> Fijn uitgewerkte gelaatstrekken, littekens, kapsels.</p>
+                        <p><strong>Symboliek:</strong> Verbeelding van heersers en godheden.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>4. Dogon Maskers (Traditioneel)</h3>
+                    <p style="color:#666;font-style:italic">Dogon Volk · Hout · Mali</p>
+                </div>
+                <img src="images/afrikaans/04_dogon.jpg" loading="lazy" alt="Dogon Masker">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Dogon maken complexe maskers voor dama begrafenisceremonies, die de overledene helpen naar de wereld van de voorouders.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vormen:</strong> Kaninmaskers met rechtopstaande oren, zwangere antilopen, vogels.</p>
+                        <p><strong>Kleuren:</strong> Aardkleuren - rood, wit, zwart van natuurlijke pigmenten.</p>
+                        <p><strong>Ritueel:</strong> Gedanst tijdens uitgebreide ceremonies die dagen duren.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>5. Kuba Textiel (Traditioneel)</h3>
+                    <p style="color:#666;font-style:italic">Kuba Koninkrijk · Raffia · Democratische Republiek Congo</p>
+                </div>
+                <img src="images/afrikaans/05_kuba.jpg" loading="lazy" alt="Kuba Textiel">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Kuba textiel staat bekend om zijn complexe geometrische patronen en wordt beschouwd als een van de meest verfijnde textieltradities van Afrika.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Patronen:</strong> Complex geometrisch - zigzag, ruitvormig, gespiegelde motieven.</p>
+                        <p><strong>Techniek:</strong> Raffia palm vezels, cut-pile borduurwerk.</p>
+                        <p><strong>Status:</strong> Gedragen door adel, gebruikt als betaalmiddel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>6. Great Zimbabwe Vogel (14e - 15e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Koninkrijk Zimbabwe · Steatiet · Zimbabwe</p>
+                </div>
+                <img src="images/afrikaans/06_zimbabwe.jpg" loading="lazy" alt="Great Zimbabwe Vogel">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Zimbabwe vogels zijn zeven stenen beeldjes gevonden in Great Zimbabwe, waarschijnlijk voorouders of koninklijke macht symboliserend.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vorm:</strong> Vogel-op-menselijke-figuur, abstract gestileerd.</p>
+                        <p><strong>Materiaal:</strong> Steatiet (zeepsteen), lokaal gewonnen.</p>
+                        <p><strong>Symboliek:</strong> Verbinding tussen hemel en aarde, koninklijke autoriteit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>7. Fang Relikwie Bewaker (19e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Fang Volk · Hout · Gabon, Kameroen</p>
+                </div>
+                <img src="images/afrikaans/07_fang.jpg" loading="lazy" alt="Fang Relikwie Bewaker">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Fang maakten byeri figuren om relikwieën van voorouders te bewaken. Deze sculpturen beïnvloedden Picasso en het kubisme.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Vorm:</strong> Zittende figuur met handen aan hoofd. Glanzend gepolijst oppervlak.</p>
+                        <p><strong>Expressie:</strong> Sereniteit en waakzaamheid.</p>
+                        <p><strong>Invloed:</strong> Directe inspiratie voor Europese modernisten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>8. Akan Goudgewichten (15e - 19e eeuw)</h3>
+                    <p style="color:#666;font-style:italic">Akan Volk · Brons · Ghana, Ivoorkust</p>
+                </div>
+                <img src="images/afrikaans/08_akan.jpg" loading="lazy" alt="Akan Goudgewichten">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> De Akan maakten miniature brons figuurtjes als gewichten voor goudhandel. Elk figuurtje vertelt een verhaal of spreekwoord.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Onderwerpen:</strong> Dieren, mensen, dagelijks leven, spreekwoorden.</p>
+                        <p><strong>Schaal:</strong> Klein, 2-10 cm hoog, zeer gedetailleerd.</p>
+                        <p><strong>Functie:</strong> Praktisch (wegen) en educatief (spreekwoorden).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>9. Chokwe Pwo Masker (Traditioneel)</h3>
+                    <p style="color:#666;font-style:italic">Chokwe Volk · Hout · Angola, Democratische Republiek Congo</p>
+                </div>
+                <img src="images/afrikaans/09_chokwe.jpg" loading="lazy" alt="Chokwe Pwo Masker">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Pwo maskers verbeelden de ideale vrouwelijke voorouder. Ze worden gedanst tijdens ceremonies die vrouwelijke waarden vieren.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Kenmerken:</strong> Grote ogen, kleine mond, ingewikkelde kapsels.</p>
+                        <p><strong>Versiering:</strong> Koperplaatjes, kralen, haartooi.</p>
+                        <p><strong>Betekenis:</strong> Vruchtbaarheid, schoonheid, moederschap.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artwork-fullwidth">
+                <div class="artwork-header">
+                    <h3>10. Yoruba Gelede Masker (Traditioneel)</h3>
+                    <p style="color:#666;font-style:italic">Yoruba Volk · Hout · Nigeria, Benin</p>
+                </div>
+                <img src="images/afrikaans/10_yoruba.jpg" loading="lazy" alt="Yoruba Gelede Masker">
+                <div class="artwork-content">
+                    <p><strong>Achtergrond:</strong> Gelede maskers eren de kracht van vrouwen (moeders) in de Yoruba samenleving. De bovenkant toont vaak superstructuur scènes.</p>
+                    <div class="style-analysis-box">
+                        <h5>🔍 STIJLANALYSE</h5>
+                        <p><strong>Structuur:</strong> Helmmasker met bovenbouw - scenes uit het dagelijks leven.</p>
+                        <p><strong>Kleuren:</strong> Polychroom geschilderd in felle kleuren.</p>
+                        <p><strong>Performance:</strong> Grote, zware maskers elegant gedanst door mannen.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="page-navigation">
+            <a href="precolumbiaans.html">← Pre-Columbiaanse Kunst</a>
+            <a href="index.html">🏠 Terug naar Home</a>
+            <a href="indiaas.html">Indiase Kunst 🇮🇳 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kunstgeschiedenis - Afrikaanse Kunst</p>
+    </footer>
+</body>
+</html>
