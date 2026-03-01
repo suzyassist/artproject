@@ -29,20 +29,15 @@ fi
 
 echo "📤 Uploading to One.com server..."
 
-# Upload using expect (lftp has issues with special chars in password)
-expect << 'EXPECT_SCRIPT'
-set timeout 120
-spawn sftp matthiasr.com@ssh.matthiasr.com
-expect "password:"
-send "y41*^&XJlS!BaM\r"
-expect "sftp>"
+# Create lftp command file (avoids password in process list)
+cat > /tmp/lftp_commands.txt << EOF
+open -u matthiasr.com,y41*^&XJlS!BaM sftp://ssh.matthiasr.com
+mirror -R --parallel=6 --no-perms . /www/art
+exit
+EOF
 
-# Mirror local to remote
-send "mirror -R /root/.openclaw/workspace/kunstgeschiedenis/website /www/art\r"
-expect "sftp>"
-send "exit\r"
-expect eof
-EXPECT_SCRIPT
+lftp -f /tmp/lftp_commands.txt
+rm /tmp/lftp_commands.txt
 
 echo "✅ Deploy complete!"
 echo "   GitHub: https://github.com/suzyassist/artproject"
