@@ -29,11 +29,20 @@ fi
 
 echo "📤 Uploading to One.com server..."
 
-# First, ensure directories exist on server
-lftp -c "open -u $REMOTE_USER,'$REMOTE_PASS' sftp://$REMOTE_HOST; mkdir -p $REMOTE_PATH/images/postmodern $REMOTE_PATH/images/postmodernisme $REMOTE_PATH/images/hedendaags; exit 0"
+# Upload using expect (lftp has issues with special chars in password)
+expect << 'EXPECT_SCRIPT'
+set timeout 120
+spawn sftp matthiasr.com@ssh.matthiasr.com
+expect "password:"
+send "y41*^&XJlS!BaM\r"
+expect "sftp>"
 
-# Then upload all files
-lftp -c "open -u $REMOTE_USER,'$REMOTE_PASS' sftp://$REMOTE_HOST; mirror -R --parallel=6 --no-perms . $REMOTE_PATH"
+# Mirror local to remote
+send "mirror -R /root/.openclaw/workspace/kunstgeschiedenis/website /www/art\r"
+expect "sftp>"
+send "exit\r"
+expect eof
+EXPECT_SCRIPT
 
 echo "✅ Deploy complete!"
 echo "   GitHub: https://github.com/suzyassist/artproject"
